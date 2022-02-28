@@ -1,4 +1,5 @@
 import os
+import re
 
 NOTEBOOKS = {
     'Google Hashcode 2022': 'miscellaneous/hashcode/practice_problem.ipynb',
@@ -16,33 +17,37 @@ NOTEBOOKS = {
 GITHUB_PATH = 'ampl/amplcolab/blob/master/'
 
 
+def normalize(url):
+    return re.sub(r'([^:])//+', r'\1/', url)
+
+
 def github_column(fname):
     basename = os.path.basename(fname)
-    url = f'github.com/{GITHUB_PATH}/{fname}'.replace('//', '/')
+    url = normalize(f'github.com/{GITHUB_PATH}/{fname}')
     return f'[{basename}](https://{url})'
 
 
 def colab_column(fname):
     prefix = 'colab.research.google.com/github'
-    url = f'{prefix}/{GITHUB_PATH}/{fname}'.replace('//', '/')
+    url = normalize(f'{prefix}/{GITHUB_PATH}/{fname}')
     return f'[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://{url})'
 
 
 def kaggle_column(fname):
     prefix = 'kaggle.com/kernels/welcome?src=https://github.com'
-    url = f'{prefix}/{GITHUB_PATH}/{fname}'.replace('//', '/')
+    url = normalize(f'{prefix}/{GITHUB_PATH}/{fname}')
     return f'[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://{url})'
 
 
 def gradient_column(fname):
     prefix = 'console.paperspace.com/github'
-    url = f'{prefix}/{GITHUB_PATH}/{fname}'.replace('//', '/')
+    url = normalize(f'{prefix}/{GITHUB_PATH}/{fname}')
     return f'[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://{url})'
 
 
 def sagemaker_column(fname):
     prefix = 'studiolab.sagemaker.aws/import/github'
-    url = f'{prefix}/{GITHUB_PATH}/{fname}'.replace('//', '/')
+    url = normalize(f'{prefix}/{GITHUB_PATH}/{fname}')
     return f'[![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://{url})'
 
 
