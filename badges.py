@@ -33,6 +33,7 @@ for title, fname in sorted(NOTEBOOKS.items()):
     sagemaker = sagemaker_badge(fname) if not colab_only else ''
 
     badges = f'{github}{colab}{kaggle}{gradient}{sagemaker}\n'
+    header.insert(1, '\n')
     header.insert(1, badges)
 
     open(fname, 'w').write(json.dumps(data))
