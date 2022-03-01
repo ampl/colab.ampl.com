@@ -3,8 +3,8 @@ AMPL Model Colaboratory
 =======================
 
 
-AMPLPY: Google Colab & Kaggle Template
---------------------------------------
+AMPL Model Colaboratory Template
+--------------------------------
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/colab.ipynb
     :alt: colab.ipynb
