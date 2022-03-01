@@ -17,9 +17,9 @@ for fname in lst:
     assert cells[0]['cell_type'] == 'markdown'
     header = cells[0]['source']
     assert header[0].startswith('#')
-    title = header[0].lstrip('# ')
+    title = header[0].lstrip('# ').rstrip('\n')
     NOTEBOOKS[title] = fname
-    print(f'Title: {title}')
+    print(f'Title: {title}\n')
 
 GITHUB_PATH = 'ampl/amplcolab/blob/master/'
 
@@ -93,7 +93,7 @@ index = open('docs/source/index.rst', 'w')
 
 print('''# AMPL Model Colaboratory
 
-| Title  |  GitHub  |  Colab | Kaggle | Gradient | SageMaker|
+| Title  | GitHub |  Colab | Kaggle | Gradient | SageMaker|
 |--------|--------|--------|--------|----------|----------|''', file=readme)
 
 print('''
