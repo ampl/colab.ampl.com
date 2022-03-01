@@ -1,18 +1,25 @@
 import os
 import re
+import json
 
-NOTEBOOKS = {
-    'Google Hashcode 2022': 'miscellaneous/hashcode/practice_problem.ipynb',
-    'Jupyter Notebook Integration': 'miscellaneous/magics.ipynb',
-    'Roll Cutting - Revision 1 & 2': 'miscellaneous/pattern_tradeoff.ipynb',
-    'Google Colab & Kaggle Template': 'miscellaneous/colab.ipynb',
-    'Setup & Quick Start': 'miscellaneous/quickstart.ipynb',
-    'Pattern Enumeration': 'miscellaneous/pattern_enumeration.ipynb',
-    'Pattern Generation': 'miscellaneous/pattern_generation.ipynb',
-    'Using Google Sheets': 'miscellaneous/gspread.ipynb',
-    'Calculate efficient frontier (uses Google Sheets)': 'finance/efficient_frontier.ipynb',
-    'Optimization Methods in Finance: Chapter 3': 'finance/finance_opt_example_3_1.ipynb',
-}
+lst = [
+    os.path.join(dirpath, fname)[2:]
+    for (dirpath, _, files) in os.walk('.')
+    for fname in files
+    if fname.endswith('.ipynb') and '.ipynb_checkpoints' not in dirpath
+]
+
+NOTEBOOKS = {}
+for fname in lst:
+    print(f'Processing: {fname}')
+    data = json.load(open(fname, 'r'))
+    cells = data['cells']
+    assert cells[0]['cell_type'] == 'markdown'
+    header = cells[0]['source']
+    assert header[0].startswith('#')
+    title = header[0].lstrip('# ')
+    NOTEBOOKS[title] = fname
+    print(f'Title: {title}')
 
 GITHUB_PATH = 'ampl/amplcolab/blob/master/'
 
@@ -95,7 +102,7 @@ AMPL Model Colaboratory
 
 ''', file=index)
 
-for title, fname in NOTEBOOKS.items():
+for title, fname in sorted(NOTEBOOKS.items()):
     notebook = open(fname, 'r').read()
     colab_only = ' gspread' in notebook
 
