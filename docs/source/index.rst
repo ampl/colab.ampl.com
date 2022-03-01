@@ -2,9 +2,12 @@
 AMPL Model Colaboratory
 =======================
 
+Notebooks
+---------
+
 
 AMPL Model Colaboratory Template
---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/colab.ipynb
     :alt: colab.ipynb
@@ -27,7 +30,7 @@ AMPL Model Colaboratory Template
     
 
 AMPLPY: Jupyter Notebook Integration
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/magics.ipynb
     :alt: magics.ipynb
@@ -50,7 +53,7 @@ AMPLPY: Jupyter Notebook Integration
     
 
 AMPLPY: Pattern Enumeration
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pattern_enumeration.ipynb
     :alt: pattern_enumeration.ipynb
@@ -73,7 +76,7 @@ AMPLPY: Pattern Enumeration
     
 
 AMPLPY: Pattern Generation
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pattern_generation.ipynb
     :alt: pattern_generation.ipynb
@@ -96,7 +99,7 @@ AMPLPY: Pattern Generation
     
 
 AMPLPY: Roll Cutting - Revision 1 & 2
--------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pattern_tradeoff.ipynb
     :alt: pattern_tradeoff.ipynb
@@ -119,7 +122,7 @@ AMPLPY: Roll Cutting - Revision 1 & 2
     
 
 AMPLPY: Setup & Quick Start
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/quickstart.ipynb
     :alt: quickstart.ipynb
@@ -142,7 +145,7 @@ AMPLPY: Setup & Quick Start
     
 
 AMPLPY: Using Google Sheets
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/gspread.ipynb
     :alt: gspread.ipynb
@@ -156,7 +159,7 @@ AMPLPY: Using Google Sheets
 
 
 Efficient Frontier with Google Sheets
--------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb
     :alt: efficient_frontier.ipynb
@@ -170,7 +173,7 @@ Efficient Frontier with Google Sheets
 
 
 Google Hashcode 2022
---------------------
+^^^^^^^^^^^^^^^^^^^^
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
     :alt: practice_problem.ipynb
@@ -193,7 +196,7 @@ Google Hashcode 2022
     
 
 Optimization Methods in Finance: Chapter 3
-------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
     :alt: finance_opt_example_3_1.ipynb

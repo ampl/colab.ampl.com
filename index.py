@@ -16,6 +16,9 @@ print('''
 AMPL Model Colaboratory
 =======================
 
+Notebooks
+---------
+
 ''', file=index)
 
 for title, fname in sorted(NOTEBOOKS.items()):
@@ -34,5 +37,5 @@ for title, fname in sorted(NOTEBOOKS.items()):
     kaggle = kaggle_badge(fname, rst=True) if not colab_only else ''
     gradient = gradient_badge(fname, rst=True) if not colab_only else ''
     sagemaker = sagemaker_badge(fname, rst=True) if not colab_only else ''
-    print(title + '\n' + '-'*len(title), file=index)
+    print(title + '\n' + '^'*len(title), file=index)
     print(f'{github}\n{colab}\n{kaggle}\n{gradient}\n{sagemaker}\n', file=index)
