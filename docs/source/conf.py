@@ -114,7 +114,7 @@ html_theme_options = {
     ]
 }
 html_context = {
-    "theme_logo_text": "AMPL Colaboratory",
+    "theme_logo_text": "AMPL Colab",
 }
 
 
