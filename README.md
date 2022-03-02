@@ -6,7 +6,7 @@ https://amplcolab.readthedocs.io
 
 ## Contribution Guide
 
-1. Use the template [template/colab.ipynb]([template/colab.ipynb](https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb)) as base template.
+1. Use the template [template/colab.ipynb](https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb) as base template.
 
 2. In the header make sure you fill the following fields:
 ```
