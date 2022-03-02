@@ -4,7 +4,8 @@ from utils import (list_notebooks, github_badge, colab_badge,
 
 NOTEBOOKS = list_notebooks()
 
-for title, fname in sorted(NOTEBOOKS.items()):
+for info in NOTEBOOKS:
+    title, fname = info['title'], info['fname']
     print(f'{fname}: {title}')
     notebook = open(fname, 'r').read()
     data = json.loads(notebook)

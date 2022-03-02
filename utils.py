@@ -3,6 +3,33 @@ import re
 import json
 
 
+def read_header(fname):
+    notebook = open(fname, 'r').read()
+    data = json.loads(notebook)
+    cells = data['cells']
+    assert cells[0]['cell_type'] == 'markdown'
+    header = cells[0]['source']
+    assert header[0].startswith('#')
+    info = {
+        'fname': fname,
+        'title': header[0].lstrip('# ').rstrip('\n'),
+        'colab_only': ' gspread' in notebook,
+    }
+    for row in header:
+        if ':' not in row:
+            continue
+        row = row.strip()
+        key = row[:row.find(':')].strip().lower().replace(' ', '_')
+        value = row[row.find(':')+1:].strip()
+        if key in ('description', 'notebook_author', 'model_author'):
+            assert key not in info
+            info[key] = value
+        elif key == 'tags':
+            assert key not in info
+            info[key] = [t.strip().lower() for t in value.split(',')]
+    return info
+
+
 def list_notebooks():
     lst = [
         os.path.join(dirpath, fname)[2:]
@@ -11,17 +38,14 @@ def list_notebooks():
         if fname.endswith('.ipynb') and '.ipynb_checkpoints' not in dirpath
     ]
 
-    notebooks = {}
+    notebooks = []
     for fname in lst:
         print(f'Processing: {fname}')
-        data = json.load(open(fname, 'r'))
-        cells = data['cells']
-        assert cells[0]['cell_type'] == 'markdown'
-        header = cells[0]['source']
-        assert header[0].startswith('#')
-        title = header[0].lstrip('# ').rstrip('\n')
-        notebooks[title] = fname
+        info = read_header(fname)
+        title = info['title']
+        notebooks.append(info)
         print(f'Title: {title}\n')
+    notebooks.sort(key=lambda info: info['title'])
     return notebooks
 
 
