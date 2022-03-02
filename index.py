@@ -9,6 +9,47 @@ index = open('docs/source/index.rst', 'w')
 
 print('''# AMPL Model Colaboratory
 
+## Website
+
+https://amplcolab.readthedocs.io
+
+## Contribution Guide
+
+1. Use the template [template/colab.ipynb]([template/colab.ipynb](https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb)) as base template.
+
+2. In the header make sure you fill the following fields:
+```
+Description: <required>
+
+Tags: <required>, <>, <>
+
+Notebook author: <required>
+
+Model author: <required>
+
+References: <optional>
+```
+
+3. Do not modify the initial cells that take care of setup and jupyter notebook integration.
+
+4. Update the badges and the index as shown below before commiting.
+
+### Updating badges
+
+The following command will patch every notebook in the repository with badges corresponding to the notebook location:
+```bash
+$ python badges.py
+```
+
+### Updating index
+
+The following command updates the readme file and the shpinx documentation:
+```bash
+$ python index.py
+```
+
+## Notebooks
+
 | Title  | GitHub |  Colab | Kaggle | Gradient | SageMaker|
 |--------|--------|--------|--------|----------|----------|''', file=readme)
 
@@ -79,6 +120,13 @@ for info in NOTEBOOKS:
     print_markdown(info, readme)
     print_rst(info, index)
 
+print('''## License
+
+BSD-3
+
+***
+Copyright © 2022-2022 AMPL Optimization inc. All rights reserved.
+''', file=readme)
 
 for tag in tagged:
     tag_rst = open(f'docs/source/tag-{tag}.rst', 'w')
