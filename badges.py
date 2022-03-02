@@ -6,9 +6,8 @@ NOTEBOOKS = list_notebooks()
 
 for info in NOTEBOOKS:
     title, fname = info['title'], info['fname']
-    print(f'{fname}: {title}')
-    notebook = open(fname, 'r').read()
-    data = json.loads(notebook)
+    print(f'Updating {fname}: {title}')
+    data = json.load(open(fname, 'r'))
     cells = data['cells']
     assert cells[0]['cell_type'] == 'markdown'
     header = cells[0]['source']
@@ -16,25 +15,30 @@ for info in NOTEBOOKS:
 
     # Remove old badges
     header = [row for row in header if not row.startswith('[![')]
-    remove = []
-    for i, row in enumerate(header):
-        if row == '\n' and header[i-1] == '\n':
-            remove.append(i)
-    for i in reversed(remove):
-        print('removing', i)
-        del header[i]
 
-    cells[0]['source'] = header
-
-    colab_only = ' gspread' in notebook
+    # Update badges
+    colab_only = info['colab_only']
     github = github_badge(fname)
     colab = colab_badge(fname)
     kaggle = kaggle_badge(fname) if not colab_only else ''
     gradient = gradient_badge(fname) if not colab_only else ''
     sagemaker = sagemaker_badge(fname) if not colab_only else ''
-
     badges = f'{github} {colab} {kaggle} {gradient} {sagemaker}\n'
-    header.insert(1, '\n')
+    if header[1] != '\n':
+        header.insert(1, '\n')
     header.insert(1, badges)
 
-    open(fname, 'w').write(json.dumps(data))
+    # Remove empty lines
+    remove = []
+    for i, row in enumerate(header):
+        if row == '\n' and header[i-1] == '\n':
+            remove.append(i)
+    for i in reversed(remove):
+        print(f'removing newline in line {i}')
+        del header[i]
+
+    # Update header with new badges
+    cells[0]['source'] = header
+
+    open(fname, 'w').write(json.dumps(data, separators=(
+        ',', ':'), ensure_ascii=False)+'\n')
