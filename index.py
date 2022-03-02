@@ -27,12 +27,16 @@ Notebook author: <required>
 
 Model author: <required>
 
+License: <optional>
+
 References: <optional>
 ```
 
 3. Do not modify the initial cells that take care of setup and jupyter notebook integration.
 
 4. Update the badges and the index as shown below before commiting.
+
+Note: The default license for every notebook is [MIT](https://github.com/ampl/amplcolab/blob/master/LICENSE) unless specified otherwise in the notebook.
 
 ### Updating badges
 
@@ -122,7 +126,7 @@ for info in NOTEBOOKS:
 
 print('''## License
 
-BSD-3
+MIT
 
 ***
 Copyright © 2022-2022 AMPL Optimization inc. All rights reserved.
