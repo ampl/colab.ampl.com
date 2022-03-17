@@ -37,6 +37,7 @@ def list_notebooks():
         for fname in files
         if fname.endswith('.ipynb') and '.ipynb_checkpoints' not in dirpath
     ]
+    lst = [fname for fname in lst if 'site-packages' not in fname]
 
     notebooks = []
     for fname in lst:
