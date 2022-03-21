@@ -2,7 +2,7 @@
 
 ## Website
 
-https://amplcolab.readthedocs.io
+https://colab.ampl.com
 
 ## Contribution Guide
 
@@ -38,7 +38,7 @@ $ python badges.py
 
 ### Updating index
 
-The following command updates the readme file and the shpinx documentation:
+The following command updates the readme file and the index in the documentation:
 ```bash
 $ python index.py
 ```
