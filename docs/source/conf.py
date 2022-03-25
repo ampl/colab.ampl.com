@@ -73,7 +73,7 @@ pygments_style = "sphinx"
 # a list of builtin themes.
 # html_theme = 'sphinxdoc'
 # html_theme = 'alabaster'
-html_theme = "pydata_sphinx_theme"
+html_theme = "ampl_sphinx_theme"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -88,9 +88,9 @@ html_theme_options = {
             "icon": "fab fa-github fa-fw",
         },
         {
-            "name": "AMPL Projects",
-            "url": "https://ampl.github.io",
-            "icon": "fas fa-project-diagram fa-fw",
+            "name": "AMPL Resources",
+            "url": "https://developers.ampl.com",
+            "icon": "fas fa-book fa-fw",
             "target": "_self",
         },
         {
@@ -110,10 +110,11 @@ html_theme_options = {
     "external_links": [
         # {"name": "ampl.github.io", "url": "https://ampl.github.io"},
     ],
+    "logo_text": "Colaboratory",
 }
-html_context = {
-    "theme_logo_text": "Colaboratory",
-}
+# html_context = {
+#     "theme_logo_text": "Colaboratory",
+# }
 
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -143,9 +144,9 @@ html_favicon = "_static/cropped-favicon-raw-192x192.png"
 html_static_path = ["_static"]
 
 # Add custom css file
-html_css_files = [
-    "css/custom.css",
-]
+# html_css_files = [
+#     "css/custom.css",
+# ]
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
