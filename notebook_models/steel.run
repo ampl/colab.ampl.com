@@ -1,0 +1,5 @@
+model steel.mod;
+data steel.dat;
+option solver cbc;
+solve;
+display Make;

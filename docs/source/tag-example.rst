@@ -18,9 +18,6 @@ Author: Filipe Brandão
     :alt: Open In Colab
     
 
-
-
-
 Efficient Frontier with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Efficient Frontier example using Google Sheets
@@ -37,9 +34,6 @@ Author: Christian Valente
     :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb
     :alt: Open In Colab
     
-
-
-
 
 Jupyter Notebook Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

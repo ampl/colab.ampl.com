@@ -1,0 +1,5 @@
+model transp.mod;
+data transp.dat;
+option solver cbc;
+solve;
+display Trans;

@@ -1,0 +1,5 @@
+model diet.mod;
+data diet.dat;
+option solver cbc;
+solve;
+display Buy;

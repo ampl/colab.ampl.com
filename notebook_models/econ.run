@@ -1,0 +1,4 @@
+model econ.mod;
+data econ.dat;
+option solver cplex;
+solve;

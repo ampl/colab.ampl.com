@@ -1,0 +1,5 @@
+model nltransd.mod;
+data nltrans.dat;
+option solver ipopt;
+solve;
+display Trans;

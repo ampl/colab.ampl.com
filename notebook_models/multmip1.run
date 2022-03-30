@@ -1,0 +1,6 @@
+model multmip1.mod;
+dat multmip1.dat;
+option solver cbc;
+solve;
+display Use;
+display Trans;

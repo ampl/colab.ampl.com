@@ -1,0 +1,5 @@
+model net1.mod;
+data net1.dat;
+option solver cbc;
+solve;
+display Ship;

@@ -1,0 +1,5 @@
+model prod.mod;
+data prod.dat;
+option solver cbc;
+solve;
+display X;
