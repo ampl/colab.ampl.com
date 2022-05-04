@@ -1,5 +1,9 @@
 import json
 from utils import list_notebooks, list_badges
+import os
+
+os.chdir(os.path.dirname(__file__) or os.curdir)
+os.chdir("..")
 
 NOTEBOOKS = list_notebooks()
 
