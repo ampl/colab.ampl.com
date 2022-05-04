@@ -10,6 +10,7 @@ Tags
 
     tag-ampl-only
     tag-ampl-book
+    tag-ampl-lecture
     tag-amplpy
     tag-example
     tag-finance
