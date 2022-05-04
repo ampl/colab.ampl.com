@@ -20,7 +20,7 @@ def notebook_headers(
     dependencies=[],
     modules=["ampl", "coin"],
 ):
-    badges = list_badges(fname, colab_only=False)
+    badges = list_badges(fname.replace("../", ""), colab_only=False)
     modules_str = ", ".join(["'" + m + "'" for m in modules])
     return [
         {
