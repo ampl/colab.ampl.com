@@ -80,6 +80,7 @@ Tags
     tag-amplpy
     tag-example
     tag-finance
+    tag-callbacks
     tag-google-sheets
     tag-industry
     tag-template
