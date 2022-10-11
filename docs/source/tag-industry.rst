@@ -3,7 +3,7 @@ industry
 
 AMPL Model Colaboratory Template
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Basic notebook templace for the AMPL Colab repository
+Description: Basic notebook template for the AMPL Colab repository
 
 Tags: ampl-only, template, industry
 
