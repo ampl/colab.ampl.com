@@ -39,10 +39,11 @@ for info in NOTEBOOKS:
     cells[0]["source"] = header
 
     for i in range(1, len(cells)):
-        assert len(cells[i]["source"]) > 0
-        if cells[i]["source"][0].startswith("# Google Colab & Kaggle interagration"):
+        source = cells[i]["source"]
+        assert len(source) > 0
+        if source[0].startswith("# Google Colab & Kaggle interagration"):
             assert cells[i]["cell_type"] == "code"
-            modules = cells[i]["source"][1]
+            modules = source[1]
             assert modules.startswith("MODULES")
             cells[i]["source"] = [
                 "# Google Colab & Kaggle interagration\n",
@@ -51,6 +52,8 @@ for info in NOTEBOOKS:
                 "ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics",
             ]
             break
+    else:
+        raise Exception(f"Could not find integration cell in {fname}")
 
     open(fname, "w").write(
         json.dumps(data, separators=(",", ":"), ensure_ascii=False) + "\n"
