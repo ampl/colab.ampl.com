@@ -38,6 +38,20 @@ for info in NOTEBOOKS:
     # Update header with new badges
     cells[0]["source"] = header
 
+    for i in range(1, len(cells)):
+        assert len(cells[i]["source"]) > 0
+        if cells[i]["source"][0].startswith("# Google Colab & Kaggle interagration"):
+            assert cells[i]["cell_type"] == "code"
+            modules = cells[i]["source"][1]
+            assert modules.startswith("MODULES")
+            cells[i]["source"] = [
+                "# Google Colab & Kaggle interagration\n",
+                modules,
+                "from amplpy import tools\n",
+                "ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics",
+            ]
+            break
+
     open(fname, "w").write(
         json.dumps(data, separators=(",", ":"), ensure_ascii=False) + "\n"
     )

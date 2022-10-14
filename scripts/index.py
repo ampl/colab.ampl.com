@@ -38,22 +38,22 @@ References: <optional>
 
 3. Do not modify the initial cells that take care of setup and jupyter notebook integration.
 
-4. Update the badges and the index as shown below before commiting.
+4. Update the badges and the index as shown below before committing.
 
 Note: The default license for every notebook is [MIT](https://github.com/ampl/amplcolab/blob/master/LICENSE) unless specified otherwise in the notebook.
 
-### Updating badges
+### Updating badges & headers
 
 The following command will patch every notebook in the repository with badges corresponding to the notebook location:
 ```bash
-$ python badges.py
+$ python scripts/headers.py
 ```
 
 ### Updating index
 
 The following command updates the readme file and the index in the documentation:
 ```bash
-$ python index.py
+$ python scripts/index.py
 ```
 
 ## Notebooks
