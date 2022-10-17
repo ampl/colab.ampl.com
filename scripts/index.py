@@ -72,18 +72,16 @@ Tags
 ----
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
-    tag-ampl-only
     tag-ampl-book
     tag-ampl-lecture
-    tag-amplpy
     tag-example
     tag-finance
     tag-callbacks
     tag-google-sheets
     tag-industry
-    tag-template
+    tags
 
 Notebooks
 ---------
