@@ -1,3 +1,5 @@
+.. _tag-heuristics:
+
 heuristics
 ==========
 

@@ -1,3 +1,5 @@
+.. _tag-vector-packing:
+
 vector-packing
 ==============
 

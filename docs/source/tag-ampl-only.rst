@@ -1,3 +1,5 @@
+.. _tag-ampl-only:
+
 ampl-only
 =========
 

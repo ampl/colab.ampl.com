@@ -1,3 +1,5 @@
+.. _tag-power-generation:
+
 power-generation
 ================
 

@@ -1,3 +1,5 @@
+.. _tag-mixed-integer-linear:
+
 mixed-integer-linear
 ====================
 

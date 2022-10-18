@@ -1,3 +1,5 @@
+.. _tag-google-sheets:
+
 google-sheets
 =============
 

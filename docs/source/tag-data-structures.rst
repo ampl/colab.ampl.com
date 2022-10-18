@@ -1,3 +1,5 @@
+.. _tag-data-structures:
+
 data-structures
 ===============
 

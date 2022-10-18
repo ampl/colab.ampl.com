@@ -1,3 +1,5 @@
+.. _tag-planning:
+
 planning
 ========
 

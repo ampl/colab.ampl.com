@@ -1,3 +1,5 @@
+.. _tag-cutting-stock:
+
 cutting-stock
 =============
 

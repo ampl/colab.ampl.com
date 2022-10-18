@@ -1,3 +1,5 @@
+.. _tag-complementarity_problem:
+
 complementarity_problem
 =======================
 

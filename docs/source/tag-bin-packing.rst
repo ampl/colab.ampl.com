@@ -1,3 +1,5 @@
+.. _tag-bin-packing:
+
 bin-packing
 ===========
 

@@ -68,6 +68,34 @@ print(
 AMPL Model Colaboratory
 =======================
 
+Introduction
+------------
+
+AMPL Model Colaboratory is a collection of AMPL models in Jupyter Notebooks
+that run on platforms such as Google Colab, Kaggle, Gradient, and AWS SageMaker.
+
+In order to be use AMPL on these platforms you just need to following two code blocks
+at the beginning of your notebook:
+
+.. code-block:: bash
+
+   # Install dependencies
+   !pip install -q amplpy
+
+
+
+.. code-block:: python
+
+   # Google Colab & Kaggle interagration
+   MODULES=['ampl', 'coin', 'highs']
+   from amplpy import tools
+   ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics
+
+
+In the list ``MODULES`` you can specify the AMPL solvers you want to use in your notebook.
+As a quick-start you can use our template notebook: :ref:`tag-template`.
+You can contribute to this repository by making pull requests to https://github.com/ampl/amplcolab and following the instructions in the  `README.md <https://github.com/ampl/amplcolab/blob/master/README.md>`_ file.
+
 Tags
 ----
 
@@ -141,6 +169,7 @@ for tag in tagged:
     tag_rst = open(f"docs/source/tag-{tag}.rst", "w")
     title = f"{tag}"
     title += "\n" + "=" * len(title) + "\n"
-    print(title, file=tag_rst)
+    header = f".. _tag-{tag}:\n\n{title}"
+    print(header, file=tag_rst)
     for info in tagged[tag]:
         print_rst(info, tag_rst)

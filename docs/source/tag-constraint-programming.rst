@@ -1,3 +1,5 @@
+.. _tag-constraint-programming:
+
 constraint-programming
 ======================
 

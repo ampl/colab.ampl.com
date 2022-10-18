@@ -1,3 +1,5 @@
+.. _tag-graphs:
+
 graphs
 ======
 
