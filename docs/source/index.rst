@@ -36,14 +36,14 @@ Tags
 .. toctree::
     :maxdepth: 1
 
-    tag-ampl-book
-    tag-ampl-lecture
-    tag-example
-    tag-finance
-    tag-callbacks
-    tag-google-sheets
-    tag-industry
-    tags
+    tags/ampl-book
+    tags/ampl-lecture
+    tags/example
+    tags/finance
+    tags/callbacks
+    tags/google-sheets
+    tags/industry
+    tags/index
 
 Notebooks
 ---------

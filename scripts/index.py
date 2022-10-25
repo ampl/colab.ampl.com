@@ -102,14 +102,14 @@ Tags
 .. toctree::
     :maxdepth: 1
 
-    tag-ampl-book
-    tag-ampl-lecture
-    tag-example
-    tag-finance
-    tag-callbacks
-    tag-google-sheets
-    tag-industry
-    tags
+    tags/ampl-book
+    tags/ampl-lecture
+    tags/example
+    tags/finance
+    tags/callbacks
+    tags/google-sheets
+    tags/industry
+    tags/index
 
 Notebooks
 ---------
@@ -165,8 +165,20 @@ Copyright © 2022-2022 AMPL Optimization inc. All rights reserved.
     file=readme,
 )
 
+tags_index = """
+Tags
+====
+
+.. toctree::
+    :maxdepth: 1
+
+"""
+for tag in sorted(tagged):
+    tags_index += f"    {tag}\n"
+print(tags_index, file=open(f"docs/source/tags/index.rst", "w"))
+
 for tag in tagged:
-    tag_rst = open(f"docs/source/tag-{tag}.rst", "w")
+    tag_rst = open(f"docs/source/tags/{tag}.rst", "w")
     title = f"{tag}"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _tag-{tag}:\n\n{title}"
