@@ -36,13 +36,13 @@ Tags
 .. toctree::
     :maxdepth: 1
 
-    tags/ampl-book
     tags/ampl-lecture
-    tags/example
     tags/finance
+    tags/industry
+    tags/military
+    tags/example
     tags/callbacks
     tags/google-sheets
-    tags/industry
     tags/index
 
 Notebooks
