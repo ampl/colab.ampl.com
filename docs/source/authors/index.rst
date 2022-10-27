@@ -2,6 +2,8 @@
 Authors
 =======
 
+The notebooks in this repository are contributed by the following authors:
+
 .. toctree::
     :maxdepth: 1
 

@@ -7,9 +7,9 @@ Financial Portfolio Optimization with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Financial Portfolio Optimization with amplpy and amplpyfinance
 
-Tags: amplpy, amplpyfinance, finance
+Tags: :ref:`tag-amplpy`, :ref:`tag-amplpyfinance`, :ref:`tag-finance`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb

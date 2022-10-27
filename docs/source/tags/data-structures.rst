@@ -7,9 +7,9 @@ Hospitals-Residents MIP
 ^^^^^^^^^^^^^^^^^^^^^^^
 Description: hospitals-residents problem with ties problem solved with ampl and highs
 
-Tags: ampl-api, assignment, mip, data-structures, graphs
+Tags: :ref:`tag-ampl-api`, :ref:`tag-assignment`, :ref:`tag-mip`, :ref:`tag-data-structures`, :ref:`tag-graphs`
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/hospitals_residents.ipynb

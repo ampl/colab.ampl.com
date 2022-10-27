@@ -7,9 +7,9 @@ Book Example: Economic equilibria
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: economic model using complementarity conditions from Chapter 19 AMPL book
 
-Tags: ampl-only, ampl-book, finance, complementarity_problem
+Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity_problem`
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb

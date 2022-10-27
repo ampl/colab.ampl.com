@@ -7,9 +7,9 @@ Diet lecture
 ^^^^^^^^^^^^
 Description: Diet case study
 
-Tags: ampl-only, ampl-lecture
+Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/diet_case_study.ipynb
@@ -36,9 +36,9 @@ Steel industry problem
 ^^^^^^^^^^^^^^^^^^^^^^
 Description: model for steel production problem
 
-Tags: ampl-only, ampl-lecture, industry
+Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`, :ref:`tag-industry`
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/steel_lecture.ipynb
@@ -65,9 +65,9 @@ Transportation problem
 ^^^^^^^^^^^^^^^^^^^^^^
 Description: an AMPL model for the transportation problem
 
-Tags: ampl-only, ampl-lecture
+Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/transp_lecture.ipynb

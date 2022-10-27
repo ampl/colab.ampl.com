@@ -7,9 +7,9 @@ AMPL Model Colaboratory Template
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Basic notebook template for the AMPL Colab repository
 
-Tags: ampl-only, template, industry
+Tags: :ref:`tag-ampl-only`, :ref:`tag-template`, :ref:`tag-industry`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb
@@ -36,9 +36,9 @@ Production model
 ^^^^^^^^^^^^^^^^
 Description: generic model for production problem
 
-Tags: ampl-only, ampl-book, industry
+Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-industry`
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/production_model.ipynb
@@ -65,9 +65,9 @@ Steel industry problem
 ^^^^^^^^^^^^^^^^^^^^^^
 Description: model for steel production problem
 
-Tags: ampl-only, ampl-lecture, industry
+Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`, :ref:`tag-industry`
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/steel_lecture.ipynb
@@ -94,9 +94,9 @@ VPSolver: Cutting & Packing Problems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Solving cutting & packing problems using arc-flow formulations
 
-Tags: industry, cutting-stock, bin-packing, vector-packing
+Tags: :ref:`tag-industry`, :ref:`tag-cutting-stock`, :ref:`tag-bin-packing`, :ref:`tag-vector-packing`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/vpsolver.ipynb

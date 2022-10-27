@@ -87,18 +87,32 @@ at the beginning of your notebook:
 
 .. code-block:: python
 
-   # Google Colab & Kaggle interagration
-   MODULES=['ampl', 'coin', 'highs']
+   # Google Colab & Kaggle integration
+   MODULES=['ampl', 'coin', 'highs', 'gokestrel']
    from amplpy import tools
    ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics
 
 
 In the list ``MODULES`` you can specify the AMPL solvers you want to use in your notebook.
 As a quick-start you can use our template notebook: :ref:`tag-template`.
-You can contribute to this repository by making pull requests to https://github.com/ampl/amplcolab and following the instructions in the  `README.md <https://github.com/ampl/amplcolab/blob/master/README.md>`_ file.
+You can contribute to this repository by making pull requests to https://github.com/ampl/amplcolab and following the instructions in the  `README <https://github.com/ampl/amplcolab/blob/master/README.md>`_ file.
 
-Index
------
+In these notebooks there are ``%%ampl_eval`` cells that allow you to run AMPL code directly from the notebook. 
+They are equivalent to ``ampl.eval(\"\"\"cell content\"\"\")``.
+
+.. note::
+    Some notebooks require a license to run due to the problem size. You can use a free `AMPL Community
+    Edition license <https://ampl.com/ce/>`_ with an open-source solver (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
+    or with a commercial solver from the `NEOS Server <http://www.neos-server.org/>`_ as described in <https://dev.ampl.com/solvers/kestrel.html>.
+    In the list ``MODULES`` you need to include 
+    ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 
+    ``"highs"`` for the `HiGHS <https://highs.dev/>`_ solver; 
+    ``"coin"`` for the `COIN-OR <https://www.coin-or.org/>`_ solvers.
+    To use other commercial solvers without NEOS, you need to use a cloud license that includes the commercial solver.
+ 
+
+Main categories
+---------------
 
 .. toctree::
     :maxdepth: 1
@@ -108,8 +122,18 @@ Index
     tags/industry
     tags/military
     tags/google-sheets
-    tags/index
+
+Authors
+-------
+
+The notebooks in this repository are contributed by the following authors:
+
+.. toctree::
+    :maxdepth: 2
+
     authors/index
+
+Your name can be here too. Just make a pull request to https://github.com/ampl/amplcolab.
 
 Notebooks
 ---------
@@ -136,16 +160,27 @@ def print_rst(info, fout):
         print(f"Description: {description}\n", file=fout)
     tags = info.get("tags", None)
     if tags:
+        tags = [f":ref:`tag-{tag}`" for tag in tags]
         print(f'Tags: {", ".join(tags)}\n', file=fout)
-    author = info.get("notebook_author", None)
-    if author:
-        author = author.replace("<<", "<").replace(">>", ">")
-        print(f"Author: {author}\n", file=fout)
+    authors = info.get("notebook_author", None)
+    if authors:
+        authors = authors.replace("<<", "<").replace(">>", ">")
+        lst = []
+        for author in authors.split(","):
+            author = author.strip()
+            if "<" in author:
+                name = author[: author.find("<")]
+                email = author[author.find("<") + 1 : author.find(">")]
+                lst.append(f":ref:`email-{email.replace('@', '_at_')}` <{email}>")
+            else:
+                lst.append(author)
+        print(f"Author: {', '.join(lst)}\n", file=fout)
     print("\n".join(badges) + "\n", file=fout)
 
 
 madeby = {}
 tagged = {}
+names = {}
 for info in NOTEBOOKS:
     title, fname = info["title"], info["fname"]
     print(f"Getting tags and authors of {fname}")
@@ -162,10 +197,25 @@ for info in NOTEBOOKS:
         name = author[: author.find("<<")].strip()
         if email not in madeby:
             madeby[email] = []
-        madeby[email].append((name, info))
+            names[email] = name
+        madeby[email].append(info)
 
     print_markdown(info, readme)
     print_rst(info, index)
+
+
+print(
+    """
+Tag list
+--------
+
+.. toctree::
+    :maxdepth: 2
+
+    tags/index
+""",
+    file=index,
+)
 
 print(
     """## License
@@ -187,7 +237,7 @@ Tags
 ====
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
 """
 for tag in sorted(tagged):
@@ -211,6 +261,8 @@ authors_index = """
 Authors
 =======
 
+The notebooks in this repository are contributed by the following authors:
+
 .. toctree::
     :maxdepth: 1
 
@@ -220,12 +272,13 @@ for email in madeby:
     authors_index += f"    {email}\n"
 print(authors_index, file=open(f"docs/source/authors/index.rst", "w"))
 
-for email, infolst in madeby.items():
+for name, email in sorted(((name, email) for email, name in names.items())):
+    lst = madeby[email]
     email = email.replace("@", "_at_")
     email_rst = open(f"docs/source/authors/{email}.rst", "w")
-    title = f"{infolst[0][0]}"
+    title = f"{name} ({len(lst)} notebook{'s' if len(lst) > 1 else ''})"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _email-{email}:\n\n{title}"
     print(header, file=email_rst)
-    for _, info in infolst:
+    for info in lst:
         print_rst(info, email_rst)

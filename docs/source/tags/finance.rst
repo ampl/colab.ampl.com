@@ -7,9 +7,9 @@ Book Example: Economic equilibria
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: economic model using complementarity conditions from Chapter 19 AMPL book
 
-Tags: ampl-only, ampl-book, finance, complementarity_problem
+Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity_problem`
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb
@@ -36,9 +36,9 @@ Financial Portfolio Optimization with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Financial Portfolio Optimization with amplpy and amplpyfinance
 
-Tags: amplpy, amplpyfinance, finance
+Tags: :ref:`tag-amplpy`, :ref:`tag-amplpyfinance`, :ref:`tag-finance`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb
@@ -65,9 +65,9 @@ Optimization Methods in Finance: Chapter 3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Optimization Methods in Finance: Bond Dedication Problem.
 
-Tags: amplpy, example, finance
+Tags: :ref:`tag-amplpy`, :ref:`tag-example`, :ref:`tag-finance`
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb

@@ -1,15 +1,15 @@
 .. _email-ccv_at_ampl.com:
 
-Christian Valente
-=================
+Christian Valente (2 notebooks)
+===============================
 
 Efficient Frontier with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Efficient Frontier example using Google Sheets
 
-Tags: amplpy, google-sheets, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
 
-Author: Christian Valente <ccv@ampl.com>
+Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb
@@ -24,9 +24,9 @@ Travelling Salesman Problem with subtour elimination
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: this example shows how to solve a TSP  by eliminating subtours using amplpy and ampls
 
-Tags: callbacks, tsp
+Tags: :ref:`tag-callbacks`, :ref:`tag-tsp`
 
-Author: Christian Valente <ccv@ampl.com>
+Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/tsp_simple_cuts_generic.ipynb

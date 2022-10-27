@@ -7,9 +7,9 @@ Diet model with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Diet model using Google Sheets
 
-Tags: amplpy, google-sheets, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/gspread.ipynb
@@ -24,9 +24,9 @@ Efficient Frontier with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Efficient Frontier example using Google Sheets
 
-Tags: amplpy, google-sheets, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
 
-Author: Christian Valente <ccv@ampl.com>
+Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb

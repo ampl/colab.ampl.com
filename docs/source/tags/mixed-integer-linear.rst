@@ -7,9 +7,9 @@ Multicommodity transportation problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Multicommodity transportation model with binary variables
 
-Tags: ampl-only, ampl-book, mixed-integer-linear
+Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-mixed-integer-linear`
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/multmip1.ipynb

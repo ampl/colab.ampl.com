@@ -7,9 +7,9 @@ Diet model with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Diet model using Google Sheets
 
-Tags: amplpy, google-sheets, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/gspread.ipynb
@@ -24,9 +24,9 @@ Efficient Frontier with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Efficient Frontier example using Google Sheets
 
-Tags: amplpy, google-sheets, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
 
-Author: Christian Valente <ccv@ampl.com>
+Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb
@@ -41,9 +41,9 @@ Jupyter Notebook Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Jupyter Notebook Integration with amplpy
 
-Tags: amplpy, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/magics.ipynb
@@ -70,9 +70,9 @@ Optimization Methods in Finance: Chapter 3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Optimization Methods in Finance: Bond Dedication Problem.
 
-Tags: amplpy, example, finance
+Tags: :ref:`tag-amplpy`, :ref:`tag-example`, :ref:`tag-finance`
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
@@ -99,9 +99,9 @@ Pattern Enumeration
 ^^^^^^^^^^^^^^^^^^^
 Description: Pattern enumeration example with amplpy
 
-Tags: amplpy, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pattern_enumeration.ipynb
@@ -128,9 +128,9 @@ Pattern Generation
 ^^^^^^^^^^^^^^^^^^
 Description: Pattern generation example with amplpy
 
-Tags: amplpy, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pattern_generation.ipynb
@@ -157,9 +157,9 @@ Roll Cutting - Revision 1 & 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Pattern tradeoff example with amplpy
 
-Tags: amplpy, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pattern_tradeoff.ipynb
@@ -186,9 +186,9 @@ amplpy setup & Quick Start
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: amplpy setup and quick start
 
-Tags: amplpy, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/quickstart.ipynb

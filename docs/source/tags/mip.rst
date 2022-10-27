@@ -7,9 +7,9 @@ Capacity expansion of power generation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Models the extensive form of a deterministic multi-stage capacity expansion problem. In this model we can have multiple resources of the same type which have identical properties. The model can be further developed into a stochastic one.
 
-Tags: ampl-only, planning, mip, power-generation
+Tags: :ref:`tag-ampl-only`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`
 
-Author: Gyorgy Matyasfalvi <gyorgy@ampl.com>
+Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/capacity_expansion.ipynb
@@ -36,9 +36,9 @@ Hospitals-Residents MIP
 ^^^^^^^^^^^^^^^^^^^^^^^
 Description: hospitals-residents problem with ties problem solved with ampl and highs
 
-Tags: ampl-api, assignment, mip, data-structures, graphs
+Tags: :ref:`tag-ampl-api`, :ref:`tag-assignment`, :ref:`tag-mip`, :ref:`tag-data-structures`, :ref:`tag-graphs`
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/hospitals_residents.ipynb

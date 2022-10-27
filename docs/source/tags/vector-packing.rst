@@ -7,9 +7,9 @@ VPSolver: Cutting & Packing Problems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Solving cutting & packing problems using arc-flow formulations
 
-Tags: industry, cutting-stock, bin-packing, vector-packing
+Tags: :ref:`tag-industry`, :ref:`tag-cutting-stock`, :ref:`tag-bin-packing`, :ref:`tag-vector-packing`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/vpsolver.ipynb

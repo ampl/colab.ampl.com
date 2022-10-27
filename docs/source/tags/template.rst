@@ -7,9 +7,9 @@ AMPL Model Colaboratory Template
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Basic notebook template for the AMPL Colab repository
 
-Tags: ampl-only, template, industry
+Tags: :ref:`tag-ampl-only`, :ref:`tag-template`, :ref:`tag-industry`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb

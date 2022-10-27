@@ -1,15 +1,15 @@
 .. _email-fdabrandao_at_gmail.com:
 
-Filipe Brandão
-==============
+Filipe Brandão (10 notebooks)
+=============================
 
 AMPL Model Colaboratory Template
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Basic notebook template for the AMPL Colab repository
 
-Tags: ampl-only, template, industry
+Tags: :ref:`tag-ampl-only`, :ref:`tag-template`, :ref:`tag-industry`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb
@@ -36,9 +36,9 @@ Diet model with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Diet model using Google Sheets
 
-Tags: amplpy, google-sheets, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/gspread.ipynb
@@ -53,9 +53,9 @@ Financial Portfolio Optimization with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Financial Portfolio Optimization with amplpy and amplpyfinance
 
-Tags: amplpy, amplpyfinance, finance
+Tags: :ref:`tag-amplpy`, :ref:`tag-amplpyfinance`, :ref:`tag-finance`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb
@@ -82,9 +82,9 @@ Jupyter Notebook Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Jupyter Notebook Integration with amplpy
 
-Tags: amplpy, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/magics.ipynb
@@ -111,9 +111,9 @@ Network design with redundancy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Design of an electricity transportation network provides enough redundancy, so that a break of one component does not prevent any user from receiving electricity. The approach also works for similar distribution networks and can potentially be used in the design of military logistic networks.
 
-Tags: electric-grid, military
+Tags: :ref:`tag-electric-grid`, :ref:`tag-military`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/military/electric_grid_with_redundancy.ipynb
@@ -140,9 +140,9 @@ Pattern Enumeration
 ^^^^^^^^^^^^^^^^^^^
 Description: Pattern enumeration example with amplpy
 
-Tags: amplpy, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pattern_enumeration.ipynb
@@ -169,9 +169,9 @@ Pattern Generation
 ^^^^^^^^^^^^^^^^^^
 Description: Pattern generation example with amplpy
 
-Tags: amplpy, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pattern_generation.ipynb
@@ -198,9 +198,9 @@ Roll Cutting - Revision 1 & 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Pattern tradeoff example with amplpy
 
-Tags: amplpy, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pattern_tradeoff.ipynb
@@ -227,9 +227,9 @@ VPSolver: Cutting & Packing Problems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Solving cutting & packing problems using arc-flow formulations
 
-Tags: industry, cutting-stock, bin-packing, vector-packing
+Tags: :ref:`tag-industry`, :ref:`tag-cutting-stock`, :ref:`tag-bin-packing`, :ref:`tag-vector-packing`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/vpsolver.ipynb
@@ -256,9 +256,9 @@ amplpy setup & Quick Start
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: amplpy setup and quick start
 
-Tags: amplpy, example
+Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 
-Author: Filipe Brandão <fdabrandao@gmail.com>
+Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/quickstart.ipynb
