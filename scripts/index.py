@@ -267,7 +267,8 @@ The notebooks in this repository are contributed by the following authors:
     :maxdepth: 1
 
 """
-for email in madeby:
+authors_sorted = sorted(((name, email) for email, name in names.items()))
+for _, email in authors_sorted:
     email = email.lower().replace("@", "_at_")
     authors_index += f"    {email}\n"
 authors_index += """
@@ -275,7 +276,8 @@ authors_index += """
 """
 print(authors_index, file=open(f"docs/source/authors/index.rst", "w"))
 
-for name, email in sorted(((name, email) for email, name in names.items())):
+for name, email in authors_sorted:
+    print(f">>{name} <{email}>")
     lst = madeby[email]
     email = email.replace("@", "_at_")
     email_rst = open(f"docs/source/authors/{email}.rst", "w")
