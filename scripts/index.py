@@ -139,6 +139,7 @@ def print_rst(info, fout):
         print(f'Tags: {", ".join(tags)}\n', file=fout)
     author = info.get("notebook_author", None)
     if author:
+        author = author.replace("<<", "<").replace(">>", ">")
         print(f"Author: {author}\n", file=fout)
     print("\n".join(badges) + "\n", file=fout)
 
@@ -147,6 +148,7 @@ madeby = {}
 tagged = {}
 for info in NOTEBOOKS:
     title, fname = info["title"], info["fname"]
+    print(f"Getting tags and authors of {fname}")
     for tag in info.get("tags", []):
         if tag not in tagged:
             tagged[tag] = []
@@ -155,8 +157,9 @@ for info in NOTEBOOKS:
         author = author.strip()
         if "<" not in author:
             continue
-        email = author[author.find("<") + 1 : author.rfind(">")].strip()
-        name = author[: author.find("<")].strip()
+        assert "<<" in author and ">>" in author
+        email = author[author.find("<<") + 2 : author.rfind(">>")].strip()
+        name = author[: author.find("<<")].strip()
         if email not in madeby:
             madeby[email] = []
         madeby[email].append((name, info))

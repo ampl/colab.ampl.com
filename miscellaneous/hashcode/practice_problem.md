@@ -64,37 +64,15 @@ Here is some documentation and examples of the API: [Documentation](http://amplp
 
 
 ```python
-!pip install -q amplpy ampltools
+!pip install -q amplpy
 ```
 
 
 ```python
-import os
-RUNNING_IN_GOOGLE_COLAB = 'COLAB_GPU' in os.environ
-RUNNING_IN_KAGGLE = os.path.abspath(os.curdir).startswith('/kaggle/')
-RUNNING_IN_THE_CLOUD = RUNNING_IN_GOOGLE_COLAB or RUNNING_IN_KAGGLE
-
-# If you have an AMPL Cloud License or an AMPL CE license, you can use it on Google Colab and similar platforms.
-# Note: Your license UUID should never be shared. Please make sure you delete the license UUID
-# and rerun this cell before sharing the notebook with anyone.
-LICENSE_UUID = None
-# You can install individual modules from https://portal.ampl.com/dl/modules/
-MODULES = ['ampl', 'gurobi']
-# Set to True in order to install AMPL only once 
-RUN_ONCE = True
-if RUNNING_IN_THE_CLOUD:
-    from ampltools import ampl_installer
-    ampl_dir = os.path.abspath(os.path.join(os.curdir, 'ampl.linux-intel64'))
-    ampl_installer(ampl_dir, modules=MODULES, license_uuid=LICENSE_UUID, run_once=RUN_ONCE, verbose=True)
-    os.environ['PATH'] += os.pathsep + ampl_dir
-
-# Import, instantiate an ampl object and register jupyter notebook magics
-from amplpy import AMPL, register_magics
-ampl = AMPL()
-# ampl.eval('option version;')
-# Store %%ampl cells in the list _ampl_cells
-# Evaluate %%ampl_eval cells with ampl.eval()
-register_magics(store_name='_ampl_cells', ampl_object=ampl)
+# Google Colab & Kaggle interagration
+MODULES=['ampl', 'gurobi', 'highs']
+from amplpy import tools
+ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics
 ```
 
 ## Solving problem with AMPL

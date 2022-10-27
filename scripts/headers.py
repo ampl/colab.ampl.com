@@ -41,7 +41,22 @@ for info in NOTEBOOKS:
     for i in range(1, len(cells)):
         source = cells[i]["source"]
         assert len(source) > 0
-        if source[0].startswith("# Google Colab & Kaggle interagration"):
+        if source[0].startswith("# Install dependencies"):
+            assert cells[i]["cell_type"] == "code"
+            for dependencies in source:
+                if dependencies.replace(" -q", "").startswith("!pip install amplpy"):
+                    break
+            else:
+                raise Exception(f"amplpy is not being installed in {fname}")
+            cells[i]["outputs"] = []
+            break
+    else:
+        raise Exception(f"Could not find dependencies cell in {fname}")
+
+    for i in range(1, len(cells)):
+        source = cells[i]["source"]
+        assert len(source) > 0
+        if source[0].startswith("# Google Colab & Kaggle integration"):
             assert cells[i]["cell_type"] == "code"
             modules = source[1]
             assert modules.startswith("MODULES")
@@ -51,6 +66,7 @@ for info in NOTEBOOKS:
                 "from amplpy import tools\n",
                 "ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics",
             ]
+            cells[i]["outputs"] = []
             break
     else:
         raise Exception(f"Could not find integration cell in {fname}")
