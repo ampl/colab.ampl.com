@@ -13,3 +13,5 @@ The notebooks in this repository are contributed by the following authors:
     gyorgy_at_ampl.com
     ccv_at_ampl.com
 
+**Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab.
+

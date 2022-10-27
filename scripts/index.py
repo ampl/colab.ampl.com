@@ -72,7 +72,7 @@ AMPL Model Colaboratory
 Introduction
 ------------
 
-AMPL Model Colaboratory is a collection of AMPL models in Jupyter Notebooks
+AMPL Model Colaboratory is a collection of AMPL models in `Jupyter Notebooks <https://jupyter.org/>`_
 that run on platforms such as Google Colab, Kaggle, Gradient, and AWS SageMaker.
 
 In order to be use AMPL on these platforms you just need to following two code blocks
@@ -133,7 +133,7 @@ The notebooks in this repository are contributed by the following authors:
 
     authors/index
 
-Your name can be here too. Just make a pull request to https://github.com/ampl/amplcolab.
+**Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab.
 
 Notebooks
 ---------
@@ -270,6 +270,9 @@ The notebooks in this repository are contributed by the following authors:
 for email in madeby:
     email = email.lower().replace("@", "_at_")
     authors_index += f"    {email}\n"
+authors_index += """
+**Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab.
+"""
 print(authors_index, file=open(f"docs/source/authors/index.rst", "w"))
 
 for name, email in sorted(((name, email) for email, name in names.items())):
