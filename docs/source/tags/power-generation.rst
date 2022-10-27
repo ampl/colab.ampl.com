@@ -9,7 +9,7 @@ Description: Models the extensive form of a deterministic multi-stage capacity e
 
 Tags: ampl-only, planning, mip, power-generation
 
-Author: Gyorgy Matyasfalvi
+Author: Gyorgy Matyasfalvi <gyorgy@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/capacity_expansion.ipynb

@@ -9,7 +9,7 @@ Description: this example shows how to solve a TSP  by eliminating subtours usin
 
 Tags: callbacks, tsp
 
-Author: Christian Valente
+Author: Christian Valente <ccv@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/tsp_simple_cuts_generic.ipynb

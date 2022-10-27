@@ -9,7 +9,7 @@ Description: Diet model using Google Sheets
 
 Tags: amplpy, google-sheets, example
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/gspread.ipynb
@@ -26,7 +26,7 @@ Description: Efficient Frontier example using Google Sheets
 
 Tags: amplpy, google-sheets, example
 
-Author: Christian Valente
+Author: Christian Valente <ccv@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb

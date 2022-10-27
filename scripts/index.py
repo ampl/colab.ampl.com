@@ -1,4 +1,5 @@
 from utils import list_notebooks, list_badges
+import glob
 import os
 
 os.chdir(os.path.dirname(__file__) or os.curdir)
@@ -96,8 +97,8 @@ In the list ``MODULES`` you can specify the AMPL solvers you want to use in your
 As a quick-start you can use our template notebook: :ref:`tag-template`.
 You can contribute to this repository by making pull requests to https://github.com/ampl/amplcolab and following the instructions in the  `README.md <https://github.com/ampl/amplcolab/blob/master/README.md>`_ file.
 
-Tags
-----
+Index
+-----
 
 .. toctree::
     :maxdepth: 1
@@ -106,10 +107,9 @@ Tags
     tags/finance
     tags/industry
     tags/military
-    tags/example
-    tags/callbacks
     tags/google-sheets
     tags/index
+    authors/index
 
 Notebooks
 ---------
@@ -143,6 +143,7 @@ def print_rst(info, fout):
     print("\n".join(badges) + "\n", file=fout)
 
 
+madeby = {}
 tagged = {}
 for info in NOTEBOOKS:
     title, fname = info["title"], info["fname"]
@@ -150,6 +151,15 @@ for info in NOTEBOOKS:
         if tag not in tagged:
             tagged[tag] = []
         tagged[tag].append(info)
+    for author in info.get("notebook_author", "").split(","):
+        author = author.strip()
+        if "<" not in author:
+            continue
+        email = author[author.find("<") + 1 : author.rfind(">")].strip()
+        name = author[: author.find("<")].strip()
+        if email not in madeby:
+            madeby[email] = []
+        madeby[email].append((name, info))
 
     print_markdown(info, readme)
     print_rst(info, index)
@@ -165,6 +175,10 @@ Copyright © 2022-2022 AMPL Optimization inc. All rights reserved.
     file=readme,
 )
 
+# Tags
+
+for f in glob.glob("docs/source/tags/*.rst"):
+    os.remove(f)
 tags_index = """
 Tags
 ====
@@ -185,3 +199,30 @@ for tag in tagged:
     print(header, file=tag_rst)
     for info in tagged[tag]:
         print_rst(info, tag_rst)
+
+# Authors
+
+for f in glob.glob("docs/source/authors/*.rst"):
+    os.remove(f)
+authors_index = """
+Authors
+=======
+
+.. toctree::
+    :maxdepth: 1
+
+"""
+for email in madeby:
+    email = email.lower().replace("@", "_at_")
+    authors_index += f"    {email}\n"
+print(authors_index, file=open(f"docs/source/authors/index.rst", "w"))
+
+for email, infolst in madeby.items():
+    email = email.replace("@", "_at_")
+    email_rst = open(f"docs/source/authors/{email}.rst", "w")
+    title = f"{infolst[0][0]}"
+    title += "\n" + "=" * len(title) + "\n"
+    header = f".. _email-{email}:\n\n{title}"
+    print(header, file=email_rst)
+    for _, info in infolst:
+        print_rst(info, email_rst)

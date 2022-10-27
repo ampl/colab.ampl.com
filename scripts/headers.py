@@ -46,7 +46,7 @@ for info in NOTEBOOKS:
             modules = source[1]
             assert modules.startswith("MODULES")
             cells[i]["source"] = [
-                "# Google Colab & Kaggle interagration\n",
+                "# Google Colab & Kaggle integration\n",
                 modules,
                 "from amplpy import tools\n",
                 "ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics",

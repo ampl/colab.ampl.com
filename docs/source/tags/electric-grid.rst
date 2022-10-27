@@ -9,7 +9,7 @@ Description: Design of an electricity transportation network provides enough red
 
 Tags: electric-grid, military
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/military/electric_grid_with_redundancy.ipynb

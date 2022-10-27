@@ -9,7 +9,7 @@ Description: Diet model using Google Sheets
 
 Tags: amplpy, google-sheets, example
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/gspread.ipynb
@@ -26,7 +26,7 @@ Description: Efficient Frontier example using Google Sheets
 
 Tags: amplpy, google-sheets, example
 
-Author: Christian Valente
+Author: Christian Valente <ccv@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb
@@ -43,7 +43,7 @@ Description: Jupyter Notebook Integration with amplpy
 
 Tags: amplpy, example
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/magics.ipynb
@@ -72,7 +72,7 @@ Description: Optimization Methods in Finance: Bond Dedication Problem.
 
 Tags: amplpy, example, finance
 
-Author: Marcos Dominguez Velad <<marcos@ampl.com>>
+Author: Marcos Dominguez Velad <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
@@ -101,7 +101,7 @@ Description: Pattern enumeration example with amplpy
 
 Tags: amplpy, example
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pattern_enumeration.ipynb
@@ -130,7 +130,7 @@ Description: Pattern generation example with amplpy
 
 Tags: amplpy, example
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pattern_generation.ipynb
@@ -159,7 +159,7 @@ Description: Pattern tradeoff example with amplpy
 
 Tags: amplpy, example
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pattern_tradeoff.ipynb
@@ -188,7 +188,7 @@ Description: amplpy setup and quick start
 
 Tags: amplpy, example
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/quickstart.ipynb

@@ -9,7 +9,7 @@ Description: Basic notebook template for the AMPL Colab repository
 
 Tags: ampl-only, template, industry
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb
@@ -38,7 +38,7 @@ Description: generic model for production problem
 
 Tags: ampl-only, ampl-book, industry
 
-Author: N/A
+Author: Marcos Dominguez Velad <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/production_model.ipynb
@@ -67,7 +67,7 @@ Description: model for steel production problem
 
 Tags: ampl-only, ampl-lecture, industry
 
-Author: Marcos Dominguez Velad <<marcos@ampl.com>>
+Author: Marcos Dominguez Velad <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/steel_lecture.ipynb
@@ -96,7 +96,7 @@ Description: Solving cutting & packing problems using arc-flow formulations
 
 Tags: industry, cutting-stock, bin-packing, vector-packing
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/vpsolver.ipynb

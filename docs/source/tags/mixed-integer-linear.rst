@@ -9,7 +9,7 @@ Description: Multicommodity transportation model with binary variables
 
 Tags: ampl-only, ampl-book, mixed-integer-linear
 
-Author: N/A
+Author: Marcos Dominguez Velad <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/multmip1.ipynb

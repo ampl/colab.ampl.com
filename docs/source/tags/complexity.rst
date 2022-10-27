@@ -9,7 +9,7 @@ Description: Google Hashcode 2022 Practice Problem
 
 Tags: amplpy, heuristics, engineering, scheduling, complexity
 
-Author: Marcos Dominguez Velad <<marcos@ampl.com>>
+Author: Marcos Dominguez Velad <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb

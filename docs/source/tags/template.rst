@@ -9,7 +9,7 @@ Description: Basic notebook template for the AMPL Colab repository
 
 Tags: ampl-only, template, industry
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb

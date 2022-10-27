@@ -9,7 +9,7 @@ Description: Solving cutting & packing problems using arc-flow formulations
 
 Tags: industry, cutting-stock, bin-packing, vector-packing
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/vpsolver.ipynb

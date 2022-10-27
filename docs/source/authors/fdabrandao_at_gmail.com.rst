@@ -1,7 +1,36 @@
-.. _tag-amplpy:
+.. _email-fdabrandao_at_gmail.com:
 
-amplpy
-======
+Filipe Brandão
+==============
+
+AMPL Model Colaboratory Template
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Description: Basic notebook template for the AMPL Colab repository
+
+Tags: ampl-only, template, industry
+
+Author: Filipe Brandão <fdabrandao@gmail.com>
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb
+    :alt: colab.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/template/colab.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/template/colab.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/template/colab.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
 
 Diet model with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -17,23 +46,6 @@ Author: Filipe Brandão <fdabrandao@gmail.com>
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
     :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous/gspread.ipynb
-    :alt: Open In Colab
-    
-
-Efficient Frontier with Google Sheets
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Efficient Frontier example using Google Sheets
-
-Tags: amplpy, google-sheets, example
-
-Author: Christian Valente <ccv@ampl.com>
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb
-    :alt: efficient_frontier.ipynb
-    
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb
     :alt: Open In Colab
     
 
@@ -66,35 +78,6 @@ Author: Filipe Brandão <fdabrandao@gmail.com>
     :alt: Open In SageMaker Studio Lab
     
 
-Google Hashcode 2022
-^^^^^^^^^^^^^^^^^^^^
-Description: Google Hashcode 2022 Practice Problem
-
-Tags: amplpy, heuristics, engineering, scheduling, complexity
-
-Author: Marcos Dominguez Velad <marcos@ampl.com>
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
-    :alt: practice_problem.ipynb
-    
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
-    :alt: Open In Colab
-    
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
-    :alt: Kaggle
-    
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
-    :alt: Gradient
-    
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
-    :alt: Open In SageMaker Studio Lab
-    
-
 Jupyter Notebook Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Jupyter Notebook Integration with amplpy
@@ -124,32 +107,32 @@ Author: Filipe Brandão <fdabrandao@gmail.com>
     :alt: Open In SageMaker Studio Lab
     
 
-Optimization Methods in Finance: Chapter 3
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Optimization Methods in Finance: Bond Dedication Problem.
+Network design with redundancy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Description: Design of an electricity transportation network provides enough redundancy, so that a break of one component does not prevent any user from receiving electricity. The approach also works for similar distribution networks and can potentially be used in the design of military logistic networks.
 
-Tags: amplpy, example, finance
+Tags: electric-grid, military
 
-Author: Marcos Dominguez Velad <marcos@ampl.com>
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
-    :alt: finance_opt_example_3_1.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/military/electric_grid_with_redundancy.ipynb
+    :alt: electric_grid_with_redundancy.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/military/electric_grid_with_redundancy.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/military/electric_grid_with_redundancy.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/military/electric_grid_with_redundancy.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/military/electric_grid_with_redundancy.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -237,6 +220,35 @@ Author: Filipe Brandão <fdabrandao@gmail.com>
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/pattern_tradeoff.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+VPSolver: Cutting & Packing Problems
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Description: Solving cutting & packing problems using arc-flow formulations
+
+Tags: industry, cutting-stock, bin-packing, vector-packing
+
+Author: Filipe Brandão <fdabrandao@gmail.com>
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/vpsolver.ipynb
+    :alt: vpsolver.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous/vpsolver.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/miscellaneous/vpsolver.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/miscellaneous/vpsolver.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/vpsolver.ipynb
     :alt: Open In SageMaker Studio Lab
     
 

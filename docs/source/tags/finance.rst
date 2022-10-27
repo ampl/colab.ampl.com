@@ -9,7 +9,7 @@ Description: economic model using complementarity conditions from Chapter 19 AMP
 
 Tags: ampl-only, ampl-book, finance, complementarity_problem
 
-Author: Marcos Dominguez Velad <<marcos@ampl.com>>
+Author: Marcos Dominguez Velad <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb
@@ -38,7 +38,7 @@ Description: Financial Portfolio Optimization with amplpy and amplpyfinance
 
 Tags: amplpy, amplpyfinance, finance
 
-Author: Filipe Brandão
+Author: Filipe Brandão <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb
@@ -67,7 +67,7 @@ Description: Optimization Methods in Finance: Bond Dedication Problem.
 
 Tags: amplpy, example, finance
 
-Author: Marcos Dominguez Velad <<marcos@ampl.com>>
+Author: Marcos Dominguez Velad <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb

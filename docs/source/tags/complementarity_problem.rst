@@ -9,7 +9,7 @@ Description: economic model using complementarity conditions from Chapter 19 AMP
 
 Tags: ampl-only, ampl-book, finance, complementarity_problem
 
-Author: Marcos Dominguez Velad <<marcos@ampl.com>>
+Author: Marcos Dominguez Velad <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb

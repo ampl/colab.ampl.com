@@ -1,7 +1,7 @@
-.. _tag-constraint-programming:
+.. _email-gleb_at_ampl.com:
 
-constraint-programming
-======================
+Gleb Belov
+==========
 
 CP-style scheduling model with the *numberof* operator, solved by a MIP solver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
