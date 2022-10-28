@@ -17,7 +17,6 @@ at the beginning of your notebook:
    !pip install -q amplpy
 
 
-
 .. code-block:: python
 
    # Google Colab & Kaggle integration
@@ -30,12 +29,14 @@ In the list ``MODULES`` you can specify the AMPL solvers you want to use in your
 As a quick-start you can use our template notebook: :ref:`tag-template`.
 You can contribute to this repository by making pull requests to https://github.com/ampl/amplcolab and following the instructions in the  `README <https://github.com/ampl/amplcolab/blob/master/README.md>`_ file.
 
-In these notebooks there are ``%%ampl_eval`` cells that allow you to run AMPL code directly from the notebook. 
-They are equivalent to ``ampl.eval("""cell content""")``.
-
 .. note::
+
+    In these notebooks there are ``%%ampl_eval`` cells that allow you to run AMPL code directly from the notebook. 
+    They are equivalent to ``ampl.eval("""cell content""")``.
+
+.. warning::
     Some notebooks require a license to run due to the problem size. You can use a free `AMPL Community
-    Edition license <https://ampl.com/ce/>`_ with an open-source solver (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
+    Edition <https://ampl.com/ce/>`_ license with an open-source solver (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
     or with a commercial solver from the `NEOS Server <http://www.neos-server.org/>`_ as described in <https://dev.ampl.com/solvers/kestrel.html>.
     In the list ``MODULES`` you need to include 
     ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 
