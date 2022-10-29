@@ -5,7 +5,6 @@ Tags
 .. toctree::
     :maxdepth: 2
 
-    ampl-api
     ampl-book
     ampl-lecture
     ampl-only
