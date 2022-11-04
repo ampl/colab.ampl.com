@@ -3,8 +3,8 @@
 milp
 ====
 
-AMPL Model Colaboratory Template
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Pricing and target-market
+^^^^^^^^^^^^^^^^^^^^^^^^^
 Description: Formulate a pricing optimization and target-market problem as a MILP.
 
 Tags: :ref:`tag-industry`, :ref:`tag-pricing`, :ref:`tag-milp`, :ref:`tag-mip`
