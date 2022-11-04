@@ -27,11 +27,13 @@ Tags
     heuristics
     industry
     military
+    milp
     mip
     mixed-integer-linear
     nonlinear
     planning
     power-generation
+    pricing
     scheduling
     template
     tsp
