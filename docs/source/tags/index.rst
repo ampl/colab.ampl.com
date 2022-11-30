@@ -24,6 +24,7 @@ Tags
     finance
     google-sheets
     graphs
+    gui
     heuristics
     industry
     military
