@@ -12,11 +12,11 @@ Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
 Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous\gspread.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/gspread.ipynb
     :alt: gspread.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous\gspread.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous/gspread.ipynb
     :alt: Open In Colab
     
 
@@ -29,11 +29,11 @@ Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
 Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/finance\efficient_frontier.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb
     :alt: efficient_frontier.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/finance\efficient_frontier.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb
     :alt: Open In Colab
     
 
@@ -46,23 +46,23 @@ Tags: :ref:`tag-amplpy`, :ref:`tag-amplpyfinance`, :ref:`tag-finance`
 Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/finance\amplpyfinance\amplpyfinance_vs_amplpy.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb
     :alt: amplpyfinance_vs_amplpy.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/finance\amplpyfinance\amplpyfinance_vs_amplpy.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/finance\amplpyfinance\amplpyfinance_vs_amplpy.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/finance\amplpyfinance\amplpyfinance_vs_amplpy.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/finance\amplpyfinance\amplpyfinance_vs_amplpy.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -75,23 +75,23 @@ Tags: :ref:`tag-amplpy`, :ref:`tag-heuristics`, :ref:`tag-engineering`, :ref:`ta
 Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous\hashcode\practice_problem.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
     :alt: practice_problem.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous\hashcode\practice_problem.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/miscellaneous\hashcode\practice_problem.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/miscellaneous\hashcode\practice_problem.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous\hashcode\practice_problem.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -104,23 +104,23 @@ Tags: :ref:`tag-amplpy`, :ref:`tag-assignment`, :ref:`tag-mip`, :ref:`tag-data-s
 Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous\hospitals_residents.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/hospitals_residents.ipynb
     :alt: hospitals_residents.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous\hospitals_residents.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous/hospitals_residents.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/miscellaneous\hospitals_residents.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/miscellaneous/hospitals_residents.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/miscellaneous\hospitals_residents.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/miscellaneous/hospitals_residents.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous\hospitals_residents.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/hospitals_residents.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -133,23 +133,23 @@ Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous\magics.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/magics.ipynb
     :alt: magics.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous\magics.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous/magics.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/miscellaneous\magics.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/miscellaneous/magics.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/miscellaneous\magics.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/miscellaneous/magics.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous\magics.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/magics.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -162,23 +162,23 @@ Tags: :ref:`tag-amplpy`, :ref:`tag-example`, :ref:`tag-finance`
 Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/finance\finance_opt_example_3_1.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
     :alt: finance_opt_example_3_1.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/finance\finance_opt_example_3_1.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/finance\finance_opt_example_3_1.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/finance\finance_opt_example_3_1.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/finance\finance_opt_example_3_1.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -191,23 +191,23 @@ Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_enumeration.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_enumeration.ipynb
     :alt: pattern_enumeration.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_enumeration.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_enumeration.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_enumeration.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_enumeration.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_enumeration.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_enumeration.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_enumeration.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_enumeration.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -220,23 +220,23 @@ Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_generation.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_generation.ipynb
     :alt: pattern_generation.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_generation.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_generation.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_generation.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_generation.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_generation.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_generation.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_generation.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_generation.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -249,23 +249,23 @@ Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_tradeoff.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_tradeoff.ipynb
     :alt: pattern_tradeoff.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_tradeoff.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_tradeoff.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_tradeoff.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_tradeoff.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_tradeoff.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_tradeoff.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/industry\cutting-stock\pattern_tradeoff.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_tradeoff.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -278,23 +278,23 @@ Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`
 Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous\sudoku.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/sudoku.ipynb
     :alt: sudoku.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous\sudoku.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous/sudoku.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/miscellaneous\sudoku.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/miscellaneous/sudoku.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/miscellaneous\sudoku.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/miscellaneous/sudoku.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous\sudoku.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/sudoku.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -307,23 +307,23 @@ Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous\quickstart.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/quickstart.ipynb
     :alt: quickstart.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous\quickstart.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/miscellaneous/quickstart.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/miscellaneous\quickstart.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/miscellaneous/quickstart.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/miscellaneous\quickstart.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/miscellaneous/quickstart.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous\quickstart.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/quickstart.ipynb
     :alt: Open In SageMaker Studio Lab
     
 

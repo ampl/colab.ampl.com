@@ -12,23 +12,23 @@ Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-
 Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture\economic_eq_lecture.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb
     :alt: economic_eq_lecture.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-lecture\economic_eq_lecture.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-lecture\economic_eq_lecture.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-lecture\economic_eq_lecture.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-lecture\economic_eq_lecture.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -41,23 +41,23 @@ Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book\net1.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/net1.ipynb
     :alt: net1.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book\net1.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book/net1.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book\net1.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book/net1.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book\net1.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book/net1.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book\net1.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book/net1.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -70,23 +70,23 @@ Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book\diet.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/diet.ipynb
     :alt: diet.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book\diet.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book/diet.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book\diet.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book/diet.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book\diet.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book/diet.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book\diet.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book/diet.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -99,23 +99,23 @@ Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 Author: N/A
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book\prod.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/prod.ipynb
     :alt: prod.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book\prod.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book/prod.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book\prod.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book/prod.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book\prod.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book/prod.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book\prod.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book/prod.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -128,23 +128,23 @@ Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 Author: N/A
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book\steel.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/steel.ipynb
     :alt: steel.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book\steel.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book/steel.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book\steel.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book/steel.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book\steel.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book/steel.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book\steel.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book/steel.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -157,23 +157,23 @@ Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 Author: N/A
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book\transp.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/transp.ipynb
     :alt: transp.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book\transp.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book/transp.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book\transp.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book/transp.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book\transp.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book/transp.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book\transp.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book/transp.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -186,23 +186,23 @@ Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-mixed-integer-linear
 Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book\multmip1.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/multmip1.ipynb
     :alt: multmip1.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book\multmip1.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book/multmip1.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book\multmip1.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book/multmip1.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book\multmip1.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book/multmip1.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book\multmip1.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book/multmip1.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -215,23 +215,23 @@ Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-nonlinear`
 Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture\nltrans_lecture.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/nltrans_lecture.ipynb
     :alt: nltrans_lecture.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-lecture\nltrans_lecture.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-lecture/nltrans_lecture.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-lecture\nltrans_lecture.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-lecture/nltrans_lecture.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-lecture\nltrans_lecture.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-lecture/nltrans_lecture.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-lecture\nltrans_lecture.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-lecture/nltrans_lecture.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -244,23 +244,23 @@ Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-nonlinear`
 Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book\nltrans.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/nltrans.ipynb
     :alt: nltrans.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book\nltrans.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book/nltrans.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book\nltrans.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book/nltrans.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book\nltrans.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book/nltrans.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book\nltrans.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book/nltrans.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -273,23 +273,23 @@ Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-industry`
 Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book\production_model.ipynb
+    :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/production_model.ipynb
     :alt: production_model.ipynb
     
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book\production_model.ipynb
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-book/production_model.ipynb
     :alt: Open In Colab
     
 .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book\production_model.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-book/production_model.ipynb
     :alt: Kaggle
     
 .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book\production_model.ipynb
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-book/production_model.ipynb
     :alt: Gradient
     
 .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book\production_model.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-book/production_model.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
