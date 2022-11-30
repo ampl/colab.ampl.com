@@ -32,7 +32,7 @@ def read_header(fname):
 
 def list_notebooks():
     lst = [
-        os.path.join(dirpath, fname)[2:]
+        os.path.join(dirpath, fname)[2:].replace(os.path.sep, '/')
         for (dirpath, _, files) in os.walk(".")
         for fname in files
         if fname.endswith(".ipynb") and ".ipynb_checkpoints" not in dirpath
