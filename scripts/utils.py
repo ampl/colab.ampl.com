@@ -4,7 +4,7 @@ import json
 
 
 def read_header(fname):
-    notebook = open(fname, "r").read()
+    notebook = open(fname, "r", encoding='utf-8').read()
     data = json.loads(notebook)
     cells = data["cells"]
     assert cells[0]["cell_type"] == "markdown"
