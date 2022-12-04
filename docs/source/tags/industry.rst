@@ -5,11 +5,6 @@ industry
 
 AMPL Model Colaboratory Template
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Basic notebook template for the AMPL Colab repository
-
-Tags: :ref:`tag-ampl-only`, :ref:`tag-template`, :ref:`tag-industry`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb
@@ -32,13 +27,12 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Basic notebook template for the AMPL Colab repository
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-template`, :ref:`tag-industry`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
 Pricing and target-market
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Formulate a pricing optimization and target-market problem as a MILP.
-
-Tags: :ref:`tag-industry`, :ref:`tag-pricing`, :ref:`tag-milp`, :ref:`tag-mip`
-
-Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pricing_and_target_market.ipynb
@@ -61,13 +55,12 @@ Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Formulate a pricing optimization and target-market problem as a MILP.
+| Tags: :ref:`tag-industry`, :ref:`tag-pricing`, :ref:`tag-milp`, :ref:`tag-mip`
+| Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
+
 Production model
 ^^^^^^^^^^^^^^^^
-Description: generic model for production problem
-
-Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-industry`
-
-Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-book/production_model.ipynb
@@ -90,13 +83,12 @@ Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: generic model for production problem
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-industry`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
 Steel industry problem
 ^^^^^^^^^^^^^^^^^^^^^^
-Description: model for steel production problem
-
-Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`, :ref:`tag-industry`
-
-Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/steel_lecture.ipynb
@@ -119,13 +111,12 @@ Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: model for steel production problem
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`, :ref:`tag-industry`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
 VPSolver: Cutting & Packing Problems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Solving cutting & packing problems using arc-flow formulations
-
-Tags: :ref:`tag-industry`, :ref:`tag-cutting-stock`, :ref:`tag-bin-packing`, :ref:`tag-vector-packing`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/industry/cutting-stock/vpsolver.ipynb
@@ -147,4 +138,8 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/industry/cutting-stock/vpsolver.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: Solving cutting & packing problems using arc-flow formulations
+| Tags: :ref:`tag-industry`, :ref:`tag-cutting-stock`, :ref:`tag-bin-packing`, :ref:`tag-vector-packing`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 

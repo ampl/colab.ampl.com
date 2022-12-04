@@ -5,11 +5,6 @@ amplpyfinance
 
 Financial Portfolio Optimization with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Financial Portfolio Optimization with amplpy and amplpyfinance
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-amplpyfinance`, :ref:`tag-finance`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb
@@ -31,4 +26,8 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: Financial Portfolio Optimization with amplpy and amplpyfinance
+| Tags: :ref:`tag-amplpy`, :ref:`tag-amplpyfinance`, :ref:`tag-finance`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 

@@ -5,11 +5,6 @@ complementarity_problem
 
 Book Example: Economic equilibria
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: economic model using complementarity conditions from Chapter 19 AMPL book
-
-Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity_problem`
-
-Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb
@@ -31,4 +26,8 @@ Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: economic model using complementarity conditions from Chapter 19 AMPL book
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity_problem`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 

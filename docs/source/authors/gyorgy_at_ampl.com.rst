@@ -5,11 +5,6 @@ Gyorgy Matyasfalvi (2 notebooks)
 
 Capacity expansion of power generation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Models the extensive form of a deterministic multi-stage capacity expansion problem. In this model we can have multiple resources of the same type which have identical properties. The model can be further developed into a stochastic one.
-
-Tags: :ref:`tag-ampl-only`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`
-
-Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/capacity_expansion.ipynb
@@ -32,13 +27,12 @@ Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Models the extensive form of a deterministic multi-stage capacity expansion problem. In this model we can have multiple resources of the same type which have identical properties. The model can be further developed into a stochastic one.
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`
+| Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
+
 Pricing and target-market
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Formulate a pricing optimization and target-market problem as a MILP.
-
-Tags: :ref:`tag-industry`, :ref:`tag-pricing`, :ref:`tag-milp`, :ref:`tag-mip`
-
-Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/pricing_and_target_market.ipynb
@@ -60,4 +54,8 @@ Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/pricing_and_target_market.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: Formulate a pricing optimization and target-market problem as a MILP.
+| Tags: :ref:`tag-industry`, :ref:`tag-pricing`, :ref:`tag-milp`, :ref:`tag-mip`
+| Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 

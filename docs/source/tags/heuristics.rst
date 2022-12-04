@@ -5,11 +5,6 @@ heuristics
 
 Google Hashcode 2022
 ^^^^^^^^^^^^^^^^^^^^
-Description: Google Hashcode 2022 Practice Problem
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-heuristics`, :ref:`tag-engineering`, :ref:`tag-scheduling`, :ref:`tag-complexity`
-
-Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
@@ -31,4 +26,8 @@ Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: Google Hashcode 2022 Practice Problem
+| Tags: :ref:`tag-amplpy`, :ref:`tag-heuristics`, :ref:`tag-engineering`, :ref:`tag-scheduling`, :ref:`tag-complexity`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 

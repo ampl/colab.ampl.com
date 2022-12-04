@@ -5,11 +5,6 @@ google-sheets
 
 Diet model with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Diet model using Google Sheets
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/gspread.ipynb
@@ -20,13 +15,12 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :alt: Open In Colab
     
 
+| Description: Diet model using Google Sheets
+| Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
 Efficient Frontier with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Efficient Frontier example using Google Sheets
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
-
-Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb
@@ -36,4 +30,8 @@ Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com
     :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb
     :alt: Open In Colab
     
+
+| Description: Efficient Frontier example using Google Sheets
+| Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
+| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 

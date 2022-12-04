@@ -5,11 +5,6 @@ constraint-programming
 
 CP-style scheduling model with the *numberof* operator, solved by a MIP solver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Scheduling model with the Constraint Programming *numberof* operator, solved with a MIP solver. New MIP solver drivers based on the [MP library](https://amplmp.readthedocs.io/) enable CP-style modeling.
-
-Tags: :ref:`tag-ampl-only`, :ref:`tag-constraint-programming`
-
-Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/sched_numberof.ipynb
@@ -32,13 +27,12 @@ Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Scheduling model with the Constraint Programming *numberof* operator, solved with a MIP solver. New MIP solver drivers based on the [MP library](https://amplmp.readthedocs.io/) enable CP-style modeling.
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-constraint-programming`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
 Simple sudoku solver using logical constraints (with GUI)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Simple sudoku solver using the *alldiff* operator; needs a solver supporting constraints programming or a MIP solver with automatic reformulation support (see [here](https://amplmp.readthedocs.io/) for more information). A little GUI implemented using ipywidgets helps with data visualization and specification.
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`
-
-Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/sudoku.ipynb
@@ -60,4 +54,8 @@ Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/sudoku.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: Simple sudoku solver using the *alldiff* operator; needs a solver supporting constraints programming or a MIP solver with automatic reformulation support (see [here](https://amplmp.readthedocs.io/) for more information). A little GUI implemented using ipywidgets helps with data visualization and specification.
+| Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`
+| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 

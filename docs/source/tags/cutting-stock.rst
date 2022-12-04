@@ -5,11 +5,6 @@ cutting-stock
 
 VPSolver: Cutting & Packing Problems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Solving cutting & packing problems using arc-flow formulations
-
-Tags: :ref:`tag-industry`, :ref:`tag-cutting-stock`, :ref:`tag-bin-packing`, :ref:`tag-vector-packing`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/industry/cutting-stock/vpsolver.ipynb
@@ -31,4 +26,8 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/industry/cutting-stock/vpsolver.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: Solving cutting & packing problems using arc-flow formulations
+| Tags: :ref:`tag-industry`, :ref:`tag-cutting-stock`, :ref:`tag-bin-packing`, :ref:`tag-vector-packing`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 

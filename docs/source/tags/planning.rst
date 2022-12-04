@@ -5,11 +5,6 @@ planning
 
 Capacity expansion of power generation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Models the extensive form of a deterministic multi-stage capacity expansion problem. In this model we can have multiple resources of the same type which have identical properties. The model can be further developed into a stochastic one.
-
-Tags: :ref:`tag-ampl-only`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`
-
-Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/capacity_expansion.ipynb
@@ -31,4 +26,8 @@ Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/capacity_expansion.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: Models the extensive form of a deterministic multi-stage capacity expansion problem. In this model we can have multiple resources of the same type which have identical properties. The model can be further developed into a stochastic one.
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`
+| Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 

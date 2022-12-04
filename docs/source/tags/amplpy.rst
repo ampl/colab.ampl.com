@@ -5,11 +5,6 @@ amplpy
 
 Diet model with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Diet model using Google Sheets
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/gspread.ipynb
@@ -20,13 +15,12 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :alt: Open In Colab
     
 
+| Description: Diet model using Google Sheets
+| Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
 Efficient Frontier with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Efficient Frontier example using Google Sheets
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
-
-Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/efficient_frontier.ipynb
@@ -37,13 +31,12 @@ Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com
     :alt: Open In Colab
     
 
+| Description: Efficient Frontier example using Google Sheets
+| Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
+| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
+
 Financial Portfolio Optimization with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Financial Portfolio Optimization with amplpy and amplpyfinance
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-amplpyfinance`, :ref:`tag-finance`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb
@@ -66,13 +59,12 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Financial Portfolio Optimization with amplpy and amplpyfinance
+| Tags: :ref:`tag-amplpy`, :ref:`tag-amplpyfinance`, :ref:`tag-finance`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
 Google Hashcode 2022
 ^^^^^^^^^^^^^^^^^^^^
-Description: Google Hashcode 2022 Practice Problem
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-heuristics`, :ref:`tag-engineering`, :ref:`tag-scheduling`, :ref:`tag-complexity`
-
-Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/hashcode/practice_problem.ipynb
@@ -95,13 +87,12 @@ Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Google Hashcode 2022 Practice Problem
+| Tags: :ref:`tag-amplpy`, :ref:`tag-heuristics`, :ref:`tag-engineering`, :ref:`tag-scheduling`, :ref:`tag-complexity`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
 Hospitals-Residents MIP
 ^^^^^^^^^^^^^^^^^^^^^^^
-Description: hospitals-residents problem with ties problem solved with ampl and highs
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-assignment`, :ref:`tag-mip`, :ref:`tag-data-structures`, :ref:`tag-graphs`
-
-Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/hospitals_residents.ipynb
@@ -124,13 +115,12 @@ Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: hospitals-residents problem with ties problem solved with ampl and highs
+| Tags: :ref:`tag-amplpy`, :ref:`tag-assignment`, :ref:`tag-mip`, :ref:`tag-data-structures`, :ref:`tag-graphs`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
 Jupyter Notebook Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Jupyter Notebook Integration with amplpy
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-example`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/magics.ipynb
@@ -153,13 +143,12 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Jupyter Notebook Integration with amplpy
+| Tags: :ref:`tag-amplpy`, :ref:`tag-example`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
 Optimization Methods in Finance: Chapter 3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Optimization Methods in Finance: Bond Dedication Problem.
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-example`, :ref:`tag-finance`
-
-Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
@@ -182,13 +171,12 @@ Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Optimization Methods in Finance: Bond Dedication Problem.
+| Tags: :ref:`tag-amplpy`, :ref:`tag-example`, :ref:`tag-finance`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
 Pattern Enumeration
 ^^^^^^^^^^^^^^^^^^^
-Description: Pattern enumeration example with amplpy
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-example`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_enumeration.ipynb
@@ -211,13 +199,12 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Pattern enumeration example with amplpy
+| Tags: :ref:`tag-amplpy`, :ref:`tag-example`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
 Pattern Generation
 ^^^^^^^^^^^^^^^^^^
-Description: Pattern generation example with amplpy
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-example`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_generation.ipynb
@@ -240,13 +227,12 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Pattern generation example with amplpy
+| Tags: :ref:`tag-amplpy`, :ref:`tag-example`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
 Roll Cutting - Revision 1 & 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Pattern tradeoff example with amplpy
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-example`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/industry/cutting-stock/pattern_tradeoff.ipynb
@@ -269,13 +255,12 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Pattern tradeoff example with amplpy
+| Tags: :ref:`tag-amplpy`, :ref:`tag-example`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
 Simple sudoku solver using logical constraints (with GUI)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Simple sudoku solver using the *alldiff* operator; needs a solver supporting constraints programming or a MIP solver with automatic reformulation support (see [here](https://amplmp.readthedocs.io/) for more information). A little GUI implemented using ipywidgets helps with data visualization and specification.
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`
-
-Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/sudoku.ipynb
@@ -298,13 +283,12 @@ Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Simple sudoku solver using the *alldiff* operator; needs a solver supporting constraints programming or a MIP solver with automatic reformulation support (see [here](https://amplmp.readthedocs.io/) for more information). A little GUI implemented using ipywidgets helps with data visualization and specification.
+| Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`
+| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
+
 amplpy setup & Quick Start
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: amplpy setup and quick start
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-example`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/quickstart.ipynb
@@ -326,4 +310,8 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/quickstart.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: amplpy setup and quick start
+| Tags: :ref:`tag-amplpy`, :ref:`tag-example`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 

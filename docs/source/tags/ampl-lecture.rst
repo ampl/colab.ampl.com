@@ -5,11 +5,6 @@ ampl-lecture
 
 Diet lecture
 ^^^^^^^^^^^^
-Description: Diet case study
-
-Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`
-
-Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/diet_case_study.ipynb
@@ -32,13 +27,12 @@ Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Diet case study
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
 Steel industry problem
 ^^^^^^^^^^^^^^^^^^^^^^
-Description: model for steel production problem
-
-Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`, :ref:`tag-industry`
-
-Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/steel_lecture.ipynb
@@ -61,13 +55,12 @@ Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: model for steel production problem
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`, :ref:`tag-industry`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
 Transportation problem
 ^^^^^^^^^^^^^^^^^^^^^^
-Description: an AMPL model for the transportation problem
-
-Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`
-
-Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/transp_lecture.ipynb
@@ -89,4 +82,8 @@ Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-lecture/transp_lecture.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: an AMPL model for the transportation problem
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 

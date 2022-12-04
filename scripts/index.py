@@ -102,14 +102,14 @@ You can contribute to this repository by making pull requests to https://github.
     They are equivalent to ``ampl.eval(\"\"\"cell content\"\"\")``.
 
 .. warning::
-    Some notebooks require a license to run due to the problem size. You can use a free `AMPL Community
+    Some notebooks require commercial solvers. You can use a free `AMPL Community
     Edition <https://ampl.com/ce/>`_ license with an open-source solver (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
     or with a commercial solver from the `NEOS Server <http://www.neos-server.org/>`_ as described in <https://dev.ampl.com/solvers/kestrel.html>.
     In the list ``MODULES`` you need to include 
     ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 
     ``"highs"`` for the `HiGHS <https://highs.dev/>`_ solver; 
     ``"coin"`` for the `COIN-OR <https://www.coin-or.org/>`_ solvers.
-    To use other commercial solvers without NEOS, you need to use a cloud license that includes the commercial solver.
+    To use other commercial solvers without NEOS, your license needs to include the commercial solver.
  
 
 Main categories
@@ -156,13 +156,14 @@ def print_rst(info, fout):
     colab_only = info["colab_only"]
     badges = list_badges(fname, colab_only, rst=True)
     print(title + "\n" + "^" * len(title), file=fout)
+    print("\n" + "\n".join(badges) + "\n", file=fout)
     description = info.get("description", None)
     if description:
-        print(f"Description: {description}\n", file=fout)
+        print(f"| Description: {description}", file=fout)
     tags = info.get("tags", None)
     if tags:
         tags = [f":ref:`tag-{tag}`" for tag in tags]
-        print(f'Tags: {", ".join(tags)}\n', file=fout)
+        print(f'| Tags: {", ".join(tags)}', file=fout)
     authors = info.get("notebook_author", None)
     if authors:
         authors = authors.replace("<<", "<").replace(">>", ">")
@@ -175,8 +176,7 @@ def print_rst(info, fout):
                 lst.append(f":ref:`email-{email.replace('@', '_at_')}` <{email}>")
             else:
                 lst.append(author)
-        print(f"Author: {', '.join(lst)}\n", file=fout)
-    print("\n".join(badges) + "\n", file=fout)
+        print(f"| Author: {', '.join(lst)}\n", file=fout)
 
 
 madeby = {}

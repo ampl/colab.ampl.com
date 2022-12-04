@@ -5,11 +5,6 @@ tsp
 
 Travelling Salesman Problem with subtour elimination
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: this example shows how to solve a TSP  by eliminating subtours using amplpy and ampls
-
-Tags: :ref:`tag-callbacks`, :ref:`tag-tsp`
-
-Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/miscellaneous/tsp_simple_cuts_generic.ipynb
@@ -31,4 +26,8 @@ Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/miscellaneous/tsp_simple_cuts_generic.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: this example shows how to solve a TSP  by eliminating subtours using amplpy and ampls
+| Tags: :ref:`tag-callbacks`, :ref:`tag-tsp`
+| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 

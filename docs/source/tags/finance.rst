@@ -5,11 +5,6 @@ finance
 
 Book Example: Economic equilibria
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: economic model using complementarity conditions from Chapter 19 AMPL book
-
-Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity_problem`
-
-Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb
@@ -32,13 +27,12 @@ Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: economic model using complementarity conditions from Chapter 19 AMPL book
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity_problem`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
 Financial Portfolio Optimization with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Financial Portfolio Optimization with amplpy and amplpyfinance
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-amplpyfinance`, :ref:`tag-finance`
-
-Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/amplpyfinance/amplpyfinance_vs_amplpy.ipynb
@@ -61,13 +55,12 @@ Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Financial Portfolio Optimization with amplpy and amplpyfinance
+| Tags: :ref:`tag-amplpy`, :ref:`tag-amplpyfinance`, :ref:`tag-finance`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
 Optimization Methods in Finance: Chapter 3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description: Optimization Methods in Finance: Bond Dedication Problem.
-
-Tags: :ref:`tag-amplpy`, :ref:`tag-example`, :ref:`tag-finance`
-
-Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
@@ -89,4 +82,8 @@ Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
     :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/finance/finance_opt_example_3_1.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: Optimization Methods in Finance: Bond Dedication Problem.
+| Tags: :ref:`tag-amplpy`, :ref:`tag-example`, :ref:`tag-finance`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
