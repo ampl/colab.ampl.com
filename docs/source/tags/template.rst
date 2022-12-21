@@ -28,6 +28,6 @@ AMPL Model Colaboratory Template
     
 
 | Description: Basic notebook template for the AMPL Colab repository
-| Tags: :ref:`tag-ampl-only`, :ref:`tag-template`, :ref:`tag-industry`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-template`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 

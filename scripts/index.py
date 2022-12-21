@@ -69,11 +69,49 @@ print(
 AMPL Model Colaboratory
 =======================
 
+- **Starting template**
+
+    .. image:: https://colab.research.google.com/assets/colab-badge.svg
+        :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/template/colab.ipynb
+        :alt: Open In Colab
+        
+    .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+        :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb
+        :alt: Kaggle
+        
+    .. image:: https://assets.paperspace.io/img/gradient-badge.svg
+        :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/template/colab.ipynb
+        :alt: Gradient
+        
+    .. image:: https://studiolab.sagemaker.aws/studiolab.svg
+        :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/template/colab.ipynb
+        :alt: Open In SageMaker Studio Lab
+
+- **Christmas model written by** `ChatGPT <https://chat.openai.com/>`_
+
+    .. image:: https://colab.research.google.com/assets/colab-badge.svg
+        :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/miscellaneous/christmas.ipynb
+        :alt: Open In Colab
+        
+    .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+        :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/miscellaneous/christmas.ipynb
+        :alt: Kaggle
+        
+    .. image:: https://assets.paperspace.io/img/gradient-badge.svg
+        :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/miscellaneous/christmas.ipynb
+        :alt: Gradient
+        
+    .. image:: https://studiolab.sagemaker.aws/studiolab.svg
+        :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/miscellaneous/christmas.ipynb
+        :alt: Open In SageMaker Studio Lab
+        
+
+
 Introduction
 ------------
 
 AMPL Model Colaboratory is a collection of AMPL models in `Jupyter Notebooks <https://jupyter.org/>`_
-that run on platforms such as Google Colab, Kaggle, Gradient, and AWS SageMaker.
+that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **AWS SageMaker**.
 
 In order to be use AMPL on these platforms you just need to following two code blocks
 at the beginning of your notebook:
@@ -87,14 +125,18 @@ at the beginning of your notebook:
 .. code-block:: python
 
    # Google Colab & Kaggle integration
-   MODULES=['ampl', 'coin', 'highs', 'gokestrel']
+   MODULES = ['ampl', 'coin', 'highs', 'gokestrel']
    from amplpy import tools
    ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics
-
 
 In the list ``MODULES`` you can specify the AMPL solvers you want to use in your notebook.
 As a quick-start you can use our template notebook: :ref:`tag-template`.
 You can contribute to this repository by making pull requests to https://github.com/ampl/amplcolab and following the instructions in the  `README <https://github.com/ampl/amplcolab/blob/master/README.md>`_ file.
+
+.. code-block:: python
+
+    # Full list of modules available
+    MODULES = ["amplgsl", "baron", "cbc", "coin", "conopt", "copt", "cplex", "gokestrel", "gurobi", "highs", "knitro", "lgo", "lindoglobal", "loqo", "minos", "octeract", "open", "plugins", "snopt", "xpress"]
 
 .. note::
 
@@ -104,7 +146,7 @@ You can contribute to this repository by making pull requests to https://github.
 .. warning::
     Some notebooks require commercial solvers. You can use a free `AMPL Community
     Edition <https://ampl.com/ce/>`_ license with an open-source solver (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
-    or with a commercial solver from the `NEOS Server <http://www.neos-server.org/>`_ as described in <https://dev.ampl.com/solvers/kestrel.html>.
+    or with a commercial solver from the `NEOS Server <http://www.neos-server.org/>`_ as described in https://dev.ampl.com/solvers/kestrel.html.
     In the list ``MODULES`` you need to include 
     ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 
     ``"highs"`` for the `HiGHS <https://highs.dev/>`_ solver; 
