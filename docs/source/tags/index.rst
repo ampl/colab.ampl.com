@@ -13,6 +13,7 @@ Tags
     assignment
     bin-packing
     callbacks
+    christmas
     complementarity_problem
     complexity
     constraint-programming
