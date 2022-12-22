@@ -2,25 +2,9 @@
 AMPL Model Colaboratory
 =======================
 
-- **Starting template**
+.. tip::
 
-    .. image:: https://colab.research.google.com/assets/colab-badge.svg
-        :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/template/colab.ipynb
-        :alt: Open In Colab
-        
-    .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-        :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb
-        :alt: Kaggle
-        
-    .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-        :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/template/colab.ipynb
-        :alt: Gradient
-        
-    .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-        :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/template/colab.ipynb
-        :alt: Open In SageMaker Studio Lab
-
-- **Christmas model written by** `ChatGPT <https://chat.openai.com/>`_
+    Use the **Christmas notebook written by** `ChatGPT <https://chat.openai.com/>`_ to get started (BTW: you can even ask `ChatGPT <https://chat.openai.com/>`_ to write models for you!)
 
     .. image:: https://colab.research.google.com/assets/colab-badge.svg
         :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/miscellaneous/christmas.ipynb
@@ -37,8 +21,6 @@ AMPL Model Colaboratory
     .. image:: https://studiolab.sagemaker.aws/studiolab.svg
         :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/miscellaneous/christmas.ipynb
         :alt: Open In SageMaker Studio Lab
-        
-
 
 Introduction
 ------------
@@ -66,10 +48,7 @@ In the list ``MODULES`` you can specify the AMPL solvers you want to use in your
 As a quick-start you can use our template notebook: :ref:`tag-template`.
 You can contribute to this repository by making pull requests to https://github.com/ampl/amplcolab and following the instructions in the  `README <https://github.com/ampl/amplcolab/blob/master/README.md>`_ file.
 
-.. code-block:: python
-
-    # Full list of modules available
-    MODULES = ["amplgsl", "baron", "cbc", "coin", "conopt", "copt", "cplex", "gokestrel", "gurobi", "highs", "knitro", "lgo", "lindoglobal", "loqo", "minos", "octeract", "open", "plugins", "snopt", "xpress"]
+Full list of AMPL modules available ``amplgsl``, ``baron``, ``cbc``, ``coin``, ``conopt``, ``copt``, ``cplex``, ``gokestrel``, ``gurobi``, ``highs``, ``knitro``, ``lgo``, ``lindoglobal``, ``loqo``, ``minos``, ``octeract``, ``open``, ``plugins``, ``snopt``, ``xpress``.
 
 .. note::
 
@@ -84,7 +63,7 @@ You can contribute to this repository by making pull requests to https://github.
     ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 
     ``"highs"`` for the `HiGHS <https://highs.dev/>`_ solver; 
     ``"coin"`` for the `COIN-OR <https://www.coin-or.org/>`_ solvers.
-    To use other commercial solvers without NEOS, your license needs to include the commercial solver.
+    To use other commercial solvers without NEOS, your license needs to include the commercial solver (e.g., an AMPL CE commercial solver trial).
  
 
 Main categories

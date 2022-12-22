@@ -72,5 +72,5 @@ for info in NOTEBOOKS:
         raise Exception(f"Could not find integration cell in {fname}")
 
     open(fname, "w", newline="\n").write(
-        json.dumps(data, separators=(",", ":"), ensure_ascii=False) + "\n"
+        json.dumps(data, separators=(",", ": "), indent="  ", ensure_ascii=False)
     )
