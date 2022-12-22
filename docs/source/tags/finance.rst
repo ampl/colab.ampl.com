@@ -31,6 +31,22 @@ Book Example: Economic equilibria
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity_problem`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
+Efficient Frontier with Google Sheets
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/authors/mapgccv/finance/efficient_frontier.ipynb
+    :alt: efficient_frontier.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/mapgccv/finance/efficient_frontier.ipynb
+    :alt: Open In Colab
+    
+
+| Description: Efficient Frontier example using Google Sheets
+| Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-finance`
+| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
+
 Financial Portfolio Optimization with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
