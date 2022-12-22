@@ -4,7 +4,7 @@ AMPL Model Colaboratory
 
 .. tip::
 
-    Use the **Christmas notebook** written by `ChatGPT <https://chat.openai.com/>`_ to get started.
+    Use the **Christmas notebook** written by `ChatGPT <https://chat.openai.com/>`_ to get started:
 
     .. image:: https://colab.research.google.com/assets/colab-badge.svg
         :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
