@@ -4,7 +4,7 @@ AMPL Model Colaboratory
 
 .. tip::
 
-    Use the **Christmas notebook written by** `ChatGPT <https://chat.openai.com/>`_ to get started (BTW: you can even ask `ChatGPT <https://chat.openai.com/>`_ to write models for you! If it makes mistakes you can ask for help in our Discourse Forum: https://discuss.ampl.com)
+    Use the **Christmas notebook** written by `ChatGPT <https://chat.openai.com/>`_ to get started.
 
     .. image:: https://colab.research.google.com/assets/colab-badge.svg
         :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
@@ -21,6 +21,8 @@ AMPL Model Colaboratory
     .. image:: https://studiolab.sagemaker.aws/studiolab.svg
         :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
         :alt: Open In SageMaker Studio Lab
+
+    | BTW: you can even ask `ChatGPT <https://chat.openai.com/>`_ to write models for you! If it makes mistakes you can ask for help in our new `Discourse Forum <https://discuss.ampl.com>`_!
 
 Introduction
 ------------
