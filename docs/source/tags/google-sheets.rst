@@ -32,6 +32,6 @@ Efficient Frontier with Google Sheets
     
 
 | Description: Efficient Frontier example using Google Sheets
-| Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-finance`
 | Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 

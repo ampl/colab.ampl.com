@@ -16,7 +16,7 @@ Efficient Frontier with Google Sheets
     
 
 | Description: Efficient Frontier example using Google Sheets
-| Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-finance`
 | Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
 Simple sudoku solver using logical constraints (with GUI)
@@ -43,7 +43,7 @@ Simple sudoku solver using logical constraints (with GUI)
     :alt: Open In SageMaker Studio Lab
     
 
-| Description: Simple sudoku solver using the *alldiff* operator; needs a solver supporting constraints programming or a MIP solver with automatic reformulation support (see [here](https://amplmp.readthedocs.io/) for more information). A little GUI implemented using ipywidgets helps with data visualization and specification.
+| Description: Simple sudoku model with two formulations: as a Constraint Programming problem using the *alldiff* operator and as a MIP. Note that the CP formulation is more natural but it needs a solver supporting logical constraints or a MIP solver with automatic reformulation support (see [here](https://amplmp.readthedocs.io/) for more information).
 | Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`
 | Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
