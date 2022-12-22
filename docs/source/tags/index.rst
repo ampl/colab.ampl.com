@@ -13,6 +13,7 @@ Tags
     assignment
     bin-packing
     callbacks
+    chatgpt
     christmas
     complementarity_problem
     complexity

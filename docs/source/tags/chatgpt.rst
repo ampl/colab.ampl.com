@@ -1,7 +1,7 @@
-.. _tag-christmas:
+.. _tag-chatgpt:
 
-christmas
-=========
+chatgpt
+=======
 
 AMPL Christmas Model created by ChatGPT
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

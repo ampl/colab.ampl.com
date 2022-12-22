@@ -71,22 +71,22 @@ AMPL Model Colaboratory
 
 .. tip::
 
-    Use the **Christmas notebook written by** `ChatGPT <https://chat.openai.com/>`_ to get started (BTW: you can even ask `ChatGPT <https://chat.openai.com/>`_ to write models for you!)
+    Use the **Christmas notebook written by** `ChatGPT <https://chat.openai.com/>`_ to get started (BTW: you can even ask `ChatGPT <https://chat.openai.com/>`_ to write models for you! If it makes mistakes you can ask for help in our Discourse Forum: https://discuss.ampl.com)
 
     .. image:: https://colab.research.google.com/assets/colab-badge.svg
-        :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/miscellaneous/christmas.ipynb
+        :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
         :alt: Open In Colab
         
     .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-        :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/miscellaneous/christmas.ipynb
+        :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
         :alt: Kaggle
         
     .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-        :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/miscellaneous/christmas.ipynb
+        :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
         :alt: Gradient
         
     .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-        :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/miscellaneous/christmas.ipynb
+        :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
         :alt: Open In SageMaker Studio Lab
 
 Introduction
