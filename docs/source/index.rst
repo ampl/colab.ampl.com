@@ -50,7 +50,7 @@ In the list ``MODULES`` you can specify the AMPL solvers you want to use in your
 As a quick-start you can use our template notebook: :ref:`tag-template`.
 You can contribute to this repository by making pull requests to https://github.com/ampl/amplcolab and following the instructions in the  `README <https://github.com/ampl/amplcolab/blob/master/README.md>`_ file.
 
-Full list of AMPL modules available ``amplgsl``, ``baron``, ``cbc``, ``coin``, ``conopt``, ``copt``, ``cplex``, ``gokestrel``, ``gurobi``, ``highs``, ``knitro``, ``lgo``, ``lindoglobal``, ``loqo``, ``minos``, ``octeract``, ``open``, ``plugins``, ``snopt``, ``xpress``.
+Full list of AMPL modules available: ``amplgsl``, ``baron``, ``cbc``, ``coin``, ``conopt``, ``copt``, ``cplex``, ``gokestrel``, ``gurobi``, ``highs``, ``knitro``, ``lgo``, ``lindoglobal``, ``loqo``, ``minos``, ``octeract``, ``open``, ``plugins``, ``snopt``, ``xpress``.
 
 .. note::
 
