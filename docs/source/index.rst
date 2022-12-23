@@ -47,10 +47,10 @@ at the beginning of your notebook:
    ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics
 
 In the list ``MODULES`` you can specify the AMPL solvers you want to use in your notebook.
-As a quick-start you can use our template notebook: :ref:`tag-template`.
-You can contribute to this repository by making pull requests to https://github.com/ampl/amplcolab and following the instructions in the  `README <https://github.com/ampl/amplcolab/blob/master/README.md>`_ file.
+As a quick-start you can use our template notebook: :ref:`tag-template`. Full list of AMPL modules available: ``amplgsl``, ``baron``, ``cbc``, ``coin``, ``conopt``, ``copt``, ``cplex``, ``gokestrel``, ``gurobi``, ``highs``, ``knitro``, ``lgo``, ``lindoglobal``, ``loqo``, ``minos``, ``octeract``, ``open``, ``plugins``, ``snopt``, ``xpress``.
 
-Full list of AMPL modules available: ``amplgsl``, ``baron``, ``cbc``, ``coin``, ``conopt``, ``copt``, ``cplex``, ``gokestrel``, ``gurobi``, ``highs``, ``knitro``, ``lgo``, ``lindoglobal``, ``loqo``, ``minos``, ``octeract``, ``open``, ``plugins``, ``snopt``, ``xpress``.
+**You can contribute to this repository** by making pull requests to https://github.com/ampl/amplcolab and following the instructions in the  `README <https://github.com/ampl/amplcolab/blob/master/README.md>`_ file,
+or by sending a link to your notebook by email to devteam@ampl.com.
 
 .. note::
 
@@ -90,7 +90,8 @@ The notebooks in this repository are contributed by the following authors:
 
     authors/index
 
-**Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab.
+**Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab or
+send a link to your notebook by email to devteam@ampl.com.
 
 Notebooks
 ---------

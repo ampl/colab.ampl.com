@@ -23,25 +23,25 @@ License: <optional>
 References: <optional>
 ```
 
-3. Do not modify the initial cells that take care of setup and jupyter notebook integration.
+3. Do not modify the initial two cells that take care of setup and jupyter notebook integration
+to do anything other than installing packages and instantiating the ampl_notebook. You can modify
+the list of modules and add more dependencies, but if you do anything else the changes may be overwritten.
 
-4. Update the badges and the index as shown below before committing.
+4. Place your notebook inside `amplcolab/authors/<github_username>/`.
+
+5. Update the badges and the index as shown below before committing.
 
 Note: The default license for every notebook is [MIT](https://github.com/ampl/amplcolab/blob/master/LICENSE) unless specified otherwise in the notebook.
 
-### Updating badges & headers
-
-The following command will patch every notebook in the repository with badges corresponding to the notebook location:
-```bash
-$ python scripts/headers.py
-```
-
-### Updating index
+### Updating notebook headers & index
 
 The following command updates the readme file and the index in the documentation:
 ```bash
 $ python scripts/index.py
 ```
+
+Note that the notebook headers are patched with new badges using links to the correct locations after the notebook is published.
+The first two notebook cells are modified to ensure that requirements are installed and that the ampl_notebook is instantiated.
 
 ## Notebooks
 

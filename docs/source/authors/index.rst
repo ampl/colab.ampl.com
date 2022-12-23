@@ -14,5 +14,6 @@ The notebooks in this repository are contributed by the following authors:
     juanjesus.losada_at_gmail.com
     marcos_at_ampl.com
 
-**Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab.
+**Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab or
+send a link to your notebook by email to devteam@ampl.com.
 
