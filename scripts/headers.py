@@ -72,7 +72,7 @@ def update_notebook_headers():
                 assert len(modules) >= 1
                 cells[i]["source"] = [
                     "# Google Colab & Kaggle integration\n",
-                    f"MODULES, LICENSE_UUID = {modules}, None",
+                    f"MODULES, LICENSE_UUID = {modules}, None\n",
                     "from amplpy import tools\n",
                     "ampl = tools.ampl_notebook(modules=MODULES, license_uuid=LICENSE_UUID, globals_=globals()) # instantiate AMPL object and register magics",
                 ]
