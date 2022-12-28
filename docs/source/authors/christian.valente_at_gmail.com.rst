@@ -44,7 +44,7 @@ Simple sudoku solver using logical constraints (with GUI)
     
 
 | Description: Simple sudoku model with two formulations: as a Constraint Programming problem using the *alldiff* operator and as a MIP. Note that the CP formulation is more natural but it needs a solver supporting logical constraints or a MIP solver with automatic reformulation support (see [here](https://amplmp.readthedocs.io/) for more information).
-| Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`, :ref:`tag-highlights`
 | Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
 Travelling Salesman Problem with subtour elimination

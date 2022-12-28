@@ -112,9 +112,9 @@ at the beginning of your notebook:
 .. code-block:: python
 
    # Google Colab & Kaggle integration
-   MODULES = ['ampl', 'coin', 'highs', 'gokestrel']
+   MODULES, LICENSE_UUID = ['ampl', 'coin', 'highs', 'gokestrel'], None
    from amplpy import tools
-   ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics
+   ampl = tools.ampl_notebook(modules=MODULES, license_uuid=LICENSE_UUID, globals_=globals()) # instantiate AMPL object and register magics
 
 In the list ``MODULES`` you can specify the AMPL solvers you want to use in your notebook.
 As a quick-start you can use our template notebook: :ref:`tag-template`. Full list of AMPL modules available: ``amplgsl``, ``baron``, ``cbc``, ``coin``, ``conopt``, ``copt``, ``cplex``, ``gokestrel``, ``gurobi``, ``highs``, ``knitro``, ``lgo``, ``lindoglobal``, ``loqo``, ``minos``, ``octeract``, ``open``, ``plugins``, ``snopt``, ``xpress``.
@@ -136,14 +136,11 @@ or by sending a link to your notebook by email to devteam@ampl.com.
     ``"highs"`` for the `HiGHS <https://highs.dev/>`_ solver; 
     ``"coin"`` for the `COIN-OR <https://www.coin-or.org/>`_ solvers.
     To use other commercial solvers without NEOS, your license needs to include the commercial solver (e.g., an AMPL CE commercial solver trial).
- 
-
-Main categories
----------------
 
 .. toctree::
-    :maxdepth: 1
+    :hidden:
 
+    Highlights <tags/highlights>
     tags/ampl-lecture
     tags/finance
     tags/industry
@@ -234,8 +231,8 @@ for info in NOTEBOOKS:
 
 print(
     """
-Tag list
---------
+Tags
+----
 
 .. toctree::
     :maxdepth: 2

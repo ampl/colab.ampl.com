@@ -28,6 +28,7 @@ Tags
     graphs
     gui
     heuristics
+    highlights
     industry
     military
     milp

@@ -65,11 +65,16 @@ def update_notebook_headers():
                 assert cells[i]["cell_type"] == "code"
                 modules = source[1]
                 assert modules.startswith("MODULES")
+                assert "[" in modules and "]" in modules
+                modules = list(eval(modules[modules.find("[") : modules.find("]") + 1]))
+                if "ampl" in modules:
+                    modules.remove("ampl")
+                assert len(modules) >= 1
                 cells[i]["source"] = [
                     "# Google Colab & Kaggle integration\n",
-                    modules,
+                    f"MODULES, LICENSE_UUID = {modules}, None",
                     "from amplpy import tools\n",
-                    "ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics",
+                    "ampl = tools.ampl_notebook(modules=MODULES, license_uuid=LICENSE_UUID, globals_=globals()) # instantiate AMPL object and register magics",
                 ]
                 cells[i]["outputs"] = []
                 break
@@ -78,6 +83,7 @@ def update_notebook_headers():
 
         open(fname, "w", newline="\n").write(
             json.dumps(data, separators=(",", ": "), indent="  ", ensure_ascii=False)
+            + "\n"
         )
 
     os.chdir(initial_dir)
