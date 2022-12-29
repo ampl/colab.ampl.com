@@ -41,6 +41,9 @@ def list_notebooks():
 
     notebooks = []
     for fname in lst:
+        if fname.replace("\\", "/") == "template/minimal.ipynb":
+            print(f"Skipping {fname}.")
+            continue
         print(f"Processing: {fname}")
         info = read_header(fname)
         title = info["title"]
