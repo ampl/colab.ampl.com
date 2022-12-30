@@ -2,47 +2,53 @@
 AMPL Model Colaboratory
 =======================
 
-.. tip::
-
-    Use the **Christmas notebook** written by `ChatGPT <https://chat.openai.com/>`_ to get started:
-
-    .. image:: https://colab.research.google.com/assets/colab-badge.svg
-        :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
-        :alt: Open In Colab
-        
-    .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-        :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
-        :alt: Kaggle
-        
-    .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-        :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
-        :alt: Gradient
-        
-    .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-        :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
-        :alt: Open In SageMaker Studio Lab
-
-    | BTW: you can even ask `ChatGPT <https://chat.openai.com/>`_ to write models for you! If it makes mistakes you can ask for help in our new `Discourse Forum <https://discuss.ampl.com>`_!
-
-
-.. code-block:: ipython
-
-    # The only 3 lines you need to install and use AMPL with any solver on Colab
-    !pip install -q amplpy
-    from amplpy import tools
-    ampl = tools.ampl_notebook(
-        modules=['highs', 'gurobi'], # pick from over 20 modules including most commercial and open-source solvers
-        license_uuid="default") # use your AMPL Community Edition License UUID to gain access to commercial solver trials
-
-[`Minimal example <https://colab.research.google.com/github/ampl/amplcolab/blob/master/template/minimal.ipynb>`_]
-
-Introduction
-------------
-
 AMPL Model Colaboratory is a collection of AMPL models in `Jupyter Notebooks <https://jupyter.org/>`_
 that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **AWS SageMaker**.
+[:ref:`See our Highlights <tag-highlights>`]
 
-In order to be use AMPL on these platforms you just need to following two code blocks
+.. grid:: 1 1 2 2
+    :gutter: 0
+    :margin: 0
+    :padding: 0
+
+    .. grid-item-card::
+        :margin: 0
+        :padding: 0
+
+        You can use the **Christmas notebook** written by `ChatGPT <https://chat.openai.com/>`_ to get started:
+
+        .. image:: https://colab.research.google.com/assets/colab-badge.svg
+            :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :alt: Open In Colab
+
+        .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :alt: Kaggle
+
+        .. image:: https://assets.paperspace.io/img/gradient-badge.svg
+            :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :alt: Gradient
+
+        .. image:: https://studiolab.sagemaker.aws/studiolab.svg
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :alt: Open In SageMaker Studio Lab
+
+        | BTW: you can even ask `ChatGPT <https://chat.openai.com/>`_ to write models for you! If it makes mistakes you can ask for help in our new `Discourse Forum <https://discuss.ampl.com>`_!
+
+    .. grid-item-card::
+        :margin: 0
+        :padding: 0
+
+        .. figure:: /_static/3lines.png
+            :alt: the only 3 lines you need to use AMPL on Colab
+            :align: center
+            :width: 100%
+            :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/template/minimal.ipynb
+
+Getting Started
+---------------
+
+In order to be use AMPL on these notebook platforms you just need to following two code blocks
 at the beginning of your notebook:
 
 .. code-block:: bash
@@ -89,8 +95,8 @@ or by sending a link to your notebook by email to devteam@ampl.com.
     tags/military
     tags/google-sheets
 
-Authors
--------
+Notebook Authors
+----------------
 
 The notebooks in this repository are contributed by the following authors:
 
