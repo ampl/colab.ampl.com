@@ -189,7 +189,7 @@ Notebooks
 def print_markdown(info, fout):
     fname = info["fname"]
     colab_only = info["colab_only"]
-    badges = list_badges(fname, colab_only)
+    badges = list_badges(fname, colab_only, page="README")
     print(f"|{info['title']}|{'|'.join(badges)}|", file=fout)
 
 

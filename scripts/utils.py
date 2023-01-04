@@ -4,7 +4,7 @@ import json
 
 
 def read_header(fname):
-    notebook = open(fname, "r", encoding='utf-8').read()
+    notebook = open(fname, "r", encoding="utf-8").read()
     data = json.loads(notebook)
     cells = data["cells"]
     assert cells[0]["cell_type"] == "markdown"
@@ -32,7 +32,7 @@ def read_header(fname):
 
 def list_notebooks():
     lst = [
-        os.path.join(dirpath, fname)[2:].replace(os.path.sep, '/')
+        os.path.join(dirpath, fname)[2:].replace(os.path.sep, "/")
         for (dirpath, _, files) in os.walk(".")
         for fname in files
         if fname.endswith(".ipynb") and ".ipynb_checkpoints" not in dirpath
@@ -120,12 +120,24 @@ def sagemaker_badge(fname, rst=False):
     """
 
 
-def list_badges(fname, colab_only=False, rst=False):
+def hits_badge(fname, rst=False):
+    badge = "https://h.ampl.com/" + normalize(
+        f"https://github.com/{GITHUB_PATH}/{fname}"
+    )
+    if not rst:
+        return f"[![Hits]({badge})](https://colab.ampl.com)"
+    return ""
+
+
+def list_badges(fname, colab_only=False, rst=False, page=None):
     github = github_badge(fname, rst=rst)
     colab = colab_badge(fname, rst=rst)
     kaggle = kaggle_badge(fname, rst=rst) if not colab_only else ""
     gradient = gradient_badge(fname, rst=rst) if not colab_only else ""
     sagemaker = sagemaker_badge(fname, rst=rst) if not colab_only else ""
+    hits = hits_badge(fname, rst=rst) if page != "README" else ""
     return [
-        badge for badge in (github, colab, kaggle, gradient, sagemaker) if badge != ""
+        badge
+        for badge in (github, colab, kaggle, gradient, sagemaker, hits)
+        if badge != ""
     ]
