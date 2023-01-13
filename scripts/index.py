@@ -76,6 +76,14 @@ AMPL Model Colaboratory is a collection of AMPL models in `Jupyter Notebooks <ht
 that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **AWS SageMaker**.
 [:ref:`See our Highlights <tag-highlights>`]
 
+.. raw:: html
+
+    <a href="https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb" target="_blank">
+        <video width="100%" autoplay loop muted >
+            <source src="https://ampl.com/upload/videos/nqueens.mp4" type="video/mp4" />
+        </video>
+    </a>
+
 .. grid:: 1 1 2 2
     :gutter: 0
     :margin: 0
