@@ -9,7 +9,7 @@ that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **
 .. raw:: html
 
     <a href="https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb" target="_blank">
-        <video width="100%" autoplay loop muted >
+        <video width="100%" autoplay loop muted poster="https://ampl.com/upload/videos/nqueens_poster.jpg">
             <source src="https://ampl.com/upload/videos/nqueens.mp4" type="video/mp4" />
         </video>
     </a>
@@ -70,7 +70,7 @@ at the beginning of your notebook:
    # Google Colab & Kaggle integration
    MODULES, LICENSE_UUID = ['ampl', 'coin', 'highs', 'gokestrel'], None
    from amplpy import tools
-   ampl = tools.ampl_notebook(modules=MODULES, license_uuid=LICENSE_UUID, globals_=globals()) # instantiate AMPL object and register magics
+   ampl = tools.ampl_notebook(modules=MODULES, license_uuid=LICENSE_UUID, g=globals()) # instantiate AMPL object and register magics
 
 In the list ``MODULES`` you can specify the AMPL solvers you want to use in your notebook.
 As a quick-start you can use our template notebook: :ref:`tag-template`. Full list of AMPL modules available: ``amplgsl``, ``baron``, ``cbc``, ``coin``, ``conopt``, ``copt``, ``cplex``, ``gokestrel``, ``gurobi``, ``highs``, ``knitro``, ``lgo``, ``lindoglobal``, ``loqo``, ``minos``, ``octeract``, ``open``, ``plugins``, ``snopt``, ``xpress``.
