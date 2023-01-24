@@ -138,7 +138,7 @@ at the beginning of your notebook:
 .. code-block:: python
 
    # Google Colab & Kaggle integration
-   MODULES, LICENSE_UUID = ['ampl', 'coin', 'highs', 'gokestrel'], None
+   MODULES, LICENSE_UUID = ["coin", "highs", "gokestrel"], None
    from amplpy import tools
    ampl = tools.ampl_notebook(modules=MODULES, license_uuid=LICENSE_UUID, g=globals()) # instantiate AMPL object and register magics
 
