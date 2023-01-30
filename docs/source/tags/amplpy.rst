@@ -259,34 +259,6 @@ Optimization Methods in Finance: Chapter 3
 | Tags: :ref:`tag-amplpy`, :ref:`tag-example`, :ref:`tag-finance`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
-Pandas dataframes
-^^^^^^^^^^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/pandas/pandasdiet.ipynb
-    :alt: pandasdiet.ipynb
-    
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/pandas/pandasdiet.ipynb
-    :alt: Open In Colab
-    
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/pandas/pandasdiet.ipynb
-    :alt: Kaggle
-    
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/pandas/pandasdiet.ipynb
-    :alt: Gradient
-    
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/pandas/pandasdiet.ipynb
-    :alt: Open In SageMaker Studio Lab
-    
-
-| Description: Diet model using Pandas objects to load and retrieve data
-| Tags: :ref:`tag-amplpy`, :ref:`tag-pandas`, :ref:`tag-highlights`
-| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
-
 Pattern Enumeration
 ^^^^^^^^^^^^^^^^^^^
 
@@ -341,6 +313,62 @@ Pattern Generation
 
 | Description: Pattern generation example with amplpy
 | Tags: :ref:`tag-amplpy`, :ref:`tag-example`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
+Quick Start using Pandas dataframes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+    :alt: pandasdiet.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+| Description: Quick Start using Pandas dataframes to load and retrieve data
+| Tags: :ref:`tag-amplpy`, :ref:`tag-quick-start`, :ref:`tag-pandas`, :ref:`tag-highlights`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
+Quick Start using lists and dictionaries
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+    :alt: pandasnative.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+| Description: Quick Start using lists and dictionaries to load and retrieve data
+| Tags: :ref:`tag-amplpy`, :ref:`tag-quick-start`, :ref:`tag-highlights`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 Roll Cutting - Revision 1 & 2

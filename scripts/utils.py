@@ -40,7 +40,7 @@ def list_notebooks():
     lst = [fname for fname in lst if "site-packages" not in fname]
 
     notebooks = []
-    for fname in lst:
+    for fname in sorted(lst):
         if fname.replace("\\", "/") == "template/minimal.ipynb":
             print(f"Skipping {fname}.")
             continue

@@ -73,10 +73,63 @@ at the beginning of your notebook:
    ampl = tools.ampl_notebook(modules=MODULES, license_uuid=LICENSE_UUID, g=globals()) # instantiate AMPL object and register magics
 
 In the list ``MODULES`` you can specify the AMPL solvers you want to use in your notebook.
-As a quick-start you can use our template notebook: :ref:`tag-template`. Full list of AMPL modules available: ``amplgsl``, ``baron``, ``cbc``, ``coin``, ``conopt``, ``copt``, ``cplex``, ``gokestrel``, ``gurobi``, ``highs``, ``knitro``, ``lgo``, ``lindoglobal``, ``loqo``, ``minos``, ``octeract``, ``open``, ``plugins``, ``snopt``, ``xpress``.
+For more information on the AMPL Modules for Python see `Python Modules Documentation <https://dev.ampl.com/ampl/python/modules.html>`_.
+For more information on how to use ``amplpy`` see `Python API Documentation <https://amplpy.readthedocs.io/>`_.
 
-**You can contribute to this repository** by making pull requests to https://github.com/ampl/amplcolab and following the instructions in the  `README <https://github.com/ampl/amplcolab/blob/master/README.md>`_ file,
-or by sending a link to your notebook by email to devteam@ampl.com.
+.. grid:: 1 1 2 2
+    :gutter: 0
+    :margin: 0
+    :padding: 0
+
+    .. grid-item-card::
+        :margin: 0
+        :padding: 0
+
+        Quick Start using Pandas dataframes
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        Data can be loaded in various forms, one of which is ``pandas.DataFrame`` objects.
+
+        .. image:: https://colab.research.google.com/assets/colab-badge.svg
+            :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :alt: Open In Colab
+
+        .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :alt: Kaggle
+
+        .. image:: https://assets.paperspace.io/img/gradient-badge.svg
+            :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :alt: Gradient
+
+        .. image:: https://studiolab.sagemaker.aws/studiolab.svg
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :alt: Open In SageMaker Studio Lab
+
+    .. grid-item-card::
+        :margin: 0
+        :padding: 0
+
+        Quick Start using lists and dictionaries
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        Data can be loaded in various forms, including Python lists and dictionaries.
+
+        .. image:: https://colab.research.google.com/assets/colab-badge.svg
+            :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+            :alt: Open In Colab
+
+        .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+            :alt: Kaggle
+
+        .. image:: https://assets.paperspace.io/img/gradient-badge.svg
+            :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+            :alt: Gradient
+
+        .. image:: https://studiolab.sagemaker.aws/studiolab.svg
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+            :alt: Open In SageMaker Studio Lab
 
 .. note::
 
@@ -84,7 +137,7 @@ or by sending a link to your notebook by email to devteam@ampl.com.
     They are equivalent to ``ampl.eval("""cell content""")``.
 
 .. warning::
-    Some notebooks require commercial solvers. You can use a free `AMPL Community
+    **Some notebooks require commercial solvers.** You can use a free `AMPL Community
     Edition <https://ampl.com/ce/>`_ license with an open-source solver (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
     or with a commercial solver from the `NEOS Server <http://www.neos-server.org/>`_ as described in https://dev.ampl.com/solvers/kestrel.html.
     In the list ``MODULES`` you need to include 
@@ -740,34 +793,6 @@ Optimization Methods in Finance: Chapter 3
 | Tags: :ref:`tag-amplpy`, :ref:`tag-example`, :ref:`tag-finance`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
-Pandas dataframes
-^^^^^^^^^^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/pandas/pandasdiet.ipynb
-    :alt: pandasdiet.ipynb
-    
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/pandas/pandasdiet.ipynb
-    :alt: Open In Colab
-    
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/pandas/pandasdiet.ipynb
-    :alt: Kaggle
-    
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/pandas/pandasdiet.ipynb
-    :alt: Gradient
-    
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/pandas/pandasdiet.ipynb
-    :alt: Open In SageMaker Studio Lab
-    
-
-| Description: Diet model using Pandas objects to load and retrieve data
-| Tags: :ref:`tag-amplpy`, :ref:`tag-pandas`, :ref:`tag-highlights`
-| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
-
 Pattern Enumeration
 ^^^^^^^^^^^^^^^^^^^
 
@@ -879,6 +904,62 @@ Production model
 | Description: generic model for production problem
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-industry`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+Quick Start using Pandas dataframes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+    :alt: pandasdiet.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+| Description: Quick Start using Pandas dataframes to load and retrieve data
+| Tags: :ref:`tag-amplpy`, :ref:`tag-quick-start`, :ref:`tag-pandas`, :ref:`tag-highlights`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
+Quick Start using lists and dictionaries
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+    :alt: pandasnative.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasnative.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+| Description: Quick Start using lists and dictionaries to load and retrieve data
+| Tags: :ref:`tag-amplpy`, :ref:`tag-quick-start`, :ref:`tag-highlights`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 Roll Cutting - Revision 1 & 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

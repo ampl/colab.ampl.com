@@ -39,6 +39,7 @@ Tags
     planning
     power-generation
     pricing
+    quick-start
     scheduling
     template
     tsp
