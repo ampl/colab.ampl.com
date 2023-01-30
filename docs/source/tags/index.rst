@@ -35,6 +35,7 @@ Tags
     mip
     mixed-integer-linear
     nonlinear
+    pandas
     planning
     power-generation
     pricing
