@@ -24,6 +24,7 @@ Tags
     engineering
     example
     finance
+    geometry
     google-sheets
     graphs
     gui
@@ -34,11 +35,13 @@ Tags
     milp
     mip
     mixed-integer-linear
+    non-linear
     nonlinear
     pandas
     planning
     power-generation
     pricing
+    puzzles
     quick-start
     scheduling
     template
