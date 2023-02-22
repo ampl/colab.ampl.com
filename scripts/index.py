@@ -137,12 +137,14 @@ at the beginning of your notebook:
 
 .. code-block:: python
 
-   # Google Colab & Kaggle integration
-   MODULES, LICENSE_UUID = ["coin", "highs", "gokestrel"], None
-   from amplpy import tools
-   ampl = tools.ampl_notebook(modules=MODULES, license_uuid=LICENSE_UUID, g=globals()) # instantiate AMPL object and register magics
+    # Google Colab & Kaggle integration
+    from amplpy import AMPL, tools
+    ampl = tools.ampl_notebook(
+        modules=["coin", "highs", "gokestrel"], # modules to install
+        license_uuid="your-license-uuid", # license to use
+        g=globals()) # instantiate AMPL object and register magics
 
-In the list ``MODULES`` you can specify the AMPL solvers you want to use in your notebook.
+In the list ``modules`` you can specify the AMPL solvers you want to use in your notebook.
 For more information on the AMPL Modules for Python see `Python Modules Documentation <https://dev.ampl.com/ampl/python/modules.html>`_.
 For more information on how to use ``amplpy`` see `Python API Documentation <https://amplpy.readthedocs.io/>`_.
 
@@ -206,16 +208,6 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
     In these notebooks there are ``%%ampl_eval`` cells that allow you to run AMPL code directly from the notebook. 
     They are equivalent to ``ampl.eval(\"\"\"cell content\"\"\")``.
 
-.. warning::
-    **Some notebooks require commercial solvers.** You can use a free `AMPL Community
-    Edition <https://ampl.com/ce/>`_ license with an open-source solver (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
-    or with a commercial solver from the `NEOS Server <http://www.neos-server.org/>`_ as described in https://dev.ampl.com/solvers/kestrel.html.
-    In the list ``MODULES`` you need to include 
-    ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 
-    ``"highs"`` for the `HiGHS <https://highs.dev/>`_ solver; 
-    ``"coin"`` for the `COIN-OR <https://www.coin-or.org/>`_ solvers.
-    To use other commercial solvers without NEOS, your license needs to include the commercial solver (e.g., an AMPL CE commercial solver trial).
-
 .. toctree::
     :hidden:
 
@@ -225,6 +217,28 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
     tags/industry
     tags/military
     tags/google-sheets
+
+Notebook modules
+----------------
+
+`AMPL and all Solvers are now available as Python Packages. <https://dev.ampl.com/ampl/python/modules.html>`_
+The notebooks in this repository use the following modules:
+
+.. toctree::
+    :maxdepth: 2
+
+    modules/index
+
+
+.. warning::
+    **Some notebooks require commercial solvers.** You can use a free `AMPL Community
+    Edition <https://ampl.com/ce/>`_ license with an open-source solver (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
+    or with a commercial solver from the `NEOS Server <http://www.neos-server.org/>`_ as described in https://dev.ampl.com/solvers/kestrel.html.
+    In the list ``MODULES`` you need to include 
+    ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 
+    ``"highs"`` for the `HiGHS <https://highs.dev/>`_ solver; 
+    ``"coin"`` for the `COIN-OR <https://www.coin-or.org/>`_ solvers.
+    To use other commercial solvers without NEOS, your license needs to include the commercial solver (e.g., an AMPL CE commercial solver trial).
 
 Notebook Authors
 ----------------
@@ -282,16 +296,21 @@ def print_rst(info, fout):
         print(f"| Author: {', '.join(lst)}\n", file=fout)
 
 
-madeby = {}
-tagged = {}
-names = {}
+nb_madeby = {}
+nb_tagged = {}
+nb_uses = {}
+nb_names = {}
 for info in NOTEBOOKS:
-    title, fname = info["title"], info["fname"]
-    print(f"Getting tags and authors of {fname}")
+    title, fname, modules = info["title"], info["fname"], info["modules"]
+    print(f"Getting tags, authors, and modules of {fname}")
+    for mod in modules:
+        if mod not in nb_uses:
+            nb_uses[mod] = []
+        nb_uses[mod].append(info)
     for tag in info.get("tags", []):
-        if tag not in tagged:
-            tagged[tag] = []
-        tagged[tag].append(info)
+        if tag not in nb_tagged:
+            nb_tagged[tag] = []
+        nb_tagged[tag].append(info)
     for author in info.get("notebook_author", "").split(","):
         author = author.strip()
         if "<" not in author:
@@ -299,10 +318,10 @@ for info in NOTEBOOKS:
         assert "<<" in author and ">>" in author
         email = author[author.find("<<") + 2 : author.rfind(">>")].strip()
         name = author[: author.find("<<")].strip()
-        if email not in madeby:
-            madeby[email] = []
-            names[email] = name
-        madeby[email].append(info)
+        if email not in nb_madeby:
+            nb_madeby[email] = []
+            nb_names[email] = name
+        nb_madeby[email].append(info)
 
     print_markdown(info, readme)
     print_rst(info, index)
@@ -344,17 +363,18 @@ Tags
     :maxdepth: 2
 
 """
-for tag in sorted(tagged):
-    tags_index += f"    {tag}\n"
+for tag, lst in sorted(nb_tagged.items()):
+    label = f"{tag} ({len(lst)} notebook{'s' if len(lst) > 1 else ''}) <{tag}>"
+    tags_index += f"    {label}\n"
 print(tags_index, file=open(f"docs/source/tags/index.rst", "w"))
 
-for tag in tagged:
+for tag, lst in nb_tagged.items():
     tag_rst = open(f"docs/source/tags/{tag}.rst", "w")
     title = f"{tag}"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _tag-{tag}:\n\n{title}"
     print(header, file=tag_rst)
-    for info in tagged[tag]:
+    for info in lst:
         print_rst(info, tag_rst)
 
 # Authors
@@ -371,7 +391,7 @@ The notebooks in this repository are contributed by the following authors:
     :maxdepth: 1
 
 """
-authors_sorted = sorted(((name, email) for email, name in names.items()))
+authors_sorted = sorted(((name, email) for email, name in nb_names.items()))
 for _, email in authors_sorted:
     email = email.lower().replace("@", "_at_")
     authors_index += f"    {email}\n"
@@ -383,7 +403,7 @@ print(authors_index, file=open(f"docs/source/authors/index.rst", "w"))
 
 for name, email in authors_sorted:
     print(f">>{name} <{email}>")
-    lst = madeby[email]
+    lst = nb_madeby[email]
     email = email.replace("@", "_at_")
     email_rst = open(f"docs/source/authors/{email}.rst", "w")
     title = f"{name} ({len(lst)} notebook{'s' if len(lst) > 1 else ''})"
@@ -392,3 +412,31 @@ for name, email in authors_sorted:
     print(header, file=email_rst)
     for info in lst:
         print_rst(info, email_rst)
+
+# Modules
+
+for f in glob.glob("docs/source/modules/*.rst"):
+    os.remove(f)
+modules_index = """
+Modules
+=======
+
+`AMPL and all Solvers are now available as Python Packages. <https://dev.ampl.com/ampl/python/modules.html>`_
+This page organizes the notebooks according to the modules used.
+
+.. toctree::
+    :maxdepth: 2
+
+"""
+for mod in sorted(nb_uses):
+    modules_index += f"    {mod}\n"
+print(modules_index, file=open(f"docs/source/modules/index.rst", "w"))
+
+for mod, lst in nb_uses.items():
+    mod_rst = open(f"docs/source/modules/{mod}.rst", "w")
+    title = f"{mod} ({len(lst)} notebook{'s' if len(lst) > 1 else ''})"
+    title += "\n" + "=" * len(title) + "\n"
+    header = f".. _module-{mod}:\n\n{title}"
+    print(header, file=mod_rst)
+    for info in lst:
+        print_rst(info, mod_rst)

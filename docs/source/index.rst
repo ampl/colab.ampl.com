@@ -67,12 +67,14 @@ at the beginning of your notebook:
 
 .. code-block:: python
 
-   # Google Colab & Kaggle integration
-   MODULES, LICENSE_UUID = ["coin", "highs", "gokestrel"], None
-   from amplpy import tools
-   ampl = tools.ampl_notebook(modules=MODULES, license_uuid=LICENSE_UUID, g=globals()) # instantiate AMPL object and register magics
+    # Google Colab & Kaggle integration
+    from amplpy import AMPL, tools
+    ampl = tools.ampl_notebook(
+        modules=["coin", "highs", "gokestrel"], # modules to install
+        license_uuid="your-license-uuid", # license to use
+        g=globals()) # instantiate AMPL object and register magics
 
-In the list ``MODULES`` you can specify the AMPL solvers you want to use in your notebook.
+In the list ``modules`` you can specify the AMPL solvers you want to use in your notebook.
 For more information on the AMPL Modules for Python see `Python Modules Documentation <https://dev.ampl.com/ampl/python/modules.html>`_.
 For more information on how to use ``amplpy`` see `Python API Documentation <https://amplpy.readthedocs.io/>`_.
 
@@ -136,16 +138,6 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
     In these notebooks there are ``%%ampl_eval`` cells that allow you to run AMPL code directly from the notebook. 
     They are equivalent to ``ampl.eval("""cell content""")``.
 
-.. warning::
-    **Some notebooks require commercial solvers.** You can use a free `AMPL Community
-    Edition <https://ampl.com/ce/>`_ license with an open-source solver (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
-    or with a commercial solver from the `NEOS Server <http://www.neos-server.org/>`_ as described in https://dev.ampl.com/solvers/kestrel.html.
-    In the list ``MODULES`` you need to include 
-    ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 
-    ``"highs"`` for the `HiGHS <https://highs.dev/>`_ solver; 
-    ``"coin"`` for the `COIN-OR <https://www.coin-or.org/>`_ solvers.
-    To use other commercial solvers without NEOS, your license needs to include the commercial solver (e.g., an AMPL CE commercial solver trial).
-
 .. toctree::
     :hidden:
 
@@ -155,6 +147,28 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
     tags/industry
     tags/military
     tags/google-sheets
+
+Notebook modules
+----------------
+
+`AMPL and all Solvers are now available as Python Packages. <https://dev.ampl.com/ampl/python/modules.html>`_
+The notebooks in this repository use the following modules:
+
+.. toctree::
+    :maxdepth: 2
+
+    modules/index
+
+
+.. warning::
+    **Some notebooks require commercial solvers.** You can use a free `AMPL Community
+    Edition <https://ampl.com/ce/>`_ license with an open-source solver (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
+    or with a commercial solver from the `NEOS Server <http://www.neos-server.org/>`_ as described in https://dev.ampl.com/solvers/kestrel.html.
+    In the list ``MODULES`` you need to include 
+    ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 
+    ``"highs"`` for the `HiGHS <https://highs.dev/>`_ solver; 
+    ``"coin"`` for the `COIN-OR <https://www.coin-or.org/>`_ solvers.
+    To use other commercial solvers without NEOS, your license needs to include the commercial solver (e.g., an AMPL CE commercial solver trial).
 
 Notebook Authors
 ----------------

@@ -1,5 +1,5 @@
 import json
-from utils import list_notebooks, list_badges
+from utils import list_notebooks, list_badges, parse_modules
 import os
 
 
@@ -63,19 +63,27 @@ def update_notebook_headers():
             assert len(source) > 0
             if source[0].startswith("# Google Colab & Kaggle integration"):
                 assert cells[i]["cell_type"] == "code"
-                modules = source[1]
-                assert modules.startswith("MODULES")
-                assert "[" in modules and "]" in modules
-                modules = list(eval(modules[modules.find("[") : modules.find("]") + 1]))
+                src = "".join(source)
+                assert "[" in src and "]" in src
+                modules = list(eval(src[src.find("[") : src.find("]") + 1]))
+                modules_str = "[" + ", ".join([f'"{mod}"' for mod in modules]) + "]"
                 if "ampl" in modules:
                     modules.remove("ampl")
                 assert len(modules) >= 1
                 cells[i]["source"] = [
                     "# Google Colab & Kaggle integration\n",
-                    f"MODULES, LICENSE_UUID = {modules}, None\n",
-                    "from amplpy import tools\n",
-                    "ampl = tools.ampl_notebook(modules=MODULES, license_uuid=LICENSE_UUID, globals_=globals()) # instantiate AMPL object and register magics",
+                    "from amplpy import AMPL, tools\n",
+                    "ampl = tools.ampl_notebook(\n",
+                    f"    modules={modules_str}, # modules to install\n",
+                    '    license_uuid="default", # license to use\n',
+                    "    g=globals()) # instantiate AMPL object and register magics",
                 ]
+                # cells[i]["source"] = [
+                #     "# Google Colab & Kaggle integration\n",
+                #     "from amplpy import tools\n",
+                #     f'MODULES, LICENSE_UUID = {modules_str}, "your-license-uuid"\n',
+                #     f"ampl = tools.ampl_notebook(modules=MODULES, license_uuid=LICENSE_UUID, g=globals()) # instantiate AMPL object and register magics",
+                # ]
                 cells[i]["outputs"] = []
                 break
         else:

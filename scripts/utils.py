@@ -3,6 +3,13 @@ import re
 import json
 
 
+def parse_modules(cell):
+    return [
+        mod.strip(",'\" ")
+        for mod in cell[cell.find("[") + 1 : cell.find("]")].split(",")
+    ]
+
+
 def read_header(fname):
     notebook = open(fname, "r", encoding="utf-8").read()
     data = json.loads(notebook)
@@ -27,6 +34,16 @@ def read_header(fname):
         elif key == "tags":
             assert key not in info
             info[key] = [t.strip().lower() for t in value.split(",")]
+    for i in range(1, len(cells)):
+        source = cells[i]["source"]
+        assert len(source) > 0
+        if source[0].startswith("# Google Colab & Kaggle integration"):
+            modules = parse_modules("".join(source))
+            assert modules != []
+            info["modules"] = modules
+            break
+    else:
+        raise Exception("Modules not found in notebook")
     return info
 
 
