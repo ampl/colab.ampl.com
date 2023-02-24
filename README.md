@@ -47,6 +47,55 @@ The first two notebook cells are modified to ensure that requirements are instal
 
 | Title  | GitHub |  Colab | Kaggle | Gradient | SageMaker|
 |--------|--------|--------|--------|----------|----------|
+# AMPL Model Colaboratory
+
+## Website
+
+https://colab.ampl.com
+
+## Contribution Guide
+
+1. Use the template [template/colab.ipynb](https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb) as base template.
+
+2. In the header make sure you fill the following fields:
+```
+Description: <required>
+
+Tags: <required>, <>, <>
+
+Notebook author: <required>
+
+Model author: <required>
+
+License: <optional>
+
+References: <optional>
+```
+
+3. Do not modify the initial two cells that take care of setup and jupyter notebook integration
+to do anything other than installing packages and instantiating the ampl_notebook. You can modify
+the list of modules and add more dependencies, but if you do anything else the changes may be overwritten.
+
+4. Place your notebook inside `amplcolab/authors/<github_username>/`.
+
+5. Update the badges and the index as shown below before committing.
+
+Note: The default license for every notebook is [MIT](https://github.com/ampl/amplcolab/blob/master/LICENSE) unless specified otherwise in the notebook.
+
+### Updating notebook headers & index
+
+The following command updates the readme file and the index in the documentation:
+```bash
+$ python scripts/index.py
+```
+
+Note that the notebook headers are patched with new badges using links to the correct locations after the notebook is published.
+The first two notebook cells are modified to ensure that requirements are installed and that the ampl_notebook is instantiated.
+
+## Notebooks
+
+| Title  | GitHub |  Colab | Kaggle | Gradient | SageMaker|
+|--------|--------|--------|--------|----------|----------|
 |AMPL Christmas Model created by ChatGPT|[![christmas.ipynb](https://img.shields.io/badge/github-%23121011.svg?logo=github)](https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb)|[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb)|[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb)|[![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb)|
 |AMPL Model Colaboratory Template|[![colab.ipynb](https://img.shields.io/badge/github-%23121011.svg?logo=github)](https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ampl/amplcolab/blob/master/template/colab.ipynb)|[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb)|[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/ampl/amplcolab/blob/master/template/colab.ipynb)|[![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/template/colab.ipynb)|
 |Book Example: Economic equilibria|[![economic_eq_lecture.ipynb](https://img.shields.io/badge/github-%23121011.svg?logo=github)](https://github.com/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb)|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb)|[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb)|[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb)|[![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/ampl-lecture/economic_eq_lecture.ipynb)|

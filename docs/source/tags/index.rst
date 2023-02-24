@@ -15,7 +15,7 @@ Tags
     callbacks (1 notebook) <callbacks>
     chatgpt (1 notebook) <chatgpt>
     christmas (1 notebook) <christmas>
-    complementarity_problem (1 notebook) <complementarity_problem>
+    complementarity-problem (1 notebook) <complementarity-problem>
     complexity (1 notebook) <complexity>
     constraint-programming (3 notebooks) <constraint-programming>
     cutting-stock (1 notebook) <cutting-stock>

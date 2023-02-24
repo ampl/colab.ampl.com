@@ -28,7 +28,7 @@ Book Example: Economic equilibria
     
 
 | Description: economic model using complementarity conditions from Chapter 19 AMPL book
-| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity_problem`
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity-problem`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 Book Example: Transshipment problem

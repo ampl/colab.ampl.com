@@ -13,6 +13,8 @@ NOTEBOOKS = list_notebooks()
 
 readme = open("README.md", "w", newline="\n")
 index = open("docs/source/index.rst", "w", newline="\n")
+gettingstarted = open("docs/source/getting-started.rst", "w", newline="\n")
+notebooks = open("docs/source/notebooks.rst", "w", newline="\n")
 
 print(
     """# AMPL Model Colaboratory
@@ -123,10 +125,87 @@ that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **
             :width: 100%
             :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/template/minimal.ipynb
 
-Getting Started
----------------
+Contents
+--------
 
-In order to be use AMPL on these notebook platforms you just need to following two code blocks
+.. toctree::
+    :maxdepth: 2
+
+    getting-started
+    modules/index
+    Highlights <tags/highlights>
+    Lectures <tags/ampl-lecture>
+    authors/index
+
+.. toctree::
+    :hidden:
+
+    tags/index
+    notebooks
+
+""",
+    file=index,
+)
+
+print(
+    """# AMPL Model Colaboratory
+
+## Website
+
+https://colab.ampl.com
+
+## Contribution Guide
+
+1. Use the template [template/colab.ipynb](https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb) as base template.
+
+2. In the header make sure you fill the following fields:
+```
+Description: <required>
+
+Tags: <required>, <>, <>
+
+Notebook author: <required>
+
+Model author: <required>
+
+License: <optional>
+
+References: <optional>
+```
+
+3. Do not modify the initial two cells that take care of setup and jupyter notebook integration
+to do anything other than installing packages and instantiating the ampl_notebook. You can modify
+the list of modules and add more dependencies, but if you do anything else the changes may be overwritten.
+
+4. Place your notebook inside `amplcolab/authors/<github_username>/`.
+
+5. Update the badges and the index as shown below before committing.
+
+Note: The default license for every notebook is [MIT](https://github.com/ampl/amplcolab/blob/master/LICENSE) unless specified otherwise in the notebook.
+
+### Updating notebook headers & index
+
+The following command updates the readme file and the index in the documentation:
+```bash
+$ python scripts/index.py
+```
+
+Note that the notebook headers are patched with new badges using links to the correct locations after the notebook is published.
+The first two notebook cells are modified to ensure that requirements are installed and that the ampl_notebook is instantiated.
+
+## Notebooks
+
+| Title  | GitHub |  Colab | Kaggle | Gradient | SageMaker|
+|--------|--------|--------|--------|----------|----------|""",
+    file=readme,
+)
+
+print(
+    """
+Getting Started
+===============
+
+In order to be use AMPL on the notebook platforms you just need to following two code blocks
 at the beginning of your notebook:
 
 .. code-block:: bash
@@ -208,56 +287,31 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
     In these notebooks there are ``%%ampl_eval`` cells that allow you to run AMPL code directly from the notebook. 
     They are equivalent to ``ampl.eval(\"\"\"cell content\"\"\")``.
 
-.. toctree::
-    :hidden:
+Free licenses available
+-----------------------
 
-    Highlights <tags/highlights>
-    tags/ampl-lecture
-    tags/finance
-    tags/industry
-    tags/military
-    tags/google-sheets
+- On **Google Colab** there is a default `AMPL Community Edition license <https://ampl.com/ce/>`_
+  that gives you unlimited access to AMPL
+  with open-source solvers (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
+  or with commercial solvers from the `NEOS Server <http://www.neos-server.org/>`_ as described in `Kestrel documentation <https://dev.ampl.com/solvers/kestrel.html>`_.
 
-Notebook modules
-----------------
+- `AMPL for Courses <https://ampl.com/licenses-and-pricing/ampl-for-teaching/>`_ is another free license of full-featured AMPL with no limitations on problem size, and a selection of popular commercial and open-source solvers.
+  **This license can be used on Google Colab and similar platforms for teaching.**
 
-`AMPL and all Solvers are now available as Python Packages. <https://dev.ampl.com/ampl/python/modules.html>`_
-The notebooks in this repository use the following modules:
-
-.. toctree::
-    :maxdepth: 2
-
-    modules/index
-
-
-.. warning::
-    **Some notebooks require commercial solvers.** You can use a free `AMPL Community
-    Edition <https://ampl.com/ce/>`_ license with an open-source solver (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
-    or with a commercial solver from the `NEOS Server <http://www.neos-server.org/>`_ as described in https://dev.ampl.com/solvers/kestrel.html.
-    In the list ``MODULES`` you need to include 
-    ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 
-    ``"highs"`` for the `HiGHS <https://highs.dev/>`_ solver; 
-    ``"coin"`` for the `COIN-OR <https://www.coin-or.org/>`_ solvers.
-    To use other commercial solvers without NEOS, your license needs to include the commercial solver (e.g., an AMPL CE commercial solver trial).
-
-Notebook Authors
-----------------
-
-The notebooks in this repository are contributed by the following authors:
-
-.. toctree::
-    :maxdepth: 2
-
-    authors/index
-
-**Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab or
-send a link to your notebook by email to devteam@ampl.com.
-
-Notebooks
----------
+- To access commercial solvers you can use solver trials associated to your `AMPL Community Edition license <https://ampl.com/ce/>`_.
 
 """,
-    file=index,
+    file=gettingstarted,
+)
+
+
+print(
+    """
+Notebooks
+=========
+
+""",
+    file=notebooks,
 )
 
 
@@ -324,21 +378,8 @@ for info in NOTEBOOKS:
         nb_madeby[email].append(info)
 
     print_markdown(info, readme)
-    print_rst(info, index)
-
-
-print(
-    """
-Tags
-----
-
-.. toctree::
-    :maxdepth: 2
-
-    tags/index
-""",
-    file=index,
-)
+    # print_rst(info, index)
+    print_rst(info, notebooks)
 
 print(
     """## License
@@ -423,6 +464,33 @@ Modules
 
 `AMPL and all Solvers are now available as Python Packages. <https://dev.ampl.com/ampl/python/modules.html>`_
 This page organizes the notebooks according to the modules used.
+
+.. note::
+    On Google Colab there is a default `AMPL Community
+    Edition license <https://ampl.com/ce/>`_ that gives you unlimited access to AMPL
+    with open-source solvers (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
+    or with commercial solvers from the `NEOS Server <http://www.neos-server.org/>`_ as described in `Kestrel documentation <https://dev.ampl.com/solvers/kestrel.html>`_.
+    
+    In the list ``modules`` you need to include 
+    ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 
+    ``"highs"`` for the `HiGHS <https://highs.dev/>`_ solver; 
+    ``"coin"`` for the `COIN-OR <https://www.coin-or.org/>`_ solvers.
+    To use other commercial solvers, your license needs to include the commercial solver (e.g., an AMPL CE commercial solver trial).
+    
+    .. code-block:: bash
+
+        # Install dependencies
+        !pip install -q amplpy
+
+    .. code-block:: python
+
+        # Google Colab & Kaggle integration
+        from amplpy import AMPL, tools
+        ampl = tools.ampl_notebook(
+            modules=["coin", "highs", "gokestrel"], # modules to install
+            license_uuid="default", # license to use
+            g=globals()) # instantiate AMPL object and register magics
+
 
 .. toctree::
     :maxdepth: 2
