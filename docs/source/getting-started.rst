@@ -88,8 +88,8 @@ Free licenses available
 -----------------------
 
 - On **Google Colab** there is a default `AMPL Community Edition license <https://ampl.com/ce/>`_
-  that gives you unlimited access to AMPL
-  with open-source solvers (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
+  that gives you **unlimited access to AMPL
+  with open-source solvers** (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
   or with commercial solvers from the `NEOS Server <http://www.neos-server.org/>`_ as described in `Kestrel documentation <https://dev.ampl.com/solvers/kestrel.html>`_.
 
 - `AMPL for Courses <https://ampl.com/licenses-and-pricing/ampl-for-teaching/>`_ is another free license of full-featured AMPL with no limitations on problem size, and a selection of popular commercial and open-source solvers.
@@ -97,4 +97,22 @@ Free licenses available
 
 - To access commercial solvers you can use solver trials associated to your `AMPL Community Edition license <https://ampl.com/ce/>`_.
 
+AMPL Python API: amplpy
+-----------------------
+
+`amplpy <https://amplpy.readthedocs.io>`_ is an interface that allows developers to access the features of `AMPL <https://ampl.com>`_ from within Python.
+For a quick introduction to AMPL see `Quick Introduction to AMPL <https://dev.ampl.com/ampl/introduction.html>`_.
+
+In the same way that AMPL's syntax matches naturally the mathematical description of the model,
+the input and output data matches naturally Python lists, sets, dictionaries, ``pandas`` and ``numpy`` objects.
+
+All model generation and solver interaction is handled directly by AMPL, which leads to
+great stability and speed; the library just acts as an intermediary, and the added overhead (in terms of memory and
+CPU usage) depends mostly on how much data is sent and read back from AMPL, the size of the expanded model as such is irrelevant.
+
+With `amplpy <https://amplpy.readthedocs.io>`_ you can model and solve large scale optimization problems in Python with the performance of heavily optimized C code
+without losing model readability. The same model can be deployed on applications
+built on different languages by just switching the API used.
+
+[`Python API Documentation <https://amplpy.readthedocs.io>`_]
 

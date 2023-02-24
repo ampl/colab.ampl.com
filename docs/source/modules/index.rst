@@ -7,8 +7,8 @@ This page organizes the notebooks according to the modules used.
 
 .. note::
     On Google Colab there is a default `AMPL Community
-    Edition license <https://ampl.com/ce/>`_ that gives you unlimited access to AMPL
-    with open-source solvers (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
+    Edition license <https://ampl.com/ce/>`_ that gives you **unlimited access to AMPL
+    with open-source solvers** (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
     or with commercial solvers from the `NEOS Server <http://www.neos-server.org/>`_ as described in `Kestrel documentation <https://dev.ampl.com/solvers/kestrel.html>`_.
     
     In the list ``modules`` you need to include 
