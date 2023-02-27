@@ -2,8 +2,16 @@
 Modules
 =======
 
+Modules available
+-----------------
+
 `AMPL and all Solvers are now available as Python Packages. <https://dev.ampl.com/ampl/python/modules.html>`_
-This page organizes the notebooks according to the modules used.
+List of modules available:
+
+- Open-source: ``highs``, ``cbc``, ``coin`` (includes: CBC, Couenne, Ipopt, Bonmin), ``open`` (includes all open-source solvers)
+- `NEOS Server <http://www.neos-server.org/>`_ : ``gokestrel`` (`kestrel client <https://dev.ampl.com/solvers/kestrel.html>`_)
+- Commercial solvers: ``baron``, ``conopt``, ``copt``, ``cplex``, ``gurobi``, ``knitro``, ``lgo``, ``lindoglobal``, ``loqo``, ``minos``, ``octeract``, ``snopt``, ``xpress``
+- AMPL Plugins: ``amplgsl`` (`amplgsl docs <https://amplgsl.readthedocs.io/>`_), ``plugins`` (`amplplugins docs <https://amplplugins.readthedocs.io/>`_)
 
 .. note::
     On Google Colab there is a default `AMPL Community
@@ -31,6 +39,10 @@ This page organizes the notebooks according to the modules used.
             license_uuid="default", # license to use
             g=globals()) # instantiate AMPL object and register magics
 
+Learn more: [`AMPL and Solvers modules <https://dev.ampl.com/ampl/python/modules.html>`_] [`Solver docs <https://dev.ampl.com/solvers/index.html>`_]
+
+Notebooks grouped by modules
+----------------------------
 
 .. toctree::
     :maxdepth: 2

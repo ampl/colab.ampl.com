@@ -2,6 +2,9 @@
 Getting Started
 ===============
 
+Quick setup
+-----------
+
 In order to be use AMPL on the notebook platforms you just need to following two code blocks
 at the beginning of your notebook:
 
@@ -84,6 +87,8 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
     In these notebooks there are ``%%ampl_eval`` cells that allow you to run AMPL code directly from the notebook. 
     They are equivalent to ``ampl.eval("""cell content""")``.
 
+Learn more: [`Python Modules Documentation <https://dev.ampl.com/ampl/python/modules.html>`_] [`Python API Documentation <https://amplpy.readthedocs.io/>`_]
+
 Free licenses available
 -----------------------
 
@@ -96,6 +101,8 @@ Free licenses available
   **This license can be used on Google Colab and similar platforms for teaching.**
 
 - To access commercial solvers you can use solver trials associated to your `AMPL Community Edition license <https://ampl.com/ce/>`_.
+
+Learn more: [`AMPL Community Edition <https://ampl.com/ce/>`_] [`AMPL for Courses <https://ampl.com/licenses-and-pricing/ampl-for-teaching/>`_]
 
 AMPL Python API: amplpy
 -----------------------
@@ -114,5 +121,5 @@ With `amplpy <https://amplpy.readthedocs.io>`_ you can model and solve large sca
 without losing model readability. The same model can be deployed on applications
 built on different languages by just switching the API used.
 
-[`Python API Documentation <https://amplpy.readthedocs.io>`_]
+Learn more: [`Python API Documentation <https://amplpy.readthedocs.io>`_]
 
