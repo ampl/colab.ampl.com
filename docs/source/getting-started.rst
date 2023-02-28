@@ -5,7 +5,7 @@ Getting Started
 Quick setup
 -----------
 
-In order to be use AMPL on the notebook platforms you just need to following two code blocks
+In order to be use AMPL on any notebook platform (e.g., Google Colab) you just need to following two code blocks
 at the beginning of your notebook:
 
 .. code-block:: bash
@@ -89,8 +89,8 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
 
 Learn more: [`Python Modules Documentation <https://dev.ampl.com/ampl/python/modules.html>`_] [`Python API Documentation <https://amplpy.readthedocs.io/>`_]
 
-Free licenses available
------------------------
+AMPL is free on Colab
+---------------------
 
 - On **Google Colab** there is a default `AMPL Community Edition license <https://ampl.com/ce/>`_
   that gives you **unlimited access to AMPL
@@ -100,7 +100,7 @@ Free licenses available
 - `AMPL for Courses <https://ampl.com/licenses-and-pricing/ampl-for-teaching/>`_ is another free license of full-featured AMPL with no limitations on problem size, and a selection of popular commercial and open-source solvers.
   **This license can be used on Google Colab and similar platforms for teaching.**
 
-- To access commercial solvers you can use solver trials associated to your `AMPL Community Edition license <https://ampl.com/ce/>`_.
+- To access commercial solvers you can use solver trials associated with your `AMPL Community Edition license <https://ampl.com/ce/>`_.
 
 Learn more: [`AMPL Community Edition <https://ampl.com/ce/>`_] [`AMPL for Courses <https://ampl.com/licenses-and-pricing/ampl-for-teaching/>`_]
 
