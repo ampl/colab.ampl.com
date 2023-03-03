@@ -31,6 +31,8 @@ Tags
     heuristics (2 notebooks) <heuristics>
     highlights (6 notebooks) <highlights>
     industry (4 notebooks) <industry>
+    lecture (1 notebook) <lecture>
+    lp (1 notebook) <lp>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
     mip (5 notebooks) <mip>
@@ -44,6 +46,7 @@ Tags
     puzzles (1 notebook) <puzzles>
     quick-start (2 notebooks) <quick-start>
     scheduling (1 notebook) <scheduling>
+    simple (1 notebook) <simple>
     template (1 notebook) <template>
     tsp (1 notebook) <tsp>
     vector-packing (1 notebook) <vector-packing>
