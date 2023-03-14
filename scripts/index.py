@@ -143,6 +143,9 @@ Contents
     tags/index
     notebooks
 
+Notebooks
+---------
+
 """,
     file=index,
 )
@@ -403,7 +406,7 @@ for info in NOTEBOOKS:
         nb_madeby[email].append(info)
 
     print_markdown(info, readme)
-    # print_rst(info, index)
+    print_rst(info, index)
     print_rst(info, notebooks)
 
 print(
