@@ -17,6 +17,7 @@ Tags
     christmas (1 notebook) <christmas>
     complementarity-problem (1 notebook) <complementarity-problem>
     complexity (1 notebook) <complexity>
+    conic (1 notebook) <conic>
     constraint-programming (3 notebooks) <constraint-programming>
     cutting-stock (1 notebook) <cutting-stock>
     data-structures (1 notebook) <data-structures>
@@ -29,7 +30,7 @@ Tags
     graphs (1 notebook) <graphs>
     gui (1 notebook) <gui>
     heuristics (2 notebooks) <heuristics>
-    highlights (6 notebooks) <highlights>
+    highlights (7 notebooks) <highlights>
     industry (4 notebooks) <industry>
     lecture (1 notebook) <lecture>
     lp (1 notebook) <lp>
@@ -37,6 +38,7 @@ Tags
     milp (1 notebook) <milp>
     mip (6 notebooks) <mip>
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
+    modeling-tips (1 notebook) <modeling-tips>
     non-linear (1 notebook) <non-linear>
     nonlinear (2 notebooks) <nonlinear>
     pandas (1 notebook) <pandas>
