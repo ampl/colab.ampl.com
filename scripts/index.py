@@ -35,7 +35,7 @@ Tags: <required>, <>, <>
 
 Notebook author: <required>
 
-Model author: <required>
+Model author: <optional>
 
 License: <optional>
 
@@ -54,7 +54,7 @@ Note: The default license for every notebook is [MIT](https://github.com/ampl/am
 
 ### Updating notebook headers & index
 
-The following command updates the readme file and the index in the documentation:
+The following command updates the README file and the index in the documentation:
 ```bash
 $ python scripts/index.py
 ```
@@ -412,8 +412,62 @@ for _, email in authors_sorted:
     email = email.lower().replace("@", "_at_")
     authors_index += f"    {email}\n"
 authors_index += """
-**Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab or
-send a link to your notebook by email to devteam@ampl.com.
+
+.. note::
+    **Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab or
+    send a link to your notebook by email to devteam@ampl.com.
+
+Contribution Guide
+------------------
+
+1. Use the template
+   `template/colab.ipynb <https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb>`__
+   as base template.
+
+2. In the header make sure you fill the following fields:
+
+::
+
+   Description: <required>
+
+   Tags: <required>, <>, <>
+
+   Notebook author: <required>
+
+   Model author: <optional>
+
+   License: <optional>
+
+   References: <optional>
+
+3. Do not modify the initial two cells that take care of setup and
+   jupyter notebook integration to do anything other than installing
+   packages and instantiating the ampl_notebook. You can modify the list
+   of modules and add more dependencies, but if you do anything else the
+   changes may be overwritten.
+
+4. Place your notebook inside ``amplcolab/authors/<github_username>/``.
+
+5. Update the badges and the index as shown below before committing.
+
+Note: The default license for every notebook is
+`MIT <https://github.com/ampl/amplcolab/blob/master/LICENSE>`__ unless
+specified otherwise in the notebook.
+
+Updating notebook headers & index
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The following command updates the README file and the index in the
+documentation:
+
+.. code:: bash
+
+   $ python scripts/index.py
+
+Note that the notebook headers are patched with new badges using links
+to the correct locations after the notebook is published. The first two
+notebook cells are modified to ensure that requirements are installed
+and that the ampl_notebook is instantiated.
 """
 print(authors_index, file=open(f"docs/source/authors/index.rst", "w"))
 

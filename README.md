@@ -16,7 +16,7 @@ Tags: <required>, <>, <>
 
 Notebook author: <required>
 
-Model author: <required>
+Model author: <optional>
 
 License: <optional>
 
@@ -35,7 +35,7 @@ Note: The default license for every notebook is [MIT](https://github.com/ampl/am
 
 ### Updating notebook headers & index
 
-The following command updates the readme file and the index in the documentation:
+The following command updates the README file and the index in the documentation:
 ```bash
 $ python scripts/index.py
 ```
