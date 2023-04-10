@@ -35,7 +35,7 @@ Tags
     lp (1 notebook) <lp>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
-    mip (5 notebooks) <mip>
+    mip (6 notebooks) <mip>
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
     non-linear (1 notebook) <non-linear>
     nonlinear (2 notebooks) <nonlinear>

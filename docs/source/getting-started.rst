@@ -5,7 +5,7 @@ Getting Started
 Quick setup
 -----------
 
-In order to be use AMPL on any notebook platform (e.g., Google Colab) you just need the following two code blocks
+In order to be use AMPL on any notebook platform (e.g., Google Colab) you just need to following two code blocks
 at the beginning of your notebook:
 
 .. code-block:: bash
