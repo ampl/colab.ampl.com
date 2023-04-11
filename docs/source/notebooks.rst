@@ -675,7 +675,7 @@ Organ exchange problem
     :alt: Open In SageMaker Studio Lab
     
 
-| Description: Organ exchange model
+| Description: Owing to the worldwide shortage of deceased-donor organs for transplantation, living donations have become a significant source of transplant organs. However, not all willing donors can donate to their intended recipients because of medical incompatibilities. These incompatibilities can be overcome by an exchange of donors between patients.
 | Tags: :ref:`tag-mip`
 | Author: :ref:`email-mail_at_solverytic.com` <mail@solverytic.com>
 
