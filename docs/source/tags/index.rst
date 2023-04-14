@@ -8,7 +8,7 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (3 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
-    amplpy (19 notebooks) <amplpy>
+    amplpy (20 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     assignment (1 notebook) <assignment>
     bin-packing (1 notebook) <bin-packing>
@@ -28,7 +28,7 @@ Tags
     geometry (1 notebook) <geometry>
     google-sheets (2 notebooks) <google-sheets>
     graphs (1 notebook) <graphs>
-    gui (1 notebook) <gui>
+    gui (2 notebooks) <gui>
     heuristics (2 notebooks) <heuristics>
     highlights (7 notebooks) <highlights>
     industry (4 notebooks) <industry>
