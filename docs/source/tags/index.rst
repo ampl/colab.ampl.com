@@ -5,10 +5,11 @@ Tags
 .. toctree::
     :maxdepth: 2
 
+    ampl (1 notebook) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (3 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
-    amplpy (20 notebooks) <amplpy>
+    amplpy (21 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     assignment (1 notebook) <assignment>
     bin-packing (1 notebook) <bin-packing>
@@ -47,8 +48,11 @@ Tags
     pricing (1 notebook) <pricing>
     puzzles (1 notebook) <puzzles>
     quick-start (2 notebooks) <quick-start>
+    risk measures (1 notebook) <risk measures>
+    sample average approximation (1 notebook) <sample average approximation>
     scheduling (1 notebook) <scheduling>
     simple (1 notebook) <simple>
+    stochastic optimization (1 notebook) <stochastic optimization>
     template (1 notebook) <template>
     tsp (1 notebook) <tsp>
     vector-packing (1 notebook) <vector-packing>
