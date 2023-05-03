@@ -327,6 +327,34 @@ Diet model with Google Sheets
 | Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
+Dual-Donor Organ Exchange problem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/authors/mikhail/miscellaneous/Dual-Donor_Organ_Exchange.ipynb
+    :alt: Dual-Donor_Organ_Exchange.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/mikhail/miscellaneous/Dual-Donor_Organ_Exchange.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/mikhail/miscellaneous/Dual-Donor_Organ_Exchange.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/mikhail/miscellaneous/Dual-Donor_Organ_Exchange.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/mikhail/miscellaneous/Dual-Donor_Organ_Exchange.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+| Description: Most transplants from living donors require only one donor for each procedure. There are, however, exceptions, including dual-graft liver transplantation, bilateral living-donor lobar lung transplantation, and simultaneous liver-kidney transplantation. For each of these procedures, grafts from two compatible living donors are transplanted. As such, these procedures are more involved from an organizational perspective than those with only one donor. Unfortunately, one or both of the donors can often be biologically incompatible with the intended recipient, precluding the transplantation.
+| Tags: :ref:`tag-medicine`, :ref:`tag-organ-exchange`, :ref:`tag-mip`, :ref:`tag-ampl-only`
+| Author: :ref:`email-mail_at_solverytic.com` <mail@solverytic.com>
+
 Dynamic routing example
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -678,34 +706,6 @@ Optimization Methods in Finance: Chapter 3
 | Description: Optimization Methods in Finance: Bond Dedication Problem.
 | Tags: :ref:`tag-amplpy`, :ref:`tag-example`, :ref:`tag-finance`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
-
-Organ exchange problem
-^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/amplcolab/blob/master/authors/mikhail/miscellaneous/organ_exchange.ipynb
-    :alt: organ_exchange.ipynb
-    
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/mikhail/miscellaneous/organ_exchange.ipynb
-    :alt: Open In Colab
-    
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/mikhail/miscellaneous/organ_exchange.ipynb
-    :alt: Kaggle
-    
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/mikhail/miscellaneous/organ_exchange.ipynb
-    :alt: Gradient
-    
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/mikhail/miscellaneous/organ_exchange.ipynb
-    :alt: Open In SageMaker Studio Lab
-    
-
-| Description: Owing to the worldwide shortage of deceased-donor organs for transplantation, living donations have become a significant source of transplant organs. However, not all willing donors can donate to their intended recipients because of medical incompatibilities. These incompatibilities can be overcome by an exchange of donors between patients.
-| Tags: :ref:`tag-mip`
-| Author: :ref:`email-mail_at_solverytic.com` <mail@solverytic.com>
 
 Pattern Enumeration
 ^^^^^^^^^^^^^^^^^^^

@@ -1,7 +1,7 @@
-.. _email-mail_at_solverytic.com:
+.. _tag-medicine:
 
-Mikhail (1 notebook)
-====================
+medicine
+========
 
 Dual-Donor Organ Exchange problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

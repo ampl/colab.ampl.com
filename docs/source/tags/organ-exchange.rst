@@ -1,7 +1,7 @@
-.. _email-mail_at_solverytic.com:
+.. _tag-organ-exchange:
 
-Mikhail (1 notebook)
-====================
+organ-exchange
+==============
 
 Dual-Donor Organ Exchange problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -8,7 +8,7 @@ Tags
     ampl (1 notebook) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (3 notebooks) <ampl-lecture>
-    ampl-only (16 notebooks) <ampl-only>
+    ampl-only (17 notebooks) <ampl-only>
     amplpy (21 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     assignment (1 notebook) <assignment>
@@ -35,6 +35,7 @@ Tags
     industry (4 notebooks) <industry>
     lecture (1 notebook) <lecture>
     lp (1 notebook) <lp>
+    medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
     mip (6 notebooks) <mip>
@@ -42,6 +43,7 @@ Tags
     modeling-tips (1 notebook) <modeling-tips>
     non-linear (1 notebook) <non-linear>
     nonlinear (2 notebooks) <nonlinear>
+    organ-exchange (1 notebook) <organ-exchange>
     pandas (1 notebook) <pandas>
     planning (1 notebook) <planning>
     power-generation (1 notebook) <power-generation>
