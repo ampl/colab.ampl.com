@@ -9,7 +9,7 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (3 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
-    amplpy (21 notebooks) <amplpy>
+    amplpy (22 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     assignment (1 notebook) <assignment>
     bin-packing (1 notebook) <bin-packing>
@@ -23,6 +23,7 @@ Tags
     cutting-stock (1 notebook) <cutting-stock>
     data-structures (1 notebook) <data-structures>
     electric-grid (1 notebook) <electric-grid>
+    energy (2 notebooks) <energy>
     engineering (1 notebook) <engineering>
     example (7 notebooks) <example>
     finance (4 notebooks) <finance>
@@ -46,7 +47,7 @@ Tags
     organ-exchange (1 notebook) <organ-exchange>
     pandas (1 notebook) <pandas>
     planning (1 notebook) <planning>
-    power-generation (1 notebook) <power-generation>
+    power-generation (2 notebooks) <power-generation>
     pricing (1 notebook) <pricing>
     puzzles (1 notebook) <puzzles>
     quick-start (2 notebooks) <quick-start>
@@ -57,5 +58,6 @@ Tags
     stochastic optimization (1 notebook) <stochastic optimization>
     template (1 notebook) <template>
     tsp (1 notebook) <tsp>
+    unit-commitment (1 notebook) <unit-commitment>
     vector-packing (1 notebook) <vector-packing>
 
