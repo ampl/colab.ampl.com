@@ -56,9 +56,10 @@ def notebook_headers(
             "outputs": [],
             "source": [
                 "# Google Colab & Kaggle integration\n",
-                f"MODULES=[{modules_str}]\n",
-                "from amplpy import tools\n",
-                "ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics",
+                "from amplpy import AMPL, tools\n",
+                "ampl = tools.ampl_notebook(\n",
+                f"    modules={modules_str}, # modules to install\n",
+                '    license_uuid="default") # license to use',
             ],
         },
     ]

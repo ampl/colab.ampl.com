@@ -75,15 +75,8 @@ def update_notebook_headers():
                     "from amplpy import AMPL, tools\n",
                     "ampl = tools.ampl_notebook(\n",
                     f"    modules={modules_str}, # modules to install\n",
-                    '    license_uuid="default", # license to use\n',
-                    "    g=globals()) # instantiate AMPL object and register magics",
+                    '    license_uuid="default") # license to use',
                 ]
-                # cells[i]["source"] = [
-                #     "# Google Colab & Kaggle integration\n",
-                #     "from amplpy import tools\n",
-                #     f'MODULES, LICENSE_UUID = {modules_str}, "your-license-uuid"\n',
-                #     f"ampl = tools.ampl_notebook(modules=MODULES, license_uuid=LICENSE_UUID, g=globals()) # instantiate AMPL object and register magics",
-                # ]
                 cells[i]["outputs"] = []
                 break
         else:

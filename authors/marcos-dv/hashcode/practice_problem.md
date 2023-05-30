@@ -70,9 +70,8 @@ Here is some documentation and examples of the API: [Documentation](http://amplp
 
 ```python
 # Google Colab & Kaggle integration
-MODULES=['ampl', 'gurobi', 'highs']
 from amplpy import tools
-ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics
+ampl = tools.ampl_notebook(modules=['ampl', 'gurobi', 'highs']) # instantiate AMPL object and register magics
 ```
 
 ## Solving problem with AMPL
