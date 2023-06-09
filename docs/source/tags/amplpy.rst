@@ -563,7 +563,7 @@ Unit Commitment for Electrical Power Generation
     :alt: Open In SageMaker Studio Lab
     
 
-| Description: This notebook is based on the following [notebook](https://colab.research.google.com/github/Gurobi/modeling-examples/blob/master/electrical_power_generation_1_2/electrical_power_1_gcl.ipynb) and illustrates the power generation problem using AMPL. The original version featured the Gurobi solver. By default, this notebook uses the HiGHS and CBC solvers.
+| Description: This notebook illustrates the power generation problem using AMPL. The original version featured the Gurobi solver. By default, this notebook uses the HiGHS and CBC solvers.
 | Tags: :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-power-generation`, :ref:`tag-unit-commitment`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
