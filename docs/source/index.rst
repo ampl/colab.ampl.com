@@ -635,6 +635,10 @@ Logistic Regression with amplpy
     :alt: Open In SageMaker Studio Lab
     
 
+| Description: Logistic regression with amplpy
+| Tags: :ref:`tag-amplpy`, :ref:`tag-regression`, :ref:`tag-sigmoid`, :ref:`tag-softplus`, :ref:`tag-log-sum-exp`, :ref:`tag-classifier`, :ref:`tag-regularization`, :ref:`tag-machine learning`, :ref:`tag-conic`, :ref:`tag-exponential cone`, :ref:`tag-second-order cone`, :ref:`tag-quadratic cone`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
 Multicommodity transportation problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
