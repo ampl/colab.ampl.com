@@ -9,7 +9,7 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (3 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
-    amplpy (23 notebooks) <amplpy>
+    amplpy (25 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     assignment (1 notebook) <assignment>
     bin-packing (1 notebook) <bin-packing>
@@ -23,6 +23,7 @@ Tags
     constraint-programming (3 notebooks) <constraint-programming>
     cutting-stock (1 notebook) <cutting-stock>
     data-structures (1 notebook) <data-structures>
+    educational (2 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     energy (2 notebooks) <energy>
     engineering (1 notebook) <engineering>
@@ -33,8 +34,10 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (1 notebook) <graphs>
     gui (2 notebooks) <gui>
+    gurobi (2 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (7 notebooks) <highlights>
+    highs (1 notebook) <highs>
     industry (4 notebooks) <industry>
     lecture (1 notebook) <lecture>
     log-sum-exp (1 notebook) <log-sum-exp>
@@ -42,7 +45,7 @@ Tags
     machine learning (1 notebook) <machine learning>
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
-    milp (1 notebook) <milp>
+    milp (3 notebooks) <milp>
     mip (6 notebooks) <mip>
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
@@ -60,7 +63,7 @@ Tags
     regularization (1 notebook) <regularization>
     risk measures (1 notebook) <risk measures>
     sample average approximation (1 notebook) <sample average approximation>
-    scheduling (1 notebook) <scheduling>
+    scheduling (2 notebooks) <scheduling>
     second-order cone (1 notebook) <second-order cone>
     sigmoid (1 notebook) <sigmoid>
     simple (1 notebook) <simple>

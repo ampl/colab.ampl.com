@@ -1,6 +1,6 @@
 .. _email-marcos_at_ampl.com:
 
-Marcos Dominguez Velad (15 notebooks)
+Marcos Dominguez Velad (17 notebooks)
 =====================================
 
 Book Example: Economic equilibria
@@ -115,6 +115,34 @@ Diet lecture
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
+Employee Scheduling Optimization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/authors/marcos-dv/educational/Employee_Scheduling.ipynb
+    :alt: Employee_Scheduling.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/marcos-dv/educational/Employee_Scheduling.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/marcos-dv/educational/Employee_Scheduling.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/marcos-dv/educational/Employee_Scheduling.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/marcos-dv/educational/Employee_Scheduling.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+| Description: Employee scheduling model from the Analytical Decision Modeling course at the Arizona State University.
+| Tags: :ref:`tag-educational`, :ref:`tag-milp`, :ref:`tag-scheduling`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-highs`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
 Google Hashcode 2022
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -225,6 +253,34 @@ Multicommodity transportation problem
 
 | Description: Multicommodity transportation model with binary variables
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-mixed-integer-linear`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+NFL Team Rating
+^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/authors/marcos-dv/educational/NFL_Team_Rating.ipynb
+    :alt: NFL_Team_Rating.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/marcos-dv/educational/NFL_Team_Rating.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/marcos-dv/educational/NFL_Team_Rating.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/marcos-dv/educational/NFL_Team_Rating.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/marcos-dv/educational/NFL_Team_Rating.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+| Description: NFL Team Rating problem from the Analytical Decision Modeling course at the Arizona State University.
+| Tags: :ref:`tag-educational`, :ref:`tag-milp`, :ref:`tag-amplpy`, :ref:`tag-gurobi`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 Nonlinear transportation model
