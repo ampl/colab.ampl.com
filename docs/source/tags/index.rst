@@ -23,7 +23,7 @@ Tags
     constraint-programming (3 notebooks) <constraint-programming>
     cutting-stock (1 notebook) <cutting-stock>
     data-structures (1 notebook) <data-structures>
-    educational (2 notebooks) <educational>
+    educational (3 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     energy (2 notebooks) <energy>
     engineering (1 notebook) <engineering>
@@ -39,6 +39,7 @@ Tags
     highlights (7 notebooks) <highlights>
     highs (1 notebook) <highs>
     industry (4 notebooks) <industry>
+    ipopt (1 notebook) <ipopt>
     lecture (1 notebook) <lecture>
     log-sum-exp (1 notebook) <log-sum-exp>
     lp (1 notebook) <lp>

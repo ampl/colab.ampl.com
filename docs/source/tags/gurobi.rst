@@ -29,7 +29,7 @@ Employee Scheduling Optimization
 
 | Description: Employee scheduling model from the Analytical Decision Modeling course at the Arizona State University.
 | Tags: :ref:`tag-educational`, :ref:`tag-milp`, :ref:`tag-scheduling`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-highs`
-| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+| Author: :ref:`email-yimin_wang_at_asu.edu` <yimin_wang@asu.edu>, :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 NFL Team Rating
 ^^^^^^^^^^^^^^^
@@ -57,5 +57,5 @@ NFL Team Rating
 
 | Description: NFL Team Rating problem from the Analytical Decision Modeling course at the Arizona State University.
 | Tags: :ref:`tag-educational`, :ref:`tag-milp`, :ref:`tag-amplpy`, :ref:`tag-gurobi`
-| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+| Author: :ref:`email-yimin_wang_at_asu.edu` <yimin_wang@asu.edu>, :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 

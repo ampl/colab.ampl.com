@@ -1,7 +1,7 @@
-.. _tag-non-linear:
+.. _tag-ipopt:
 
-non-linear
-==========
+ipopt
+=====
 
 Largest small polygon
 ^^^^^^^^^^^^^^^^^^^^^
