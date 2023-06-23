@@ -664,7 +664,7 @@ Logistic Regression with amplpy
     
 
 | Description: Logistic regression with amplpy
-| Tags: :ref:`tag-amplpy`, :ref:`tag-regression`, :ref:`tag-sigmoid`, :ref:`tag-softplus`, :ref:`tag-log-sum-exp`, :ref:`tag-classifier`, :ref:`tag-regularization`, :ref:`tag-machine learning`, :ref:`tag-conic`, :ref:`tag-exponential cone`, :ref:`tag-second-order cone`, :ref:`tag-quadratic cone`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-regression`, :ref:`tag-sigmoid`, :ref:`tag-softplus`, :ref:`tag-log-sum-exp`, :ref:`tag-classifier`, :ref:`tag-regularization`, :ref:`tag-machine learning`, :ref:`tag-conic`, :ref:`tag-exponential cone`, :ref:`tag-second-order cone`, :ref:`tag-quadratic cone`, :ref:`tag-formulation comparison`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 Multicommodity transportation problem
@@ -748,7 +748,7 @@ NFL Team Rating
     
 
 | Description: NFL Team Rating problem from the Analytical Decision Modeling course at the Arizona State University.
-| Tags: :ref:`tag-educational`, :ref:`tag-milp`, :ref:`tag-amplpy`, :ref:`tag-gurobi`
+| Tags: :ref:`tag-educational`, :ref:`tag-quadratic`, :ref:`tag-amplpy`, :ref:`tag-gurobi`
 | Author: :ref:`email-yimin_wang_at_asu.edu` <yimin_wang@asu.edu>, :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 Network design with redundancy

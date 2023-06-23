@@ -30,6 +30,7 @@ Tags
     example (7 notebooks) <example>
     exponential cone (1 notebook) <exponential cone>
     finance (4 notebooks) <finance>
+    formulation comparison (1 notebook) <formulation comparison>
     geometry (1 notebook) <geometry>
     google-sheets (2 notebooks) <google-sheets>
     graphs (1 notebook) <graphs>
@@ -46,7 +47,7 @@ Tags
     machine learning (1 notebook) <machine learning>
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
-    milp (3 notebooks) <milp>
+    milp (2 notebooks) <milp>
     mip (6 notebooks) <mip>
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
@@ -58,6 +59,7 @@ Tags
     power-generation (2 notebooks) <power-generation>
     pricing (1 notebook) <pricing>
     puzzles (1 notebook) <puzzles>
+    quadratic (1 notebook) <quadratic>
     quadratic cone (1 notebook) <quadratic cone>
     quick-start (2 notebooks) <quick-start>
     regression (1 notebook) <regression>

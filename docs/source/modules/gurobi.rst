@@ -168,7 +168,7 @@ NFL Team Rating
     
 
 | Description: NFL Team Rating problem from the Analytical Decision Modeling course at the Arizona State University.
-| Tags: :ref:`tag-educational`, :ref:`tag-milp`, :ref:`tag-amplpy`, :ref:`tag-gurobi`
+| Tags: :ref:`tag-educational`, :ref:`tag-quadratic`, :ref:`tag-amplpy`, :ref:`tag-gurobi`
 | Author: :ref:`email-yimin_wang_at_asu.edu` <yimin_wang@asu.edu>, :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 Network design with redundancy
