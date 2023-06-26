@@ -639,7 +639,7 @@ Largest small polygon
 | Tags: :ref:`tag-geometry`, :ref:`tag-non-linear`, :ref:`tag-amplpy`, :ref:`tag-ipopt`, :ref:`tag-educational`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
-Logistic Regression with amplpy
+Logistic regression with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

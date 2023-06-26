@@ -3,7 +3,7 @@
 mosek (2 notebooks)
 ===================
 
-Logistic Regression with amplpy
+Logistic regression with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

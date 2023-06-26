@@ -299,7 +299,7 @@ Google Hashcode 2022
 | Tags: :ref:`tag-amplpy`, :ref:`tag-heuristics`, :ref:`tag-engineering`, :ref:`tag-scheduling`, :ref:`tag-complexity`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
-Logistic Regression with amplpy
+Logistic regression with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

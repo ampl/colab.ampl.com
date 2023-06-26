@@ -31,7 +31,7 @@ CP-style scheduling model with the *numberof* operator, solved by a MIP solver
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-constraint-programming`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
-Logistic Regression with amplpy
+Logistic regression with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
