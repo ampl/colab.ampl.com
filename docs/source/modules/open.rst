@@ -27,7 +27,7 @@ Largest small polygon
     :alt: Open In SageMaker Studio Lab
     
 
-| Description: Notebook related to the Largest Small Polygon Problem
-| Tags: :ref:`tag-geometry`, :ref:`tag-non-linear`, :ref:`tag-amplpy`
+| Description: lecture about models for the Largest Small Polygon Problem
+| Tags: :ref:`tag-geometry`, :ref:`tag-non-linear`, :ref:`tag-amplpy`, :ref:`tag-ipopt`, :ref:`tag-educational`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 

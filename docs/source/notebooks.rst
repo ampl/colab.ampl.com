@@ -399,6 +399,34 @@ Efficient Frontier with Google Sheets
 | Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-finance`
 | Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
+Employee Scheduling Optimization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/authors/marcos-dv/educational/Employee_Scheduling.ipynb
+    :alt: Employee_Scheduling.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/marcos-dv/educational/Employee_Scheduling.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/marcos-dv/educational/Employee_Scheduling.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/marcos-dv/educational/Employee_Scheduling.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/marcos-dv/educational/Employee_Scheduling.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+| Description: Employee scheduling model from the Analytical Decision Modeling course at the Arizona State University.
+| Tags: :ref:`tag-educational`, :ref:`tag-milp`, :ref:`tag-scheduling`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-highs`
+| Author: :ref:`email-yimin_wang_at_asu.edu` <yimin_wang@asu.edu>, :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
 Financial Portfolio Optimization with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -535,9 +563,37 @@ Largest small polygon
     :alt: Open In SageMaker Studio Lab
     
 
-| Description: Notebook related to the Largest Small Polygon Problem
-| Tags: :ref:`tag-geometry`, :ref:`tag-non-linear`, :ref:`tag-amplpy`
+| Description: lecture about models for the Largest Small Polygon Problem
+| Tags: :ref:`tag-geometry`, :ref:`tag-non-linear`, :ref:`tag-amplpy`, :ref:`tag-ipopt`, :ref:`tag-educational`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+Logistic regression with amplpy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
+    :alt: logistic_regression.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+| Description: Logistic regression with amplpy
+| Tags: :ref:`tag-amplpy`, :ref:`tag-regression`, :ref:`tag-sigmoid`, :ref:`tag-softplus`, :ref:`tag-log-sum-exp`, :ref:`tag-classifier`, :ref:`tag-regularization`, :ref:`tag-machine learning`, :ref:`tag-conic`, :ref:`tag-exponential cone`, :ref:`tag-second-order cone`, :ref:`tag-quadratic cone`, :ref:`tag-formulation comparison`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 Multicommodity transportation problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -594,6 +650,34 @@ N-Queens
 | Description: How can N queens be placed on an NxN chessboard so that no two of them attack each other?
 | Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+NFL Team Rating
+^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/amplcolab/blob/master/authors/marcos-dv/educational/NFL_Team_Rating.ipynb
+    :alt: NFL_Team_Rating.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/marcos-dv/educational/NFL_Team_Rating.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/marcos-dv/educational/NFL_Team_Rating.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/marcos-dv/educational/NFL_Team_Rating.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/marcos-dv/educational/NFL_Team_Rating.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+| Description: NFL Team Rating problem from the Analytical Decision Modeling course at the Arizona State University.
+| Tags: :ref:`tag-educational`, :ref:`tag-quadratic`, :ref:`tag-amplpy`, :ref:`tag-gurobi`
+| Author: :ref:`email-yimin_wang_at_asu.edu` <yimin_wang@asu.edu>, :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 Network design with redundancy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1179,7 +1263,7 @@ Unit Commitment for Electrical Power Generation
     :alt: Open In SageMaker Studio Lab
     
 
-| Description: This notebook is based on the following [notebook](https://colab.research.google.com/github/Gurobi/modeling-examples/blob/master/electrical_power_generation_1_2/electrical_power_1_gcl.ipynb) and illustrates the power generation problem using AMPL. The original version featured the Gurobi solver. By default, this notebook uses the HiGHS and CBC solvers.
+| Description: This notebook illustrates the power generation problem using AMPL. The original version featured the Gurobi solver. By default, this notebook uses the HiGHS and CBC solvers.
 | Tags: :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-power-generation`, :ref:`tag-unit-commitment`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 

@@ -16,6 +16,7 @@ The notebooks in this repository are contributed by the following authors:
     mail_at_solverytic.com
     nfbvs_at_ampl.com
     sarah_at_ampl.com
+    yimin_wang_at_asu.edu
 
 
 .. note::
