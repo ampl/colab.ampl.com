@@ -12,6 +12,7 @@ The notebooks in this repository are contributed by the following authors:
     gleb_at_ampl.com
     gyorgy_at_ampl.com
     juanjesus.losada_at_gmail.com
+    jurgenlentz26_at_gmail.com
     marcos_at_ampl.com
     mail_at_solverytic.com
     nfbvs_at_ampl.com

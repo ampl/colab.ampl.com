@@ -9,10 +9,11 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (3 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
-    amplpy (25 notebooks) <amplpy>
+    amplpy (26 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     assignment (1 notebook) <assignment>
     bin-packing (1 notebook) <bin-packing>
+    branch-price-and-cut (1 notebook) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
     chatgpt (1 notebook) <chatgpt>
     christmas (1 notebook) <christmas>
@@ -21,7 +22,9 @@ Tags
     complexity (1 notebook) <complexity>
     conic (2 notebooks) <conic>
     constraint-programming (3 notebooks) <constraint-programming>
+    cpmp (1 notebook) <cpmp>
     cutting-stock (1 notebook) <cutting-stock>
+    dantzig-wolfe decomposition (1 notebook) <dantzig-wolfe decomposition>
     data-structures (1 notebook) <data-structures>
     educational (3 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
@@ -31,13 +34,14 @@ Tags
     exponential cone (1 notebook) <exponential cone>
     finance (4 notebooks) <finance>
     formulation comparison (1 notebook) <formulation comparison>
+    gcg (1 notebook) <gcg>
     geometry (1 notebook) <geometry>
     google-sheets (2 notebooks) <google-sheets>
     graphs (1 notebook) <graphs>
     gui (2 notebooks) <gui>
     gurobi (2 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
-    highlights (7 notebooks) <highlights>
+    highlights (8 notebooks) <highlights>
     highs (1 notebook) <highs>
     industry (4 notebooks) <industry>
     ipopt (1 notebook) <ipopt>

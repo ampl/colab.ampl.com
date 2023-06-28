@@ -49,6 +49,7 @@ Notebooks grouped by modules
     cbc
     coin
     cplex
+    gcg
     gurobi
     highs
     knitro
