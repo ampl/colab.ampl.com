@@ -33,7 +33,7 @@ def read_header(fname):
             info[key] = value
         elif key == "tags":
             assert key not in info
-            info[key] = [t.strip().lower() for t in value.split(",")]
+            info[key] = [t.strip().lower().replace(" ", "-") for t in value.split(",")]
     for i in range(1, len(cells)):
         source = cells[i]["source"]
         assert len(source) > 0

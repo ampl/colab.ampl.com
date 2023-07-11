@@ -9,11 +9,12 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (3 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
-    amplpy (26 notebooks) <amplpy>
+    amplpy (27 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     assignment (1 notebook) <assignment>
     bin-packing (1 notebook) <bin-packing>
-    branch-price-and-cut (1 notebook) <branch-price-and-cut>
+    bpp (1 notebook) <bpp>
+    branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
     chatgpt (1 notebook) <chatgpt>
     christmas (1 notebook) <christmas>
@@ -24,31 +25,31 @@ Tags
     constraint-programming (3 notebooks) <constraint-programming>
     cpmp (1 notebook) <cpmp>
     cutting-stock (1 notebook) <cutting-stock>
-    dantzig-wolfe decomposition (1 notebook) <dantzig-wolfe decomposition>
+    dantzig-wolfe-decomposition (2 notebooks) <dantzig-wolfe-decomposition>
     data-structures (1 notebook) <data-structures>
     educational (3 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     energy (2 notebooks) <energy>
     engineering (1 notebook) <engineering>
     example (7 notebooks) <example>
-    exponential cone (1 notebook) <exponential cone>
+    exponential-cone (1 notebook) <exponential-cone>
     finance (4 notebooks) <finance>
-    formulation comparison (1 notebook) <formulation comparison>
-    gcg (1 notebook) <gcg>
+    formulation-comparison (1 notebook) <formulation-comparison>
+    gcg (2 notebooks) <gcg>
     geometry (1 notebook) <geometry>
     google-sheets (2 notebooks) <google-sheets>
     graphs (1 notebook) <graphs>
     gui (2 notebooks) <gui>
     gurobi (2 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
-    highlights (8 notebooks) <highlights>
+    highlights (9 notebooks) <highlights>
     highs (1 notebook) <highs>
     industry (4 notebooks) <industry>
     ipopt (1 notebook) <ipopt>
     lecture (1 notebook) <lecture>
     log-sum-exp (1 notebook) <log-sum-exp>
     lp (1 notebook) <lp>
-    machine learning (1 notebook) <machine learning>
+    machine-learning (1 notebook) <machine-learning>
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (2 notebooks) <milp>
@@ -64,18 +65,18 @@ Tags
     pricing (1 notebook) <pricing>
     puzzles (1 notebook) <puzzles>
     quadratic (1 notebook) <quadratic>
-    quadratic cone (1 notebook) <quadratic cone>
+    quadratic-cone (1 notebook) <quadratic-cone>
     quick-start (2 notebooks) <quick-start>
     regression (1 notebook) <regression>
     regularization (1 notebook) <regularization>
-    risk measures (1 notebook) <risk measures>
-    sample average approximation (1 notebook) <sample average approximation>
+    risk-measures (1 notebook) <risk-measures>
+    sample-average-approximation (1 notebook) <sample-average-approximation>
     scheduling (2 notebooks) <scheduling>
-    second-order cone (1 notebook) <second-order cone>
+    second-order-cone (1 notebook) <second-order-cone>
     sigmoid (1 notebook) <sigmoid>
     simple (1 notebook) <simple>
     softplus (1 notebook) <softplus>
-    stochastic optimization (1 notebook) <stochastic optimization>
+    stochastic-optimization (1 notebook) <stochastic-optimization>
     template (1 notebook) <template>
     tsp (1 notebook) <tsp>
     unit-commitment (1 notebook) <unit-commitment>

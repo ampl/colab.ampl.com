@@ -1,7 +1,7 @@
-.. _tag-quadratic cone:
+.. _tag-machine-learning:
 
-quadratic cone
-==============
+machine-learning
+================
 
 Logistic regression with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -28,6 +28,6 @@ Logistic regression with amplpy
     
 
 | Description: Logistic regression with amplpy
-| Tags: :ref:`tag-amplpy`, :ref:`tag-regression`, :ref:`tag-sigmoid`, :ref:`tag-softplus`, :ref:`tag-log-sum-exp`, :ref:`tag-classifier`, :ref:`tag-regularization`, :ref:`tag-machine learning`, :ref:`tag-conic`, :ref:`tag-exponential cone`, :ref:`tag-second-order cone`, :ref:`tag-quadratic cone`, :ref:`tag-formulation comparison`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-regression`, :ref:`tag-sigmoid`, :ref:`tag-softplus`, :ref:`tag-log-sum-exp`, :ref:`tag-classifier`, :ref:`tag-regularization`, :ref:`tag-machine-learning`, :ref:`tag-conic`, :ref:`tag-exponential-cone`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-formulation-comparison`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>, :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 

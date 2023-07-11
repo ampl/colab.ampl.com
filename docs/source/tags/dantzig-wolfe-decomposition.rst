@@ -1,7 +1,7 @@
-.. _module-gcg:
+.. _tag-dantzig-wolfe-decomposition:
 
-gcg (2 notebooks)
-=================
+dantzig-wolfe-decomposition
+===========================
 
 AMPL Bin Packing Problem with GCG
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

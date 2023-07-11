@@ -1,7 +1,7 @@
-.. _tag-stochastic optimization:
+.. _tag-sample-average-approximation:
 
-stochastic optimization
-=======================
+sample-average-approximation
+============================
 
 Solving simple stochastic optimization problems with AMPL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -28,6 +28,6 @@ Solving simple stochastic optimization problems with AMPL
     
 
 | Description: Examples of the Sample Average Approximation method and risk measures in AMPL
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-stochastic optimization`, :ref:`tag-sample average approximation`, :ref:`tag-risk measures`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-stochastic-optimization`, :ref:`tag-sample-average-approximation`, :ref:`tag-risk-measures`
 | Author: :ref:`email-nfbvs_at_ampl.com` <nfbvs@ampl.com>
 

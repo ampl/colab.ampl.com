@@ -28,6 +28,6 @@ AMPL Capacitated p-Median Problem with GCG
     
 
 | Description: Dantzig-Wolfe decomposition for Capacitated p-Median Problem with GCG
-| Tags: :ref:`tag-gcg`, :ref:`tag-cpmp`, :ref:`tag-amplpy`, :ref:`tag-dantzig-wolfe decomposition`, :ref:`tag-branch-price-and-cut`, :ref:`tag-highlights`
+| Tags: :ref:`tag-gcg`, :ref:`tag-cpmp`, :ref:`tag-amplpy`, :ref:`tag-dantzig-wolfe-decomposition`, :ref:`tag-branch-price-and-cut`, :ref:`tag-highlights`
 | Author: :ref:`email-jurgenlentz26_at_gmail.com` <jurgenlentz26@gmail.com>
 
