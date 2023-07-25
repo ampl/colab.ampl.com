@@ -42,7 +42,7 @@ Tags
     gui (2 notebooks) <gui>
     gurobi (2 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
-    highlights (9 notebooks) <highlights>
+    highlights (10 notebooks) <highlights>
     highs (1 notebook) <highs>
     industry (4 notebooks) <industry>
     ipopt (1 notebook) <ipopt>

@@ -3,7 +3,7 @@
 exponential-cone
 ================
 
-Logistic regression with amplpy
+Logistic Regression with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -27,7 +27,7 @@ Logistic regression with amplpy
     :alt: Open In SageMaker Studio Lab
     
 
-| Description: Logistic regression with amplpy
-| Tags: :ref:`tag-amplpy`, :ref:`tag-regression`, :ref:`tag-sigmoid`, :ref:`tag-softplus`, :ref:`tag-log-sum-exp`, :ref:`tag-classifier`, :ref:`tag-regularization`, :ref:`tag-machine-learning`, :ref:`tag-conic`, :ref:`tag-exponential-cone`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-formulation-comparison`
+| Description: Logistic regression with amplpy using exponential cones
+| Tags: :ref:`tag-highlights`, :ref:`tag-amplpy`, :ref:`tag-regression`, :ref:`tag-sigmoid`, :ref:`tag-softplus`, :ref:`tag-log-sum-exp`, :ref:`tag-classifier`, :ref:`tag-regularization`, :ref:`tag-machine-learning`, :ref:`tag-conic`, :ref:`tag-exponential-cone`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-formulation-comparison`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>, :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
