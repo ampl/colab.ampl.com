@@ -3,8 +3,8 @@
 mosek (3 notebooks)
 ===================
 
-Hydrothermal Scheduling Problem
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Hydrothermal Scheduling Problem with Conic Programming
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/authors/glebbelov/conic/hydrothermal.ipynb

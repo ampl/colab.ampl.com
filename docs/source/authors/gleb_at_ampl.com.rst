@@ -31,8 +31,8 @@ CP-style scheduling model with the *numberof* operator, solved by a MIP solver
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-constraint-programming`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
-Hydrothermal Scheduling Problem
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Hydrothermal Scheduling Problem with Conic Programming
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/authors/glebbelov/conic/hydrothermal.ipynb

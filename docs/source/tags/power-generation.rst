@@ -31,8 +31,8 @@ Capacity expansion of power generation
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-energy`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
-Hydrothermal Scheduling Problem
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Hydrothermal Scheduling Problem with Conic Programming
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/authors/glebbelov/conic/hydrothermal.ipynb

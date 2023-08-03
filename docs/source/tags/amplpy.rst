@@ -287,8 +287,8 @@ Hospitals-Residents MIP
 | Tags: :ref:`tag-amplpy`, :ref:`tag-assignment`, :ref:`tag-mip`, :ref:`tag-data-structures`, :ref:`tag-graphs`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
-Hydrothermal Scheduling Problem
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Hydrothermal Scheduling Problem with Conic Programming
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/authors/glebbelov/conic/hydrothermal.ipynb

@@ -31,8 +31,8 @@ Google Hashcode 2022
 | Tags: :ref:`tag-amplpy`, :ref:`tag-heuristics`, :ref:`tag-engineering`, :ref:`tag-scheduling`, :ref:`tag-complexity`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
-Hydrothermal Scheduling Problem
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Hydrothermal Scheduling Problem with Conic Programming
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/amplcolab/blob/master/authors/glebbelov/conic/hydrothermal.ipynb
