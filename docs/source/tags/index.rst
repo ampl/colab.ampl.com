@@ -9,7 +9,7 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (3 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
-    amplpy (27 notebooks) <amplpy>
+    amplpy (28 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     assignment (1 notebook) <assignment>
     bin-packing (1 notebook) <bin-packing>
@@ -21,7 +21,7 @@ Tags
     classifier (1 notebook) <classifier>
     complementarity-problem (1 notebook) <complementarity-problem>
     complexity (1 notebook) <complexity>
-    conic (2 notebooks) <conic>
+    conic (3 notebooks) <conic>
     constraint-programming (3 notebooks) <constraint-programming>
     cpmp (1 notebook) <cpmp>
     cutting-stock (1 notebook) <cutting-stock>
@@ -30,13 +30,14 @@ Tags
     educational (3 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     energy (2 notebooks) <energy>
-    engineering (1 notebook) <engineering>
+    engineering (2 notebooks) <engineering>
     example (7 notebooks) <example>
     exponential-cone (1 notebook) <exponential-cone>
     finance (4 notebooks) <finance>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
     geometry (1 notebook) <geometry>
+    geothermal-energy (1 notebook) <geothermal-energy>
     google-sheets (2 notebooks) <google-sheets>
     graphs (1 notebook) <graphs>
     gui (2 notebooks) <gui>
@@ -44,6 +45,7 @@ Tags
     heuristics (2 notebooks) <heuristics>
     highlights (10 notebooks) <highlights>
     highs (1 notebook) <highs>
+    hydropower (1 notebook) <hydropower>
     industry (4 notebooks) <industry>
     ipopt (1 notebook) <ipopt>
     lecture (1 notebook) <lecture>
@@ -58,21 +60,22 @@ Tags
     modeling-tips (1 notebook) <modeling-tips>
     non-linear (1 notebook) <non-linear>
     nonlinear (2 notebooks) <nonlinear>
+    nonlinear-programming (1 notebook) <nonlinear-programming>
     organ-exchange (1 notebook) <organ-exchange>
     pandas (1 notebook) <pandas>
     planning (1 notebook) <planning>
-    power-generation (2 notebooks) <power-generation>
+    power-generation (3 notebooks) <power-generation>
     pricing (1 notebook) <pricing>
     puzzles (1 notebook) <puzzles>
     quadratic (1 notebook) <quadratic>
-    quadratic-cone (1 notebook) <quadratic-cone>
+    quadratic-cone (2 notebooks) <quadratic-cone>
     quick-start (2 notebooks) <quick-start>
     regression (1 notebook) <regression>
     regularization (1 notebook) <regularization>
     risk-measures (1 notebook) <risk-measures>
     sample-average-approximation (1 notebook) <sample-average-approximation>
-    scheduling (2 notebooks) <scheduling>
-    second-order-cone (1 notebook) <second-order-cone>
+    scheduling (3 notebooks) <scheduling>
+    second-order-cone (2 notebooks) <second-order-cone>
     sigmoid (1 notebook) <sigmoid>
     simple (1 notebook) <simple>
     softplus (1 notebook) <softplus>
