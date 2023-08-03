@@ -457,12 +457,13 @@ specified otherwise in the notebook.
 Updating notebook headers & index
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following command updates the README file and the index in the
-documentation:
+The following commands update the README file and the index in the
+documentation, as well as add any new tag files:
 
 .. code:: bash
 
    $ python scripts/index.py
+   $ git add docs/source/tags/
 
 Note that the notebook headers are patched with new badges using links
 to the correct locations after the notebook is published. The first two
