@@ -43,19 +43,19 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
         Data can be loaded in various forms, one of which is ``pandas.DataFrame`` objects.
 
         .. image:: https://colab.research.google.com/assets/colab-badge.svg
-            :target: https://colab.research.google.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Open In Colab
 
         .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Kaggle
 
         .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-            :target: https://console.paperspace.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Gradient
 
         .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-            :target: https://studiolab.sagemaker.aws/import/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Open In SageMaker Studio Lab
 
     .. grid-item-card::
@@ -68,19 +68,19 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
         Data can be loaded in various forms, including Python lists and dictionaries.
 
         .. image:: https://colab.research.google.com/assets/colab-badge.svg
-            :target: https://colab.research.google.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Open In Colab
 
         .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Kaggle
 
         .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-            :target: https://console.paperspace.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Gradient
 
         .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-            :target: https://studiolab.sagemaker.aws/import/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Open In SageMaker Studio Lab
 
 .. note::

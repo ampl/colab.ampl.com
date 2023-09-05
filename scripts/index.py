@@ -99,19 +99,19 @@ that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **
         You can use the **Christmas notebook** written by `ChatGPT <https://chat.openai.com/>`_ to get started:
 
         .. image:: https://colab.research.google.com/assets/colab-badge.svg
-            :target: https://colab.research.google.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Open In Colab
 
         .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/ampl.colab.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Kaggle
 
         .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-            :target: https://console.paperspace.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Gradient
 
         .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-            :target: https://studiolab.sagemaker.aws/import/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Open In SageMaker Studio Lab
 
         | BTW: you can even ask `ChatGPT <https://chat.openai.com/>`_ to write models for you! If it makes mistakes you can ask for help in our new `Discourse Forum <https://discuss.ampl.com>`_!
@@ -124,7 +124,7 @@ that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **
             :alt: the only 3 lines you need to use AMPL on Colab
             :align: center
             :width: 100%
-            :target: https://colab.research.google.com/github/ampl/ampl.colab.com/blob/master/template/minimal.ipynb
+            :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/template/minimal.ipynb
 
 Contents
 --------
@@ -197,19 +197,19 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
         Data can be loaded in various forms, one of which is ``pandas.DataFrame`` objects.
 
         .. image:: https://colab.research.google.com/assets/colab-badge.svg
-            :target: https://colab.research.google.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Open In Colab
 
         .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Kaggle
 
         .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-            :target: https://console.paperspace.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Gradient
 
         .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-            :target: https://studiolab.sagemaker.aws/import/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Open In SageMaker Studio Lab
 
     .. grid-item-card::
@@ -222,19 +222,19 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
         Data can be loaded in various forms, including Python lists and dictionaries.
 
         .. image:: https://colab.research.google.com/assets/colab-badge.svg
-            :target: https://colab.research.google.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Open In Colab
 
         .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Kaggle
 
         .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-            :target: https://console.paperspace.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Gradient
 
         .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-            :target: https://studiolab.sagemaker.aws/import/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Open In SageMaker Studio Lab
 
 .. note::
@@ -416,14 +416,14 @@ for _, email in authors_sorted:
 authors_index += """
 
 .. note::
-    **Your name can be here too!** Just make a pull request to https://github.com/ampl/ampl.colab.com or
+    **Your name can be here too!** Just make a pull request to https://github.com/ampl/colab.ampl.com or
     send a link to your notebook by email to devteam@ampl.com.
 
 Contribution Guide
 ------------------
 
 1. Use the template
-   `template/colab.ipynb <https://github.com/ampl/ampl.colab.com/blob/master/template/colab.ipynb>`__
+   `template/colab.ipynb <https://github.com/ampl/colab.ampl.com/blob/master/template/colab.ipynb>`__
    as base template.
 
 2. In the header make sure you fill the following fields:
@@ -453,7 +453,7 @@ Contribution Guide
 5. Update the badges and the index as shown below before committing.
 
 Note: The default license for every notebook is
-`MIT <https://github.com/ampl/ampl.colab.com/blob/master/LICENSE>`__ unless
+`MIT <https://github.com/ampl/colab.ampl.com/blob/master/LICENSE>`__ unless
 specified otherwise in the notebook.
 
 Updating notebook headers & index

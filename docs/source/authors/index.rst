@@ -21,14 +21,14 @@ The notebooks in this repository are contributed by the following authors:
 
 
 .. note::
-    **Your name can be here too!** Just make a pull request to https://github.com/ampl/ampl.colab.com or
+    **Your name can be here too!** Just make a pull request to https://github.com/ampl/colab.ampl.com or
     send a link to your notebook by email to devteam@ampl.com.
 
 Contribution Guide
 ------------------
 
 1. Use the template
-   `template/colab.ipynb <https://github.com/ampl/ampl.colab.com/blob/master/template/colab.ipynb>`__
+   `template/colab.ipynb <https://github.com/ampl/colab.ampl.com/blob/master/template/colab.ipynb>`__
    as base template.
 
 2. In the header make sure you fill the following fields:
@@ -58,7 +58,7 @@ Contribution Guide
 5. Update the badges and the index as shown below before committing.
 
 Note: The default license for every notebook is
-`MIT <https://github.com/ampl/ampl.colab.com/blob/master/LICENSE>`__ unless
+`MIT <https://github.com/ampl/colab.ampl.com/blob/master/LICENSE>`__ unless
 specified otherwise in the notebook.
 
 Updating notebook headers & index
