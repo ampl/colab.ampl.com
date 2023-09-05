@@ -1,6 +1,34 @@
 import json
 from utils import list_notebooks, list_badges, parse_modules
 import os
+import sys
+
+
+def run_command(cmd, show_output=None, return_output=False, verbose=False):
+    from subprocess import check_output, STDOUT, CalledProcessError
+
+    if isinstance(cmd, str):
+        shell = True
+        cmd_str = cmd
+    else:
+        shell = False
+        cmd_str = " ".join(cmd)
+    if verbose:
+        print("$ " + cmd_str)
+    try:
+        output = check_output(cmd, stderr=STDOUT, shell=shell).decode("utf-8")
+        if show_output or verbose:
+            print(output.rstrip("\n"))
+        if return_output:
+            return 0, output
+        return 0
+    except CalledProcessError as e:
+        output = e.output.decode("utf-8")
+        if verbose:
+            print(output.rstrip("\n"))
+        if return_output:
+            return e.returncode, output
+        return e.returncode
 
 
 def update_notebook_headers():
@@ -12,6 +40,7 @@ def update_notebook_headers():
 
     for info in NOTEBOOKS:
         title, fname = info["title"], info["fname"]
+        # run_command([sys.executable, "-m", "black", fname])
         print(f"Updating {fname}: {title}")
         data = json.load(open(fname, "r"))
         cells = data["cells"]
@@ -46,10 +75,10 @@ def update_notebook_headers():
             assert len(source) > 0
             if source[0].startswith("# Install dependencies"):
                 assert cells[i]["cell_type"] == "code"
-                for dependencies in source:
-                    if dependencies.replace(" -q", "").startswith(
-                        "!pip install amplpy"
-                    ):
+                for line in range(len(source)):
+                    source[line] = source[line].replace("!pip ", "%pip ")
+                for line, content in enumerate(source):
+                    if content.replace(" -q", "").startswith("%pip install amplpy"):
                         break
                 else:
                     raise Exception(f"amplpy is not being installed in {fname}")
@@ -72,10 +101,12 @@ def update_notebook_headers():
                 assert len(modules) >= 1
                 cells[i]["source"] = [
                     "# Google Colab & Kaggle integration\n",
-                    "from amplpy import AMPL, tools\n",
-                    "ampl = tools.ampl_notebook(\n",
-                    f"    modules={modules_str}, # modules to install\n",
-                    '    license_uuid="default") # license to use',
+                    "from amplpy import AMPL, ampl_notebook\n",
+                    "\n",
+                    "ampl = ampl_notebook(\n",
+                    f"    modules={modules_str},  # modules to install\n",
+                    '    license_uuid="default",  # license to use\n',
+                    ")  # instantiate AMPL object and register magics",
                 ]
                 cells[i]["outputs"] = []
                 break

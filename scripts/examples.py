@@ -46,7 +46,7 @@ def notebook_headers(
             "outputs": [],
             "source": [
                 "# Install dependencies\n",
-                "!pip install -q amplpy" + " ".join(dependencies),
+                "%pip install -q amplpy" + " ".join(dependencies),
             ],
         },
         {
@@ -56,10 +56,12 @@ def notebook_headers(
             "outputs": [],
             "source": [
                 "# Google Colab & Kaggle integration\n",
-                "from amplpy import AMPL, tools\n",
-                "ampl = tools.ampl_notebook(\n",
-                f"    modules={modules_str}, # modules to install\n",
-                '    license_uuid="default") # license to use',
+                "from amplpy import AMPL, ampl_notebook\n",
+                "\n",
+                "ampl = ampl_notebook(\n",
+                f"    modules={modules_str},  # modules to install\n",
+                '    license_uuid="default",  # license to use\n',
+                ")  # instantiate AMPL object and register magics",
             ],
         },
     ]

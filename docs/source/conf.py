@@ -91,7 +91,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/ampl/amplcolab",
+            "url": "https://github.com/ampl/colab.ampl.com",
             "icon": "fab fa-github fa-fw",
         },
         {

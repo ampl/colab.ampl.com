@@ -25,7 +25,7 @@ https://colab.ampl.com
 
 ## Contribution Guide
 
-1. Use the template [template/colab.ipynb](https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb) as base template.
+1. Use the template [template/colab.ipynb](https://github.com/ampl/colab.ampl.com/blob/master/template/colab.ipynb) as base template.
 
 2. In the header make sure you fill the following fields:
 ```
@@ -46,11 +46,11 @@ References: <optional>
 to do anything other than installing packages and instantiating the ampl_notebook. You can modify
 the list of modules and add more dependencies, but if you do anything else the changes may be overwritten.
 
-4. Place your notebook inside `amplcolab/authors/<github_username>/`.
+4. Place your notebook inside `colab.ampl.com/authors/<github_username>/`.
 
 5. Update the badges and the index as shown below before committing.
 
-Note: The default license for every notebook is [MIT](https://github.com/ampl/amplcolab/blob/master/LICENSE) unless specified otherwise in the notebook.
+Note: The default license for every notebook is [MIT](https://github.com/ampl/colab.ampl.com/blob/master/LICENSE) unless specified otherwise in the notebook.
 
 ### Updating notebook headers & index
 
@@ -81,7 +81,7 @@ that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **
 
 .. raw:: html
 
-    <a href="https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb" target="_blank">
+    <a href="https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb" target="_blank">
         <video width="100%" autoplay loop muted poster="https://ampl.com/upload/videos/nqueens_poster.jpg">
             <source src="https://ampl.com/upload/videos/nqueens.mp4" type="video/mp4" />
         </video>
@@ -99,19 +99,19 @@ that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **
         You can use the **Christmas notebook** written by `ChatGPT <https://chat.openai.com/>`_ to get started:
 
         .. image:: https://colab.research.google.com/assets/colab-badge.svg
-            :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :target: https://colab.research.google.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Open In Colab
 
         .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/ampl.colab.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Kaggle
 
         .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-            :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :target: https://console.paperspace.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Gradient
 
         .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-            :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Open In SageMaker Studio Lab
 
         | BTW: you can even ask `ChatGPT <https://chat.openai.com/>`_ to write models for you! If it makes mistakes you can ask for help in our new `Discourse Forum <https://discuss.ampl.com>`_!
@@ -124,7 +124,7 @@ that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **
             :alt: the only 3 lines you need to use AMPL on Colab
             :align: center
             :width: 100%
-            :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/template/minimal.ipynb
+            :target: https://colab.research.google.com/github/ampl/ampl.colab.com/blob/master/template/minimal.ipynb
 
 Contents
 --------
@@ -165,16 +165,18 @@ at the beginning of your notebook:
 .. code-block:: bash
 
    # Install dependencies
-   !pip install -q amplpy
+   %pip install -q amplpy
 
 
 .. code-block:: python
 
     # Google Colab & Kaggle integration
-    from amplpy import AMPL, tools
-    ampl = tools.ampl_notebook(
-        modules=["coin", "highs", "gokestrel"], # modules to install
-        license_uuid="your-license-uuid") # license to use
+    from amplpy import AMPL, ampl_notebook
+
+    ampl = ampl_notebook(
+        modules=["coin", "highs", "gokestrel"],  # modules to install
+        license_uuid="your-license-uuid",  # license to use
+    )  # instantiate AMPL object and register magics
 
 In the list ``modules`` you can specify the AMPL solvers you want to use in your notebook.
 For more information on the AMPL Modules for Python see `Python Modules Documentation <https://dev.ampl.com/ampl/python/modules.html>`_.
@@ -195,19 +197,19 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
         Data can be loaded in various forms, one of which is ``pandas.DataFrame`` objects.
 
         .. image:: https://colab.research.google.com/assets/colab-badge.svg
-            :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://colab.research.google.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Open In Colab
 
         .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Kaggle
 
         .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-            :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://console.paperspace.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Gradient
 
         .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-            :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Open In SageMaker Studio Lab
 
     .. grid-item-card::
@@ -220,19 +222,19 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
         Data can be loaded in various forms, including Python lists and dictionaries.
 
         .. image:: https://colab.research.google.com/assets/colab-badge.svg
-            :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://colab.research.google.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Open In Colab
 
         .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Kaggle
 
         .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-            :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://console.paperspace.com/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Gradient
 
         .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-            :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/ampl.colab.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Open In SageMaker Studio Lab
 
 .. note::
@@ -414,14 +416,14 @@ for _, email in authors_sorted:
 authors_index += """
 
 .. note::
-    **Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab or
+    **Your name can be here too!** Just make a pull request to https://github.com/ampl/ampl.colab.com or
     send a link to your notebook by email to devteam@ampl.com.
 
 Contribution Guide
 ------------------
 
 1. Use the template
-   `template/colab.ipynb <https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb>`__
+   `template/colab.ipynb <https://github.com/ampl/ampl.colab.com/blob/master/template/colab.ipynb>`__
    as base template.
 
 2. In the header make sure you fill the following fields:
@@ -446,12 +448,12 @@ Contribution Guide
    of modules and add more dependencies, but if you do anything else the
    changes may be overwritten.
 
-4. Place your notebook inside ``amplcolab/authors/<github_username>/``.
+4. Place your notebook inside ``colab.ampl.com/authors/<github_username>/``.
 
 5. Update the badges and the index as shown below before committing.
 
 Note: The default license for every notebook is
-`MIT <https://github.com/ampl/amplcolab/blob/master/LICENSE>`__ unless
+`MIT <https://github.com/ampl/ampl.colab.com/blob/master/LICENSE>`__ unless
 specified otherwise in the notebook.
 
 Updating notebook headers & index
@@ -518,15 +520,17 @@ List of modules available:
     .. code-block:: bash
 
         # Install dependencies
-        !pip install -q amplpy
+        %pip install -q amplpy
 
     .. code-block:: python
 
         # Google Colab & Kaggle integration
-        from amplpy import AMPL, tools
-        ampl = tools.ampl_notebook(
-            modules=["coin", "highs", "gokestrel"], # modules to install
-            license_uuid="default") # license to use
+        from amplpy import AMPL, ampl_notebook
+
+        ampl = ampl_notebook(
+            modules=["gurobi", "coin", "highs", "gokestrel"],  # modules to install
+            license_uuid="default",  # license to use
+        )  # instantiate AMPL object and register magics
 
 Learn more: [`AMPL and Solvers modules <https://dev.ampl.com/ampl/python/modules.html>`_] [`Solver docs <https://dev.ampl.com/solvers/index.html>`_]
 

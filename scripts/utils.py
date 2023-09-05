@@ -70,7 +70,7 @@ def list_notebooks():
     return notebooks
 
 
-GITHUB_PATH = "ampl/amplcolab/blob/master/"
+GITHUB_PATH = "ampl/colab.ampl.com/blob/master/"
 
 
 def normalize(url):

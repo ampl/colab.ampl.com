@@ -28,15 +28,17 @@ List of modules available:
     .. code-block:: bash
 
         # Install dependencies
-        !pip install -q amplpy
+        %pip install -q amplpy
 
     .. code-block:: python
 
         # Google Colab & Kaggle integration
-        from amplpy import AMPL, tools
-        ampl = tools.ampl_notebook(
-            modules=["coin", "highs", "gokestrel"], # modules to install
-            license_uuid="default") # license to use
+        from amplpy import AMPL, ampl_notebook
+
+        ampl = ampl_notebook(
+            modules=["gurobi", "coin", "highs", "gokestrel"],  # modules to install
+            license_uuid="default",  # license to use
+        )  # instantiate AMPL object and register magics
 
 Learn more: [`AMPL and Solvers modules <https://dev.ampl.com/ampl/python/modules.html>`_] [`Solver docs <https://dev.ampl.com/solvers/index.html>`_]
 

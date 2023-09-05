@@ -64,14 +64,14 @@ Here is some documentation and examples of the API: [Documentation](http://amplp
 
 
 ```python
-!pip install -q amplpy
+%pip install -q amplpy
 ```
 
 
 ```python
 # Google Colab & Kaggle integration
-from amplpy import tools
-ampl = tools.ampl_notebook(modules=['ampl', 'gurobi', 'highs']) # instantiate AMPL object and register magics
+from amplpy import AMPL, ampl_notebook
+ampl = ampl_notebook(modules=['ampl', 'gurobi', 'highs']) # instantiate AMPL object and register magics
 ```
 
 ## Solving problem with AMPL
