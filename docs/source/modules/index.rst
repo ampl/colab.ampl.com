@@ -9,7 +9,7 @@ Modules available
 List of modules available:
 
 - Open-source: ``highs``, ``cbc``, ``coin`` (includes: CBC, Couenne, Ipopt, Bonmin), ``open`` (includes all open-source solvers)
-- `NEOS Server <http://www.neos-server.org/>`_: ``gokestrel`` (`kestrel client <https://dev.ampl.com/solvers/kestrel.html>`_)
+- `NEOS Server <https://www.neos-server.org/>`_: ``gokestrel`` (`kestrel client <https://dev.ampl.com/solvers/kestrel.html>`_)
 - Commercial solvers: ``baron``, ``conopt``, ``copt``, ``cplex``, ``gurobi``, ``knitro``, ``lgo``, ``lindoglobal``, ``loqo``, ``minos``, ``mosek``, ``octeract``, ``snopt``, ``xpress``
 - AMPL Plugins: ``amplgsl`` (`amplgsl docs <https://amplgsl.readthedocs.io/>`_), ``plugins`` (`amplplugins docs <https://amplplugins.readthedocs.io/>`_)
 
@@ -17,7 +17,7 @@ List of modules available:
     On Google Colab there is a default `AMPL Community
     Edition license <https://ampl.com/ce/>`_ that gives you **unlimited access to AMPL
     with open-source solvers** (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
-    or with commercial solvers from the `NEOS Server <http://www.neos-server.org/>`_ as described in `Kestrel documentation <https://dev.ampl.com/solvers/kestrel.html>`_.
+    or with commercial solvers from the `NEOS Server <https://www.neos-server.org/>`_ as described in `Kestrel documentation <https://dev.ampl.com/solvers/kestrel.html>`_.
     
     In the list ``modules`` you need to include 
     ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 

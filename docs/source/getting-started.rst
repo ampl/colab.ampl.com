@@ -96,7 +96,7 @@ AMPL is free on Colab
 - On **Google Colab** there is a default `AMPL Community Edition license <https://ampl.com/ce/>`_
   that gives you **unlimited access to AMPL
   with open-source solvers** (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
-  or with commercial solvers from the `NEOS Server <http://www.neos-server.org/>`_ as described in `Kestrel documentation <https://dev.ampl.com/solvers/kestrel.html>`_.
+  or with commercial solvers from the `NEOS Server <https://www.neos-server.org/>`_ as described in `Kestrel documentation <https://dev.ampl.com/solvers/kestrel.html>`_.
 
 - `AMPL for Courses <https://ampl.com/licenses-and-pricing/ampl-for-teaching/>`_ is another free license of full-featured AMPL with no limitations on problem size, and a selection of popular commercial and open-source solvers.
   **This license can be used on Google Colab and similar platforms for teaching.**
