@@ -58,6 +58,8 @@ Tags
     mip (6 notebooks) <mip>
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
+    mp-library (1 notebook) <mp-library>
+    non-continuous-objective (1 notebook) <non-continuous-objective>
     non-linear (1 notebook) <non-linear>
     nonlinear (2 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
@@ -79,7 +81,9 @@ Tags
     sigmoid (1 notebook) <sigmoid>
     simple (1 notebook) <simple>
     softplus (1 notebook) <softplus>
+    solution-check (1 notebook) <solution-check>
     stochastic-optimization (1 notebook) <stochastic-optimization>
+    strict-comparison (1 notebook) <strict-comparison>
     template (1 notebook) <template>
     tsp (1 notebook) <tsp>
     unit-commitment (1 notebook) <unit-commitment>

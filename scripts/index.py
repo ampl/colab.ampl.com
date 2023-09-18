@@ -54,10 +54,10 @@ Note: The default license for every notebook is [MIT](https://github.com/ampl/co
 
 ### Updating notebook headers & index
 
-The following commands update the README file and the index in the documentation, as well as add any new tag files to the repository:
+The following commands update the README file and the index in the documentation, as well as add any new automatically created files to the repository:
 ```bash
 $ python scripts/index.py
-$ git add docs/source/tags/
+$ git add docs/source/
 ```
 
 Note that the notebook headers are patched with new badges using links to the correct locations after the notebook is published.
@@ -460,12 +460,12 @@ Updating notebook headers & index
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following commands update the README file and the index in the
-documentation, as well as add any new tag files:
+documentation, as well as add any new automatically created files:
 
 .. code:: bash
 
    $ python scripts/index.py
-   $ git add docs/source/tags/
+   $ git add docs/source/
 
 Note that the notebook headers are patched with new badges using links
 to the correct locations after the notebook is published. The first two
