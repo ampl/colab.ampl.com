@@ -123,6 +123,7 @@ html_theme_options = {
 #     "theme_logo_text": "Colaboratory",
 # }
 
+html_baseurl = "https://colab.ampl.com"
 
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = []
