@@ -5,12 +5,13 @@ Tags
 .. toctree::
     :maxdepth: 2
 
-    ampl (1 notebook) <ampl>
+    ampl (2 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (3 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
     amplpy (28 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
+    amplxl (1 notebook) <amplxl>
     assignment (1 notebook) <assignment>
     bin-packing (1 notebook) <bin-packing>
     bpp (1 notebook) <bpp>
@@ -32,6 +33,7 @@ Tags
     energy (2 notebooks) <energy>
     engineering (2 notebooks) <engineering>
     example (7 notebooks) <example>
+    excel (1 notebook) <excel>
     exponential-cone (1 notebook) <exponential-cone>
     finance (4 notebooks) <finance>
     formulation-comparison (1 notebook) <formulation-comparison>
@@ -82,10 +84,12 @@ Tags
     simple (1 notebook) <simple>
     softplus (1 notebook) <softplus>
     solution-check (1 notebook) <solution-check>
+    spreadsheet (1 notebook) <spreadsheet>
     stochastic-optimization (1 notebook) <stochastic-optimization>
     strict-comparison (1 notebook) <strict-comparison>
     template (1 notebook) <template>
     tsp (1 notebook) <tsp>
     unit-commitment (1 notebook) <unit-commitment>
     vector-packing (1 notebook) <vector-packing>
+    xlsx (1 notebook) <xlsx>
 

@@ -57,5 +57,6 @@ Notebooks grouped by modules
     knitro
     mosek
     open
+    plugins
     scip
 
