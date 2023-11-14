@@ -29,7 +29,7 @@ AMPL - spreadsheet handling with amplxl
 
 | Description: Basic example of reading/writing data into/from a .xlsx spreadsheet with amplxl
 | Tags: :ref:`tag-ampl`, :ref:`tag-amplxl`, :ref:`tag-spreadsheet`, :ref:`tag-excel`, :ref:`tag-xlsx`
-| Author: :ref:`email-nicolausantos_at_gmail.com` <nicolausantos@gmail.com>
+| Author: :ref:`email-nfbvs_at_ampl.com` <nfbvs@ampl.com>
 
 AMPL Bin Packing Problem with GCG
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
