@@ -106,5 +106,5 @@ The first two notebook cells are modified to ensure that requirements are instal
 MIT
 
 ***
-Copyright © 2022-2023 AMPL Optimization inc. All rights reserved.
+Copyright Â© 2022-2023 AMPL Optimization inc. All rights reserved.
 

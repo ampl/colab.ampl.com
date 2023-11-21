@@ -384,10 +384,10 @@ Tags
 for tag, lst in sorted(nb_tagged.items()):
     label = f"{tag} ({len(lst)} notebook{'s' if len(lst) > 1 else ''}) <{tag}>"
     tags_index += f"    {label}\n"
-print(tags_index, file=open(f"docs/source/tags/index.rst", "w"))
+print(tags_index, file=open(f"docs/source/tags/index.rst", "w", newline="\n"))
 
 for tag, lst in nb_tagged.items():
-    tag_rst = open(f"docs/source/tags/{tag}.rst", "w")
+    tag_rst = open(f"docs/source/tags/{tag}.rst", "w", newline="\n")
     title = f"{tag}"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _tag-{tag}:\n\n{title}"
@@ -472,13 +472,13 @@ to the correct locations after the notebook is published. The first two
 notebook cells are modified to ensure that requirements are installed
 and that the ampl_notebook is instantiated.
 """
-print(authors_index, file=open(f"docs/source/authors/index.rst", "w"))
+print(authors_index, file=open(f"docs/source/authors/index.rst", "w", newline="\n"))
 
 for name, email in authors_sorted:
     print(f">>{name} <{email}>")
     lst = nb_madeby[email]
     email = email.replace("@", "_at_")
-    email_rst = open(f"docs/source/authors/{email}.rst", "w")
+    email_rst = open(f"docs/source/authors/{email}.rst", "w", newline="\n")
     title = f"{name} ({len(lst)} notebook{'s' if len(lst) > 1 else ''})"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _email-{email}:\n\n{title}"
@@ -543,10 +543,10 @@ Notebooks grouped by modules
 """
 for mod in sorted(nb_uses):
     modules_index += f"    {mod}\n"
-print(modules_index, file=open(f"docs/source/modules/index.rst", "w"))
+print(modules_index, file=open(f"docs/source/modules/index.rst", "w", newline="\n"))
 
 for mod, lst in nb_uses.items():
-    mod_rst = open(f"docs/source/modules/{mod}.rst", "w")
+    mod_rst = open(f"docs/source/modules/{mod}.rst", "w", newline="\n")
     title = f"{mod} ({len(lst)} notebook{'s' if len(lst) > 1 else ''})"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _module-{mod}:\n\n{title}"
