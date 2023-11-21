@@ -1,6 +1,6 @@
 .. _email-fdabrandao_at_gmail.com:
 
-Filipe Brand„o (14 notebooks)
+Filipe Brand√£o (14 notebooks)
 =============================
 
 AMPL Christmas Model created by ChatGPT

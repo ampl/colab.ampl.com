@@ -1,6 +1,6 @@
 .. _email-juanjesus.losada_at_gmail.com:
 
-Juan Jesús Losada del Olmo (1 notebook)
+Juan JesÃºs Losada del Olmo (1 notebook)
 =======================================
 
 Solving a nonogram puzzle
