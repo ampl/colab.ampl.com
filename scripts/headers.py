@@ -42,7 +42,7 @@ def update_notebook_headers():
         title, fname = info["title"], info["fname"]
         # run_command([sys.executable, "-m", "black", fname])
         print(f"Updating {fname}: {title}")
-        data = json.load(open(fname, "r"))
+        data = json.load(open(fname, "r", encoding="utf-8"))
         cells = data["cells"]
         assert cells[0]["cell_type"] == "markdown"
         header = cells[0]["source"]
