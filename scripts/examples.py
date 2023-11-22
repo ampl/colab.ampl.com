@@ -113,7 +113,7 @@ def generate_notebook(fname, cells):
         "nbformat": 4,
         "nbformat_minor": 2,
     }
-    open(fname, "w", newline="\n").write(
+    open(fname, "w", newline="\n", encoding="utf-8").write(
         json.dumps(notebook, separators=(",", ": "), indent="  ", ensure_ascii=False)
     )
 

@@ -113,7 +113,7 @@ def update_notebook_headers():
         else:
             raise Exception(f"Could not find integration cell in {fname}")
 
-        open(fname, "w", newline="\n").write(
+        open(fname, "w", newline="\n", encoding="utf-8").write(
             json.dumps(data, separators=(",", ": "), indent="  ", ensure_ascii=False)
             + "\n"
         )

@@ -11,10 +11,12 @@ os.chdir("..")
 NOTEBOOKS = list_notebooks()
 
 
-readme = open("README.md", "w", newline="\n")
-index = open("docs/source/index.rst", "w", newline="\n")
-gettingstarted = open("docs/source/getting-started.rst", "w", newline="\n")
-notebooks = open("docs/source/notebooks.rst", "w", newline="\n")
+readme = open("README.md", "w", newline="\n", encoding="utf-8")
+index = open("docs/source/index.rst", "w", newline="\n", encoding="utf-8")
+gettingstarted = open(
+    "docs/source/getting-started.rst", "w", newline="\n", encoding="utf-8"
+)
+notebooks = open("docs/source/notebooks.rst", "w", newline="\n", encoding="utf-8")
 
 print(
     """# AMPL Model Colaboratory
@@ -384,10 +386,13 @@ Tags
 for tag, lst in sorted(nb_tagged.items()):
     label = f"{tag} ({len(lst)} notebook{'s' if len(lst) > 1 else ''}) <{tag}>"
     tags_index += f"    {label}\n"
-print(tags_index, file=open(f"docs/source/tags/index.rst", "w", newline="\n"))
+print(
+    tags_index,
+    file=open(f"docs/source/tags/index.rst", "w", newline="\n", encoding="utf-8"),
+)
 
 for tag, lst in nb_tagged.items():
-    tag_rst = open(f"docs/source/tags/{tag}.rst", "w", newline="\n")
+    tag_rst = open(f"docs/source/tags/{tag}.rst", "w", newline="\n", encoding="utf-8")
     title = f"{tag}"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _tag-{tag}:\n\n{title}"
@@ -472,13 +477,18 @@ to the correct locations after the notebook is published. The first two
 notebook cells are modified to ensure that requirements are installed
 and that the ampl_notebook is instantiated.
 """
-print(authors_index, file=open(f"docs/source/authors/index.rst", "w", newline="\n"))
+print(
+    authors_index,
+    file=open(f"docs/source/authors/index.rst", "w", newline="\n", encoding="utf-8"),
+)
 
 for name, email in authors_sorted:
     print(f">>{name} <{email}>")
     lst = nb_madeby[email]
     email = email.replace("@", "_at_")
-    email_rst = open(f"docs/source/authors/{email}.rst", "w", newline="\n")
+    email_rst = open(
+        f"docs/source/authors/{email}.rst", "w", newline="\n", encoding="utf-8"
+    )
     title = f"{name} ({len(lst)} notebook{'s' if len(lst) > 1 else ''})"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _email-{email}:\n\n{title}"
@@ -543,10 +553,15 @@ Notebooks grouped by modules
 """
 for mod in sorted(nb_uses):
     modules_index += f"    {mod}\n"
-print(modules_index, file=open(f"docs/source/modules/index.rst", "w", newline="\n"))
+print(
+    modules_index,
+    file=open(f"docs/source/modules/index.rst", "w", newline="\n", encoding="utf-8"),
+)
 
 for mod, lst in nb_uses.items():
-    mod_rst = open(f"docs/source/modules/{mod}.rst", "w", newline="\n")
+    mod_rst = open(
+        f"docs/source/modules/{mod}.rst", "w", newline="\n", encoding="utf-8"
+    )
     title = f"{mod} ({len(lst)} notebook{'s' if len(lst) > 1 else ''})"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _module-{mod}:\n\n{title}"
