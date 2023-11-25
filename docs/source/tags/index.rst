@@ -5,11 +5,11 @@ Tags
 .. toctree::
     :maxdepth: 2
 
-    ampl (2 notebooks) <ampl>
+    ampl (3 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (3 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
-    amplpy (28 notebooks) <amplpy>
+    amplpy (29 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     amplxl (1 notebook) <amplxl>
     assignment (1 notebook) <assignment>
@@ -61,16 +61,19 @@ Tags
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp-library (1 notebook) <mp-library>
+    multiprocess (1 notebook) <multiprocess>
     non-continuous-objective (1 notebook) <non-continuous-objective>
     non-linear (1 notebook) <non-linear>
     nonlinear (2 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
     organ-exchange (1 notebook) <organ-exchange>
     pandas (1 notebook) <pandas>
+    parallel-computing (1 notebook) <parallel-computing>
     planning (1 notebook) <planning>
     power-generation (3 notebooks) <power-generation>
     pricing (1 notebook) <pricing>
     puzzles (1 notebook) <puzzles>
+    python (1 notebook) <python>
     quadratic (1 notebook) <quadratic>
     quadratic-cone (2 notebooks) <quadratic-cone>
     quick-start (2 notebooks) <quick-start>
@@ -86,6 +89,7 @@ Tags
     solution-check (1 notebook) <solution-check>
     spreadsheet (1 notebook) <spreadsheet>
     stochastic-optimization (1 notebook) <stochastic-optimization>
+    stochastic-programming (1 notebook) <stochastic-programming>
     strict-comparison (1 notebook) <strict-comparison>
     template (1 notebook) <template>
     tsp (1 notebook) <tsp>
