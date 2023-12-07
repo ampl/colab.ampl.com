@@ -5,11 +5,11 @@ Tags
 .. toctree::
     :maxdepth: 2
 
-    ampl (3 notebooks) <ampl>
+    ampl (4 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (3 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
-    amplpy (29 notebooks) <amplpy>
+    amplpy (30 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     amplxl (1 notebook) <amplxl>
     assignment (1 notebook) <assignment>
@@ -24,6 +24,7 @@ Tags
     complexity (1 notebook) <complexity>
     conic (3 notebooks) <conic>
     constraint-programming (3 notebooks) <constraint-programming>
+    convexity (1 notebook) <convexity>
     cpmp (1 notebook) <cpmp>
     cutting-stock (1 notebook) <cutting-stock>
     dantzig-wolfe-decomposition (2 notebooks) <dantzig-wolfe-decomposition>
@@ -49,6 +50,7 @@ Tags
     highs (1 notebook) <highs>
     hydropower (1 notebook) <hydropower>
     industry (4 notebooks) <industry>
+    introduction (1 notebook) <introduction>
     ipopt (1 notebook) <ipopt>
     lecture (1 notebook) <lecture>
     log-sum-exp (1 notebook) <log-sum-exp>
@@ -66,6 +68,7 @@ Tags
     non-linear (1 notebook) <non-linear>
     nonlinear (2 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
+    optimization (1 notebook) <optimization>
     organ-exchange (1 notebook) <organ-exchange>
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
@@ -93,6 +96,7 @@ Tags
     strict-comparison (1 notebook) <strict-comparison>
     template (1 notebook) <template>
     tsp (1 notebook) <tsp>
+    unconstrained (1 notebook) <unconstrained>
     unit-commitment (1 notebook) <unit-commitment>
     vector-packing (1 notebook) <vector-packing>
     xlsx (1 notebook) <xlsx>
