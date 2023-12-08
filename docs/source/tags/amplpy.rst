@@ -343,7 +343,7 @@ Hydrothermal Scheduling Problem with Conic Programming
 | Tags: :ref:`tag-amplpy`, :ref:`tag-conic`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-nonlinear-programming`, :ref:`tag-scheduling`, :ref:`tag-engineering`, :ref:`tag-power-generation`, :ref:`tag-geothermal-energy`, :ref:`tag-hydropower`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
-Intorduction to Mathematical Optimization
+Introduction to Mathematical Optimization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

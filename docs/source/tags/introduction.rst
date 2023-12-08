@@ -3,7 +3,7 @@
 introduction
 ============
 
-Intorduction to Mathematical Optimization
+Introduction to Mathematical Optimization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

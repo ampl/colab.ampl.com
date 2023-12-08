@@ -31,7 +31,7 @@ Capacity expansion of power generation
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-energy`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
-Intorduction to Mathematical Optimization
+Introduction to Mathematical Optimization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

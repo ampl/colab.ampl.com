@@ -59,7 +59,7 @@ AMPL - spreadsheet handling with amplxl
 | Tags: :ref:`tag-ampl`, :ref:`tag-amplxl`, :ref:`tag-spreadsheet`, :ref:`tag-excel`, :ref:`tag-xlsx`
 | Author: :ref:`email-nfbvs_at_ampl.com` <nfbvs@ampl.com>
 
-Intorduction to Mathematical Optimization
+Introduction to Mathematical Optimization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

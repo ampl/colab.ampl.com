@@ -55,7 +55,6 @@ Notebooks grouped by modules
     gurobi
     highs
     knitro
-    lindoglobal
     mosek
     open
     plugins

@@ -143,7 +143,7 @@ Financial Portfolio Optimization with amplpy
 | Tags: :ref:`tag-amplpy`, :ref:`tag-amplpyfinance`, :ref:`tag-finance`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
-Intorduction to Mathematical Optimization
+Introduction to Mathematical Optimization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
