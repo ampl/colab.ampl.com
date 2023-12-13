@@ -5,11 +5,11 @@ Tags
 .. toctree::
     :maxdepth: 2
 
-    ampl (6 notebooks) <ampl>
+    ampl (7 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
-    ampl-lecture (6 notebooks) <ampl-lecture>
+    ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
-    amplpy (32 notebooks) <amplpy>
+    amplpy (33 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     amplxl (1 notebook) <amplxl>
     assignment (1 notebook) <assignment>
@@ -49,12 +49,13 @@ Tags
     highlights (10 notebooks) <highlights>
     highs (1 notebook) <highs>
     hydropower (1 notebook) <hydropower>
+    indexing (1 notebook) <indexing>
     industry (4 notebooks) <industry>
-    introduction (3 notebooks) <introduction>
+    introduction (4 notebooks) <introduction>
     ipopt (1 notebook) <ipopt>
     lecture (1 notebook) <lecture>
-    lemonade-stand (1 notebook) <lemonade-stand>
-    linear-programming (2 notebooks) <linear-programming>
+    lemonade-stand (2 notebooks) <lemonade-stand>
+    linear-programming (3 notebooks) <linear-programming>
     log-sum-exp (1 notebook) <log-sum-exp>
     lp (1 notebook) <lp>
     machine-learning (1 notebook) <machine-learning>
@@ -89,6 +90,7 @@ Tags
     sample-average-approximation (1 notebook) <sample-average-approximation>
     scheduling (3 notebooks) <scheduling>
     second-order-cone (2 notebooks) <second-order-cone>
+    sets (1 notebook) <sets>
     shortest-path (1 notebook) <shortest-path>
     sigmoid (1 notebook) <sigmoid>
     simple (1 notebook) <simple>

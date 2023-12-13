@@ -367,7 +367,7 @@ Pattern Generation
 | Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
-Production model
+Production Model
 ^^^^^^^^^^^^^^^^
 
 .. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -390,6 +390,10 @@ Production model
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
     :alt: Open In SageMaker Studio Lab
     
+
+| Description: Basic introduction to AMPL's indexed entities and the Pygwalker Python package via a lemonade stand example
+| Tags: :ref:`tag-ampl-lecture`, :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-linear-programming`, :ref:`tag-sets`, :ref:`tag-indexing`, :ref:`tag-lemonade-stand`
+| Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 Robust Linear Programming with Ellipsoidal Uncertainty
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
