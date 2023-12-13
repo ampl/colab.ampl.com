@@ -1,6 +1,6 @@
 .. _module-gurobi:
 
-gurobi (14 notebooks)
+gurobi (17 notebooks)
 =====================
 
 AMPL Bin Packing Problem with GCG
@@ -143,6 +143,34 @@ Financial Portfolio Optimization with amplpy
 | Tags: :ref:`tag-amplpy`, :ref:`tag-amplpyfinance`, :ref:`tag-finance`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
+Introduction to Linear and Integer Programming
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_prorgramming.ipynb
+    :alt: intro_to_linear_prorgramming.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_prorgramming.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_prorgramming.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_prorgramming.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_prorgramming.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+| Description: Basic introduction to linear programming and AMPL via a lemonade stand example
+| Tags: :ref:`tag-ampl-lecture`, :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-linear-programming`, :ref:`tag-lemonade-stand`
+| Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
+
 Introduction to Mathematical Optimization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -168,7 +196,7 @@ Introduction to Mathematical Optimization
     
 
 | Description: Basic introduction to optimization and AMPL via unconstrained optimization
-| Tags: :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-optimization`, :ref:`tag-convexity`, :ref:`tag-unconstrained`
+| Tags: :ref:`tag-ampl-lecture`, :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-optimization`, :ref:`tag-convexity`, :ref:`tag-unconstrained`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 Jupyter Notebook Integration
@@ -226,6 +254,34 @@ NFL Team Rating
 | Description: NFL Team Rating problem from the Analytical Decision Modeling course at the Arizona State University.
 | Tags: :ref:`tag-educational`, :ref:`tag-quadratic`, :ref:`tag-amplpy`, :ref:`tag-gurobi`
 | Author: :ref:`email-yimin_wang_at_asu.edu` <yimin_wang@asu.edu>, :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+Network Linear Programs
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
+    :alt: network.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+| Description: Basic introduction to network linear programms and AMPL via max flow and shortest path problems
+| Tags: :ref:`tag-ampl-lecture`, :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-linear-programming`, :ref:`tag-max-flow`, :ref:`tag-shortest-path`
+| Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 Network design with redundancy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -310,6 +366,30 @@ Pattern Generation
 | Description: Pattern generation example with amplpy
 | Tags: :ref:`tag-amplpy`, :ref:`tag-example`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
+Production model
+^^^^^^^^^^^^^^^^
+
+.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
+    :alt: production_model.ipynb
+    
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
+    :alt: Open In Colab
+    
+.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
+    :alt: Kaggle
+    
+.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
+    :alt: Gradient
+    
+.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
 
 Robust Linear Programming with Ellipsoidal Uncertainty
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

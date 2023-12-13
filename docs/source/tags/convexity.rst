@@ -28,6 +28,6 @@ Introduction to Mathematical Optimization
     
 
 | Description: Basic introduction to optimization and AMPL via unconstrained optimization
-| Tags: :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-optimization`, :ref:`tag-convexity`, :ref:`tag-unconstrained`
+| Tags: :ref:`tag-ampl-lecture`, :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-optimization`, :ref:`tag-convexity`, :ref:`tag-unconstrained`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
