@@ -9,7 +9,7 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
-    amplpy (33 notebooks) <amplpy>
+    amplpy (34 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     amplxl (1 notebook) <amplxl>
     assignment (1 notebook) <assignment>
@@ -18,7 +18,7 @@ Tags
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
     chatgpt (1 notebook) <chatgpt>
-    christmas (1 notebook) <christmas>
+    christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
     complementarity-problem (1 notebook) <complementarity-problem>
     complexity (1 notebook) <complexity>
@@ -41,12 +41,13 @@ Tags
     gcg (2 notebooks) <gcg>
     geometry (1 notebook) <geometry>
     geothermal-energy (1 notebook) <geothermal-energy>
+    global-optimization (1 notebook) <global-optimization>
     google-sheets (2 notebooks) <google-sheets>
     graphs (1 notebook) <graphs>
     gui (2 notebooks) <gui>
     gurobi (2 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
-    highlights (10 notebooks) <highlights>
+    highlights (11 notebooks) <highlights>
     highs (1 notebook) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
