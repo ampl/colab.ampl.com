@@ -3,4 +3,4 @@ ampl-sphinx-theme @ git+https://github.com/ampl/ampl.github.io.git#subdirectory=
 sphinx==4.2.0
 myst_nb>=0.18.1
 myst_parser>=0.17.0
-sphinx_design==0.3.0
+#sphinx_design==0.3.0
