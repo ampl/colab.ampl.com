@@ -1,4 +1,4 @@
-from utils import list_notebooks, list_badges
+from utils import list_notebooks, list_badges, rst_badges
 from headers import update_notebook_headers
 import glob
 import os
@@ -16,7 +16,6 @@ index = open("docs/source/index.rst", "w", newline="\n", encoding="utf-8")
 gettingstarted = open(
     "docs/source/getting-started.rst", "w", newline="\n", encoding="utf-8"
 )
-notebooks = open("docs/source/notebooks.rst", "w", newline="\n", encoding="utf-8")
 
 print(
     """# AMPL Model Colaboratory
@@ -144,7 +143,7 @@ Contents
     :hidden:
 
     tags/index
-    notebooks
+    notebooks/index
 
 Notebooks
 ---------
@@ -284,16 +283,6 @@ Learn more: [`Python API Documentation <https://amplpy.readthedocs.io>`_]
 )
 
 
-print(
-    """
-Notebooks
-=========
-
-""",
-    file=notebooks,
-)
-
-
 def print_markdown(info, fout):
     fname = info["fname"]
     colab_only = info["colab_only"]
@@ -301,15 +290,21 @@ def print_markdown(info, fout):
     print(f"|{info['title']}|{'|'.join(badges)}|", file=fout)
 
 
-def print_rst(info, fout):
-    fname, title = info["fname"], info["title"]
+def print_rst(info, fout, notebooks_path=None, toc_tree=False):
+    fname, title, url_string = info["fname"], info["title"], info["url_string"]
     colab_only = info["colab_only"]
-    badges = list_badges(fname, colab_only, rst=True)
     print(title + "\n" + "^" * len(title), file=fout)
-    print("\n" + "\n".join(badges) + "\n", file=fout)
     description = info.get("description", None)
+    if notebooks_path:
+        print(
+            f"| `Notebooks <{notebooks_path}index.html>`_ > `{title} <{notebooks_path}{url_string}.html>`_",
+            file=fout,
+        )
+    badges, images = rst_badges(fname, url_string, colab_only=colab_only)
+    print(f"| {badges}", file=fout)
     if description:
         print(f"| Description: {description}", file=fout)
+
     tags = info.get("tags", None)
     if tags:
         tags = [f":ref:`tag-{tag}`" for tag in tags]
@@ -326,7 +321,21 @@ def print_rst(info, fout):
                 lst.append(f":ref:`email-{email.replace('@', '_at_')}` <{email}>")
             else:
                 lst.append(author)
-        print(f"| Author: {', '.join(lst)}\n", file=fout)
+        print(f"| Author: {', '.join(lst)}", file=fout)
+    if toc_tree:
+        print(
+            f"""
+        .. toctree::
+            :maxdepth: 2
+            :caption: {title}
+            :glob:
+
+            {notebooks_path}{url_string}.ipynb
+        """,
+            file=fout,
+        )
+    print(images, file=fout)
+    print(file=fout)
 
 
 nb_madeby = {}
@@ -357,8 +366,7 @@ for info in NOTEBOOKS:
         nb_madeby[email].append(info)
 
     print_markdown(info, readme)
-    print_rst(info, index)
-    print_rst(info, notebooks)
+    print_rst(info, index, notebooks_path="notebooks/", toc_tree=False)
 
 print(
     """## License
@@ -398,7 +406,7 @@ for tag, lst in nb_tagged.items():
     header = f".. _tag-{tag}:\n\n{title}"
     print(header, file=tag_rst)
     for info in lst:
-        print_rst(info, tag_rst)
+        print_rst(info, tag_rst, notebooks_path="../notebooks/")
 
 # Authors
 
@@ -494,7 +502,7 @@ for name, email in authors_sorted:
     header = f".. _email-{email}:\n\n{title}"
     print(header, file=email_rst)
     for info in lst:
-        print_rst(info, email_rst)
+        print_rst(info, email_rst, notebooks_path="../notebooks/")
 
 # Modules
 
@@ -567,4 +575,4 @@ for mod, lst in nb_uses.items():
     header = f".. _module-{mod}:\n\n{title}"
     print(header, file=mod_rst)
     for info in lst:
-        print_rst(info, mod_rst)
+        print_rst(info, mod_rst, notebooks_path="../notebooks/")

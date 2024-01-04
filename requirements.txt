@@ -1,2 +1,5 @@
 black
 black[jupyter]
+sphinx-reredirects==0.1.1
+myst_parser>=0.18.1
+myst_nb>=0.17.2
