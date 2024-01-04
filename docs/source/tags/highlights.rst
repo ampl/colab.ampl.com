@@ -5,309 +5,331 @@ highlights
 
 AMPL Bin Packing Problem with GCG
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/bpp.ipynb
-    :alt: bpp.ipynb
-    
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/bpp.ipynb
-    :alt: Open In Colab
-    
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/bpp.ipynb
-    :alt: Kaggle
-    
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/bpp.ipynb
-    :alt: Gradient
-    
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/bpp.ipynb
-    :alt: Open In SageMaker Studio Lab
-    
-
+| `Notebooks <../notebooks/index.html>`_ > `AMPL Bin Packing Problem with GCG <../notebooks/ampl-bin-packing-problem-with-gcg.html>`_
+| |github-ampl-bin-packing-problem-with-gcg| |colab-ampl-bin-packing-problem-with-gcg| |kaggle-ampl-bin-packing-problem-with-gcg| |gradient-ampl-bin-packing-problem-with-gcg| |sagemaker-ampl-bin-packing-problem-with-gcg|
 | Description: Dantzig-Wolfe decomposition for Bin Packing Problem with GCG
 | Tags: :ref:`tag-gcg`, :ref:`tag-bpp`, :ref:`tag-amplpy`, :ref:`tag-dantzig-wolfe-decomposition`, :ref:`tag-branch-price-and-cut`, :ref:`tag-highlights`
 | Author: :ref:`email-jurgenlentz26_at_gmail.com` <jurgenlentz26@gmail.com>
 
-AMPL Capacitated p-Median Problem with GCG
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/cpmp.ipynb
-    :alt: cpmp.ipynb
+.. |github-ampl-bin-packing-problem-with-gcg|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/bpp.ipynb
+    :alt: bpp.ipynb
     
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/cpmp.ipynb
+.. |colab-ampl-bin-packing-problem-with-gcg| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/bpp.ipynb
     :alt: Open In Colab
     
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/cpmp.ipynb
+.. |kaggle-ampl-bin-packing-problem-with-gcg| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/bpp.ipynb
     :alt: Kaggle
     
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/cpmp.ipynb
+.. |gradient-ampl-bin-packing-problem-with-gcg| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/bpp.ipynb
     :alt: Gradient
     
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/cpmp.ipynb
+.. |sagemaker-ampl-bin-packing-problem-with-gcg| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/bpp.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
+
+AMPL Capacitated p-Median Problem with GCG
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `AMPL Capacitated p-Median Problem with GCG <../notebooks/ampl-capacitated-p-median-problem-with-gcg.html>`_
+| |github-ampl-capacitated-p-median-problem-with-gcg| |colab-ampl-capacitated-p-median-problem-with-gcg| |kaggle-ampl-capacitated-p-median-problem-with-gcg| |gradient-ampl-capacitated-p-median-problem-with-gcg| |sagemaker-ampl-capacitated-p-median-problem-with-gcg|
 | Description: Dantzig-Wolfe decomposition for Capacitated p-Median Problem with GCG
 | Tags: :ref:`tag-gcg`, :ref:`tag-cpmp`, :ref:`tag-amplpy`, :ref:`tag-dantzig-wolfe-decomposition`, :ref:`tag-branch-price-and-cut`, :ref:`tag-highlights`
 | Author: :ref:`email-jurgenlentz26_at_gmail.com` <jurgenlentz26@gmail.com>
 
-AMPL Christmas Model created by ChatGPT
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
-    :alt: christmas.ipynb
+.. |github-ampl-capacitated-p-median-problem-with-gcg|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/cpmp.ipynb
+    :alt: cpmp.ipynb
     
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+.. |colab-ampl-capacitated-p-median-problem-with-gcg| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/cpmp.ipynb
     :alt: Open In Colab
     
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+.. |kaggle-ampl-capacitated-p-median-problem-with-gcg| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/cpmp.ipynb
     :alt: Kaggle
     
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+.. |gradient-ampl-capacitated-p-median-problem-with-gcg| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/cpmp.ipynb
     :alt: Gradient
     
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+.. |sagemaker-ampl-capacitated-p-median-problem-with-gcg| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/cpmp.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
+
+AMPL Christmas Model created by ChatGPT
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `AMPL Christmas Model created by ChatGPT <../notebooks/ampl-christmas-model-created-by-chatgpt.html>`_
+| |github-ampl-christmas-model-created-by-chatgpt| |colab-ampl-christmas-model-created-by-chatgpt| |kaggle-ampl-christmas-model-created-by-chatgpt| |gradient-ampl-christmas-model-created-by-chatgpt| |sagemaker-ampl-christmas-model-created-by-chatgpt|
 | Description: Christmas model generated by ChatGPT
 | Tags: :ref:`tag-christmas`, :ref:`tag-chatgpt`, :ref:`tag-amplpy`, :ref:`tag-highlights`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
-AMPL Model Colaboratory Template
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/template/colab.ipynb
-    :alt: colab.ipynb
+.. |github-ampl-christmas-model-created-by-chatgpt|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+    :alt: christmas.ipynb
     
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/template/colab.ipynb
+.. |colab-ampl-christmas-model-created-by-chatgpt| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
     :alt: Open In Colab
     
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/template/colab.ipynb
+.. |kaggle-ampl-christmas-model-created-by-chatgpt| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
     :alt: Kaggle
     
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/template/colab.ipynb
+.. |gradient-ampl-christmas-model-created-by-chatgpt| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
     :alt: Gradient
     
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/template/colab.ipynb
+.. |sagemaker-ampl-christmas-model-created-by-chatgpt| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
+
+AMPL Model Colaboratory Template
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `AMPL Model Colaboratory Template <../notebooks/ampl-model-colaboratory-template.html>`_
+| |github-ampl-model-colaboratory-template| |colab-ampl-model-colaboratory-template| |kaggle-ampl-model-colaboratory-template| |gradient-ampl-model-colaboratory-template| |sagemaker-ampl-model-colaboratory-template|
 | Description: Basic notebook template for the AMPL Colab repository
 | Tags: :ref:`tag-amplpy`, :ref:`tag-template`, :ref:`tag-highlights`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
-Logistic Regression with amplpy
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
-    :alt: logistic_regression.ipynb
+.. |github-ampl-model-colaboratory-template|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/template/colab.ipynb
+    :alt: colab.ipynb
     
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
+.. |colab-ampl-model-colaboratory-template| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/template/colab.ipynb
     :alt: Open In Colab
     
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
+.. |kaggle-ampl-model-colaboratory-template| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/template/colab.ipynb
     :alt: Kaggle
     
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
+.. |gradient-ampl-model-colaboratory-template| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/template/colab.ipynb
     :alt: Gradient
     
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
+.. |sagemaker-ampl-model-colaboratory-template| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/template/colab.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
+
+Logistic Regression with amplpy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Logistic Regression with amplpy <../notebooks/logistic-regression-with-amplpy.html>`_
+| |github-logistic-regression-with-amplpy| |colab-logistic-regression-with-amplpy| |kaggle-logistic-regression-with-amplpy| |gradient-logistic-regression-with-amplpy| |sagemaker-logistic-regression-with-amplpy|
 | Description: Logistic regression with amplpy using exponential cones
 | Tags: :ref:`tag-highlights`, :ref:`tag-amplpy`, :ref:`tag-regression`, :ref:`tag-sigmoid`, :ref:`tag-softplus`, :ref:`tag-log-sum-exp`, :ref:`tag-classifier`, :ref:`tag-regularization`, :ref:`tag-machine-learning`, :ref:`tag-conic`, :ref:`tag-exponential-cone`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-formulation-comparison`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>, :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
-N-Queens
-^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
-    :alt: nqueens.ipynb
+.. |github-logistic-regression-with-amplpy|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
+    :alt: logistic_regression.ipynb
     
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+.. |colab-logistic-regression-with-amplpy| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
     :alt: Open In Colab
     
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+.. |kaggle-logistic-regression-with-amplpy| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
     :alt: Kaggle
     
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+.. |gradient-logistic-regression-with-amplpy| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
     :alt: Gradient
     
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+.. |sagemaker-logistic-regression-with-amplpy| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
+
+N-Queens
+^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `N-Queens <../notebooks/n-queens.html>`_
+| |github-n-queens| |colab-n-queens| |kaggle-n-queens| |gradient-n-queens| |sagemaker-n-queens|
 | Description: How can N queens be placed on an NxN chessboard so that no two of them attack each other?
 | Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
-Optimize your Christmas Tree to Global Optimality
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/global/christmas_tree.ipynb
-    :alt: christmas_tree.ipynb
+.. |github-n-queens|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: nqueens.ipynb
     
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/global/christmas_tree.ipynb
+.. |colab-n-queens| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
     :alt: Open In Colab
     
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/global/christmas_tree.ipynb
+.. |kaggle-n-queens| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
     :alt: Kaggle
     
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/global/christmas_tree.ipynb
+.. |gradient-n-queens| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
     :alt: Gradient
     
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/global/christmas_tree.ipynb
+.. |sagemaker-n-queens| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
+
+Optimize your Christmas Tree to Global Optimality
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Optimize your Christmas Tree to Global Optimality <../notebooks/optimize-your-christmas-tree-to-global-optimality.html>`_
+| |github-optimize-your-christmas-tree-to-global-optimality| |colab-optimize-your-christmas-tree-to-global-optimality| |kaggle-optimize-your-christmas-tree-to-global-optimality| |gradient-optimize-your-christmas-tree-to-global-optimality| |sagemaker-optimize-your-christmas-tree-to-global-optimality|
 | Description: Optimize the placement of ornaments on a christmas tree.
 | Tags: :ref:`tag-christmas`, :ref:`tag-amplpy`, :ref:`tag-global-optimization`, :ref:`tag-highlights`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
-Quick Start using Pandas dataframes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
-    :alt: pandasdiet.ipynb
+.. |github-optimize-your-christmas-tree-to-global-optimality|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/global/christmas_tree.ipynb
+    :alt: christmas_tree.ipynb
     
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+.. |colab-optimize-your-christmas-tree-to-global-optimality| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/global/christmas_tree.ipynb
     :alt: Open In Colab
     
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+.. |kaggle-optimize-your-christmas-tree-to-global-optimality| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/global/christmas_tree.ipynb
     :alt: Kaggle
     
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+.. |gradient-optimize-your-christmas-tree-to-global-optimality| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/global/christmas_tree.ipynb
     :alt: Gradient
     
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+.. |sagemaker-optimize-your-christmas-tree-to-global-optimality| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/global/christmas_tree.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
+
+Quick Start using Pandas dataframes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Quick Start using Pandas dataframes <../notebooks/quick-start-using-pandas-dataframes.html>`_
+| |github-quick-start-using-pandas-dataframes| |colab-quick-start-using-pandas-dataframes| |kaggle-quick-start-using-pandas-dataframes| |gradient-quick-start-using-pandas-dataframes| |sagemaker-quick-start-using-pandas-dataframes|
 | Description: Quick Start using Pandas dataframes to load and retrieve data
 | Tags: :ref:`tag-amplpy`, :ref:`tag-quick-start`, :ref:`tag-pandas`, :ref:`tag-highlights`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
-Quick Start using lists and dictionaries
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
-    :alt: nativediet.ipynb
+.. |github-quick-start-using-pandas-dataframes|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+    :alt: pandasdiet.ipynb
     
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+.. |colab-quick-start-using-pandas-dataframes| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
     :alt: Open In Colab
     
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+.. |kaggle-quick-start-using-pandas-dataframes| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
     :alt: Kaggle
     
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+.. |gradient-quick-start-using-pandas-dataframes| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
     :alt: Gradient
     
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+.. |sagemaker-quick-start-using-pandas-dataframes| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
+
+Quick Start using lists and dictionaries
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Quick Start using lists and dictionaries <../notebooks/quick-start-using-lists-and-dictionaries.html>`_
+| |github-quick-start-using-lists-and-dictionaries| |colab-quick-start-using-lists-and-dictionaries| |kaggle-quick-start-using-lists-and-dictionaries| |gradient-quick-start-using-lists-and-dictionaries| |sagemaker-quick-start-using-lists-and-dictionaries|
 | Description: Quick Start using lists and dictionaries to load and retrieve data
 | Tags: :ref:`tag-amplpy`, :ref:`tag-quick-start`, :ref:`tag-highlights`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
-Robust Linear Programming with Ellipsoidal Uncertainty
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip6_robust_linear_programming.ipynb
-    :alt: tip6_robust_linear_programming.ipynb
+.. |github-quick-start-using-lists-and-dictionaries|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+    :alt: nativediet.ipynb
     
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip6_robust_linear_programming.ipynb
+.. |colab-quick-start-using-lists-and-dictionaries| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
     :alt: Open In Colab
     
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip6_robust_linear_programming.ipynb
+.. |kaggle-quick-start-using-lists-and-dictionaries| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
     :alt: Kaggle
     
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip6_robust_linear_programming.ipynb
+.. |gradient-quick-start-using-lists-and-dictionaries| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
     :alt: Gradient
     
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip6_robust_linear_programming.ipynb
+.. |sagemaker-quick-start-using-lists-and-dictionaries| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
+
+Robust Linear Programming with Ellipsoidal Uncertainty
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Robust Linear Programming with Ellipsoidal Uncertainty <../notebooks/robust-linear-programming-with-ellipsoidal-uncertainty.html>`_
+| |github-robust-linear-programming-with-ellipsoidal-uncertainty| |colab-robust-linear-programming-with-ellipsoidal-uncertainty| |kaggle-robust-linear-programming-with-ellipsoidal-uncertainty| |gradient-robust-linear-programming-with-ellipsoidal-uncertainty| |sagemaker-robust-linear-programming-with-ellipsoidal-uncertainty|
 | Description: AMPL Modeling Tips #6: Robust Linear Programming
 | Tags: :ref:`tag-highlights`, :ref:`tag-modeling-tips`, :ref:`tag-conic`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
+.. |github-robust-linear-programming-with-ellipsoidal-uncertainty|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip6_robust_linear_programming.ipynb
+    :alt: tip6_robust_linear_programming.ipynb
+    
+.. |colab-robust-linear-programming-with-ellipsoidal-uncertainty| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip6_robust_linear_programming.ipynb
+    :alt: Open In Colab
+    
+.. |kaggle-robust-linear-programming-with-ellipsoidal-uncertainty| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip6_robust_linear_programming.ipynb
+    :alt: Kaggle
+    
+.. |gradient-robust-linear-programming-with-ellipsoidal-uncertainty| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip6_robust_linear_programming.ipynb
+    :alt: Gradient
+    
+.. |sagemaker-robust-linear-programming-with-ellipsoidal-uncertainty| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip6_robust_linear_programming.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Simple sudoku solver using logical constraints (with GUI)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Simple sudoku solver using logical constraints (with GUI) <../notebooks/simple-sudoku-solver-using-logical-constraints-with-gui.html>`_
+| |github-simple-sudoku-solver-using-logical-constraints-with-gui| |colab-simple-sudoku-solver-using-logical-constraints-with-gui| |kaggle-simple-sudoku-solver-using-logical-constraints-with-gui| |gradient-simple-sudoku-solver-using-logical-constraints-with-gui| |sagemaker-simple-sudoku-solver-using-logical-constraints-with-gui|
+| Description: Simple sudoku model with two formulations: as a Constraint Programming problem using the *alldiff* operator and as a MIP. Note that the CP formulation is more natural but it needs a solver supporting logical constraints or a MIP solver with automatic reformulation support (see [here](https://amplmp.readthedocs.io/) for more information).
+| Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`, :ref:`tag-highlights`
+| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
-.. image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+.. |github-simple-sudoku-solver-using-logical-constraints-with-gui|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/mapgccv/miscellaneous/sudoku.ipynb
     :alt: sudoku.ipynb
     
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
+.. |colab-simple-sudoku-solver-using-logical-constraints-with-gui| image:: https://colab.research.google.com/assets/colab-badge.svg
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/mapgccv/miscellaneous/sudoku.ipynb
     :alt: Open In Colab
     
-.. image:: https://kaggle.com/static/images/open-in-kaggle.svg
+.. |kaggle-simple-sudoku-solver-using-logical-constraints-with-gui| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/mapgccv/miscellaneous/sudoku.ipynb
     :alt: Kaggle
     
-.. image:: https://assets.paperspace.io/img/gradient-badge.svg
+.. |gradient-simple-sudoku-solver-using-logical-constraints-with-gui| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/mapgccv/miscellaneous/sudoku.ipynb
     :alt: Gradient
     
-.. image:: https://studiolab.sagemaker.aws/studiolab.svg
+.. |sagemaker-simple-sudoku-solver-using-logical-constraints-with-gui| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mapgccv/miscellaneous/sudoku.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
-| Description: Simple sudoku model with two formulations: as a Constraint Programming problem using the *alldiff* operator and as a MIP. Note that the CP formulation is more natural but it needs a solver supporting logical constraints or a MIP solver with automatic reformulation support (see [here](https://amplmp.readthedocs.io/) for more information).
-| Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`, :ref:`tag-highlights`
-| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
