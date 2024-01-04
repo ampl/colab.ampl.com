@@ -1,6 +1,7 @@
 #pydata-sphinx-theme==0.7.1
 ampl-sphinx-theme @ git+https://github.com/ampl/ampl.github.io.git#subdirectory=ampl-sphinx-theme
 sphinx==4.2.0
-myst_nb==0.17.2
-myst_parser==0.18.1
-sphinx_design==0.3.0
+myst-nb==0.17.2
+myst-parser==0.18.1
+sphinx-design==0.3.0
+sphinx-reredirects==0.1.1
