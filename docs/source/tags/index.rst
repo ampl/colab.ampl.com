@@ -5,14 +5,15 @@ Tags
 .. toctree::
     :maxdepth: 2
 
-    ampl (8 notebooks) <ampl>
+    ampl (12 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
-    amplpy (35 notebooks) <amplpy>
+    amplpy (39 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     amplxl (1 notebook) <amplxl>
     assignment (1 notebook) <assignment>
+    benders (3 notebooks) <benders>
     bin-packing (1 notebook) <bin-packing>
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
@@ -29,6 +30,7 @@ Tags
     cutting-stock (1 notebook) <cutting-stock>
     dantzig-wolfe-decomposition (2 notebooks) <dantzig-wolfe-decomposition>
     data-structures (1 notebook) <data-structures>
+    decomposition (3 notebooks) <decomposition>
     educational (3 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     energy (2 notebooks) <energy>
@@ -36,7 +38,7 @@ Tags
     example (7 notebooks) <example>
     excel (1 notebook) <excel>
     exponential-cone (1 notebook) <exponential-cone>
-    facility-location (1 notebook) <facility-location>
+    facility-location (5 notebooks) <facility-location>
     finance (4 notebooks) <finance>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
@@ -65,7 +67,7 @@ Tags
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (2 notebooks) <milp>
-    mip (7 notebooks) <mip>
+    mip (11 notebooks) <mip>
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp-library (1 notebook) <mp-library>
@@ -78,6 +80,7 @@ Tags
     organ-exchange (1 notebook) <organ-exchange>
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
+    parallel-solves (1 notebook) <parallel-solves>
     planning (1 notebook) <planning>
     power-generation (3 notebooks) <power-generation>
     pricing (1 notebook) <pricing>
@@ -99,7 +102,7 @@ Tags
     softplus (1 notebook) <softplus>
     solution-check (1 notebook) <solution-check>
     spreadsheet (1 notebook) <spreadsheet>
-    stochastic (1 notebook) <stochastic>
+    stochastic (4 notebooks) <stochastic>
     stochastic-optimization (1 notebook) <stochastic-optimization>
     stochastic-programming (1 notebook) <stochastic-programming>
     strict-comparison (1 notebook) <strict-comparison>

@@ -1,37 +1,7 @@
-.. _tag-stochastic:
+.. _tag-benders:
 
-stochastic
-==========
-
-AMPL Development Tutorial 2/6 -- Stochastic Capacitated Facility Location Problem
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| `Notebooks <../notebooks/index.html>`_ > `AMPL Development Tutorial 2/6 -- Stochastic Capacitated Facility Location Problem <../notebooks/ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem.html>`_
-| |github-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |colab-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |kaggle-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |gradient-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |sagemaker-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem|
-| Description: This notebook continues our six-part series as the second installment.
-| Tags: :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-mip`, :ref:`tag-stochastic`, :ref:`tag-facility-location`
-| Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
-
-.. |github-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/2_stoch_floc.ipynb
-    :alt: 2_stoch_floc.ipynb
-    
-.. |colab-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/2_stoch_floc.ipynb
-    :alt: Open In Colab
-    
-.. |kaggle-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/2_stoch_floc.ipynb
-    :alt: Kaggle
-    
-.. |gradient-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/2_stoch_floc.ipynb
-    :alt: Gradient
-    
-.. |sagemaker-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/2_stoch_floc.ipynb
-    :alt: Open In SageMaker Studio Lab
-    
-
+benders
+=======
 
 AMPL Development Tutorial 3/6 -- Benders Decomposition via AMPL scripting
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
