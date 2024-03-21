@@ -219,6 +219,7 @@ AMPL Development Tutorial 6/6 -- Implementing Benders Decomposition with *ampls*
 | |github-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |colab-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |kaggle-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |gradient-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |sagemaker-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls|
 | Description: This concluding notebook in our six-part series delves into enhancing the efficiency of our decomposition algorithm by utilizing **AMPL Solver Libraries** (*ampls*).
 | Tags: :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-ampls`, :ref:`tag-mip`, :ref:`tag-stochastic`, :ref:`tag-facility-location`, :ref:`tag-benders`
+| Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>, :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 .. |github-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/6_benders_ampls_stoch_floc.ipynb

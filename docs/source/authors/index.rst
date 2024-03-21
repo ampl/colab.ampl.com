@@ -7,6 +7,7 @@ The notebooks in this repository are contributed by the following authors:
 .. toctree::
     :maxdepth: 1
 
+    ccv_at_ampl.com
     christian.valente_at_gmail.com
     fdabrandao_at_gmail.com
     gleb_at_ampl.com

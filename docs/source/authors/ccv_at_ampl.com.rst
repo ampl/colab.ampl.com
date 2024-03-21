@@ -1,7 +1,7 @@
-.. _tag-ampls:
+.. _email-ccv_at_ampl.com:
 
-ampls
-=====
+Christian Valente (1 notebook)
+==============================
 
 AMPL Development Tutorial 6/6 -- Implementing Benders Decomposition with *ampls*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
