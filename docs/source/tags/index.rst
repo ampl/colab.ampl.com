@@ -5,15 +5,16 @@ Tags
 .. toctree::
     :maxdepth: 2
 
-    ampl (12 notebooks) <ampl>
+    ampl (13 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
-    amplpy (39 notebooks) <amplpy>
+    amplpy (40 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
+    ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
     assignment (1 notebook) <assignment>
-    benders (3 notebooks) <benders>
+    benders (4 notebooks) <benders>
     bin-packing (1 notebook) <bin-packing>
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
@@ -38,7 +39,7 @@ Tags
     example (7 notebooks) <example>
     excel (1 notebook) <excel>
     exponential-cone (1 notebook) <exponential-cone>
-    facility-location (5 notebooks) <facility-location>
+    facility-location (6 notebooks) <facility-location>
     finance (4 notebooks) <finance>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
@@ -67,7 +68,7 @@ Tags
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (2 notebooks) <milp>
-    mip (11 notebooks) <mip>
+    mip (12 notebooks) <mip>
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp-library (1 notebook) <mp-library>
@@ -102,7 +103,7 @@ Tags
     softplus (1 notebook) <softplus>
     solution-check (1 notebook) <solution-check>
     spreadsheet (1 notebook) <spreadsheet>
-    stochastic (4 notebooks) <stochastic>
+    stochastic (5 notebooks) <stochastic>
     stochastic-optimization (1 notebook) <stochastic-optimization>
     stochastic-programming (1 notebook) <stochastic-programming>
     strict-comparison (1 notebook) <strict-comparison>
