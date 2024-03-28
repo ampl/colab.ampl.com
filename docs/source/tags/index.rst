@@ -5,11 +5,11 @@ Tags
 .. toctree::
     :maxdepth: 2
 
-    ampl (13 notebooks) <ampl>
+    ampl (14 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (17 notebooks) <ampl-only>
-    amplpy (40 notebooks) <amplpy>
+    amplpy (41 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -31,6 +31,7 @@ Tags
     cutting-stock (1 notebook) <cutting-stock>
     dantzig-wolfe-decomposition (2 notebooks) <dantzig-wolfe-decomposition>
     data-structures (1 notebook) <data-structures>
+    debug (1 notebook) <debug>
     decomposition (3 notebooks) <decomposition>
     educational (3 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
@@ -56,6 +57,7 @@ Tags
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
     industry (4 notebooks) <industry>
+    infeasibility (1 notebook) <infeasibility>
     introduction (4 notebooks) <introduction>
     ipopt (1 notebook) <ipopt>
     lecture (1 notebook) <lecture>
