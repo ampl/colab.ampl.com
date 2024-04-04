@@ -13,19 +13,21 @@ Tags
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
+    arithmetic (1 notebook) <arithmetic>
     assignment (1 notebook) <assignment>
     benders (4 notebooks) <benders>
     bin-packing (1 notebook) <bin-packing>
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
+    cbc (1 notebook) <cbc>
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
     complementarity-problem (1 notebook) <complementarity-problem>
     complexity (1 notebook) <complexity>
     conic (3 notebooks) <conic>
-    constraint-programming (3 notebooks) <constraint-programming>
+    constraint-programming (4 notebooks) <constraint-programming>
     convexity (1 notebook) <convexity>
     cpmp (1 notebook) <cpmp>
     cutting-stock (1 notebook) <cutting-stock>
@@ -33,7 +35,7 @@ Tags
     data-structures (1 notebook) <data-structures>
     debug (1 notebook) <debug>
     decomposition (3 notebooks) <decomposition>
-    educational (3 notebooks) <educational>
+    educational (4 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     energy (2 notebooks) <energy>
     engineering (2 notebooks) <engineering>
@@ -44,6 +46,7 @@ Tags
     finance (4 notebooks) <finance>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
+    gecode (1 notebook) <gecode>
     geometry (1 notebook) <geometry>
     geothermal-energy (1 notebook) <geothermal-energy>
     global-optimization (1 notebook) <global-optimization>
@@ -53,7 +56,7 @@ Tags
     gurobi (2 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (11 notebooks) <highlights>
-    highs (1 notebook) <highs>
+    highs (2 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
     industry (4 notebooks) <industry>
@@ -70,9 +73,10 @@ Tags
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (2 notebooks) <milp>
-    mip (12 notebooks) <mip>
+    mip (13 notebooks) <mip>
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
+    mp (1 notebook) <mp>
     mp-library (1 notebook) <mp-library>
     multiprocess (1 notebook) <multiprocess>
     non-continuous-objective (1 notebook) <non-continuous-objective>
@@ -94,10 +98,12 @@ Tags
     quick-start (2 notebooks) <quick-start>
     regression (1 notebook) <regression>
     regularization (1 notebook) <regularization>
+    reinforced-formulations (1 notebook) <reinforced-formulations>
     risk-measures (1 notebook) <risk-measures>
     sample-average-approximation (1 notebook) <sample-average-approximation>
     scheduling (3 notebooks) <scheduling>
     second-order-cone (2 notebooks) <second-order-cone>
+    sequences (1 notebook) <sequences>
     sets (1 notebook) <sets>
     shortest-path (1 notebook) <shortest-path>
     sigmoid (1 notebook) <sigmoid>
