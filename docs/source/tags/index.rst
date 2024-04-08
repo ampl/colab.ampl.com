@@ -9,7 +9,7 @@ Tags
     ampl (14 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
-    ampl-only (17 notebooks) <ampl-only>
+    ampl-only (18 notebooks) <ampl-only>
     amplpy (41 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
@@ -73,9 +73,10 @@ Tags
     machine-learning (1 notebook) <machine-learning>
     marketing (1 notebook) <marketing>
     max-flow (1 notebook) <max-flow>
+    medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (2 notebooks) <milp>
-    mip (13 notebooks) <mip>
+    mip (14 notebooks) <mip>
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (1 notebook) <mp>
@@ -86,6 +87,7 @@ Tags
     nonlinear (2 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
     optimization (1 notebook) <optimization>
+    organ-exchange (1 notebook) <organ-exchange>
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
     parallel-solves (1 notebook) <parallel-solves>

@@ -7,6 +7,7 @@ Optimization of an advertising campaign for launching a new product on the marke
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Optimization of an advertising campaign for launching a new product on the market <../notebooks/optimization-of-an-advertising-campaign-for-launching-a-new-product-on-the-market.html>`_
 | |github-optimization-of-an-advertising-campaign-for-launching-a-new-product-on-the-market| |colab-optimization-of-an-advertising-campaign-for-launching-a-new-product-on-the-market| |kaggle-optimization-of-an-advertising-campaign-for-launching-a-new-product-on-the-market| |gradient-optimization-of-an-advertising-campaign-for-launching-a-new-product-on-the-market| |sagemaker-optimization-of-an-advertising-campaign-for-launching-a-new-product-on-the-market|
+| Description: The modern world is unthinkable without advertising. Advertising is the engine of progress.
 | Tags: :ref:`tag-marketing`, :ref:`tag-advertisement`, :ref:`tag-deterministic-model`, :ref:`tag-piecewise-linear`, :ref:`tag-mip`, :ref:`tag-ampl-only`, :ref:`tag-cbc`
 | Author: :ref:`email-mail_at_solverytic.com` <mail@solverytic.com>
 
