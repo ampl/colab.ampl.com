@@ -7,26 +7,29 @@ The notebooks in this repository are contributed by the following authors:
 .. toctree::
     :maxdepth: 1
 
+    ccv_at_ampl.com
     christian.valente_at_gmail.com
     fdabrandao_at_gmail.com
     gleb_at_ampl.com
     gyorgy_at_ampl.com
     juanjesus.losada_at_gmail.com
+    jurgenlentz26_at_gmail.com
     marcos_at_ampl.com
     mail_at_solverytic.com
     nfbvs_at_ampl.com
     sarah_at_ampl.com
+    yimin_wang_at_asu.edu
 
 
 .. note::
-    **Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab or
+    **Your name can be here too!** Just make a pull request to https://github.com/ampl/colab.ampl.com or
     send a link to your notebook by email to devteam@ampl.com.
 
 Contribution Guide
 ------------------
 
 1. Use the template
-   `template/colab.ipynb <https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb>`__
+   `template/colab.ipynb <https://github.com/ampl/colab.ampl.com/blob/master/template/colab.ipynb>`__
    as base template.
 
 2. In the header make sure you fill the following fields:
@@ -51,23 +54,24 @@ Contribution Guide
    of modules and add more dependencies, but if you do anything else the
    changes may be overwritten.
 
-4. Place your notebook inside ``amplcolab/authors/<github_username>/``.
+4. Place your notebook inside ``colab.ampl.com/authors/<github_username>/``.
 
 5. Update the badges and the index as shown below before committing.
 
 Note: The default license for every notebook is
-`MIT <https://github.com/ampl/amplcolab/blob/master/LICENSE>`__ unless
+`MIT <https://github.com/ampl/colab.ampl.com/blob/master/LICENSE>`__ unless
 specified otherwise in the notebook.
 
 Updating notebook headers & index
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following command updates the README file and the index in the
-documentation:
+The following commands update the README file and the index in the
+documentation, as well as add any new automatically created files:
 
 .. code:: bash
 
    $ python scripts/index.py
+   $ git add docs/source/
 
 Note that the notebook headers are patched with new badges using links
 to the correct locations after the notebook is published. The first two

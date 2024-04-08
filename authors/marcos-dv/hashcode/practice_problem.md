@@ -60,19 +60,18 @@ Let's use AMPL to formulate the previous problem. The following section setup AM
 
 ## AMPLPY Setup in the cloud
 
-Here is some documentation and examples of the API: [Documentation](http://amplpy.readthedocs.io), [GitHub Repository](https://github.com/ampl/amplpy), [PyPI Repository](https://pypi.python.org/pypi/amplpy), other [Jupyter Notebooks](https://github.com/ampl/amplpy/tree/master/notebooks). The following cell is enough to install it. We are using *ampl* (modeling language) and *gurobi* (solver) modules.
+Here is some documentation and examples of the API: [Documentation](https://amplpy.readthedocs.io), [GitHub Repository](https://github.com/ampl/amplpy), [PyPI Repository](https://pypi.python.org/pypi/amplpy), other [Jupyter Notebooks](https://github.com/ampl/amplpy/tree/master/notebooks). The following cell is enough to install it. We are using *ampl* (modeling language) and *gurobi* (solver) modules.
 
 
 ```python
-!pip install -q amplpy
+%pip install -q amplpy
 ```
 
 
 ```python
 # Google Colab & Kaggle integration
-MODULES=['ampl', 'gurobi', 'highs']
-from amplpy import tools
-ampl = tools.ampl_notebook(modules=MODULES, globals_=globals()) # instantiate AMPL object and register magics
+from amplpy import AMPL, ampl_notebook
+ampl = ampl_notebook(modules=['ampl', 'gurobi', 'highs']) # instantiate AMPL object and register magics
 ```
 
 ## Solving problem with AMPL

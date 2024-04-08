@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 
 import datetime
+import os
+import sys
+import shutil
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", "scripts"))
+import utils as colab_utils
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -15,13 +21,16 @@ needs_sphinx = "4.2.0"
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
-    "myst_parser",
+    # "myst_parser",
+    "myst_nb",
     "sphinx_design",
     "sphinx.ext.ifconfig",
     "sphinx.ext.mathjax",
     "sphinx.ext.autodoc",
+    "sphinx_reredirects",
 ]
 myst_enable_extensions = ["colon_fence"]
+nb_execution_mode = "off"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -91,7 +100,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/ampl/amplcolab",
+            "url": "https://github.com/ampl/colab.ampl.com",
             "icon": "fab fa-github fa-fw",
         },
         {
@@ -123,6 +132,11 @@ html_theme_options = {
 #     "theme_logo_text": "Colaboratory",
 # }
 
+html_baseurl = "https://colab.ampl.com"
+
+redirects = {
+    "notebooks.html": "notebooks/index.html",
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = []
@@ -273,3 +287,56 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 # texinfo_show_urls = 'footnote'
+
+
+def list_notebooks(base_dir):
+    return [
+        os.path.join(dirpath, fname)
+        for (dirpath, dirnames, files) in os.walk(base_dir)
+        for fname in files
+        if fname.endswith(".ipynb")
+    ]
+
+
+NOTEBOOKS_INDEX = """
+Notebooks
+=========
+
+.. toctree::
+    :maxdepth: 2
+
+"""
+
+
+def generate_notebook_pages(app):
+    repo_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    dest_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "notebooks"))
+    try:
+        shutil.rmtree(dest_dir)
+    except:
+        pass
+    os.makedirs(dest_dir)
+    print("repo dir:", repo_dir)
+    try:
+        notebooks = colab_utils.list_notebooks(repo_dir)
+    except Exception as e:
+        print(">>", e)
+    index_page = NOTEBOOKS_INDEX
+    fnames = []
+    for nb in notebooks:
+        try:
+            title = nb["url_string"]
+            fname = title + ".ipynb"
+            fnames.append(fname)
+            print(">>>", nb["abspath"])
+            shutil.copyfile(nb["abspath"], os.path.join(dest_dir, fname))
+        except Exception as e:
+            print(">>", e)
+    for fname in fnames:
+        index_page += f"    {fname}\n"
+    open(os.path.join(dest_dir, "index.rst"), "w").write(index_page)
+    open(os.path.join(dest_dir, ".gitignore"), "w").write("*\n!.gitignore\n")
+
+
+def setup(app):
+    app.connect("builder-inited", generate_notebook_pages)

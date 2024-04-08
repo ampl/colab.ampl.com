@@ -1,4 +1,4 @@
-from utils import list_notebooks, list_badges
+from utils import list_notebooks, list_badges, rst_badges
 from headers import update_notebook_headers
 import glob
 import os
@@ -11,10 +11,11 @@ os.chdir("..")
 NOTEBOOKS = list_notebooks()
 
 
-readme = open("README.md", "w", newline="\n")
-index = open("docs/source/index.rst", "w", newline="\n")
-gettingstarted = open("docs/source/getting-started.rst", "w", newline="\n")
-notebooks = open("docs/source/notebooks.rst", "w", newline="\n")
+readme = open("README.md", "w", newline="\n", encoding="utf-8")
+index = open("docs/source/index.rst", "w", newline="\n", encoding="utf-8")
+gettingstarted = open(
+    "docs/source/getting-started.rst", "w", newline="\n", encoding="utf-8"
+)
 
 print(
     """# AMPL Model Colaboratory
@@ -25,7 +26,7 @@ https://colab.ampl.com
 
 ## Contribution Guide
 
-1. Use the template [template/colab.ipynb](https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb) as base template.
+1. Use the template [template/colab.ipynb](https://github.com/ampl/colab.ampl.com/blob/master/template/colab.ipynb) as base template.
 
 2. In the header make sure you fill the following fields:
 ```
@@ -46,17 +47,18 @@ References: <optional>
 to do anything other than installing packages and instantiating the ampl_notebook. You can modify
 the list of modules and add more dependencies, but if you do anything else the changes may be overwritten.
 
-4. Place your notebook inside `amplcolab/authors/<github_username>/`.
+4. Place your notebook inside `colab.ampl.com/authors/<github_username>/`.
 
 5. Update the badges and the index as shown below before committing.
 
-Note: The default license for every notebook is [MIT](https://github.com/ampl/amplcolab/blob/master/LICENSE) unless specified otherwise in the notebook.
+Note: The default license for every notebook is [MIT](https://github.com/ampl/colab.ampl.com/blob/master/LICENSE) unless specified otherwise in the notebook.
 
 ### Updating notebook headers & index
 
-The following command updates the README file and the index in the documentation:
+The following commands update the README file and the index in the documentation, as well as add any new automatically created files to the repository:
 ```bash
 $ python scripts/index.py
+$ git add docs/source/
 ```
 
 Note that the notebook headers are patched with new badges using links to the correct locations after the notebook is published.
@@ -80,7 +82,7 @@ that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **
 
 .. raw:: html
 
-    <a href="https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb" target="_blank">
+    <a href="https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb" target="_blank">
         <video width="100%" autoplay loop muted poster="https://ampl.com/upload/videos/nqueens_poster.jpg">
             <source src="https://ampl.com/upload/videos/nqueens.mp4" type="video/mp4" />
         </video>
@@ -98,19 +100,19 @@ that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **
         You can use the **Christmas notebook** written by `ChatGPT <https://chat.openai.com/>`_ to get started:
 
         .. image:: https://colab.research.google.com/assets/colab-badge.svg
-            :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Open In Colab
 
         .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Kaggle
 
         .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-            :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Gradient
 
         .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-            :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Open In SageMaker Studio Lab
 
         | BTW: you can even ask `ChatGPT <https://chat.openai.com/>`_ to write models for you! If it makes mistakes you can ask for help in our new `Discourse Forum <https://discuss.ampl.com>`_!
@@ -123,7 +125,7 @@ that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **
             :alt: the only 3 lines you need to use AMPL on Colab
             :align: center
             :width: 100%
-            :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/template/minimal.ipynb
+            :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/template/minimal.ipynb
 
 Contents
 --------
@@ -141,7 +143,7 @@ Contents
     :hidden:
 
     tags/index
-    notebooks
+    notebooks/index
 
 Notebooks
 ---------
@@ -164,17 +166,18 @@ at the beginning of your notebook:
 .. code-block:: bash
 
    # Install dependencies
-   !pip install -q amplpy
+   %pip install -q amplpy
 
 
 .. code-block:: python
 
     # Google Colab & Kaggle integration
-    from amplpy import AMPL, tools
-    ampl = tools.ampl_notebook(
-        modules=["coin", "highs", "gokestrel"], # modules to install
-        license_uuid="your-license-uuid", # license to use
-        g=globals()) # instantiate AMPL object and register magics
+    from amplpy import AMPL, ampl_notebook
+
+    ampl = ampl_notebook(
+        modules=["coin", "highs", "gokestrel"],  # modules to install
+        license_uuid="your-license-uuid",  # license to use
+    )  # instantiate AMPL object and register magics
 
 In the list ``modules`` you can specify the AMPL solvers you want to use in your notebook.
 For more information on the AMPL Modules for Python see `Python Modules Documentation <https://dev.ampl.com/ampl/python/modules.html>`_.
@@ -195,19 +198,19 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
         Data can be loaded in various forms, one of which is ``pandas.DataFrame`` objects.
 
         .. image:: https://colab.research.google.com/assets/colab-badge.svg
-            :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Open In Colab
 
         .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Kaggle
 
         .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-            :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Gradient
 
         .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-            :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/pandasdiet.ipynb
             :alt: Open In SageMaker Studio Lab
 
     .. grid-item-card::
@@ -220,19 +223,19 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
         Data can be loaded in various forms, including Python lists and dictionaries.
 
         .. image:: https://colab.research.google.com/assets/colab-badge.svg
-            :target: https://colab.research.google.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Open In Colab
 
         .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
-            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Kaggle
 
         .. image:: https://assets.paperspace.io/img/gradient-badge.svg
-            :target: https://console.paperspace.com/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Gradient
 
         .. image:: https://studiolab.sagemaker.aws/studiolab.svg
-            :target: https://studiolab.sagemaker.aws/import/github/ampl/amplcolab/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
+            :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/quick-start/nativediet.ipynb
             :alt: Open In SageMaker Studio Lab
 
 .. note::
@@ -248,7 +251,7 @@ AMPL is free on Colab
 - On **Google Colab** there is a default `AMPL Community Edition license <https://ampl.com/ce/>`_
   that gives you **unlimited access to AMPL
   with open-source solvers** (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
-  or with commercial solvers from the `NEOS Server <http://www.neos-server.org/>`_ as described in `Kestrel documentation <https://dev.ampl.com/solvers/kestrel.html>`_.
+  or with commercial solvers from the `NEOS Server <https://www.neos-server.org/>`_ as described in `Kestrel documentation <https://dev.ampl.com/solvers/kestrel.html>`_.
 
 - `AMPL for Courses <https://ampl.com/licenses-and-pricing/ampl-for-teaching/>`_ is another free license of full-featured AMPL with no limitations on problem size, and a selection of popular commercial and open-source solvers.
   **This license can be used on Google Colab and similar platforms for teaching.**
@@ -280,16 +283,6 @@ Learn more: [`Python API Documentation <https://amplpy.readthedocs.io>`_]
 )
 
 
-print(
-    """
-Notebooks
-=========
-
-""",
-    file=notebooks,
-)
-
-
 def print_markdown(info, fout):
     fname = info["fname"]
     colab_only = info["colab_only"]
@@ -297,15 +290,21 @@ def print_markdown(info, fout):
     print(f"|{info['title']}|{'|'.join(badges)}|", file=fout)
 
 
-def print_rst(info, fout):
-    fname, title = info["fname"], info["title"]
+def print_rst(info, fout, notebooks_path=None, toc_tree=False):
+    fname, title, url_string = info["fname"], info["title"], info["url_string"]
     colab_only = info["colab_only"]
-    badges = list_badges(fname, colab_only, rst=True)
     print(title + "\n" + "^" * len(title), file=fout)
-    print("\n" + "\n".join(badges) + "\n", file=fout)
     description = info.get("description", None)
+    if notebooks_path:
+        print(
+            f"| `Notebooks <{notebooks_path}index.html>`_ > `{title} <{notebooks_path}{url_string}.html>`_",
+            file=fout,
+        )
+    badges, images = rst_badges(fname, url_string, colab_only=colab_only)
+    print(f"| {badges}", file=fout)
     if description:
         print(f"| Description: {description}", file=fout)
+
     tags = info.get("tags", None)
     if tags:
         tags = [f":ref:`tag-{tag}`" for tag in tags]
@@ -322,7 +321,21 @@ def print_rst(info, fout):
                 lst.append(f":ref:`email-{email.replace('@', '_at_')}` <{email}>")
             else:
                 lst.append(author)
-        print(f"| Author: {', '.join(lst)}\n", file=fout)
+        print(f"| Author: {', '.join(lst)}", file=fout)
+    if toc_tree:
+        print(
+            f"""
+        .. toctree::
+            :maxdepth: 2
+            :caption: {title}
+            :glob:
+
+            {notebooks_path}{url_string}.ipynb
+        """,
+            file=fout,
+        )
+    print(images, file=fout)
+    print(file=fout)
 
 
 nb_madeby = {}
@@ -353,8 +366,7 @@ for info in NOTEBOOKS:
         nb_madeby[email].append(info)
 
     print_markdown(info, readme)
-    print_rst(info, index)
-    print_rst(info, notebooks)
+    print_rst(info, index, notebooks_path="notebooks/", toc_tree=False)
 
 print(
     """## License
@@ -382,16 +394,19 @@ Tags
 for tag, lst in sorted(nb_tagged.items()):
     label = f"{tag} ({len(lst)} notebook{'s' if len(lst) > 1 else ''}) <{tag}>"
     tags_index += f"    {label}\n"
-print(tags_index, file=open(f"docs/source/tags/index.rst", "w"))
+print(
+    tags_index,
+    file=open(f"docs/source/tags/index.rst", "w", newline="\n", encoding="utf-8"),
+)
 
 for tag, lst in nb_tagged.items():
-    tag_rst = open(f"docs/source/tags/{tag}.rst", "w")
+    tag_rst = open(f"docs/source/tags/{tag}.rst", "w", newline="\n", encoding="utf-8")
     title = f"{tag}"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _tag-{tag}:\n\n{title}"
     print(header, file=tag_rst)
     for info in lst:
-        print_rst(info, tag_rst)
+        print_rst(info, tag_rst, notebooks_path="../notebooks/")
 
 # Authors
 
@@ -414,14 +429,14 @@ for _, email in authors_sorted:
 authors_index += """
 
 .. note::
-    **Your name can be here too!** Just make a pull request to https://github.com/ampl/amplcolab or
+    **Your name can be here too!** Just make a pull request to https://github.com/ampl/colab.ampl.com or
     send a link to your notebook by email to devteam@ampl.com.
 
 Contribution Guide
 ------------------
 
 1. Use the template
-   `template/colab.ipynb <https://github.com/ampl/amplcolab/blob/master/template/colab.ipynb>`__
+   `template/colab.ipynb <https://github.com/ampl/colab.ampl.com/blob/master/template/colab.ipynb>`__
    as base template.
 
 2. In the header make sure you fill the following fields:
@@ -446,42 +461,48 @@ Contribution Guide
    of modules and add more dependencies, but if you do anything else the
    changes may be overwritten.
 
-4. Place your notebook inside ``amplcolab/authors/<github_username>/``.
+4. Place your notebook inside ``colab.ampl.com/authors/<github_username>/``.
 
 5. Update the badges and the index as shown below before committing.
 
 Note: The default license for every notebook is
-`MIT <https://github.com/ampl/amplcolab/blob/master/LICENSE>`__ unless
+`MIT <https://github.com/ampl/colab.ampl.com/blob/master/LICENSE>`__ unless
 specified otherwise in the notebook.
 
 Updating notebook headers & index
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following command updates the README file and the index in the
-documentation:
+The following commands update the README file and the index in the
+documentation, as well as add any new automatically created files:
 
 .. code:: bash
 
    $ python scripts/index.py
+   $ git add docs/source/
 
 Note that the notebook headers are patched with new badges using links
 to the correct locations after the notebook is published. The first two
 notebook cells are modified to ensure that requirements are installed
 and that the ampl_notebook is instantiated.
 """
-print(authors_index, file=open(f"docs/source/authors/index.rst", "w"))
+print(
+    authors_index,
+    file=open(f"docs/source/authors/index.rst", "w", newline="\n", encoding="utf-8"),
+)
 
 for name, email in authors_sorted:
     print(f">>{name} <{email}>")
     lst = nb_madeby[email]
     email = email.replace("@", "_at_")
-    email_rst = open(f"docs/source/authors/{email}.rst", "w")
+    email_rst = open(
+        f"docs/source/authors/{email}.rst", "w", newline="\n", encoding="utf-8"
+    )
     title = f"{name} ({len(lst)} notebook{'s' if len(lst) > 1 else ''})"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _email-{email}:\n\n{title}"
     print(header, file=email_rst)
     for info in lst:
-        print_rst(info, email_rst)
+        print_rst(info, email_rst, notebooks_path="../notebooks/")
 
 # Modules
 
@@ -498,7 +519,7 @@ Modules available
 List of modules available:
 
 - Open-source: ``highs``, ``cbc``, ``coin`` (includes: CBC, Couenne, Ipopt, Bonmin), ``open`` (includes all open-source solvers)
-- `NEOS Server <http://www.neos-server.org/>`_: ``gokestrel`` (`kestrel client <https://dev.ampl.com/solvers/kestrel.html>`_)
+- `NEOS Server <https://www.neos-server.org/>`_: ``gokestrel`` (`kestrel client <https://dev.ampl.com/solvers/kestrel.html>`_)
 - Commercial solvers: ``baron``, ``conopt``, ``copt``, ``cplex``, ``gurobi``, ``knitro``, ``lgo``, ``lindoglobal``, ``loqo``, ``minos``, ``mosek``, ``octeract``, ``snopt``, ``xpress``
 - AMPL Plugins: ``amplgsl`` (`amplgsl docs <https://amplgsl.readthedocs.io/>`_), ``plugins`` (`amplplugins docs <https://amplplugins.readthedocs.io/>`_)
 
@@ -506,7 +527,7 @@ List of modules available:
     On Google Colab there is a default `AMPL Community
     Edition license <https://ampl.com/ce/>`_ that gives you **unlimited access to AMPL
     with open-source solvers** (e.g., HiGHS, CBC, Couenne, Ipopt, Bonmin)
-    or with commercial solvers from the `NEOS Server <http://www.neos-server.org/>`_ as described in `Kestrel documentation <https://dev.ampl.com/solvers/kestrel.html>`_.
+    or with commercial solvers from the `NEOS Server <https://www.neos-server.org/>`_ as described in `Kestrel documentation <https://dev.ampl.com/solvers/kestrel.html>`_.
     
     In the list ``modules`` you need to include 
     ``"gokestrel"`` to use the `kestrel <https://dev.ampl.com/solvers/kestrel.html>`_ driver; 
@@ -517,16 +538,17 @@ List of modules available:
     .. code-block:: bash
 
         # Install dependencies
-        !pip install -q amplpy
+        %pip install -q amplpy
 
     .. code-block:: python
 
         # Google Colab & Kaggle integration
-        from amplpy import AMPL, tools
-        ampl = tools.ampl_notebook(
-            modules=["coin", "highs", "gokestrel"], # modules to install
-            license_uuid="default", # license to use
-            g=globals()) # instantiate AMPL object and register magics
+        from amplpy import AMPL, ampl_notebook
+
+        ampl = ampl_notebook(
+            modules=["gurobi", "coin", "highs", "gokestrel"],  # modules to install
+            license_uuid="default",  # license to use
+        )  # instantiate AMPL object and register magics
 
 Learn more: [`AMPL and Solvers modules <https://dev.ampl.com/ampl/python/modules.html>`_] [`Solver docs <https://dev.ampl.com/solvers/index.html>`_]
 
@@ -539,13 +561,18 @@ Notebooks grouped by modules
 """
 for mod in sorted(nb_uses):
     modules_index += f"    {mod}\n"
-print(modules_index, file=open(f"docs/source/modules/index.rst", "w"))
+print(
+    modules_index,
+    file=open(f"docs/source/modules/index.rst", "w", newline="\n", encoding="utf-8"),
+)
 
 for mod, lst in nb_uses.items():
-    mod_rst = open(f"docs/source/modules/{mod}.rst", "w")
+    mod_rst = open(
+        f"docs/source/modules/{mod}.rst", "w", newline="\n", encoding="utf-8"
+    )
     title = f"{mod} ({len(lst)} notebook{'s' if len(lst) > 1 else ''})"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _module-{mod}:\n\n{title}"
     print(header, file=mod_rst)
     for info in lst:
-        print_rst(info, mod_rst)
+        print_rst(info, mod_rst, notebooks_path="../notebooks/")
