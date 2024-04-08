@@ -1,7 +1,7 @@
-.. _email-mail_at_solverytic.com:
+.. _tag-advertisement:
 
-Mikhail Riabtsev (1 notebook)
-=============================
+advertisement
+=============
 
 Optimization of an advertising campaign for launching a new product on the market
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -1,7 +1,7 @@
-.. _email-mail_at_solverytic.com:
+.. _tag-deterministic-model:
 
-Mikhail Riabtsev (1 notebook)
-=============================
+deterministic-model
+===================
 
 Optimization of an advertising campaign for launching a new product on the market
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

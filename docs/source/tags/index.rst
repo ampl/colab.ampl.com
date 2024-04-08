@@ -5,11 +5,12 @@ Tags
 .. toctree::
     :maxdepth: 2
 
-    ampl (14 notebooks) <ampl>
+    advertisement (1 notebook) <advertisement>
+    ampl (15 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
-    ampl-only (17 notebooks) <ampl-only>
-    amplpy (41 notebooks) <amplpy>
+    ampl-only (16 notebooks) <ampl-only>
+    amplpy (42 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -20,7 +21,7 @@ Tags
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
-    cbc (1 notebook) <cbc>
+    cbc (2 notebooks) <cbc>
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
@@ -35,6 +36,7 @@ Tags
     data-structures (1 notebook) <data-structures>
     debug (1 notebook) <debug>
     decomposition (3 notebooks) <decomposition>
+    deterministic-model (1 notebook) <deterministic-model>
     educational (4 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     energy (2 notebooks) <energy>
@@ -69,11 +71,11 @@ Tags
     log-sum-exp (1 notebook) <log-sum-exp>
     lp (1 notebook) <lp>
     machine-learning (1 notebook) <machine-learning>
+    marketing (1 notebook) <marketing>
     max-flow (1 notebook) <max-flow>
-    medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (2 notebooks) <milp>
-    mip (13 notebooks) <mip>
+    mip (12 notebooks) <mip>
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (1 notebook) <mp>
@@ -84,10 +86,10 @@ Tags
     nonlinear (2 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
     optimization (1 notebook) <optimization>
-    organ-exchange (1 notebook) <organ-exchange>
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
     parallel-solves (1 notebook) <parallel-solves>
+    piecewise-linear-programing (1 notebook) <piecewise-linear-programing>
     planning (1 notebook) <planning>
     power-generation (3 notebooks) <power-generation>
     pricing (1 notebook) <pricing>
