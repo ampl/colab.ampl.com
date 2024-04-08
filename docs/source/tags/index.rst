@@ -6,11 +6,11 @@ Tags
     :maxdepth: 2
 
     advertisement (1 notebook) <advertisement>
-    ampl (15 notebooks) <ampl>
+    ampl (14 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
-    ampl-only (16 notebooks) <ampl-only>
-    amplpy (42 notebooks) <amplpy>
+    ampl-only (17 notebooks) <ampl-only>
+    amplpy (41 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -75,7 +75,7 @@ Tags
     max-flow (1 notebook) <max-flow>
     military (1 notebook) <military>
     milp (2 notebooks) <milp>
-    mip (12 notebooks) <mip>
+    mip (13 notebooks) <mip>
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (1 notebook) <mp>
@@ -89,7 +89,7 @@ Tags
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
     parallel-solves (1 notebook) <parallel-solves>
-    piecewise-linear-programing (1 notebook) <piecewise-linear-programing>
+    piecewise-linear (1 notebook) <piecewise-linear>
     planning (1 notebook) <planning>
     power-generation (3 notebooks) <power-generation>
     pricing (1 notebook) <pricing>
