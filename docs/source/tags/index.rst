@@ -10,7 +10,7 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (18 notebooks) <ampl-only>
-    amplpy (41 notebooks) <amplpy>
+    amplpy (42 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -28,7 +28,7 @@ Tags
     complementarity-problem (1 notebook) <complementarity-problem>
     complexity (1 notebook) <complexity>
     conic (3 notebooks) <conic>
-    constraint-programming (4 notebooks) <constraint-programming>
+    constraint-programming (5 notebooks) <constraint-programming>
     convexity (1 notebook) <convexity>
     cpmp (1 notebook) <cpmp>
     cutting-stock (1 notebook) <cutting-stock>
@@ -61,7 +61,7 @@ Tags
     highs (2 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
-    industry (4 notebooks) <industry>
+    industry (5 notebooks) <industry>
     infeasibility (1 notebook) <infeasibility>
     introduction (4 notebooks) <introduction>
     ipopt (1 notebook) <ipopt>
@@ -76,10 +76,10 @@ Tags
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (2 notebooks) <milp>
-    mip (14 notebooks) <mip>
+    mip (15 notebooks) <mip>
     mixed-integer-linear (1 notebook) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
-    mp (1 notebook) <mp>
+    mp (2 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
     multiprocess (1 notebook) <multiprocess>
     non-continuous-objective (1 notebook) <non-continuous-objective>
@@ -105,7 +105,7 @@ Tags
     reinforced-formulations (1 notebook) <reinforced-formulations>
     risk-measures (1 notebook) <risk-measures>
     sample-average-approximation (1 notebook) <sample-average-approximation>
-    scheduling (3 notebooks) <scheduling>
+    scheduling (4 notebooks) <scheduling>
     second-order-cone (2 notebooks) <second-order-cone>
     sequences (1 notebook) <sequences>
     sets (1 notebook) <sets>
