@@ -7,7 +7,7 @@ Supply chain management
 ^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Supply chain management <../notebooks/supply-chain-management.html>`_
 | |github-supply-chain-management| |colab-supply-chain-management| |kaggle-supply-chain-management| |gradient-supply-chain-management| |sagemaker-supply-chain-management|
-| Description: Multicommodity transportation model with binary variables
+| Description: Compute optimal routes to connect suppliers/demanding nodes in a network. Routes have an associated fixed and variable cost. There are different products to ship. The problem is formulated as a MIP with binary variables. Python data structures are used to load the data into the model.
 | Tags: :ref:`tag-mixed-integer-linear`, :ref:`tag-supply_chain`, :ref:`tag-network`, :ref:`tag-transportation`, :ref:`tag-graphs`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
