@@ -53,7 +53,7 @@ Tags
     geothermal-energy (1 notebook) <geothermal-energy>
     global-optimization (1 notebook) <global-optimization>
     google-sheets (2 notebooks) <google-sheets>
-    graphs (1 notebook) <graphs>
+    graphs (2 notebooks) <graphs>
     gui (2 notebooks) <gui>
     gurobi (2 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
@@ -77,11 +77,12 @@ Tags
     military (1 notebook) <military>
     milp (2 notebooks) <milp>
     mip (15 notebooks) <mip>
-    mixed-integer-linear (1 notebook) <mixed-integer-linear>
+    mixed-integer-linear (2 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (2 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
     multiprocess (1 notebook) <multiprocess>
+    network (1 notebook) <network>
     non-continuous-objective (1 notebook) <non-continuous-objective>
     non-linear (1 notebook) <non-linear>
     nonlinear (2 notebooks) <nonlinear>
@@ -119,7 +120,9 @@ Tags
     stochastic-optimization (1 notebook) <stochastic-optimization>
     stochastic-programming (1 notebook) <stochastic-programming>
     strict-comparison (1 notebook) <strict-comparison>
+    supply_chain (1 notebook) <supply_chain>
     template (1 notebook) <template>
+    transportation (1 notebook) <transportation>
     tsp (1 notebook) <tsp>
     unconstrained (1 notebook) <unconstrained>
     unit-commitment (1 notebook) <unit-commitment>
