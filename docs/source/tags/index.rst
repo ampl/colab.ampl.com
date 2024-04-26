@@ -10,14 +10,14 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (18 notebooks) <ampl-only>
-    amplpy (42 notebooks) <amplpy>
+    amplpy (43 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
     arithmetic (1 notebook) <arithmetic>
     assignment (1 notebook) <assignment>
     benders (4 notebooks) <benders>
-    bin-packing (1 notebook) <bin-packing>
+    bin-packing (2 notebooks) <bin-packing>
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
@@ -44,7 +44,7 @@ Tags
     example (7 notebooks) <example>
     excel (1 notebook) <excel>
     exponential-cone (1 notebook) <exponential-cone>
-    facility-location (6 notebooks) <facility-location>
+    facility-location (7 notebooks) <facility-location>
     finance (4 notebooks) <finance>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
@@ -53,12 +53,12 @@ Tags
     geothermal-energy (1 notebook) <geothermal-energy>
     global-optimization (1 notebook) <global-optimization>
     google-sheets (2 notebooks) <google-sheets>
-    graphs (2 notebooks) <graphs>
+    graphs (3 notebooks) <graphs>
     gui (2 notebooks) <gui>
     gurobi (2 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (11 notebooks) <highlights>
-    highs (2 notebooks) <highs>
+    highs (3 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
     industry (5 notebooks) <industry>
@@ -75,8 +75,8 @@ Tags
     max-flow (1 notebook) <max-flow>
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
-    milp (2 notebooks) <milp>
-    mip (15 notebooks) <mip>
+    milp (1 notebook) <milp>
+    mip (17 notebooks) <mip>
     mixed-integer-linear (2 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (2 notebooks) <mp>

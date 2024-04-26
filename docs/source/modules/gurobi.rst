@@ -158,7 +158,7 @@ Employee Scheduling Optimization
 | `Notebooks <../notebooks/index.html>`_ > `Employee Scheduling Optimization <../notebooks/employee-scheduling-optimization.html>`_
 | |github-employee-scheduling-optimization| |colab-employee-scheduling-optimization| |kaggle-employee-scheduling-optimization| |gradient-employee-scheduling-optimization| |sagemaker-employee-scheduling-optimization|
 | Description: Employee scheduling model from the Analytical Decision Modeling course at the Arizona State University.
-| Tags: :ref:`tag-educational`, :ref:`tag-milp`, :ref:`tag-scheduling`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-highs`
+| Tags: :ref:`tag-educational`, :ref:`tag-mip`, :ref:`tag-scheduling`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-highs`
 | Author: :ref:`email-yimin_wang_at_asu.edu` <yimin_wang@asu.edu>, :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-employee-scheduling-optimization|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
