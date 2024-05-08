@@ -6,11 +6,12 @@ Tags
     :maxdepth: 2
 
     advertisement (1 notebook) <advertisement>
+    aircrew-scheduling (1 notebook) <aircrew-scheduling>
     ampl (14 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (18 notebooks) <ampl-only>
-    amplpy (43 notebooks) <amplpy>
+    amplpy (44 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -39,6 +40,7 @@ Tags
     deterministic-model (1 notebook) <deterministic-model>
     educational (4 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
+    employee-scheduling (1 notebook) <employee-scheduling>
     energy (2 notebooks) <energy>
     engineering (2 notebooks) <engineering>
     example (7 notebooks) <example>
@@ -108,6 +110,8 @@ Tags
     sample-average-approximation (1 notebook) <sample-average-approximation>
     scheduling (4 notebooks) <scheduling>
     second-order-cone (2 notebooks) <second-order-cone>
+    seniority-constraints (1 notebook) <seniority-constraints>
+    seniority-ranking (1 notebook) <seniority-ranking>
     sequences (1 notebook) <sequences>
     sets (1 notebook) <sets>
     shortest-path (1 notebook) <shortest-path>
@@ -122,6 +126,7 @@ Tags
     strict-comparison (1 notebook) <strict-comparison>
     supply_chain (1 notebook) <supply_chain>
     template (1 notebook) <template>
+    trainee-scheduling (1 notebook) <trainee-scheduling>
     transportation (1 notebook) <transportation>
     tsp (1 notebook) <tsp>
     unconstrained (1 notebook) <unconstrained>
