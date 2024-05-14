@@ -7,7 +7,7 @@ Aircrew trainee scheduling with seniority constraints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Aircrew trainee scheduling with seniority constraints <../notebooks/aircrew-trainee-scheduling-with-seniority-constraints.html>`_
 | |github-aircrew-trainee-scheduling-with-seniority-constraints| |colab-aircrew-trainee-scheduling-with-seniority-constraints| |kaggle-aircrew-trainee-scheduling-with-seniority-constraints| |gradient-aircrew-trainee-scheduling-with-seniority-constraints| |sagemaker-aircrew-trainee-scheduling-with-seniority-constraints|
-| Description: Aircrew trainee scheduling with seniority constraints
+| Description: Aircrew trainee scheduling with simpler seniority modeling
 | Tags: :ref:`tag-trainee-scheduling`, :ref:`tag-aircrew-scheduling`, :ref:`tag-employee-scheduling`, :ref:`tag-seniority-constraints`, :ref:`tag-seniority-ranking`, :ref:`tag-amplpy`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
