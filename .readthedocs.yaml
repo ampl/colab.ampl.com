@@ -13,7 +13,7 @@ sphinx:
   configuration: docs/source/conf.py
 
 formats:
-   - html
+   - htmlzip
 
 python:
    install:
