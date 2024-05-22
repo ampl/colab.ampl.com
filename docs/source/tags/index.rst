@@ -17,6 +17,8 @@ Tags
     amplxl (1 notebook) <amplxl>
     arithmetic (1 notebook) <arithmetic>
     assignment (1 notebook) <assignment>
+    batch-processes (1 notebook) <batch-processes>
+    batch-processing (1 notebook) <batch-processing>
     benders (4 notebooks) <benders>
     bin-packing (2 notebooks) <bin-packing>
     bpp (1 notebook) <bpp>
@@ -38,6 +40,7 @@ Tags
     debug (1 notebook) <debug>
     decomposition (3 notebooks) <decomposition>
     deterministic-model (1 notebook) <deterministic-model>
+    disjunctive-programming (1 notebook) <disjunctive-programming>
     educational (4 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     employee-scheduling (1 notebook) <employee-scheduling>
@@ -50,6 +53,7 @@ Tags
     finance (4 notebooks) <finance>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
+    gdp (1 notebook) <gdp>
     gecode (1 notebook) <gecode>
     geometry (1 notebook) <geometry>
     geothermal-energy (1 notebook) <geothermal-energy>
@@ -120,6 +124,7 @@ Tags
     softplus (1 notebook) <softplus>
     solution-check (1 notebook) <solution-check>
     spreadsheet (1 notebook) <spreadsheet>
+    state-task-networks (1 notebook) <state-task-networks>
     stochastic (5 notebooks) <stochastic>
     stochastic-optimization (1 notebook) <stochastic-optimization>
     stochastic-programming (1 notebook) <stochastic-programming>
