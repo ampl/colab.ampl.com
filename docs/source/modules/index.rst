@@ -59,5 +59,4 @@ Notebooks grouped by modules
     open
     plugins
     scip
-    xpress
 
