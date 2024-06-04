@@ -1,7 +1,7 @@
-.. _tag-aircrew-scheduling:
+.. _tag-multiple-objectives:
 
-aircrew-scheduling
-==================
+multiple-objectives
+===================
 
 Aircrew trainee scheduling with seniority constraints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

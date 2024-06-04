@@ -73,6 +73,7 @@ Tags
     ipopt (1 notebook) <ipopt>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
+    lexicographic-optimization (1 notebook) <lexicographic-optimization>
     linear-programming (3 notebooks) <linear-programming>
     log-sum-exp (1 notebook) <log-sum-exp>
     lp (1 notebook) <lp>
@@ -87,6 +88,7 @@ Tags
     modeling-tips (1 notebook) <modeling-tips>
     mp (2 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
+    multiple-objectives (1 notebook) <multiple-objectives>
     multiprocess (1 notebook) <multiprocess>
     network (1 notebook) <network>
     non-continuous-objective (1 notebook) <non-continuous-objective>

@@ -1,7 +1,7 @@
-.. _tag-aircrew-scheduling:
+.. _tag-lexicographic-optimization:
 
-aircrew-scheduling
-==================
+lexicographic-optimization
+==========================
 
 Aircrew trainee scheduling with seniority constraints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
