@@ -103,6 +103,7 @@ Tags
     piecewise-linear (1 notebook) <piecewise-linear>
     planning (1 notebook) <planning>
     power-generation (3 notebooks) <power-generation>
+    preferential-bidding-system (1 notebook) <preferential-bidding-system>
     pricing (1 notebook) <pricing>
     puzzles (1 notebook) <puzzles>
     python (1 notebook) <python>

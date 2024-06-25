@@ -1,7 +1,7 @@
-.. _tag-seniority-ranking:
+.. _tag-preferential-bidding-system:
 
-seniority-ranking
-=================
+preferential-bidding-system
+===========================
 
 Aircrew trainee scheduling with seniority constraints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
