@@ -6,18 +6,21 @@ Tags
     :maxdepth: 2
 
     advertisement (1 notebook) <advertisement>
+    aircrew-scheduling (1 notebook) <aircrew-scheduling>
     ampl (14 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (18 notebooks) <ampl-only>
-    amplpy (42 notebooks) <amplpy>
+    amplpy (44 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
     arithmetic (1 notebook) <arithmetic>
     assignment (1 notebook) <assignment>
+    batch-processes (1 notebook) <batch-processes>
+    batch-processing (1 notebook) <batch-processing>
     benders (4 notebooks) <benders>
-    bin-packing (1 notebook) <bin-packing>
+    bin-packing (2 notebooks) <bin-packing>
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
@@ -37,28 +40,31 @@ Tags
     debug (1 notebook) <debug>
     decomposition (3 notebooks) <decomposition>
     deterministic-model (1 notebook) <deterministic-model>
+    disjunctive-programming (1 notebook) <disjunctive-programming>
     educational (4 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
+    employee-scheduling (1 notebook) <employee-scheduling>
     energy (2 notebooks) <energy>
     engineering (2 notebooks) <engineering>
     example (7 notebooks) <example>
     excel (1 notebook) <excel>
     exponential-cone (1 notebook) <exponential-cone>
-    facility-location (6 notebooks) <facility-location>
+    facility-location (7 notebooks) <facility-location>
     finance (4 notebooks) <finance>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
+    gdp (1 notebook) <gdp>
     gecode (1 notebook) <gecode>
     geometry (1 notebook) <geometry>
     geothermal-energy (1 notebook) <geothermal-energy>
     global-optimization (1 notebook) <global-optimization>
     google-sheets (2 notebooks) <google-sheets>
-    graphs (1 notebook) <graphs>
+    graphs (3 notebooks) <graphs>
     gui (2 notebooks) <gui>
     gurobi (2 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (11 notebooks) <highlights>
-    highs (2 notebooks) <highs>
+    highs (3 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
     industry (5 notebooks) <industry>
@@ -67,6 +73,7 @@ Tags
     ipopt (1 notebook) <ipopt>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
+    lexicographic-optimization (1 notebook) <lexicographic-optimization>
     linear-programming (3 notebooks) <linear-programming>
     log-sum-exp (1 notebook) <log-sum-exp>
     lp (1 notebook) <lp>
@@ -75,13 +82,15 @@ Tags
     max-flow (1 notebook) <max-flow>
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
-    milp (2 notebooks) <milp>
-    mip (15 notebooks) <mip>
-    mixed-integer-linear (1 notebook) <mixed-integer-linear>
+    milp (1 notebook) <milp>
+    mip (17 notebooks) <mip>
+    mixed-integer-linear (2 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (2 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
+    multiple-objectives (1 notebook) <multiple-objectives>
     multiprocess (1 notebook) <multiprocess>
+    network (1 notebook) <network>
     non-continuous-objective (1 notebook) <non-continuous-objective>
     non-linear (1 notebook) <non-linear>
     nonlinear (2 notebooks) <nonlinear>
@@ -94,6 +103,7 @@ Tags
     piecewise-linear (1 notebook) <piecewise-linear>
     planning (1 notebook) <planning>
     power-generation (3 notebooks) <power-generation>
+    preferential-bidding-system (1 notebook) <preferential-bidding-system>
     pricing (1 notebook) <pricing>
     puzzles (1 notebook) <puzzles>
     python (1 notebook) <python>
@@ -107,6 +117,8 @@ Tags
     sample-average-approximation (1 notebook) <sample-average-approximation>
     scheduling (4 notebooks) <scheduling>
     second-order-cone (2 notebooks) <second-order-cone>
+    seniority-constraints (1 notebook) <seniority-constraints>
+    seniority-ranking (1 notebook) <seniority-ranking>
     sequences (1 notebook) <sequences>
     sets (1 notebook) <sets>
     shortest-path (1 notebook) <shortest-path>
@@ -115,11 +127,15 @@ Tags
     softplus (1 notebook) <softplus>
     solution-check (1 notebook) <solution-check>
     spreadsheet (1 notebook) <spreadsheet>
+    state-task-networks (1 notebook) <state-task-networks>
     stochastic (5 notebooks) <stochastic>
     stochastic-optimization (1 notebook) <stochastic-optimization>
     stochastic-programming (1 notebook) <stochastic-programming>
     strict-comparison (1 notebook) <strict-comparison>
+    supply_chain (1 notebook) <supply_chain>
     template (1 notebook) <template>
+    trainee-scheduling (1 notebook) <trainee-scheduling>
+    transportation (1 notebook) <transportation>
     tsp (1 notebook) <tsp>
     unconstrained (1 notebook) <unconstrained>
     unit-commitment (1 notebook) <unit-commitment>

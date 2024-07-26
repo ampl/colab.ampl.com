@@ -28,9 +28,11 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.autodoc",
     "sphinx_reredirects",
+    "sphinxcontrib.googleanalytics",
 ]
 myst_enable_extensions = ["colon_fence"]
 nb_execution_mode = "off"
+googleanalytics_id = "G-X32S87LSVZ"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -132,7 +134,7 @@ html_theme_options = {
 #     "theme_logo_text": "Colaboratory",
 # }
 
-html_baseurl = "https://colab.ampl.com"
+html_baseurl = "https://ampl.com/colab/"
 
 redirects = {
     "notebooks.html": "notebooks/index.html",
