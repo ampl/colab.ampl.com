@@ -12,23 +12,23 @@ Dual-Donor Organ Exchange problem
 | Author: :ref:`email-mail_at_solverytic.com` <mail@solverytic.com>
 
 .. |github-dual-donor-organ-exchange-problem|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/miscellaneous/Dual-Donor_Organ_Exchange.ipynb
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/Medicine/Dual-Donor_Organ_Exchange.ipynb
     :alt: Dual-Donor_Organ_Exchange.ipynb
     
 .. |colab-dual-donor-organ-exchange-problem| image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/miscellaneous/Dual-Donor_Organ_Exchange.ipynb
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Medicine/Dual-Donor_Organ_Exchange.ipynb
     :alt: Open In Colab
     
 .. |kaggle-dual-donor-organ-exchange-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/miscellaneous/Dual-Donor_Organ_Exchange.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/Medicine/Dual-Donor_Organ_Exchange.ipynb
     :alt: Kaggle
     
 .. |gradient-dual-donor-organ-exchange-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/miscellaneous/Dual-Donor_Organ_Exchange.ipynb
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Medicine/Dual-Donor_Organ_Exchange.ipynb
     :alt: Gradient
     
 .. |sagemaker-dual-donor-organ-exchange-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mikhail/miscellaneous/Dual-Donor_Organ_Exchange.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Medicine/Dual-Donor_Organ_Exchange.ipynb
     :alt: Open In SageMaker Studio Lab
     
 

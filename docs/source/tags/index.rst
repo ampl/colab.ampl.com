@@ -5,12 +5,12 @@ Tags
 .. toctree::
     :maxdepth: 2
 
-    advertisement (1 notebook) <advertisement>
+    advertisement (2 notebooks) <advertisement>
     aircrew-scheduling (1 notebook) <aircrew-scheduling>
     ampl (14 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
-    ampl-only (18 notebooks) <ampl-only>
+    ampl-only (20 notebooks) <ampl-only>
     amplpy (44 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
@@ -24,7 +24,7 @@ Tags
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
-    cbc (2 notebooks) <cbc>
+    cbc (4 notebooks) <cbc>
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
@@ -39,7 +39,7 @@ Tags
     data-structures (1 notebook) <data-structures>
     debug (1 notebook) <debug>
     decomposition (3 notebooks) <decomposition>
-    deterministic-model (1 notebook) <deterministic-model>
+    deterministic-model (3 notebooks) <deterministic-model>
     disjunctive-programming (1 notebook) <disjunctive-programming>
     educational (4 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
@@ -78,12 +78,12 @@ Tags
     log-sum-exp (1 notebook) <log-sum-exp>
     lp (1 notebook) <lp>
     machine-learning (1 notebook) <machine-learning>
-    marketing (1 notebook) <marketing>
+    marketing (2 notebooks) <marketing>
     max-flow (1 notebook) <max-flow>
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
-    mip (17 notebooks) <mip>
+    mip (18 notebooks) <mip>
     mixed-integer-linear (2 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (2 notebooks) <mp>
@@ -95,21 +95,25 @@ Tags
     non-linear (1 notebook) <non-linear>
     nonlinear (2 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
+    oil-production (1 notebook) <oil-production>
     optimization (1 notebook) <optimization>
     organ-exchange (1 notebook) <organ-exchange>
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
     parallel-solves (1 notebook) <parallel-solves>
-    piecewise-linear (1 notebook) <piecewise-linear>
+    piecewise-linear (2 notebooks) <piecewise-linear>
     planning (1 notebook) <planning>
     power-generation (3 notebooks) <power-generation>
     preferential-bidding-system (1 notebook) <preferential-bidding-system>
     pricing (1 notebook) <pricing>
+    production-optimization (1 notebook) <production-optimization>
+    profitability (1 notebook) <profitability>
     puzzles (1 notebook) <puzzles>
     python (1 notebook) <python>
     quadratic (1 notebook) <quadratic>
     quadratic-cone (2 notebooks) <quadratic-cone>
     quick-start (2 notebooks) <quick-start>
+    refinery (1 notebook) <refinery>
     regression (1 notebook) <regression>
     regularization (1 notebook) <regularization>
     reinforced-formulations (1 notebook) <reinforced-formulations>
