@@ -127,7 +127,7 @@ Simple sudoku solver using logical constraints (with GUI)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Simple sudoku solver using logical constraints (with GUI) <../notebooks/simple-sudoku-solver-using-logical-constraints-with-gui.html>`_
 | |github-simple-sudoku-solver-using-logical-constraints-with-gui| |colab-simple-sudoku-solver-using-logical-constraints-with-gui| |kaggle-simple-sudoku-solver-using-logical-constraints-with-gui| |gradient-simple-sudoku-solver-using-logical-constraints-with-gui| |sagemaker-simple-sudoku-solver-using-logical-constraints-with-gui|
-| Description: Simple sudoku model with two formulations: as a Constraint Programming problem using the *alldiff* operator and as a MIP. Note that the CP formulation is more natural but it needs a solver supporting logical constraints or a MIP solver with automatic reformulation support (see [here](https://amplmp.readthedocs.io/) for more information).
+| Description: Simple sudoku model with two formulations: as a Constraint Programming problem using the *alldiff* operator and as a MIP. Note that the CP formulation is more natural but it needs a solver supporting logical constraints or a MIP solver with automatic reformulation support (see [here](https://mp.ampl.com/) for more information).
 | Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`, :ref:`tag-highlights`
 | Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
 
