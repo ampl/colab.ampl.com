@@ -1,0 +1,284 @@
+# Data file in AMPL's data format
+
+data;
+### SETS
+ # Set of crude oil types
+  set CRUD = 'Crude1','Crude2' ;  
+        
+ # Set of distillation products
+  set DIST:= 'Light Naphta','Medium Naphta','Heavy Naphta','Light Oil','Heavy Oil','Residuum' ;
+
+ # Set of reforming products
+  set REF:= 'Reformed gasoline' ; 
+
+ # Set of cracking products
+  set CRACK:= 'Cracked oil','Cracked gasoline' ;
+
+ # Set of Lubricating products
+  set LUBR:= 'Lube Oil';
+
+ # Set of final products
+  set PROD:= 'Premium Gasoline','Regular Gasoline','Jet Fuel','Fuel Oil','Lube Oil' ;
+
+ # Set of delivery stations
+  set STAT := Station1 ;
+
+ # Set of operating modes for Distillation equipment    
+  set D_MODE := D1, D2 ;
+
+ # Set of operating modes for Reforming equipment  
+  set R_MODE := R1, R2 ;
+
+ # Set of operating modes for Cracking equipment 
+  set CR_MODE := CR1, CR2 ;
+
+ # Set of operating modes for Lubrication equipment 
+  set L_MODE := L1, L2 ;
+
+ # Set of pollutants 
+  set POLLUT := 'hydrocarbon', 'sulfur dioxide';
+
+ # Set of components and products of mixing process
+  set BLENDING:         'Premium Gasoline'  'Regular Gasoline'  'Jet Fuel'  'Fuel Oil'  'Lube Oil':=    
+  'Light Naphta'                +                 +               -             -           -   
+  'Medium Naphta'               +                 +               -             -           -   
+  'Heavy Naphta'                +                 +               -             -           -   
+  'Light Oil'                   -                 -               +             +           -  
+  'Heavy Oil'                   -                 -               +             +           -   
+  'Residuum'                    -                 -               +             +           -   
+  'Reformed gasoline'           +                 +               -             -           -   
+  'Cracked oil'                 -                 -               +             +           -   
+  'Cracked gasoline'            +                 +               -             -           -    
+  'Lube Oil'                    -                 -               -             -           + ;
+
+### PARAMETERS
+  param nPeriod:= 12 ;                        # Scheduling period (weeks)
+  param nPeriodByYear = 12;                   # Number of nPeriods in the Year
+
+ ## Crude Oil
+  # Minimum, Maximum supply of crude oil barrels per week
+  param:  crude_Min   crude_Max:=
+  Crude1  0        40000
+  Crude2  0        25000 ;
+
+  # Cost of purchasing crude oil per barrel through the period            
+  param crude_Cost :  1   2   3   4   5   6   7   8   9   10  11  12 :=
+              Crude1  80  80  82  83  84  85  86  87  88  89  90  91
+              Crude2  85  86  87  88  89  90  90  90  90  91  91  91; 
+
+ ## Distillation
+  # Yield of products after distillation
+  param: DISTILLATION: distill_Yield: 'Light Naphta'  'Medium Naphta'     'Heavy Naphta'  'Light Oil'     'Heavy Oil'     'Residuum' :=
+                          D1  Crude1    0.1             0.2                 0.2             0.12            0.2             0.13
+                          D1  Crude2    0.15            0.25                0.18            0.08            0.19            0.12 
+                          D2  Crude1    0.12            0.19                0.19            0.13            0.19            0.13
+                          D2  Crude2    0.14            0.24                0.19            0.09            0.18            0.13  ; 
+  
+  # Pollutant emissions
+    param distill_Pollute: 'hydrocarbon' 'sulfur dioxide':= 
+    D1  Crude1              100           120           
+    D1  Crude2              105           116
+    D2  Crude1              99            115           
+    D2  Crude2              108           111 ;
+
+  # Cost of Distillation 1 barrel of crude oil. Residue disposal cost. 
+    param:  distill_Cost, distill_Waste_Cost:=
+    D1 Crude1  18           2
+    D1 Crude2  15           3
+    D2 Crude1  17           1.5
+    D2 Crude2  16           2.2 ;
+  
+  # Maximum distillation capacity. Equipment setup period 
+    param: distill_Cap_Max, distill_Equipment_Setup_Period, distill_Equipment_Setup_Cost:=
+    D1      45000               0.5                               50000
+    D2      47000               0.6                               70000;
+
+ ## Reforming
+  # Yield of products after Reforming
+    param: REFORMING: reform_Yield: 'Reformed gasoline':=
+        R1 'Light Naphta'           0.6 
+        R1 'Medium Naphta'          0.52
+        R1 'Heavy Naphta'           0.45 
+        R2 'Light Naphta'           0.6 
+        R2 'Medium Naphta'          0.52
+        R2 'Heavy Naphta'           0.48  ;
+
+  # Pollutant emissions
+    param reform_Pollute: 'hydrocarbon' 'sulfur dioxide':= 
+    R1  'Light Naphta'      60           180           
+    R1  'Medium Naphta'     70           140
+    R1  'Heavy Naphta'      72           115
+    R2  'Light Naphta'      65           180           
+    R2  'Medium Naphta'     40           150
+    R2  'Heavy Naphta'      70           118  ;
+
+  # Cost of Reforming 1 barrel of distilled fraction. Residue disposal cost
+    param:           reform_Cost, reform_Waste_Cost:= 
+    R1 'Light Naphta'     20        2   
+    R1 'Medium Naphta'    26        1.8
+    R1 'Heavy Naphta'     28        2.2
+    R2 'Light Naphta'     22        2 
+    R2 'Medium Naphta'    24        3
+    R2 'Heavy Naphta'     26        1.3; 
+
+  # Maximum Reforming capacity. Equipment setup period
+    param: reform_Cap_Max, reform_Equipment_Setup_Period, reform_Equipment_Setup_Cost:=
+    R1    10000             0.5                             80000
+    R2    12000             0.6                             90000;
+
+ ## Cracking
+  # Yield of products after Craking
+    param: CRACKING: crack_Yield: 'Cracked oil' 'Cracked gasoline':=
+                CR1 'Light Oil'      0.68           0.28
+                CR1 'Heavy Oil'      0.75           0.2
+                CR2 'Light Oil'      0.6            0.34
+                CR2 'Heavy Oil'      0.52           0.25  ;
+  
+  # Pollutant emissions
+    param crack_Pollute: 'hydrocarbon' 'sulfur dioxide':= 
+    CR1 'Light Oil'      100            200
+    CR1 'Heavy Oil'      150            250
+    CR2 'Light Oil'      120            180
+    CR2 'Heavy Oil'      150            240 ;
+  
+  # Cost of Cracking 1 barrel of distilled fraction. Residue disposal cost 
+    param:           crack_Cost crack_Waste_Cost:= 
+    CR1 'Light Oil'      20           1
+    CR1 'Heavy Oil'      22           1.2
+    CR2 'Light Oil'      21           1.36
+    CR2 'Heavy Oil'      18           1.05  ;
+
+  # Maximum Cracking capacity. Equipment setup period
+    param: crack_Cap_Max, crack_Equipment_Setup_Period, crack_Equipment_Setup_Cost:=
+    CR1     8000          0.3                               25000
+    CR2     9000          0.2                               36300;
+
+## Lubricating
+  # Yield of products after Lubricating
+    param: LUBRICATING: lube_Yield: 'Lube Oil':=
+                  L1 'Residuum'      0.5
+                  L2 'Residuum'      0.6;
+
+  # Pollutant emissions
+    param lube_Pollute: 'hydrocarbon' 'sulfur dioxide':= 
+    L1 'Residuum'             60         180
+    L2 'Residuum'             70         140  ;
+
+  # Cost of Lubricating 1 barrel of distilled fraction. Residue disposal cost 
+    param:           lube_Cost lube_Waste_Cost:= 
+    L1 'Residuum'      21         1.2        
+    L2 'Residuum'      22         1.4  ;
+
+  # Maximum Cracking capacity. Equipment setup period
+    param: lube_Cap_Max, lube_Equipment_Setup_Period, lube_Equipment_Setup_Cost:=
+    L1      500             0.2                         5000
+    L2      1000            0.1                         8000;
+
+  # Volume Limitations
+    param lube_limit_Min := 0 ;
+    param lube_limit_Max := 1000 ;
+
+ ## INTERMED
+  # Octane numbers and Vapor pressure for each INTERMED fraction
+    param:            Intermed_Octane   Intermed_VaporPressure:=
+    'Light Naphta'        90                            .
+    'Medium Naphta'       80                            .
+    'Heavy Naphta'        70                            .
+    'Light Oil'           0                             1
+    'Heavy Oil'           0                             0.6
+    'Residuum'            0                             0.05
+    'Reformed gasoline'   115                           .
+    'Cracked gasoline'    105                           .   
+    'Cracked oil'         0                             1.5          
+    'Lube Oil'            0                             .;
+
+ ## Blending
+  # Cost of processing 1 barrel of products
+    param blending_Cost:=
+    'Premium Gasoline'  2
+    'Regular Gasoline'	1.9
+    'Jet Fuel'	        2.2
+    'Fuel Oil'	        2
+    'Lube Oil'          2.4  ;
+ 
+ ## Products
+  # Minimum octane for products
+    param prod_Octane_Min:=
+    'Regular Gasoline'  84
+    'Premium Gasoline'  94 ;
+
+  # Vapor pressure limits of product
+    param prod_VaporPressure_Max :=
+    'Jet Fuel' 1 ;
+
+  # Minimum percentage of premium gasoline production relative to regular gasoline
+    param prod_Premium_Regular_Gas_Min := 0.4 ;
+
+  # Blending ratio for fuel oil production: Light oil, Crack Oil, Fuel Oil and Residuum mix in the proportion 10:4:3:1
+    param prod_FuelOil_Ratio :=
+    'Light Oil'   10
+    'Cracked oil' 4
+    'Heavy Oil'   3
+    'Residuum'    1  ;
+
+ ## Storage
+  # Storage capacity for each product. Weekly storage cost per barrel. Standard loss percentage during storage
+    param:             storage_Capacity    storage_Cost  storage_Waste:=
+    'Premium Gasoline'  50000               3             0.003
+    'Regular Gasoline'	50000               5             0.002
+    'Jet Fuel'	        30000               7             0.001
+    'Fuel Oil'	        10000               2             0.0005
+    'Lube Oil'          4500                4             0.0005;
+
+  # Cost of delivering products to gas stations
+    param delivery_Cost:  'Station1':=
+    'Premium Gasoline'    2
+    'Regular Gasoline'	  2
+    'Jet Fuel'	          3
+    'Fuel Oil'	          2
+    'Lube Oil'            4 ; 
+
+ ## Plant
+    param plant_Shutdown_Period := 1;         # Equipment setup period    
+    param plant_Shutdown_Cost = 100000;          # Equipment setup cost        
+    param plant_Const_Cost := 300000;            # Plant fixed costs
+    param initial_Cash := 2000000 ;               # Initial cash available
+
+ ## Market
+  # Changes in demand levels during the season.
+    param seasonal_Base_Demand:
+                        1       2       3       4       5       6       7       8       9       10      11      12 :=
+    'Premium Gasoline'  4500    4500    4500    4500    5000    7000    7500    7000    6000    5000    4500    5000
+    'Regular Gasoline'  8500    8500    8500    8800    9200    13500   14000   13500   12000   10000   9000    10000
+    'Jet Fuel'          7000    7000    7000    9000    12000   10000   9000    8000    8000    9000    7000    7000
+    'Fuel Oil'          4000    3800    3800    3800    2900    2500    2500    2800    3300    3400    3500    3600
+    'Lube Oil'          500     500     700     700     700     500     400     500     600     700     700     700;
+  
+  # Changes in price levels during the season (1 barrel).
+    param seasonal_Base_Price :   1   2   3   4   5   6   7   8   9   10  11  12 :=
+    'Premium Gasoline'            162 165 165 165 165 165 165 167 168 168 167 165
+    'Regular Gasoline'            126 126 127 127 128 128 129 129 129 129 130 130
+    'Jet Fuel'                    115 115 115 115 115 116 116 116 117 117 118 118           
+    'Fuel Oil'                    154 154 154 155 155 155 155 156 156 156 155 155      
+    'Lube Oil'                    176 176 177 177 177 178 178 178 178 178 177 178 ;
+  
+ ## Price elasticity
+    param nStep:= 6 ;           # Number of price steps
+                            
+    param:  price_nStep_Value   demand_nStep_Value:=
+    1       1.06                0.8                                 
+    2       1.04                0.88
+    3       1.02                0.95
+    4       1.0                 1
+    5       0.98                1.02
+    6       0.96                1.05
+    7       0.94                1.09 ;
+
+ ## Finance
+  param discount_Rate := 0.05 ; # Financial parameters for discount rate
+  
+  # Loans
+  set LOANS := 'I';
+  set LOAN_param := 'term'  'interest'  'Max_Money';
+  param loan: 'term'  'interest'  'Max_Money' :=
+    I           1       0.065         1e7 ;

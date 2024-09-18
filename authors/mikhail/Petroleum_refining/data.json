@@ -1,0 +1,2048 @@
+{
+    "CRUD": [
+        {
+            "CRUD": "Crude1"
+        },
+        {
+            "CRUD": "Crude2"
+        }
+    ],
+    "crude_Max_capacity": [
+        {
+            "CRUD": "Crude1",
+            "crude_Max_capacity": 40000
+        },
+        {
+            "CRUD": "Crude2",
+            "crude_Max_capacity": 30000
+        }
+    ],
+    "crude_Cost": [
+        {
+            "CRUD": "Crude1",
+            "nPeriod": 1,
+            "crude_Cost": 80
+        },
+        {
+            "CRUD": "Crude2",
+            "nPeriod": 1,
+            "crude_Cost": 85
+        },
+        {
+            "CRUD": "Crude1",
+            "nPeriod": 2,
+            "crude_Cost": 80
+        },
+        {
+            "CRUD": "Crude2",
+            "nPeriod": 2,
+            "crude_Cost": 86
+        },
+        {
+            "CRUD": "Crude1",
+            "nPeriod": 3,
+            "crude_Cost": 82
+        },
+        {
+            "CRUD": "Crude2",
+            "nPeriod": 3,
+            "crude_Cost": 87
+        },
+        {
+            "CRUD": "Crude1",
+            "nPeriod": 4,
+            "crude_Cost": 83
+        },
+        {
+            "CRUD": "Crude2",
+            "nPeriod": 4,
+            "crude_Cost": 88
+        },
+        {
+            "CRUD": "Crude1",
+            "nPeriod": 5,
+            "crude_Cost": 84
+        },
+        {
+            "CRUD": "Crude2",
+            "nPeriod": 5,
+            "crude_Cost": 89
+        },
+        {
+            "CRUD": "Crude1",
+            "nPeriod": 6,
+            "crude_Cost": 85
+        },
+        {
+            "CRUD": "Crude2",
+            "nPeriod": 6,
+            "crude_Cost": 90
+        },
+        {
+            "CRUD": "Crude1",
+            "nPeriod": 7,
+            "crude_Cost": 86
+        },
+        {
+            "CRUD": "Crude2",
+            "nPeriod": 7,
+            "crude_Cost": 90
+        },
+        {
+            "CRUD": "Crude1",
+            "nPeriod": 8,
+            "crude_Cost": 87
+        },
+        {
+            "CRUD": "Crude2",
+            "nPeriod": 8,
+            "crude_Cost": 90
+        },
+        {
+            "CRUD": "Crude1",
+            "nPeriod": 9,
+            "crude_Cost": 88
+        },
+        {
+            "CRUD": "Crude2",
+            "nPeriod": 9,
+            "crude_Cost": 90
+        },
+        {
+            "CRUD": "Crude1",
+            "nPeriod": 10,
+            "crude_Cost": 89
+        },
+        {
+            "CRUD": "Crude2",
+            "nPeriod": 10,
+            "crude_Cost": 91
+        },
+        {
+            "CRUD": "Crude1",
+            "nPeriod": 11,
+            "crude_Cost": 90
+        },
+        {
+            "CRUD": "Crude2",
+            "nPeriod": 11,
+            "crude_Cost": 91
+        },
+        {
+            "CRUD": "Crude1",
+            "nPeriod": 12,
+            "crude_Cost": 91
+        },
+        {
+            "CRUD": "Crude2",
+            "nPeriod": 12,
+            "crude_Cost": 91
+        }
+    ],
+    "DIST": [
+        {
+            "DIST": "Heavy Naphta"
+        },
+        {
+            "DIST": "Heavy Oil"
+        },
+        {
+            "DIST": "Light Naphta"
+        },
+        {
+            "DIST": "Light Oil"
+        },
+        {
+            "DIST": "Medium Naphta"
+        },
+        {
+            "DIST": "Residuum"
+        }
+    ],
+    "POLLUT": [
+        {
+            "POLLUT": "Hydrocarbon"
+        },
+        {
+            "POLLUT": "Sulfur dioxide"
+        }
+    ],
+    "D_MODE": [
+        {
+            "D_MODE": "D1"
+        },
+        {
+            "D_MODE": "D2"
+        }
+    ],
+    "distill_Waste_Cost": [
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude1",
+            "distill_Waste_Cost": 2
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude2",
+            "distill_Waste_Cost": 3
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude1",
+            "distill_Waste_Cost": 2
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude2",
+            "distill_Waste_Cost": 2
+        }
+    ],
+    "distill_Max_capacity": [
+        {
+            "D_MODE": "D1",
+            "distill_Max_capacity": 45000
+        },
+        {
+            "D_MODE": "D2",
+            "distill_Max_capacity": 50000
+        }
+    ],
+    "distill_Equipment_Setup_Period": [
+        {
+            "D_MODE": "D1",
+            "distill_Equipment_Setup_Period": 0.5
+        },
+        {
+            "D_MODE": "D2",
+            "distill_Equipment_Setup_Period": 0.5
+        }
+    ],
+    "distill_Pollute": [
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude1",
+            "Param": "Hydrocarbon",
+            "distill_Pollute": 100
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude1",
+            "Param": "Sulfur dioxide",
+            "distill_Pollute": 120
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude1",
+            "Param": "Hydrocarbon",
+            "distill_Pollute": 99
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude1",
+            "Param": "Sulfur dioxide",
+            "distill_Pollute": 115
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude2",
+            "Param": "Hydrocarbon",
+            "distill_Pollute": 105
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude2",
+            "Param": "Sulfur dioxide",
+            "distill_Pollute": 116
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude2",
+            "Param": "Hydrocarbon",
+            "distill_Pollute": 108
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude2",
+            "Param": "Sulfur dioxide",
+            "distill_Pollute": 111
+        }
+    ],
+    "distill_Cost": [
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude1",
+            "distill_Cost": 18
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude1",
+            "distill_Cost": 17
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude2",
+            "distill_Cost": 15
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude2",
+            "distill_Cost": 16
+        }
+    ],
+    "distill_Yield": [
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude1",
+            "DIST": "Heavy Naphta",
+            "distill_Yield": 0.2
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude1",
+            "DIST": "Heavy Oil",
+            "distill_Yield": 0.2
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude1",
+            "DIST": "Light Naphta",
+            "distill_Yield": 0.0999999999999999
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude1",
+            "DIST": "Light Oil",
+            "distill_Yield": 0.1199999999999999
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude1",
+            "DIST": "Medium Naphta",
+            "distill_Yield": 0.2
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude1",
+            "DIST": "Residuum",
+            "distill_Yield": 0.1299999999999999
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude2",
+            "DIST": "Heavy Naphta",
+            "distill_Yield": 0.18
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude2",
+            "DIST": "Heavy Oil",
+            "distill_Yield": 0.19
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude2",
+            "DIST": "Light Naphta",
+            "distill_Yield": 0.15
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude2",
+            "DIST": "Light Oil",
+            "distill_Yield": 0.08
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude2",
+            "DIST": "Medium Naphta",
+            "distill_Yield": 0.25
+        },
+        {
+            "D_MODE": "D1",
+            "CRUD": "Crude2",
+            "DIST": "Residuum",
+            "distill_Yield": 0.1199999999999999
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude1",
+            "DIST": "Heavy Naphta",
+            "distill_Yield": 0.19
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude1",
+            "DIST": "Heavy Oil",
+            "distill_Yield": 0.19
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude1",
+            "DIST": "Light Naphta",
+            "distill_Yield": 0.1199999999999999
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude1",
+            "DIST": "Light Oil",
+            "distill_Yield": 0.1299999999999999
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude1",
+            "DIST": "Medium Naphta",
+            "distill_Yield": 0.19
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude1",
+            "DIST": "Residuum",
+            "distill_Yield": 0.1299999999999999
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude2",
+            "DIST": "Heavy Naphta",
+            "distill_Yield": 0.19
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude2",
+            "DIST": "Heavy Oil",
+            "distill_Yield": 0.18
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude2",
+            "DIST": "Light Naphta",
+            "distill_Yield": 0.1399999999999999
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude2",
+            "DIST": "Light Oil",
+            "distill_Yield": 0.09
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude2",
+            "DIST": "Medium Naphta",
+            "distill_Yield": 0.24
+        },
+        {
+            "D_MODE": "D2",
+            "CRUD": "Crude2",
+            "DIST": "Residuum",
+            "distill_Yield": 0.1299999999999999
+        }
+    ],
+    "distill_Equipment_Setup_Cost": [
+        {
+            "D_MODE": "D1",
+            "distill_Equipment_Setup_Cost": 50000
+        },
+        {
+            "D_MODE": "D2",
+            "distill_Equipment_Setup_Cost": 70000
+        }
+    ],
+    "REF": [
+        {
+            "REF": "Reformed gasoline"
+        }
+    ],
+    "R_MODE": [
+        {
+            "R_MODE": "R1"
+        },
+        {
+            "R_MODE": "R2"
+        }
+    ],
+    "reform_Max_capacity": [
+        {
+            "R_MODE": "R1",
+            "reform_Max_capacity": 10000
+        },
+        {
+            "R_MODE": "R2",
+            "reform_Max_capacity": 12000
+        }
+    ],
+    "reform_Equipment_Setup_Period": [
+        {
+            "R_MODE": "R1",
+            "reform_Equipment_Setup_Period": 0.5
+        },
+        {
+            "R_MODE": "R2",
+            "reform_Equipment_Setup_Period": 0.6
+        }
+    ],
+    "reform_Equipment_Setup_Cost": [
+        {
+            "R_MODE": "R1",
+            "reform_Equipment_Setup_Cost": 80000
+        },
+        {
+            "R_MODE": "R2",
+            "reform_Equipment_Setup_Cost": 90000
+        }
+    ],
+    "reform_Yield": [
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Heavy Naphta",
+            "REF": "Reformed gasoline",
+            "reform_Yield": 0.4500000000000002
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Heavy Naphta",
+            "REF": "Reformed gasoline",
+            "reform_Yield": 0.4800000000000002
+        },
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Light Naphta",
+            "REF": "Reformed gasoline",
+            "reform_Yield": 0.6000000000000003
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Light Naphta",
+            "REF": "Reformed gasoline",
+            "reform_Yield": 0.6000000000000003
+        },
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Medium Naphta",
+            "REF": "Reformed gasoline",
+            "reform_Yield": 0.5200000000000002
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Medium Naphta",
+            "REF": "Reformed gasoline",
+            "reform_Yield": 0.5200000000000002
+        }
+    ],
+    "reform_Cost": [
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Heavy Naphta",
+            "reform_Cost": 28
+        },
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Light Naphta",
+            "reform_Cost": 20
+        },
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Medium Naphta",
+            "reform_Cost": 26
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Heavy Naphta",
+            "reform_Cost": 26
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Light Naphta",
+            "reform_Cost": 22
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Medium Naphta",
+            "reform_Cost": 24
+        }
+    ],
+    "reform_Pollute": [
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Heavy Naphta",
+            "Param": "Hydrocarbon",
+            "reform_Pollute": 72
+        },
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Heavy Naphta",
+            "Param": "Sulfur dioxide",
+            "reform_Pollute": 115
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Heavy Naphta",
+            "Param": "Hydrocarbon",
+            "reform_Pollute": 70
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Heavy Naphta",
+            "Param": "Sulfur dioxide",
+            "reform_Pollute": 118
+        },
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Light Naphta",
+            "Param": "Hydrocarbon",
+            "reform_Pollute": 60
+        },
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Light Naphta",
+            "Param": "Sulfur dioxide",
+            "reform_Pollute": 180
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Light Naphta",
+            "Param": "Hydrocarbon",
+            "reform_Pollute": 65
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Light Naphta",
+            "Param": "Sulfur dioxide",
+            "reform_Pollute": 180
+        },
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Medium Naphta",
+            "Param": "Hydrocarbon",
+            "reform_Pollute": 70
+        },
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Medium Naphta",
+            "Param": "Sulfur dioxide",
+            "reform_Pollute": 140
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Medium Naphta",
+            "Param": "Hydrocarbon",
+            "reform_Pollute": 40
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Medium Naphta",
+            "Param": "Sulfur dioxide",
+            "reform_Pollute": 150
+        }
+    ],
+    "reform_Waste_Cost": [
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Heavy Naphta",
+            "reform_Waste_Cost": 2
+        },
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Light Naphta",
+            "reform_Waste_Cost": 2
+        },
+        {
+            "R_MODE": "R1",
+            "DIST_R": "Medium Naphta",
+            "reform_Waste_Cost": 2
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Heavy Naphta",
+            "reform_Waste_Cost": 2
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Light Naphta",
+            "reform_Waste_Cost": 2
+        },
+        {
+            "R_MODE": "R2",
+            "DIST_R": "Medium Naphta",
+            "reform_Waste_Cost": 3
+        }
+    ],
+    "CRACK": [
+        {
+            "CRACK": "Cracked gasoline"
+        },
+        {
+            "CRACK": "Cracked Oil"
+        }
+    ],
+    "CR_MODE": [
+        {
+            "CR_MODE": "CR1"
+        },
+        {
+            "CR_MODE": "CR2"
+        }
+    ],
+    "crack_Yield": [
+        {
+            "CR_MODE": "CR1",
+            "DIST_CR": "Heavy Oil",
+            "CRACK": "Cracked gasoline",
+            "crack_Yield": 0.2
+        },
+        {
+            "CR_MODE": "CR1",
+            "DIST_CR": "Heavy Oil",
+            "CRACK": "Cracked Oil",
+            "crack_Yield": 0.7500000000000004
+        },
+        {
+            "CR_MODE": "CR1",
+            "DIST_CR": "Light Oil",
+            "CRACK": "Cracked gasoline",
+            "crack_Yield": 0.2800000000000001
+        },
+        {
+            "CR_MODE": "CR1",
+            "DIST_CR": "Light Oil",
+            "CRACK": "Cracked Oil",
+            "crack_Yield": 0.6800000000000004
+        },
+        {
+            "CR_MODE": "CR2",
+            "DIST_CR": "Heavy Oil",
+            "CRACK": "Cracked gasoline",
+            "crack_Yield": 0.3400000000000001
+        },
+        {
+            "CR_MODE": "CR2",
+            "DIST_CR": "Heavy Oil",
+            "CRACK": "Cracked Oil",
+            "crack_Yield": 0.5200000000000002
+        },
+        {
+            "CR_MODE": "CR2",
+            "DIST_CR": "Light Oil",
+            "CRACK": "Cracked gasoline",
+            "crack_Yield": 0.3400000000000001
+        },
+        {
+            "CR_MODE": "CR2",
+            "DIST_CR": "Light Oil",
+            "CRACK": "Cracked Oil",
+            "crack_Yield": 0.6000000000000003
+        }
+    ],
+    "crack_Pollute": [
+        {
+            "CR_MODE": "CR1",
+            "DIST_CR": "Heavy Oil",
+            "Param": "Hydrocarbon",
+            "crack_Pollute": 150
+        },
+        {
+            "CR_MODE": "CR1",
+            "DIST_CR": "Heavy Oil",
+            "Param": "Sulfur dioxide",
+            "crack_Pollute": 250
+        },
+        {
+            "CR_MODE": "CR1",
+            "DIST_CR": "Light Oil",
+            "Param": "Hydrocarbon",
+            "crack_Pollute": 100
+        },
+        {
+            "CR_MODE": "CR1",
+            "DIST_CR": "Light Oil",
+            "Param": "Sulfur dioxide",
+            "crack_Pollute": 200
+        },
+        {
+            "CR_MODE": "CR2",
+            "DIST_CR": "Heavy Oil",
+            "Param": "Hydrocarbon",
+            "crack_Pollute": 150
+        },
+        {
+            "CR_MODE": "CR2",
+            "DIST_CR": "Heavy Oil",
+            "Param": "Sulfur dioxide",
+            "crack_Pollute": 240
+        },
+        {
+            "CR_MODE": "CR2",
+            "DIST_CR": "Light Oil",
+            "Param": "Hydrocarbon",
+            "crack_Pollute": 120
+        },
+        {
+            "CR_MODE": "CR2",
+            "DIST_CR": "Light Oil",
+            "Param": "Sulfur dioxide",
+            "crack_Pollute": 180
+        }
+    ],
+    "crack_Cost": [
+        {
+            "CR_MODE": "CR1",
+            "DIST_CR": "Heavy Oil",
+            "crack_Cost": 22
+        },
+        {
+            "CR_MODE": "CR1",
+            "DIST_CR": "Light Oil",
+            "crack_Cost": 20
+        },
+        {
+            "CR_MODE": "CR2",
+            "DIST_CR": "Heavy Oil",
+            "crack_Cost": 18
+        },
+        {
+            "CR_MODE": "CR2",
+            "DIST_CR": "Light Oil",
+            "crack_Cost": 21
+        }
+    ],
+    "crack_Waste_Cost": [
+        {
+            "CR_MODE": "CR1",
+            "DIST_CR": "Heavy Oil",
+            "crack_Waste_Cost": 1
+        },
+        {
+            "CR_MODE": "CR1",
+            "DIST_CR": "Light Oil",
+            "crack_Waste_Cost": 1
+        },
+        {
+            "CR_MODE": "CR2",
+            "DIST_CR": "Heavy Oil",
+            "crack_Waste_Cost": 2
+        },
+        {
+            "CR_MODE": "CR2",
+            "DIST_CR": "Light Oil",
+            "crack_Waste_Cost": 1
+        }
+    ],
+    "crack_Max_capacity": [
+        {
+            "CR_MODE": "CR1",
+            "crack_Max_capacity": 8000
+        },
+        {
+            "CR_MODE": "CR2",
+            "crack_Max_capacity": 9000
+        }
+    ],
+    "crack_Equipment_Setup_Period": [
+        {
+            "CR_MODE": "CR1",
+            "crack_Equipment_Setup_Period": 0.3
+        },
+        {
+            "CR_MODE": "CR2",
+            "crack_Equipment_Setup_Period": 0.2
+        }
+    ],
+    "crack_Equipment_Setup_Cost": [
+        {
+            "CR_MODE": "CR1",
+            "crack_Equipment_Setup_Cost": 25000
+        },
+        {
+            "CR_MODE": "CR2",
+            "crack_Equipment_Setup_Cost": 36000
+        }
+    ],
+    "LUBR": [
+        {
+            "LUBR": "Lube Oil"
+        }
+    ],
+    "L_MODE": [
+        {
+            "L_MODE": "L1"
+        },
+        {
+            "L_MODE": "L2"
+        }
+    ],
+    "lube_Max_capacity": [
+        {
+            "L_MODE": "L1",
+            "lube_Max_capacity": 500
+        },
+        {
+            "L_MODE": "L2",
+            "lube_Max_capacity": 1000
+        }
+    ],
+    "lube_Equipment_Setup_Period": [
+        {
+            "L_MODE": "L1",
+            "lube_Equipment_Setup_Period": 0.2
+        },
+        {
+            "L_MODE": "L2",
+            "lube_Equipment_Setup_Period": 0.1
+        }
+    ],
+    "lube_Equipment_Setup_Cost": [
+        {
+            "L_MODE": "L1",
+            "lube_Equipment_Setup_Cost": 5000
+        },
+        {
+            "L_MODE": "L2",
+            "lube_Equipment_Setup_Cost": 8000
+        }
+    ],
+    "lube_limit_Max": [
+        {
+            "lube_limit_Max": 500
+        }
+    ],
+    "lube_Yield": [
+        {
+            "L_MODE": "L1",
+            "DIST_L": "Residuum",
+            "LUBR": "Lube Oil",
+            "lube_Yield": 0.5000000000000002
+        },
+        {
+            "L_MODE": "L2",
+            "DIST_L": "Residuum",
+            "LUBR": "Lube Oil",
+            "lube_Yield": 0.6000000000000003
+        }
+    ],
+    "lube_Pollute": [
+        {
+            "L_MODE": "L1",
+            "DIST_L": "Residuum",
+            "Param": "Hydrocarbon",
+            "lube_Pollute": 60
+        },
+        {
+            "L_MODE": "L1",
+            "DIST_L": "Residuum",
+            "Param": "Sulfur dioxide",
+            "lube_Pollute": 180
+        },
+        {
+            "L_MODE": "L2",
+            "DIST_L": "Residuum",
+            "Param": "Hydrocarbon",
+            "lube_Pollute": 70
+        },
+        {
+            "L_MODE": "L2",
+            "DIST_L": "Residuum",
+            "Param": "Sulfur dioxide",
+            "lube_Pollute": 140
+        }
+    ],
+    "lube_Cost": [
+        {
+            "L_MODE": "L2",
+            "DIST_L": "Residuum",
+            "lube_Cost": 22
+        },
+        {
+            "L_MODE": "L1",
+            "DIST_L": "Residuum",
+            "lube_Cost": 21
+        }
+    ],
+    "lube_Waste_Cost": [
+        {
+            "L_MODE": "L1",
+            "DIST_L": "Residuum",
+            "lube_Waste_Cost": 1
+        },
+        {
+            "L_MODE": "L2",
+            "DIST_L": "Residuum",
+            "lube_Waste_Cost": 2
+        }
+    ],
+    "PROD": [
+        {
+            "PROD": "Fuel Oil"
+        },
+        {
+            "PROD": "Jet Fuel"
+        },
+        {
+            "PROD": "Lube Oil"
+        },
+        {
+            "PROD": "Premium Gasoline"
+        },
+        {
+            "PROD": "Regular Gasoline"
+        }
+    ],
+    "prod_FuelOil_Ratio": [
+        {
+            "INTERMED": "Cracked Oil",
+            "prod_FuelOil_Ratio": 4
+        },
+        {
+            "INTERMED": "Heavy Oil",
+            "prod_FuelOil_Ratio": 3
+        },
+        {
+            "INTERMED": "Light Oil",
+            "prod_FuelOil_Ratio": 10
+        },
+        {
+            "INTERMED": "Residuum",
+            "prod_FuelOil_Ratio": 1
+        }
+    ],
+    "prod_VaporPressure_Max": [
+        {
+            "PROD": "Jet Fuel",
+            "prod_VaporPressure_Max": 1.0000000000000009
+        }
+    ],
+    "prod_Premium_Regular_Gas_Min": [
+        {
+            "prod_Premium_Regular_Gas_Min": 40
+        }
+    ],
+    "blending_recipe": [
+        {
+            "INTERMED": "Cracked Oil",
+            "PROD": "Fuel Oil",
+            "blending_recipe": 4
+        },
+        {
+            "INTERMED": "Heavy Oil",
+            "PROD": "Fuel Oil",
+            "blending_recipe": 3
+        },
+        {
+            "INTERMED": "Light Oil",
+            "PROD": "Fuel Oil",
+            "blending_recipe": 10
+        },
+        {
+            "INTERMED": "Residuum",
+            "PROD": "Fuel Oil",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Cracked Oil",
+            "PROD": "Jet Fuel",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Heavy Oil",
+            "PROD": "Jet Fuel",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Light Oil",
+            "PROD": "Jet Fuel",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Residuum",
+            "PROD": "Jet Fuel",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Lube Oil",
+            "PROD": "Lube Oil",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Cracked gasoline",
+            "PROD": "Premium Gasoline",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Heavy Naphta",
+            "PROD": "Premium Gasoline",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Light Naphta",
+            "PROD": "Premium Gasoline",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Medium Naphta",
+            "PROD": "Premium Gasoline",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Reformed gasoline",
+            "PROD": "Premium Gasoline",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Cracked gasoline",
+            "PROD": "Regular Gasoline",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Heavy Naphta",
+            "PROD": "Regular Gasoline",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Light Naphta",
+            "PROD": "Regular Gasoline",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Medium Naphta",
+            "PROD": "Regular Gasoline",
+            "blending_recipe": 1
+        },
+        {
+            "INTERMED": "Reformed gasoline",
+            "PROD": "Regular Gasoline",
+            "blending_recipe": 1
+        }
+    ],
+    "prod_Octane_Min": [
+        {
+            "PROD": "Premium Gasoline",
+            "prod_Octane_Min": 94
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "prod_Octane_Min": 84
+        }
+    ],
+    "Intermed_VaporPressure": [
+        {
+            "INTERMED": "Cracked gasoline",
+            "Intermed_VaporPressure": 100.0
+        },
+        {
+            "INTERMED": "Cracked Oil",
+            "Intermed_VaporPressure": 1.500000000000001
+        },
+        {
+            "INTERMED": "Heavy Naphta",
+            "Intermed_VaporPressure": 100.0
+        },
+        {
+            "INTERMED": "Heavy Oil",
+            "Intermed_VaporPressure": 0.6000000000000003
+        },
+        {
+            "INTERMED": "Light Naphta",
+            "Intermed_VaporPressure": 100.0
+        },
+        {
+            "INTERMED": "Light Oil",
+            "Intermed_VaporPressure": 1.0000000000000009
+        },
+        {
+            "INTERMED": "Lube Oil",
+            "Intermed_VaporPressure": 100.0
+        },
+        {
+            "INTERMED": "Medium Naphta",
+            "Intermed_VaporPressure": 100.0
+        },
+        {
+            "INTERMED": "Reformed gasoline",
+            "Intermed_VaporPressure": 100.0
+        },
+        {
+            "INTERMED": "Residuum",
+            "Intermed_VaporPressure": 0.05
+        }
+    ],
+    "Intermed_Octane": [
+        {
+            "INTERMED": "Cracked gasoline",
+            "Intermed_Octane": 105
+        },
+        {
+            "INTERMED": "Cracked Oil",
+            "Intermed_Octane": 0
+        },
+        {
+            "INTERMED": "Heavy Naphta",
+            "Intermed_Octane": 70
+        },
+        {
+            "INTERMED": "Heavy Oil",
+            "Intermed_Octane": 0
+        },
+        {
+            "INTERMED": "Light Naphta",
+            "Intermed_Octane": 90
+        },
+        {
+            "INTERMED": "Light Oil",
+            "Intermed_Octane": 0
+        },
+        {
+            "INTERMED": "Lube Oil",
+            "Intermed_Octane": 0
+        },
+        {
+            "INTERMED": "Medium Naphta",
+            "Intermed_Octane": 80
+        },
+        {
+            "INTERMED": "Reformed gasoline",
+            "Intermed_Octane": 115
+        },
+        {
+            "INTERMED": "Residuum",
+            "Intermed_Octane": 0
+        }
+    ],
+    "blending_Cost": [
+        {
+            "PROD": "Fuel Oil",
+            "blending_Cost": 2.0000000000000004
+        },
+        {
+            "PROD": "Jet Fuel",
+            "blending_Cost": 2.2000000000000006
+        },
+        {
+            "PROD": "Lube Oil",
+            "blending_Cost": 2.400000000000001
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "blending_Cost": 2.0000000000000004
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "blending_Cost": 1.9000000000000008
+        }
+    ],
+    "STAT": [
+        {
+            "STAT": "Station1"
+        }
+    ],
+    "storage_Capacity": [
+        {
+            "PROD": "Fuel Oil",
+            "storage_Capacity": 10000
+        },
+        {
+            "PROD": "Jet Fuel",
+            "storage_Capacity": 30000
+        },
+        {
+            "PROD": "Lube Oil",
+            "storage_Capacity": 4500
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "storage_Capacity": 40000
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "storage_Capacity": 50000
+        }
+    ],
+    "storage_Cost": [
+        {
+            "PROD": "Fuel Oil",
+            "storage_Cost": 2.0000000000000004
+        },
+        {
+            "PROD": "Jet Fuel",
+            "storage_Cost": 6.999999999999991
+        },
+        {
+            "PROD": "Lube Oil",
+            "storage_Cost": 4.000000000000002
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "storage_Cost": 3.0000000000000013
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "storage_Cost": 4.999999999999998
+        }
+    ],
+    "storage_Waste": [
+        {
+            "PROD": "Fuel Oil",
+            "storage_Waste": 1.0
+        },
+        {
+            "PROD": "Jet Fuel",
+            "storage_Waste": 1.0
+        },
+        {
+            "PROD": "Lube Oil",
+            "storage_Waste": 1.0
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "storage_Waste": 1.2
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "storage_Waste": 2.0000000000000004
+        }
+    ],
+    "delivery_Cost": [
+        {
+            "PROD": "Fuel Oil",
+            "Stations": "Station1",
+            "delivery_Cost": 2.0000000000000004
+        },
+        {
+            "PROD": "Jet Fuel",
+            "Stations": "Station1",
+            "delivery_Cost": 3.0000000000000013
+        },
+        {
+            "PROD": "Lube Oil",
+            "Stations": "Station1",
+            "delivery_Cost": 4.000000000000002
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "Stations": "Station1",
+            "delivery_Cost": 2.0000000000000004
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "Stations": "Station1",
+            "delivery_Cost": 2.0000000000000004
+        }
+    ],
+    "plant_Const_Cost": [
+        {
+            "plant_Const_Cost": 150000
+        }
+    ],
+    "plant_Shutdown_Period": [
+        {
+            "plant_Shutdown_Period": 1
+        }
+    ],
+    "plant_Shutdown_Cost": [
+        {
+            "plant_Shutdown_Cost": 100000
+        }
+    ],
+    "initial_Cash": [
+        {
+            "initial_Cash": 2000000
+        }
+    ],
+    "discount_Rate": [
+        {
+            "discount_Rate": 4.999999999999998
+        }
+    ],
+    "LOAN_param": [
+        {
+            "LOAN_param": "interest"
+        },
+        {
+            "LOAN_param": "Max_Money"
+        },
+        {
+            "LOAN_param": "Term"
+        }
+    ],
+    "LOANS": [
+        {
+            "LOANS": "I"
+        }
+    ],
+    "loan": [
+        {
+            "Name": "I",
+            "LOAN_param": "interest",
+            "loan": 6.499999999999993
+        },
+        {
+            "Name": "I",
+            "LOAN_param": "Max_Money",
+            "loan": 10000000.0
+        },
+        {
+            "Name": "I",
+            "LOAN_param": "Term",
+            "loan": 1.0
+        }
+    ],
+    "demand_nStep_Value": [
+        {
+            "nStep": 1,
+            "demand_nStep_Value": -20
+        },
+        {
+            "nStep": 2,
+            "demand_nStep_Value": -12
+        },
+        {
+            "nStep": 3,
+            "demand_nStep_Value": -5
+        },
+        {
+            "nStep": 4,
+            "demand_nStep_Value": 0
+        },
+        {
+            "nStep": 5,
+            "demand_nStep_Value": 2
+        },
+        {
+            "nStep": 6,
+            "demand_nStep_Value": 5
+        },
+        {
+            "nStep": 7,
+            "demand_nStep_Value": 9
+        }
+    ],
+    "seasonal_Base_Price": [
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 1,
+            "seasonal_Base_Price": 154
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 1,
+            "seasonal_Base_Price": 115
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 1,
+            "seasonal_Base_Price": 176
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 1,
+            "seasonal_Base_Price": 162
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 1,
+            "seasonal_Base_Price": 126
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 2,
+            "seasonal_Base_Price": 154
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 2,
+            "seasonal_Base_Price": 115
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 2,
+            "seasonal_Base_Price": 176
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 2,
+            "seasonal_Base_Price": 165
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 2,
+            "seasonal_Base_Price": 126
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 3,
+            "seasonal_Base_Price": 154
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 3,
+            "seasonal_Base_Price": 115
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 3,
+            "seasonal_Base_Price": 177
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 3,
+            "seasonal_Base_Price": 165
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 3,
+            "seasonal_Base_Price": 127
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 4,
+            "seasonal_Base_Price": 155
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 4,
+            "seasonal_Base_Price": 115
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 4,
+            "seasonal_Base_Price": 177
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 4,
+            "seasonal_Base_Price": 165
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 4,
+            "seasonal_Base_Price": 127
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 5,
+            "seasonal_Base_Price": 155
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 5,
+            "seasonal_Base_Price": 115
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 5,
+            "seasonal_Base_Price": 177
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 5,
+            "seasonal_Base_Price": 165
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 5,
+            "seasonal_Base_Price": 128
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 6,
+            "seasonal_Base_Price": 155
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 6,
+            "seasonal_Base_Price": 116
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 6,
+            "seasonal_Base_Price": 178
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 6,
+            "seasonal_Base_Price": 165
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 6,
+            "seasonal_Base_Price": 128
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 7,
+            "seasonal_Base_Price": 155
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 7,
+            "seasonal_Base_Price": 116
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 7,
+            "seasonal_Base_Price": 178
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 7,
+            "seasonal_Base_Price": 165
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 7,
+            "seasonal_Base_Price": 129
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 8,
+            "seasonal_Base_Price": 156
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 8,
+            "seasonal_Base_Price": 116
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 8,
+            "seasonal_Base_Price": 178
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 8,
+            "seasonal_Base_Price": 167
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 8,
+            "seasonal_Base_Price": 129
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 9,
+            "seasonal_Base_Price": 156
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 9,
+            "seasonal_Base_Price": 117
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 9,
+            "seasonal_Base_Price": 178
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 9,
+            "seasonal_Base_Price": 168
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 9,
+            "seasonal_Base_Price": 129
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 10,
+            "seasonal_Base_Price": 156
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 10,
+            "seasonal_Base_Price": 117
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 10,
+            "seasonal_Base_Price": 178
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 10,
+            "seasonal_Base_Price": 168
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 10,
+            "seasonal_Base_Price": 129
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 11,
+            "seasonal_Base_Price": 155
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 11,
+            "seasonal_Base_Price": 118
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 11,
+            "seasonal_Base_Price": 177
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 11,
+            "seasonal_Base_Price": 167
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 11,
+            "seasonal_Base_Price": 130
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 12,
+            "seasonal_Base_Price": 155
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 12,
+            "seasonal_Base_Price": 118
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 12,
+            "seasonal_Base_Price": 178
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 12,
+            "seasonal_Base_Price": 165
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 12,
+            "seasonal_Base_Price": 130
+        }
+    ],
+    "seasonal_Base_Demand": [
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 1,
+            "seasonal_Base_Demand": 4000
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 1,
+            "seasonal_Base_Demand": 7000
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 1,
+            "seasonal_Base_Demand": 500
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 1,
+            "seasonal_Base_Demand": 4500
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 1,
+            "seasonal_Base_Demand": 8500
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 2,
+            "seasonal_Base_Demand": 3800
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 2,
+            "seasonal_Base_Demand": 7000
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 2,
+            "seasonal_Base_Demand": 500
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 2,
+            "seasonal_Base_Demand": 4500
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 2,
+            "seasonal_Base_Demand": 8500
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 3,
+            "seasonal_Base_Demand": 3800
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 3,
+            "seasonal_Base_Demand": 7000
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 3,
+            "seasonal_Base_Demand": 700
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 3,
+            "seasonal_Base_Demand": 4500
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 3,
+            "seasonal_Base_Demand": 8500
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 4,
+            "seasonal_Base_Demand": 3800
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 4,
+            "seasonal_Base_Demand": 9000
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 4,
+            "seasonal_Base_Demand": 700
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 4,
+            "seasonal_Base_Demand": 4500
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 4,
+            "seasonal_Base_Demand": 8800
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 5,
+            "seasonal_Base_Demand": 2900
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 5,
+            "seasonal_Base_Demand": 12000
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 5,
+            "seasonal_Base_Demand": 700
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 5,
+            "seasonal_Base_Demand": 5000
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 5,
+            "seasonal_Base_Demand": 9200
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 6,
+            "seasonal_Base_Demand": 2500
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 6,
+            "seasonal_Base_Demand": 10000
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 6,
+            "seasonal_Base_Demand": 500
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 6,
+            "seasonal_Base_Demand": 7000
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 6,
+            "seasonal_Base_Demand": 13500
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 7,
+            "seasonal_Base_Demand": 2500
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 7,
+            "seasonal_Base_Demand": 9000
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 7,
+            "seasonal_Base_Demand": 400
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 7,
+            "seasonal_Base_Demand": 7500
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 7,
+            "seasonal_Base_Demand": 14000
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 8,
+            "seasonal_Base_Demand": 2800
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 8,
+            "seasonal_Base_Demand": 8000
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 8,
+            "seasonal_Base_Demand": 500
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 8,
+            "seasonal_Base_Demand": 7000
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 8,
+            "seasonal_Base_Demand": 13500
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 9,
+            "seasonal_Base_Demand": 3300
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 9,
+            "seasonal_Base_Demand": 8000
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 9,
+            "seasonal_Base_Demand": 600
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 9,
+            "seasonal_Base_Demand": 6000
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 9,
+            "seasonal_Base_Demand": 12000
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 10,
+            "seasonal_Base_Demand": 3400
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 10,
+            "seasonal_Base_Demand": 9000
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 10,
+            "seasonal_Base_Demand": 700
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 10,
+            "seasonal_Base_Demand": 5000
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 10,
+            "seasonal_Base_Demand": 10000
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 11,
+            "seasonal_Base_Demand": 3500
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 11,
+            "seasonal_Base_Demand": 7000
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 11,
+            "seasonal_Base_Demand": 700
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 11,
+            "seasonal_Base_Demand": 4500
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 11,
+            "seasonal_Base_Demand": 9000
+        },
+        {
+            "PROD": "Fuel Oil",
+            "nPeriod": 12,
+            "seasonal_Base_Demand": 3600
+        },
+        {
+            "PROD": "Jet Fuel",
+            "nPeriod": 12,
+            "seasonal_Base_Demand": 7000
+        },
+        {
+            "PROD": "Lube Oil",
+            "nPeriod": 12,
+            "seasonal_Base_Demand": 700
+        },
+        {
+            "PROD": "Premium Gasoline",
+            "nPeriod": 12,
+            "seasonal_Base_Demand": 5000
+        },
+        {
+            "PROD": "Regular Gasoline",
+            "nPeriod": 12,
+            "seasonal_Base_Demand": 10000
+        }
+    ],
+    "price_nStep_Value": [
+        {
+            "nStep": 1,
+            "price_nStep_Value": 6
+        },
+        {
+            "nStep": 2,
+            "price_nStep_Value": 4
+        },
+        {
+            "nStep": 3,
+            "price_nStep_Value": 2
+        },
+        {
+            "nStep": 4,
+            "price_nStep_Value": 0
+        },
+        {
+            "nStep": 5,
+            "price_nStep_Value": -2
+        },
+        {
+            "nStep": 6,
+            "price_nStep_Value": -4
+        },
+        {
+            "nStep": 7,
+            "price_nStep_Value": -6
+        }
+    ]
+}
