@@ -24,7 +24,7 @@ Tags
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
-    cbc (4 notebooks) <cbc>
+    cbc (3 notebooks) <cbc>
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
@@ -36,10 +36,13 @@ Tags
     cpmp (1 notebook) <cpmp>
     cutting-stock (1 notebook) <cutting-stock>
     dantzig-wolfe-decomposition (2 notebooks) <dantzig-wolfe-decomposition>
+    data-analysis (1 notebook) <data-analysis>
+    data-science (1 notebook) <data-science>
     data-structures (1 notebook) <data-structures>
     debug (1 notebook) <debug>
+    decision-making (1 notebook) <decision-making>
     decomposition (3 notebooks) <decomposition>
-    deterministic-model (3 notebooks) <deterministic-model>
+    deterministic-model (2 notebooks) <deterministic-model>
     disjunctive-programming (1 notebook) <disjunctive-programming>
     educational (4 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
@@ -47,7 +50,7 @@ Tags
     energy (2 notebooks) <energy>
     engineering (2 notebooks) <engineering>
     example (7 notebooks) <example>
-    excel (1 notebook) <excel>
+    excel (2 notebooks) <excel>
     exponential-cone (1 notebook) <exponential-cone>
     facility-location (7 notebooks) <facility-location>
     finance (4 notebooks) <finance>
@@ -64,13 +67,14 @@ Tags
     gurobi (2 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (11 notebooks) <highlights>
-    highs (3 notebooks) <highs>
+    highs (6 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
-    industry (5 notebooks) <industry>
+    industry (8 notebooks) <industry>
     infeasibility (1 notebook) <infeasibility>
     introduction (4 notebooks) <introduction>
     ipopt (1 notebook) <ipopt>
+    json (1 notebook) <json>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
     lexicographic-optimization (1 notebook) <lexicographic-optimization>
@@ -83,7 +87,7 @@ Tags
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
-    mip (18 notebooks) <mip>
+    mip (20 notebooks) <mip>
     mixed-integer-linear (2 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (2 notebooks) <mp>
@@ -95,31 +99,32 @@ Tags
     non-linear (1 notebook) <non-linear>
     nonlinear (2 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
-    oil-production (1 notebook) <oil-production>
+    oil-production (3 notebooks) <oil-production>
     optimization (1 notebook) <optimization>
     organ-exchange (1 notebook) <organ-exchange>
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
     parallel-solves (1 notebook) <parallel-solves>
-    piecewise-linear (2 notebooks) <piecewise-linear>
+    piecewise-linear (1 notebook) <piecewise-linear>
     planning (1 notebook) <planning>
     power-generation (3 notebooks) <power-generation>
+    powerbi (1 notebook) <powerbi>
     preferential-bidding-system (1 notebook) <preferential-bidding-system>
     pricing (1 notebook) <pricing>
-    production-optimization (1 notebook) <production-optimization>
-    profitability (1 notebook) <profitability>
+    production-optimization (3 notebooks) <production-optimization>
+    profitability (3 notebooks) <profitability>
     puzzles (1 notebook) <puzzles>
     python (1 notebook) <python>
     quadratic (1 notebook) <quadratic>
     quadratic-cone (2 notebooks) <quadratic-cone>
     quick-start (2 notebooks) <quick-start>
-    refinery (1 notebook) <refinery>
+    refinery (3 notebooks) <refinery>
     regression (1 notebook) <regression>
     regularization (1 notebook) <regularization>
     reinforced-formulations (1 notebook) <reinforced-formulations>
     risk-measures (1 notebook) <risk-measures>
     sample-average-approximation (1 notebook) <sample-average-approximation>
-    scheduling (4 notebooks) <scheduling>
+    scheduling (5 notebooks) <scheduling>
     second-order-cone (2 notebooks) <second-order-cone>
     seniority-constraints (1 notebook) <seniority-constraints>
     seniority-ranking (1 notebook) <seniority-ranking>
@@ -130,7 +135,7 @@ Tags
     simple (1 notebook) <simple>
     softplus (1 notebook) <softplus>
     solution-check (1 notebook) <solution-check>
-    spreadsheet (1 notebook) <spreadsheet>
+    spreadsheet (2 notebooks) <spreadsheet>
     state-task-networks (1 notebook) <state-task-networks>
     stochastic (5 notebooks) <stochastic>
     stochastic-optimization (1 notebook) <stochastic-optimization>
