@@ -10,7 +10,7 @@ Tags
     ampl (14 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
-    ampl-only (20 notebooks) <ampl-only>
+    ampl-only (21 notebooks) <ampl-only>
     amplpy (44 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
@@ -24,7 +24,7 @@ Tags
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
-    cbc (3 notebooks) <cbc>
+    cbc (4 notebooks) <cbc>
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
@@ -82,12 +82,12 @@ Tags
     log-sum-exp (1 notebook) <log-sum-exp>
     lp (1 notebook) <lp>
     machine-learning (1 notebook) <machine-learning>
-    marketing (2 notebooks) <marketing>
+    marketing (3 notebooks) <marketing>
     max-flow (1 notebook) <max-flow>
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
-    mip (22 notebooks) <mip>
+    mip (23 notebooks) <mip>
     mixed-integer-linear (4 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (4 notebooks) <mp>
@@ -107,14 +107,15 @@ Tags
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
     parallel-solves (1 notebook) <parallel-solves>
-    piecewise-linear (1 notebook) <piecewise-linear>
+    piecewise-linear (2 notebooks) <piecewise-linear>
     planning (1 notebook) <planning>
     power-generation (3 notebooks) <power-generation>
     powerbi (1 notebook) <powerbi>
     preferential-bidding-system (1 notebook) <preferential-bidding-system>
+    price-optimization (1 notebook) <price-optimization>
     pricing (1 notebook) <pricing>
     production-optimization (3 notebooks) <production-optimization>
-    profitability (3 notebooks) <profitability>
+    profitability (4 notebooks) <profitability>
     puzzles (1 notebook) <puzzles>
     python (1 notebook) <python>
     quadratic (1 notebook) <quadratic>
@@ -124,6 +125,7 @@ Tags
     regression (1 notebook) <regression>
     regularization (1 notebook) <regularization>
     reinforced-formulations (1 notebook) <reinforced-formulations>
+    residential-developer (1 notebook) <residential-developer>
     risk-measures (1 notebook) <risk-measures>
     sample-average-approximation (1 notebook) <sample-average-approximation>
     scheduling (6 notebooks) <scheduling>
