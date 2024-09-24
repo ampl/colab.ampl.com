@@ -52,7 +52,7 @@ Tags
     example (7 notebooks) <example>
     excel (2 notebooks) <excel>
     exponential-cone (1 notebook) <exponential-cone>
-    facility-location (7 notebooks) <facility-location>
+    facility-location (9 notebooks) <facility-location>
     finance (4 notebooks) <finance>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
@@ -62,12 +62,12 @@ Tags
     geothermal-energy (1 notebook) <geothermal-energy>
     global-optimization (1 notebook) <global-optimization>
     google-sheets (2 notebooks) <google-sheets>
-    graphs (3 notebooks) <graphs>
+    graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
     gurobi (2 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (11 notebooks) <highlights>
-    highs (6 notebooks) <highs>
+    highs (8 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
     industry (8 notebooks) <industry>
@@ -87,14 +87,16 @@ Tags
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
-    mip (20 notebooks) <mip>
-    mixed-integer-linear (2 notebooks) <mixed-integer-linear>
+    mip (22 notebooks) <mip>
+    mixed-integer-linear (4 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
-    mp (2 notebooks) <mp>
+    mp (4 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
+    multi-objective (1 notebook) <multi-objective>
     multiple-objectives (1 notebook) <multiple-objectives>
     multiprocess (1 notebook) <multiprocess>
-    network (1 notebook) <network>
+    network (2 notebooks) <network>
+    networkx (1 notebook) <networkx>
     non-continuous-objective (1 notebook) <non-continuous-objective>
     non-linear (1 notebook) <non-linear>
     nonlinear (2 notebooks) <nonlinear>
@@ -124,7 +126,7 @@ Tags
     reinforced-formulations (1 notebook) <reinforced-formulations>
     risk-measures (1 notebook) <risk-measures>
     sample-average-approximation (1 notebook) <sample-average-approximation>
-    scheduling (5 notebooks) <scheduling>
+    scheduling (6 notebooks) <scheduling>
     second-order-cone (2 notebooks) <second-order-cone>
     seniority-constraints (1 notebook) <seniority-constraints>
     seniority-ranking (1 notebook) <seniority-ranking>
@@ -141,10 +143,10 @@ Tags
     stochastic-optimization (1 notebook) <stochastic-optimization>
     stochastic-programming (1 notebook) <stochastic-programming>
     strict-comparison (1 notebook) <strict-comparison>
-    supply_chain (1 notebook) <supply_chain>
+    supply_chain (2 notebooks) <supply_chain>
     template (1 notebook) <template>
     trainee-scheduling (1 notebook) <trainee-scheduling>
-    transportation (1 notebook) <transportation>
+    transportation (3 notebooks) <transportation>
     tsp (1 notebook) <tsp>
     unconstrained (1 notebook) <unconstrained>
     unit-commitment (1 notebook) <unit-commitment>
