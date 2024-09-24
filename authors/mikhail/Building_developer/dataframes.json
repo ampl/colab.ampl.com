@@ -1,0 +1,565 @@
+{
+    "Account": [
+        {
+            "Account.val": 211550.53750000033
+        },
+        {
+            "Account.val": 2346865.99429325
+        }
+    ],
+    "Accrued_Interest": [
+        {
+            "Accrued_Interest.val": 2475.0
+        },
+        {
+            "Accrued_Interest.val": 1450.0
+        },
+        {
+            "Accrued_Interest.val": 5499.560000000001
+        },
+        {
+            "Accrued_Interest.val": 3681.382318094425
+        },
+        {
+            "Accrued_Interest.val": 3922.693967143806
+        },
+        {
+            "Accrued_Interest.val": 3966.8242742741736
+        },
+        {
+            "Accrued_Interest.val": 127857.12174411319
+        },
+        {
+            "Accrued_Interest.val": 5332.081499999954
+        },
+        {
+            "Accrued_Interest.val": 5392.067416874953
+        },
+        {
+            "Accrued_Interest.val": 146679.12464332813
+        },
+        {
+            "Accrued_Interest.val": 39.56659696173264
+        },
+        {
+            "Accrued_Interest.val": 4233.811836751415
+        },
+        {
+            "Accrued_Interest.val": 4281.442219914869
+        },
+        {
+            "Accrued_Interest.val": 0.4886480200383615
+        },
+        {
+            "Accrued_Interest.val": 200.1604708792923
+        },
+        {
+            "Accrued_Interest.val": 3105.8873408769405
+        },
+        {
+            "Accrued_Interest.val": 1192.9985133309397
+        },
+        {
+            "Accrued_Interest.val": 11502.58558859763
+        }
+    ],
+    "AdDemand": [
+        {
+            "AdDemand.val": 224.0000000000017
+        },
+        {
+            "AdDemand.val": 420.0
+        },
+        {
+            "AdDemand.val": 432.0000000000001
+        },
+        {
+            "AdDemand.val": 432.0000000000002
+        },
+        {
+            "AdDemand.val": 440.0000000000002
+        },
+        {
+            "AdDemand.val": 577.5000000000001
+        },
+        {
+            "AdDemand.val": 577.5
+        },
+        {
+            "AdDemand.val": 107.99999999999923
+        },
+        {
+            "AdDemand.val": 806.3999999999994
+        },
+        {
+            "AdDemand.val": 238.08000000000058
+        },
+        {
+            "AdDemand.val": 672.0000000000002
+        }
+    ],
+    "AdSpent": [
+        {
+            "AdSpent.val": 11970.37037037046
+        },
+        {
+            "AdSpent.val": 23111.11111111111
+        },
+        {
+            "AdSpent.val": 23777.77777777778
+        },
+        {
+            "AdSpent.val": 24444.44444444446
+        },
+        {
+            "AdSpent.val": 25111.11111111112
+        },
+        {
+            "AdSpent.val": 33206.25000000001
+        },
+        {
+            "AdSpent.val": 34289.0625
+        },
+        {
+            "AdSpent.val": 7037.234042553142
+        },
+        {
+            "AdSpent.val": 59999.99999999996
+        },
+        {
+            "AdSpent.val": 21937.37142857148
+        },
+        {
+            "AdSpent.val": 62880.00000000002
+        }
+    ],
+    "DepositAmt": [
+        {
+            "DepositAmt.val": 247500.0
+        },
+        {
+            "DepositAmt.val": 145000.0
+        },
+        {
+            "DepositAmt.val": 549956.0000000001
+        },
+        {
+            "DepositAmt.val": 368138.2318094425
+        },
+        {
+            "DepositAmt.val": 348683.9081905605
+        },
+        {
+            "DepositAmt.val": 473962.7999999959
+        },
+        {
+            "DepositAmt.val": 3956.659696173264
+        },
+        {
+            "DepositAmt.val": 376338.8299334592
+        },
+        {
+            "DepositAmt.val": 167.5364640131525
+        },
+        {
+            "DepositAmt.val": 68626.4471586145
+        },
+        {
+            "DepositAmt.val": 310588.734087694
+        },
+        {
+            "DepositAmt.val": 409028.061713465
+        },
+        {
+            "DepositAmt.val": 1150258.558859763
+        }
+    ],
+    "DepositClose": [
+        {
+            "DepositClose.val": 249975.0
+        },
+        {
+            "DepositClose.val": 146450.0
+        },
+        {
+            "DepositClose.val": 555455.5600000002
+        },
+        {
+            "DepositClose.val": 371819.61412753694
+        },
+        {
+            "DepositClose.val": 353141.06921072764
+        },
+        {
+            "DepositClose.val": 2173571.069649924
+        },
+        {
+            "DepositClose.val": 480021.3776043709
+        },
+        {
+            "DepositClose.val": 2346865.99429325
+        },
+        {
+            "DepositClose.val": 3996.2262931349965
+        },
+        {
+            "DepositClose.val": 381149.49863296794
+        },
+        {
+            "DepositClose.val": 168.02511203319088
+        },
+        {
+            "DepositClose.val": 68826.60762949378
+        },
+        {
+            "DepositClose.val": 313694.62142857094
+        },
+        {
+            "DepositClose.val": 410221.06022679596
+        },
+        {
+            "DepositClose.val": 1161761.1444483607
+        }
+    ],
+    "IsDepositOpen": [],
+    "Monthly_Profit_From_Sales": [
+        {
+            "Monthly_Profit_From_Sales.val": 247499.99999999997
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 247499.99999999997
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 253000.0000000001
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 370618.5
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 378504.0
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 390505.5
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 557999.7500000008
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 676494.0
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 715910.25
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 735982.5
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 770066.7500000001
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 276507.0
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 291891.60000000015
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 299376.00000000006
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 316354.5
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 357588.0
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 308385.0
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 584430.0
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 603487.5
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 372115.7999999996
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 435456.0
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 409328.64000000013
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 416908.8000000001
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 429004.8
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 482630.39999999997
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 491097.60000000003
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 513838.08000000013
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 526901.7600000001
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 545529.6000000001
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 1108799.9999999995
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 512063.9999999998
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 673689.6000000003
+        },
+        {
+            "Monthly_Profit_From_Sales.val": 968352.0
+        }
+    ],
+    "ReplenishAmt": [
+        {
+            "ReplenishAmt.val": 2045713.947905811
+        },
+        {
+            "ReplenishAmt.val": 2200186.869649922
+        }
+    ],
+    "SaleDec": [
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 0.9999999999999999
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 0.9999999999999999
+        },
+        {
+            "SaleDec.val": 0.9999999999999999
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 0.9999999999999999
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 0.9999999999999999
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 0.9999999999999999
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 1.0
+        },
+        {
+            "SaleDec.val": 0.9999999999999999
+        },
+        {
+            "SaleDec.val": 1.0
+        }
+    ],
+    "SqmSold": [
+        {
+            "SqmSold.val": 499.9999999999999
+        },
+        {
+            "SqmSold.val": 499.9999999999999
+        },
+        {
+            "SqmSold.val": 500.0000000000001
+        },
+        {
+            "SqmSold.val": 752.0
+        },
+        {
+            "SqmSold.val": 752.0
+        },
+        {
+            "SqmSold.val": 760.0
+        },
+        {
+            "SqmSold.val": 840.0
+        },
+        {
+            "SqmSold.val": 840.0
+        },
+        {
+            "SqmSold.val": 863.9999999999999
+        },
+        {
+            "SqmSold.val": 863.9999999999999
+        },
+        {
+            "SqmSold.val": 880.0
+        },
+        {
+            "SqmSold.val": 693.0
+        },
+        {
+            "SqmSold.val": 712.8000000000003
+        },
+        {
+            "SqmSold.val": 712.8000000000002
+        },
+        {
+            "SqmSold.val": 726.0
+        },
+        {
+            "SqmSold.val": 792.0
+        },
+        {
+            "SqmSold.val": 660.0
+        },
+        {
+            "SqmSold.val": 660.0
+        },
+        {
+            "SqmSold.val": 660.0000000000001
+        },
+        {
+            "SqmSold.val": 620.4
+        },
+        {
+            "SqmSold.val": 768.0
+        },
+        {
+            "SqmSold.val": 721.9200000000003
+        },
+        {
+            "SqmSold.val": 721.9200000000002
+        },
+        {
+            "SqmSold.val": 729.6
+        },
+        {
+            "SqmSold.val": 806.4
+        },
+        {
+            "SqmSold.val": 806.4000000000001
+        },
+        {
+            "SqmSold.val": 829.4400000000002
+        },
+        {
+            "SqmSold.val": 829.4400000000002
+        },
+        {
+            "SqmSold.val": 844.8000000000002
+        },
+        {
+            "SqmSold.val": 921.6000000000001
+        },
+        {
+            "SqmSold.val": 767.9999999999998
+        },
+        {
+            "SqmSold.val": 768.0
+        },
+        {
+            "SqmSold.val": 767.9999999999999
+        }
+    ],
+    "WithdrawalAmt": [
+        {
+            "WithdrawalAmt.val": 1961.346983571903
+        },
+        {
+            "WithdrawalAmt.val": 980.6734917859513
+        },
+        {
+            "WithdrawalAmt.val": 490.3367458929758
+        },
+        {
+            "WithdrawalAmt.val": 2666.040749999977
+        },
+        {
+            "WithdrawalAmt.val": 1333.020374999989
+        },
+        {
+            "WithdrawalAmt.val": 666.5101874999943
+        },
+        {
+            "WithdrawalAmt.val": 2116.905918375709
+        },
+        {
+            "WithdrawalAmt.val": 1058.452959187854
+        },
+        {
+            "WithdrawalAmt.val": 529.2264795939271
+        }
+    ]
+}
