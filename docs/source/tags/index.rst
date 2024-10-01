@@ -65,10 +65,10 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (2 notebooks) <gurobi>
+    gurobi (3 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (11 notebooks) <highlights>
-    highs (8 notebooks) <highs>
+    highs (9 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
     industry (8 notebooks) <industry>
