@@ -11,7 +11,7 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (21 notebooks) <ampl-only>
-    amplpy (44 notebooks) <amplpy>
+    amplpy (45 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -24,7 +24,7 @@ Tags
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
-    cbc (4 notebooks) <cbc>
+    cbc (5 notebooks) <cbc>
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
@@ -37,6 +37,7 @@ Tags
     cutting-stock (1 notebook) <cutting-stock>
     dantzig-wolfe-decomposition (2 notebooks) <dantzig-wolfe-decomposition>
     data-analysis (1 notebook) <data-analysis>
+    data-driven-model (1 notebook) <data-driven-model>
     data-science (1 notebook) <data-science>
     data-structures (1 notebook) <data-structures>
     debug (1 notebook) <debug>
@@ -87,7 +88,7 @@ Tags
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
-    mip (23 notebooks) <mip>
+    mip (24 notebooks) <mip>
     mixed-integer-linear (4 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (4 notebooks) <mp>
@@ -128,7 +129,7 @@ Tags
     residential-developer (1 notebook) <residential-developer>
     risk-measures (1 notebook) <risk-measures>
     sample-average-approximation (1 notebook) <sample-average-approximation>
-    scheduling (6 notebooks) <scheduling>
+    scheduling (7 notebooks) <scheduling>
     second-order-cone (2 notebooks) <second-order-cone>
     seniority-constraints (1 notebook) <seniority-constraints>
     seniority-ranking (1 notebook) <seniority-ranking>
