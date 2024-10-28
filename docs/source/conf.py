@@ -28,7 +28,7 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.autodoc",
     "sphinx_reredirects",
-    # "sphinxcontrib.googleanalytics",
+    "sphinxcontrib.googleanalytics",
 ]
 myst_enable_extensions = ["colon_fence", "dollarmath", "amsmath"]
 nb_execution_mode = "off"
@@ -103,12 +103,6 @@ html_theme_options = {
             "name": "GitHub",
             "url": "https://github.com/ampl/colab.ampl.com",
             "icon": "fab fa-github fa-fw",
-        },
-        {
-            "name": "AMPL Resources",
-            "url": "https://developers.ampl.com",
-            "icon": "fas fa-book fa-fw",
-            "target": "_self",
         },
     ],
     "collapse_navigation": True,
