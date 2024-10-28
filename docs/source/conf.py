@@ -30,7 +30,7 @@ extensions = [
     "sphinx_reredirects",
     "sphinxcontrib.googleanalytics",
 ]
-myst_enable_extensions = ["colon_fence"]
+myst_enable_extensions = ["colon_fence","dollarmath", "amsmath"]
 nb_execution_mode = "off"
 googleanalytics_id = "G-X32S87LSVZ"
 
