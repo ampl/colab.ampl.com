@@ -110,6 +110,7 @@ html_theme_options = {
     #     {"name": "ampl.github.io", "url": "https://ampl.github.io"},
     # ],
     "logo_text": "Colaboratory",
+    "header_links_before_dropdown": 7,
 }
 html_context = {"default_mode": "light"}
 
