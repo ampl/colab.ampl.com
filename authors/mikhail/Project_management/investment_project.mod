@@ -9,8 +9,8 @@ set DEP_TYPE =                                  # Types of task dependencies
 set LINKS within{DEP,DEP_TYPE} ;                # Task dependencies with sequence types
 
 ### PARAMETERS ###
-param T := 70 * 30;                             # Total project duration in days (36 months * 30 days)
-param penalty_rate := 0.001;                    # Penalty rate per day of delay (0.1% per day)
+param T;                                        # Total project duration in days (36 months * 30 days)
+param penalty_rate;                             # Penalty rate per day of delay (0.1% per day)
 
 param cost {1..nTASK} >= 0 ;                    # Cost of each task
 param base_duration {1..nTASK} >= 0 ;           # Scheduled duration (in days) for each task
@@ -19,10 +19,9 @@ param lag {LINKS} integer;                      # Lag time between tasks (in day
 param accel_cost {1..nTASK}  >= 0 ;             # Additional cost per day to reduce duration of each task
 param max_reduction {1..nTASK} >= 0 ;           # Max days each task can be expedited
 param risk_base {1..nTASK} >= 0 ;               # Base risk factor (0-1 scale) for each task
-param max_risk = 0.3 ;                          # Maximum allowable risk increase
+param max_risk;                                 # Maximum allowable risk increase
 
-param permanent_cost := 15000;                  # Permanent cost per month (150K per month)
-param M = T + 1;                                # Large constant for dependency linearization
+param permanent_cost;                           # Permanent cost per month (150K per month)
 
 ### VARIABLES ###
 var Reduction {i in 1..nTASK} integer >= 0, <= max_reduction[i];  # Days by which each task duration is reduced
