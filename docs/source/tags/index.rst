@@ -7,7 +7,7 @@ Tags
 
     advertisement (2 notebooks) <advertisement>
     aircrew-scheduling (1 notebook) <aircrew-scheduling>
-    ampl (14 notebooks) <ampl>
+    ampl (16 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (21 notebooks) <ampl-only>
@@ -24,17 +24,20 @@ Tags
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
-    cbc (5 notebooks) <cbc>
+    cbc (7 notebooks) <cbc>
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
     complementarity-problem (1 notebook) <complementarity-problem>
     complexity (1 notebook) <complexity>
+    concrete-production (1 notebook) <concrete-production>
     conic (3 notebooks) <conic>
     constraint-programming (5 notebooks) <constraint-programming>
+    construction-management (1 notebook) <construction-management>
     convexity (1 notebook) <convexity>
+    conveyor-based-manufacturing (1 notebook) <conveyor-based-manufacturing>
     cpmp (1 notebook) <cpmp>
-    cutting-stock (1 notebook) <cutting-stock>
+    cutting-stock (2 notebooks) <cutting-stock>
     dantzig-wolfe-decomposition (2 notebooks) <dantzig-wolfe-decomposition>
     data-analysis (1 notebook) <data-analysis>
     data-driven-model (1 notebook) <data-driven-model>
@@ -42,7 +45,7 @@ Tags
     data-structures (1 notebook) <data-structures>
     debug (1 notebook) <debug>
     decision-making (1 notebook) <decision-making>
-    decomposition (3 notebooks) <decomposition>
+    decomposition (4 notebooks) <decomposition>
     deterministic-model (2 notebooks) <deterministic-model>
     disjunctive-programming (1 notebook) <disjunctive-programming>
     educational (4 notebooks) <educational>
@@ -61,6 +64,7 @@ Tags
     gecode (1 notebook) <gecode>
     geometry (1 notebook) <geometry>
     geothermal-energy (1 notebook) <geothermal-energy>
+    gilmore-gomory (1 notebook) <gilmore-gomory>
     global-optimization (1 notebook) <global-optimization>
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
@@ -71,7 +75,7 @@ Tags
     highs (9 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
-    industry (8 notebooks) <industry>
+    industry (9 notebooks) <industry>
     infeasibility (1 notebook) <infeasibility>
     introduction (4 notebooks) <introduction>
     ipopt (1 notebook) <ipopt>
@@ -88,7 +92,7 @@ Tags
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
-    mip (24 notebooks) <mip>
+    mip (26 notebooks) <mip>
     mixed-integer-linear (4 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (4 notebooks) <mp>
@@ -117,6 +121,7 @@ Tags
     pricing (1 notebook) <pricing>
     production-optimization (3 notebooks) <production-optimization>
     profitability (4 notebooks) <profitability>
+    project-management (1 notebook) <project-management>
     puzzles (1 notebook) <puzzles>
     python (1 notebook) <python>
     quadratic (1 notebook) <quadratic>
@@ -127,9 +132,10 @@ Tags
     regularization (1 notebook) <regularization>
     reinforced-formulations (1 notebook) <reinforced-formulations>
     residential-developer (1 notebook) <residential-developer>
+    risk-management (1 notebook) <risk-management>
     risk-measures (1 notebook) <risk-measures>
     sample-average-approximation (1 notebook) <sample-average-approximation>
-    scheduling (7 notebooks) <scheduling>
+    scheduling (8 notebooks) <scheduling>
     second-order-cone (2 notebooks) <second-order-cone>
     seniority-constraints (1 notebook) <seniority-constraints>
     seniority-ranking (1 notebook) <seniority-ranking>
