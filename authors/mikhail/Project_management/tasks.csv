@@ -1,0 +1,60 @@
+﻿N,Task,Duration,Cost,ExtraMoney,MaxDays,Risk,Predecessors,Addiction,Days
+1,Development of Pre-investment Documentation,60,50000,599,25,0.12,,,0
+2,Determination of Optimal Plant Locations,21,30000,1407,5,0.05,1,End-End,0
+3,Approval of Pre-investment Project,60,38000,68,8,0.08,1,End-Begin,0
+4,Development & Approval of Architectural Concepts,60,60000,904,22,0.18,3,End-End,0
+5,Development of House Projects,90,44000,638,40,0.15,4,End-Begin,0
+6,Coordination with Organizations,30,20000,660,10,0.10,5,End-Begin,0
+7,Development of Product Drawings,120,35000,22,50,0.13,6,End-Begin,0
+8,Selecting Engineering Organization,42,8000,110,15,0.07,3,End-Begin,0
+9,Agreement with Engineering Org,15,5000,499,3,0.05,8,End-Begin,0
+10,Identification of Sites,60,22000,332,10,0.06,9,End-Begin,0
+11,Allocation and Registration of Land,30,67500,1531,20,0.05,10,End-Begin,0
+12,Development of Design Specifications,9,12000,632,2,0.08,11,End-Begin,0
+13,Selection of Construction Contractor,45,14400,57,12,0.12,11,End-Begin,0
+14,Conclusion of Contract,15,800,27,3,0.10,13,End-Begin,0
+15,Agreement for Author's Supervision,3,30000,9651,1,0.04,14,End-Begin,0
+16,Agreement for Technical Supervision,3,30000,12088,1,0.04,15,End-Begin,0
+17,Geological Research,90,80000,504,10,0.20,7,End-Begin,0
+17,Geological Research,90,80000,504,10,0.20,16,End-Begin,0
+18,Development of Project Technological Sections,60,24500,638,4,0.12,17,End-Begin,0
+18,Development of Project Technological Sections,60,24500,638,4,0.12,16,End-Begin,22
+19,Development of Construction Part of Project,150,36800,63,25,0.18,18,End-Begin,0
+19,Development of Construction Part of Project,150,36800,63,25,0.18,17,Begin-Begin,0
+20,Project Approval,30,8000,30,9,0.09,19,End-Begin,0
+21,Certification of Specialists,60,8000,118,12,0.08,20,End-Begin,0
+22,Obtaining Construction Permit,3,4000,287,1,0.05,1,Begin-Begin,0
+23,Main Construction & Installation Works,540,1000000,1736,100,0.25,22,Begin-Begin,0
+24,Purchase of Technological Equipment,180,1500000,2480,30,0.20,23,End-End,0
+25,Installation of Internal Engineering Systems,90,200000,1026,18,0.18,24,Begin-Begin,30
+26,Installation of Technological Equipment,120,500000,3922,23,0.22,24,Begin-Begin,60
+27,Commissioning Works,30,150000,4359,14,0.10,26,End-Begin,0
+28,Commissioning of Production Workshops,15,80000,8090,3,0.08,27,End-Begin,0
+29,Formation of Plant Structure,60,30000,13,20,0.06,26,End-Begin,0
+30,Staff Training,120,120000,1714,22,0.05,24,End-Begin,-30
+30,Staff Training,120,120000,1714,22,0.05,29,End-End,0
+31,Achievement of Design Capacity,180,500000,3516,30,0.10,28,End-Begin,0
+31,Achievement of Design Capacity,180,500000,3516,30,0.10,29,End-End,0
+32,Registration of rights to land plots,30,30000,241,7,0.20,11,End-Begin,15
+32,Registration of rights to land plots,30,30000,241,7,0.20,31,End-Begin,0
+33,Geological Surveys,90,120000,444,10,0.12,32,End-Begin,0
+34,Design of Main Utility Networks,360,250000,661,25,0.15,33,End-Begin,0
+35,Design of Residential Buildings,150,150000,986,29,0.12,34,End-Begin,0
+36,Design of Residential Buildings,150,150000,986,29,0.12,6,End-Begin,0
+36,Approval of Design Documentation (Construction),30,70000,1543,8,0.07,34,End-Begin,0
+37,Approval of Design Documentation (Residential),30,70000,145,5,0.07,35,End-Begin,0
+38,"Preparation of Design Documentation (70,000 m²)",180,200000,519,47,0.10,36,End-Begin,0
+39,Removal of Utility Networks,30,50000,150,10,0.04,37,End-Begin,0
+40,Vertical Planning Earthworks,30,30000,467,4,0.04,37,End-Begin,0
+41,Surface & Ground Water Drainage,14,25000,3187,4,0.05,40,End-Begin,0
+42,Construction of Temporary Buildings,12,50000,2424,4,0.07,40,End-Begin,0
+43,Main Utility Networks Construction,300,700000,1799,45,0.25,42,End-Begin,0
+44,Deep-Seated Intra-Block Utility Networks,30,100000,561,3,0.10,43,End-Begin,10
+45,Shallow Intra-Block Utility Networks,60,150000,4695,12,0.12,44,End-Begin,0
+46,Commissioning of Infrastructure,1,20000,3343,0,0.03,43,End-Begin,0
+47,Construction of Residential Buildings (Stage I),330,500000,1327,48,0.20,44,End-Begin,0
+47,Construction of Residential Buildings (Stage I),330,500000,1327,48,0.20,28,End-Begin,14
+48,Construction of Residential Buildings (Stage II),330,500000,1394,47,0.20,44,End-Begin,60
+49,Construction of Residential Buildings (Stage III),330,500000,1697,22,0.20,44,End-Begin,120
+50,Construction of Residential Buildings (Stage IV),330,500000,1484,45,0.20,44,End-Begin,180
+51,Construction of Residential Buildings (Stage V),330,500000,1400,101,0.20,44,End-Begin,240
