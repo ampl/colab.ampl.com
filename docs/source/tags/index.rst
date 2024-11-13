@@ -7,11 +7,11 @@ Tags
 
     advertisement (2 notebooks) <advertisement>
     aircrew-scheduling (1 notebook) <aircrew-scheduling>
-    ampl (16 notebooks) <ampl>
+    ampl (21 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (21 notebooks) <ampl-only>
-    amplpy (45 notebooks) <amplpy>
+    amplpy (50 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -107,6 +107,7 @@ Tags
     nonlinear (2 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
     oil-production (3 notebooks) <oil-production>
+    optimal-power-flow (5 notebooks) <optimal-power-flow>
     optimization (1 notebook) <optimization>
     organ-exchange (1 notebook) <organ-exchange>
     pandas (1 notebook) <pandas>
@@ -123,7 +124,7 @@ Tags
     profitability (4 notebooks) <profitability>
     project-management (1 notebook) <project-management>
     puzzles (1 notebook) <puzzles>
-    python (1 notebook) <python>
+    python (6 notebooks) <python>
     quadratic (1 notebook) <quadratic>
     quadratic-cone (2 notebooks) <quadratic-cone>
     quick-start (2 notebooks) <quick-start>
