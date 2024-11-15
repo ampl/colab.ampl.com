@@ -3,7 +3,7 @@ reset;
 ### SETS ###
 param nTASK >= 0 ;                              # Number of project work tasks
 set DEP within                                  # Dependencies between tasks
-    {i in 1..nTASK, j in 1..nTASK: i>j};  
+    {i in 1..nTASK, j in 1..nTASK: i>j};
 set DEP_TYPE =                                  # Types of task dependencies
     {'End-End', 'End-Begin', 'Begin-Begin', 'Begin-End'};
 set LINKS within{DEP,DEP_TYPE} ;                # Task dependencies with sequence types
@@ -37,13 +37,13 @@ var TotalCompletionTime >= 0, <= T;             # Maximum completion time across
 # Maximize project profit by minimizing penalty and acceleration costs
 minimize Project_Cost:
     sum {i in 1..nTASK} (cost[i] + Penalty[i] + accel_cost[i] * Reduction[i])
-    + permanent_cost * (TotalCompletionTime / 30) 
+    + permanent_cost * (TotalCompletionTime / 30)
     + sum {i in 1..nTASK} RiskReduction[i] ;
 
 ### CONSTRAINTS ###
 # 1. Start time of the first task is set to 1 (project begins with task 1)
 s.t. Start_N1_At_Zero:
-    Start[1] = 1; 
+    Start[1] = 1;
 
 # 2. Calculate duration of each task after considering reductions
 s.t. Duration_count {i in 1..nTASK}:
@@ -63,9 +63,9 @@ s.t. Max_Completion {i in 1..nTASK}:
 
 # 5. Enforce dependencies between tasks based on type and specified lag times
 s.t. End_End_Dependencies {(i,j,k) in LINKS: k="End-End"}:
-    CompletionTime[j] + lag[i,j,k] <= CompletionTime[i] ;            
+    CompletionTime[j] + lag[i,j,k] <= CompletionTime[i] ;
 
-s.t. End_Begin_Dependencies {(i,j,k) in LINKS: k="End-Begin"}:    # New task (i) start, old task (j) finish   
+s.t. End_Begin_Dependencies {(i,j,k) in LINKS: k="End-Begin"}:    # New task (i) start, old task (j) finish
     CompletionTime[j] + lag[i,j,k] + 1 <= Start[i] ;
 
 s.t. Begin_Begin_Dependencies {(i,j,k) in LINKS: k="Begin-Begin"}:
