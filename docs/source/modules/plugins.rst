@@ -9,7 +9,7 @@ AMPL - spreadsheet handling with amplxl
 | |github-ampl-spreadsheet-handling-with-amplxl| |colab-ampl-spreadsheet-handling-with-amplxl| |kaggle-ampl-spreadsheet-handling-with-amplxl| |gradient-ampl-spreadsheet-handling-with-amplxl| |sagemaker-ampl-spreadsheet-handling-with-amplxl|
 | Description: Basic example of reading/writing data into/from a .xlsx spreadsheet with amplxl
 | Tags: :ref:`tag-ampl`, :ref:`tag-amplxl`, :ref:`tag-spreadsheet`, :ref:`tag-excel`, :ref:`tag-xlsx`
-| Author: :ref:`email-nfbvs_at_ampl.com` <nfbvs@ampl.com>
+| Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-ampl-spreadsheet-handling-with-amplxl|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/amplxl/amplxl.ipynb

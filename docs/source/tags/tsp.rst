@@ -9,7 +9,7 @@ Travelling Salesman Problem with subtour elimination
 | |github-travelling-salesman-problem-with-subtour-elimination| |colab-travelling-salesman-problem-with-subtour-elimination| |kaggle-travelling-salesman-problem-with-subtour-elimination| |gradient-travelling-salesman-problem-with-subtour-elimination| |sagemaker-travelling-salesman-problem-with-subtour-elimination|
 | Description: this example shows how to solve a TSP  by eliminating subtours using amplpy and ampls
 | Tags: :ref:`tag-callbacks`, :ref:`tag-tsp`
-| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
+| Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>
 
 .. |github-travelling-salesman-problem-with-subtour-elimination|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/mapgccv/callbacks/tsp_simple_cuts_generic.ipynb

@@ -9,7 +9,7 @@ AMPL - solve multiple models in parallel
 | |github-ampl-solve-multiple-models-in-parallel| |colab-ampl-solve-multiple-models-in-parallel| |kaggle-ampl-solve-multiple-models-in-parallel| |gradient-ampl-solve-multiple-models-in-parallel| |sagemaker-ampl-solve-multiple-models-in-parallel|
 | Description: Solve multiple AMPL models in parallel in Python with amplpy and the multiprocessing modules.
 | Tags: :ref:`tag-ampl`, :ref:`tag-python`, :ref:`tag-amplpy`, :ref:`tag-multiprocess`, :ref:`tag-parallel-computing`, :ref:`tag-stochastic-programming`
-| Author: :ref:`email-nfbvs_at_ampl.com` <nfbvs@ampl.com>
+| Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-ampl-solve-multiple-models-in-parallel|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/multiprocessing/multiproc.ipynb
@@ -39,7 +39,7 @@ AMPL - spreadsheet handling with amplxl
 | |github-ampl-spreadsheet-handling-with-amplxl| |colab-ampl-spreadsheet-handling-with-amplxl| |kaggle-ampl-spreadsheet-handling-with-amplxl| |gradient-ampl-spreadsheet-handling-with-amplxl| |sagemaker-ampl-spreadsheet-handling-with-amplxl|
 | Description: Basic example of reading/writing data into/from a .xlsx spreadsheet with amplxl
 | Tags: :ref:`tag-ampl`, :ref:`tag-amplxl`, :ref:`tag-spreadsheet`, :ref:`tag-excel`, :ref:`tag-xlsx`
-| Author: :ref:`email-nfbvs_at_ampl.com` <nfbvs@ampl.com>
+| Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-ampl-spreadsheet-handling-with-amplxl|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/amplxl/amplxl.ipynb
@@ -279,7 +279,7 @@ Dynamic routing example
 | |github-dynamic-routing-example| |colab-dynamic-routing-example| |kaggle-dynamic-routing-example| |gradient-dynamic-routing-example| |sagemaker-dynamic-routing-example|
 | Description: Example of interactive optimization with GUI using AMPL and Google Maps
 | Tags: :ref:`tag-amplpy`, :ref:`tag-gui`
-| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
+| Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>
 
 .. |github-dynamic-routing-example|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/mapgccv/miscellaneous/Dynamic_routing_example.ipynb
@@ -803,7 +803,7 @@ Simple sudoku solver using logical constraints (with GUI)
 | |github-simple-sudoku-solver-using-logical-constraints-with-gui| |colab-simple-sudoku-solver-using-logical-constraints-with-gui| |kaggle-simple-sudoku-solver-using-logical-constraints-with-gui| |gradient-simple-sudoku-solver-using-logical-constraints-with-gui| |sagemaker-simple-sudoku-solver-using-logical-constraints-with-gui|
 | Description: Simple sudoku model with two formulations: as a Constraint Programming problem using the *alldiff* operator and as a MIP. Note that the CP formulation is more natural but it needs a solver supporting logical constraints or a MIP solver with automatic reformulation support (see [here](https://mp.ampl.com/) for more information).
 | Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`, :ref:`tag-highlights`
-| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
+| Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>
 
 .. |github-simple-sudoku-solver-using-logical-constraints-with-gui|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/mapgccv/miscellaneous/sudoku.ipynb
@@ -893,7 +893,7 @@ Solving simple stochastic optimization problems with AMPL
 | |github-solving-simple-stochastic-optimization-problems-with-ampl| |colab-solving-simple-stochastic-optimization-problems-with-ampl| |kaggle-solving-simple-stochastic-optimization-problems-with-ampl| |gradient-solving-simple-stochastic-optimization-problems-with-ampl| |sagemaker-solving-simple-stochastic-optimization-problems-with-ampl|
 | Description: Examples of the Sample Average Approximation method and risk measures in AMPL
 | Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-stochastic-optimization`, :ref:`tag-sample-average-approximation`, :ref:`tag-risk-measures`
-| Author: :ref:`email-nfbvs_at_ampl.com` <nfbvs@ampl.com>
+| Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-solving-simple-stochastic-optimization-problems-with-ampl|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/newsvendor/newsvendor.ipynb

@@ -9,7 +9,7 @@ AMPL - solve multiple models in parallel
 | |github-ampl-solve-multiple-models-in-parallel| |colab-ampl-solve-multiple-models-in-parallel| |kaggle-ampl-solve-multiple-models-in-parallel| |gradient-ampl-solve-multiple-models-in-parallel| |sagemaker-ampl-solve-multiple-models-in-parallel|
 | Description: Solve multiple AMPL models in parallel in Python with amplpy and the multiprocessing modules.
 | Tags: :ref:`tag-ampl`, :ref:`tag-python`, :ref:`tag-amplpy`, :ref:`tag-multiprocess`, :ref:`tag-parallel-computing`, :ref:`tag-stochastic-programming`
-| Author: :ref:`email-nfbvs_at_ampl.com` <nfbvs@ampl.com>
+| Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-ampl-solve-multiple-models-in-parallel|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/multiprocessing/multiproc.ipynb

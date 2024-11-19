@@ -9,7 +9,7 @@ AMPL - solve multiple models in parallel
 | |github-ampl-solve-multiple-models-in-parallel| |colab-ampl-solve-multiple-models-in-parallel| |kaggle-ampl-solve-multiple-models-in-parallel| |gradient-ampl-solve-multiple-models-in-parallel| |sagemaker-ampl-solve-multiple-models-in-parallel|
 | Description: Solve multiple AMPL models in parallel in Python with amplpy and the multiprocessing modules.
 | Tags: :ref:`tag-ampl`, :ref:`tag-python`, :ref:`tag-amplpy`, :ref:`tag-multiprocess`, :ref:`tag-parallel-computing`, :ref:`tag-stochastic-programming`
-| Author: :ref:`email-nfbvs_at_ampl.com` <nfbvs@ampl.com>
+| Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-ampl-solve-multiple-models-in-parallel|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/multiprocessing/multiproc.ipynb
@@ -447,7 +447,7 @@ Dynamic routing example
 | |github-dynamic-routing-example| |colab-dynamic-routing-example| |kaggle-dynamic-routing-example| |gradient-dynamic-routing-example| |sagemaker-dynamic-routing-example|
 | Description: Example of interactive optimization with GUI using AMPL and Google Maps
 | Tags: :ref:`tag-amplpy`, :ref:`tag-gui`
-| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
+| Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>
 
 .. |github-dynamic-routing-example|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/mapgccv/miscellaneous/Dynamic_routing_example.ipynb
@@ -477,7 +477,7 @@ Efficient Frontier with Google Sheets
 | |github-efficient-frontier-with-google-sheets| |colab-efficient-frontier-with-google-sheets|
 | Description: Efficient Frontier example using Google Sheets
 | Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-finance`
-| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
+| Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>
 
 .. |github-efficient-frontier-with-google-sheets|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/mapgccv/finance/efficient_frontier.ipynb
@@ -1208,31 +1208,31 @@ Pattern Generation
     
 
 
-Production Model
-^^^^^^^^^^^^^^^^
-| `Notebooks <../notebooks/index.html>`_ > `Production Model <../notebooks/production-model.html>`_
-| |github-production-model| |colab-production-model| |kaggle-production-model| |gradient-production-model| |sagemaker-production-model|
+Production Model: lemonade stand example 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Production Model: lemonade stand example  <../notebooks/production-model-lemonade-stand-example.html>`_
+| |github-production-model-lemonade-stand-example| |colab-production-model-lemonade-stand-example| |kaggle-production-model-lemonade-stand-example| |gradient-production-model-lemonade-stand-example| |sagemaker-production-model-lemonade-stand-example|
 | Description: Basic introduction to AMPL's indexed entities and the Pygwalker Python package via a lemonade stand example
 | Tags: :ref:`tag-ampl-lecture`, :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-linear-programming`, :ref:`tag-sets`, :ref:`tag-indexing`, :ref:`tag-lemonade-stand`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
-.. |github-production-model|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+.. |github-production-model-lemonade-stand-example|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
     :alt: production_model.ipynb
     
-.. |colab-production-model| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. |colab-production-model-lemonade-stand-example| image:: https://colab.research.google.com/assets/colab-badge.svg
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
     :alt: Open In Colab
     
-.. |kaggle-production-model| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+.. |kaggle-production-model-lemonade-stand-example| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
     :alt: Kaggle
     
-.. |gradient-production-model| image:: https://assets.paperspace.io/img/gradient-badge.svg
+.. |gradient-production-model-lemonade-stand-example| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
     :alt: Gradient
     
-.. |sagemaker-production-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
+.. |sagemaker-production-model-lemonade-stand-example| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
     :alt: Open In SageMaker Studio Lab
     
@@ -1334,7 +1334,7 @@ Simple sudoku solver using logical constraints (with GUI)
 | |github-simple-sudoku-solver-using-logical-constraints-with-gui| |colab-simple-sudoku-solver-using-logical-constraints-with-gui| |kaggle-simple-sudoku-solver-using-logical-constraints-with-gui| |gradient-simple-sudoku-solver-using-logical-constraints-with-gui| |sagemaker-simple-sudoku-solver-using-logical-constraints-with-gui|
 | Description: Simple sudoku model with two formulations: as a Constraint Programming problem using the *alldiff* operator and as a MIP. Note that the CP formulation is more natural but it needs a solver supporting logical constraints or a MIP solver with automatic reformulation support (see [here](https://mp.ampl.com/) for more information).
 | Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-gui`, :ref:`tag-highlights`
-| Author: :ref:`email-christian.valente_at_gmail.com` <christian.valente@gmail.com>
+| Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>
 
 .. |github-simple-sudoku-solver-using-logical-constraints-with-gui|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/mapgccv/miscellaneous/sudoku.ipynb
@@ -1364,7 +1364,7 @@ Solving simple stochastic optimization problems with AMPL
 | |github-solving-simple-stochastic-optimization-problems-with-ampl| |colab-solving-simple-stochastic-optimization-problems-with-ampl| |kaggle-solving-simple-stochastic-optimization-problems-with-ampl| |gradient-solving-simple-stochastic-optimization-problems-with-ampl| |sagemaker-solving-simple-stochastic-optimization-problems-with-ampl|
 | Description: Examples of the Sample Average Approximation method and risk measures in AMPL
 | Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-stochastic-optimization`, :ref:`tag-sample-average-approximation`, :ref:`tag-risk-measures`
-| Author: :ref:`email-nfbvs_at_ampl.com` <nfbvs@ampl.com>
+| Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-solving-simple-stochastic-optimization-problems-with-ampl|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/newsvendor/newsvendor.ipynb
