@@ -26,7 +26,7 @@ at the beginning of your notebook:
 
 In the list ``modules`` you can specify the AMPL solvers you want to use in your notebook.
 For more information on the AMPL Modules for Python see `Python Modules Documentation <https://dev.ampl.com/ampl/python/modules.html>`_.
-For more information on how to use ``amplpy`` see `Python API Documentation <https://amplpy.readthedocs.io/>`_.
+For more information on how to use ``amplpy`` see `Python API Documentation <https://amplpy.ampl.com/en/latest/>`_.
 
 .. grid:: 1 1 2 2
     :gutter: 0
@@ -88,7 +88,7 @@ For more information on how to use ``amplpy`` see `Python API Documentation <htt
     In these notebooks there are ``%%ampl_eval`` cells that allow you to run AMPL code directly from the notebook. 
     They are equivalent to ``ampl.eval("""cell content""")``.
 
-Learn more: [`Python Modules Documentation <https://dev.ampl.com/ampl/python/modules.html>`_] [`Python API Documentation <https://amplpy.readthedocs.io/>`_]
+Learn more: [`Python Modules Documentation <https://dev.ampl.com/ampl/python/modules.html>`_] [`Python API Documentation <https://amplpy.ampl.com/en/latest/>`_]
 
 AMPL is free on Colab
 ---------------------
@@ -108,7 +108,7 @@ Learn more: [`AMPL Community Edition <https://ampl.com/ce/>`_] [`AMPL for Course
 AMPL Python API: amplpy
 -----------------------
 
-`amplpy <https://amplpy.readthedocs.io>`_ is an interface that allows developers to access the features of `AMPL <https://ampl.com>`_ from within Python.
+`amplpy <https://amplpy.ampl.com/en/latest/>`_ is an interface that allows developers to access the features of `AMPL <https://ampl.com>`_ from within Python.
 For a quick introduction to AMPL see `Quick Introduction to AMPL <https://dev.ampl.com/ampl/introduction.html>`_.
 
 In the same way that AMPL's syntax matches naturally the mathematical description of the model,
@@ -118,9 +118,8 @@ All model generation and solver interaction is handled directly by AMPL, which l
 great stability and speed; the library just acts as an intermediary, and the added overhead (in terms of memory and
 CPU usage) depends mostly on how much data is sent and read back from AMPL, the size of the expanded model as such is irrelevant.
 
-With `amplpy <https://amplpy.readthedocs.io>`_ you can model and solve large scale optimization problems in Python with the performance of heavily optimized C code
+With `amplpy <https://amplpy.ampl.com/en/latest/>`_ you can model and solve large scale optimization problems in Python with the performance of heavily optimized C code
 without losing model readability. The same model can be deployed on applications
 built on different languages by just switching the API used.
 
-Learn more: [`Python API Documentation <https://amplpy.readthedocs.io>`_]
-
+Learn more: [`Python API Documentation <https://amplpy.ampl.com/en/latest/>`_]
