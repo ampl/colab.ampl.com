@@ -7,7 +7,7 @@ Tags
 
     advertisement (2 notebooks) <advertisement>
     aircrew-scheduling (1 notebook) <aircrew-scheduling>
-    ampl (21 notebooks) <ampl>
+    ampl (22 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (21 notebooks) <ampl-only>
@@ -24,7 +24,7 @@ Tags
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
-    cbc (7 notebooks) <cbc>
+    cbc (8 notebooks) <cbc>
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
@@ -92,7 +92,7 @@ Tags
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
-    mip (26 notebooks) <mip>
+    mip (27 notebooks) <mip>
     mixed-integer-linear (4 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (4 notebooks) <mp>
@@ -114,6 +114,7 @@ Tags
     parallel-computing (1 notebook) <parallel-computing>
     parallel-solves (1 notebook) <parallel-solves>
     piecewise-linear (2 notebooks) <piecewise-linear>
+    pipeline-diagnostics (1 notebook) <pipeline-diagnostics>
     planning (1 notebook) <planning>
     power-generation (3 notebooks) <power-generation>
     powerbi (1 notebook) <powerbi>
@@ -133,7 +134,7 @@ Tags
     regularization (1 notebook) <regularization>
     reinforced-formulations (1 notebook) <reinforced-formulations>
     residential-developer (1 notebook) <residential-developer>
-    risk-management (1 notebook) <risk-management>
+    risk-management (2 notebooks) <risk-management>
     risk-measures (1 notebook) <risk-measures>
     sample-average-approximation (1 notebook) <sample-average-approximation>
     scheduling (8 notebooks) <scheduling>
