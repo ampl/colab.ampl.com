@@ -1,6 +1,7 @@
 reset;
 
-# Model Name: Pricing Optimization (AMPL Piecewise construction for Price Elasticity of Demand)
+# Model Name: # Pricing Optimization
+# Description: This model maximizes total revenue by selecting the optimal price step and managing quantity sold under piecewise linear pricing.
 # Version: 1.0
 # Last Updated: Jan 2025
 
@@ -18,9 +19,7 @@ var Quantity_Sold {1..n_step} >= 0, integer; # Quantity sold at each price step
 
 ### OBJECTIVE
 maximize Total_Profit:                  # Maximize total revenue from sales while considering costs and constraints
-    sum {i in 1..n_step} 
-    <<demand[i]; {p in i..i+1} (price[p]- unit_cost)>> Quantity_Sold[i];
- # Find more information about the piecewise linear function:  https://ampl.com/wp-content/uploads/Chapter-17-Piecewise-Linear-Programs-AMPL-Book.pdf
+    sum{i in 1..n_step} Quantity_Sold[i] * (price[i] - unit_cost); 
 
 ### CONSTRAINTS
 # Ensure logical and physical constraints are met
