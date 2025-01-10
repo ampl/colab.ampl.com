@@ -1,9 +1,9 @@
 reset;
 
 # Model Name: Worker-Task Assignment
+### Optimize task assignments to workers, minimizing costs with an inverse relationship scaling.
 # Version: 1.0
 # Last Updated: Jan 2025
-# Description: Optimize task assignments to workers, minimizing costs with an inverse relationship scaling.
 
 ### SETS
 # Define the set of workers and tasks
@@ -27,11 +27,8 @@ minimize TotalCost:
         (cost[w, t] / (1 + sum{t2 in TASKS} IsAssigned[w,t2])) * IsAssigned[w,t];
 
 ### CONSTRAINTS
-
-# Constraint: Each task must be assigned to exactly one worker
-subject to TaskAssignment{t in TASKS}:
+subject to TaskAssignment{t in TASKS}:      # Each task must be assigned to exactly one worker
     sum{w in WORKERS} IsAssigned[w,t] = 1;
 
-# Constraint: Each worker is assigned at most max_tasks tasks
-subject to WorkerTaskLimit{w in WORKERS}:
+subject to WorkerTaskLimit{w in WORKERS}:   # Each worker is assigned at most max_tasks tasks
     sum{t in TASKS} IsAssigned[w,t] <= max_tasks;
