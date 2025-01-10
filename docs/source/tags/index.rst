@@ -11,12 +11,12 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (21 notebooks) <ampl-only>
-    amplpy (52 notebooks) <amplpy>
+    amplpy (53 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
     arithmetic (1 notebook) <arithmetic>
-    assignment (1 notebook) <assignment>
+    assignment (2 notebooks) <assignment>
     batch-processes (1 notebook) <batch-processes>
     batch-processing (1 notebook) <batch-processing>
     benders (4 notebooks) <benders>
@@ -37,7 +37,7 @@ Tags
     construction-management (1 notebook) <construction-management>
     convexity (1 notebook) <convexity>
     conveyor-based-manufacturing (1 notebook) <conveyor-based-manufacturing>
-    cost-minimization (1 notebook) <cost-minimization>
+    cost-minimization (2 notebooks) <cost-minimization>
     cplex (1 notebook) <cplex>
     cpmp (1 notebook) <cpmp>
     cutting-stock (2 notebooks) <cutting-stock>
@@ -71,11 +71,11 @@ Tags
     geometry (1 notebook) <geometry>
     geothermal-energy (1 notebook) <geothermal-energy>
     gilmore-gomory (1 notebook) <gilmore-gomory>
-    global-optimization (1 notebook) <global-optimization>
+    global-optimization (2 notebooks) <global-optimization>
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (3 notebooks) <gurobi>
+    gurobi (4 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (11 notebooks) <highlights>
     highs (9 notebooks) <highs>
@@ -85,6 +85,7 @@ Tags
     infeasibility (1 notebook) <infeasibility>
     introduction (4 notebooks) <introduction>
     inventory-management (1 notebook) <inventory-management>
+    inverse-cost-scaling (1 notebook) <inverse-cost-scaling>
     ipopt (1 notebook) <ipopt>
     json (1 notebook) <json>
     lecture (1 notebook) <lecture>
@@ -112,7 +113,7 @@ Tags
     networkx (1 notebook) <networkx>
     non-continuous-objective (1 notebook) <non-continuous-objective>
     non-linear (1 notebook) <non-linear>
-    nonlinear (2 notebooks) <nonlinear>
+    nonlinear (3 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
     oil-production (3 notebooks) <oil-production>
     open-source (1 notebook) <open-source>
@@ -149,7 +150,7 @@ Tags
     risk-management (2 notebooks) <risk-management>
     risk-measures (1 notebook) <risk-measures>
     sample-average-approximation (1 notebook) <sample-average-approximation>
-    scheduling (8 notebooks) <scheduling>
+    scheduling (9 notebooks) <scheduling>
     second-order-cone (2 notebooks) <second-order-cone>
     seniority-constraints (1 notebook) <seniority-constraints>
     seniority-ranking (1 notebook) <seniority-ranking>
@@ -167,6 +168,7 @@ Tags
     stochastic-programming (1 notebook) <stochastic-programming>
     strict-comparison (1 notebook) <strict-comparison>
     supply_chain (2 notebooks) <supply_chain>
+    task-scheduling (1 notebook) <task-scheduling>
     template (1 notebook) <template>
     trainee-scheduling (1 notebook) <trainee-scheduling>
     transportation (3 notebooks) <transportation>
@@ -174,5 +176,6 @@ Tags
     unconstrained (1 notebook) <unconstrained>
     unit-commitment (1 notebook) <unit-commitment>
     vector-packing (1 notebook) <vector-packing>
+    worker-task-assignment (1 notebook) <worker-task-assignment>
     xlsx (1 notebook) <xlsx>
 
