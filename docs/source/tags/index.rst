@@ -11,7 +11,7 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (21 notebooks) <ampl-only>
-    amplpy (50 notebooks) <amplpy>
+    amplpy (52 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -24,7 +24,8 @@ Tags
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
-    cbc (8 notebooks) <cbc>
+    cash-flow-management (1 notebook) <cash-flow-management>
+    cbc (9 notebooks) <cbc>
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
@@ -36,6 +37,8 @@ Tags
     construction-management (1 notebook) <construction-management>
     convexity (1 notebook) <convexity>
     conveyor-based-manufacturing (1 notebook) <conveyor-based-manufacturing>
+    cost-minimization (1 notebook) <cost-minimization>
+    cplex (1 notebook) <cplex>
     cpmp (1 notebook) <cpmp>
     cutting-stock (2 notebooks) <cutting-stock>
     dantzig-wolfe-decomposition (2 notebooks) <dantzig-wolfe-decomposition>
@@ -46,8 +49,11 @@ Tags
     debug (1 notebook) <debug>
     decision-making (1 notebook) <decision-making>
     decomposition (4 notebooks) <decomposition>
+    demand-elasticity (1 notebook) <demand-elasticity>
     deterministic-model (2 notebooks) <deterministic-model>
+    discounting (1 notebook) <discounting>
     disjunctive-programming (1 notebook) <disjunctive-programming>
+    economic-modeling (1 notebook) <economic-modeling>
     educational (4 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     employee-scheduling (1 notebook) <employee-scheduling>
@@ -78,6 +84,7 @@ Tags
     industry (9 notebooks) <industry>
     infeasibility (1 notebook) <infeasibility>
     introduction (4 notebooks) <introduction>
+    inventory-management (1 notebook) <inventory-management>
     ipopt (1 notebook) <ipopt>
     json (1 notebook) <json>
     lecture (1 notebook) <lecture>
@@ -92,12 +99,13 @@ Tags
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
-    mip (27 notebooks) <mip>
+    mip (29 notebooks) <mip>
     mixed-integer-linear (4 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (4 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
     multi-objective (1 notebook) <multi-objective>
+    multi-period-planning (1 notebook) <multi-period-planning>
     multiple-objectives (1 notebook) <multiple-objectives>
     multiprocess (1 notebook) <multiprocess>
     network (2 notebooks) <network>
@@ -107,13 +115,15 @@ Tags
     nonlinear (2 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
     oil-production (3 notebooks) <oil-production>
+    open-source (1 notebook) <open-source>
     optimal-power-flow (5 notebooks) <optimal-power-flow>
     optimization (1 notebook) <optimization>
     organ-exchange (1 notebook) <organ-exchange>
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
     parallel-solves (1 notebook) <parallel-solves>
-    piecewise-linear (2 notebooks) <piecewise-linear>
+    payment-schemes (1 notebook) <payment-schemes>
+    piecewise-linear (3 notebooks) <piecewise-linear>
     pipeline-diagnostics (1 notebook) <pipeline-diagnostics>
     planning (1 notebook) <planning>
     power-generation (3 notebooks) <power-generation>
@@ -121,7 +131,9 @@ Tags
     preferential-bidding-system (1 notebook) <preferential-bidding-system>
     price-optimization (1 notebook) <price-optimization>
     pricing (1 notebook) <pricing>
+    pricing-optimization (1 notebook) <pricing-optimization>
     production-optimization (3 notebooks) <production-optimization>
+    profit-maximization (1 notebook) <profit-maximization>
     profitability (4 notebooks) <profitability>
     project-management (1 notebook) <project-management>
     puzzles (1 notebook) <puzzles>
