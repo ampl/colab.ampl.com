@@ -50,6 +50,7 @@ Notebooks grouped by modules
 
     cbc
     coin
+    copt
     cplex
     gcg
     gurobi
@@ -59,4 +60,5 @@ Notebooks grouped by modules
     open
     plugins
     scip
+    xpress
 

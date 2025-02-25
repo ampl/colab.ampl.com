@@ -38,7 +38,7 @@ Tags
     convexity (1 notebook) <convexity>
     conveyor-based-manufacturing (1 notebook) <conveyor-based-manufacturing>
     cost-minimization (2 notebooks) <cost-minimization>
-    cplex (1 notebook) <cplex>
+    cplex (2 notebooks) <cplex>
     cpmp (1 notebook) <cpmp>
     cutting-stock (2 notebooks) <cutting-stock>
     dantzig-wolfe-decomposition (2 notebooks) <dantzig-wolfe-decomposition>
@@ -75,7 +75,7 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (4 notebooks) <gurobi>
+    gurobi (5 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (11 notebooks) <highlights>
     highs (9 notebooks) <highs>
@@ -100,10 +100,10 @@ Tags
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
-    mip (29 notebooks) <mip>
-    mixed-integer-linear (4 notebooks) <mixed-integer-linear>
+    mip (30 notebooks) <mip>
+    mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
-    mp (4 notebooks) <mp>
+    mp (5 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
     multi-objective (1 notebook) <multi-objective>
     multi-period-planning (1 notebook) <multi-period-planning>
@@ -161,6 +161,7 @@ Tags
     simple (1 notebook) <simple>
     softplus (1 notebook) <softplus>
     solution-check (1 notebook) <solution-check>
+    solution-pool (1 notebook) <solution-pool>
     spreadsheet (2 notebooks) <spreadsheet>
     state-task-networks (1 notebook) <state-task-networks>
     stochastic (5 notebooks) <stochastic>
@@ -178,4 +179,5 @@ Tags
     vector-packing (1 notebook) <vector-packing>
     worker-task-assignment (1 notebook) <worker-task-assignment>
     xlsx (1 notebook) <xlsx>
+    xpress (1 notebook) <xpress>
 
