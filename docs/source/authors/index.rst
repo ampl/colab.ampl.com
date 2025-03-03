@@ -15,6 +15,7 @@ The notebooks in this repository are contributed by the following authors:
     jurgenlentz26_at_gmail.com
     marcos_at_ampl.com
     mail_at_solverytic.com
+    mukesh96official_at_gmail.com
     nicolau_at_ampl.com
     sarah_at_ampl.com
     yimin_wang_at_asu.edu

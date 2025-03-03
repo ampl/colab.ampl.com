@@ -374,7 +374,7 @@ print(
 MIT
 
 ***
-Copyright © 2022-2023 AMPL Optimization inc. All rights reserved.
+Copyright © 2022-2025 AMPL Optimization inc. All rights reserved.
 """,
     file=readme,
 )

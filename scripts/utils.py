@@ -76,7 +76,7 @@ def list_notebooks(base_dir="."):
     notebooks = []
     for fname in sorted(lst):
         fname = os.path.join(base_dir, fname)
-        if fname.endswith("template/minimal.ipynb"):
+        if "/tmp/" in fname or fname.endswith("template/minimal.ipynb"):
             print(f"Skipping {fname}.")
             continue
         print(f"Processing: {fname}")
