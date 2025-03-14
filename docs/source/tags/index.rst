@@ -63,7 +63,7 @@ Tags
     excel (2 notebooks) <excel>
     exponential-cone (1 notebook) <exponential-cone>
     facility-location (9 notebooks) <facility-location>
-    finance (5 notebooks) <finance>
+    finance (6 notebooks) <finance>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
     gdp (1 notebook) <gdp>
@@ -121,6 +121,7 @@ Tags
     optimal-power-flow (5 notebooks) <optimal-power-flow>
     optimization (1 notebook) <optimization>
     organ-exchange (1 notebook) <organ-exchange>
+    pairs-trading (1 notebook) <pairs-trading>
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
     parallel-solves (1 notebook) <parallel-solves>
