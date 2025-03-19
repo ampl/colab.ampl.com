@@ -63,7 +63,7 @@ Tags
     excel (2 notebooks) <excel>
     exponential-cone (1 notebook) <exponential-cone>
     facility-location (9 notebooks) <facility-location>
-    finance (6 notebooks) <finance>
+    finance (7 notebooks) <finance>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
     gdp (1 notebook) <gdp>
@@ -129,7 +129,7 @@ Tags
     piecewise-linear (3 notebooks) <piecewise-linear>
     pipeline-diagnostics (1 notebook) <pipeline-diagnostics>
     planning (1 notebook) <planning>
-    portfolio-optimization (1 notebook) <portfolio-optimization>
+    portfolio-optimization (2 notebooks) <portfolio-optimization>
     power-generation (3 notebooks) <power-generation>
     powerbi (1 notebook) <powerbi>
     preferential-bidding-system (1 notebook) <preferential-bidding-system>

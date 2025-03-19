@@ -1,7 +1,37 @@
 .. _email-mukesh96official_at_gmail.com:
 
-Mukeshwaran Baskaran (2 notebooks)
+Mukeshwaran Baskaran (3 notebooks)
 ==================================
+
+Enhanced Sector ETF Portfolio Optimization with Multiple Strategies in Python with AMPL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Enhanced Sector ETF Portfolio Optimization with Multiple Strategies in Python with AMPL <../notebooks/enhanced-sector-etf-portfolio-optimization-with-multiple-strategies-in-python-with-ampl.html>`_
+| |github-enhanced-sector-etf-portfolio-optimization-with-multiple-strategies-in-python-with-ampl| |colab-enhanced-sector-etf-portfolio-optimization-with-multiple-strategies-in-python-with-ampl| |kaggle-enhanced-sector-etf-portfolio-optimization-with-multiple-strategies-in-python-with-ampl| |gradient-enhanced-sector-etf-portfolio-optimization-with-multiple-strategies-in-python-with-ampl| |sagemaker-enhanced-sector-etf-portfolio-optimization-with-multiple-strategies-in-python-with-ampl|
+| Description: This notebook compares multiple portfolio optimization strategies for invesment in Sector ETFs
+| Tags: :ref:`tag-finance`, :ref:`tag-portfolio-optimization`
+| Author: :ref:`email-mukesh96official_at_gmail.com` <mukesh96official@gmail.com>
+
+.. |github-enhanced-sector-etf-portfolio-optimization-with-multiple-strategies-in-python-with-ampl|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/mukeshwaran/Notebook_3_Porfolio_Optimization_Sector_ETF.ipynb
+    :alt: Notebook_3_Porfolio_Optimization_Sector_ETF.ipynb
+    
+.. |colab-enhanced-sector-etf-portfolio-optimization-with-multiple-strategies-in-python-with-ampl| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/mukeshwaran/Notebook_3_Porfolio_Optimization_Sector_ETF.ipynb
+    :alt: Open In Colab
+    
+.. |kaggle-enhanced-sector-etf-portfolio-optimization-with-multiple-strategies-in-python-with-ampl| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/mukeshwaran/Notebook_3_Porfolio_Optimization_Sector_ETF.ipynb
+    :alt: Kaggle
+    
+.. |gradient-enhanced-sector-etf-portfolio-optimization-with-multiple-strategies-in-python-with-ampl| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/mukeshwaran/Notebook_3_Porfolio_Optimization_Sector_ETF.ipynb
+    :alt: Gradient
+    
+.. |sagemaker-enhanced-sector-etf-portfolio-optimization-with-multiple-strategies-in-python-with-ampl| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mukeshwaran/Notebook_3_Porfolio_Optimization_Sector_ETF.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
 
 Optimized Portfolio Optimization with AMPL and EIA Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
