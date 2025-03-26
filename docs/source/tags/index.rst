@@ -26,6 +26,7 @@ Tags
     callbacks (1 notebook) <callbacks>
     cash-flow-management (1 notebook) <cash-flow-management>
     cbc (9 notebooks) <cbc>
+    cdar (1 notebook) <cdar>
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
@@ -41,6 +42,7 @@ Tags
     cplex (2 notebooks) <cplex>
     cpmp (1 notebook) <cpmp>
     cutting-stock (2 notebooks) <cutting-stock>
+    cvar (1 notebook) <cvar>
     dantzig-wolfe-decomposition (2 notebooks) <dantzig-wolfe-decomposition>
     data-analysis (1 notebook) <data-analysis>
     data-driven-model (1 notebook) <data-driven-model>
@@ -63,7 +65,7 @@ Tags
     excel (2 notebooks) <excel>
     exponential-cone (1 notebook) <exponential-cone>
     facility-location (9 notebooks) <facility-location>
-    finance (7 notebooks) <finance>
+    finance (8 notebooks) <finance>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
     gdp (1 notebook) <gdp>
@@ -129,7 +131,7 @@ Tags
     piecewise-linear (3 notebooks) <piecewise-linear>
     pipeline-diagnostics (1 notebook) <pipeline-diagnostics>
     planning (1 notebook) <planning>
-    portfolio-optimization (2 notebooks) <portfolio-optimization>
+    portfolio-optimization (3 notebooks) <portfolio-optimization>
     power-generation (3 notebooks) <power-generation>
     powerbi (1 notebook) <powerbi>
     preferential-bidding-system (1 notebook) <preferential-bidding-system>
@@ -155,6 +157,7 @@ Tags
     sample-average-approximation (1 notebook) <sample-average-approximation>
     scheduling (9 notebooks) <scheduling>
     second-order-cone (2 notebooks) <second-order-cone>
+    semivariance (1 notebook) <semivariance>
     seniority-constraints (1 notebook) <seniority-constraints>
     seniority-ranking (1 notebook) <seniority-ranking>
     sequences (1 notebook) <sequences>
