@@ -1,6 +1,6 @@
 .. _module-highs:
 
-highs (39 notebooks)
+highs (38 notebooks)
 ====================
 
 AMPL - solve multiple models in parallel
@@ -556,36 +556,6 @@ Oil refinery production optimization (ampl-only version)
     
 .. |sagemaker-oil-refinery-production-optimization-ampl-only-version| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Petroleum_refining/oil_refining_ampl_only.ipynb
-    :alt: Open In SageMaker Studio Lab
-    
-
-
-Optimal Power Flow with AMPL and Python - DC Power Flow
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - DC Power Flow <../notebooks/optimal-power-flow-with-ampl-and-python-dc-power-flow.html>`_
-| |github-optimal-power-flow-with-ampl-and-python-dc-power-flow| |colab-optimal-power-flow-with-ampl-and-python-dc-power-flow| |kaggle-optimal-power-flow-with-ampl-and-python-dc-power-flow| |gradient-optimal-power-flow-with-ampl-and-python-dc-power-flow| |sagemaker-optimal-power-flow-with-ampl-and-python-dc-power-flow|
-| Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
-| Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
-
-.. |github-optimal-power-flow-with-ampl-and-python-dc-power-flow|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf3.ipynb
-    :alt: opf3.ipynb
-    
-.. |colab-optimal-power-flow-with-ampl-and-python-dc-power-flow| image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf3.ipynb
-    :alt: Open In Colab
-    
-.. |kaggle-optimal-power-flow-with-ampl-and-python-dc-power-flow| image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf3.ipynb
-    :alt: Kaggle
-    
-.. |gradient-optimal-power-flow-with-ampl-and-python-dc-power-flow| image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf3.ipynb
-    :alt: Gradient
-    
-.. |sagemaker-optimal-power-flow-with-ampl-and-python-dc-power-flow| image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf3.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
