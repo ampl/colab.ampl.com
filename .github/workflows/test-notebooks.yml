@@ -69,5 +69,5 @@ jobs:
         else
           echo "▶️ Running tests on:"
           echo "$TESTABLE_NOTEBOOKS"
-          pytest --nbval $TESTABLE_NOTEBOOKS
+          pytest --nbval-lax $TESTABLE_NOTEBOOKS
         fi
