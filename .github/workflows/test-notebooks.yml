@@ -50,7 +50,7 @@ jobs:
         echo "Testing notebooks in directory: ${{ matrix.dir }}"
 
         # Regex pattern to match any skip keywords
-        SKIP_REGEX="authenticate_user|gspread\.authorize|gmaps\.configure|powerbiclient"
+        SKIP_REGEX="authenticate_user|gspread\.authorize|gmaps\.configure|powerbiclient|API_KEY|pyvpsolver"
 
         # Find all notebooks in the current matrix dir
         NOTEBOOKS=$(find "${{ matrix.dir }}" -name "*.ipynb")
