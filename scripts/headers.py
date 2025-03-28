@@ -113,6 +113,13 @@ def update_notebook_headers():
         else:
             raise Exception(f"Could not find integration cell in {fname}")
 
+        count = 1
+        for i in range(len(cells)):
+            if cells[i]["cell_type"] == "code":
+                # print(cells[i]["execution_count"], count)
+                cells[i]["execution_count"] = count
+                count += 1
+
         open(fname, "w", newline="\n", encoding="utf-8").write(
             json.dumps(data, separators=(",", ": "), indent="  ", ensure_ascii=False)
             + "\n"
