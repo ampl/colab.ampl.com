@@ -95,7 +95,7 @@ jobs:
 
     - name: Upload skipped notebook list
       if: env.SKIPPED_LIST_PRESENT == 'true'
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: skipped-notebooks-${{ matrix.dir }}
         path: skipped_notebooks.txt
