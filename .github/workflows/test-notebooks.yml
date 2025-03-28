@@ -1,12 +1,6 @@
 name: Discover and Test Notebooks
 
-on:
-  push:
-    paths:
-      - '**.ipynb'
-  pull_request:
-    paths:
-      - '**.ipynb'
+on: [push]
 
 jobs:
   discover-notebook-dirs:
