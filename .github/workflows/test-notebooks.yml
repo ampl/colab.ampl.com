@@ -42,4 +42,4 @@ jobs:
     - name: Test notebooks in ${{ matrix.dir }}
       run: |
         echo "Testing notebooks in directory: ${{ matrix.dir }}"
-        pytest --nbval-lax "${{ matrix.dir }}/*.ipynb"
+        pytest --nbval-lax "${{ matrix.dir }}/"
