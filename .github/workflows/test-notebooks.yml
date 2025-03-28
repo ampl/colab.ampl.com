@@ -47,4 +47,27 @@ jobs:
     - name: Test notebooks in ${{ matrix.dir }}
       run: |
         echo "Testing notebooks in directory: ${{ matrix.dir }}"
-        pytest --nbval-lax "${{ matrix.dir }}/"
+
+        # Regex pattern to match any skip keywords
+        SKIP_REGEX="authenticate_user|gspread\.authorize|powerbiclient"
+
+        # Find all notebooks in the current matrix dir
+        NOTEBOOKS=$(find "${{ matrix.dir }}" -name "*.ipynb")
+
+        # Filter out notebooks matching the skip pattern
+        TESTABLE_NOTEBOOKS=""
+        for nb in $NOTEBOOKS; do
+          if grep -qiE "$SKIP_REGEX" "$nb"; then
+            echo "⏩ Skipping $nb (matched skip regex)"
+          else
+            TESTABLE_NOTEBOOKS="$TESTABLE_NOTEBOOKS $nb"
+          fi
+        done
+
+        if [ -z "$TESTABLE_NOTEBOOKS" ]; then
+          echo "✅ No notebooks to test in ${{ matrix.dir }} after filtering."
+        else
+          echo "▶️ Running tests on:"
+          echo "$TESTABLE_NOTEBOOKS"
+          pytest --nbval $TESTABLE_NOTEBOOKS
+        fi
