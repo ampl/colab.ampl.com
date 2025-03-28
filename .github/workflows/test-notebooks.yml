@@ -23,6 +23,7 @@ jobs:
     strategy:
       matrix:
         dir: ${{ fromJson(needs.discover-notebook-dirs.outputs.dirs) }}
+      fail-fast: false
     runs-on: ubuntu-latest
 
     steps:
