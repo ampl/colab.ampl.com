@@ -1,0 +1,51 @@
+name: Discover and Test Notebooks
+
+on:
+  push:
+    paths:
+      - '**.ipynb'
+  pull_request:
+    paths:
+      - '**.ipynb'
+
+jobs:
+  discover-notebook-dirs:
+    runs-on: ubuntu-latest
+    outputs:
+      dirs: ${{ steps.set-dirs.outputs.dirs }}
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Find directories with notebooks
+      id: set-dirs
+      run: |
+        dirs=$(find . -type f -name "*.ipynb" -exec dirname {} \; | sort -u | jq -R -s -c 'split("\n")[:-1]')
+        echo "Found notebook dirs: $dirs"
+        echo "dirs=$dirs" >> $GITHUB_OUTPUT
+
+  test-notebooks:
+    needs: discover-notebook-dirs
+    strategy:
+      matrix:
+        dir: ${{ fromJson(needs.discover-notebook-dirs.outputs.dirs) }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install nbval pytest
+
+    - name: Test notebooks in ${{ matrix.dir }}
+      run: |
+        echo "Testing notebooks in directory: ${{ matrix.dir }}"
+        pytest --nbval-lax "${{ matrix.dir }}/*.ipynb"
