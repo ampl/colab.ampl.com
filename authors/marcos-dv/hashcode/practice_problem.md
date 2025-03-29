@@ -64,7 +64,7 @@ Here is some documentation and examples of the API: [Documentation](https://ampl
 
 
 ```python
-%pip install -q amplpy
+%pip install -q amplpy==0.15.0b2
 ```
 
 

@@ -46,7 +46,7 @@ def notebook_headers(
             "outputs": [],
             "source": [
                 "# Install dependencies\n",
-                "%pip install -q amplpy" + " ".join(dependencies),
+                "%pip install -q amplpy==0.15.0b2" + " ".join(dependencies),
             ],
         },
         {
