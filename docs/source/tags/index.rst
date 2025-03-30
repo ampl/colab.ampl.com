@@ -7,11 +7,11 @@ Tags
 
     advertisement (2 notebooks) <advertisement>
     aircrew-scheduling (1 notebook) <aircrew-scheduling>
-    ampl (22 notebooks) <ampl>
+    ampl (23 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (21 notebooks) <ampl-only>
-    amplpy (53 notebooks) <amplpy>
+    amplpy (54 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -133,6 +133,7 @@ Tags
     planning (1 notebook) <planning>
     portfolio-optimization (3 notebooks) <portfolio-optimization>
     power-generation (3 notebooks) <power-generation>
+    power-grid-lib (1 notebook) <power-grid-lib>
     powerbi (1 notebook) <powerbi>
     preferential-bidding-system (1 notebook) <preferential-bidding-system>
     price-optimization (1 notebook) <price-optimization>
@@ -143,7 +144,7 @@ Tags
     profitability (4 notebooks) <profitability>
     project-management (1 notebook) <project-management>
     puzzles (1 notebook) <puzzles>
-    python (6 notebooks) <python>
+    python (7 notebooks) <python>
     quadratic (1 notebook) <quadratic>
     quadratic-cone (2 notebooks) <quadratic-cone>
     quick-start (2 notebooks) <quick-start>
@@ -182,6 +183,7 @@ Tags
     tsp (1 notebook) <tsp>
     unconstrained (1 notebook) <unconstrained>
     unit-commitment (1 notebook) <unit-commitment>
+    unit-commitment-problem (1 notebook) <unit-commitment-problem>
     vector-packing (1 notebook) <vector-packing>
     worker-task-assignment (1 notebook) <worker-task-assignment>
     xlsx (1 notebook) <xlsx>
