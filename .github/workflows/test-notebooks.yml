@@ -3,26 +3,29 @@ name: Discover and Test Notebooks
 on: [push]
 
 jobs:
-  discover-notebook-dirs:
+  discover-notebooks:
     runs-on: ubuntu-latest
     outputs:
-      dirs: ${{ steps.set-dirs.outputs.dirs }}
+      notebooks: ${{ steps.set-notebooks.outputs.notebooks }}
     steps:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Find directories with notebooks
-      id: set-dirs
+    - name: Find notebooks
+      id: set-notebooks
       run: |
-        dirs=$(find . -type f -name "*.ipynb" -exec dirname {} \; | sort -u | jq -R -s -c 'split("\n")[:-1]')
-        echo "Found notebook dirs: $dirs"
-        echo "dirs=$dirs" >> $GITHUB_OUTPUT
+        echo "📋 Skipped notebooks:"
+        python scripts/list_notebooks.py --list-skipped
+        echo "▶️ Running tests on:"
+        python scripts/list_notebooks.py
+        notebooks=$(python scripts/list_notebooks.py --json)
+        echo "notebooks=$notebooks" >> $GITHUB_OUTPUT
 
   test-notebooks:
-    needs: discover-notebook-dirs
+    needs: discover-notebooks
     strategy:
       matrix:
-        dir: ${{ fromJson(needs.discover-notebook-dirs.outputs.dirs) }}
+        notebook: ${{ fromJson(needs.discover-notebooks.outputs.notebooks) }}
       fail-fast: false
     runs-on: ubuntu-latest
 
@@ -45,60 +48,7 @@ jobs:
         python -m amplpy.modules install base
         python -m amplpy.modules activate $AMPLKEY_UUID
 
-    - name: Test notebooks in ${{ matrix.dir }}
+    - name: Test notebook in ${{ matrix.notebook }}
       run: |
-        echo "Testing notebooks in directory: ${{ matrix.dir }}"
-
-        # Regex pattern to match any skip keywords
-        SKIP_REGEX="authenticate_user|gspread\.authorize|gmaps\.configure|powerbiclient|API_KEY|pyvpsolver"
-
-        # Find all notebooks in the current matrix dir
-        NOTEBOOKS=$(find "${{ matrix.dir }}" -name "*.ipynb")
-        TESTABLE_NOTEBOOKS=""
-        SKIPPED_NOTEBOOKS=""
-
-        for nb in $NOTEBOOKS; do
-          if grep -qiE "$SKIP_REGEX" "$nb"; then
-            echo "⏩ Skipping $nb (matched skip regex)"
-            SKIPPED_NOTEBOOKS="${SKIPPED_NOTEBOOKS}\n$nb"
-          else
-            TESTABLE_NOTEBOOKS="$TESTABLE_NOTEBOOKS $nb"
-          fi
-        done
-
-        # Save skipped notebooks to a file
-        echo -e "$SKIPPED_NOTEBOOKS" > skipped_notebooks.txt
-
-        # Output skipped notebooks to logs
-        if [ -s skipped_notebooks.txt ]; then
-          echo "📋 Skipped notebooks:"
-          cat skipped_notebooks.txt
-        fi
-
-        if [ -z "$TESTABLE_NOTEBOOKS" ]; then
-          echo "✅ No notebooks to test in ${{ matrix.dir }} after filtering."
-        else
-          echo "▶️ Running tests on:"
-          echo "$TESTABLE_NOTEBOOKS"
-          pytest --nbval-lax $TESTABLE_NOTEBOOKS
-        fi
-
-    - name: Check if skipped notebooks
-      if: always()  # Always run the check, even if previous steps fail
-      run: |
-        # Replace slashes with dashes to make a safe artifact name
-        SAFE_DIR_NAME=$(echo "${{ matrix.dir }}" | tr '/' '-')
-        echo "SAFE_DIR_NAME=$SAFE_DIR_NAME" >> $GITHUB_ENV
-        if [ -s skipped_notebooks.txt ]; then
-          echo "Uploading skipped notebooks list..."
-          echo "SKIPPED_LIST_PRESENT=true" >> $GITHUB_ENV
-        else
-          echo "No skipped notebooks to upload."
-        fi
-
-    - name: Upload skipped notebook list
-      if: env.SKIPPED_LIST_PRESENT == 'true'
-      uses: actions/upload-artifact@v4
-      with:
-        name: skipped-notebooks-${{ env.SAFE_DIR_NAME }}
-        path: skipped_notebooks.txt
+        echo "Testing notebook: ${{ matrix.notebook }}"
+        pytest --nbval-lax ${{ matrix.notebook }}
