@@ -11,6 +11,8 @@ SKIP_REGEX = re.compile(
 
 
 def should_skip(notebook_path):
+    if notebook_path.startswith(("venv", "_build", "build")):
+        return True
     with open(notebook_path, "r", encoding="utf-8") as f:
         content = f.read()
         return bool(SKIP_REGEX.search(content))
@@ -23,12 +25,12 @@ def main():
     parser.add_argument(
         "--list-skipped",
         action="store_true",
-        help="List notebooks that match the SKIP_REGEX",
+        help="List notebooks that should be skipped",
     )
     parser.add_argument(
         "--list-all",
         action="store_true",
-        help="List all notebooks (default behavior if no flags)",
+        help="List all notebooks",
     )
     parser.add_argument(
         "--json", action="store_true", help="Output results in JSON format"
@@ -36,16 +38,16 @@ def main():
 
     args = parser.parse_args()
 
-    notebooks = list(Path(".").rglob("*.ipynb"))
+    notebooks = list(map(str, Path(".").rglob("*.ipynb")))
 
     skipped = set()
     included = set()
 
     for nb in notebooks:
         if should_skip(nb):
-            skipped.add(str(nb))
+            skipped.add(nb)
         else:
-            included.add(str(nb))
+            included.add(nb)
 
     notebooks = []
 
