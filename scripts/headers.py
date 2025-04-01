@@ -78,7 +78,8 @@ def update_notebook_headers():
                 for line in range(len(source)):
                     source[line] = source[line].replace("!pip ", "%pip ")
                 for line, content in enumerate(source):
-                    if content.replace(" -q", "").startswith("%pip install amplpy"):
+                    if content.replace(" -q", "").startswith("%pip install amplpy") \
+                    or content.replace(" -q", "").startswith("%pip install amplpower"):
                         break
                 else:
                     raise Exception(f"amplpy is not being installed in {fname}")
