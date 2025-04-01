@@ -11,7 +11,8 @@ Tags
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (21 notebooks) <ampl-only>
-    amplpy (54 notebooks) <amplpy>
+    amplpower (1 notebook) <amplpower>
+    amplpy (55 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -59,7 +60,7 @@ Tags
     educational (4 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     employee-scheduling (1 notebook) <employee-scheduling>
-    energy (2 notebooks) <energy>
+    energy (3 notebooks) <energy>
     engineering (2 notebooks) <engineering>
     example (7 notebooks) <example>
     excel (2 notebooks) <excel>
@@ -98,6 +99,7 @@ Tags
     lp (1 notebook) <lp>
     machine-learning (1 notebook) <machine-learning>
     marketing (3 notebooks) <marketing>
+    matpower (1 notebook) <matpower>
     max-flow (1 notebook) <max-flow>
     mean-variance (1 notebook) <mean-variance>
     medicine (1 notebook) <medicine>
@@ -120,6 +122,7 @@ Tags
     nonlinear-programming (1 notebook) <nonlinear-programming>
     oil-production (3 notebooks) <oil-production>
     open-source (1 notebook) <open-source>
+    opf (1 notebook) <opf>
     optimal-power-flow (5 notebooks) <optimal-power-flow>
     optimization (1 notebook) <optimization>
     organ-exchange (1 notebook) <organ-exchange>
