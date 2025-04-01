@@ -166,7 +166,7 @@ at the beginning of your notebook:
 .. code-block:: bash
 
    # Install dependencies
-   %pip install -q amplpy==0.15.0b2
+   %pip install -q amplpy
 
 
 .. code-block:: python
@@ -538,7 +538,7 @@ List of modules available:
     .. code-block:: bash
 
         # Install dependencies
-        %pip install -q amplpy==0.15.0b2
+        %pip install -q amplpy
 
     .. code-block:: python
 
