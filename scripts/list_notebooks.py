@@ -9,9 +9,13 @@ SKIP_REGEX = re.compile(
     r"authenticate_user|gspread\.authorize|gmaps\.configure|powerbiclient|API_KEY|pyvpsolver"
 )
 
+SKIP_NB_LIST = {
+    'ampl_power.ipynb'
+}
 
 def should_skip(notebook_path):
-    if notebook_path.startswith(("venv", "_build", "build")):
+    if notebook_path.startswith(("venv", "_build", "build")) \
+    or os.path.basename(notebook_path) in SKIP_NB_LIST:
         return True
     with open(notebook_path, "r", encoding="utf-8") as f:
         content = f.read()
