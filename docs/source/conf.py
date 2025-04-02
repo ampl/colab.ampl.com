@@ -297,7 +297,7 @@ def generate_notebook_pages(app):
     os.makedirs(dest_dir)
     print("repo dir:", repo_dir)
     try:
-        notebooks = colab_utils.list_notebooks(repo_dir)
+        notebooks = colab_utils.discover_notebooks(repo_dir)
     except Exception as e:
         print(">>", e)
     index_page = NOTEBOOKS_INDEX
