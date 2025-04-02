@@ -62,7 +62,7 @@ def read_header(base_dir, fname):
     return info
 
 
-def list_notebooks(base_dir="."):
+def discover_notebooks(base_dir="."):
     base_dir = os.path.abspath(base_dir)
     lst = [
         os.path.join(dirpath, fname).replace("\\", "/")[len(base_dir) + 1 :]

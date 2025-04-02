@@ -1,4 +1,4 @@
-from utils import list_notebooks, list_badges, rst_badges
+from utils import discover_notebooks, list_badges, rst_badges
 from headers import update_notebook_headers
 import glob
 import os
@@ -8,7 +8,7 @@ update_notebook_headers()
 os.chdir(os.path.dirname(__file__) or os.curdir)
 os.chdir("..")
 
-NOTEBOOKS = list_notebooks()
+NOTEBOOKS = discover_notebooks()
 
 
 readme = open("README.md", "w", newline="\n", encoding="utf-8")

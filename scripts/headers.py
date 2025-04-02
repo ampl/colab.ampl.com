@@ -1,5 +1,5 @@
 import json
-from utils import list_notebooks, list_badges, parse_modules
+from utils import discover_notebooks, list_badges, parse_modules
 import os
 import sys
 
@@ -36,7 +36,7 @@ def update_notebook_headers():
     os.chdir(os.path.dirname(__file__) or os.curdir)
     os.chdir("..")
 
-    NOTEBOOKS = list_notebooks()
+    NOTEBOOKS = discover_notebooks()
 
     for info in NOTEBOOKS:
         title, fname = info["title"], info["fname"]
