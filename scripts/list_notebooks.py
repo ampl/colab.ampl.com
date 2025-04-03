@@ -7,7 +7,7 @@ from pathlib import Path
 
 # Define the regex to identify notebooks to skip
 SKIP_REGEX = re.compile(
-    r"authenticate_user|gspread\.authorize|gmaps\.configure|powerbiclient|API_KEY|pyvpsolver"
+    r"authenticate_user|gspread\.authorize|gmaps\.configure|powerbiclient|API_KEY|pyvpsolver|opf0"
 )
 SKIP_NB_LIST = {"ampl_power.ipynb"}
 
