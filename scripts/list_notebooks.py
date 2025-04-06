@@ -9,7 +9,7 @@ from pathlib import Path
 SKIP_REGEX = re.compile(
     r"authenticate_user|gspread\.authorize|gmaps\.configure|powerbiclient|API_KEY|pyvpsolver|opf0"
 )
-SKIP_NB_LIST = {"ampl_power.ipynb"}
+SKIP_NB_LIST = {"ampl_power.ipynb", "diet_case_study.ipynb"}
 
 
 def list_notebooks(mode="default"):

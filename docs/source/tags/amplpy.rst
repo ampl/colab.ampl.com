@@ -452,6 +452,36 @@ Debugging Model Infeasibility
     
 
 
+Diet and Other Input Models: Minimizing Costs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Diet and Other Input Models: Minimizing Costs <../notebooks/diet-and-other-input-models-minimizing-costs.html>`_
+| |github-diet-and-other-input-models-minimizing-costs| |colab-diet-and-other-input-models-minimizing-costs| |kaggle-diet-and-other-input-models-minimizing-costs| |gradient-diet-and-other-input-models-minimizing-costs| |sagemaker-diet-and-other-input-models-minimizing-costs|
+| Description: Diet case study, Chapter 2 from the AMPL book adapted to Python
+| Tags: :ref:`tag-amplpy`, :ref:`tag-ampl-lecture`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-diet-and-other-input-models-minimizing-costs|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/diet_case_study.ipynb
+    :alt: diet_case_study.ipynb
+    
+.. |colab-diet-and-other-input-models-minimizing-costs| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/diet_case_study.ipynb
+    :alt: Open In Colab
+    
+.. |kaggle-diet-and-other-input-models-minimizing-costs| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/diet_case_study.ipynb
+    :alt: Kaggle
+    
+.. |gradient-diet-and-other-input-models-minimizing-costs| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/diet_case_study.ipynb
+    :alt: Gradient
+    
+.. |sagemaker-diet-and-other-input-models-minimizing-costs| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-lecture/diet_case_study.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Diet model with Google Sheets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Diet model with Google Sheets <../notebooks/diet-model-with-google-sheets.html>`_

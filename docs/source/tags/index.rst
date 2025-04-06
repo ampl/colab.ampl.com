@@ -10,9 +10,9 @@ Tags
     ampl (23 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
-    ampl-only (21 notebooks) <ampl-only>
+    ampl-only (20 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (55 notebooks) <amplpy>
+    amplpy (56 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
