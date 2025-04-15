@@ -3,6 +3,36 @@
 transportation
 ==============
 
+Book Example: Transshipment problem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Book Example: Transshipment problem <../notebooks/book-example-transshipment-problem.html>`_
+| |github-book-example-transshipment-problem| |colab-book-example-transshipment-problem| |kaggle-book-example-transshipment-problem| |gradient-book-example-transshipment-problem| |sagemaker-book-example-transshipment-problem|
+| Description: Basic book example with general transshipment model (net1.mod)
+| Tags: :ref:`tag-ampl-book`, :ref:`tag-cbc`, :ref:`tag-transportation`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-book-example-transshipment-problem|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: net1.ipynb
+    
+.. |colab-book-example-transshipment-problem| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: Open In Colab
+    
+.. |kaggle-book-example-transshipment-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: Kaggle
+    
+.. |gradient-book-example-transshipment-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: Gradient
+    
+.. |sagemaker-book-example-transshipment-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Supply chain network
 ^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Supply chain network <../notebooks/supply-chain-network.html>`_

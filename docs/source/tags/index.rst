@@ -10,7 +10,7 @@ Tags
     ampl (23 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
-    ampl-only (17 notebooks) <ampl-only>
+    ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
     amplpy (56 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
@@ -26,7 +26,7 @@ Tags
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
     cash-flow-management (1 notebook) <cash-flow-management>
-    cbc (10 notebooks) <cbc>
+    cbc (11 notebooks) <cbc>
     cdar (1 notebook) <cdar>
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
@@ -182,7 +182,7 @@ Tags
     task-scheduling (1 notebook) <task-scheduling>
     template (1 notebook) <template>
     trainee-scheduling (1 notebook) <trainee-scheduling>
-    transportation (3 notebooks) <transportation>
+    transportation (4 notebooks) <transportation>
     tsp (1 notebook) <tsp>
     unconstrained (1 notebook) <unconstrained>
     unit-commitment (1 notebook) <unit-commitment>

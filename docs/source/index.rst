@@ -528,8 +528,8 @@ Book Example: Transshipment problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <notebooks/index.html>`_ > `Book Example: Transshipment problem <notebooks/book-example-transshipment-problem.html>`_
 | |github-book-example-transshipment-problem| |colab-book-example-transshipment-problem| |kaggle-book-example-transshipment-problem| |gradient-book-example-transshipment-problem| |sagemaker-book-example-transshipment-problem|
-| Description: book example with general transshipment model (net1.mod)
-| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
+| Description: Basic book example with general transshipment model (net1.mod)
+| Tags: :ref:`tag-ampl-book`, :ref:`tag-cbc`, :ref:`tag-transportation`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-book-example-transshipment-problem|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
