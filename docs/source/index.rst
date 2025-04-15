@@ -499,7 +499,7 @@ Book Example: Economic equilibria
 | `Notebooks <notebooks/index.html>`_ > `Book Example: Economic equilibria <notebooks/book-example-economic-equilibria.html>`_
 | |github-book-example-economic-equilibria| |colab-book-example-economic-equilibria| |kaggle-book-example-economic-equilibria| |gradient-book-example-economic-equilibria| |sagemaker-book-example-economic-equilibria|
 | Description: economic model using complementarity conditions from Chapter 19 AMPL book
-| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity-problem`
+| Tags: :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity-problem`, :ref:`tag-cbc`, :ref:`tag-gurobi`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-book-example-economic-equilibria|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
