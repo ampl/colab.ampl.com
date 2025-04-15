@@ -10,7 +10,7 @@ Tags
     ampl (23 notebooks) <ampl>
     ampl-book (10 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
-    ampl-only (20 notebooks) <ampl-only>
+    ampl-only (18 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
     amplpy (56 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
@@ -89,7 +89,7 @@ Tags
     introduction (4 notebooks) <introduction>
     inventory-management (1 notebook) <inventory-management>
     inverse-cost-scaling (1 notebook) <inverse-cost-scaling>
-    ipopt (1 notebook) <ipopt>
+    ipopt (3 notebooks) <ipopt>
     json (1 notebook) <json>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
