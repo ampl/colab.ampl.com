@@ -115,7 +115,7 @@ Retrieve Solution pool with AMPL and Gurobi
 | `Notebooks <../notebooks/index.html>`_ > `Retrieve Solution pool with AMPL and Gurobi <../notebooks/retrieve-solution-pool-with-ampl-and-gurobi.html>`_
 | |github-retrieve-solution-pool-with-ampl-and-gurobi| |colab-retrieve-solution-pool-with-ampl-and-gurobi| |kaggle-retrieve-solution-pool-with-ampl-and-gurobi| |gradient-retrieve-solution-pool-with-ampl-and-gurobi| |sagemaker-retrieve-solution-pool-with-ampl-and-gurobi|
 | Description: This notebook describes how to retrieve multiple solutions from the solver's solution pool. Optimization problems usually have several optimal solutions, one is returned by the solver but the others are discarded. These alternative solutions can also be retrieved by AMPL.
-| Tags: :ref:`tag-solution-pool`, :ref:`tag-gurobi`, :ref:`tag-cplex`, :ref:`tag-xpress`, :ref:`tag-mip`, :ref:`tag-mixed-integer-linear`, :ref:`tag-mp`
+| Tags: :ref:`tag-solution-pool`, :ref:`tag-gurobi`, :ref:`tag-cplex`, :ref:`tag-xpress`, :ref:`tag-mip`, :ref:`tag-mixed-integer-linear`, :ref:`tag-mp`, :ref:`tag-tutorials`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>, :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-retrieve-solution-pool-with-ampl-and-gurobi|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

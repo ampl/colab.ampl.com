@@ -184,6 +184,7 @@ Tags
     trainee-scheduling (1 notebook) <trainee-scheduling>
     transportation (4 notebooks) <transportation>
     tsp (1 notebook) <tsp>
+    tutorials (2 notebooks) <tutorials>
     unconstrained (1 notebook) <unconstrained>
     unit-commitment (1 notebook) <unit-commitment>
     unit-commitment-problem (1 notebook) <unit-commitment-problem>
