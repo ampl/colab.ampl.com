@@ -311,23 +311,23 @@ Introduction to Linear and Integer Programming
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 .. |github-introduction-to-linear-and-integer-programming|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_prorgramming.ipynb
-    :alt: intro_to_linear_prorgramming.ipynb
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_programming.ipynb
+    :alt: intro_to_linear_programming.ipynb
     
 .. |colab-introduction-to-linear-and-integer-programming| image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_prorgramming.ipynb
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_programming.ipynb
     :alt: Open In Colab
     
 .. |kaggle-introduction-to-linear-and-integer-programming| image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_prorgramming.ipynb
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_programming.ipynb
     :alt: Kaggle
     
 .. |gradient-introduction-to-linear-and-integer-programming| image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_prorgramming.ipynb
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_programming.ipynb
     :alt: Gradient
     
 .. |sagemaker-introduction-to-linear-and-integer-programming| image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_prorgramming.ipynb
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_programming.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
