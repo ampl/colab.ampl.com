@@ -6,7 +6,7 @@ coin (26 notebooks)
 Book Example: Economic equilibria
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: Economic equilibria <../notebooks/book-example-economic-equilibria.html>`_
-| |github-book-example-economic-equilibria| |colab-book-example-economic-equilibria| |kaggle-book-example-economic-equilibria| |gradient-book-example-economic-equilibria| |sagemaker-book-example-economic-equilibria|
+| |github-book-example-economic-equilibria| |colab-book-example-economic-equilibria| |deepnote-book-example-economic-equilibria| |kaggle-book-example-economic-equilibria| |gradient-book-example-economic-equilibria| |sagemaker-book-example-economic-equilibria|
 | Description: economic model using complementarity conditions from Chapter 19 AMPL book
 | Tags: :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity-problem`, :ref:`tag-cbc`, :ref:`tag-gurobi`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -19,13 +19,17 @@ Book Example: Economic equilibria
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
     :alt: Open In Colab
     
+.. |deepnote-book-example-economic-equilibria| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-book-example-economic-equilibria| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-book-example-economic-equilibria| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-book-example-economic-equilibria| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
@@ -36,7 +40,7 @@ Book Example: Economic equilibria
 Book Example: Transshipment problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: Transshipment problem <../notebooks/book-example-transshipment-problem.html>`_
-| |github-book-example-transshipment-problem| |colab-book-example-transshipment-problem| |kaggle-book-example-transshipment-problem| |gradient-book-example-transshipment-problem| |sagemaker-book-example-transshipment-problem|
+| |github-book-example-transshipment-problem| |colab-book-example-transshipment-problem| |deepnote-book-example-transshipment-problem| |kaggle-book-example-transshipment-problem| |gradient-book-example-transshipment-problem| |sagemaker-book-example-transshipment-problem|
 | Description: Basic book example with general transshipment model (net1.mod)
 | Tags: :ref:`tag-ampl-book`, :ref:`tag-cbc`, :ref:`tag-transportation`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -49,13 +53,17 @@ Book Example: Transshipment problem
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
     :alt: Open In Colab
     
+.. |deepnote-book-example-transshipment-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-book-example-transshipment-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-book-example-transshipment-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-book-example-transshipment-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
@@ -66,7 +74,7 @@ Book Example: Transshipment problem
 Book Example: diet
 ^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: diet <../notebooks/book-example-diet.html>`_
-| |github-book-example-diet| |colab-book-example-diet| |kaggle-book-example-diet| |gradient-book-example-diet| |sagemaker-book-example-diet|
+| |github-book-example-diet| |colab-book-example-diet| |deepnote-book-example-diet| |kaggle-book-example-diet| |gradient-book-example-diet| |sagemaker-book-example-diet|
 | Description: book example autogenerated using diet.mod, diet.dat, and diet.run
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -79,13 +87,17 @@ Book Example: diet
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
     :alt: Open In Colab
     
+.. |deepnote-book-example-diet| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-book-example-diet| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-book-example-diet| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-book-example-diet| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
@@ -96,7 +108,7 @@ Book Example: diet
 Book Example: prod
 ^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: prod <../notebooks/book-example-prod.html>`_
-| |github-book-example-prod| |colab-book-example-prod| |kaggle-book-example-prod| |gradient-book-example-prod| |sagemaker-book-example-prod|
+| |github-book-example-prod| |colab-book-example-prod| |deepnote-book-example-prod| |kaggle-book-example-prod| |gradient-book-example-prod| |sagemaker-book-example-prod|
 | Description: book example autogenerated using prod.mod, prod.dat, and prod.run
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 | Author: N/A
@@ -109,13 +121,17 @@ Book Example: prod
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
     :alt: Open In Colab
     
+.. |deepnote-book-example-prod| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-book-example-prod| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-book-example-prod| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-book-example-prod| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
@@ -126,7 +142,7 @@ Book Example: prod
 Book Example: steel
 ^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: steel <../notebooks/book-example-steel.html>`_
-| |github-book-example-steel| |colab-book-example-steel| |kaggle-book-example-steel| |gradient-book-example-steel| |sagemaker-book-example-steel|
+| |github-book-example-steel| |colab-book-example-steel| |deepnote-book-example-steel| |kaggle-book-example-steel| |gradient-book-example-steel| |sagemaker-book-example-steel|
 | Description: book example autogenerated using steel.mod, steel.dat, and steel.run
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 | Author: N/A
@@ -139,13 +155,17 @@ Book Example: steel
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
     :alt: Open In Colab
     
+.. |deepnote-book-example-steel| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-book-example-steel| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-book-example-steel| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-book-example-steel| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
@@ -156,7 +176,7 @@ Book Example: steel
 Book Example: transp
 ^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: transp <../notebooks/book-example-transp.html>`_
-| |github-book-example-transp| |colab-book-example-transp| |kaggle-book-example-transp| |gradient-book-example-transp| |sagemaker-book-example-transp|
+| |github-book-example-transp| |colab-book-example-transp| |deepnote-book-example-transp| |kaggle-book-example-transp| |gradient-book-example-transp| |sagemaker-book-example-transp|
 | Description: book example autogenerated using transp.mod, transp.dat, and transp.run
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 | Author: N/A
@@ -169,13 +189,17 @@ Book Example: transp
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
     :alt: Open In Colab
     
+.. |deepnote-book-example-transp| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-book-example-transp| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-book-example-transp| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-book-example-transp| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
@@ -186,7 +210,7 @@ Book Example: transp
 CP-style scheduling model with the *numberof* operator, solved by a MIP solver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `CP-style scheduling model with the *numberof* operator, solved by a MIP solver <../notebooks/cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver.html>`_
-| |github-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |colab-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |kaggle-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |gradient-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |sagemaker-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver|
+| |github-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |colab-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |deepnote-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |kaggle-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |gradient-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |sagemaker-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver|
 | Description: Scheduling model with the Constraint Programming *numberof* operator, solved with a MIP solver. New MIP solver drivers based on the [MP library](https://amplmp.readthedocs.io/) enable CP-style modeling.
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-constraint-programming`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
@@ -199,13 +223,17 @@ CP-style scheduling model with the *numberof* operator, solved by a MIP solver
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
     :alt: Open In Colab
     
+.. |deepnote-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
@@ -216,7 +244,7 @@ CP-style scheduling model with the *numberof* operator, solved by a MIP solver
 Capacity expansion of power generation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Capacity expansion of power generation <../notebooks/capacity-expansion-of-power-generation.html>`_
-| |github-capacity-expansion-of-power-generation| |colab-capacity-expansion-of-power-generation| |kaggle-capacity-expansion-of-power-generation| |gradient-capacity-expansion-of-power-generation| |sagemaker-capacity-expansion-of-power-generation|
+| |github-capacity-expansion-of-power-generation| |colab-capacity-expansion-of-power-generation| |deepnote-capacity-expansion-of-power-generation| |kaggle-capacity-expansion-of-power-generation| |gradient-capacity-expansion-of-power-generation| |sagemaker-capacity-expansion-of-power-generation|
 | Description: Models the extensive form of a deterministic multi-stage capacity expansion problem. In this model we can have multiple resources of the same type which have identical properties. The model can be further developed into a stochastic one.
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-energy`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -229,13 +257,17 @@ Capacity expansion of power generation
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/energy/capacity_expansion.ipynb
     :alt: Open In Colab
     
+.. |deepnote-capacity-expansion-of-power-generation| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/energy/capacity_expansion.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-capacity-expansion-of-power-generation| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/energy/capacity_expansion.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-capacity-expansion-of-power-generation| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/energy/capacity_expansion.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-capacity-expansion-of-power-generation| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/energy/capacity_expansion.ipynb
@@ -264,7 +296,7 @@ Diet model with Google Sheets
 Google Hashcode 2022
 ^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Google Hashcode 2022 <../notebooks/google-hashcode-2022.html>`_
-| |github-google-hashcode-2022| |colab-google-hashcode-2022| |kaggle-google-hashcode-2022| |gradient-google-hashcode-2022| |sagemaker-google-hashcode-2022|
+| |github-google-hashcode-2022| |colab-google-hashcode-2022| |deepnote-google-hashcode-2022| |kaggle-google-hashcode-2022| |gradient-google-hashcode-2022| |sagemaker-google-hashcode-2022|
 | Description: Google Hashcode 2022 Practice Problem
 | Tags: :ref:`tag-amplpy`, :ref:`tag-heuristics`, :ref:`tag-engineering`, :ref:`tag-scheduling`, :ref:`tag-complexity`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -277,13 +309,17 @@ Google Hashcode 2022
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
     :alt: Open In Colab
     
+.. |deepnote-google-hashcode-2022| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-google-hashcode-2022| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-google-hashcode-2022| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-google-hashcode-2022| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
@@ -294,7 +330,7 @@ Google Hashcode 2022
 Hydrothermal Scheduling Problem with Conic Programming
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Hydrothermal Scheduling Problem with Conic Programming <../notebooks/hydrothermal-scheduling-problem-with-conic-programming.html>`_
-| |github-hydrothermal-scheduling-problem-with-conic-programming| |colab-hydrothermal-scheduling-problem-with-conic-programming| |kaggle-hydrothermal-scheduling-problem-with-conic-programming| |gradient-hydrothermal-scheduling-problem-with-conic-programming| |sagemaker-hydrothermal-scheduling-problem-with-conic-programming|
+| |github-hydrothermal-scheduling-problem-with-conic-programming| |colab-hydrothermal-scheduling-problem-with-conic-programming| |deepnote-hydrothermal-scheduling-problem-with-conic-programming| |kaggle-hydrothermal-scheduling-problem-with-conic-programming| |gradient-hydrothermal-scheduling-problem-with-conic-programming| |sagemaker-hydrothermal-scheduling-problem-with-conic-programming|
 | Description: Hydrothermal Scheduling Problem using Second-Order Cones
 | Tags: :ref:`tag-amplpy`, :ref:`tag-conic`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-nonlinear-programming`, :ref:`tag-scheduling`, :ref:`tag-engineering`, :ref:`tag-power-generation`, :ref:`tag-geothermal-energy`, :ref:`tag-hydropower`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
@@ -307,13 +343,17 @@ Hydrothermal Scheduling Problem with Conic Programming
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/hydrothermal.ipynb
     :alt: Open In Colab
     
+.. |deepnote-hydrothermal-scheduling-problem-with-conic-programming| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/hydrothermal.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-hydrothermal-scheduling-problem-with-conic-programming| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/hydrothermal.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-hydrothermal-scheduling-problem-with-conic-programming| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/hydrothermal.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-hydrothermal-scheduling-problem-with-conic-programming| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/hydrothermal.ipynb
@@ -324,7 +364,7 @@ Hydrothermal Scheduling Problem with Conic Programming
 Logistic Regression with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Logistic Regression with amplpy <../notebooks/logistic-regression-with-amplpy.html>`_
-| |github-logistic-regression-with-amplpy| |colab-logistic-regression-with-amplpy| |kaggle-logistic-regression-with-amplpy| |gradient-logistic-regression-with-amplpy| |sagemaker-logistic-regression-with-amplpy|
+| |github-logistic-regression-with-amplpy| |colab-logistic-regression-with-amplpy| |deepnote-logistic-regression-with-amplpy| |kaggle-logistic-regression-with-amplpy| |gradient-logistic-regression-with-amplpy| |sagemaker-logistic-regression-with-amplpy|
 | Description: Logistic regression with amplpy using exponential cones
 | Tags: :ref:`tag-highlights`, :ref:`tag-amplpy`, :ref:`tag-regression`, :ref:`tag-sigmoid`, :ref:`tag-softplus`, :ref:`tag-log-sum-exp`, :ref:`tag-classifier`, :ref:`tag-regularization`, :ref:`tag-machine-learning`, :ref:`tag-conic`, :ref:`tag-exponential-cone`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-formulation-comparison`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>, :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
@@ -337,13 +377,17 @@ Logistic Regression with amplpy
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
     :alt: Open In Colab
     
+.. |deepnote-logistic-regression-with-amplpy| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-logistic-regression-with-amplpy| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-logistic-regression-with-amplpy| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-logistic-regression-with-amplpy| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
@@ -354,7 +398,7 @@ Logistic Regression with amplpy
 Multicommodity transportation problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Multicommodity transportation problem <../notebooks/multicommodity-transportation-problem.html>`_
-| |github-multicommodity-transportation-problem| |colab-multicommodity-transportation-problem| |kaggle-multicommodity-transportation-problem| |gradient-multicommodity-transportation-problem| |sagemaker-multicommodity-transportation-problem|
+| |github-multicommodity-transportation-problem| |colab-multicommodity-transportation-problem| |deepnote-multicommodity-transportation-problem| |kaggle-multicommodity-transportation-problem| |gradient-multicommodity-transportation-problem| |sagemaker-multicommodity-transportation-problem|
 | Description: Multicommodity transportation model with binary variables
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-mixed-integer-linear`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -367,13 +411,17 @@ Multicommodity transportation problem
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
     :alt: Open In Colab
     
+.. |deepnote-multicommodity-transportation-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-multicommodity-transportation-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-multicommodity-transportation-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-multicommodity-transportation-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
@@ -384,7 +432,7 @@ Multicommodity transportation problem
 Nonlinear transportation model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Nonlinear transportation model <../notebooks/nonlinear-transportation-model.html>`_
-| |github-nonlinear-transportation-model| |colab-nonlinear-transportation-model| |kaggle-nonlinear-transportation-model| |gradient-nonlinear-transportation-model| |sagemaker-nonlinear-transportation-model|
+| |github-nonlinear-transportation-model| |colab-nonlinear-transportation-model| |deepnote-nonlinear-transportation-model| |kaggle-nonlinear-transportation-model| |gradient-nonlinear-transportation-model| |sagemaker-nonlinear-transportation-model|
 | Description: Nonlinear transportation problem with Amplpy nltransd.mod, nltrans.dat, and nltrans.run
 | Tags: :ref:`tag-ampl-book`, :ref:`tag-nonlinear`, :ref:`tag-ipopt`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -397,13 +445,17 @@ Nonlinear transportation model
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
     :alt: Open In Colab
     
+.. |deepnote-nonlinear-transportation-model| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-nonlinear-transportation-model| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-nonlinear-transportation-model| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-nonlinear-transportation-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
@@ -414,7 +466,7 @@ Nonlinear transportation model
 Nonlinear transportation problem example
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Nonlinear transportation problem example <../notebooks/nonlinear-transportation-problem-example.html>`_
-| |github-nonlinear-transportation-problem-example| |colab-nonlinear-transportation-problem-example| |kaggle-nonlinear-transportation-problem-example| |gradient-nonlinear-transportation-problem-example| |sagemaker-nonlinear-transportation-problem-example|
+| |github-nonlinear-transportation-problem-example| |colab-nonlinear-transportation-problem-example| |deepnote-nonlinear-transportation-problem-example| |kaggle-nonlinear-transportation-problem-example| |gradient-nonlinear-transportation-problem-example| |sagemaker-nonlinear-transportation-problem-example|
 | Description: book example autogenerated using nltransd.mod, nltrans.dat, and nltrans.run
 | Tags: :ref:`tag-ampl-book`, :ref:`tag-nonlinear`, :ref:`tag-ipopt`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -427,13 +479,17 @@ Nonlinear transportation problem example
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
     :alt: Open In Colab
     
+.. |deepnote-nonlinear-transportation-problem-example| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-nonlinear-transportation-problem-example| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-nonlinear-transportation-problem-example| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-nonlinear-transportation-problem-example| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
@@ -444,7 +500,7 @@ Nonlinear transportation problem example
 Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) <../notebooks/optimal-power-flow-with-ampl-and-python-bus-injection-model-bim.html>`_
-| |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |colab-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |kaggle-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |gradient-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |sagemaker-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim|
+| |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |colab-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |deepnote-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |kaggle-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |gradient-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |sagemaker-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim|
 | Description: Optimal Power Flow
 | Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
@@ -457,13 +513,17 @@ Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM)
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf2.ipynb
     :alt: Open In Colab
     
+.. |deepnote-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf2.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf2.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf2.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf2.ipynb
@@ -474,7 +534,7 @@ Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM)
 Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) with controllable-phase shifting transformers and tap-changing transformers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) with controllable-phase shifting transformers and tap-changing transformers <../notebooks/optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers.html>`_
-| |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |colab-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |kaggle-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |gradient-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |sagemaker-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers|
+| |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |colab-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |deepnote-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |kaggle-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |gradient-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |sagemaker-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers|
 | Description: Optimal Power Flow
 | Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
@@ -487,13 +547,17 @@ Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) with control
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf4.ipynb
     :alt: Open In Colab
     
+.. |deepnote-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf4.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf4.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf4.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf4.ipynb
@@ -504,7 +568,7 @@ Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) with control
 Optimal Power Flow with AMPL and Python - DC Power Flow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - DC Power Flow <../notebooks/optimal-power-flow-with-ampl-and-python-dc-power-flow.html>`_
-| |github-optimal-power-flow-with-ampl-and-python-dc-power-flow| |colab-optimal-power-flow-with-ampl-and-python-dc-power-flow| |kaggle-optimal-power-flow-with-ampl-and-python-dc-power-flow| |gradient-optimal-power-flow-with-ampl-and-python-dc-power-flow| |sagemaker-optimal-power-flow-with-ampl-and-python-dc-power-flow|
+| |github-optimal-power-flow-with-ampl-and-python-dc-power-flow| |colab-optimal-power-flow-with-ampl-and-python-dc-power-flow| |deepnote-optimal-power-flow-with-ampl-and-python-dc-power-flow| |kaggle-optimal-power-flow-with-ampl-and-python-dc-power-flow| |gradient-optimal-power-flow-with-ampl-and-python-dc-power-flow| |sagemaker-optimal-power-flow-with-ampl-and-python-dc-power-flow|
 | Description: Optimal Power Flow
 | Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
@@ -517,13 +581,17 @@ Optimal Power Flow with AMPL and Python - DC Power Flow
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf3.ipynb
     :alt: Open In Colab
     
+.. |deepnote-optimal-power-flow-with-ampl-and-python-dc-power-flow| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf3.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-optimal-power-flow-with-ampl-and-python-dc-power-flow| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf3.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-optimal-power-flow-with-ampl-and-python-dc-power-flow| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf3.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-optimal-power-flow-with-ampl-and-python-dc-power-flow| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf3.ipynb
@@ -534,7 +602,7 @@ Optimal Power Flow with AMPL and Python - DC Power Flow
 Optimal Power Flow with AMPL and Python - conventional Power Flow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - conventional Power Flow <../notebooks/optimal-power-flow-with-ampl-and-python-conventional-power-flow.html>`_
-| |github-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |colab-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |kaggle-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |gradient-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |sagemaker-optimal-power-flow-with-ampl-and-python-conventional-power-flow|
+| |github-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |colab-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |deepnote-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |kaggle-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |gradient-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |sagemaker-optimal-power-flow-with-ampl-and-python-conventional-power-flow|
 | Description: Optimal Power Flow
 | Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
@@ -547,13 +615,17 @@ Optimal Power Flow with AMPL and Python - conventional Power Flow
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf1.ipynb
     :alt: Open In Colab
     
+.. |deepnote-optimal-power-flow-with-ampl-and-python-conventional-power-flow| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf1.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-optimal-power-flow-with-ampl-and-python-conventional-power-flow| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf1.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-optimal-power-flow-with-ampl-and-python-conventional-power-flow| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf1.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-optimal-power-flow-with-ampl-and-python-conventional-power-flow| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf1.ipynb
@@ -564,7 +636,7 @@ Optimal Power Flow with AMPL and Python - conventional Power Flow
 Optimal Power Flow with AMPL and Python - data management
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - data management <../notebooks/optimal-power-flow-with-ampl-and-python-data-management.html>`_
-| |github-optimal-power-flow-with-ampl-and-python-data-management| |colab-optimal-power-flow-with-ampl-and-python-data-management| |kaggle-optimal-power-flow-with-ampl-and-python-data-management| |gradient-optimal-power-flow-with-ampl-and-python-data-management| |sagemaker-optimal-power-flow-with-ampl-and-python-data-management|
+| |github-optimal-power-flow-with-ampl-and-python-data-management| |colab-optimal-power-flow-with-ampl-and-python-data-management| |deepnote-optimal-power-flow-with-ampl-and-python-data-management| |kaggle-optimal-power-flow-with-ampl-and-python-data-management| |gradient-optimal-power-flow-with-ampl-and-python-data-management| |sagemaker-optimal-power-flow-with-ampl-and-python-data-management|
 | Description: Optimal Power Flow with AMPL, Python and amplpy
 | Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
@@ -577,13 +649,17 @@ Optimal Power Flow with AMPL and Python - data management
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf0.ipynb
     :alt: Open In Colab
     
+.. |deepnote-optimal-power-flow-with-ampl-and-python-data-management| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf0.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-optimal-power-flow-with-ampl-and-python-data-management| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf0.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-optimal-power-flow-with-ampl-and-python-data-management| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf0.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-optimal-power-flow-with-ampl-and-python-data-management| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/opf/opf0.ipynb
@@ -594,7 +670,7 @@ Optimal Power Flow with AMPL and Python - data management
 Optimization Methods in Finance: Chapter 3
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Optimization Methods in Finance: Chapter 3 <../notebooks/optimization-methods-in-finance-chapter-3.html>`_
-| |github-optimization-methods-in-finance-chapter-3| |colab-optimization-methods-in-finance-chapter-3| |kaggle-optimization-methods-in-finance-chapter-3| |gradient-optimization-methods-in-finance-chapter-3| |sagemaker-optimization-methods-in-finance-chapter-3|
+| |github-optimization-methods-in-finance-chapter-3| |colab-optimization-methods-in-finance-chapter-3| |deepnote-optimization-methods-in-finance-chapter-3| |kaggle-optimization-methods-in-finance-chapter-3| |gradient-optimization-methods-in-finance-chapter-3| |sagemaker-optimization-methods-in-finance-chapter-3|
 | Description: Optimization Methods in Finance: Bond Dedication Problem.
 | Tags: :ref:`tag-amplpy`, :ref:`tag-example`, :ref:`tag-finance`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -607,13 +683,17 @@ Optimization Methods in Finance: Chapter 3
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/finance/finance_opt_example_3_1.ipynb
     :alt: Open In Colab
     
+.. |deepnote-optimization-methods-in-finance-chapter-3| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/finance/finance_opt_example_3_1.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-optimization-methods-in-finance-chapter-3| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/finance/finance_opt_example_3_1.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-optimization-methods-in-finance-chapter-3| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/finance/finance_opt_example_3_1.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-optimization-methods-in-finance-chapter-3| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/finance/finance_opt_example_3_1.ipynb
@@ -624,7 +704,7 @@ Optimization Methods in Finance: Chapter 3
 Power System Optimization with Amplpower package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Power System Optimization with Amplpower package <../notebooks/power-system-optimization-with-amplpower-package.html>`_
-| |github-power-system-optimization-with-amplpower-package| |colab-power-system-optimization-with-amplpower-package| |kaggle-power-system-optimization-with-amplpower-package| |gradient-power-system-optimization-with-amplpower-package| |sagemaker-power-system-optimization-with-amplpower-package|
+| |github-power-system-optimization-with-amplpower-package| |colab-power-system-optimization-with-amplpower-package| |deepnote-power-system-optimization-with-amplpower-package| |kaggle-power-system-optimization-with-amplpower-package| |gradient-power-system-optimization-with-amplpower-package| |sagemaker-power-system-optimization-with-amplpower-package|
 | Description: this notebook uses amplpower package to solver opf problems
 | Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-opf`, :ref:`tag-matpower`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -637,13 +717,17 @@ Power System Optimization with Amplpower package
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/ampl_power.ipynb
     :alt: Open In Colab
     
+.. |deepnote-power-system-optimization-with-amplpower-package| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/ampl_power.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-power-system-optimization-with-amplpower-package| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/ampl_power.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-power-system-optimization-with-amplpower-package| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/ampl_power.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-power-system-optimization-with-amplpower-package| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/ampl_power.ipynb
@@ -654,7 +738,7 @@ Power System Optimization with Amplpower package
 Production model
 ^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Production model <../notebooks/production-model.html>`_
-| |github-production-model| |colab-production-model| |kaggle-production-model| |gradient-production-model| |sagemaker-production-model|
+| |github-production-model| |colab-production-model| |deepnote-production-model| |kaggle-production-model| |gradient-production-model| |sagemaker-production-model|
 | Description: generic model for production problem
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-industry`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -667,13 +751,17 @@ Production model
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
     :alt: Open In Colab
     
+.. |deepnote-production-model| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-production-model| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-production-model| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-production-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
@@ -684,7 +772,7 @@ Production model
 Steel industry problem
 ^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Steel industry problem <../notebooks/steel-industry-problem.html>`_
-| |github-steel-industry-problem| |colab-steel-industry-problem| |kaggle-steel-industry-problem| |gradient-steel-industry-problem| |sagemaker-steel-industry-problem|
+| |github-steel-industry-problem| |colab-steel-industry-problem| |deepnote-steel-industry-problem| |kaggle-steel-industry-problem| |gradient-steel-industry-problem| |sagemaker-steel-industry-problem|
 | Description: model for steel production problem
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`, :ref:`tag-industry`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -697,13 +785,17 @@ Steel industry problem
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/steel_lecture.ipynb
     :alt: Open In Colab
     
+.. |deepnote-steel-industry-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/steel_lecture.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-steel-industry-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/steel_lecture.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-steel-industry-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/steel_lecture.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-steel-industry-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-lecture/steel_lecture.ipynb
@@ -714,7 +806,7 @@ Steel industry problem
 Transportation problem
 ^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Transportation problem <../notebooks/transportation-problem.html>`_
-| |github-transportation-problem| |colab-transportation-problem| |kaggle-transportation-problem| |gradient-transportation-problem| |sagemaker-transportation-problem|
+| |github-transportation-problem| |colab-transportation-problem| |deepnote-transportation-problem| |kaggle-transportation-problem| |gradient-transportation-problem| |sagemaker-transportation-problem|
 | Description: an AMPL model for the transportation problem
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -727,13 +819,17 @@ Transportation problem
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/transp_lecture.ipynb
     :alt: Open In Colab
     
+.. |deepnote-transportation-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/transp_lecture.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-transportation-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/transp_lecture.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-transportation-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/transp_lecture.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-transportation-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-lecture/transp_lecture.ipynb
@@ -744,7 +840,7 @@ Transportation problem
 Travelling Salesman Problem with subtour elimination
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Travelling Salesman Problem with subtour elimination <../notebooks/travelling-salesman-problem-with-subtour-elimination.html>`_
-| |github-travelling-salesman-problem-with-subtour-elimination| |colab-travelling-salesman-problem-with-subtour-elimination| |kaggle-travelling-salesman-problem-with-subtour-elimination| |gradient-travelling-salesman-problem-with-subtour-elimination| |sagemaker-travelling-salesman-problem-with-subtour-elimination|
+| |github-travelling-salesman-problem-with-subtour-elimination| |colab-travelling-salesman-problem-with-subtour-elimination| |deepnote-travelling-salesman-problem-with-subtour-elimination| |kaggle-travelling-salesman-problem-with-subtour-elimination| |gradient-travelling-salesman-problem-with-subtour-elimination| |sagemaker-travelling-salesman-problem-with-subtour-elimination|
 | Description: this example shows how to solve a TSP  by eliminating subtours using amplpy and ampls
 | Tags: :ref:`tag-callbacks`, :ref:`tag-tsp`
 | Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>
@@ -757,13 +853,17 @@ Travelling Salesman Problem with subtour elimination
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/mapgccv/callbacks/tsp_simple_cuts_generic.ipynb
     :alt: Open In Colab
     
+.. |deepnote-travelling-salesman-problem-with-subtour-elimination| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/mapgccv/callbacks/tsp_simple_cuts_generic.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-travelling-salesman-problem-with-subtour-elimination| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/mapgccv/callbacks/tsp_simple_cuts_generic.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-travelling-salesman-problem-with-subtour-elimination| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/mapgccv/callbacks/tsp_simple_cuts_generic.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-travelling-salesman-problem-with-subtour-elimination| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mapgccv/callbacks/tsp_simple_cuts_generic.ipynb

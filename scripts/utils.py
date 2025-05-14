@@ -123,6 +123,20 @@ def colab_badge(fname, rst=False, rst_sub=""):
     """
 
 
+def deepnote_badge(fname, rst=False, rst_sub=""):
+    if rst_sub:
+        rst_sub = f"|{rst_sub}| "
+    prefix = "https://deepnote.com/launch?url=https://github.com"
+    image = "https://deepnote.com/buttons/launch-in-deepnote-small.svg"
+    url = normalize(f"{prefix}/{GITHUB_PATH}/{fname}")
+    if not rst:
+        return f"[![Open In Deepnote]({image})]({url})"
+    return f""".. {rst_sub}image:: {image}
+    :target: {url}
+    :alt: Open In Deepnote
+    """
+
+
 def kaggle_badge(fname, rst=False, rst_sub=""):
     if rst_sub:
         rst_sub = f"|{rst_sub}| "
@@ -130,10 +144,10 @@ def kaggle_badge(fname, rst=False, rst_sub=""):
     image = "https://kaggle.com/static/images/open-in-kaggle.svg"
     url = normalize(f"{prefix}/{GITHUB_PATH}/{fname}")
     if not rst:
-        return f"[![Kaggle]({image})]({url})"
+        return f"[![Open In Kaggle]({image})]({url})"
     return f""".. {rst_sub}image:: {image}
     :target: {url}
-    :alt: Kaggle
+    :alt: Open In Kaggle
     """
 
 
@@ -144,10 +158,10 @@ def gradient_badge(fname, rst=False, rst_sub=""):
     image = "https://assets.paperspace.io/img/gradient-badge.svg"
     url = normalize(f"{prefix}/{GITHUB_PATH}/{fname}")
     if not rst:
-        return f"[![Gradient]({image})]({url})"
+        return f"[![Open In Gradient]({image})]({url})"
     return f""".. {rst_sub}image:: {image}
     :target: {url}
-    :alt: Gradient
+    :alt: Open In Gradient
     """
 
 
@@ -170,20 +184,21 @@ def hits_badge(fname, rst=False):
         f"https://github.com/{GITHUB_PATH}/{fname}"
     )
     if not rst:
-        return f"[![Hits]({badge})](https://colab.ampl.com)"
+        return f"[![Powered by AMPL]({badge})](https://ampl.com)"
     return ""
 
 
 def list_badges(fname, colab_only=False, rst=False, page=None):
     github = github_badge(fname, rst=rst)
     colab = colab_badge(fname, rst=rst)
+    deepnote = deepnote_badge(fname, rst=rst)
     kaggle = kaggle_badge(fname, rst=rst) if not colab_only else ""
     gradient = gradient_badge(fname, rst=rst) if not colab_only else ""
     sagemaker = sagemaker_badge(fname, rst=rst) if not colab_only else ""
     hits = hits_badge(fname, rst=rst) if page != "README" else ""
     return [
         badge
-        for badge in (github, colab, kaggle, gradient, sagemaker, hits)
+        for badge in (github, colab, deepnote, kaggle, gradient, sagemaker, hits)
         if badge != ""
     ]
 
@@ -193,10 +208,16 @@ def rst_badges(fname, url_string, colab_only=False):
     colab = colab_badge(fname, rst=True, rst_sub=f"colab-{url_string}")
     lst = [("github", github), ("colab", colab)]
     if not colab_only:
+        deepnote = deepnote_badge(fname, rst=True, rst_sub=f"deepnote-{url_string}")
         kaggle = kaggle_badge(fname, rst=True, rst_sub=f"kaggle-{url_string}")
         gradient = gradient_badge(fname, rst=True, rst_sub=f"gradient-{url_string}")
         sagemaker = sagemaker_badge(fname, rst=True, rst_sub=f"sagemaker-{url_string}")
-        lst += [("kaggle", kaggle), ("gradient", gradient), ("sagemaker", sagemaker)]
+        lst += [
+            ("deepnote", deepnote),
+            ("kaggle", kaggle),
+            ("gradient", gradient),
+            ("sagemaker", sagemaker),
+        ]
 
     badges = " ".join((f"|{badge[0]}-{url_string}|" for badge in lst))
     images = "\n" + "\n".join((badge[1] for badge in lst)) + "\n"

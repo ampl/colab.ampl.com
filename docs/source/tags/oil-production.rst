@@ -6,7 +6,7 @@ oil-production
 Oil refinery production optimization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Oil refinery production optimization <../notebooks/oil-refinery-production-optimization.html>`_
-| |github-oil-refinery-production-optimization| |colab-oil-refinery-production-optimization| |kaggle-oil-refinery-production-optimization| |gradient-oil-refinery-production-optimization| |sagemaker-oil-refinery-production-optimization|
+| |github-oil-refinery-production-optimization| |colab-oil-refinery-production-optimization| |deepnote-oil-refinery-production-optimization| |kaggle-oil-refinery-production-optimization| |gradient-oil-refinery-production-optimization| |sagemaker-oil-refinery-production-optimization|
 | Description: In this document, we present an enhanced approach to oil refining optimization for improved decision-making.
 | Tags: :ref:`tag-oil-production`, :ref:`tag-production-optimization`, :ref:`tag-profitability`, :ref:`tag-refinery`, :ref:`tag-mip`, :ref:`tag-highs`, :ref:`tag-industry`, :ref:`tag-json`, :ref:`tag-spreadsheet`, :ref:`tag-excel`
 | Author: :ref:`email-mail_at_solverytic.com` <mail@solverytic.com>
@@ -19,13 +19,17 @@ Oil refinery production optimization
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Petroleum_refining/oil_refining.ipynb
     :alt: Open In Colab
     
+.. |deepnote-oil-refinery-production-optimization| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/Petroleum_refining/oil_refining.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-oil-refinery-production-optimization| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/Petroleum_refining/oil_refining.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-oil-refinery-production-optimization| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Petroleum_refining/oil_refining.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-oil-refinery-production-optimization| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Petroleum_refining/oil_refining.ipynb
@@ -54,7 +58,7 @@ Oil refinery production optimization (+PowerBI)
 Oil refinery production optimization (ampl-only version)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Oil refinery production optimization (ampl-only version) <../notebooks/oil-refinery-production-optimization-ampl-only-version.html>`_
-| |github-oil-refinery-production-optimization-ampl-only-version| |colab-oil-refinery-production-optimization-ampl-only-version| |kaggle-oil-refinery-production-optimization-ampl-only-version| |gradient-oil-refinery-production-optimization-ampl-only-version| |sagemaker-oil-refinery-production-optimization-ampl-only-version|
+| |github-oil-refinery-production-optimization-ampl-only-version| |colab-oil-refinery-production-optimization-ampl-only-version| |deepnote-oil-refinery-production-optimization-ampl-only-version| |kaggle-oil-refinery-production-optimization-ampl-only-version| |gradient-oil-refinery-production-optimization-ampl-only-version| |sagemaker-oil-refinery-production-optimization-ampl-only-version|
 | Description: In this document, we present an enhanced approach to oil refining optimization for improved decision-making.
 | Tags: :ref:`tag-oil-production`, :ref:`tag-production-optimization`, :ref:`tag-profitability`, :ref:`tag-refinery`, :ref:`tag-mip`, :ref:`tag-ampl-only`, :ref:`tag-highs`, :ref:`tag-industry`
 | Author: :ref:`email-mail_at_solverytic.com` <mail@solverytic.com>
@@ -67,13 +71,17 @@ Oil refinery production optimization (ampl-only version)
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Petroleum_refining/oil_refining_ampl_only.ipynb
     :alt: Open In Colab
     
+.. |deepnote-oil-refinery-production-optimization-ampl-only-version| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/Petroleum_refining/oil_refining_ampl_only.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-oil-refinery-production-optimization-ampl-only-version| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/Petroleum_refining/oil_refining_ampl_only.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-oil-refinery-production-optimization-ampl-only-version| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Petroleum_refining/oil_refining_ampl_only.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-oil-refinery-production-optimization-ampl-only-version| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Petroleum_refining/oil_refining_ampl_only.ipynb

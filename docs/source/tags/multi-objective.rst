@@ -6,7 +6,7 @@ multi-objective
 Labs scheduling
 ^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Labs scheduling <../notebooks/labs-scheduling.html>`_
-| |github-labs-scheduling| |colab-labs-scheduling| |kaggle-labs-scheduling| |gradient-labs-scheduling| |sagemaker-labs-scheduling|
+| |github-labs-scheduling| |colab-labs-scheduling| |deepnote-labs-scheduling| |kaggle-labs-scheduling| |gradient-labs-scheduling| |sagemaker-labs-scheduling|
 | Description: Model for laboratories scheduling. Some labs are needed to handle requests from researchers, and departments have to assign labs and locations to the requests.
 | Tags: :ref:`tag-facility-location`, :ref:`tag-highs`, :ref:`tag-mip`, :ref:`tag-mixed-integer-linear`, :ref:`tag-scheduling`, :ref:`tag-multi-objective`, :ref:`tag-mp`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -19,13 +19,17 @@ Labs scheduling
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/scheduling/labs_scheduling.ipynb
     :alt: Open In Colab
     
+.. |deepnote-labs-scheduling| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/scheduling/labs_scheduling.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-labs-scheduling| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/scheduling/labs_scheduling.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-labs-scheduling| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/scheduling/labs_scheduling.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-labs-scheduling| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/scheduling/labs_scheduling.ipynb

@@ -6,7 +6,7 @@ open (14 notebooks)
 AMPL Development Tutorial 1/6 -- Capacitated Facility Location Problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL Development Tutorial 1/6 -- Capacitated Facility Location Problem <../notebooks/ampl-development-tutorial-16-capacitated-facility-location-problem.html>`_
-| |github-ampl-development-tutorial-16-capacitated-facility-location-problem| |colab-ampl-development-tutorial-16-capacitated-facility-location-problem| |kaggle-ampl-development-tutorial-16-capacitated-facility-location-problem| |gradient-ampl-development-tutorial-16-capacitated-facility-location-problem| |sagemaker-ampl-development-tutorial-16-capacitated-facility-location-problem|
+| |github-ampl-development-tutorial-16-capacitated-facility-location-problem| |colab-ampl-development-tutorial-16-capacitated-facility-location-problem| |deepnote-ampl-development-tutorial-16-capacitated-facility-location-problem| |kaggle-ampl-development-tutorial-16-capacitated-facility-location-problem| |gradient-ampl-development-tutorial-16-capacitated-facility-location-problem| |sagemaker-ampl-development-tutorial-16-capacitated-facility-location-problem|
 | Description: This notebook marks the beginning of a six-part series.
 | Tags: :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-mip`, :ref:`tag-facility-location`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -19,13 +19,17 @@ AMPL Development Tutorial 1/6 -- Capacitated Facility Location Problem
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/1_floc.ipynb
     :alt: Open In Colab
     
+.. |deepnote-ampl-development-tutorial-16-capacitated-facility-location-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/1_floc.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-ampl-development-tutorial-16-capacitated-facility-location-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/1_floc.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-ampl-development-tutorial-16-capacitated-facility-location-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/1_floc.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-ampl-development-tutorial-16-capacitated-facility-location-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/1_floc.ipynb
@@ -36,7 +40,7 @@ AMPL Development Tutorial 1/6 -- Capacitated Facility Location Problem
 AMPL Development Tutorial 2/6 -- Stochastic Capacitated Facility Location Problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL Development Tutorial 2/6 -- Stochastic Capacitated Facility Location Problem <../notebooks/ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem.html>`_
-| |github-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |colab-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |kaggle-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |gradient-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |sagemaker-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem|
+| |github-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |colab-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |deepnote-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |kaggle-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |gradient-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| |sagemaker-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem|
 | Description: This notebook continues our six-part series as the second installment.
 | Tags: :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-mip`, :ref:`tag-stochastic`, :ref:`tag-facility-location`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -49,13 +53,17 @@ AMPL Development Tutorial 2/6 -- Stochastic Capacitated Facility Location Proble
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/2_stoch_floc.ipynb
     :alt: Open In Colab
     
+.. |deepnote-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/2_stoch_floc.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/2_stoch_floc.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/2_stoch_floc.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-ampl-development-tutorial-26-stochastic-capacitated-facility-location-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/2_stoch_floc.ipynb
@@ -66,7 +74,7 @@ AMPL Development Tutorial 2/6 -- Stochastic Capacitated Facility Location Proble
 AMPL Development Tutorial 3/6 -- Benders Decomposition via AMPL scripting
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL Development Tutorial 3/6 -- Benders Decomposition via AMPL scripting <../notebooks/ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting.html>`_
-| |github-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| |colab-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| |kaggle-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| |gradient-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| |sagemaker-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting|
+| |github-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| |colab-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| |deepnote-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| |kaggle-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| |gradient-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| |sagemaker-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting|
 | Description: In this third installment of our six-part series, we continue our exploration by addressing the complexities introduced by the stochastic programming formulation presented in part two.
 | Tags: :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-mip`, :ref:`tag-stochastic`, :ref:`tag-facility-location`, :ref:`tag-benders`, :ref:`tag-decomposition`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -79,13 +87,17 @@ AMPL Development Tutorial 3/6 -- Benders Decomposition via AMPL scripting
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/3_benders_stoch_floc.ipynb
     :alt: Open In Colab
     
+.. |deepnote-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/3_benders_stoch_floc.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/3_benders_stoch_floc.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/3_benders_stoch_floc.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-ampl-development-tutorial-36-benders-decomposition-via-ampl-scripting| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/3_benders_stoch_floc.ipynb
@@ -96,7 +108,7 @@ AMPL Development Tutorial 3/6 -- Benders Decomposition via AMPL scripting
 AMPL Development Tutorial 4/6 -- Benders Decomposition via PYTHON scripting
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL Development Tutorial 4/6 -- Benders Decomposition via PYTHON scripting <../notebooks/ampl-development-tutorial-46-benders-decomposition-via-python-scripting.html>`_
-| |github-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| |colab-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| |kaggle-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| |gradient-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| |sagemaker-ampl-development-tutorial-46-benders-decomposition-via-python-scripting|
+| |github-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| |colab-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| |deepnote-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| |kaggle-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| |gradient-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| |sagemaker-ampl-development-tutorial-46-benders-decomposition-via-python-scripting|
 | Description: In this fourth installment of our six-part series, we advance our exploration by demonstrating how to adapt our AMPL script for use with AMPL's Python API.
 | Tags: :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-mip`, :ref:`tag-stochastic`, :ref:`tag-facility-location`, :ref:`tag-benders`, :ref:`tag-decomposition`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -109,13 +121,17 @@ AMPL Development Tutorial 4/6 -- Benders Decomposition via PYTHON scripting
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/4_benders_in_python_stoch_floc.ipynb
     :alt: Open In Colab
     
+.. |deepnote-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/4_benders_in_python_stoch_floc.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/4_benders_in_python_stoch_floc.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/4_benders_in_python_stoch_floc.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-ampl-development-tutorial-46-benders-decomposition-via-python-scripting| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/4_benders_in_python_stoch_floc.ipynb
@@ -126,7 +142,7 @@ AMPL Development Tutorial 4/6 -- Benders Decomposition via PYTHON scripting
 AMPL Development Tutorial 5/6 -- Parallelizing Subproblem Solves in Benders Decomposition
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL Development Tutorial 5/6 -- Parallelizing Subproblem Solves in Benders Decomposition <../notebooks/ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition.html>`_
-| |github-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| |colab-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| |kaggle-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| |gradient-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| |sagemaker-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition|
+| |github-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| |colab-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| |deepnote-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| |kaggle-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| |gradient-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| |sagemaker-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition|
 | Description: In the fifth installment of our six-part series, we delve deeper by showing how to evolve our Benders decomposition Python script from a serial execution to one that solves subproblems in parallel.
 | Tags: :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-mip`, :ref:`tag-stochastic`, :ref:`tag-facility-location`, :ref:`tag-benders`, :ref:`tag-decomposition`, :ref:`tag-parallel-solves`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -139,13 +155,17 @@ AMPL Development Tutorial 5/6 -- Parallelizing Subproblem Solves in Benders Deco
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/5_benders_parallel_stoch_floc.ipynb
     :alt: Open In Colab
     
+.. |deepnote-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/5_benders_parallel_stoch_floc.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/5_benders_parallel_stoch_floc.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/5_benders_parallel_stoch_floc.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-ampl-development-tutorial-56-parallelizing-subproblem-solves-in-benders-decomposition| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/5_benders_parallel_stoch_floc.ipynb
@@ -156,7 +176,7 @@ AMPL Development Tutorial 5/6 -- Parallelizing Subproblem Solves in Benders Deco
 Debugging Model Infeasibility
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Debugging Model Infeasibility <../notebooks/debugging-model-infeasibility.html>`_
-| |github-debugging-model-infeasibility| |colab-debugging-model-infeasibility| |kaggle-debugging-model-infeasibility| |gradient-debugging-model-infeasibility| |sagemaker-debugging-model-infeasibility|
+| |github-debugging-model-infeasibility| |colab-debugging-model-infeasibility| |deepnote-debugging-model-infeasibility| |kaggle-debugging-model-infeasibility| |gradient-debugging-model-infeasibility| |sagemaker-debugging-model-infeasibility|
 | Description: This notebook offers a concise guide on troubleshooting model infeasibility using AMPL's presolve feature and other language capabilities.
 | Tags: :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-debug`, :ref:`tag-infeasibility`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -169,13 +189,17 @@ Debugging Model Infeasibility
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/debug_infeas.ipynb
     :alt: Open In Colab
     
+.. |deepnote-debugging-model-infeasibility| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/debug_infeas.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-debugging-model-infeasibility| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/debug_infeas.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-debugging-model-infeasibility| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/debug_infeas.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-debugging-model-infeasibility| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/debug_infeas.ipynb
@@ -186,7 +210,7 @@ Debugging Model Infeasibility
 Introduction to Linear and Integer Programming
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Introduction to Linear and Integer Programming <../notebooks/introduction-to-linear-and-integer-programming.html>`_
-| |github-introduction-to-linear-and-integer-programming| |colab-introduction-to-linear-and-integer-programming| |kaggle-introduction-to-linear-and-integer-programming| |gradient-introduction-to-linear-and-integer-programming| |sagemaker-introduction-to-linear-and-integer-programming|
+| |github-introduction-to-linear-and-integer-programming| |colab-introduction-to-linear-and-integer-programming| |deepnote-introduction-to-linear-and-integer-programming| |kaggle-introduction-to-linear-and-integer-programming| |gradient-introduction-to-linear-and-integer-programming| |sagemaker-introduction-to-linear-and-integer-programming|
 | Description: Basic introduction to linear programming and AMPL via a lemonade stand example
 | Tags: :ref:`tag-ampl-lecture`, :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-linear-programming`, :ref:`tag-lemonade-stand`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -199,13 +223,17 @@ Introduction to Linear and Integer Programming
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_programming.ipynb
     :alt: Open In Colab
     
+.. |deepnote-introduction-to-linear-and-integer-programming| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_programming.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-introduction-to-linear-and-integer-programming| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_programming.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-introduction-to-linear-and-integer-programming| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_programming.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-introduction-to-linear-and-integer-programming| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_linear_programming.ipynb
@@ -216,7 +244,7 @@ Introduction to Linear and Integer Programming
 Introduction to Mathematical Optimization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Introduction to Mathematical Optimization <../notebooks/introduction-to-mathematical-optimization.html>`_
-| |github-introduction-to-mathematical-optimization| |colab-introduction-to-mathematical-optimization| |kaggle-introduction-to-mathematical-optimization| |gradient-introduction-to-mathematical-optimization| |sagemaker-introduction-to-mathematical-optimization|
+| |github-introduction-to-mathematical-optimization| |colab-introduction-to-mathematical-optimization| |deepnote-introduction-to-mathematical-optimization| |kaggle-introduction-to-mathematical-optimization| |gradient-introduction-to-mathematical-optimization| |sagemaker-introduction-to-mathematical-optimization|
 | Description: Basic introduction to optimization and AMPL via unconstrained optimization
 | Tags: :ref:`tag-ampl-lecture`, :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-optimization`, :ref:`tag-convexity`, :ref:`tag-unconstrained`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -229,13 +257,17 @@ Introduction to Mathematical Optimization
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_optimization.ipynb
     :alt: Open In Colab
     
+.. |deepnote-introduction-to-mathematical-optimization| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_optimization.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-introduction-to-mathematical-optimization| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_optimization.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-introduction-to-mathematical-optimization| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_optimization.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-introduction-to-mathematical-optimization| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/intro_to_optimization.ipynb
@@ -246,7 +278,7 @@ Introduction to Mathematical Optimization
 Largest small polygon
 ^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Largest small polygon <../notebooks/largest-small-polygon.html>`_
-| |github-largest-small-polygon| |colab-largest-small-polygon| |kaggle-largest-small-polygon| |gradient-largest-small-polygon| |sagemaker-largest-small-polygon|
+| |github-largest-small-polygon| |colab-largest-small-polygon| |deepnote-largest-small-polygon| |kaggle-largest-small-polygon| |gradient-largest-small-polygon| |sagemaker-largest-small-polygon|
 | Description: lecture about models for the Largest Small Polygon Problem
 | Tags: :ref:`tag-geometry`, :ref:`tag-non-linear`, :ref:`tag-amplpy`, :ref:`tag-ipopt`, :ref:`tag-educational`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -259,13 +291,17 @@ Largest small polygon
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/geometry/largest_small_polygon.ipynb
     :alt: Open In Colab
     
+.. |deepnote-largest-small-polygon| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/geometry/largest_small_polygon.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-largest-small-polygon| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/geometry/largest_small_polygon.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-largest-small-polygon| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/geometry/largest_small_polygon.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-largest-small-polygon| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/geometry/largest_small_polygon.ipynb
@@ -276,7 +312,7 @@ Largest small polygon
 Magic sequences
 ^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Magic sequences <../notebooks/magic-sequences.html>`_
-| |github-magic-sequences| |colab-magic-sequences| |kaggle-magic-sequences| |gradient-magic-sequences| |sagemaker-magic-sequences|
+| |github-magic-sequences| |colab-magic-sequences| |deepnote-magic-sequences| |kaggle-magic-sequences| |gradient-magic-sequences| |sagemaker-magic-sequences|
 | Description: Solving magic sequences through reinforced formulations and constrained programming. Some comparison between models and solvers is done, and we look into the "Another solution" problem for these sequences.
 | Tags: :ref:`tag-constraint-programming`, :ref:`tag-educational`, :ref:`tag-mp`, :ref:`tag-sequences`, :ref:`tag-arithmetic`, :ref:`tag-reinforced-formulations`, :ref:`tag-highs`, :ref:`tag-gecode`, :ref:`tag-cbc`, :ref:`tag-mip`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -289,13 +325,17 @@ Magic sequences
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/magic_sequences.ipynb
     :alt: Open In Colab
     
+.. |deepnote-magic-sequences| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/magic_sequences.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-magic-sequences| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/magic_sequences.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-magic-sequences| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/magic_sequences.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-magic-sequences| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/magic_sequences.ipynb
@@ -306,7 +346,7 @@ Magic sequences
 Network Linear Programs
 ^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Network Linear Programs <../notebooks/network-linear-programs.html>`_
-| |github-network-linear-programs| |colab-network-linear-programs| |kaggle-network-linear-programs| |gradient-network-linear-programs| |sagemaker-network-linear-programs|
+| |github-network-linear-programs| |colab-network-linear-programs| |deepnote-network-linear-programs| |kaggle-network-linear-programs| |gradient-network-linear-programs| |sagemaker-network-linear-programs|
 | Description: Basic introduction to network linear programms and AMPL via max flow and shortest path problems
 | Tags: :ref:`tag-ampl-lecture`, :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-linear-programming`, :ref:`tag-max-flow`, :ref:`tag-shortest-path`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -319,13 +359,17 @@ Network Linear Programs
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
     :alt: Open In Colab
     
+.. |deepnote-network-linear-programs| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-network-linear-programs| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-network-linear-programs| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-network-linear-programs| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
@@ -336,7 +380,7 @@ Network Linear Programs
 P-Median problem
 ^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `P-Median problem <../notebooks/p-median-problem.html>`_
-| |github-p-median-problem| |colab-p-median-problem| |kaggle-p-median-problem| |gradient-p-median-problem| |sagemaker-p-median-problem|
+| |github-p-median-problem| |colab-p-median-problem| |deepnote-p-median-problem| |kaggle-p-median-problem| |gradient-p-median-problem| |sagemaker-p-median-problem|
 | Description: this notebook states the p-median problem with a simple example, and a MIP formulation in amplpy. The problem is parametrized with a class, so it is easier to sample and replicate experiments. A graphical solution is plotted.
 | Tags: :ref:`tag-amplpy`, :ref:`tag-mip`, :ref:`tag-facility-location`, :ref:`tag-bin-packing`, :ref:`tag-graphs`, :ref:`tag-highs`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -349,13 +393,17 @@ P-Median problem
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/location/p_median.ipynb
     :alt: Open In Colab
     
+.. |deepnote-p-median-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/location/p_median.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-p-median-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/location/p_median.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-p-median-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/location/p_median.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-p-median-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/location/p_median.ipynb
@@ -366,7 +414,7 @@ P-Median problem
 Production Model: lemonade stand example 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Production Model: lemonade stand example  <../notebooks/production-model-lemonade-stand-example.html>`_
-| |github-production-model-lemonade-stand-example| |colab-production-model-lemonade-stand-example| |kaggle-production-model-lemonade-stand-example| |gradient-production-model-lemonade-stand-example| |sagemaker-production-model-lemonade-stand-example|
+| |github-production-model-lemonade-stand-example| |colab-production-model-lemonade-stand-example| |deepnote-production-model-lemonade-stand-example| |kaggle-production-model-lemonade-stand-example| |gradient-production-model-lemonade-stand-example| |sagemaker-production-model-lemonade-stand-example|
 | Description: Basic introduction to AMPL's indexed entities and the Pygwalker Python package via a lemonade stand example
 | Tags: :ref:`tag-ampl-lecture`, :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-linear-programming`, :ref:`tag-sets`, :ref:`tag-indexing`, :ref:`tag-lemonade-stand`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -379,13 +427,17 @@ Production Model: lemonade stand example
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
     :alt: Open In Colab
     
+.. |deepnote-production-model-lemonade-stand-example| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-production-model-lemonade-stand-example| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-production-model-lemonade-stand-example| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-production-model-lemonade-stand-example| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/production_model.ipynb
@@ -396,7 +448,7 @@ Production Model: lemonade stand example
 Supply chain network
 ^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Supply chain network <../notebooks/supply-chain-network.html>`_
-| |github-supply-chain-network| |colab-supply-chain-network| |kaggle-supply-chain-network| |gradient-supply-chain-network| |sagemaker-supply-chain-network|
+| |github-supply-chain-network| |colab-supply-chain-network| |deepnote-supply-chain-network| |kaggle-supply-chain-network| |gradient-supply-chain-network| |sagemaker-supply-chain-network|
 | Description: Compute optimal routes to connect suppliers/demanding nodes in a network. Routes have an associated fixed and variable cost. There are different products to ship. The problem is formulated as a MIP with binary variables. Python data structures are used to load the data into the model.
 | Tags: :ref:`tag-mixed-integer-linear`, :ref:`tag-supply_chain`, :ref:`tag-network`, :ref:`tag-transportation`, :ref:`tag-graphs`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -409,13 +461,17 @@ Supply chain network
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/supply_chain/supply_chain_simple_routes.ipynb
     :alt: Open In Colab
     
+.. |deepnote-supply-chain-network| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/supply_chain/supply_chain_simple_routes.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-supply-chain-network| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/supply_chain/supply_chain_simple_routes.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-supply-chain-network| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/supply_chain/supply_chain_simple_routes.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-supply-chain-network| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/supply_chain/supply_chain_simple_routes.ipynb

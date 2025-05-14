@@ -6,7 +6,7 @@ ampl-book
 Book Example: Economic equilibria
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: Economic equilibria <../notebooks/book-example-economic-equilibria.html>`_
-| |github-book-example-economic-equilibria| |colab-book-example-economic-equilibria| |kaggle-book-example-economic-equilibria| |gradient-book-example-economic-equilibria| |sagemaker-book-example-economic-equilibria|
+| |github-book-example-economic-equilibria| |colab-book-example-economic-equilibria| |deepnote-book-example-economic-equilibria| |kaggle-book-example-economic-equilibria| |gradient-book-example-economic-equilibria| |sagemaker-book-example-economic-equilibria|
 | Description: economic model using complementarity conditions from Chapter 19 AMPL book
 | Tags: :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity-problem`, :ref:`tag-cbc`, :ref:`tag-gurobi`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -19,13 +19,17 @@ Book Example: Economic equilibria
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
     :alt: Open In Colab
     
+.. |deepnote-book-example-economic-equilibria| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-book-example-economic-equilibria| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-book-example-economic-equilibria| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-book-example-economic-equilibria| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
@@ -36,7 +40,7 @@ Book Example: Economic equilibria
 Book Example: Transshipment problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: Transshipment problem <../notebooks/book-example-transshipment-problem.html>`_
-| |github-book-example-transshipment-problem| |colab-book-example-transshipment-problem| |kaggle-book-example-transshipment-problem| |gradient-book-example-transshipment-problem| |sagemaker-book-example-transshipment-problem|
+| |github-book-example-transshipment-problem| |colab-book-example-transshipment-problem| |deepnote-book-example-transshipment-problem| |kaggle-book-example-transshipment-problem| |gradient-book-example-transshipment-problem| |sagemaker-book-example-transshipment-problem|
 | Description: Basic book example with general transshipment model (net1.mod)
 | Tags: :ref:`tag-ampl-book`, :ref:`tag-cbc`, :ref:`tag-transportation`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -49,13 +53,17 @@ Book Example: Transshipment problem
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
     :alt: Open In Colab
     
+.. |deepnote-book-example-transshipment-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-book-example-transshipment-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-book-example-transshipment-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-book-example-transshipment-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
@@ -66,7 +74,7 @@ Book Example: Transshipment problem
 Book Example: diet
 ^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: diet <../notebooks/book-example-diet.html>`_
-| |github-book-example-diet| |colab-book-example-diet| |kaggle-book-example-diet| |gradient-book-example-diet| |sagemaker-book-example-diet|
+| |github-book-example-diet| |colab-book-example-diet| |deepnote-book-example-diet| |kaggle-book-example-diet| |gradient-book-example-diet| |sagemaker-book-example-diet|
 | Description: book example autogenerated using diet.mod, diet.dat, and diet.run
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -79,13 +87,17 @@ Book Example: diet
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
     :alt: Open In Colab
     
+.. |deepnote-book-example-diet| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-book-example-diet| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-book-example-diet| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-book-example-diet| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
@@ -96,7 +108,7 @@ Book Example: diet
 Book Example: prod
 ^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: prod <../notebooks/book-example-prod.html>`_
-| |github-book-example-prod| |colab-book-example-prod| |kaggle-book-example-prod| |gradient-book-example-prod| |sagemaker-book-example-prod|
+| |github-book-example-prod| |colab-book-example-prod| |deepnote-book-example-prod| |kaggle-book-example-prod| |gradient-book-example-prod| |sagemaker-book-example-prod|
 | Description: book example autogenerated using prod.mod, prod.dat, and prod.run
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 | Author: N/A
@@ -109,13 +121,17 @@ Book Example: prod
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
     :alt: Open In Colab
     
+.. |deepnote-book-example-prod| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-book-example-prod| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-book-example-prod| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-book-example-prod| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
@@ -126,7 +142,7 @@ Book Example: prod
 Book Example: steel
 ^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: steel <../notebooks/book-example-steel.html>`_
-| |github-book-example-steel| |colab-book-example-steel| |kaggle-book-example-steel| |gradient-book-example-steel| |sagemaker-book-example-steel|
+| |github-book-example-steel| |colab-book-example-steel| |deepnote-book-example-steel| |kaggle-book-example-steel| |gradient-book-example-steel| |sagemaker-book-example-steel|
 | Description: book example autogenerated using steel.mod, steel.dat, and steel.run
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 | Author: N/A
@@ -139,13 +155,17 @@ Book Example: steel
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
     :alt: Open In Colab
     
+.. |deepnote-book-example-steel| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-book-example-steel| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-book-example-steel| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-book-example-steel| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
@@ -156,7 +176,7 @@ Book Example: steel
 Book Example: transp
 ^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: transp <../notebooks/book-example-transp.html>`_
-| |github-book-example-transp| |colab-book-example-transp| |kaggle-book-example-transp| |gradient-book-example-transp| |sagemaker-book-example-transp|
+| |github-book-example-transp| |colab-book-example-transp| |deepnote-book-example-transp| |kaggle-book-example-transp| |gradient-book-example-transp| |sagemaker-book-example-transp|
 | Description: book example autogenerated using transp.mod, transp.dat, and transp.run
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
 | Author: N/A
@@ -169,13 +189,17 @@ Book Example: transp
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
     :alt: Open In Colab
     
+.. |deepnote-book-example-transp| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-book-example-transp| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-book-example-transp| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-book-example-transp| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
@@ -186,7 +210,7 @@ Book Example: transp
 Multicommodity transportation problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Multicommodity transportation problem <../notebooks/multicommodity-transportation-problem.html>`_
-| |github-multicommodity-transportation-problem| |colab-multicommodity-transportation-problem| |kaggle-multicommodity-transportation-problem| |gradient-multicommodity-transportation-problem| |sagemaker-multicommodity-transportation-problem|
+| |github-multicommodity-transportation-problem| |colab-multicommodity-transportation-problem| |deepnote-multicommodity-transportation-problem| |kaggle-multicommodity-transportation-problem| |gradient-multicommodity-transportation-problem| |sagemaker-multicommodity-transportation-problem|
 | Description: Multicommodity transportation model with binary variables
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-mixed-integer-linear`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -199,13 +223,17 @@ Multicommodity transportation problem
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
     :alt: Open In Colab
     
+.. |deepnote-multicommodity-transportation-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-multicommodity-transportation-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-multicommodity-transportation-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-multicommodity-transportation-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
@@ -216,7 +244,7 @@ Multicommodity transportation problem
 Nonlinear transportation model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Nonlinear transportation model <../notebooks/nonlinear-transportation-model.html>`_
-| |github-nonlinear-transportation-model| |colab-nonlinear-transportation-model| |kaggle-nonlinear-transportation-model| |gradient-nonlinear-transportation-model| |sagemaker-nonlinear-transportation-model|
+| |github-nonlinear-transportation-model| |colab-nonlinear-transportation-model| |deepnote-nonlinear-transportation-model| |kaggle-nonlinear-transportation-model| |gradient-nonlinear-transportation-model| |sagemaker-nonlinear-transportation-model|
 | Description: Nonlinear transportation problem with Amplpy nltransd.mod, nltrans.dat, and nltrans.run
 | Tags: :ref:`tag-ampl-book`, :ref:`tag-nonlinear`, :ref:`tag-ipopt`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -229,13 +257,17 @@ Nonlinear transportation model
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
     :alt: Open In Colab
     
+.. |deepnote-nonlinear-transportation-model| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-nonlinear-transportation-model| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-nonlinear-transportation-model| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-nonlinear-transportation-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
@@ -246,7 +278,7 @@ Nonlinear transportation model
 Nonlinear transportation problem example
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Nonlinear transportation problem example <../notebooks/nonlinear-transportation-problem-example.html>`_
-| |github-nonlinear-transportation-problem-example| |colab-nonlinear-transportation-problem-example| |kaggle-nonlinear-transportation-problem-example| |gradient-nonlinear-transportation-problem-example| |sagemaker-nonlinear-transportation-problem-example|
+| |github-nonlinear-transportation-problem-example| |colab-nonlinear-transportation-problem-example| |deepnote-nonlinear-transportation-problem-example| |kaggle-nonlinear-transportation-problem-example| |gradient-nonlinear-transportation-problem-example| |sagemaker-nonlinear-transportation-problem-example|
 | Description: book example autogenerated using nltransd.mod, nltrans.dat, and nltrans.run
 | Tags: :ref:`tag-ampl-book`, :ref:`tag-nonlinear`, :ref:`tag-ipopt`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -259,13 +291,17 @@ Nonlinear transportation problem example
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
     :alt: Open In Colab
     
+.. |deepnote-nonlinear-transportation-problem-example| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-nonlinear-transportation-problem-example| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-nonlinear-transportation-problem-example| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-nonlinear-transportation-problem-example| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
@@ -276,7 +312,7 @@ Nonlinear transportation problem example
 Production model
 ^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Production model <../notebooks/production-model.html>`_
-| |github-production-model| |colab-production-model| |kaggle-production-model| |gradient-production-model| |sagemaker-production-model|
+| |github-production-model| |colab-production-model| |deepnote-production-model| |kaggle-production-model| |gradient-production-model| |sagemaker-production-model|
 | Description: generic model for production problem
 | Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-industry`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -289,13 +325,17 @@ Production model
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
     :alt: Open In Colab
     
+.. |deepnote-production-model| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-production-model| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-production-model| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-production-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb

@@ -6,7 +6,7 @@ heuristics
 Google Hashcode 2022
 ^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Google Hashcode 2022 <../notebooks/google-hashcode-2022.html>`_
-| |github-google-hashcode-2022| |colab-google-hashcode-2022| |kaggle-google-hashcode-2022| |gradient-google-hashcode-2022| |sagemaker-google-hashcode-2022|
+| |github-google-hashcode-2022| |colab-google-hashcode-2022| |deepnote-google-hashcode-2022| |kaggle-google-hashcode-2022| |gradient-google-hashcode-2022| |sagemaker-google-hashcode-2022|
 | Description: Google Hashcode 2022 Practice Problem
 | Tags: :ref:`tag-amplpy`, :ref:`tag-heuristics`, :ref:`tag-engineering`, :ref:`tag-scheduling`, :ref:`tag-complexity`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -19,13 +19,17 @@ Google Hashcode 2022
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
     :alt: Open In Colab
     
+.. |deepnote-google-hashcode-2022| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-google-hashcode-2022| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-google-hashcode-2022| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-google-hashcode-2022| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
@@ -36,7 +40,7 @@ Google Hashcode 2022
 Sudoku Generator
 ^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Sudoku Generator <../notebooks/sudoku-generator.html>`_
-| |github-sudoku-generator| |colab-sudoku-generator| |kaggle-sudoku-generator| |gradient-sudoku-generator| |sagemaker-sudoku-generator|
+| |github-sudoku-generator| |colab-sudoku-generator| |deepnote-sudoku-generator| |kaggle-sudoku-generator| |gradient-sudoku-generator| |sagemaker-sudoku-generator|
 | Description: Generate Sudoku boards with unique solution via iterative method and mip formulation.
 | Tags: :ref:`tag-mip`, :ref:`tag-heuristics`, :ref:`tag-puzzles`, :ref:`tag-amplpy`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -49,13 +53,17 @@ Sudoku Generator
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/sudoku_gen.ipynb
     :alt: Open In Colab
     
+.. |deepnote-sudoku-generator| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/sudoku_gen.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-sudoku-generator| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/sudoku_gen.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-sudoku-generator| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/sudoku_gen.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-sudoku-generator| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/sudoku_gen.ipynb

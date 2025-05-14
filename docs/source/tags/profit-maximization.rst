@@ -6,7 +6,7 @@ profit-maximization
 Pricing Optimization (Price Elasticity of Demand)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Pricing Optimization (Price Elasticity of Demand) <../notebooks/pricing-optimization-price-elasticity-of-demand.html>`_
-| |github-pricing-optimization-price-elasticity-of-demand| |colab-pricing-optimization-price-elasticity-of-demand| |kaggle-pricing-optimization-price-elasticity-of-demand| |gradient-pricing-optimization-price-elasticity-of-demand| |sagemaker-pricing-optimization-price-elasticity-of-demand|
+| |github-pricing-optimization-price-elasticity-of-demand| |colab-pricing-optimization-price-elasticity-of-demand| |deepnote-pricing-optimization-price-elasticity-of-demand| |kaggle-pricing-optimization-price-elasticity-of-demand| |gradient-pricing-optimization-price-elasticity-of-demand| |sagemaker-pricing-optimization-price-elasticity-of-demand|
 | Tags: :ref:`tag-amplpy`, :ref:`tag-mip`, :ref:`tag-pricing-optimization`, :ref:`tag-demand-elasticity`, :ref:`tag-profit-maximization`, :ref:`tag-economic-modeling`, :ref:`tag-piecewise-linear`, :ref:`tag-cplex`
 | Author: :ref:`email-mail_at_solverytic.com` <mail@solverytic.com>
 
@@ -18,13 +18,17 @@ Pricing Optimization (Price Elasticity of Demand)
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Demand_elasticity/demand_elasticity.ipynb
     :alt: Open In Colab
     
+.. |deepnote-pricing-optimization-price-elasticity-of-demand| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/Demand_elasticity/demand_elasticity.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-pricing-optimization-price-elasticity-of-demand| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/Demand_elasticity/demand_elasticity.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-pricing-optimization-price-elasticity-of-demand| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Demand_elasticity/demand_elasticity.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-pricing-optimization-price-elasticity-of-demand| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Demand_elasticity/demand_elasticity.ipynb

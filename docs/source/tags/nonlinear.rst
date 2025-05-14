@@ -6,7 +6,7 @@ nonlinear
 Balanced Task Assignment with Inverse Cost Scaling
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Balanced Task Assignment with Inverse Cost Scaling <../notebooks/balanced-task-assignment-with-inverse-cost-scaling.html>`_
-| |github-balanced-task-assignment-with-inverse-cost-scaling| |colab-balanced-task-assignment-with-inverse-cost-scaling| |kaggle-balanced-task-assignment-with-inverse-cost-scaling| |gradient-balanced-task-assignment-with-inverse-cost-scaling| |sagemaker-balanced-task-assignment-with-inverse-cost-scaling|
+| |github-balanced-task-assignment-with-inverse-cost-scaling| |colab-balanced-task-assignment-with-inverse-cost-scaling| |deepnote-balanced-task-assignment-with-inverse-cost-scaling| |kaggle-balanced-task-assignment-with-inverse-cost-scaling| |gradient-balanced-task-assignment-with-inverse-cost-scaling| |sagemaker-balanced-task-assignment-with-inverse-cost-scaling|
 | Tags: :ref:`tag-amplpy`, :ref:`tag-nonlinear`, :ref:`tag-worker-task-assignment`, :ref:`tag-cost-minimization`, :ref:`tag-inverse-cost-scaling`, :ref:`tag-task-scheduling`, :ref:`tag-gurobi`, :ref:`tag-global-optimization`, :ref:`tag-assignment`, :ref:`tag-scheduling`
 | Author: :ref:`email-mail_at_solverytic.com` <mail@solverytic.com>
 
@@ -18,13 +18,17 @@ Balanced Task Assignment with Inverse Cost Scaling
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Inverse_cost/Inverse_cost.ipynb
     :alt: Open In Colab
     
+.. |deepnote-balanced-task-assignment-with-inverse-cost-scaling| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/Inverse_cost/Inverse_cost.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-balanced-task-assignment-with-inverse-cost-scaling| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/Inverse_cost/Inverse_cost.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-balanced-task-assignment-with-inverse-cost-scaling| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Inverse_cost/Inverse_cost.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-balanced-task-assignment-with-inverse-cost-scaling| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Inverse_cost/Inverse_cost.ipynb
@@ -35,7 +39,7 @@ Balanced Task Assignment with Inverse Cost Scaling
 Nonlinear transportation model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Nonlinear transportation model <../notebooks/nonlinear-transportation-model.html>`_
-| |github-nonlinear-transportation-model| |colab-nonlinear-transportation-model| |kaggle-nonlinear-transportation-model| |gradient-nonlinear-transportation-model| |sagemaker-nonlinear-transportation-model|
+| |github-nonlinear-transportation-model| |colab-nonlinear-transportation-model| |deepnote-nonlinear-transportation-model| |kaggle-nonlinear-transportation-model| |gradient-nonlinear-transportation-model| |sagemaker-nonlinear-transportation-model|
 | Description: Nonlinear transportation problem with Amplpy nltransd.mod, nltrans.dat, and nltrans.run
 | Tags: :ref:`tag-ampl-book`, :ref:`tag-nonlinear`, :ref:`tag-ipopt`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -48,13 +52,17 @@ Nonlinear transportation model
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
     :alt: Open In Colab
     
+.. |deepnote-nonlinear-transportation-model| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-nonlinear-transportation-model| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-nonlinear-transportation-model| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-nonlinear-transportation-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-lecture/nltrans_lecture.ipynb
@@ -65,7 +73,7 @@ Nonlinear transportation model
 Nonlinear transportation problem example
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Nonlinear transportation problem example <../notebooks/nonlinear-transportation-problem-example.html>`_
-| |github-nonlinear-transportation-problem-example| |colab-nonlinear-transportation-problem-example| |kaggle-nonlinear-transportation-problem-example| |gradient-nonlinear-transportation-problem-example| |sagemaker-nonlinear-transportation-problem-example|
+| |github-nonlinear-transportation-problem-example| |colab-nonlinear-transportation-problem-example| |deepnote-nonlinear-transportation-problem-example| |kaggle-nonlinear-transportation-problem-example| |gradient-nonlinear-transportation-problem-example| |sagemaker-nonlinear-transportation-problem-example|
 | Description: book example autogenerated using nltransd.mod, nltrans.dat, and nltrans.run
 | Tags: :ref:`tag-ampl-book`, :ref:`tag-nonlinear`, :ref:`tag-ipopt`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
@@ -78,13 +86,17 @@ Nonlinear transportation problem example
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
     :alt: Open In Colab
     
+.. |deepnote-nonlinear-transportation-problem-example| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-nonlinear-transportation-problem-example| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-nonlinear-transportation-problem-example| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-nonlinear-transportation-problem-example| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/nltrans.ipynb

@@ -6,7 +6,7 @@ xlsx
 AMPL - spreadsheet handling with amplxl
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL - spreadsheet handling with amplxl <../notebooks/ampl-spreadsheet-handling-with-amplxl.html>`_
-| |github-ampl-spreadsheet-handling-with-amplxl| |colab-ampl-spreadsheet-handling-with-amplxl| |kaggle-ampl-spreadsheet-handling-with-amplxl| |gradient-ampl-spreadsheet-handling-with-amplxl| |sagemaker-ampl-spreadsheet-handling-with-amplxl|
+| |github-ampl-spreadsheet-handling-with-amplxl| |colab-ampl-spreadsheet-handling-with-amplxl| |deepnote-ampl-spreadsheet-handling-with-amplxl| |kaggle-ampl-spreadsheet-handling-with-amplxl| |gradient-ampl-spreadsheet-handling-with-amplxl| |sagemaker-ampl-spreadsheet-handling-with-amplxl|
 | Description: Basic example of reading/writing data into/from a .xlsx spreadsheet with amplxl
 | Tags: :ref:`tag-ampl`, :ref:`tag-amplxl`, :ref:`tag-spreadsheet`, :ref:`tag-excel`, :ref:`tag-xlsx`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
@@ -19,13 +19,17 @@ AMPL - spreadsheet handling with amplxl
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/amplxl/amplxl.ipynb
     :alt: Open In Colab
     
+.. |deepnote-ampl-spreadsheet-handling-with-amplxl| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/amplxl/amplxl.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-ampl-spreadsheet-handling-with-amplxl| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/nfbvs/amplxl/amplxl.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-ampl-spreadsheet-handling-with-amplxl| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/amplxl/amplxl.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-ampl-spreadsheet-handling-with-amplxl| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/nfbvs/amplxl/amplxl.ipynb

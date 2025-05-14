@@ -6,7 +6,7 @@ cplex (5 notebooks)
 AMPL Development Tutorial 6/6 -- Implementing Benders Decomposition with *ampls*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL Development Tutorial 6/6 -- Implementing Benders Decomposition with *ampls* <../notebooks/ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls.html>`_
-| |github-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |colab-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |kaggle-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |gradient-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |sagemaker-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls|
+| |github-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |colab-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |deepnote-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |kaggle-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |gradient-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| |sagemaker-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls|
 | Description: This concluding notebook in our six-part series delves into enhancing the efficiency of our decomposition algorithm by utilizing **AMPL Solver Libraries** (*ampls*).
 | Tags: :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-ampls`, :ref:`tag-mip`, :ref:`tag-stochastic`, :ref:`tag-facility-location`, :ref:`tag-benders`
 | Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>, :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -19,13 +19,17 @@ AMPL Development Tutorial 6/6 -- Implementing Benders Decomposition with *ampls*
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/6_benders_ampls_stoch_floc.ipynb
     :alt: Open In Colab
     
+.. |deepnote-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/6_benders_ampls_stoch_floc.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/6_benders_ampls_stoch_floc.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/6_benders_ampls_stoch_floc.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/dev/6_benders_ampls_stoch_floc.ipynb
@@ -54,7 +58,7 @@ Efficient Frontier with Google Sheets
 Pricing Optimization (Price Elasticity of Demand)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Pricing Optimization (Price Elasticity of Demand) <../notebooks/pricing-optimization-price-elasticity-of-demand.html>`_
-| |github-pricing-optimization-price-elasticity-of-demand| |colab-pricing-optimization-price-elasticity-of-demand| |kaggle-pricing-optimization-price-elasticity-of-demand| |gradient-pricing-optimization-price-elasticity-of-demand| |sagemaker-pricing-optimization-price-elasticity-of-demand|
+| |github-pricing-optimization-price-elasticity-of-demand| |colab-pricing-optimization-price-elasticity-of-demand| |deepnote-pricing-optimization-price-elasticity-of-demand| |kaggle-pricing-optimization-price-elasticity-of-demand| |gradient-pricing-optimization-price-elasticity-of-demand| |sagemaker-pricing-optimization-price-elasticity-of-demand|
 | Tags: :ref:`tag-amplpy`, :ref:`tag-mip`, :ref:`tag-pricing-optimization`, :ref:`tag-demand-elasticity`, :ref:`tag-profit-maximization`, :ref:`tag-economic-modeling`, :ref:`tag-piecewise-linear`, :ref:`tag-cplex`
 | Author: :ref:`email-mail_at_solverytic.com` <mail@solverytic.com>
 
@@ -66,13 +70,17 @@ Pricing Optimization (Price Elasticity of Demand)
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Demand_elasticity/demand_elasticity.ipynb
     :alt: Open In Colab
     
+.. |deepnote-pricing-optimization-price-elasticity-of-demand| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/Demand_elasticity/demand_elasticity.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-pricing-optimization-price-elasticity-of-demand| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/Demand_elasticity/demand_elasticity.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-pricing-optimization-price-elasticity-of-demand| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Demand_elasticity/demand_elasticity.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-pricing-optimization-price-elasticity-of-demand| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Demand_elasticity/demand_elasticity.ipynb
@@ -83,7 +91,7 @@ Pricing Optimization (Price Elasticity of Demand)
 Pricing and target-market
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Pricing and target-market <../notebooks/pricing-and-target-market.html>`_
-| |github-pricing-and-target-market| |colab-pricing-and-target-market| |kaggle-pricing-and-target-market| |gradient-pricing-and-target-market| |sagemaker-pricing-and-target-market|
+| |github-pricing-and-target-market| |colab-pricing-and-target-market| |deepnote-pricing-and-target-market| |kaggle-pricing-and-target-market| |gradient-pricing-and-target-market| |sagemaker-pricing-and-target-market|
 | Description: Formulate a pricing optimization and target-market problem as a MILP.
 | Tags: :ref:`tag-industry`, :ref:`tag-pricing`, :ref:`tag-milp`, :ref:`tag-mip`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -96,13 +104,17 @@ Pricing and target-market
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/miscellaneous/pricing_and_target_market.ipynb
     :alt: Open In Colab
     
+.. |deepnote-pricing-and-target-market| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/miscellaneous/pricing_and_target_market.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-pricing-and-target-market| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/miscellaneous/pricing_and_target_market.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-pricing-and-target-market| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/miscellaneous/pricing_and_target_market.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-pricing-and-target-market| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/miscellaneous/pricing_and_target_market.ipynb
@@ -113,7 +125,7 @@ Pricing and target-market
 Retrieve Solution pool with AMPL and Gurobi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Retrieve Solution pool with AMPL and Gurobi <../notebooks/retrieve-solution-pool-with-ampl-and-gurobi.html>`_
-| |github-retrieve-solution-pool-with-ampl-and-gurobi| |colab-retrieve-solution-pool-with-ampl-and-gurobi| |kaggle-retrieve-solution-pool-with-ampl-and-gurobi| |gradient-retrieve-solution-pool-with-ampl-and-gurobi| |sagemaker-retrieve-solution-pool-with-ampl-and-gurobi|
+| |github-retrieve-solution-pool-with-ampl-and-gurobi| |colab-retrieve-solution-pool-with-ampl-and-gurobi| |deepnote-retrieve-solution-pool-with-ampl-and-gurobi| |kaggle-retrieve-solution-pool-with-ampl-and-gurobi| |gradient-retrieve-solution-pool-with-ampl-and-gurobi| |sagemaker-retrieve-solution-pool-with-ampl-and-gurobi|
 | Description: This notebook describes how to retrieve multiple solutions from the solver's solution pool. Optimization problems usually have several optimal solutions, one is returned by the solver but the others are discarded. These alternative solutions can also be retrieved by AMPL.
 | Tags: :ref:`tag-solution-pool`, :ref:`tag-gurobi`, :ref:`tag-cplex`, :ref:`tag-xpress`, :ref:`tag-mip`, :ref:`tag-mixed-integer-linear`, :ref:`tag-mp`, :ref:`tag-tutorials`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>, :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
@@ -126,13 +138,17 @@ Retrieve Solution pool with AMPL and Gurobi
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/tutorials/solution_pool.ipynb
     :alt: Open In Colab
     
+.. |deepnote-retrieve-solution-pool-with-ampl-and-gurobi| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/tutorials/solution_pool.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-retrieve-solution-pool-with-ampl-and-gurobi| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/tutorials/solution_pool.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-retrieve-solution-pool-with-ampl-and-gurobi| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/tutorials/solution_pool.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-retrieve-solution-pool-with-ampl-and-gurobi| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/tutorials/solution_pool.ipynb

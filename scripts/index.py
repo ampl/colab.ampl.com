@@ -66,8 +66,8 @@ The first two notebook cells are modified to ensure that requirements are instal
 
 ## Notebooks
 
-| Title  | GitHub |  Colab | Kaggle | Gradient | SageMaker|
-|--------|--------|--------|--------|----------|----------|""",
+| Title  | GitHub |  Colab | Deepnote | Kaggle | Gradient | SageMaker|
+|--------|--------|--------|----------|--------|----------|----------|""",
     file=readme,
 )
 
@@ -77,7 +77,7 @@ AMPL Model Colaboratory
 =======================
 
 AMPL Model Colaboratory is a collection of AMPL models in `Jupyter Notebooks <https://jupyter.org/>`_
-that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **AWS SageMaker**.
+that run on platforms such as **Google Colab**, **Deepnote**, **Kaggle**, **Gradient**, and **AWS SageMaker**.
 [:ref:`See our Highlights <tag-highlights>`]
 
 .. raw:: html
@@ -103,13 +103,17 @@ that run on platforms such as **Google Colab**, **Kaggle**, **Gradient**, and **
             :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
             :alt: Open In Colab
 
+        .. image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+            :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
+            :alt: Open In Deepnote
+
         .. image:: https://kaggle.com/static/images/open-in-kaggle.svg
             :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
-            :alt: Kaggle
+            :alt: Open in Kaggle
 
         .. image:: https://assets.paperspace.io/img/gradient-badge.svg
             :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb
-            :alt: Gradient
+            :alt: Open in Gradient
 
         .. image:: https://studiolab.sagemaker.aws/studiolab.svg
             :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/chatgpt/christmas.ipynb

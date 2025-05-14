@@ -6,7 +6,7 @@ Sarah Wells (1 notebook)
 Plot feasible region
 ^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Plot feasible region <../notebooks/plot-feasible-region.html>`_
-| |github-plot-feasible-region| |colab-plot-feasible-region| |kaggle-plot-feasible-region| |gradient-plot-feasible-region| |sagemaker-plot-feasible-region|
+| |github-plot-feasible-region| |colab-plot-feasible-region| |deepnote-plot-feasible-region| |kaggle-plot-feasible-region| |gradient-plot-feasible-region| |sagemaker-plot-feasible-region|
 | Description: Plot the feasible region and optimal solution for a simple two variable model using AMPL's Python API.
 | Tags: :ref:`tag-lecture`, :ref:`tag-lp`, :ref:`tag-simple`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>, :ref:`email-sarah_at_ampl.com` <sarah@ampl.com>
@@ -19,13 +19,17 @@ Plot feasible region
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/plot_feasible_region.ipynb
     :alt: Open In Colab
     
+.. |deepnote-plot-feasible-region| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/plot_feasible_region.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-plot-feasible-region| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/plot_feasible_region.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-plot-feasible-region| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/plot_feasible_region.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-plot-feasible-region| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/plot_feasible_region.ipynb

@@ -6,7 +6,7 @@ max-flow
 Network Linear Programs
 ^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Network Linear Programs <../notebooks/network-linear-programs.html>`_
-| |github-network-linear-programs| |colab-network-linear-programs| |kaggle-network-linear-programs| |gradient-network-linear-programs| |sagemaker-network-linear-programs|
+| |github-network-linear-programs| |colab-network-linear-programs| |deepnote-network-linear-programs| |kaggle-network-linear-programs| |gradient-network-linear-programs| |sagemaker-network-linear-programs|
 | Description: Basic introduction to network linear programms and AMPL via max flow and shortest path problems
 | Tags: :ref:`tag-ampl-lecture`, :ref:`tag-amplpy`, :ref:`tag-ampl`, :ref:`tag-introduction`, :ref:`tag-linear-programming`, :ref:`tag-max-flow`, :ref:`tag-shortest-path`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
@@ -19,13 +19,17 @@ Network Linear Programs
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
     :alt: Open In Colab
     
+.. |deepnote-network-linear-programs| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-network-linear-programs| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-network-linear-programs| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-network-linear-programs| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/ampl-lecture/network.ipynb

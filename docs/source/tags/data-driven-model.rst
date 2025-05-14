@@ -6,7 +6,7 @@ data-driven-model
 Optimizing the number of staff in a chain of stores
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Optimizing the number of staff in a chain of stores <../notebooks/optimizing-the-number-of-staff-in-a-chain-of-stores.html>`_
-| |github-optimizing-the-number-of-staff-in-a-chain-of-stores| |colab-optimizing-the-number-of-staff-in-a-chain-of-stores| |kaggle-optimizing-the-number-of-staff-in-a-chain-of-stores| |gradient-optimizing-the-number-of-staff-in-a-chain-of-stores| |sagemaker-optimizing-the-number-of-staff-in-a-chain-of-stores|
+| |github-optimizing-the-number-of-staff-in-a-chain-of-stores| |colab-optimizing-the-number-of-staff-in-a-chain-of-stores| |deepnote-optimizing-the-number-of-staff-in-a-chain-of-stores| |kaggle-optimizing-the-number-of-staff-in-a-chain-of-stores| |gradient-optimizing-the-number-of-staff-in-a-chain-of-stores| |sagemaker-optimizing-the-number-of-staff-in-a-chain-of-stores|
 | Tags: :ref:`tag-mip`, :ref:`tag-scheduling`, :ref:`tag-data-driven-model`, :ref:`tag-amplpy`, :ref:`tag-cbc`, :ref:`tag-highs`, :ref:`tag-gurobi`
 | Author: :ref:`email-mail_at_solverytic.com` <mail@solverytic.com>
 
@@ -18,13 +18,17 @@ Optimizing the number of staff in a chain of stores
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/StaffChain/staff_schedule.ipynb
     :alt: Open In Colab
     
+.. |deepnote-optimizing-the-number-of-staff-in-a-chain-of-stores| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/StaffChain/staff_schedule.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-optimizing-the-number-of-staff-in-a-chain-of-stores| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/mikhail/StaffChain/staff_schedule.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-optimizing-the-number-of-staff-in-a-chain-of-stores| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/mikhail/StaffChain/staff_schedule.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-optimizing-the-number-of-staff-in-a-chain-of-stores| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mikhail/StaffChain/staff_schedule.ipynb

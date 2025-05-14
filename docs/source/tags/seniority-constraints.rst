@@ -6,7 +6,7 @@ seniority-constraints
 Aircrew trainee scheduling with seniority constraints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Aircrew trainee scheduling with seniority constraints <../notebooks/aircrew-trainee-scheduling-with-seniority-constraints.html>`_
-| |github-aircrew-trainee-scheduling-with-seniority-constraints| |colab-aircrew-trainee-scheduling-with-seniority-constraints| |kaggle-aircrew-trainee-scheduling-with-seniority-constraints| |gradient-aircrew-trainee-scheduling-with-seniority-constraints| |sagemaker-aircrew-trainee-scheduling-with-seniority-constraints|
+| |github-aircrew-trainee-scheduling-with-seniority-constraints| |colab-aircrew-trainee-scheduling-with-seniority-constraints| |deepnote-aircrew-trainee-scheduling-with-seniority-constraints| |kaggle-aircrew-trainee-scheduling-with-seniority-constraints| |gradient-aircrew-trainee-scheduling-with-seniority-constraints| |sagemaker-aircrew-trainee-scheduling-with-seniority-constraints|
 | Description: Aircrew trainee scheduling with simpler seniority modeling
 | Tags: :ref:`tag-trainee-scheduling`, :ref:`tag-aircrew-scheduling`, :ref:`tag-employee-scheduling`, :ref:`tag-seniority-constraints`, :ref:`tag-seniority-ranking`, :ref:`tag-preferential-bidding-system`, :ref:`tag-multiple-objectives`, :ref:`tag-lexicographic-optimization`, :ref:`tag-amplpy`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
@@ -19,13 +19,17 @@ Aircrew trainee scheduling with seniority constraints
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip8_aircrew_trainees_seniority.ipynb
     :alt: Open In Colab
     
+.. |deepnote-aircrew-trainee-scheduling-with-seniority-constraints| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip8_aircrew_trainees_seniority.ipynb
+    :alt: Open In Deepnote
+    
 .. |kaggle-aircrew-trainee-scheduling-with-seniority-constraints| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip8_aircrew_trainees_seniority.ipynb
-    :alt: Kaggle
+    :alt: Open In Kaggle
     
 .. |gradient-aircrew-trainee-scheduling-with-seniority-constraints| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip8_aircrew_trainees_seniority.ipynb
-    :alt: Gradient
+    :alt: Open In Gradient
     
 .. |sagemaker-aircrew-trainee-scheduling-with-seniority-constraints| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/modeling-tips/tip8_aircrew_trainees_seniority.ipynb
