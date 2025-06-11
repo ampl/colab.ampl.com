@@ -12,7 +12,7 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (56 notebooks) <amplpy>
+    amplpy (58 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -67,6 +67,7 @@ Tags
     exponential-cone (1 notebook) <exponential-cone>
     facility-location (9 notebooks) <facility-location>
     finance (8 notebooks) <finance>
+    forecast (1 notebook) <forecast>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
     gdp (1 notebook) <gdp>
@@ -78,7 +79,7 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (6 notebooks) <gurobi>
+    gurobi (8 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (11 notebooks) <highlights>
     highs (9 notebooks) <highs>
@@ -91,13 +92,14 @@ Tags
     inverse-cost-scaling (1 notebook) <inverse-cost-scaling>
     ipopt (3 notebooks) <ipopt>
     json (1 notebook) <json>
+    kaggle (1 notebook) <kaggle>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
     lexicographic-optimization (1 notebook) <lexicographic-optimization>
     linear-programming (3 notebooks) <linear-programming>
     log-sum-exp (1 notebook) <log-sum-exp>
     lp (1 notebook) <lp>
-    machine-learning (1 notebook) <machine-learning>
+    machine-learning (3 notebooks) <machine-learning>
     marketing (3 notebooks) <marketing>
     matpower (1 notebook) <matpower>
     max-flow (1 notebook) <max-flow>
@@ -140,6 +142,7 @@ Tags
     powerbi (1 notebook) <powerbi>
     preferential-bidding-system (1 notebook) <preferential-bidding-system>
     price-optimization (1 notebook) <price-optimization>
+    price-prediction (1 notebook) <price-prediction>
     pricing (1 notebook) <pricing>
     pricing-optimization (1 notebook) <pricing-optimization>
     production-optimization (3 notebooks) <production-optimization>
@@ -160,6 +163,7 @@ Tags
     risk-measures (1 notebook) <risk-measures>
     sample-average-approximation (1 notebook) <sample-average-approximation>
     scheduling (9 notebooks) <scheduling>
+    scikit-learn (2 notebooks) <scikit-learn>
     second-order-cone (2 notebooks) <second-order-cone>
     semivariance (1 notebook) <semivariance>
     seniority-constraints (1 notebook) <seniority-constraints>
