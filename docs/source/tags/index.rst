@@ -12,14 +12,16 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (58 notebooks) <amplpy>
+    amplpy (59 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
     arithmetic (1 notebook) <arithmetic>
     assignment (2 notebooks) <assignment>
+    automatic-reformulation (1 notebook) <automatic-reformulation>
     batch-processes (1 notebook) <batch-processes>
     batch-processing (1 notebook) <batch-processing>
+    benchmark (1 notebook) <benchmark>
     benders (4 notebooks) <benders>
     bin-packing (2 notebooks) <bin-packing>
     bpp (1 notebook) <bpp>
@@ -42,6 +44,7 @@ Tags
     cost-minimization (2 notebooks) <cost-minimization>
     cplex (2 notebooks) <cplex>
     cpmp (1 notebook) <cpmp>
+    cuopt (1 notebook) <cuopt>
     cutting-stock (2 notebooks) <cutting-stock>
     cvar (1 notebook) <cvar>
     dantzig-wolfe-decomposition (2 notebooks) <dantzig-wolfe-decomposition>
@@ -79,10 +82,10 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (8 notebooks) <gurobi>
+    gurobi (9 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (11 notebooks) <highlights>
-    highs (9 notebooks) <highs>
+    highs (10 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
     industry (9 notebooks) <industry>
@@ -110,7 +113,7 @@ Tags
     mip (30 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
-    mp (5 notebooks) <mp>
+    mp (6 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
     multi-objective (1 notebook) <multi-objective>
     multi-period-planning (1 notebook) <multi-period-planning>
@@ -158,9 +161,11 @@ Tags
     regression (1 notebook) <regression>
     regularization (1 notebook) <regularization>
     reinforced-formulations (1 notebook) <reinforced-formulations>
+    research (1 notebook) <research>
     residential-developer (1 notebook) <residential-developer>
     risk-management (2 notebooks) <risk-management>
     risk-measures (1 notebook) <risk-measures>
+    routing (1 notebook) <routing>
     sample-average-approximation (1 notebook) <sample-average-approximation>
     scheduling (9 notebooks) <scheduling>
     scikit-learn (2 notebooks) <scikit-learn>
@@ -185,6 +190,7 @@ Tags
     supply_chain (2 notebooks) <supply_chain>
     task-scheduling (1 notebook) <task-scheduling>
     template (1 notebook) <template>
+    time-windows (1 notebook) <time-windows>
     trainee-scheduling (1 notebook) <trainee-scheduling>
     transportation (4 notebooks) <transportation>
     tsp (1 notebook) <tsp>
@@ -193,6 +199,7 @@ Tags
     unit-commitment (1 notebook) <unit-commitment>
     unit-commitment-problem (1 notebook) <unit-commitment-problem>
     vector-packing (1 notebook) <vector-packing>
+    vrp (1 notebook) <vrp>
     worker-task-assignment (1 notebook) <worker-task-assignment>
     xlsx (1 notebook) <xlsx>
     xpress (1 notebook) <xpress>

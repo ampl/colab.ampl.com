@@ -52,6 +52,7 @@ Notebooks grouped by modules
     coin
     copt
     cplex
+    cuopt
     gcg
     gurobi
     highs
