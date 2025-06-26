@@ -1,7 +1,7 @@
-.. _tag-multi-objective:
+.. _tag-lexicographic-objectives:
 
-multi-objective
-===============
+lexicographic-objectives
+========================
 
 Aircrew trainee scheduling with seniority constraints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -1,7 +1,7 @@
-.. _tag-knapsack:
+.. _tag-multi-objective-options:
 
-knapsack
-========
+multi-objective-options
+=======================
 
 Multi-Objective Knapsack Problem with AMPLPY
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

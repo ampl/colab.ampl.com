@@ -71,12 +71,12 @@ AMPL Capacitated p-Median Problem with GCG
     
 
 
-Multi-objective Knapsack Problem with amplpy
+Multi-Objective Knapsack Problem with AMPLPY
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| `Notebooks <../notebooks/index.html>`_ > `Multi-objective Knapsack Problem with amplpy <../notebooks/multi-objective-knapsack-problem-with-amplpy.html>`_
+| `Notebooks <../notebooks/index.html>`_ > `Multi-Objective Knapsack Problem with AMPLPY <../notebooks/multi-objective-knapsack-problem-with-amplpy.html>`_
 | |github-multi-objective-knapsack-problem-with-amplpy| |colab-multi-objective-knapsack-problem-with-amplpy| |deepnote-multi-objective-knapsack-problem-with-amplpy| |kaggle-multi-objective-knapsack-problem-with-amplpy| |gradient-multi-objective-knapsack-problem-with-amplpy| |sagemaker-multi-objective-knapsack-problem-with-amplpy|
 | Description: Knapsack Problem using Multiple Objectives
-| Tags: :ref:`tag-multi-objective`, :ref:`tag-knapsack`, :ref:`tag-amplpy`, :ref:`tag-highlights`
+| Tags: :ref:`tag-multi-objective`, :ref:`tag-multi-objective-options`, :ref:`tag-lexicographic-objectives`, :ref:`tag-knapsack`, :ref:`tag-amplpy`, :ref:`tag-highlights`
 | Author: :ref:`email-jurgenlentz26_at_gmail.com` <jurgenlentz26@gmail.com>
 
 .. |github-multi-objective-knapsack-problem-with-amplpy|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

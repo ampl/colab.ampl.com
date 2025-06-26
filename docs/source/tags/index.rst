@@ -99,7 +99,7 @@ Tags
     knapsack (1 notebook) <knapsack>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
-    lexicographic-optimization (1 notebook) <lexicographic-optimization>
+    lexicographic-objectives (3 notebooks) <lexicographic-objectives>
     linear-programming (3 notebooks) <linear-programming>
     log-sum-exp (1 notebook) <log-sum-exp>
     lp (1 notebook) <lp>
@@ -117,6 +117,7 @@ Tags
     mp (6 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
     multi-objective (3 notebooks) <multi-objective>
+    multi-objective-options (1 notebook) <multi-objective-options>
     multi-period-planning (1 notebook) <multi-period-planning>
     multiprocess (1 notebook) <multiprocess>
     network (2 notebooks) <network>

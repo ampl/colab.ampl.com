@@ -177,7 +177,7 @@ Labs scheduling
 | `Notebooks <../notebooks/index.html>`_ > `Labs scheduling <../notebooks/labs-scheduling.html>`_
 | |github-labs-scheduling| |colab-labs-scheduling| |deepnote-labs-scheduling| |kaggle-labs-scheduling| |gradient-labs-scheduling| |sagemaker-labs-scheduling|
 | Description: Model for laboratories scheduling. Some labs are needed to handle requests from researchers, and departments have to assign labs and locations to the requests.
-| Tags: :ref:`tag-facility-location`, :ref:`tag-highs`, :ref:`tag-mip`, :ref:`tag-mixed-integer-linear`, :ref:`tag-scheduling`, :ref:`tag-multi-objective`, :ref:`tag-mp`
+| Tags: :ref:`tag-facility-location`, :ref:`tag-highs`, :ref:`tag-mip`, :ref:`tag-mixed-integer-linear`, :ref:`tag-scheduling`, :ref:`tag-multi-objective`, :ref:`tag-lexicographic-objectives`, :ref:`tag-mp`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-labs-scheduling|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
