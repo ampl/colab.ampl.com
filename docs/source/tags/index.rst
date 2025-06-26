@@ -12,7 +12,7 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (59 notebooks) <amplpy>
+    amplpy (60 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -84,7 +84,7 @@ Tags
     gui (2 notebooks) <gui>
     gurobi (9 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
-    highlights (11 notebooks) <highlights>
+    highlights (12 notebooks) <highlights>
     highs (10 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
@@ -96,6 +96,7 @@ Tags
     ipopt (3 notebooks) <ipopt>
     json (1 notebook) <json>
     kaggle (1 notebook) <kaggle>
+    knapsack (1 notebook) <knapsack>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
     lexicographic-optimization (1 notebook) <lexicographic-optimization>
@@ -115,9 +116,8 @@ Tags
     modeling-tips (1 notebook) <modeling-tips>
     mp (6 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
-    multi-objective (1 notebook) <multi-objective>
+    multi-objective (3 notebooks) <multi-objective>
     multi-period-planning (1 notebook) <multi-period-planning>
-    multiple-objectives (1 notebook) <multiple-objectives>
     multiprocess (1 notebook) <multiprocess>
     network (2 notebooks) <network>
     networkx (1 notebook) <networkx>

@@ -1,6 +1,6 @@
 .. _email-jurgenlentz26_at_gmail.com:
 
-Jurgen Lentz (2 notebooks)
+Jurgen Lentz (3 notebooks)
 ==========================
 
 AMPL Bin Packing Problem with GCG
@@ -67,6 +67,40 @@ AMPL Capacitated p-Median Problem with GCG
     
 .. |sagemaker-ampl-capacitated-p-median-problem-with-gcg| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/lentz/gcg/cpmp.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Multi-objective Knapsack Problem with amplpy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Multi-objective Knapsack Problem with amplpy <../notebooks/multi-objective-knapsack-problem-with-amplpy.html>`_
+| |github-multi-objective-knapsack-problem-with-amplpy| |colab-multi-objective-knapsack-problem-with-amplpy| |deepnote-multi-objective-knapsack-problem-with-amplpy| |kaggle-multi-objective-knapsack-problem-with-amplpy| |gradient-multi-objective-knapsack-problem-with-amplpy| |sagemaker-multi-objective-knapsack-problem-with-amplpy|
+| Description: Knapsack Problem using Multiple Objectives
+| Tags: :ref:`tag-multi-objective`, :ref:`tag-knapsack`, :ref:`tag-amplpy`, :ref:`tag-highlights`
+| Author: :ref:`email-jurgenlentz26_at_gmail.com` <jurgenlentz26@gmail.com>
+
+.. |github-multi-objective-knapsack-problem-with-amplpy|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
+    :alt: knapsack.ipynb
+    
+.. |colab-multi-objective-knapsack-problem-with-amplpy| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-multi-objective-knapsack-problem-with-amplpy| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-multi-objective-knapsack-problem-with-amplpy| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-multi-objective-knapsack-problem-with-amplpy| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-multi-objective-knapsack-problem-with-amplpy| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
     :alt: Open In SageMaker Studio Lab
     
 

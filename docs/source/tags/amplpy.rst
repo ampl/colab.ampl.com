@@ -382,7 +382,7 @@ Aircrew trainee scheduling with seniority constraints
 | `Notebooks <../notebooks/index.html>`_ > `Aircrew trainee scheduling with seniority constraints <../notebooks/aircrew-trainee-scheduling-with-seniority-constraints.html>`_
 | |github-aircrew-trainee-scheduling-with-seniority-constraints| |colab-aircrew-trainee-scheduling-with-seniority-constraints| |deepnote-aircrew-trainee-scheduling-with-seniority-constraints| |kaggle-aircrew-trainee-scheduling-with-seniority-constraints| |gradient-aircrew-trainee-scheduling-with-seniority-constraints| |sagemaker-aircrew-trainee-scheduling-with-seniority-constraints|
 | Description: Aircrew trainee scheduling with simpler seniority modeling
-| Tags: :ref:`tag-trainee-scheduling`, :ref:`tag-aircrew-scheduling`, :ref:`tag-employee-scheduling`, :ref:`tag-seniority-constraints`, :ref:`tag-seniority-ranking`, :ref:`tag-preferential-bidding-system`, :ref:`tag-multiple-objectives`, :ref:`tag-lexicographic-optimization`, :ref:`tag-amplpy`
+| Tags: :ref:`tag-trainee-scheduling`, :ref:`tag-aircrew-scheduling`, :ref:`tag-employee-scheduling`, :ref:`tag-seniority-constraints`, :ref:`tag-seniority-ranking`, :ref:`tag-preferential-bidding-system`, :ref:`tag-multi-objective`, :ref:`tag-lexicographic-optimization`, :ref:`tag-amplpy`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-aircrew-trainee-scheduling-with-seniority-constraints|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -986,6 +986,40 @@ Logistic Regression with amplpy
     
 .. |sagemaker-logistic-regression-with-amplpy| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/conic/logistic_regression.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Multi-objective Knapsack Problem with amplpy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Multi-objective Knapsack Problem with amplpy <../notebooks/multi-objective-knapsack-problem-with-amplpy.html>`_
+| |github-multi-objective-knapsack-problem-with-amplpy| |colab-multi-objective-knapsack-problem-with-amplpy| |deepnote-multi-objective-knapsack-problem-with-amplpy| |kaggle-multi-objective-knapsack-problem-with-amplpy| |gradient-multi-objective-knapsack-problem-with-amplpy| |sagemaker-multi-objective-knapsack-problem-with-amplpy|
+| Description: Knapsack Problem using Multiple Objectives
+| Tags: :ref:`tag-multi-objective`, :ref:`tag-knapsack`, :ref:`tag-amplpy`, :ref:`tag-highlights`
+| Author: :ref:`email-jurgenlentz26_at_gmail.com` <jurgenlentz26@gmail.com>
+
+.. |github-multi-objective-knapsack-problem-with-amplpy|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
+    :alt: knapsack.ipynb
+    
+.. |colab-multi-objective-knapsack-problem-with-amplpy| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-multi-objective-knapsack-problem-with-amplpy| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-multi-objective-knapsack-problem-with-amplpy| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-multi-objective-knapsack-problem-with-amplpy| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-multi-objective-knapsack-problem-with-amplpy| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
