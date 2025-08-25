@@ -89,7 +89,7 @@ Tags
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
     industry (9 notebooks) <industry>
-    infeasibility (1 notebook) <infeasibility>
+    infeasibility (2 notebooks) <infeasibility>
     introduction (4 notebooks) <introduction>
     inventory-management (1 notebook) <inventory-management>
     inverse-cost-scaling (1 notebook) <inverse-cost-scaling>
@@ -114,7 +114,7 @@ Tags
     mip (30 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
-    mp (6 notebooks) <mp>
+    mp (7 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
     multi-objective (3 notebooks) <multi-objective>
     multi-objective-options (1 notebook) <multi-objective-options>
@@ -195,7 +195,7 @@ Tags
     trainee-scheduling (1 notebook) <trainee-scheduling>
     transportation (4 notebooks) <transportation>
     tsp (1 notebook) <tsp>
-    tutorials (2 notebooks) <tutorials>
+    tutorials (3 notebooks) <tutorials>
     unconstrained (1 notebook) <unconstrained>
     unit-commitment (1 notebook) <unit-commitment>
     unit-commitment-problem (1 notebook) <unit-commitment-problem>
