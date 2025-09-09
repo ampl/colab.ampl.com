@@ -54,6 +54,7 @@ Notebooks grouped by modules
     cplex
     cuopt
     gcg
+    gokestrel
     gurobi
     highs
     knitro

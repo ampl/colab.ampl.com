@@ -8,7 +8,7 @@ Tags
     advertisement (2 notebooks) <advertisement>
     aircrew-scheduling (1 notebook) <aircrew-scheduling>
     ampl (23 notebooks) <ampl>
-    ampl-book (10 notebooks) <ampl-book>
+    ampl-book (11 notebooks) <ampl-book>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
@@ -33,7 +33,7 @@ Tags
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
-    complementarity-problem (1 notebook) <complementarity-problem>
+    complementarity-problem (2 notebooks) <complementarity-problem>
     complexity (1 notebook) <complexity>
     concrete-production (1 notebook) <concrete-production>
     conic (3 notebooks) <conic>
@@ -69,7 +69,7 @@ Tags
     excel (2 notebooks) <excel>
     exponential-cone (1 notebook) <exponential-cone>
     facility-location (9 notebooks) <facility-location>
-    finance (8 notebooks) <finance>
+    finance (9 notebooks) <finance>
     forecast (1 notebook) <forecast>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
@@ -96,6 +96,7 @@ Tags
     ipopt (3 notebooks) <ipopt>
     json (1 notebook) <json>
     kaggle (1 notebook) <kaggle>
+    kestrel (1 notebook) <kestrel>
     knapsack (1 notebook) <knapsack>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
@@ -120,6 +121,7 @@ Tags
     multi-objective-options (1 notebook) <multi-objective-options>
     multi-period-planning (1 notebook) <multi-period-planning>
     multiprocess (1 notebook) <multiprocess>
+    neos (1 notebook) <neos>
     network (2 notebooks) <network>
     networkx (1 notebook) <networkx>
     non-continuous-objective (1 notebook) <non-continuous-objective>
@@ -136,6 +138,7 @@ Tags
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
     parallel-solves (1 notebook) <parallel-solves>
+    path (1 notebook) <path>
     payment-schemes (1 notebook) <payment-schemes>
     piecewise-linear (3 notebooks) <piecewise-linear>
     pipeline-diagnostics (1 notebook) <pipeline-diagnostics>
