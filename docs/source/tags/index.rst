@@ -9,6 +9,7 @@ Tags
     aircrew-scheduling (1 notebook) <aircrew-scheduling>
     ampl (23 notebooks) <ampl>
     ampl-book (11 notebooks) <ampl-book>
+    ampl-conditonal-instantiation (1 notebook) <ampl-conditonal-instantiation>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
@@ -19,7 +20,6 @@ Tags
     arithmetic (1 notebook) <arithmetic>
     assignment (2 notebooks) <assignment>
     automatic-reformulation (1 notebook) <automatic-reformulation>
-    batch-processes (1 notebook) <batch-processes>
     batch-processing (1 notebook) <batch-processing>
     benchmark (1 notebook) <benchmark>
     benders (4 notebooks) <benders>
@@ -27,6 +27,7 @@ Tags
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
+    cardinality-constraint (1 notebook) <cardinality-constraint>
     cash-flow-management (1 notebook) <cash-flow-management>
     cbc (11 notebooks) <cbc>
     cdar (1 notebook) <cdar>
@@ -69,7 +70,8 @@ Tags
     excel (2 notebooks) <excel>
     exponential-cone (1 notebook) <exponential-cone>
     facility-location (9 notebooks) <facility-location>
-    finance (9 notebooks) <finance>
+    factor-model (1 notebook) <factor-model>
+    finance (10 notebooks) <finance>
     forecast (1 notebook) <forecast>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
@@ -108,7 +110,7 @@ Tags
     marketing (3 notebooks) <marketing>
     matpower (1 notebook) <matpower>
     max-flow (1 notebook) <max-flow>
-    mean-variance (1 notebook) <mean-variance>
+    mean-variance (2 notebooks) <mean-variance>
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
@@ -143,7 +145,7 @@ Tags
     piecewise-linear (3 notebooks) <piecewise-linear>
     pipeline-diagnostics (1 notebook) <pipeline-diagnostics>
     planning (1 notebook) <planning>
-    portfolio-optimization (3 notebooks) <portfolio-optimization>
+    portfolio-optimization (4 notebooks) <portfolio-optimization>
     power-generation (3 notebooks) <power-generation>
     power-grid-lib (1 notebook) <power-grid-lib>
     powerbi (1 notebook) <powerbi>
