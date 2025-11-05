@@ -13,7 +13,7 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (60 notebooks) <amplpy>
+    amplpy (61 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -34,6 +34,7 @@ Tags
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
+    colombia (1 notebook) <colombia>
     complementarity-problem (2 notebooks) <complementarity-problem>
     complexity (1 notebook) <complexity>
     concrete-production (1 notebook) <concrete-production>
@@ -64,7 +65,7 @@ Tags
     educational (4 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     employee-scheduling (1 notebook) <employee-scheduling>
-    energy (3 notebooks) <energy>
+    energy (4 notebooks) <energy>
     engineering (2 notebooks) <engineering>
     example (7 notebooks) <example>
     excel (2 notebooks) <excel>
@@ -202,7 +203,7 @@ Tags
     tsp (1 notebook) <tsp>
     tutorials (3 notebooks) <tutorials>
     unconstrained (1 notebook) <unconstrained>
-    unit-commitment (1 notebook) <unit-commitment>
+    unit-commitment (2 notebooks) <unit-commitment>
     unit-commitment-problem (1 notebook) <unit-commitment-problem>
     vector-packing (1 notebook) <vector-packing>
     vrp (1 notebook) <vrp>
