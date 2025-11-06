@@ -29,7 +29,9 @@ the list of modules and add more dependencies, but if you do anything else the c
 
 4. Place your notebook inside `colab.ampl.com/authors/<github_username>/`.
 
-5. Update the badges and the index as shown below before committing.
+5. Format the notebook with black, `nbqa black colab.ipynb`.
+
+6. Update the badges and the index as shown below before committing.
 
 Note: The default license for every notebook is [MIT](https://github.com/ampl/colab.ampl.com/blob/master/LICENSE) unless specified otherwise in the notebook.
 
