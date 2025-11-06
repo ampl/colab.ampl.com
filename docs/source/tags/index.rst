@@ -13,7 +13,7 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (61 notebooks) <amplpy>
+    amplpy (62 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -23,6 +23,7 @@ Tags
     batch-processing (1 notebook) <batch-processing>
     benchmark (1 notebook) <benchmark>
     benders (4 notebooks) <benders>
+    bilevel (1 notebook) <bilevel>
     bin-packing (2 notebooks) <bin-packing>
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
@@ -35,6 +36,7 @@ Tags
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
     colombia (1 notebook) <colombia>
+    complementarity (1 notebook) <complementarity>
     complementarity-problem (2 notebooks) <complementarity-problem>
     complexity (1 notebook) <complexity>
     concrete-production (1 notebook) <concrete-production>
@@ -62,7 +64,7 @@ Tags
     discounting (1 notebook) <discounting>
     disjunctive-programming (1 notebook) <disjunctive-programming>
     economic-modeling (1 notebook) <economic-modeling>
-    educational (4 notebooks) <educational>
+    educational (5 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     employee-scheduling (1 notebook) <employee-scheduling>
     energy (4 notebooks) <energy>
@@ -85,7 +87,7 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (9 notebooks) <gurobi>
+    gurobi (10 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (12 notebooks) <highlights>
     highs (10 notebooks) <highs>
@@ -101,6 +103,7 @@ Tags
     kaggle (1 notebook) <kaggle>
     kestrel (1 notebook) <kestrel>
     knapsack (1 notebook) <knapsack>
+    knitro (1 notebook) <knitro>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
     lexicographic-objectives (3 notebooks) <lexicographic-objectives>
@@ -189,6 +192,7 @@ Tags
     solution-check (1 notebook) <solution-check>
     solution-pool (1 notebook) <solution-pool>
     spreadsheet (2 notebooks) <spreadsheet>
+    stackelberg (1 notebook) <stackelberg>
     state-task-networks (1 notebook) <state-task-networks>
     stochastic (5 notebooks) <stochastic>
     stochastic-optimization (1 notebook) <stochastic-optimization>

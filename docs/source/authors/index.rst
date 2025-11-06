@@ -9,6 +9,7 @@ The notebooks in this repository are contributed by the following authors:
 
     aitor.lopez_at_urjc.es
     ccv_at_ampl.com
+    eduardo_at_ampl.com
     fdabrandao_at_gmail.com
     gleb_at_ampl.com
     gyorgy_at_ampl.com

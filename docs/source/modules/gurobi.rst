@@ -1,6 +1,6 @@
 .. _module-gurobi:
 
-gurobi (42 notebooks)
+gurobi (43 notebooks)
 =====================
 
 AMPL Bin Packing Problem with GCG
