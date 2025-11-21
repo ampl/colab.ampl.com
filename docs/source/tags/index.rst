@@ -13,17 +13,18 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (62 notebooks) <amplpy>
+    amplpy (63 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
     arithmetic (1 notebook) <arithmetic>
     assignment (2 notebooks) <assignment>
     automatic-reformulation (1 notebook) <automatic-reformulation>
+    baron (1 notebook) <baron>
     batch-processing (1 notebook) <batch-processing>
     benchmark (1 notebook) <benchmark>
     benders (4 notebooks) <benders>
-    bilevel (1 notebook) <bilevel>
+    bilevel (2 notebooks) <bilevel>
     bin-packing (2 notebooks) <bin-packing>
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
@@ -36,7 +37,7 @@ Tags
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
     colombia (1 notebook) <colombia>
-    complementarity (1 notebook) <complementarity>
+    complementarity (2 notebooks) <complementarity>
     complementarity-problem (2 notebooks) <complementarity-problem>
     complexity (1 notebook) <complexity>
     concrete-production (1 notebook) <concrete-production>
@@ -64,10 +65,10 @@ Tags
     discounting (1 notebook) <discounting>
     disjunctive-programming (1 notebook) <disjunctive-programming>
     economic-modeling (1 notebook) <economic-modeling>
-    educational (5 notebooks) <educational>
+    educational (6 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     employee-scheduling (1 notebook) <employee-scheduling>
-    energy (4 notebooks) <energy>
+    energy (5 notebooks) <energy>
     engineering (2 notebooks) <engineering>
     example (7 notebooks) <example>
     excel (2 notebooks) <excel>
@@ -87,7 +88,7 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (10 notebooks) <gurobi>
+    gurobi (11 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (12 notebooks) <highlights>
     highs (10 notebooks) <highs>
@@ -103,7 +104,7 @@ Tags
     kaggle (1 notebook) <kaggle>
     kestrel (1 notebook) <kestrel>
     knapsack (1 notebook) <knapsack>
-    knitro (1 notebook) <knitro>
+    knitro (2 notebooks) <knitro>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
     lexicographic-objectives (3 notebooks) <lexicographic-objectives>
@@ -123,6 +124,7 @@ Tags
     modeling-tips (1 notebook) <modeling-tips>
     mp (7 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
+    mpec (1 notebook) <mpec>
     multi-objective (3 notebooks) <multi-objective>
     multi-objective-options (1 notebook) <multi-objective-options>
     multi-period-planning (1 notebook) <multi-period-planning>
