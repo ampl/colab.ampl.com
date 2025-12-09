@@ -110,6 +110,7 @@ Tags
     lexicographic-objectives (3 notebooks) <lexicographic-objectives>
     linear-programming (3 notebooks) <linear-programming>
     log-sum-exp (1 notebook) <log-sum-exp>
+    logistic-regression (1 notebook) <logistic-regression>
     lp (1 notebook) <lp>
     machine-learning (3 notebooks) <machine-learning>
     marketing (3 notebooks) <marketing>

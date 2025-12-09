@@ -1,7 +1,7 @@
-.. _tag-softplus:
+.. _tag-logistic-regression:
 
-softplus
-========
+logistic-regression
+===================
 
 Logistic Regression with amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
