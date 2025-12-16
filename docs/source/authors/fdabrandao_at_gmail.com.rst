@@ -162,7 +162,7 @@ Logistic Regression with amplpy
 | `Notebooks <../notebooks/index.html>`_ > `Logistic Regression with amplpy <../notebooks/logistic-regression-with-amplpy.html>`_
 | |github-logistic-regression-with-amplpy| |colab-logistic-regression-with-amplpy| |deepnote-logistic-regression-with-amplpy| |kaggle-logistic-regression-with-amplpy| |gradient-logistic-regression-with-amplpy| |sagemaker-logistic-regression-with-amplpy|
 | Description: Logistic regression with amplpy using exponential cones
-| Tags: :ref:`tag-highlights`, :ref:`tag-amplpy`, :ref:`tag-regression`, :ref:`tag-sigmoid`, :ref:`tag-softplus`, :ref:`tag-log-sum-exp`, :ref:`tag-classifier`, :ref:`tag-regularization`, :ref:`tag-machine-learning`, :ref:`tag-conic`, :ref:`tag-exponential-cone`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-formulation-comparison`
+| Tags: :ref:`tag-highlights`, :ref:`tag-amplpy`, :ref:`tag-logistic-regression`, :ref:`tag-regression`, :ref:`tag-sigmoid`, :ref:`tag-softplus`, :ref:`tag-log-sum-exp`, :ref:`tag-classifier`, :ref:`tag-regularization`, :ref:`tag-machine-learning`, :ref:`tag-conic`, :ref:`tag-exponential-cone`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-formulation-comparison`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>, :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. |github-logistic-regression-with-amplpy|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
