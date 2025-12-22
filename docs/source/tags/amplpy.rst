@@ -449,7 +449,7 @@ Bilevel Markets
 | `Notebooks <../notebooks/index.html>`_ > `Bilevel Markets <../notebooks/bilevel-markets.html>`_
 | |github-bilevel-markets| |colab-bilevel-markets| |deepnote-bilevel-markets| |kaggle-bilevel-markets| |gradient-bilevel-markets| |sagemaker-bilevel-markets|
 | Description: A notebook that presents a comprehensive mathematical formulation of strategic bidding in electricity markets using bilevel optimization and its equivalent single-level Mathematical Program with Equilibrium Constraints (MPEC) obtained through Karush-Kuhn-Tucker (KKT) transformation.
-| Tags: :ref:`tag-educational`, :ref:`tag-bilevel`, :ref:`tag-complementarity`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-knitro`, :ref:`tag-baron`, :ref:`tag-mpec`, :ref:`tag-energy`
+| Tags: :ref:`tag-educational`, :ref:`tag-bilevel`, :ref:`tag-complementarity`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-knitro`, :ref:`tag-baron`, :ref:`tag-mpec`, :ref:`tag-energy`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-eduardo_at_ampl.com` <eduardo@ampl.com>
 
 .. |github-bilevel-markets|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -859,7 +859,7 @@ Hydrothermal Scheduling Problem with Conic Programming
 | `Notebooks <../notebooks/index.html>`_ > `Hydrothermal Scheduling Problem with Conic Programming <../notebooks/hydrothermal-scheduling-problem-with-conic-programming.html>`_
 | |github-hydrothermal-scheduling-problem-with-conic-programming| |colab-hydrothermal-scheduling-problem-with-conic-programming| |deepnote-hydrothermal-scheduling-problem-with-conic-programming| |kaggle-hydrothermal-scheduling-problem-with-conic-programming| |gradient-hydrothermal-scheduling-problem-with-conic-programming| |sagemaker-hydrothermal-scheduling-problem-with-conic-programming|
 | Description: Hydrothermal Scheduling Problem using Second-Order Cones
-| Tags: :ref:`tag-amplpy`, :ref:`tag-conic`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-nonlinear-programming`, :ref:`tag-scheduling`, :ref:`tag-engineering`, :ref:`tag-power-generation`, :ref:`tag-geothermal-energy`, :ref:`tag-hydropower`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-conic`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-nonlinear-programming`, :ref:`tag-scheduling`, :ref:`tag-engineering`, :ref:`tag-power-generation`, :ref:`tag-geothermal-energy`, :ref:`tag-hydropower`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-hydrothermal-scheduling-problem-with-conic-programming|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1233,7 +1233,7 @@ Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM)
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) <../notebooks/optimal-power-flow-with-ampl-and-python-bus-injection-model-bim.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |colab-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |deepnote-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |kaggle-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |gradient-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |sagemaker-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim|
 | Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1267,7 +1267,7 @@ Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) with control
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) with controllable-phase shifting transformers and tap-changing transformers <../notebooks/optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |colab-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |deepnote-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |kaggle-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |gradient-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |sagemaker-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers|
 | Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1301,7 +1301,7 @@ Optimal Power Flow with AMPL and Python - DC Power Flow
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - DC Power Flow <../notebooks/optimal-power-flow-with-ampl-and-python-dc-power-flow.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-dc-power-flow| |colab-optimal-power-flow-with-ampl-and-python-dc-power-flow| |deepnote-optimal-power-flow-with-ampl-and-python-dc-power-flow| |kaggle-optimal-power-flow-with-ampl-and-python-dc-power-flow| |gradient-optimal-power-flow-with-ampl-and-python-dc-power-flow| |sagemaker-optimal-power-flow-with-ampl-and-python-dc-power-flow|
 | Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-dc-power-flow|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1335,7 +1335,7 @@ Optimal Power Flow with AMPL and Python - conventional Power Flow
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - conventional Power Flow <../notebooks/optimal-power-flow-with-ampl-and-python-conventional-power-flow.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |colab-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |deepnote-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |kaggle-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |gradient-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |sagemaker-optimal-power-flow-with-ampl-and-python-conventional-power-flow|
 | Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-conventional-power-flow|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1369,7 +1369,7 @@ Optimal Power Flow with AMPL and Python - data management
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - data management <../notebooks/optimal-power-flow-with-ampl-and-python-data-management.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-data-management| |colab-optimal-power-flow-with-ampl-and-python-data-management| |deepnote-optimal-power-flow-with-ampl-and-python-data-management| |kaggle-optimal-power-flow-with-ampl-and-python-data-management| |gradient-optimal-power-flow-with-ampl-and-python-data-management| |sagemaker-optimal-power-flow-with-ampl-and-python-data-management|
 | Description: Optimal Power Flow with AMPL, Python and amplpy
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-data-management|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1639,7 +1639,7 @@ Power System Optimization with Amplpower package
 | `Notebooks <../notebooks/index.html>`_ > `Power System Optimization with Amplpower package <../notebooks/power-system-optimization-with-amplpower-package.html>`_
 | |github-power-system-optimization-with-amplpower-package| |colab-power-system-optimization-with-amplpower-package| |deepnote-power-system-optimization-with-amplpower-package| |kaggle-power-system-optimization-with-amplpower-package| |gradient-power-system-optimization-with-amplpower-package| |sagemaker-power-system-optimization-with-amplpower-package|
 | Description: this notebook uses amplpower package to solver opf problems
-| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-opf`, :ref:`tag-matpower`
+| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-opf`, :ref:`tag-matpower`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-power-system-optimization-with-amplpower-package|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1978,7 +1978,7 @@ Unit Commitment Problem with AMPL and Python - Power Grid Lib
 | `Notebooks <../notebooks/index.html>`_ > `Unit Commitment Problem with AMPL and Python - Power Grid Lib <../notebooks/unit-commitment-problem-with-ampl-and-python-power-grid-lib.html>`_
 | |github-unit-commitment-problem-with-ampl-and-python-power-grid-lib| |colab-unit-commitment-problem-with-ampl-and-python-power-grid-lib| |deepnote-unit-commitment-problem-with-ampl-and-python-power-grid-lib| |kaggle-unit-commitment-problem-with-ampl-and-python-power-grid-lib| |gradient-unit-commitment-problem-with-ampl-and-python-power-grid-lib| |sagemaker-unit-commitment-problem-with-ampl-and-python-power-grid-lib|
 | Description: Generic notebook to solve Unit Commitment problems with AMPL and Python using the Power Grid Lib model and test instances.
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-python`, :ref:`tag-power-grid-lib`, :ref:`tag-unit-commitment-problem`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-python`, :ref:`tag-power-grid-lib`, :ref:`tag-unit-commitment-problem`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-unit-commitment-problem-with-ampl-and-python-power-grid-lib|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -2012,7 +2012,7 @@ Unit Commitment for Colombia's Energy Market
 | `Notebooks <../notebooks/index.html>`_ > `Unit Commitment for Colombia's Energy Market <../notebooks/unit-commitment-for-colombias-energy-market.html>`_
 | |github-unit-commitment-for-colombias-energy-market| |colab-unit-commitment-for-colombias-energy-market| |deepnote-unit-commitment-for-colombias-energy-market| |kaggle-unit-commitment-for-colombias-energy-market| |gradient-unit-commitment-for-colombias-energy-market| |sagemaker-unit-commitment-for-colombias-energy-market|
 | Description: Unit Commitment and Reserve Co-Optimization in the Colombian Market.
-| Tags: :ref:`tag-amplpy`, :ref:`tag-unit-commitment`, :ref:`tag-energy`, :ref:`tag-colombia`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-unit-commitment`, :ref:`tag-energy`, :ref:`tag-colombia`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-juan_at_ampl.com` <juan@ampl.com>
 
 .. |github-unit-commitment-for-colombias-energy-market|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -2046,7 +2046,7 @@ Unit Commitment for Electrical Power Generation
 | `Notebooks <../notebooks/index.html>`_ > `Unit Commitment for Electrical Power Generation <../notebooks/unit-commitment-for-electrical-power-generation.html>`_
 | |github-unit-commitment-for-electrical-power-generation| |colab-unit-commitment-for-electrical-power-generation| |deepnote-unit-commitment-for-electrical-power-generation| |kaggle-unit-commitment-for-electrical-power-generation| |gradient-unit-commitment-for-electrical-power-generation| |sagemaker-unit-commitment-for-electrical-power-generation|
 | Description: This notebook illustrates the power generation problem using AMPL. The original version featured the Gurobi solver. By default, this notebook uses the HiGHS and CBC solvers.
-| Tags: :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-power-generation`, :ref:`tag-unit-commitment`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-power-generation`, :ref:`tag-unit-commitment`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 .. |github-unit-commitment-for-electrical-power-generation|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

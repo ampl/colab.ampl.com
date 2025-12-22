@@ -246,7 +246,7 @@ Capacity expansion of power generation
 | `Notebooks <../notebooks/index.html>`_ > `Capacity expansion of power generation <../notebooks/capacity-expansion-of-power-generation.html>`_
 | |github-capacity-expansion-of-power-generation| |colab-capacity-expansion-of-power-generation| |deepnote-capacity-expansion-of-power-generation| |kaggle-capacity-expansion-of-power-generation| |gradient-capacity-expansion-of-power-generation| |sagemaker-capacity-expansion-of-power-generation|
 | Description: Models the extensive form of a deterministic multi-stage capacity expansion problem. In this model we can have multiple resources of the same type which have identical properties. The model can be further developed into a stochastic one.
-| Tags: :ref:`tag-ampl-only`, :ref:`tag-energy`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-energy`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 .. |github-capacity-expansion-of-power-generation|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -332,7 +332,7 @@ Hydrothermal Scheduling Problem with Conic Programming
 | `Notebooks <../notebooks/index.html>`_ > `Hydrothermal Scheduling Problem with Conic Programming <../notebooks/hydrothermal-scheduling-problem-with-conic-programming.html>`_
 | |github-hydrothermal-scheduling-problem-with-conic-programming| |colab-hydrothermal-scheduling-problem-with-conic-programming| |deepnote-hydrothermal-scheduling-problem-with-conic-programming| |kaggle-hydrothermal-scheduling-problem-with-conic-programming| |gradient-hydrothermal-scheduling-problem-with-conic-programming| |sagemaker-hydrothermal-scheduling-problem-with-conic-programming|
 | Description: Hydrothermal Scheduling Problem using Second-Order Cones
-| Tags: :ref:`tag-amplpy`, :ref:`tag-conic`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-nonlinear-programming`, :ref:`tag-scheduling`, :ref:`tag-engineering`, :ref:`tag-power-generation`, :ref:`tag-geothermal-energy`, :ref:`tag-hydropower`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-conic`, :ref:`tag-second-order-cone`, :ref:`tag-quadratic-cone`, :ref:`tag-nonlinear-programming`, :ref:`tag-scheduling`, :ref:`tag-engineering`, :ref:`tag-power-generation`, :ref:`tag-geothermal-energy`, :ref:`tag-hydropower`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-hydrothermal-scheduling-problem-with-conic-programming|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -502,7 +502,7 @@ Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM)
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) <../notebooks/optimal-power-flow-with-ampl-and-python-bus-injection-model-bim.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |colab-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |deepnote-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |kaggle-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |gradient-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |sagemaker-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim|
 | Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -536,7 +536,7 @@ Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) with control
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) with controllable-phase shifting transformers and tap-changing transformers <../notebooks/optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |colab-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |deepnote-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |kaggle-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |gradient-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |sagemaker-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers|
 | Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -570,7 +570,7 @@ Optimal Power Flow with AMPL and Python - DC Power Flow
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - DC Power Flow <../notebooks/optimal-power-flow-with-ampl-and-python-dc-power-flow.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-dc-power-flow| |colab-optimal-power-flow-with-ampl-and-python-dc-power-flow| |deepnote-optimal-power-flow-with-ampl-and-python-dc-power-flow| |kaggle-optimal-power-flow-with-ampl-and-python-dc-power-flow| |gradient-optimal-power-flow-with-ampl-and-python-dc-power-flow| |sagemaker-optimal-power-flow-with-ampl-and-python-dc-power-flow|
 | Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-dc-power-flow|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -604,7 +604,7 @@ Optimal Power Flow with AMPL and Python - conventional Power Flow
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - conventional Power Flow <../notebooks/optimal-power-flow-with-ampl-and-python-conventional-power-flow.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |colab-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |deepnote-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |kaggle-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |gradient-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |sagemaker-optimal-power-flow-with-ampl-and-python-conventional-power-flow|
 | Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-conventional-power-flow|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -638,7 +638,7 @@ Optimal Power Flow with AMPL and Python - data management
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - data management <../notebooks/optimal-power-flow-with-ampl-and-python-data-management.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-data-management| |colab-optimal-power-flow-with-ampl-and-python-data-management| |deepnote-optimal-power-flow-with-ampl-and-python-data-management| |kaggle-optimal-power-flow-with-ampl-and-python-data-management| |gradient-optimal-power-flow-with-ampl-and-python-data-management| |sagemaker-optimal-power-flow-with-ampl-and-python-data-management|
 | Description: Optimal Power Flow with AMPL, Python and amplpy
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-data-management|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -706,7 +706,7 @@ Power System Optimization with Amplpower package
 | `Notebooks <../notebooks/index.html>`_ > `Power System Optimization with Amplpower package <../notebooks/power-system-optimization-with-amplpower-package.html>`_
 | |github-power-system-optimization-with-amplpower-package| |colab-power-system-optimization-with-amplpower-package| |deepnote-power-system-optimization-with-amplpower-package| |kaggle-power-system-optimization-with-amplpower-package| |gradient-power-system-optimization-with-amplpower-package| |sagemaker-power-system-optimization-with-amplpower-package|
 | Description: this notebook uses amplpower package to solver opf problems
-| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-opf`, :ref:`tag-matpower`
+| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-opf`, :ref:`tag-matpower`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-power-system-optimization-with-amplpower-package|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

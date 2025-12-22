@@ -177,7 +177,7 @@ Bilevel Markets
 | `Notebooks <../notebooks/index.html>`_ > `Bilevel Markets <../notebooks/bilevel-markets.html>`_
 | |github-bilevel-markets| |colab-bilevel-markets| |deepnote-bilevel-markets| |kaggle-bilevel-markets| |gradient-bilevel-markets| |sagemaker-bilevel-markets|
 | Description: A notebook that presents a comprehensive mathematical formulation of strategic bidding in electricity markets using bilevel optimization and its equivalent single-level Mathematical Program with Equilibrium Constraints (MPEC) obtained through Karush-Kuhn-Tucker (KKT) transformation.
-| Tags: :ref:`tag-educational`, :ref:`tag-bilevel`, :ref:`tag-complementarity`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-knitro`, :ref:`tag-baron`, :ref:`tag-mpec`, :ref:`tag-energy`
+| Tags: :ref:`tag-educational`, :ref:`tag-bilevel`, :ref:`tag-complementarity`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-knitro`, :ref:`tag-baron`, :ref:`tag-mpec`, :ref:`tag-energy`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-eduardo_at_ampl.com` <eduardo@ampl.com>
 
 .. |github-bilevel-markets|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -721,7 +721,7 @@ Network design with redundancy
 | `Notebooks <../notebooks/index.html>`_ > `Network design with redundancy <../notebooks/network-design-with-redundancy.html>`_
 | |github-network-design-with-redundancy| |colab-network-design-with-redundancy| |deepnote-network-design-with-redundancy| |kaggle-network-design-with-redundancy| |gradient-network-design-with-redundancy| |sagemaker-network-design-with-redundancy|
 | Description: Design of an electricity transportation network provides enough redundancy, so that a break of one component does not prevent any user from receiving electricity. The approach also works for similar distribution networks and can potentially be used in the design of military logistic networks.
-| Tags: :ref:`tag-electric-grid`, :ref:`tag-military`
+| Tags: :ref:`tag-electric-grid`, :ref:`tag-military`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
 
 .. |github-network-design-with-redundancy|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1058,7 +1058,7 @@ Power System Optimization with Amplpower package
 | `Notebooks <../notebooks/index.html>`_ > `Power System Optimization with Amplpower package <../notebooks/power-system-optimization-with-amplpower-package.html>`_
 | |github-power-system-optimization-with-amplpower-package| |colab-power-system-optimization-with-amplpower-package| |deepnote-power-system-optimization-with-amplpower-package| |kaggle-power-system-optimization-with-amplpower-package| |gradient-power-system-optimization-with-amplpower-package| |sagemaker-power-system-optimization-with-amplpower-package|
 | Description: this notebook uses amplpower package to solver opf problems
-| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-opf`, :ref:`tag-matpower`
+| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-opf`, :ref:`tag-matpower`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-power-system-optimization-with-amplpower-package|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1395,7 +1395,7 @@ Unit Commitment Problem with AMPL and Python - Power Grid Lib
 | `Notebooks <../notebooks/index.html>`_ > `Unit Commitment Problem with AMPL and Python - Power Grid Lib <../notebooks/unit-commitment-problem-with-ampl-and-python-power-grid-lib.html>`_
 | |github-unit-commitment-problem-with-ampl-and-python-power-grid-lib| |colab-unit-commitment-problem-with-ampl-and-python-power-grid-lib| |deepnote-unit-commitment-problem-with-ampl-and-python-power-grid-lib| |kaggle-unit-commitment-problem-with-ampl-and-python-power-grid-lib| |gradient-unit-commitment-problem-with-ampl-and-python-power-grid-lib| |sagemaker-unit-commitment-problem-with-ampl-and-python-power-grid-lib|
 | Description: Generic notebook to solve Unit Commitment problems with AMPL and Python using the Power Grid Lib model and test instances.
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-python`, :ref:`tag-power-grid-lib`, :ref:`tag-unit-commitment-problem`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-python`, :ref:`tag-power-grid-lib`, :ref:`tag-unit-commitment-problem`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-unit-commitment-problem-with-ampl-and-python-power-grid-lib|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1429,7 +1429,7 @@ Unit Commitment for Colombia's Energy Market
 | `Notebooks <../notebooks/index.html>`_ > `Unit Commitment for Colombia's Energy Market <../notebooks/unit-commitment-for-colombias-energy-market.html>`_
 | |github-unit-commitment-for-colombias-energy-market| |colab-unit-commitment-for-colombias-energy-market| |deepnote-unit-commitment-for-colombias-energy-market| |kaggle-unit-commitment-for-colombias-energy-market| |gradient-unit-commitment-for-colombias-energy-market| |sagemaker-unit-commitment-for-colombias-energy-market|
 | Description: Unit Commitment and Reserve Co-Optimization in the Colombian Market.
-| Tags: :ref:`tag-amplpy`, :ref:`tag-unit-commitment`, :ref:`tag-energy`, :ref:`tag-colombia`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-unit-commitment`, :ref:`tag-energy`, :ref:`tag-colombia`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-juan_at_ampl.com` <juan@ampl.com>
 
 .. |github-unit-commitment-for-colombias-energy-market|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

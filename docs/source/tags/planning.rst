@@ -8,7 +8,7 @@ Capacity expansion of power generation
 | `Notebooks <../notebooks/index.html>`_ > `Capacity expansion of power generation <../notebooks/capacity-expansion-of-power-generation.html>`_
 | |github-capacity-expansion-of-power-generation| |colab-capacity-expansion-of-power-generation| |deepnote-capacity-expansion-of-power-generation| |kaggle-capacity-expansion-of-power-generation| |gradient-capacity-expansion-of-power-generation| |sagemaker-capacity-expansion-of-power-generation|
 | Description: Models the extensive form of a deterministic multi-stage capacity expansion problem. In this model we can have multiple resources of the same type which have identical properties. The model can be further developed into a stochastic one.
-| Tags: :ref:`tag-ampl-only`, :ref:`tag-energy`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-energy`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 .. |github-capacity-expansion-of-power-generation|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

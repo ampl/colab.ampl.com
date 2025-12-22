@@ -13,7 +13,7 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (63 notebooks) <amplpy>
+    amplpy (64 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -65,8 +65,9 @@ Tags
     discounting (1 notebook) <discounting>
     disjunctive-programming (1 notebook) <disjunctive-programming>
     economic-modeling (1 notebook) <economic-modeling>
-    educational (6 notebooks) <educational>
+    educational (7 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
+    electric-power-industry (13 notebooks) <electric-power-industry>
     employee-scheduling (1 notebook) <employee-scheduling>
     energy (5 notebooks) <energy>
     engineering (2 notebooks) <engineering>
@@ -88,7 +89,7 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (11 notebooks) <gurobi>
+    gurobi (12 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (12 notebooks) <highlights>
     highs (10 notebooks) <highs>
@@ -120,6 +121,8 @@ Tags
     medicine (1 notebook) <medicine>
     military (1 notebook) <military>
     milp (1 notebook) <milp>
+    minelib (1 notebook) <minelib>
+    mining (1 notebook) <mining>
     mip (30 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>

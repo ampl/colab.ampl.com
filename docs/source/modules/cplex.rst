@@ -161,7 +161,7 @@ Unit Commitment for Colombia's Energy Market
 | `Notebooks <../notebooks/index.html>`_ > `Unit Commitment for Colombia's Energy Market <../notebooks/unit-commitment-for-colombias-energy-market.html>`_
 | |github-unit-commitment-for-colombias-energy-market| |colab-unit-commitment-for-colombias-energy-market| |deepnote-unit-commitment-for-colombias-energy-market| |kaggle-unit-commitment-for-colombias-energy-market| |gradient-unit-commitment-for-colombias-energy-market| |sagemaker-unit-commitment-for-colombias-energy-market|
 | Description: Unit Commitment and Reserve Co-Optimization in the Colombian Market.
-| Tags: :ref:`tag-amplpy`, :ref:`tag-unit-commitment`, :ref:`tag-energy`, :ref:`tag-colombia`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-unit-commitment`, :ref:`tag-energy`, :ref:`tag-colombia`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-juan_at_ampl.com` <juan@ampl.com>
 
 .. |github-unit-commitment-for-colombias-energy-market|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

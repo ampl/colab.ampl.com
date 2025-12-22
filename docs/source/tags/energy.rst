@@ -8,7 +8,7 @@ Bilevel Markets
 | `Notebooks <../notebooks/index.html>`_ > `Bilevel Markets <../notebooks/bilevel-markets.html>`_
 | |github-bilevel-markets| |colab-bilevel-markets| |deepnote-bilevel-markets| |kaggle-bilevel-markets| |gradient-bilevel-markets| |sagemaker-bilevel-markets|
 | Description: A notebook that presents a comprehensive mathematical formulation of strategic bidding in electricity markets using bilevel optimization and its equivalent single-level Mathematical Program with Equilibrium Constraints (MPEC) obtained through Karush-Kuhn-Tucker (KKT) transformation.
-| Tags: :ref:`tag-educational`, :ref:`tag-bilevel`, :ref:`tag-complementarity`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-knitro`, :ref:`tag-baron`, :ref:`tag-mpec`, :ref:`tag-energy`
+| Tags: :ref:`tag-educational`, :ref:`tag-bilevel`, :ref:`tag-complementarity`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-knitro`, :ref:`tag-baron`, :ref:`tag-mpec`, :ref:`tag-energy`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-eduardo_at_ampl.com` <eduardo@ampl.com>
 
 .. |github-bilevel-markets|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -42,7 +42,7 @@ Capacity expansion of power generation
 | `Notebooks <../notebooks/index.html>`_ > `Capacity expansion of power generation <../notebooks/capacity-expansion-of-power-generation.html>`_
 | |github-capacity-expansion-of-power-generation| |colab-capacity-expansion-of-power-generation| |deepnote-capacity-expansion-of-power-generation| |kaggle-capacity-expansion-of-power-generation| |gradient-capacity-expansion-of-power-generation| |sagemaker-capacity-expansion-of-power-generation|
 | Description: Models the extensive form of a deterministic multi-stage capacity expansion problem. In this model we can have multiple resources of the same type which have identical properties. The model can be further developed into a stochastic one.
-| Tags: :ref:`tag-ampl-only`, :ref:`tag-energy`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-energy`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 .. |github-capacity-expansion-of-power-generation|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -76,7 +76,7 @@ Power System Optimization with Amplpower package
 | `Notebooks <../notebooks/index.html>`_ > `Power System Optimization with Amplpower package <../notebooks/power-system-optimization-with-amplpower-package.html>`_
 | |github-power-system-optimization-with-amplpower-package| |colab-power-system-optimization-with-amplpower-package| |deepnote-power-system-optimization-with-amplpower-package| |kaggle-power-system-optimization-with-amplpower-package| |gradient-power-system-optimization-with-amplpower-package| |sagemaker-power-system-optimization-with-amplpower-package|
 | Description: this notebook uses amplpower package to solver opf problems
-| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-opf`, :ref:`tag-matpower`
+| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-opf`, :ref:`tag-matpower`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-power-system-optimization-with-amplpower-package|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -110,7 +110,7 @@ Unit Commitment for Colombia's Energy Market
 | `Notebooks <../notebooks/index.html>`_ > `Unit Commitment for Colombia's Energy Market <../notebooks/unit-commitment-for-colombias-energy-market.html>`_
 | |github-unit-commitment-for-colombias-energy-market| |colab-unit-commitment-for-colombias-energy-market| |deepnote-unit-commitment-for-colombias-energy-market| |kaggle-unit-commitment-for-colombias-energy-market| |gradient-unit-commitment-for-colombias-energy-market| |sagemaker-unit-commitment-for-colombias-energy-market|
 | Description: Unit Commitment and Reserve Co-Optimization in the Colombian Market.
-| Tags: :ref:`tag-amplpy`, :ref:`tag-unit-commitment`, :ref:`tag-energy`, :ref:`tag-colombia`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-unit-commitment`, :ref:`tag-energy`, :ref:`tag-colombia`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-juan_at_ampl.com` <juan@ampl.com>
 
 .. |github-unit-commitment-for-colombias-energy-market|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -144,7 +144,7 @@ Unit Commitment for Electrical Power Generation
 | `Notebooks <../notebooks/index.html>`_ > `Unit Commitment for Electrical Power Generation <../notebooks/unit-commitment-for-electrical-power-generation.html>`_
 | |github-unit-commitment-for-electrical-power-generation| |colab-unit-commitment-for-electrical-power-generation| |deepnote-unit-commitment-for-electrical-power-generation| |kaggle-unit-commitment-for-electrical-power-generation| |gradient-unit-commitment-for-electrical-power-generation| |sagemaker-unit-commitment-for-electrical-power-generation|
 | Description: This notebook illustrates the power generation problem using AMPL. The original version featured the Gurobi solver. By default, this notebook uses the HiGHS and CBC solvers.
-| Tags: :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-power-generation`, :ref:`tag-unit-commitment`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-power-generation`, :ref:`tag-unit-commitment`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
 
 .. |github-unit-commitment-for-electrical-power-generation|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

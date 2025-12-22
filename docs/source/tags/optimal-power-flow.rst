@@ -8,7 +8,7 @@ Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM)
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) <../notebooks/optimal-power-flow-with-ampl-and-python-bus-injection-model-bim.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |colab-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |deepnote-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |kaggle-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |gradient-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim| |sagemaker-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim|
 | Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -42,7 +42,7 @@ Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) with control
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - Bus Injection Model (BIM) with controllable-phase shifting transformers and tap-changing transformers <../notebooks/optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |colab-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |deepnote-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |kaggle-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |gradient-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers| |sagemaker-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers|
 | Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-bus-injection-model-bim-with-controllable-phase-shifting-transformers-and-tap-changing-transformers|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -76,7 +76,7 @@ Optimal Power Flow with AMPL and Python - DC Power Flow
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - DC Power Flow <../notebooks/optimal-power-flow-with-ampl-and-python-dc-power-flow.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-dc-power-flow| |colab-optimal-power-flow-with-ampl-and-python-dc-power-flow| |deepnote-optimal-power-flow-with-ampl-and-python-dc-power-flow| |kaggle-optimal-power-flow-with-ampl-and-python-dc-power-flow| |gradient-optimal-power-flow-with-ampl-and-python-dc-power-flow| |sagemaker-optimal-power-flow-with-ampl-and-python-dc-power-flow|
 | Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-dc-power-flow|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -110,7 +110,7 @@ Optimal Power Flow with AMPL and Python - conventional Power Flow
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - conventional Power Flow <../notebooks/optimal-power-flow-with-ampl-and-python-conventional-power-flow.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |colab-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |deepnote-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |kaggle-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |gradient-optimal-power-flow-with-ampl-and-python-conventional-power-flow| |sagemaker-optimal-power-flow-with-ampl-and-python-conventional-power-flow|
 | Description: Optimal Power Flow
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-conventional-power-flow|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -144,7 +144,7 @@ Optimal Power Flow with AMPL and Python - data management
 | `Notebooks <../notebooks/index.html>`_ > `Optimal Power Flow with AMPL and Python - data management <../notebooks/optimal-power-flow-with-ampl-and-python-data-management.html>`_
 | |github-optimal-power-flow-with-ampl-and-python-data-management| |colab-optimal-power-flow-with-ampl-and-python-data-management| |deepnote-optimal-power-flow-with-ampl-and-python-data-management| |kaggle-optimal-power-flow-with-ampl-and-python-data-management| |gradient-optimal-power-flow-with-ampl-and-python-data-management| |sagemaker-optimal-power-flow-with-ampl-and-python-data-management|
 | Description: Optimal Power Flow with AMPL, Python and amplpy
-| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`
+| Tags: :ref:`tag-ampl`, :ref:`tag-amplpy`, :ref:`tag-optimal-power-flow`, :ref:`tag-python`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-nicolau_at_ampl.com` <nicolau@ampl.com>
 
 .. |github-optimal-power-flow-with-ampl-and-python-data-management|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

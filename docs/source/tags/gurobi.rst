@@ -41,7 +41,7 @@ Bilevel Markets
 | `Notebooks <../notebooks/index.html>`_ > `Bilevel Markets <../notebooks/bilevel-markets.html>`_
 | |github-bilevel-markets| |colab-bilevel-markets| |deepnote-bilevel-markets| |kaggle-bilevel-markets| |gradient-bilevel-markets| |sagemaker-bilevel-markets|
 | Description: A notebook that presents a comprehensive mathematical formulation of strategic bidding in electricity markets using bilevel optimization and its equivalent single-level Mathematical Program with Equilibrium Constraints (MPEC) obtained through Karush-Kuhn-Tucker (KKT) transformation.
-| Tags: :ref:`tag-educational`, :ref:`tag-bilevel`, :ref:`tag-complementarity`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-knitro`, :ref:`tag-baron`, :ref:`tag-mpec`, :ref:`tag-energy`
+| Tags: :ref:`tag-educational`, :ref:`tag-bilevel`, :ref:`tag-complementarity`, :ref:`tag-amplpy`, :ref:`tag-gurobi`, :ref:`tag-knitro`, :ref:`tag-baron`, :ref:`tag-mpec`, :ref:`tag-energy`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-eduardo_at_ampl.com` <eduardo@ampl.com>
 
 .. |github-bilevel-markets|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
