@@ -67,9 +67,9 @@ Tags
     economic-modeling (1 notebook) <economic-modeling>
     educational (7 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
-    electric-power-industry (13 notebooks) <electric-power-industry>
+    electric-power-industry (14 notebooks) <electric-power-industry>
     employee-scheduling (1 notebook) <employee-scheduling>
-    energy (5 notebooks) <energy>
+    energy (6 notebooks) <energy>
     engineering (2 notebooks) <engineering>
     example (7 notebooks) <example>
     excel (2 notebooks) <excel>
@@ -89,7 +89,7 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (12 notebooks) <gurobi>
+    gurobi (13 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (12 notebooks) <highlights>
     highs (10 notebooks) <highs>
@@ -105,7 +105,7 @@ Tags
     kaggle (1 notebook) <kaggle>
     kestrel (1 notebook) <kestrel>
     knapsack (1 notebook) <knapsack>
-    knitro (2 notebooks) <knitro>
+    knitro (3 notebooks) <knitro>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
     lexicographic-objectives (3 notebooks) <lexicographic-objectives>
@@ -123,13 +123,15 @@ Tags
     milp (1 notebook) <milp>
     minelib (1 notebook) <minelib>
     mining (1 notebook) <mining>
+    minlp (1 notebook) <minlp>
     mip (30 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
-    mp (7 notebooks) <mp>
+    mp (8 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
+    mp2nl (1 notebook) <mp2nl>
     mpec (1 notebook) <mpec>
-    multi-objective (3 notebooks) <multi-objective>
+    multi-objective (4 notebooks) <multi-objective>
     multi-objective-options (1 notebook) <multi-objective-options>
     multi-period-planning (1 notebook) <multi-period-planning>
     multiprocess (1 notebook) <multiprocess>
@@ -138,7 +140,7 @@ Tags
     networkx (1 notebook) <networkx>
     non-continuous-objective (1 notebook) <non-continuous-objective>
     non-linear (1 notebook) <non-linear>
-    nonlinear (3 notebooks) <nonlinear>
+    nonlinear (4 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
     oil-production (3 notebooks) <oil-production>
     open-source (1 notebook) <open-source>
@@ -170,7 +172,7 @@ Tags
     project-management (1 notebook) <project-management>
     puzzles (1 notebook) <puzzles>
     python (7 notebooks) <python>
-    quadratic (1 notebook) <quadratic>
+    quadratic (2 notebooks) <quadratic>
     quadratic-cone (2 notebooks) <quadratic-cone>
     quick-start (2 notebooks) <quick-start>
     refinery (3 notebooks) <refinery>
@@ -213,11 +215,11 @@ Tags
     tsp (1 notebook) <tsp>
     tutorials (3 notebooks) <tutorials>
     unconstrained (1 notebook) <unconstrained>
-    unit-commitment (2 notebooks) <unit-commitment>
+    unit-commitment (3 notebooks) <unit-commitment>
     unit-commitment-problem (1 notebook) <unit-commitment-problem>
     vector-packing (1 notebook) <vector-packing>
     vrp (1 notebook) <vrp>
     worker-task-assignment (1 notebook) <worker-task-assignment>
     xlsx (1 notebook) <xlsx>
-    xpress (1 notebook) <xpress>
+    xpress (2 notebooks) <xpress>
 
