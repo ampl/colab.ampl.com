@@ -67,7 +67,7 @@ Tags
     economic-modeling (1 notebook) <economic-modeling>
     educational (7 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
-    electric-power-industry (14 notebooks) <electric-power-industry>
+    electric-power-industry (16 notebooks) <electric-power-industry>
     employee-scheduling (1 notebook) <employee-scheduling>
     energy (6 notebooks) <energy>
     engineering (2 notebooks) <engineering>
@@ -89,7 +89,7 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (13 notebooks) <gurobi>
+    gurobi (15 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (12 notebooks) <highlights>
     highs (10 notebooks) <highs>
@@ -105,7 +105,7 @@ Tags
     kaggle (1 notebook) <kaggle>
     kestrel (1 notebook) <kestrel>
     knapsack (1 notebook) <knapsack>
-    knitro (3 notebooks) <knitro>
+    knitro (4 notebooks) <knitro>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
     lexicographic-objectives (3 notebooks) <lexicographic-objectives>
@@ -127,11 +127,11 @@ Tags
     mip (30 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
-    mp (8 notebooks) <mp>
+    mp (10 notebooks) <mp>
     mp-library (1 notebook) <mp-library>
-    mp2nl (1 notebook) <mp2nl>
+    mp2nl (3 notebooks) <mp2nl>
     mpec (1 notebook) <mpec>
-    multi-objective (4 notebooks) <multi-objective>
+    multi-objective (5 notebooks) <multi-objective>
     multi-objective-options (1 notebook) <multi-objective-options>
     multi-period-planning (1 notebook) <multi-period-planning>
     multiprocess (1 notebook) <multiprocess>
@@ -196,6 +196,7 @@ Tags
     shortest-path (1 notebook) <shortest-path>
     sigmoid (1 notebook) <sigmoid>
     simple (1 notebook) <simple>
+    snapshot (1 notebook) <snapshot>
     softplus (1 notebook) <softplus>
     solution-check (1 notebook) <solution-check>
     solution-pool (1 notebook) <solution-pool>
@@ -215,11 +216,12 @@ Tags
     tsp (1 notebook) <tsp>
     tutorials (3 notebooks) <tutorials>
     unconstrained (1 notebook) <unconstrained>
-    unit-commitment (3 notebooks) <unit-commitment>
+    unit-commitment (4 notebooks) <unit-commitment>
     unit-commitment-problem (1 notebook) <unit-commitment-problem>
     vector-packing (1 notebook) <vector-packing>
     vrp (1 notebook) <vrp>
+    warm-start (2 notebooks) <warm-start>
     worker-task-assignment (1 notebook) <worker-task-assignment>
     xlsx (1 notebook) <xlsx>
-    xpress (2 notebooks) <xpress>
+    xpress (3 notebooks) <xpress>
 
