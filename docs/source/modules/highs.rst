@@ -1,6 +1,6 @@
 .. _module-highs:
 
-highs (46 notebooks)
+highs (47 notebooks)
 ====================
 
 AMPL - solve multiple models in parallel
@@ -897,6 +897,40 @@ Portfolio Optimization: Factor Model
     
 .. |sagemaker-portfolio-optimization-factor-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Power Generation Portfolio Optimization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Power Generation Portfolio Optimization <../notebooks/power-generation-portfolio-optimization.html>`_
+| |github-power-generation-portfolio-optimization| |colab-power-generation-portfolio-optimization| |deepnote-power-generation-portfolio-optimization| |kaggle-power-generation-portfolio-optimization| |gradient-power-generation-portfolio-optimization| |sagemaker-power-generation-portfolio-optimization|
+| Description: Power generation portfolio optimization to manage several assets and resources.
+| Tags: :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-power-generation`, :ref:`tag-electric-power-industry`
+| Author: :ref:`email-juan_at_ampl.com` <juan@ampl.com>
+
+.. |github-power-generation-portfolio-optimization|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: generation_portfolio.ipynb
+    
+.. |colab-power-generation-portfolio-optimization| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-power-generation-portfolio-optimization| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-power-generation-portfolio-optimization| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-power-generation-portfolio-optimization| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-power-generation-portfolio-optimization| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
     :alt: Open In SageMaker Studio Lab
     
 

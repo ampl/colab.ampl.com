@@ -13,7 +13,7 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (64 notebooks) <amplpy>
+    amplpy (65 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -67,9 +67,9 @@ Tags
     economic-modeling (1 notebook) <economic-modeling>
     educational (7 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
-    electric-power-industry (16 notebooks) <electric-power-industry>
+    electric-power-industry (17 notebooks) <electric-power-industry>
     employee-scheduling (1 notebook) <employee-scheduling>
-    energy (6 notebooks) <energy>
+    energy (7 notebooks) <energy>
     engineering (2 notebooks) <engineering>
     example (7 notebooks) <example>
     excel (2 notebooks) <excel>
@@ -158,7 +158,7 @@ Tags
     pipeline-diagnostics (1 notebook) <pipeline-diagnostics>
     planning (1 notebook) <planning>
     portfolio-optimization (4 notebooks) <portfolio-optimization>
-    power-generation (3 notebooks) <power-generation>
+    power-generation (4 notebooks) <power-generation>
     power-grid-lib (1 notebook) <power-grid-lib>
     powerbi (1 notebook) <powerbi>
     preferential-bidding-system (1 notebook) <preferential-bidding-system>
