@@ -3,35 +3,35 @@
 warm-start
 ==========
 
-Using different objectives 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| `Notebooks <../notebooks/index.html>`_ > `Using different objectives  <../notebooks/using-different-objectives.html>`_
-| |github-using-different-objectives| |colab-using-different-objectives| |deepnote-using-different-objectives| |kaggle-using-different-objectives| |gradient-using-different-objectives| |sagemaker-using-different-objectives|
-| Description: We show how to do multiple objectives with Amplpy using a nonlinear Unit Commitment problem.
+Using multiple objectives in your model 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Using multiple objectives in your model  <../notebooks/using-multiple-objectives-in-your-model.html>`_
+| |github-using-multiple-objectives-in-your-model| |colab-using-multiple-objectives-in-your-model| |deepnote-using-multiple-objectives-in-your-model| |kaggle-using-multiple-objectives-in-your-model| |gradient-using-multiple-objectives-in-your-model| |sagemaker-using-multiple-objectives-in-your-model|
+| Description: We show how to use multiple objectives with Amplpy using a nonlinear Unit Commitment problem. We won't be using native or emulated features from the solver interface, but emulating manually a lexicographic multiobjective problem.
 | Tags: :ref:`tag-warm-start`, :ref:`tag-mp`, :ref:`tag-multi-objective`, :ref:`tag-gurobi`, :ref:`tag-xpress`, :ref:`tag-knitro`, :ref:`tag-mp2nl`, :ref:`tag-electric-power-industry`, :ref:`tag-unit-commitment`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
-.. |github-using-different-objectives|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+.. |github-using-multiple-objectives-in-your-model|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
     :alt: emulate_multiobjective.ipynb
     
-.. |colab-using-different-objectives| image:: https://colab.research.google.com/assets/colab-badge.svg
+.. |colab-using-multiple-objectives-in-your-model| image:: https://colab.research.google.com/assets/colab-badge.svg
     :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
     :alt: Open In Colab
     
-.. |deepnote-using-different-objectives| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+.. |deepnote-using-multiple-objectives-in-your-model| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
     :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
     :alt: Open In Deepnote
     
-.. |kaggle-using-different-objectives| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+.. |kaggle-using-multiple-objectives-in-your-model| image:: https://kaggle.com/static/images/open-in-kaggle.svg
     :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
     :alt: Open In Kaggle
     
-.. |gradient-using-different-objectives| image:: https://assets.paperspace.io/img/gradient-badge.svg
+.. |gradient-using-multiple-objectives-in-your-model| image:: https://assets.paperspace.io/img/gradient-badge.svg
     :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
     :alt: Open In Gradient
     
-.. |sagemaker-using-different-objectives| image:: https://studiolab.sagemaker.aws/studiolab.svg
+.. |sagemaker-using-multiple-objectives-in-your-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
     :alt: Open In SageMaker Studio Lab
     
