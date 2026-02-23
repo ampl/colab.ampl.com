@@ -13,7 +13,7 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (65 notebooks) <amplpy>
+    amplpy (66 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -37,6 +37,7 @@ Tags
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
     colombia (1 notebook) <colombia>
+    color-change-scheduling (1 notebook) <color-change-scheduling>
     complementarity (2 notebooks) <complementarity>
     complementarity-problem (2 notebooks) <complementarity-problem>
     complexity (1 notebook) <complexity>
@@ -185,7 +186,7 @@ Tags
     risk-measures (1 notebook) <risk-measures>
     routing (1 notebook) <routing>
     sample-average-approximation (1 notebook) <sample-average-approximation>
-    scheduling (9 notebooks) <scheduling>
+    scheduling (10 notebooks) <scheduling>
     scikit-learn (2 notebooks) <scikit-learn>
     second-order-cone (2 notebooks) <second-order-cone>
     semivariance (1 notebook) <semivariance>
@@ -214,6 +215,7 @@ Tags
     trainee-scheduling (1 notebook) <trainee-scheduling>
     transportation (4 notebooks) <transportation>
     tsp (1 notebook) <tsp>
+    tuning (1 notebook) <tuning>
     tutorials (3 notebooks) <tutorials>
     unconstrained (1 notebook) <unconstrained>
     unit-commitment (4 notebooks) <unit-commitment>
@@ -223,5 +225,5 @@ Tags
     warm-start (2 notebooks) <warm-start>
     worker-task-assignment (1 notebook) <worker-task-assignment>
     xlsx (1 notebook) <xlsx>
-    xpress (3 notebooks) <xpress>
+    xpress (4 notebooks) <xpress>
 
