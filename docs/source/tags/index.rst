@@ -13,12 +13,12 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (66 notebooks) <amplpy>
+    amplpy (67 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
     arithmetic (1 notebook) <arithmetic>
-    assignment (2 notebooks) <assignment>
+    assignment (3 notebooks) <assignment>
     automatic-reformulation (1 notebook) <automatic-reformulation>
     baron (1 notebook) <baron>
     batch-processing (1 notebook) <batch-processing>
@@ -77,6 +77,7 @@ Tags
     exponential-cone (1 notebook) <exponential-cone>
     facility-location (9 notebooks) <facility-location>
     factor-model (1 notebook) <factor-model>
+    feasibility-problem (1 notebook) <feasibility-problem>
     finance (10 notebooks) <finance>
     forecast (1 notebook) <forecast>
     formulation-comparison (1 notebook) <formulation-comparison>
@@ -92,7 +93,7 @@ Tags
     gui (2 notebooks) <gui>
     gurobi (15 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
-    highlights (12 notebooks) <highlights>
+    highlights (13 notebooks) <highlights>
     highs (10 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
@@ -128,7 +129,7 @@ Tags
     mip (30 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
-    mp (15 notebooks) <mp>
+    mp (16 notebooks) <mp>
     mp2nl (3 notebooks) <mp2nl>
     mpec (1 notebook) <mpec>
     multi-objective (5 notebooks) <multi-objective>
@@ -185,7 +186,7 @@ Tags
     risk-measures (1 notebook) <risk-measures>
     routing (1 notebook) <routing>
     sample-average-approximation (1 notebook) <sample-average-approximation>
-    scheduling (10 notebooks) <scheduling>
+    scheduling (11 notebooks) <scheduling>
     scikit-learn (2 notebooks) <scikit-learn>
     second-order-cone (2 notebooks) <second-order-cone>
     semivariance (1 notebook) <semivariance>
@@ -214,7 +215,7 @@ Tags
     trainee-scheduling (1 notebook) <trainee-scheduling>
     transportation (4 notebooks) <transportation>
     tsp (1 notebook) <tsp>
-    tuning (1 notebook) <tuning>
+    tuning (2 notebooks) <tuning>
     tutorials (3 notebooks) <tutorials>
     unconstrained (1 notebook) <unconstrained>
     unit-commitment (4 notebooks) <unit-commitment>
@@ -224,5 +225,5 @@ Tags
     warm-start (2 notebooks) <warm-start>
     worker-task-assignment (1 notebook) <worker-task-assignment>
     xlsx (1 notebook) <xlsx>
-    xpress (4 notebooks) <xpress>
+    xpress (5 notebooks) <xpress>
 
