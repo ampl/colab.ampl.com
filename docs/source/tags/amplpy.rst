@@ -1131,7 +1131,7 @@ N-Queens
 | `Notebooks <../notebooks/index.html>`_ > `N-Queens <../notebooks/n-queens.html>`_
 | |github-n-queens| |colab-n-queens| |deepnote-n-queens| |kaggle-n-queens| |gradient-n-queens| |sagemaker-n-queens|
 | Description: How can N queens be placed on an NxN chessboard so that no two of them attack each other?
-| Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-n-queens|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1571,7 +1571,7 @@ Paintshop Color Change Scheduling with FICO Xpress
 | `Notebooks <../notebooks/index.html>`_ > `Paintshop Color Change Scheduling with FICO Xpress <../notebooks/paintshop-color-change-scheduling-with-fico-xpress.html>`_
 | |github-paintshop-color-change-scheduling-with-fico-xpress| |colab-paintshop-color-change-scheduling-with-fico-xpress| |deepnote-paintshop-color-change-scheduling-with-fico-xpress| |kaggle-paintshop-color-change-scheduling-with-fico-xpress| |gradient-paintshop-color-change-scheduling-with-fico-xpress| |sagemaker-paintshop-color-change-scheduling-with-fico-xpress|
 | Description: A scheduling problem demonstrating high-level modeling and automatic solver tuning in FICO Xpress
-| Tags: :ref:`tag-amplpy`, :ref:`tag-scheduling`, :ref:`tag-color-change-scheduling`, :ref:`tag-tuning`, :ref:`tag-xpress`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-scheduling`, :ref:`tag-color-change-scheduling`, :ref:`tag-tuning`, :ref:`tag-xpress`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-paintshop-color-change-scheduling-with-fico-xpress|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

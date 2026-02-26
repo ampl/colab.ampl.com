@@ -245,7 +245,7 @@ CP-style scheduling model with the *numberof* operator, solved by a MIP solver
 | `Notebooks <../notebooks/index.html>`_ > `CP-style scheduling model with the *numberof* operator, solved by a MIP solver <../notebooks/cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver.html>`_
 | |github-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |colab-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |deepnote-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |kaggle-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |gradient-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |sagemaker-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver|
 | Description: Scheduling model with the Constraint Programming *numberof* operator, solved with a MIP solver. New MIP solver drivers based on the [MP library](https://amplmp.readthedocs.io/) enable CP-style modeling.
-| Tags: :ref:`tag-ampl-only`, :ref:`tag-constraint-programming`
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-mp`, :ref:`tag-constraint-programming`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -585,7 +585,7 @@ N-Queens
 | `Notebooks <../notebooks/index.html>`_ > `N-Queens <../notebooks/n-queens.html>`_
 | |github-n-queens| |colab-n-queens| |deepnote-n-queens| |kaggle-n-queens| |gradient-n-queens| |sagemaker-n-queens|
 | Description: How can N queens be placed on an NxN chessboard so that no two of them attack each other?
-| Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-n-queens|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -872,7 +872,7 @@ Portfolio Optimization: Factor Model
 | `Notebooks <../notebooks/index.html>`_ > `Portfolio Optimization: Factor Model <../notebooks/portfolio-optimization-factor-model.html>`_
 | |github-portfolio-optimization-factor-model| |colab-portfolio-optimization-factor-model| |deepnote-portfolio-optimization-factor-model| |kaggle-portfolio-optimization-factor-model| |gradient-portfolio-optimization-factor-model| |sagemaker-portfolio-optimization-factor-model|
 | Description: Mean-Variance Portfolio Optimization model where the risk estimator is not given explicitly but is instead represented by a factor model, as is common in US equity models [1]. The original notebook is [3].
-| Tags: :ref:`tag-finance`, :ref:`tag-portfolio-optimization`, :ref:`tag-mean-variance`, :ref:`tag-factor-model`, :ref:`tag-ampl-conditonal-instantiation`, :ref:`tag-cardinality-constraint`
+| Tags: :ref:`tag-finance`, :ref:`tag-portfolio-optimization`, :ref:`tag-mean-variance`, :ref:`tag-factor-model`, :ref:`tag-ampl-conditonal-instantiation`, :ref:`tag-mp`, :ref:`tag-cardinality-constraint`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-portfolio-optimization-factor-model|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1242,7 +1242,7 @@ Solution check: discontinuous objective function
 | `Notebooks <../notebooks/index.html>`_ > `Solution check: discontinuous objective function <../notebooks/solution-check-discontinuous-objective-function.html>`_
 | |github-solution-check-discontinuous-objective-function| |colab-solution-check-discontinuous-objective-function| |deepnote-solution-check-discontinuous-objective-function| |kaggle-solution-check-discontinuous-objective-function| |gradient-solution-check-discontinuous-objective-function| |sagemaker-solution-check-discontinuous-objective-function|
 | Description: Pathological examples to illustrate MP solution checker and settings
-| Tags: :ref:`tag-mp-library`, :ref:`tag-solution-check`, :ref:`tag-non-continuous-objective`, :ref:`tag-strict-comparison`
+| Tags: :ref:`tag-mp`, :ref:`tag-solution-check`, :ref:`tag-non-continuous-objective`, :ref:`tag-strict-comparison`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-solution-check-discontinuous-objective-function|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

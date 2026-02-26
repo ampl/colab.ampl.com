@@ -3,6 +3,40 @@
 mp
 ==
 
+CP-style scheduling model with the *numberof* operator, solved by a MIP solver
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `CP-style scheduling model with the *numberof* operator, solved by a MIP solver <../notebooks/cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver.html>`_
+| |github-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |colab-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |deepnote-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |kaggle-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |gradient-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |sagemaker-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver|
+| Description: Scheduling model with the Constraint Programming *numberof* operator, solved with a MIP solver. New MIP solver drivers based on the [MP library](https://amplmp.readthedocs.io/) enable CP-style modeling.
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-mp`, :ref:`tag-constraint-programming`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: sched_numberof.ipynb
+    
+.. |colab-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Containers scheduling
 ^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Containers scheduling <../notebooks/containers-scheduling.html>`_
@@ -139,6 +173,108 @@ Magic sequences
     
 
 
+N-Queens
+^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `N-Queens <../notebooks/n-queens.html>`_
+| |github-n-queens| |colab-n-queens| |deepnote-n-queens| |kaggle-n-queens| |gradient-n-queens| |sagemaker-n-queens|
+| Description: How can N queens be placed on an NxN chessboard so that no two of them attack each other?
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-n-queens|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: nqueens.ipynb
+    
+.. |colab-n-queens| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-n-queens| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-n-queens| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-n-queens| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-n-queens| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Paintshop Color Change Scheduling with FICO Xpress
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Paintshop Color Change Scheduling with FICO Xpress <../notebooks/paintshop-color-change-scheduling-with-fico-xpress.html>`_
+| |github-paintshop-color-change-scheduling-with-fico-xpress| |colab-paintshop-color-change-scheduling-with-fico-xpress| |deepnote-paintshop-color-change-scheduling-with-fico-xpress| |kaggle-paintshop-color-change-scheduling-with-fico-xpress| |gradient-paintshop-color-change-scheduling-with-fico-xpress| |sagemaker-paintshop-color-change-scheduling-with-fico-xpress|
+| Description: A scheduling problem demonstrating high-level modeling and automatic solver tuning in FICO Xpress
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-scheduling`, :ref:`tag-color-change-scheduling`, :ref:`tag-tuning`, :ref:`tag-xpress`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-paintshop-color-change-scheduling-with-fico-xpress|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: color_change_scheduling.ipynb
+    
+.. |colab-paintshop-color-change-scheduling-with-fico-xpress| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-paintshop-color-change-scheduling-with-fico-xpress| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-paintshop-color-change-scheduling-with-fico-xpress| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-paintshop-color-change-scheduling-with-fico-xpress| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-paintshop-color-change-scheduling-with-fico-xpress| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Portfolio Optimization: Factor Model
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Portfolio Optimization: Factor Model <../notebooks/portfolio-optimization-factor-model.html>`_
+| |github-portfolio-optimization-factor-model| |colab-portfolio-optimization-factor-model| |deepnote-portfolio-optimization-factor-model| |kaggle-portfolio-optimization-factor-model| |gradient-portfolio-optimization-factor-model| |sagemaker-portfolio-optimization-factor-model|
+| Description: Mean-Variance Portfolio Optimization model where the risk estimator is not given explicitly but is instead represented by a factor model, as is common in US equity models [1]. The original notebook is [3].
+| Tags: :ref:`tag-finance`, :ref:`tag-portfolio-optimization`, :ref:`tag-mean-variance`, :ref:`tag-factor-model`, :ref:`tag-ampl-conditonal-instantiation`, :ref:`tag-mp`, :ref:`tag-cardinality-constraint`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-portfolio-optimization-factor-model|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: portfolio_factor_model.ipynb
+    
+.. |colab-portfolio-optimization-factor-model| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-portfolio-optimization-factor-model| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-portfolio-optimization-factor-model| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-portfolio-optimization-factor-model| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-portfolio-optimization-factor-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Retrieve Solution pool with AMPL and Gurobi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Retrieve Solution pool with AMPL and Gurobi <../notebooks/retrieve-solution-pool-with-ampl-and-gurobi.html>`_
@@ -169,6 +305,40 @@ Retrieve Solution pool with AMPL and Gurobi
     
 .. |sagemaker-retrieve-solution-pool-with-ampl-and-gurobi| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/tutorials/solution_pool.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Solution check: discontinuous objective function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Solution check: discontinuous objective function <../notebooks/solution-check-discontinuous-objective-function.html>`_
+| |github-solution-check-discontinuous-objective-function| |colab-solution-check-discontinuous-objective-function| |deepnote-solution-check-discontinuous-objective-function| |kaggle-solution-check-discontinuous-objective-function| |gradient-solution-check-discontinuous-objective-function| |sagemaker-solution-check-discontinuous-objective-function|
+| Description: Pathological examples to illustrate MP solution checker and settings
+| Tags: :ref:`tag-mp`, :ref:`tag-solution-check`, :ref:`tag-non-continuous-objective`, :ref:`tag-strict-comparison`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-solution-check-discontinuous-objective-function|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sol-check.ipynb
+    :alt: sol-check.ipynb
+    
+.. |colab-solution-check-discontinuous-objective-function| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sol-check.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-solution-check-discontinuous-objective-function| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sol-check.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-solution-check-discontinuous-objective-function| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sol-check.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-solution-check-discontinuous-objective-function| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sol-check.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-solution-check-discontinuous-objective-function| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sol-check.ipynb
     :alt: Open In SageMaker Studio Lab
     
 

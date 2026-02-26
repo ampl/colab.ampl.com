@@ -212,7 +212,7 @@ N-Queens
 | `Notebooks <../notebooks/index.html>`_ > `N-Queens <../notebooks/n-queens.html>`_
 | |github-n-queens| |colab-n-queens| |deepnote-n-queens| |kaggle-n-queens| |gradient-n-queens| |sagemaker-n-queens|
 | Description: How can N queens be placed on an NxN chessboard so that no two of them attack each other?
-| Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-n-queens|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

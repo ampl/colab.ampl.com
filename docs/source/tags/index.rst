@@ -128,8 +128,7 @@ Tags
     mip (30 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
-    mp (10 notebooks) <mp>
-    mp-library (1 notebook) <mp-library>
+    mp (15 notebooks) <mp>
     mp2nl (3 notebooks) <mp2nl>
     mpec (1 notebook) <mpec>
     multi-objective (5 notebooks) <multi-objective>
