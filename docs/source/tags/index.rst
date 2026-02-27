@@ -13,7 +13,7 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (67 notebooks) <amplpy>
+    amplpy (68 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -87,13 +87,13 @@ Tags
     geometry (1 notebook) <geometry>
     geothermal-energy (1 notebook) <geothermal-energy>
     gilmore-gomory (1 notebook) <gilmore-gomory>
-    global-optimization (2 notebooks) <global-optimization>
+    global-optimization (3 notebooks) <global-optimization>
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
     gurobi (15 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
-    highlights (13 notebooks) <highlights>
+    highlights (14 notebooks) <highlights>
     highs (10 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
@@ -112,6 +112,7 @@ Tags
     lemonade-stand (2 notebooks) <lemonade-stand>
     lexicographic-objectives (3 notebooks) <lexicographic-objectives>
     linear-programming (3 notebooks) <linear-programming>
+    local-optimization (1 notebook) <local-optimization>
     log-sum-exp (1 notebook) <log-sum-exp>
     logistic-regression (1 notebook) <logistic-regression>
     lp (1 notebook) <lp>
@@ -140,13 +141,11 @@ Tags
     network (2 notebooks) <network>
     networkx (1 notebook) <networkx>
     non-continuous-objective (1 notebook) <non-continuous-objective>
-    non-linear (1 notebook) <non-linear>
-    nonlinear (4 notebooks) <nonlinear>
+    nonlinear (6 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
     oil-production (3 notebooks) <oil-production>
     open-source (1 notebook) <open-source>
-    opf (1 notebook) <opf>
-    optimal-power-flow (5 notebooks) <optimal-power-flow>
+    optimal-power-flow (6 notebooks) <optimal-power-flow>
     optimization (1 notebook) <optimization>
     organ-exchange (1 notebook) <organ-exchange>
     pairs-trading (1 notebook) <pairs-trading>
@@ -173,7 +172,7 @@ Tags
     project-management (1 notebook) <project-management>
     puzzles (1 notebook) <puzzles>
     python (7 notebooks) <python>
-    quadratic (2 notebooks) <quadratic>
+    quadratic (3 notebooks) <quadratic>
     quadratic-cone (2 notebooks) <quadratic-cone>
     quick-start (2 notebooks) <quick-start>
     refinery (3 notebooks) <refinery>
@@ -214,6 +213,7 @@ Tags
     time-windows (1 notebook) <time-windows>
     trainee-scheduling (1 notebook) <trainee-scheduling>
     transportation (4 notebooks) <transportation>
+    trigonometric (1 notebook) <trigonometric>
     tsp (1 notebook) <tsp>
     tuning (2 notebooks) <tuning>
     tutorials (3 notebooks) <tutorials>
@@ -225,5 +225,5 @@ Tags
     warm-start (2 notebooks) <warm-start>
     worker-task-assignment (1 notebook) <worker-task-assignment>
     xlsx (1 notebook) <xlsx>
-    xpress (5 notebooks) <xpress>
+    xpress (6 notebooks) <xpress>
 

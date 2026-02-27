@@ -76,7 +76,7 @@ Largest small polygon
 | `Notebooks <../notebooks/index.html>`_ > `Largest small polygon <../notebooks/largest-small-polygon.html>`_
 | |github-largest-small-polygon| |colab-largest-small-polygon| |deepnote-largest-small-polygon| |kaggle-largest-small-polygon| |gradient-largest-small-polygon| |sagemaker-largest-small-polygon|
 | Description: lecture about models for the Largest Small Polygon Problem
-| Tags: :ref:`tag-geometry`, :ref:`tag-non-linear`, :ref:`tag-amplpy`, :ref:`tag-ipopt`, :ref:`tag-educational`
+| Tags: :ref:`tag-geometry`, :ref:`tag-nonlinear`, :ref:`tag-amplpy`, :ref:`tag-ipopt`, :ref:`tag-educational`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-largest-small-polygon|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
