@@ -75,6 +75,7 @@ Tags
     example (7 notebooks) <example>
     excel (2 notebooks) <excel>
     exponential-cone (1 notebook) <exponential-cone>
+    f1 (1 notebook) <f1>
     facility-location (9 notebooks) <facility-location>
     factor-model (1 notebook) <factor-model>
     feasibility-problem (1 notebook) <feasibility-problem>
@@ -91,7 +92,7 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (15 notebooks) <gurobi>
+    gurobi (16 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (14 notebooks) <highlights>
     highs (10 notebooks) <highs>
@@ -130,7 +131,7 @@ Tags
     mip (30 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
-    mp (16 notebooks) <mp>
+    mp (17 notebooks) <mp>
     mp2nl (3 notebooks) <mp2nl>
     mpec (1 notebook) <mpec>
     multi-objective (5 notebooks) <multi-objective>
@@ -185,7 +186,7 @@ Tags
     risk-measures (1 notebook) <risk-measures>
     routing (1 notebook) <routing>
     sample-average-approximation (1 notebook) <sample-average-approximation>
-    scheduling (11 notebooks) <scheduling>
+    scheduling (12 notebooks) <scheduling>
     scikit-learn (2 notebooks) <scikit-learn>
     second-order-cone (2 notebooks) <second-order-cone>
     semivariance (1 notebook) <semivariance>
@@ -200,6 +201,7 @@ Tags
     softplus (1 notebook) <softplus>
     solution-check (1 notebook) <solution-check>
     solution-pool (1 notebook) <solution-pool>
+    sports (1 notebook) <sports>
     spreadsheet (2 notebooks) <spreadsheet>
     stackelberg (1 notebook) <stackelberg>
     state-task-networks (1 notebook) <state-task-networks>

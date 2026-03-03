@@ -329,7 +329,7 @@ Paintshop Color Change Scheduling with FICO Xpress
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Paintshop Color Change Scheduling with FICO Xpress <../notebooks/paintshop-color-change-scheduling-with-fico-xpress.html>`_
 | |github-paintshop-color-change-scheduling-with-fico-xpress| |colab-paintshop-color-change-scheduling-with-fico-xpress| |deepnote-paintshop-color-change-scheduling-with-fico-xpress| |kaggle-paintshop-color-change-scheduling-with-fico-xpress| |gradient-paintshop-color-change-scheduling-with-fico-xpress| |sagemaker-paintshop-color-change-scheduling-with-fico-xpress|
-| Description: A scheduling problem demonstrating high-level modeling and automatic solver tuning in FICO Xpress
+| Description: A scheduling problem demonstrating high-level modeling and manual solver tuning in FICO Xpress
 | Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-scheduling`, :ref:`tag-color-change-scheduling`, :ref:`tag-tuning`, :ref:`tag-xpress`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
