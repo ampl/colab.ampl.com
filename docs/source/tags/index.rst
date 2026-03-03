@@ -13,7 +13,7 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (68 notebooks) <amplpy>
+    amplpy (69 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -31,7 +31,7 @@ Tags
     callbacks (1 notebook) <callbacks>
     cardinality-constraint (1 notebook) <cardinality-constraint>
     cash-flow-management (1 notebook) <cash-flow-management>
-    cbc (11 notebooks) <cbc>
+    cbc (12 notebooks) <cbc>
     cdar (1 notebook) <cdar>
     chatgpt (1 notebook) <chatgpt>
     christmas (2 notebooks) <christmas>
@@ -65,6 +65,7 @@ Tags
     deterministic-model (2 notebooks) <deterministic-model>
     discounting (1 notebook) <discounting>
     disjunctive-programming (1 notebook) <disjunctive-programming>
+    dual-values (1 notebook) <dual-values>
     economic-modeling (1 notebook) <economic-modeling>
     educational (7 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
@@ -79,7 +80,7 @@ Tags
     facility-location (9 notebooks) <facility-location>
     factor-model (1 notebook) <factor-model>
     feasibility-problem (1 notebook) <feasibility-problem>
-    finance (10 notebooks) <finance>
+    finance (11 notebooks) <finance>
     forecast (1 notebook) <forecast>
     formulation-comparison (1 notebook) <formulation-comparison>
     gcg (2 notebooks) <gcg>
@@ -176,7 +177,7 @@ Tags
     quadratic (3 notebooks) <quadratic>
     quadratic-cone (2 notebooks) <quadratic-cone>
     quick-start (2 notebooks) <quick-start>
-    refinery (3 notebooks) <refinery>
+    refinery (4 notebooks) <refinery>
     regression (1 notebook) <regression>
     regularization (1 notebook) <regularization>
     reinforced-formulations (1 notebook) <reinforced-formulations>
@@ -194,6 +195,7 @@ Tags
     seniority-ranking (1 notebook) <seniority-ranking>
     sequences (1 notebook) <sequences>
     sets (1 notebook) <sets>
+    shadow-prices (1 notebook) <shadow-prices>
     shortest-path (1 notebook) <shortest-path>
     sigmoid (1 notebook) <sigmoid>
     simple (1 notebook) <simple>
