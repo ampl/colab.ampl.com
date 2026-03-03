@@ -3,6 +3,74 @@
 mp
 ==
 
+A Party Scheduling Problem with FICO Xpress
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `A Party Scheduling Problem with FICO Xpress <../notebooks/a-party-scheduling-problem-with-fico-xpress.html>`_
+| |github-a-party-scheduling-problem-with-fico-xpress| |colab-a-party-scheduling-problem-with-fico-xpress| |deepnote-a-party-scheduling-problem-with-fico-xpress| |kaggle-a-party-scheduling-problem-with-fico-xpress| |gradient-a-party-scheduling-problem-with-fico-xpress| |sagemaker-a-party-scheduling-problem-with-fico-xpress|
+| Description: A scheduling problem for visitor-host assignments. Feasibility version (no objective function). Demonstrates high-level modeling in AMPL MP, AMPL Python API, and tuning in FICO Xpress
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-highlights`, :ref:`tag-scheduling`, :ref:`tag-assignment`, :ref:`tag-feasibility-problem`, :ref:`tag-tuning`, :ref:`tag-xpress`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-a-party-scheduling-problem-with-fico-xpress|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: party1.ipynb
+    
+.. |colab-a-party-scheduling-problem-with-fico-xpress| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-a-party-scheduling-problem-with-fico-xpress| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-a-party-scheduling-problem-with-fico-xpress| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-a-party-scheduling-problem-with-fico-xpress| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-a-party-scheduling-problem-with-fico-xpress| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+CP-style scheduling model with the *numberof* operator, solved by a MIP solver
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `CP-style scheduling model with the *numberof* operator, solved by a MIP solver <../notebooks/cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver.html>`_
+| |github-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |colab-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |deepnote-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |kaggle-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |gradient-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |sagemaker-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver|
+| Description: Scheduling model with the Constraint Programming *numberof* operator, solved with a MIP solver. New MIP solver drivers based on the [MP library](https://amplmp.readthedocs.io/) enable CP-style modeling.
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-mp`, :ref:`tag-constraint-programming`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: sched_numberof.ipynb
+    
+.. |colab-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sched_numberof.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Containers scheduling
 ^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Containers scheduling <../notebooks/containers-scheduling.html>`_
@@ -173,6 +241,108 @@ Magic sequences
     
 
 
+N-Queens
+^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `N-Queens <../notebooks/n-queens.html>`_
+| |github-n-queens| |colab-n-queens| |deepnote-n-queens| |kaggle-n-queens| |gradient-n-queens| |sagemaker-n-queens|
+| Description: How can N queens be placed on an NxN chessboard so that no two of them attack each other?
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-n-queens|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: nqueens.ipynb
+    
+.. |colab-n-queens| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-n-queens| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-n-queens| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-n-queens| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-n-queens| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/nqueens.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Paintshop Color Change Scheduling with FICO Xpress
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Paintshop Color Change Scheduling with FICO Xpress <../notebooks/paintshop-color-change-scheduling-with-fico-xpress.html>`_
+| |github-paintshop-color-change-scheduling-with-fico-xpress| |colab-paintshop-color-change-scheduling-with-fico-xpress| |deepnote-paintshop-color-change-scheduling-with-fico-xpress| |kaggle-paintshop-color-change-scheduling-with-fico-xpress| |gradient-paintshop-color-change-scheduling-with-fico-xpress| |sagemaker-paintshop-color-change-scheduling-with-fico-xpress|
+| Description: A scheduling problem demonstrating high-level modeling and automatic solver tuning in FICO Xpress
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-scheduling`, :ref:`tag-color-change-scheduling`, :ref:`tag-tuning`, :ref:`tag-xpress`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-paintshop-color-change-scheduling-with-fico-xpress|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: color_change_scheduling.ipynb
+    
+.. |colab-paintshop-color-change-scheduling-with-fico-xpress| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-paintshop-color-change-scheduling-with-fico-xpress| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-paintshop-color-change-scheduling-with-fico-xpress| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-paintshop-color-change-scheduling-with-fico-xpress| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-paintshop-color-change-scheduling-with-fico-xpress| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Portfolio Optimization: Factor Model
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Portfolio Optimization: Factor Model <../notebooks/portfolio-optimization-factor-model.html>`_
+| |github-portfolio-optimization-factor-model| |colab-portfolio-optimization-factor-model| |deepnote-portfolio-optimization-factor-model| |kaggle-portfolio-optimization-factor-model| |gradient-portfolio-optimization-factor-model| |sagemaker-portfolio-optimization-factor-model|
+| Description: Mean-Variance Portfolio Optimization model where the risk estimator is not given explicitly but is instead represented by a factor model, as is common in US equity models [1]. The original notebook is [3].
+| Tags: :ref:`tag-finance`, :ref:`tag-portfolio-optimization`, :ref:`tag-mean-variance`, :ref:`tag-factor-model`, :ref:`tag-ampl-conditonal-instantiation`, :ref:`tag-mp`, :ref:`tag-cardinality-constraint`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-portfolio-optimization-factor-model|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: portfolio_factor_model.ipynb
+    
+.. |colab-portfolio-optimization-factor-model| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-portfolio-optimization-factor-model| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-portfolio-optimization-factor-model| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-portfolio-optimization-factor-model| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-portfolio-optimization-factor-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/portfolio/portfolio_factor_model.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Retrieve Solution pool with AMPL and Gurobi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Retrieve Solution pool with AMPL and Gurobi <../notebooks/retrieve-solution-pool-with-ampl-and-gurobi.html>`_
@@ -203,6 +373,108 @@ Retrieve Solution pool with AMPL and Gurobi
     
 .. |sagemaker-retrieve-solution-pool-with-ampl-and-gurobi| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/tutorials/solution_pool.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Solution check: discontinuous objective function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Solution check: discontinuous objective function <../notebooks/solution-check-discontinuous-objective-function.html>`_
+| |github-solution-check-discontinuous-objective-function| |colab-solution-check-discontinuous-objective-function| |deepnote-solution-check-discontinuous-objective-function| |kaggle-solution-check-discontinuous-objective-function| |gradient-solution-check-discontinuous-objective-function| |sagemaker-solution-check-discontinuous-objective-function|
+| Description: Pathological examples to illustrate MP solution checker and settings
+| Tags: :ref:`tag-mp`, :ref:`tag-solution-check`, :ref:`tag-non-continuous-objective`, :ref:`tag-strict-comparison`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-solution-check-discontinuous-objective-function|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sol-check.ipynb
+    :alt: sol-check.ipynb
+    
+.. |colab-solution-check-discontinuous-objective-function| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sol-check.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-solution-check-discontinuous-objective-function| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sol-check.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-solution-check-discontinuous-objective-function| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sol-check.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-solution-check-discontinuous-objective-function| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sol-check.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-solution-check-discontinuous-objective-function| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/miscellaneous/sol-check.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Unit Commitment MINLP with Knitro
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Unit Commitment MINLP with Knitro <../notebooks/unit-commitment-minlp-with-knitro.html>`_
+| |github-unit-commitment-minlp-with-knitro| |colab-unit-commitment-minlp-with-knitro| |deepnote-unit-commitment-minlp-with-knitro| |kaggle-unit-commitment-minlp-with-knitro| |gradient-unit-commitment-minlp-with-knitro| |sagemaker-unit-commitment-minlp-with-knitro|
+| Description: Solving a nonlinear Unit Commitment problem with Knitro using MP features for logic and multi-objective optimization. The goal of this notebook is to show a straightforward and clear way of using nonlinear solvers for complex models with logical expressions and also hierarchical multi-objective optimization.
+| Tags: :ref:`tag-mp`, :ref:`tag-knitro`, :ref:`tag-mp2nl`, :ref:`tag-nonlinear`, :ref:`tag-quadratic`, :ref:`tag-minlp`, :ref:`tag-unit-commitment`, :ref:`tag-electric-power-industry`, :ref:`tag-energy`, :ref:`tag-multi-objective`, :ref:`tag-gurobi`, :ref:`tag-xpress`, :ref:`tag-mp2nl`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-unit-commitment-minlp-with-knitro|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: unit_commitment_minlp_mp2nl.ipynb
+    
+.. |colab-unit-commitment-minlp-with-knitro| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-unit-commitment-minlp-with-knitro| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-unit-commitment-minlp-with-knitro| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-unit-commitment-minlp-with-knitro| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-unit-commitment-minlp-with-knitro| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Using multiple objectives in your model 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Using multiple objectives in your model  <../notebooks/using-multiple-objectives-in-your-model.html>`_
+| |github-using-multiple-objectives-in-your-model| |colab-using-multiple-objectives-in-your-model| |deepnote-using-multiple-objectives-in-your-model| |kaggle-using-multiple-objectives-in-your-model| |gradient-using-multiple-objectives-in-your-model| |sagemaker-using-multiple-objectives-in-your-model|
+| Description: We show how to use multiple objectives with Amplpy using a nonlinear Unit Commitment problem. We won't be using native or emulated features from the solver interface, but emulating manually a lexicographic multiobjective problem.
+| Tags: :ref:`tag-warm-start`, :ref:`tag-mp`, :ref:`tag-multi-objective`, :ref:`tag-gurobi`, :ref:`tag-xpress`, :ref:`tag-knitro`, :ref:`tag-mp2nl`, :ref:`tag-electric-power-industry`, :ref:`tag-unit-commitment`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-using-multiple-objectives-in-your-model|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
+    :alt: emulate_multiobjective.ipynb
+    
+.. |colab-using-multiple-objectives-in-your-model| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-using-multiple-objectives-in-your-model| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-using-multiple-objectives-in-your-model| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-using-multiple-objectives-in-your-model| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-using-multiple-objectives-in-your-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -271,6 +543,40 @@ Warehouse location and transport
     
 .. |sagemaker-warehouse-location-and-transport| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/supply_chain/warehouse_location.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Warm start solvers with snapshot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Warm start solvers with snapshot <../notebooks/warm-start-solvers-with-snapshot.html>`_
+| |github-warm-start-solvers-with-snapshot| |colab-warm-start-solvers-with-snapshot| |deepnote-warm-start-solvers-with-snapshot| |kaggle-warm-start-solvers-with-snapshot| |gradient-warm-start-solvers-with-snapshot| |sagemaker-warm-start-solvers-with-snapshot|
+| Description: We show how to warm start a solver with a previous solution. A nonlinear Unit Commitment problem is being used as example. We will use the "snapshot" feature for this matter.
+| Tags: :ref:`tag-warm-start`, :ref:`tag-mp`, :ref:`tag-gurobi`, :ref:`tag-snapshot`, :ref:`tag-electric-power-industry`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-warm-start-solvers-with-snapshot|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/snapshot.ipynb
+    :alt: snapshot.ipynb
+    
+.. |colab-warm-start-solvers-with-snapshot| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/snapshot.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-warm-start-solvers-with-snapshot| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/snapshot.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-warm-start-solvers-with-snapshot| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/snapshot.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-warm-start-solvers-with-snapshot| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/snapshot.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-warm-start-solvers-with-snapshot| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/snapshot.ipynb
     :alt: Open In SageMaker Studio Lab
     
 

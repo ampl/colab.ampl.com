@@ -3,6 +3,40 @@
 amplpy
 ======
 
+A Party Scheduling Problem with FICO Xpress
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `A Party Scheduling Problem with FICO Xpress <../notebooks/a-party-scheduling-problem-with-fico-xpress.html>`_
+| |github-a-party-scheduling-problem-with-fico-xpress| |colab-a-party-scheduling-problem-with-fico-xpress| |deepnote-a-party-scheduling-problem-with-fico-xpress| |kaggle-a-party-scheduling-problem-with-fico-xpress| |gradient-a-party-scheduling-problem-with-fico-xpress| |sagemaker-a-party-scheduling-problem-with-fico-xpress|
+| Description: A scheduling problem for visitor-host assignments. Feasibility version (no objective function). Demonstrates high-level modeling in AMPL MP, AMPL Python API, and tuning in FICO Xpress
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-highlights`, :ref:`tag-scheduling`, :ref:`tag-assignment`, :ref:`tag-feasibility-problem`, :ref:`tag-tuning`, :ref:`tag-xpress`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-a-party-scheduling-problem-with-fico-xpress|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: party1.ipynb
+    
+.. |colab-a-party-scheduling-problem-with-fico-xpress| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-a-party-scheduling-problem-with-fico-xpress| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-a-party-scheduling-problem-with-fico-xpress| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-a-party-scheduling-problem-with-fico-xpress| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-a-party-scheduling-problem-with-fico-xpress| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 AMPL - solve multiple models in parallel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL - solve multiple models in parallel <../notebooks/ampl-solve-multiple-models-in-parallel.html>`_
@@ -995,7 +1029,7 @@ Largest small polygon
 | `Notebooks <../notebooks/index.html>`_ > `Largest small polygon <../notebooks/largest-small-polygon.html>`_
 | |github-largest-small-polygon| |colab-largest-small-polygon| |deepnote-largest-small-polygon| |kaggle-largest-small-polygon| |gradient-largest-small-polygon| |sagemaker-largest-small-polygon|
 | Description: lecture about models for the Largest Small Polygon Problem
-| Tags: :ref:`tag-geometry`, :ref:`tag-non-linear`, :ref:`tag-amplpy`, :ref:`tag-ipopt`, :ref:`tag-educational`
+| Tags: :ref:`tag-geometry`, :ref:`tag-nonlinear`, :ref:`tag-amplpy`, :ref:`tag-ipopt`, :ref:`tag-educational`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-largest-small-polygon|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1092,6 +1126,40 @@ MineLib in AMPL and amplpy
     
 
 
+Minimize the Pairwise Distance Ratio for N Points
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Minimize the Pairwise Distance Ratio for N Points <../notebooks/minimize-the-pairwise-distance-ratio-for-n-points.html>`_
+| |github-minimize-the-pairwise-distance-ratio-for-n-points| |colab-minimize-the-pairwise-distance-ratio-for-n-points| |deepnote-minimize-the-pairwise-distance-ratio-for-n-points| |kaggle-minimize-the-pairwise-distance-ratio-for-n-points| |gradient-minimize-the-pairwise-distance-ratio-for-n-points| |sagemaker-minimize-the-pairwise-distance-ratio-for-n-points|
+| Description: Minimize the pairwise distance ratio of N points with FICO Xpress
+| Tags: :ref:`tag-amplpy`, :ref:`tag-highlights`, :ref:`tag-nonlinear`, :ref:`tag-quadratic`, :ref:`tag-global-optimization`, :ref:`tag-local-optimization`, :ref:`tag-trigonometric`, :ref:`tag-xpress`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-minimize-the-pairwise-distance-ratio-for-n-points|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: min_pairw_dist_ratio.ipynb
+    
+.. |colab-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Multi-Objective Knapsack Problem with AMPLPY
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Multi-Objective Knapsack Problem with AMPLPY <../notebooks/multi-objective-knapsack-problem-with-amplpy.html>`_
@@ -1131,7 +1199,7 @@ N-Queens
 | `Notebooks <../notebooks/index.html>`_ > `N-Queens <../notebooks/n-queens.html>`_
 | |github-n-queens| |colab-n-queens| |deepnote-n-queens| |kaggle-n-queens| |gradient-n-queens| |sagemaker-n-queens|
 | Description: How can N queens be placed on an NxN chessboard so that no two of them attack each other?
-| Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-n-queens|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1566,6 +1634,40 @@ P-Median problem
     
 
 
+Paintshop Color Change Scheduling with FICO Xpress
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Paintshop Color Change Scheduling with FICO Xpress <../notebooks/paintshop-color-change-scheduling-with-fico-xpress.html>`_
+| |github-paintshop-color-change-scheduling-with-fico-xpress| |colab-paintshop-color-change-scheduling-with-fico-xpress| |deepnote-paintshop-color-change-scheduling-with-fico-xpress| |kaggle-paintshop-color-change-scheduling-with-fico-xpress| |gradient-paintshop-color-change-scheduling-with-fico-xpress| |sagemaker-paintshop-color-change-scheduling-with-fico-xpress|
+| Description: A scheduling problem demonstrating high-level modeling and automatic solver tuning in FICO Xpress
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-scheduling`, :ref:`tag-color-change-scheduling`, :ref:`tag-tuning`, :ref:`tag-xpress`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-paintshop-color-change-scheduling-with-fico-xpress|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: color_change_scheduling.ipynb
+    
+.. |colab-paintshop-color-change-scheduling-with-fico-xpress| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-paintshop-color-change-scheduling-with-fico-xpress| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-paintshop-color-change-scheduling-with-fico-xpress| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-paintshop-color-change-scheduling-with-fico-xpress| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-paintshop-color-change-scheduling-with-fico-xpress| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Pattern Enumeration
 ^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Pattern Enumeration <../notebooks/pattern-enumeration.html>`_
@@ -1634,12 +1736,46 @@ Pattern Generation
     
 
 
+Power Generation Portfolio Optimization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Power Generation Portfolio Optimization <../notebooks/power-generation-portfolio-optimization.html>`_
+| |github-power-generation-portfolio-optimization| |colab-power-generation-portfolio-optimization| |deepnote-power-generation-portfolio-optimization| |kaggle-power-generation-portfolio-optimization| |gradient-power-generation-portfolio-optimization| |sagemaker-power-generation-portfolio-optimization|
+| Description: Power generation portfolio optimization to manage several assets and resources.
+| Tags: :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-power-generation`, :ref:`tag-electric-power-industry`
+| Author: :ref:`email-juan_at_ampl.com` <juan@ampl.com>
+
+.. |github-power-generation-portfolio-optimization|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: generation_portfolio.ipynb
+    
+.. |colab-power-generation-portfolio-optimization| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-power-generation-portfolio-optimization| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-power-generation-portfolio-optimization| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-power-generation-portfolio-optimization| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-power-generation-portfolio-optimization| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Power System Optimization with Amplpower package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Power System Optimization with Amplpower package <../notebooks/power-system-optimization-with-amplpower-package.html>`_
 | |github-power-system-optimization-with-amplpower-package| |colab-power-system-optimization-with-amplpower-package| |deepnote-power-system-optimization-with-amplpower-package| |kaggle-power-system-optimization-with-amplpower-package| |gradient-power-system-optimization-with-amplpower-package| |sagemaker-power-system-optimization-with-amplpower-package|
 | Description: this notebook uses amplpower package to solver opf problems
-| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-opf`, :ref:`tag-matpower`, :ref:`tag-electric-power-industry`
+| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-optimal-power-flow`, :ref:`tag-matpower`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-power-system-optimization-with-amplpower-package|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

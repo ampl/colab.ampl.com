@@ -71,12 +71,46 @@ Capacity expansion of power generation
     
 
 
+Power Generation Portfolio Optimization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Power Generation Portfolio Optimization <../notebooks/power-generation-portfolio-optimization.html>`_
+| |github-power-generation-portfolio-optimization| |colab-power-generation-portfolio-optimization| |deepnote-power-generation-portfolio-optimization| |kaggle-power-generation-portfolio-optimization| |gradient-power-generation-portfolio-optimization| |sagemaker-power-generation-portfolio-optimization|
+| Description: Power generation portfolio optimization to manage several assets and resources.
+| Tags: :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-power-generation`, :ref:`tag-electric-power-industry`
+| Author: :ref:`email-juan_at_ampl.com` <juan@ampl.com>
+
+.. |github-power-generation-portfolio-optimization|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: generation_portfolio.ipynb
+    
+.. |colab-power-generation-portfolio-optimization| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-power-generation-portfolio-optimization| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-power-generation-portfolio-optimization| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-power-generation-portfolio-optimization| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-power-generation-portfolio-optimization| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/jpbohorquez/generation_portfolio/generation_portfolio.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Power System Optimization with Amplpower package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Power System Optimization with Amplpower package <../notebooks/power-system-optimization-with-amplpower-package.html>`_
 | |github-power-system-optimization-with-amplpower-package| |colab-power-system-optimization-with-amplpower-package| |deepnote-power-system-optimization-with-amplpower-package| |kaggle-power-system-optimization-with-amplpower-package| |gradient-power-system-optimization-with-amplpower-package| |sagemaker-power-system-optimization-with-amplpower-package|
 | Description: this notebook uses amplpower package to solver opf problems
-| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-opf`, :ref:`tag-matpower`, :ref:`tag-electric-power-industry`
+| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-optimal-power-flow`, :ref:`tag-matpower`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-power-system-optimization-with-amplpower-package|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -101,6 +135,40 @@ Power System Optimization with Amplpower package
     
 .. |sagemaker-power-system-optimization-with-amplpower-package| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/ampl_power.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Unit Commitment MINLP with Knitro
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Unit Commitment MINLP with Knitro <../notebooks/unit-commitment-minlp-with-knitro.html>`_
+| |github-unit-commitment-minlp-with-knitro| |colab-unit-commitment-minlp-with-knitro| |deepnote-unit-commitment-minlp-with-knitro| |kaggle-unit-commitment-minlp-with-knitro| |gradient-unit-commitment-minlp-with-knitro| |sagemaker-unit-commitment-minlp-with-knitro|
+| Description: Solving a nonlinear Unit Commitment problem with Knitro using MP features for logic and multi-objective optimization. The goal of this notebook is to show a straightforward and clear way of using nonlinear solvers for complex models with logical expressions and also hierarchical multi-objective optimization.
+| Tags: :ref:`tag-mp`, :ref:`tag-knitro`, :ref:`tag-mp2nl`, :ref:`tag-nonlinear`, :ref:`tag-quadratic`, :ref:`tag-minlp`, :ref:`tag-unit-commitment`, :ref:`tag-electric-power-industry`, :ref:`tag-energy`, :ref:`tag-multi-objective`, :ref:`tag-gurobi`, :ref:`tag-xpress`, :ref:`tag-mp2nl`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-unit-commitment-minlp-with-knitro|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: unit_commitment_minlp_mp2nl.ipynb
+    
+.. |colab-unit-commitment-minlp-with-knitro| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-unit-commitment-minlp-with-knitro| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-unit-commitment-minlp-with-knitro| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-unit-commitment-minlp-with-knitro| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-unit-commitment-minlp-with-knitro| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
     :alt: Open In SageMaker Studio Lab
     
 

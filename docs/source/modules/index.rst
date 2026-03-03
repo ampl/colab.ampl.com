@@ -60,6 +60,7 @@ Notebooks grouped by modules
     highs
     knitro
     mosek
+    mp2nl
     open
     plugins
     scip

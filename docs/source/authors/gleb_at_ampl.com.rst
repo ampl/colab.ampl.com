@@ -1,7 +1,41 @@
 .. _email-gleb_at_ampl.com:
 
-Gleb Belov (9 notebooks)
-========================
+Gleb Belov (12 notebooks)
+=========================
+
+A Party Scheduling Problem with FICO Xpress
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `A Party Scheduling Problem with FICO Xpress <../notebooks/a-party-scheduling-problem-with-fico-xpress.html>`_
+| |github-a-party-scheduling-problem-with-fico-xpress| |colab-a-party-scheduling-problem-with-fico-xpress| |deepnote-a-party-scheduling-problem-with-fico-xpress| |kaggle-a-party-scheduling-problem-with-fico-xpress| |gradient-a-party-scheduling-problem-with-fico-xpress| |sagemaker-a-party-scheduling-problem-with-fico-xpress|
+| Description: A scheduling problem for visitor-host assignments. Feasibility version (no objective function). Demonstrates high-level modeling in AMPL MP, AMPL Python API, and tuning in FICO Xpress
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-highlights`, :ref:`tag-scheduling`, :ref:`tag-assignment`, :ref:`tag-feasibility-problem`, :ref:`tag-tuning`, :ref:`tag-xpress`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-a-party-scheduling-problem-with-fico-xpress|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: party1.ipynb
+    
+.. |colab-a-party-scheduling-problem-with-fico-xpress| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-a-party-scheduling-problem-with-fico-xpress| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-a-party-scheduling-problem-with-fico-xpress| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-a-party-scheduling-problem-with-fico-xpress| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-a-party-scheduling-problem-with-fico-xpress| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
 
 Aircrew trainee scheduling with seniority constraints
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -42,7 +76,7 @@ CP-style scheduling model with the *numberof* operator, solved by a MIP solver
 | `Notebooks <../notebooks/index.html>`_ > `CP-style scheduling model with the *numberof* operator, solved by a MIP solver <../notebooks/cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver.html>`_
 | |github-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |colab-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |deepnote-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |kaggle-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |gradient-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver| |sagemaker-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver|
 | Description: Scheduling model with the Constraint Programming *numberof* operator, solved with a MIP solver. New MIP solver drivers based on the [MP library](https://amplmp.readthedocs.io/) enable CP-style modeling.
-| Tags: :ref:`tag-ampl-only`, :ref:`tag-constraint-programming`
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-mp`, :ref:`tag-constraint-programming`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-cp-style-scheduling-model-with-the-numberof-operator-solved-by-a-mip-solver|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -139,12 +173,46 @@ Logistic Regression with amplpy
     
 
 
+Minimize the Pairwise Distance Ratio for N Points
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Minimize the Pairwise Distance Ratio for N Points <../notebooks/minimize-the-pairwise-distance-ratio-for-n-points.html>`_
+| |github-minimize-the-pairwise-distance-ratio-for-n-points| |colab-minimize-the-pairwise-distance-ratio-for-n-points| |deepnote-minimize-the-pairwise-distance-ratio-for-n-points| |kaggle-minimize-the-pairwise-distance-ratio-for-n-points| |gradient-minimize-the-pairwise-distance-ratio-for-n-points| |sagemaker-minimize-the-pairwise-distance-ratio-for-n-points|
+| Description: Minimize the pairwise distance ratio of N points with FICO Xpress
+| Tags: :ref:`tag-amplpy`, :ref:`tag-highlights`, :ref:`tag-nonlinear`, :ref:`tag-quadratic`, :ref:`tag-global-optimization`, :ref:`tag-local-optimization`, :ref:`tag-trigonometric`, :ref:`tag-xpress`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-minimize-the-pairwise-distance-ratio-for-n-points|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: min_pairw_dist_ratio.ipynb
+    
+.. |colab-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 N-Queens
 ^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `N-Queens <../notebooks/n-queens.html>`_
 | |github-n-queens| |colab-n-queens| |deepnote-n-queens| |kaggle-n-queens| |gradient-n-queens| |sagemaker-n-queens|
 | Description: How can N queens be placed on an NxN chessboard so that no two of them attack each other?
-| Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-n-queens|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -173,12 +241,46 @@ N-Queens
     
 
 
+Paintshop Color Change Scheduling with FICO Xpress
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Paintshop Color Change Scheduling with FICO Xpress <../notebooks/paintshop-color-change-scheduling-with-fico-xpress.html>`_
+| |github-paintshop-color-change-scheduling-with-fico-xpress| |colab-paintshop-color-change-scheduling-with-fico-xpress| |deepnote-paintshop-color-change-scheduling-with-fico-xpress| |kaggle-paintshop-color-change-scheduling-with-fico-xpress| |gradient-paintshop-color-change-scheduling-with-fico-xpress| |sagemaker-paintshop-color-change-scheduling-with-fico-xpress|
+| Description: A scheduling problem demonstrating high-level modeling and automatic solver tuning in FICO Xpress
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-scheduling`, :ref:`tag-color-change-scheduling`, :ref:`tag-tuning`, :ref:`tag-xpress`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-paintshop-color-change-scheduling-with-fico-xpress|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: color_change_scheduling.ipynb
+    
+.. |colab-paintshop-color-change-scheduling-with-fico-xpress| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-paintshop-color-change-scheduling-with-fico-xpress| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-paintshop-color-change-scheduling-with-fico-xpress| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-paintshop-color-change-scheduling-with-fico-xpress| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-paintshop-color-change-scheduling-with-fico-xpress| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/color_change/color_change_scheduling.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Portfolio Optimization: Factor Model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Portfolio Optimization: Factor Model <../notebooks/portfolio-optimization-factor-model.html>`_
 | |github-portfolio-optimization-factor-model| |colab-portfolio-optimization-factor-model| |deepnote-portfolio-optimization-factor-model| |kaggle-portfolio-optimization-factor-model| |gradient-portfolio-optimization-factor-model| |sagemaker-portfolio-optimization-factor-model|
 | Description: Mean-Variance Portfolio Optimization model where the risk estimator is not given explicitly but is instead represented by a factor model, as is common in US equity models [1]. The original notebook is [3].
-| Tags: :ref:`tag-finance`, :ref:`tag-portfolio-optimization`, :ref:`tag-mean-variance`, :ref:`tag-factor-model`, :ref:`tag-ampl-conditonal-instantiation`, :ref:`tag-cardinality-constraint`
+| Tags: :ref:`tag-finance`, :ref:`tag-portfolio-optimization`, :ref:`tag-mean-variance`, :ref:`tag-factor-model`, :ref:`tag-ampl-conditonal-instantiation`, :ref:`tag-mp`, :ref:`tag-cardinality-constraint`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-portfolio-optimization-factor-model|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -280,7 +382,7 @@ Solution check: discontinuous objective function
 | `Notebooks <../notebooks/index.html>`_ > `Solution check: discontinuous objective function <../notebooks/solution-check-discontinuous-objective-function.html>`_
 | |github-solution-check-discontinuous-objective-function| |colab-solution-check-discontinuous-objective-function| |deepnote-solution-check-discontinuous-objective-function| |kaggle-solution-check-discontinuous-objective-function| |gradient-solution-check-discontinuous-objective-function| |sagemaker-solution-check-discontinuous-objective-function|
 | Description: Pathological examples to illustrate MP solution checker and settings
-| Tags: :ref:`tag-mp-library`, :ref:`tag-solution-check`, :ref:`tag-non-continuous-objective`, :ref:`tag-strict-comparison`
+| Tags: :ref:`tag-mp`, :ref:`tag-solution-check`, :ref:`tag-non-continuous-objective`, :ref:`tag-strict-comparison`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-solution-check-discontinuous-objective-function|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

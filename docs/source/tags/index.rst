@@ -13,12 +13,12 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (64 notebooks) <amplpy>
+    amplpy (68 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
     arithmetic (1 notebook) <arithmetic>
-    assignment (2 notebooks) <assignment>
+    assignment (3 notebooks) <assignment>
     automatic-reformulation (1 notebook) <automatic-reformulation>
     baron (1 notebook) <baron>
     batch-processing (1 notebook) <batch-processing>
@@ -37,6 +37,7 @@ Tags
     christmas (2 notebooks) <christmas>
     classifier (1 notebook) <classifier>
     colombia (1 notebook) <colombia>
+    color-change-scheduling (1 notebook) <color-change-scheduling>
     complementarity (2 notebooks) <complementarity>
     complementarity-problem (2 notebooks) <complementarity-problem>
     complexity (1 notebook) <complexity>
@@ -67,15 +68,16 @@ Tags
     economic-modeling (1 notebook) <economic-modeling>
     educational (7 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
-    electric-power-industry (13 notebooks) <electric-power-industry>
+    electric-power-industry (17 notebooks) <electric-power-industry>
     employee-scheduling (1 notebook) <employee-scheduling>
-    energy (5 notebooks) <energy>
+    energy (7 notebooks) <energy>
     engineering (2 notebooks) <engineering>
     example (7 notebooks) <example>
     excel (2 notebooks) <excel>
     exponential-cone (1 notebook) <exponential-cone>
     facility-location (9 notebooks) <facility-location>
     factor-model (1 notebook) <factor-model>
+    feasibility-problem (1 notebook) <feasibility-problem>
     finance (10 notebooks) <finance>
     forecast (1 notebook) <forecast>
     formulation-comparison (1 notebook) <formulation-comparison>
@@ -85,13 +87,13 @@ Tags
     geometry (1 notebook) <geometry>
     geothermal-energy (1 notebook) <geothermal-energy>
     gilmore-gomory (1 notebook) <gilmore-gomory>
-    global-optimization (2 notebooks) <global-optimization>
+    global-optimization (3 notebooks) <global-optimization>
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (12 notebooks) <gurobi>
+    gurobi (15 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
-    highlights (12 notebooks) <highlights>
+    highlights (14 notebooks) <highlights>
     highs (10 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
@@ -105,11 +107,12 @@ Tags
     kaggle (1 notebook) <kaggle>
     kestrel (1 notebook) <kestrel>
     knapsack (1 notebook) <knapsack>
-    knitro (2 notebooks) <knitro>
+    knitro (4 notebooks) <knitro>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
     lexicographic-objectives (3 notebooks) <lexicographic-objectives>
     linear-programming (3 notebooks) <linear-programming>
+    local-optimization (1 notebook) <local-optimization>
     log-sum-exp (1 notebook) <log-sum-exp>
     logistic-regression (1 notebook) <logistic-regression>
     lp (1 notebook) <lp>
@@ -123,13 +126,14 @@ Tags
     milp (1 notebook) <milp>
     minelib (1 notebook) <minelib>
     mining (1 notebook) <mining>
+    minlp (1 notebook) <minlp>
     mip (30 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
-    mp (7 notebooks) <mp>
-    mp-library (1 notebook) <mp-library>
+    mp (16 notebooks) <mp>
+    mp2nl (3 notebooks) <mp2nl>
     mpec (1 notebook) <mpec>
-    multi-objective (3 notebooks) <multi-objective>
+    multi-objective (5 notebooks) <multi-objective>
     multi-objective-options (1 notebook) <multi-objective-options>
     multi-period-planning (1 notebook) <multi-period-planning>
     multiprocess (1 notebook) <multiprocess>
@@ -137,13 +141,11 @@ Tags
     network (2 notebooks) <network>
     networkx (1 notebook) <networkx>
     non-continuous-objective (1 notebook) <non-continuous-objective>
-    non-linear (1 notebook) <non-linear>
-    nonlinear (3 notebooks) <nonlinear>
+    nonlinear (6 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
     oil-production (3 notebooks) <oil-production>
     open-source (1 notebook) <open-source>
-    opf (1 notebook) <opf>
-    optimal-power-flow (5 notebooks) <optimal-power-flow>
+    optimal-power-flow (6 notebooks) <optimal-power-flow>
     optimization (1 notebook) <optimization>
     organ-exchange (1 notebook) <organ-exchange>
     pairs-trading (1 notebook) <pairs-trading>
@@ -156,7 +158,7 @@ Tags
     pipeline-diagnostics (1 notebook) <pipeline-diagnostics>
     planning (1 notebook) <planning>
     portfolio-optimization (4 notebooks) <portfolio-optimization>
-    power-generation (3 notebooks) <power-generation>
+    power-generation (4 notebooks) <power-generation>
     power-grid-lib (1 notebook) <power-grid-lib>
     powerbi (1 notebook) <powerbi>
     preferential-bidding-system (1 notebook) <preferential-bidding-system>
@@ -170,7 +172,7 @@ Tags
     project-management (1 notebook) <project-management>
     puzzles (1 notebook) <puzzles>
     python (7 notebooks) <python>
-    quadratic (1 notebook) <quadratic>
+    quadratic (3 notebooks) <quadratic>
     quadratic-cone (2 notebooks) <quadratic-cone>
     quick-start (2 notebooks) <quick-start>
     refinery (3 notebooks) <refinery>
@@ -183,7 +185,7 @@ Tags
     risk-measures (1 notebook) <risk-measures>
     routing (1 notebook) <routing>
     sample-average-approximation (1 notebook) <sample-average-approximation>
-    scheduling (9 notebooks) <scheduling>
+    scheduling (11 notebooks) <scheduling>
     scikit-learn (2 notebooks) <scikit-learn>
     second-order-cone (2 notebooks) <second-order-cone>
     semivariance (1 notebook) <semivariance>
@@ -194,6 +196,7 @@ Tags
     shortest-path (1 notebook) <shortest-path>
     sigmoid (1 notebook) <sigmoid>
     simple (1 notebook) <simple>
+    snapshot (1 notebook) <snapshot>
     softplus (1 notebook) <softplus>
     solution-check (1 notebook) <solution-check>
     solution-pool (1 notebook) <solution-pool>
@@ -210,14 +213,17 @@ Tags
     time-windows (1 notebook) <time-windows>
     trainee-scheduling (1 notebook) <trainee-scheduling>
     transportation (4 notebooks) <transportation>
+    trigonometric (1 notebook) <trigonometric>
     tsp (1 notebook) <tsp>
+    tuning (2 notebooks) <tuning>
     tutorials (3 notebooks) <tutorials>
     unconstrained (1 notebook) <unconstrained>
-    unit-commitment (2 notebooks) <unit-commitment>
+    unit-commitment (4 notebooks) <unit-commitment>
     unit-commitment-problem (1 notebook) <unit-commitment-problem>
     vector-packing (1 notebook) <vector-packing>
     vrp (1 notebook) <vrp>
+    warm-start (2 notebooks) <warm-start>
     worker-task-assignment (1 notebook) <worker-task-assignment>
     xlsx (1 notebook) <xlsx>
-    xpress (1 notebook) <xpress>
+    xpress (6 notebooks) <xpress>
 

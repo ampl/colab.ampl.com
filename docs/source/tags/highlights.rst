@@ -3,6 +3,40 @@
 highlights
 ==========
 
+A Party Scheduling Problem with FICO Xpress
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `A Party Scheduling Problem with FICO Xpress <../notebooks/a-party-scheduling-problem-with-fico-xpress.html>`_
+| |github-a-party-scheduling-problem-with-fico-xpress| |colab-a-party-scheduling-problem-with-fico-xpress| |deepnote-a-party-scheduling-problem-with-fico-xpress| |kaggle-a-party-scheduling-problem-with-fico-xpress| |gradient-a-party-scheduling-problem-with-fico-xpress| |sagemaker-a-party-scheduling-problem-with-fico-xpress|
+| Description: A scheduling problem for visitor-host assignments. Feasibility version (no objective function). Demonstrates high-level modeling in AMPL MP, AMPL Python API, and tuning in FICO Xpress
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-highlights`, :ref:`tag-scheduling`, :ref:`tag-assignment`, :ref:`tag-feasibility-problem`, :ref:`tag-tuning`, :ref:`tag-xpress`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-a-party-scheduling-problem-with-fico-xpress|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: party1.ipynb
+    
+.. |colab-a-party-scheduling-problem-with-fico-xpress| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-a-party-scheduling-problem-with-fico-xpress| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-a-party-scheduling-problem-with-fico-xpress| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-a-party-scheduling-problem-with-fico-xpress| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-a-party-scheduling-problem-with-fico-xpress| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/scheduling/party1/party1.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 AMPL Bin Packing Problem with GCG
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL Bin Packing Problem with GCG <../notebooks/ampl-bin-packing-problem-with-gcg.html>`_
@@ -173,6 +207,40 @@ Logistic Regression with amplpy
     
 
 
+Minimize the Pairwise Distance Ratio for N Points
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Minimize the Pairwise Distance Ratio for N Points <../notebooks/minimize-the-pairwise-distance-ratio-for-n-points.html>`_
+| |github-minimize-the-pairwise-distance-ratio-for-n-points| |colab-minimize-the-pairwise-distance-ratio-for-n-points| |deepnote-minimize-the-pairwise-distance-ratio-for-n-points| |kaggle-minimize-the-pairwise-distance-ratio-for-n-points| |gradient-minimize-the-pairwise-distance-ratio-for-n-points| |sagemaker-minimize-the-pairwise-distance-ratio-for-n-points|
+| Description: Minimize the pairwise distance ratio of N points with FICO Xpress
+| Tags: :ref:`tag-amplpy`, :ref:`tag-highlights`, :ref:`tag-nonlinear`, :ref:`tag-quadratic`, :ref:`tag-global-optimization`, :ref:`tag-local-optimization`, :ref:`tag-trigonometric`, :ref:`tag-xpress`
+| Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
+
+.. |github-minimize-the-pairwise-distance-ratio-for-n-points|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: min_pairw_dist_ratio.ipynb
+    
+.. |colab-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-minimize-the-pairwise-distance-ratio-for-n-points| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/glebbelov/nonlinear/min_pairwise_distance_ratio/min_pairw_dist_ratio.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Multi-Objective Knapsack Problem with AMPLPY
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Multi-Objective Knapsack Problem with AMPLPY <../notebooks/multi-objective-knapsack-problem-with-amplpy.html>`_
@@ -212,7 +280,7 @@ N-Queens
 | `Notebooks <../notebooks/index.html>`_ > `N-Queens <../notebooks/n-queens.html>`_
 | |github-n-queens| |colab-n-queens| |deepnote-n-queens| |kaggle-n-queens| |gradient-n-queens| |sagemaker-n-queens|
 | Description: How can N queens be placed on an NxN chessboard so that no two of them attack each other?
-| Tags: :ref:`tag-amplpy`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-mp`, :ref:`tag-constraint-programming`, :ref:`tag-highlights`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-n-queens|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

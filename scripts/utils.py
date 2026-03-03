@@ -69,6 +69,7 @@ def discover_notebooks(base_dir="."):
         for (dirpath, _, files) in os.walk(base_dir)
         for fname in files
         if fname.endswith(".ipynb") and ".ipynb_checkpoints" not in dirpath
+        if ".virtual_documents" not in dirpath
         if not dirpath[len(base_dir) + 1 :].startswith(("docs", "venv"))
     ]
     lst = [fname for fname in lst if "site-packages" not in fname]

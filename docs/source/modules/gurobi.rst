@@ -1,6 +1,6 @@
 .. _module-gurobi:
 
-gurobi (45 notebooks)
+gurobi (48 notebooks)
 =====================
 
 AMPL Bin Packing Problem with GCG
@@ -1024,7 +1024,7 @@ Portfolio Optimization: Factor Model
 | `Notebooks <../notebooks/index.html>`_ > `Portfolio Optimization: Factor Model <../notebooks/portfolio-optimization-factor-model.html>`_
 | |github-portfolio-optimization-factor-model| |colab-portfolio-optimization-factor-model| |deepnote-portfolio-optimization-factor-model| |kaggle-portfolio-optimization-factor-model| |gradient-portfolio-optimization-factor-model| |sagemaker-portfolio-optimization-factor-model|
 | Description: Mean-Variance Portfolio Optimization model where the risk estimator is not given explicitly but is instead represented by a factor model, as is common in US equity models [1]. The original notebook is [3].
-| Tags: :ref:`tag-finance`, :ref:`tag-portfolio-optimization`, :ref:`tag-mean-variance`, :ref:`tag-factor-model`, :ref:`tag-ampl-conditonal-instantiation`, :ref:`tag-cardinality-constraint`
+| Tags: :ref:`tag-finance`, :ref:`tag-portfolio-optimization`, :ref:`tag-mean-variance`, :ref:`tag-factor-model`, :ref:`tag-ampl-conditonal-instantiation`, :ref:`tag-mp`, :ref:`tag-cardinality-constraint`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-portfolio-optimization-factor-model|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1058,7 +1058,7 @@ Power System Optimization with Amplpower package
 | `Notebooks <../notebooks/index.html>`_ > `Power System Optimization with Amplpower package <../notebooks/power-system-optimization-with-amplpower-package.html>`_
 | |github-power-system-optimization-with-amplpower-package| |colab-power-system-optimization-with-amplpower-package| |deepnote-power-system-optimization-with-amplpower-package| |kaggle-power-system-optimization-with-amplpower-package| |gradient-power-system-optimization-with-amplpower-package| |sagemaker-power-system-optimization-with-amplpower-package|
 | Description: this notebook uses amplpower package to solver opf problems
-| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-opf`, :ref:`tag-matpower`, :ref:`tag-electric-power-industry`
+| Tags: :ref:`tag-amplpower`, :ref:`tag-amplpy`, :ref:`tag-energy`, :ref:`tag-optimal-power-flow`, :ref:`tag-matpower`, :ref:`tag-electric-power-industry`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-power-system-optimization-with-amplpower-package|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
@@ -1390,6 +1390,40 @@ Smart Pipeline Diagnostics
     
 
 
+Unit Commitment MINLP with Knitro
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Unit Commitment MINLP with Knitro <../notebooks/unit-commitment-minlp-with-knitro.html>`_
+| |github-unit-commitment-minlp-with-knitro| |colab-unit-commitment-minlp-with-knitro| |deepnote-unit-commitment-minlp-with-knitro| |kaggle-unit-commitment-minlp-with-knitro| |gradient-unit-commitment-minlp-with-knitro| |sagemaker-unit-commitment-minlp-with-knitro|
+| Description: Solving a nonlinear Unit Commitment problem with Knitro using MP features for logic and multi-objective optimization. The goal of this notebook is to show a straightforward and clear way of using nonlinear solvers for complex models with logical expressions and also hierarchical multi-objective optimization.
+| Tags: :ref:`tag-mp`, :ref:`tag-knitro`, :ref:`tag-mp2nl`, :ref:`tag-nonlinear`, :ref:`tag-quadratic`, :ref:`tag-minlp`, :ref:`tag-unit-commitment`, :ref:`tag-electric-power-industry`, :ref:`tag-energy`, :ref:`tag-multi-objective`, :ref:`tag-gurobi`, :ref:`tag-xpress`, :ref:`tag-mp2nl`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-unit-commitment-minlp-with-knitro|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: unit_commitment_minlp_mp2nl.ipynb
+    
+.. |colab-unit-commitment-minlp-with-knitro| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-unit-commitment-minlp-with-knitro| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-unit-commitment-minlp-with-knitro| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-unit-commitment-minlp-with-knitro| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-unit-commitment-minlp-with-knitro| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/energy/unit_commitment_minlp_mp2nl.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Unit Commitment Problem with AMPL and Python - Power Grid Lib
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Unit Commitment Problem with AMPL and Python - Power Grid Lib <../notebooks/unit-commitment-problem-with-ampl-and-python-power-grid-lib.html>`_
@@ -1458,6 +1492,40 @@ Unit Commitment for Colombia's Energy Market
     
 
 
+Using multiple objectives in your model 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Using multiple objectives in your model  <../notebooks/using-multiple-objectives-in-your-model.html>`_
+| |github-using-multiple-objectives-in-your-model| |colab-using-multiple-objectives-in-your-model| |deepnote-using-multiple-objectives-in-your-model| |kaggle-using-multiple-objectives-in-your-model| |gradient-using-multiple-objectives-in-your-model| |sagemaker-using-multiple-objectives-in-your-model|
+| Description: We show how to use multiple objectives with Amplpy using a nonlinear Unit Commitment problem. We won't be using native or emulated features from the solver interface, but emulating manually a lexicographic multiobjective problem.
+| Tags: :ref:`tag-warm-start`, :ref:`tag-mp`, :ref:`tag-multi-objective`, :ref:`tag-gurobi`, :ref:`tag-xpress`, :ref:`tag-knitro`, :ref:`tag-mp2nl`, :ref:`tag-electric-power-industry`, :ref:`tag-unit-commitment`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-using-multiple-objectives-in-your-model|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
+    :alt: emulate_multiobjective.ipynb
+    
+.. |colab-using-multiple-objectives-in-your-model| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-using-multiple-objectives-in-your-model| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-using-multiple-objectives-in-your-model| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-using-multiple-objectives-in-your-model| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-using-multiple-objectives-in-your-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/emulate_multiobjective.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Vehicle Routing Problem with Fair Profits and Time Windows (VRP-FPTW)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Vehicle Routing Problem with Fair Profits and Time Windows (VRP-FPTW) <../notebooks/vehicle-routing-problem-with-fair-profits-and-time-windows-vrp-fptw.html>`_
@@ -1488,6 +1556,40 @@ Vehicle Routing Problem with Fair Profits and Time Windows (VRP-FPTW)
     
 .. |sagemaker-vehicle-routing-problem-with-fair-profits-and-time-windows-vrp-fptw| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/routing/vrp_fptw.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Warm start solvers with snapshot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Warm start solvers with snapshot <../notebooks/warm-start-solvers-with-snapshot.html>`_
+| |github-warm-start-solvers-with-snapshot| |colab-warm-start-solvers-with-snapshot| |deepnote-warm-start-solvers-with-snapshot| |kaggle-warm-start-solvers-with-snapshot| |gradient-warm-start-solvers-with-snapshot| |sagemaker-warm-start-solvers-with-snapshot|
+| Description: We show how to warm start a solver with a previous solution. A nonlinear Unit Commitment problem is being used as example. We will use the "snapshot" feature for this matter.
+| Tags: :ref:`tag-warm-start`, :ref:`tag-mp`, :ref:`tag-gurobi`, :ref:`tag-snapshot`, :ref:`tag-electric-power-industry`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-warm-start-solvers-with-snapshot|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/snapshot.ipynb
+    :alt: snapshot.ipynb
+    
+.. |colab-warm-start-solvers-with-snapshot| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/snapshot.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-warm-start-solvers-with-snapshot| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/snapshot.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-warm-start-solvers-with-snapshot| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/snapshot.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-warm-start-solvers-with-snapshot| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/snapshot.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-warm-start-solvers-with-snapshot| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/miscellaneous/snapshot.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
