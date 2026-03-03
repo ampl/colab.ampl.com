@@ -1,6 +1,6 @@
 .. _email-eduardo_at_ampl.com:
 
-Eduardo Salazar (3 notebooks)
+Eduardo Salazar (4 notebooks)
 =============================
 
 Bilevel Markets
@@ -67,6 +67,40 @@ Bilevel Optimization Introduction
     
 .. |sagemaker-bilevel-optimization-introduction| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/eduardosalaz/bilevel/bilevel_introduction.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Formula 1 Scheduling and Routing Optimization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Formula 1 Scheduling and Routing Optimization <../notebooks/formula-1-scheduling-and-routing-optimization.html>`_
+| |github-formula-1-scheduling-and-routing-optimization| |colab-formula-1-scheduling-and-routing-optimization| |deepnote-formula-1-scheduling-and-routing-optimization| |kaggle-formula-1-scheduling-and-routing-optimization| |gradient-formula-1-scheduling-and-routing-optimization| |sagemaker-formula-1-scheduling-and-routing-optimization|
+| Description: A notebook that tackles the Formula 1 Calendar as a routing and a scheduling problem, minimizing total distance between races whilst also assigning a spot in the calendar respecting scheduling constraints using MP
+| Tags: :ref:`tag-sports`, :ref:`tag-gurobi`, :ref:`tag-mp`, :ref:`tag-scheduling`, :ref:`tag-f1`
+| Author: :ref:`email-eduardo_at_ampl.com` <eduardo@ampl.com>
+
+.. |github-formula-1-scheduling-and-routing-optimization|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/eduardosalaz/f1/f1_scheduling_routing.ipynb
+    :alt: f1_scheduling_routing.ipynb
+    
+.. |colab-formula-1-scheduling-and-routing-optimization| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/eduardosalaz/f1/f1_scheduling_routing.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-formula-1-scheduling-and-routing-optimization| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/eduardosalaz/f1/f1_scheduling_routing.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-formula-1-scheduling-and-routing-optimization| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/eduardosalaz/f1/f1_scheduling_routing.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-formula-1-scheduling-and-routing-optimization| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/eduardosalaz/f1/f1_scheduling_routing.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-formula-1-scheduling-and-routing-optimization| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/eduardosalaz/f1/f1_scheduling_routing.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
