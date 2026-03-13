@@ -13,7 +13,7 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (70 notebooks) <amplpy>
+    amplpy (71 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -28,6 +28,7 @@ Tags
     bess (1 notebook) <bess>
     bilevel (2 notebooks) <bilevel>
     bin-packing (2 notebooks) <bin-packing>
+    blending (1 notebook) <blending>
     bpp (1 notebook) <bpp>
     branch-price-and-cut (2 notebooks) <branch-price-and-cut>
     callbacks (1 notebook) <callbacks>
@@ -111,7 +112,7 @@ Tags
     kaggle (1 notebook) <kaggle>
     kestrel (1 notebook) <kestrel>
     knapsack (1 notebook) <knapsack>
-    knitro (4 notebooks) <knitro>
+    knitro (5 notebooks) <knitro>
     lecture (1 notebook) <lecture>
     lemonade-stand (2 notebooks) <lemonade-stand>
     lexicographic-objectives (3 notebooks) <lexicographic-objectives>
@@ -129,13 +130,14 @@ Tags
     military (1 notebook) <military>
     milp (1 notebook) <milp>
     minelib (1 notebook) <minelib>
+    minimum-cost-flow (1 notebook) <minimum-cost-flow>
     mining (1 notebook) <mining>
     minlp (1 notebook) <minlp>
     mip (30 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (17 notebooks) <mp>
-    mp2nl (3 notebooks) <mp2nl>
+    mp2nl (4 notebooks) <mp2nl>
     mpec (1 notebook) <mpec>
     multi-objective (5 notebooks) <multi-objective>
     multi-objective-options (1 notebook) <multi-objective-options>
@@ -145,7 +147,7 @@ Tags
     network (2 notebooks) <network>
     networkx (1 notebook) <networkx>
     non-continuous-objective (1 notebook) <non-continuous-objective>
-    nonlinear (6 notebooks) <nonlinear>
+    nonlinear (7 notebooks) <nonlinear>
     nonlinear-programming (1 notebook) <nonlinear-programming>
     oil-production (3 notebooks) <oil-production>
     open-source (1 notebook) <open-source>
@@ -161,6 +163,7 @@ Tags
     piecewise-linear (3 notebooks) <piecewise-linear>
     pipeline-diagnostics (1 notebook) <pipeline-diagnostics>
     planning (1 notebook) <planning>
+    pooling (1 notebook) <pooling>
     portfolio-optimization (4 notebooks) <portfolio-optimization>
     power-generation (5 notebooks) <power-generation>
     power-grid-lib (1 notebook) <power-grid-lib>
@@ -192,11 +195,13 @@ Tags
     scheduling (12 notebooks) <scheduling>
     scikit-learn (2 notebooks) <scikit-learn>
     second-order-cone (2 notebooks) <second-order-cone>
+    semi-continuous (1 notebook) <semi-continuous>
     semivariance (1 notebook) <semivariance>
     seniority-constraints (1 notebook) <seniority-constraints>
     seniority-ranking (1 notebook) <seniority-ranking>
     sequences (1 notebook) <sequences>
     sets (1 notebook) <sets>
+    setup-costs (1 notebook) <setup-costs>
     shadow-prices (1 notebook) <shadow-prices>
     shortest-path (1 notebook) <shortest-path>
     sigmoid (1 notebook) <sigmoid>
