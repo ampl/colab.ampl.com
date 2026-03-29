@@ -144,7 +144,7 @@ Pooling Problem with Nonlinear and Setup Costs
 | `Notebooks <../notebooks/index.html>`_ > `Pooling Problem with Nonlinear and Setup Costs <../notebooks/pooling-problem-with-nonlinear-and-setup-costs.html>`_
 | |github-pooling-problem-with-nonlinear-and-setup-costs| |colab-pooling-problem-with-nonlinear-and-setup-costs| |deepnote-pooling-problem-with-nonlinear-and-setup-costs| |kaggle-pooling-problem-with-nonlinear-and-setup-costs| |gradient-pooling-problem-with-nonlinear-and-setup-costs| |sagemaker-pooling-problem-with-nonlinear-and-setup-costs|
 | Description: pooling problem with extra nonlinear and setup costs, solved by Knitro with MP2NL
-| Tags: :ref:`tag-amplpy`, :ref:`tag-pooling`, :ref:`tag-minimum-cost-flow`, :ref:`tag-blending`, :ref:`tag-knitro`, :ref:`tag-mp2nl`, :ref:`tag-nonlinear`, :ref:`tag-setup-costs`, :ref:`tag-semi-continuous`
+| Tags: :ref:`tag-pooling`, :ref:`tag-minimum-cost-flow`, :ref:`tag-blending`, :ref:`tag-nonlinear`, :ref:`tag-setup-costs`, :ref:`tag-semi-continuous`, :ref:`tag-amplpy`, :ref:`tag-knitro`, :ref:`tag-mp2nl`
 | Author: :ref:`email-gleb_at_ampl.com` <gleb@ampl.com>
 
 .. |github-pooling-problem-with-nonlinear-and-setup-costs|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
