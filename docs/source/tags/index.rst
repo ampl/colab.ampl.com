@@ -13,10 +13,11 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (71 notebooks) <amplpy>
+    amplpy (72 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
+    api (1 notebook) <api>
     arithmetic (1 notebook) <arithmetic>
     assignment (3 notebooks) <assignment>
     automatic-reformulation (1 notebook) <automatic-reformulation>
@@ -66,6 +67,7 @@ Tags
     decomposition (4 notebooks) <decomposition>
     demand-elasticity (1 notebook) <demand-elasticity>
     deterministic-model (2 notebooks) <deterministic-model>
+    diet (1 notebook) <diet>
     discounting (1 notebook) <discounting>
     disjunctive-programming (1 notebook) <disjunctive-programming>
     dual-values (1 notebook) <dual-values>
@@ -78,6 +80,7 @@ Tags
     engineering (2 notebooks) <engineering>
     example (7 notebooks) <example>
     excel (2 notebooks) <excel>
+    expand (1 notebook) <expand>
     exponential-cone (1 notebook) <exponential-cone>
     f1 (1 notebook) <f1>
     facility-location (9 notebooks) <facility-location>
@@ -98,7 +101,7 @@ Tags
     gui (2 notebooks) <gui>
     gurobi (16 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
-    highlights (14 notebooks) <highlights>
+    highlights (15 notebooks) <highlights>
     highs (10 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
@@ -204,6 +207,7 @@ Tags
     setup-costs (1 notebook) <setup-costs>
     shadow-prices (1 notebook) <shadow-prices>
     shortest-path (1 notebook) <shortest-path>
+    show (1 notebook) <show>
     sigmoid (1 notebook) <sigmoid>
     simple (1 notebook) <simple>
     snapshot (1 notebook) <snapshot>

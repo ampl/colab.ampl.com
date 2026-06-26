@@ -77,7 +77,7 @@ Multi-Objective Knapsack Problem with AMPLPY
 | |github-multi-objective-knapsack-problem-with-amplpy| |colab-multi-objective-knapsack-problem-with-amplpy| |deepnote-multi-objective-knapsack-problem-with-amplpy| |kaggle-multi-objective-knapsack-problem-with-amplpy| |gradient-multi-objective-knapsack-problem-with-amplpy| |sagemaker-multi-objective-knapsack-problem-with-amplpy|
 | Description: knapsack problem using multiple objectives, setting objective-specific options
 | Tags: :ref:`tag-multi-objective`, :ref:`tag-multi-objective-options`, :ref:`tag-lexicographic-objectives`, :ref:`tag-knapsack`, :ref:`tag-amplpy`, :ref:`tag-highlights`
-| Author: :ref:`email-jurgenlentz26_at_gmail.com` <jurgenlentz26@gmail.com>
+| Author: :ref:`email-lentz_at_ampl.com` <lentz@ampl.com>
 
 .. |github-multi-objective-knapsack-problem-with-amplpy|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
     :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
