@@ -1,0 +1,606 @@
+/* Notebook finder on the home page (see nb-finder.js) */
+
+.nb-finder,
+.nb-finder-side,
+.nb-finder__meta {
+  --nbf-primary: var(--pst-color-primary, #0a7d91);
+  --nbf-border: var(--pst-color-border, #d0d7de);
+  --nbf-surface: var(--pst-color-surface, #f5f7fa);
+  --nbf-bg: var(--pst-color-background, #ffffff);
+  --nbf-text: var(--pst-color-text-base, #1f2328);
+  --nbf-muted: var(--pst-color-text-muted, #59636e);
+  --nbf-tint: rgba(10, 125, 145, 0.1);
+  --nbf-tint: color-mix(in srgb, var(--nbf-primary) 12%, transparent);
+  --nbf-shadow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.08);
+  --nbf-shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.18), 0 2px 6px rgba(15, 23, 42, 0.08);
+  --nbf-radius: 0.75rem;
+}
+
+.nb-finder {
+  margin: 0.5rem 0 1.75rem;
+}
+
+.nb-finder[hidden],
+.nb-finder-hidden,
+.nb-finder [hidden] {
+  display: none !important;
+}
+
+.nb-finder__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.1rem;
+  background: var(--nbf-surface);
+  border: 1px solid var(--nbf-border);
+  border-top: 3px solid var(--nbf-primary);
+  border-radius: var(--nbf-radius);
+  box-shadow: var(--nbf-shadow);
+}
+
+/* ---- Search ---------------------------------------------------------- */
+
+.nb-finder__searchbox {
+  position: relative;
+}
+
+.nb-finder__icon {
+  display: inline-flex;
+  flex: none;
+  width: 1rem;
+  height: 1rem;
+}
+
+.nb-finder__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.nb-finder__search-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.9rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  color: var(--nbf-muted);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.nb-finder__search {
+  width: 100%;
+  padding: 0.7rem 0.9rem 0.7rem 2.6rem;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--nbf-text);
+  background: var(--nbf-bg);
+  border: 1px solid var(--nbf-border);
+  border-radius: 0.6rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.nb-finder__search:focus,
+.nb-finder__menu-search:focus {
+  outline: none;
+  border-color: var(--nbf-primary);
+  box-shadow: 0 0 0 3px var(--nbf-tint);
+}
+
+/* ---- Filter bar ------------------------------------------------------ */
+
+.nb-finder__bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nb-finder__dropdown {
+  position: relative;
+}
+
+.nb-finder__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.7rem 0.45rem 0.8rem;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--nbf-text);
+  background: var(--nbf-bg);
+  border: 1px solid var(--nbf-border);
+  border-radius: 999px;
+  box-shadow: var(--nbf-shadow);
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s, color 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+
+.nb-finder__toggle > .nb-finder__icon:first-child {
+  color: var(--nbf-primary);
+}
+
+.nb-finder__toggle:hover {
+  border-color: var(--nbf-primary);
+  transform: translateY(-1px);
+}
+
+.nb-finder__toggle:focus-visible,
+.nb-finder__chip:focus-visible,
+.nb-finder__clear:focus-visible,
+.nb-finder__menu-clear:focus-visible,
+.nb-finder__menu-done:focus-visible {
+  outline: 2px solid var(--nbf-primary);
+  outline-offset: 2px;
+}
+
+.nb-finder__toggle.is-active {
+  color: var(--nbf-primary);
+  background: var(--nbf-tint);
+  border-color: var(--nbf-primary);
+}
+
+.nb-finder__toggle.is-open {
+  border-color: var(--nbf-primary);
+  box-shadow: 0 0 0 3px var(--nbf-tint);
+  transform: none;
+}
+
+.nb-finder__chevron {
+  width: 0.9rem;
+  height: 0.9rem;
+  opacity: 0.6;
+  transition: transform 0.2s;
+}
+
+.nb-finder__toggle.is-open .nb-finder__chevron {
+  transform: rotate(180deg);
+}
+
+.nb-finder__badge {
+  min-width: 1.25rem;
+  padding: 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: center;
+  color: var(--nbf-bg);
+  background: var(--nbf-primary);
+  border-radius: 999px;
+}
+
+/* ---- Dropdown menu --------------------------------------------------- */
+
+.nb-finder__menu {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  left: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: max-content;
+  min-width: 15rem;
+  max-width: min(22rem, calc(100vw - 2rem));
+  padding: 0.6rem;
+  color: var(--nbf-text);
+  background: var(--nbf-bg);
+  border: 1px solid var(--nbf-border);
+  border-radius: var(--nbf-radius);
+  box-shadow: var(--nbf-shadow-lg);
+  animation: nb-finder-pop 0.14s ease-out;
+}
+
+@keyframes nb-finder-pop {
+  from {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.98);
+  }
+}
+
+.nb-finder__menu-search {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  font: inherit;
+  font-size: 0.875rem;
+  color: var(--nbf-text);
+  background: var(--nbf-surface);
+  border: 1px solid var(--nbf-border);
+  border-radius: 0.45rem;
+}
+
+.nb-finder__hint {
+  margin: 0;
+  padding: 0 0.3rem;
+  font-size: 0.78rem;
+  color: var(--nbf-muted);
+}
+
+.nb-finder__options {
+  display: flex;
+  flex-direction: column;
+  max-height: 17rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.nb-finder__option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  border-radius: 0.45rem;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.nb-finder__option:hover {
+  background: var(--nbf-surface);
+}
+
+.nb-finder__option.is-checked {
+  background: var(--nbf-tint);
+}
+
+.nb-finder__option.is-empty {
+  opacity: 0.45;
+}
+
+.nb-finder__check {
+  flex: none;
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  accent-color: var(--nbf-primary);
+  cursor: pointer;
+}
+
+.nb-finder__option-name {
+  flex: 1;
+  min-width: 0;
+}
+
+.nb-finder__count {
+  flex: none;
+  min-width: 1.6rem;
+  padding: 0 0.4rem;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4rem;
+  text-align: center;
+  color: var(--nbf-muted);
+  background: var(--nbf-surface);
+  border-radius: 999px;
+}
+
+.nb-finder__option.is-checked .nb-finder__count {
+  color: var(--nbf-primary);
+  background: var(--nbf-bg);
+}
+
+.nb-finder__no-options {
+  margin: 0.5rem 0;
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--nbf-muted);
+}
+
+.nb-finder__menu-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--nbf-border);
+}
+
+.nb-finder__menu-clear,
+.nb-finder__clear {
+  padding: 0.25rem 0.5rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--nbf-primary);
+  background: none;
+  border: 0;
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+.nb-finder__menu-clear:hover,
+.nb-finder__clear:hover {
+  text-decoration: underline;
+}
+
+.nb-finder__menu-done {
+  padding: 0.3rem 0.9rem;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--nbf-bg);
+  background: var(--nbf-primary);
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.nb-finder__menu-done:hover {
+  filter: brightness(1.08);
+}
+
+/* ---- Active filters & status ----------------------------------------- */
+
+.nb-finder__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--nbf-border);
+}
+
+.nb-finder__active {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.nb-finder__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.45rem 0.2rem 0.55rem;
+  font: inherit;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--nbf-primary);
+  background: var(--nbf-tint);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  animation: nb-finder-pop 0.14s ease-out;
+  transition: border-color 0.15s;
+}
+
+.nb-finder__chip .nb-finder__icon {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.nb-finder__chip:hover {
+  border-color: var(--nbf-primary);
+}
+
+.nb-finder__chip-x {
+  opacity: 0.7;
+}
+
+.nb-finder__chip:hover .nb-finder__chip-x {
+  opacity: 1;
+}
+
+.nb-finder__summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.nb-finder__status {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--nbf-muted);
+}
+
+.nb-finder__status strong {
+  color: var(--nbf-text);
+}
+
+.nb-finder__empty {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  text-align: center;
+  color: var(--nbf-muted);
+  border: 1px dashed var(--nbf-border);
+  border-radius: var(--nbf-radius);
+}
+
+/* ---- Sidebar layout (wide screens) ----------------------------------- */
+
+.nb-finder__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.nb-finder--sidebar {
+  scroll-margin-top: 5rem;
+}
+
+.nb-finder--sidebar .nb-finder__panel {
+  padding: 0.7rem 1rem;
+}
+
+.nb-finder--sidebar .nb-finder__footer {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.nb-finder-side {
+  margin-top: 1.25rem;
+}
+
+.nb-finder-side__title {
+  margin: 0 0 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--nbf-muted);
+}
+
+.nb-finder__controls.is-sidebar {
+  gap: 0.6rem;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__search {
+  padding: 0.5rem 0.7rem 0.5rem 2.2rem;
+  font-size: 0.9rem;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__search-icon {
+  left: 0.7rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__bar {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__dropdown {
+  border-bottom: 1px solid var(--nbf-border);
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__toggle {
+  width: 100%;
+  padding: 0.6rem 0.35rem;
+  background: none;
+  border: 0;
+  border-radius: 0.4rem;
+  box-shadow: none;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__toggle:hover {
+  color: var(--nbf-primary);
+  transform: none;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__toggle.is-open {
+  box-shadow: none;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__toggle.is-active {
+  color: var(--nbf-primary);
+  background: none;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__toggle-label {
+  flex: 1;
+  text-align: left;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__menu {
+  position: static;
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  padding: 0 0 0.6rem;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  animation: none;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__options {
+  max-height: 14rem;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__option {
+  padding: 0.3rem 0.4rem;
+  font-size: 0.85rem;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__menu-done {
+  display: none;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__menu-footer {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.nb-finder__controls.is-sidebar .nb-finder__menu:not(.has-selection) .nb-finder__menu-footer {
+  display: none;
+}
+
+/* ---- "On this page" sidebar on the finder page ------------------------ */
+
+.bd-sidebar-secondary.nb-finder-toc {
+  /* Reach the window edge beyond the theme's maximum page width */
+  flex-basis: calc(var(--pst-sidebar-secondary, 17rem) + var(--nbf-toc-extend, 0px));
+  width: calc(var(--pst-sidebar-secondary, 17rem) + var(--nbf-toc-extend, 0px));
+  max-width: none;
+  margin-right: calc(-1 * var(--nbf-toc-extend, 0px));
+  /* It follows the page scroll (nb-finder.js), so no scrollbar is shown */
+  scrollbar-width: none;
+}
+
+.bd-sidebar-secondary.nb-finder-toc::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---- Catalog labels on each notebook entry --------------------------- */
+
+.nb-finder__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: -0.25rem 0 0.5rem;
+}
+
+.nb-finder__pill {
+  padding: 0.05rem 0.55rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--nbf-muted);
+  background: var(--nbf-surface);
+  border: 1px solid var(--nbf-border);
+  border-radius: 999px;
+}
+
+@media (max-width: 600px) {
+  .nb-finder__panel {
+    padding: 0.85rem;
+  }
+
+  .nb-finder__toggle {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nb-finder__menu,
+  .nb-finder__chip {
+    animation: none;
+  }
+
+  .nb-finder__toggle,
+  .nb-finder__chevron {
+    transition: none;
+  }
+}
+
+/* ---- Authors page (sidebar menu only) -------------------------------- */
+
+.nb-finder-side__summary {
+  justify-content: space-between;
+  margin: 0 0 0.6rem;
+}
+
+/* ---- Theme fix: closed "On this page" drawer ------------------------- */
+
+/* Below 1200px the theme turns the right sidebar into a drawer hidden with
+   visibility: hidden, but its scrollspy marks the expanded sub-list with
+   Bootstrap's .visible (visibility: visible !important), which then shows
+   through on top of the page. Keep it hidden until the drawer is opened. */
+@media (max-width: 1199.98px) {
+  .bd-sidebar-secondary:not([open]) .visible {
+    visibility: inherit !important;
+  }
+}

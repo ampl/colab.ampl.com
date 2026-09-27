@@ -3,6 +3,10 @@
 Aitor Lopez (1 notebook)
 ========================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 Vehicle Routing Problem with Fair Profits and Time Windows (VRP-FPTW)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Vehicle Routing Problem with Fair Profits and Time Windows (VRP-FPTW) <../notebooks/vehicle-routing-problem-with-fair-profits-and-time-windows-vrp-fptw.html>`_

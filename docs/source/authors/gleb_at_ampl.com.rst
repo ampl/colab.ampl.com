@@ -3,6 +3,10 @@
 Gleb Belov (13 notebooks)
 =========================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 A Party Scheduling Problem with FICO Xpress
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `A Party Scheduling Problem with FICO Xpress <../notebooks/a-party-scheduling-problem-with-fico-xpress.html>`_

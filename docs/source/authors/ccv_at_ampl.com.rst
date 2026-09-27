@@ -3,6 +3,10 @@
 Christian Valente (5 notebooks)
 ===============================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 AMPL Development Tutorial 6/6 -- Implementing Benders Decomposition with *ampls*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL Development Tutorial 6/6 -- Implementing Benders Decomposition with *ampls* <../notebooks/ampl-development-tutorial-66-implementing-benders-decomposition-with-ampls.html>`_

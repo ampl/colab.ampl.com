@@ -3,6 +3,10 @@
 Mikhail Riabtsev (14 notebooks)
 ===============================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 Balanced Task Assignment with Inverse Cost Scaling
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Balanced Task Assignment with Inverse Cost Scaling <../notebooks/balanced-task-assignment-with-inverse-cost-scaling.html>`_

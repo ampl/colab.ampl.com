@@ -57,17 +57,16 @@ that run on platforms such as **Google Colab**, **Deepnote**, **Kaggle**, **Grad
             :width: 100%
             :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/template/minimal.ipynb
 
-Contents
---------
-
 .. toctree::
     :maxdepth: 2
+    :hidden:
 
     getting-started
+    contribute
+    authors/index
     modules/index
     Highlights <tags/highlights>
     Lectures <tags/ampl-lecture>
-    authors/index
 
 .. toctree::
     :hidden:
@@ -77,6 +76,10 @@ Contents
 
 Notebooks
 ---------
+
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" data-index="_static/notebooks.json" hidden></div>
 
 
 A Party Scheduling Problem with FICO Xpress
