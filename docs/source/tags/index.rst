@@ -73,11 +73,11 @@ Tags
     diverse-routing (1 notebook) <diverse-routing>
     dual-values (1 notebook) <dual-values>
     economic-modeling (1 notebook) <economic-modeling>
-    educational (7 notebooks) <educational>
+    educational (8 notebooks) <educational>
     electric-grid (1 notebook) <electric-grid>
     electric-power-industry (18 notebooks) <electric-power-industry>
     employee-scheduling (1 notebook) <employee-scheduling>
-    energy (8 notebooks) <energy>
+    energy (9 notebooks) <energy>
     engineering (2 notebooks) <engineering>
     error-handler (1 notebook) <error-handler>
     example (7 notebooks) <example>
@@ -102,10 +102,11 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (16 notebooks) <gurobi>
+    gurobi (17 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
     highlights (18 notebooks) <highlights>
     highs (11 notebooks) <highs>
+    hydrogen (1 notebook) <hydrogen>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
     industry (9 notebooks) <industry>
@@ -143,7 +144,7 @@ Tags
     mip (31 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
-    mp (17 notebooks) <mp>
+    mp (18 notebooks) <mp>
     mp2nl (4 notebooks) <mp2nl>
     mpec (1 notebook) <mpec>
     multi-objective (6 notebooks) <multi-objective>
