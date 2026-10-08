@@ -13,11 +13,11 @@ Tags
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (72 notebooks) <amplpy>
+    amplpy (76 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
-    api (1 notebook) <api>
+    api (4 notebooks) <api>
     arithmetic (1 notebook) <arithmetic>
     assignment (3 notebooks) <assignment>
     automatic-reformulation (1 notebook) <automatic-reformulation>
@@ -70,6 +70,7 @@ Tags
     diet (1 notebook) <diet>
     discounting (1 notebook) <discounting>
     disjunctive-programming (1 notebook) <disjunctive-programming>
+    diverse-routing (1 notebook) <diverse-routing>
     dual-values (1 notebook) <dual-values>
     economic-modeling (1 notebook) <economic-modeling>
     educational (7 notebooks) <educational>
@@ -78,8 +79,10 @@ Tags
     employee-scheduling (1 notebook) <employee-scheduling>
     energy (8 notebooks) <energy>
     engineering (2 notebooks) <engineering>
+    error-handler (1 notebook) <error-handler>
     example (7 notebooks) <example>
     excel (2 notebooks) <excel>
+    exceptions (1 notebook) <exceptions>
     expand (1 notebook) <expand>
     exponential-cone (1 notebook) <exponential-cone>
     f1 (1 notebook) <f1>
@@ -101,8 +104,8 @@ Tags
     gui (2 notebooks) <gui>
     gurobi (16 notebooks) <gurobi>
     heuristics (2 notebooks) <heuristics>
-    highlights (15 notebooks) <highlights>
-    highs (10 notebooks) <highs>
+    highlights (18 notebooks) <highlights>
+    highs (11 notebooks) <highs>
     hydropower (1 notebook) <hydropower>
     indexing (1 notebook) <indexing>
     industry (9 notebooks) <industry>
@@ -122,6 +125,7 @@ Tags
     linear-programming (3 notebooks) <linear-programming>
     local-optimization (1 notebook) <local-optimization>
     log-sum-exp (1 notebook) <log-sum-exp>
+    logging (2 notebooks) <logging>
     logistic-regression (1 notebook) <logistic-regression>
     lp (1 notebook) <lp>
     machine-learning (3 notebooks) <machine-learning>
@@ -136,18 +140,19 @@ Tags
     minimum-cost-flow (1 notebook) <minimum-cost-flow>
     mining (1 notebook) <mining>
     minlp (1 notebook) <minlp>
-    mip (30 notebooks) <mip>
+    mip (31 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (1 notebook) <modeling-tips>
     mp (17 notebooks) <mp>
     mp2nl (4 notebooks) <mp2nl>
     mpec (1 notebook) <mpec>
-    multi-objective (5 notebooks) <multi-objective>
+    multi-objective (6 notebooks) <multi-objective>
     multi-objective-options (1 notebook) <multi-objective-options>
     multi-period-planning (1 notebook) <multi-period-planning>
     multiprocess (1 notebook) <multiprocess>
     neos (1 notebook) <neos>
     network (2 notebooks) <network>
+    network-design (1 notebook) <network-design>
     networkx (1 notebook) <networkx>
     non-continuous-objective (1 notebook) <non-continuous-objective>
     nonlinear (7 notebooks) <nonlinear>
@@ -156,7 +161,9 @@ Tags
     open-source (1 notebook) <open-source>
     optimal-power-flow (6 notebooks) <optimal-power-flow>
     optimization (1 notebook) <optimization>
+    options (1 notebook) <options>
     organ-exchange (1 notebook) <organ-exchange>
+    output-handler (1 notebook) <output-handler>
     pairs-trading (1 notebook) <pairs-trading>
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
@@ -214,8 +221,10 @@ Tags
     softplus (1 notebook) <softplus>
     solution-check (1 notebook) <solution-check>
     solution-pool (1 notebook) <solution-pool>
+    solver-options (1 notebook) <solver-options>
     sports (1 notebook) <sports>
     spreadsheet (2 notebooks) <spreadsheet>
+    srlg (1 notebook) <srlg>
     stackelberg (1 notebook) <stackelberg>
     state-task-networks (1 notebook) <state-task-networks>
     stochastic (5 notebooks) <stochastic>
@@ -224,6 +233,7 @@ Tags
     strict-comparison (1 notebook) <strict-comparison>
     supply_chain (2 notebooks) <supply_chain>
     task-scheduling (1 notebook) <task-scheduling>
+    telecom (1 notebook) <telecom>
     template (1 notebook) <template>
     time-windows (1 notebook) <time-windows>
     trainee-scheduling (1 notebook) <trainee-scheduling>

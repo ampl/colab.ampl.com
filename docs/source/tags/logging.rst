@@ -1,7 +1,7 @@
-.. _tag-api:
+.. _tag-logging:
 
-api
-===
+logging
+=======
 
 Handling AMPL Errors and Warnings: `ErrorHandler` in amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -37,40 +37,6 @@ Handling AMPL Errors and Warnings: `ErrorHandler` in amplpy
     
 
 
-Inspecting AMPL Models: `expand` and `show` with amplpy
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| `Notebooks <../notebooks/index.html>`_ > `Inspecting AMPL Models: `expand` and `show` with amplpy <../notebooks/inspecting-ampl-models-expand-and-show-with-amplpy.html>`_
-| |github-inspecting-ampl-models-expand-and-show-with-amplpy| |colab-inspecting-ampl-models-expand-and-show-with-amplpy| |deepnote-inspecting-ampl-models-expand-and-show-with-amplpy| |kaggle-inspecting-ampl-models-expand-and-show-with-amplpy| |gradient-inspecting-ampl-models-expand-and-show-with-amplpy| |sagemaker-inspecting-ampl-models-expand-and-show-with-amplpy|
-| Description: Demonstrates the `ampl.show()`, `ampl.expand()`, and entity-level `expand()` methods introduced in amplpy 0.17.0, using the classic diet problem as a running example.
-| Tags: :ref:`tag-amplpy`, :ref:`tag-api`, :ref:`tag-expand`, :ref:`tag-show`, :ref:`tag-diet`, :ref:`tag-highlights`
-| Author: :ref:`email-lentz_at_ampl.com` <lentz@ampl.com>
-
-.. |github-inspecting-ampl-models-expand-and-show-with-amplpy|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/api/expand_show.ipynb
-    :alt: expand_show.ipynb
-    
-.. |colab-inspecting-ampl-models-expand-and-show-with-amplpy| image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/api/expand_show.ipynb
-    :alt: Open In Colab
-    
-.. |deepnote-inspecting-ampl-models-expand-and-show-with-amplpy| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
-    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/api/expand_show.ipynb
-    :alt: Open In Deepnote
-    
-.. |kaggle-inspecting-ampl-models-expand-and-show-with-amplpy| image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/api/expand_show.ipynb
-    :alt: Open In Kaggle
-    
-.. |gradient-inspecting-ampl-models-expand-and-show-with-amplpy| image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/api/expand_show.ipynb
-    :alt: Open In Gradient
-    
-.. |sagemaker-inspecting-ampl-models-expand-and-show-with-amplpy| image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/lentz/api/expand_show.ipynb
-    :alt: Open In SageMaker Studio Lab
-    
-
-
 Intercepting AMPL Output: `OutputHandler` and `Kind` in amplpy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Intercepting AMPL Output: `OutputHandler` and `Kind` in amplpy <../notebooks/intercepting-ampl-output-outputhandler-and-kind-in-amplpy.html>`_
@@ -101,40 +67,6 @@ Intercepting AMPL Output: `OutputHandler` and `Kind` in amplpy
     
 .. |sagemaker-intercepting-ampl-output-outputhandler-and-kind-in-amplpy| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/lentz/api/output_handler.ipynb
-    :alt: Open In SageMaker Studio Lab
-    
-
-
-Setting and Getting AMPL Options in amplpy
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| `Notebooks <../notebooks/index.html>`_ > `Setting and Getting AMPL Options in amplpy <../notebooks/setting-and-getting-ampl-options-in-amplpy.html>`_
-| |github-setting-and-getting-ampl-options-in-amplpy| |colab-setting-and-getting-ampl-options-in-amplpy| |deepnote-setting-and-getting-ampl-options-in-amplpy| |kaggle-setting-and-getting-ampl-options-in-amplpy| |gradient-setting-and-getting-ampl-options-in-amplpy| |sagemaker-setting-and-getting-ampl-options-in-amplpy|
-| Description: Shows every way amplpy exposes to set and get AMPL options — snake_case methods, dict-style indexing, camelCase aliases, and per-solve keyword overrides — covering interpreter options, solver-specific option strings, value types, and restore patterns.
-| Tags: :ref:`tag-amplpy`, :ref:`tag-api`, :ref:`tag-options`, :ref:`tag-solver-options`, :ref:`tag-highlights`
-| Author: :ref:`email-lentz_at_ampl.com` <lentz@ampl.com>
-
-.. |github-setting-and-getting-ampl-options-in-amplpy|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
-    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/api/options.ipynb
-    :alt: options.ipynb
-    
-.. |colab-setting-and-getting-ampl-options-in-amplpy| image:: https://colab.research.google.com/assets/colab-badge.svg
-    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/api/options.ipynb
-    :alt: Open In Colab
-    
-.. |deepnote-setting-and-getting-ampl-options-in-amplpy| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
-    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/api/options.ipynb
-    :alt: Open In Deepnote
-    
-.. |kaggle-setting-and-getting-ampl-options-in-amplpy| image:: https://kaggle.com/static/images/open-in-kaggle.svg
-    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/lentz/api/options.ipynb
-    :alt: Open In Kaggle
-    
-.. |gradient-setting-and-getting-ampl-options-in-amplpy| image:: https://assets.paperspace.io/img/gradient-badge.svg
-    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/lentz/api/options.ipynb
-    :alt: Open In Gradient
-    
-.. |sagemaker-setting-and-getting-ampl-options-in-amplpy| image:: https://studiolab.sagemaker.aws/studiolab.svg
-    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/lentz/api/options.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
