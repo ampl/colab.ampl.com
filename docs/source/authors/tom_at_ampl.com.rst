@@ -3,6 +3,10 @@
 Tom Guardino (1 notebook)
 =========================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 Battery Energy Storage System (BESS) Evaluation Model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Battery Energy Storage System (BESS) Evaluation Model <../notebooks/battery-energy-storage-system-bess-evaluation-model.html>`_

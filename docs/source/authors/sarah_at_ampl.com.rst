@@ -3,6 +3,10 @@
 Sarah Wells (1 notebook)
 ========================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 Plot feasible region
 ^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Plot feasible region <../notebooks/plot-feasible-region.html>`_

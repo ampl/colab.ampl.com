@@ -3,6 +3,10 @@
 Eduardo Salazar (5 notebooks)
 =============================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 Bilevel Markets
 ^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Bilevel Markets <../notebooks/bilevel-markets.html>`_

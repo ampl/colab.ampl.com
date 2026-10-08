@@ -3,6 +3,10 @@
 Filipe Brandão (16 notebooks)
 =============================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 AMPL Christmas Model created by ChatGPT
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL Christmas Model created by ChatGPT <../notebooks/ampl-christmas-model-created-by-chatgpt.html>`_

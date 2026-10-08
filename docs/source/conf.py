@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import datetime
+import glob
+import io
 import os
 import sys
 import shutil
@@ -107,9 +109,29 @@ html_theme_options = {
         },
     ],
     "logo_text": "Colaboratory",
+    "navbar_center": ["navbar-links.html"],
     "header_links_before_dropdown": 7,
 }
 html_context = {"default_mode": "light"}
+
+# Left sidebar: no "Search the docs" box. The pages with the notebook finder
+# get an empty slot that the finder fills with its filter menu (no section
+# navigation); top-level pages without subpages get no sidebar at all.
+html_sidebars = {
+    "**": ["sidebar-nav-bs"],
+    "index": ["nb-finder-slot.html"],
+    "notebooks/index": ["nb-finder-slot.html"],
+    "authors/index": ["nb-finder-slot.html"],
+    "getting-started": [],
+    "contribute": [],
+}
+# Each author's page lists their notebooks and has the finder too (named one by
+# one: a second wildcard pattern next to "**" would be ambiguous for Sphinx)
+for _author_page in glob.glob(
+    os.path.join(os.path.dirname(__file__), "authors", "*.rst")
+):
+    _name = os.path.splitext(os.path.basename(_author_page))[0]
+    html_sidebars[f"authors/{_name}"] = ["nb-finder-slot.html"]
 
 html_baseurl = "https://ampl.com/colab/"
 
@@ -144,9 +166,14 @@ html_favicon = "https://raw.githubusercontent.com/ampl/ampl.github.io/master/the
 html_static_path = ["_static"]
 
 # Add custom css file
-# html_css_files = [
-#     "css/custom.css",
-# ]
+html_css_files = [
+    "nb-finder.css",
+]
+
+# Notebook search & filtering on the home page (see _static/nb-finder.js)
+html_js_files = [
+    ("nb-finder.js", {"defer": "defer"}),
+]
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -277,12 +304,22 @@ def list_notebooks(base_dir):
     ]
 
 
+# The "Notebooks" page: the notebook finder over the full list (like the home
+# page, without its introduction), plus the toctree of the notebook pages
 NOTEBOOKS_INDEX = """
 Notebooks
 =========
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
+"""
+
+NOTEBOOKS_TOCTREE = """
 .. toctree::
     :maxdepth: 1
+    :hidden:
 
 """
 
@@ -311,11 +348,35 @@ def generate_notebook_pages(app):
             shutil.copyfile(nb["abspath"], os.path.join(dest_dir, fname))
         except Exception as e:
             print(">>", e)
+    entries = io.StringIO()
+    for nb in notebooks:
+        colab_utils.print_rst(nb, entries, notebooks_path="./")
+    index_page += entries.getvalue() + NOTEBOOKS_TOCTREE
     for fname in fnames:
         index_page += f"    {fname}\n"
-    open(os.path.join(dest_dir, "index.rst"), "w").write(index_page)
+    with open(os.path.join(dest_dir, "index.rst"), "w", encoding="utf-8") as f:
+        f.write(index_page)
     open(os.path.join(dest_dir, ".gitignore"), "w").write("*\n!.gitignore\n")
+    app.colab_notebooks = notebooks
+
+
+def write_search_index(app, exception):
+    # notebooks.json feeds the notebook finder on the home page
+    if exception or app.builder.format != "html":
+        return
+    repo_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    catalog = colab_utils.load_model_catalog(
+        os.path.join(repo_dir, colab_utils.MODEL_CATALOG)
+    )
+    static_dir = os.path.join(app.outdir, "_static")
+    os.makedirs(static_dir, exist_ok=True)
+    colab_utils.write_search_index(
+        getattr(app, "colab_notebooks", []),
+        os.path.join(static_dir, "notebooks.json"),
+        catalog,
+    )
 
 
 def setup(app):
     app.connect("builder-inited", generate_notebook_pages)
+    app.connect("build-finished", write_search_index)
