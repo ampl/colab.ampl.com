@@ -368,11 +368,18 @@ def write_search_index(app, exception):
     )
     static_dir = os.path.join(app.outdir, "_static")
     os.makedirs(static_dir, exist_ok=True)
+    json_path = os.path.join(static_dir, "notebooks.json")
     colab_utils.write_search_index(
         getattr(app, "colab_notebooks", []),
-        os.path.join(static_dir, "notebooks.json"),
+        json_path,
         catalog,
     )
+    # Same index as a script, for pages opened from disk (file://), where
+    # browsers block fetch() of notebooks.json
+    with open(json_path, encoding="utf-8") as f:
+        index_json = f.read()
+    with open(os.path.join(static_dir, "notebooks.js"), "w", encoding="utf-8") as f:
+        f.write(f"window.nbFinderIndex = {index_json};\n")
 
 
 def setup(app):
