@@ -604,3 +604,12 @@
     visibility: inherit !important;
   }
 }
+
+/* ---- Theme fix: empty "Section Navigation" --------------------------- */
+
+/* With sidebar_includehidden = True the theme keeps the section navigation on
+   top-level pages without subpages (e.g. Getting Started, Contribute), which
+   then shows only its "Section Navigation" title. Hide it when it's empty. */
+.bd-docs-nav:has(.bd-toc-item:empty) {
+  display: none;
+}
