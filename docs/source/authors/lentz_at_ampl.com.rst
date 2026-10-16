@@ -3,6 +3,10 @@
 Jürgen Lentz (8 notebooks)
 ==========================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 AMPL Bin Packing Problem with GCG
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL Bin Packing Problem with GCG <../notebooks/ampl-bin-packing-problem-with-gcg.html>`_

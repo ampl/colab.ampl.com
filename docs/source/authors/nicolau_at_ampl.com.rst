@@ -3,6 +3,10 @@
 Nicolau Santos (9 notebooks)
 ============================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 AMPL - solve multiple models in parallel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL - solve multiple models in parallel <../notebooks/ampl-solve-multiple-models-in-parallel.html>`_

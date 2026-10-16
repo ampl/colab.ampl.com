@@ -3,6 +3,10 @@
 Gyorgy Matyasfalvi (15 notebooks)
 =================================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 AMPL Development Tutorial 1/6 -- Capacitated Facility Location Problem
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `AMPL Development Tutorial 1/6 -- Capacitated Facility Location Problem <../notebooks/ampl-development-tutorial-16-capacitated-facility-location-problem.html>`_

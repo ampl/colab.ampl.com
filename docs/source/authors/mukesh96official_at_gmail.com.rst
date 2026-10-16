@@ -3,6 +3,10 @@
 Mukeshwaran Baskaran (4 notebooks)
 ==================================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 Enhanced Sector ETF Portfolio Optimization with Multiple Strategies in Python with AMPL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Enhanced Sector ETF Portfolio Optimization with Multiple Strategies in Python with AMPL <../notebooks/enhanced-sector-etf-portfolio-optimization-with-multiple-strategies-in-python-with-ampl.html>`_

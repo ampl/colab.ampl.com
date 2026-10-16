@@ -3,6 +3,10 @@
 Juan Jesús Losada del Olmo (1 notebook)
 =======================================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 Solving a nonogram puzzle
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Solving a nonogram puzzle <../notebooks/solving-a-nonogram-puzzle.html>`_

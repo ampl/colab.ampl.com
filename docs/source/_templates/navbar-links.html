@@ -1,0 +1,23 @@
+{#- Header navigation (replaces the theme's toctree-based "navbar-nav").
+    Browsing by solver, tag, author, level, etc. is done with the notebook
+    finder on the home page; the generated tag/module pages remain available. -#}
+{%- set links = [
+  ("Notebooks", "notebooks/index", "", pagename.startswith("notebooks/")),
+  ("Getting Started", "getting-started", "", pagename == "getting-started"),
+  ("Contribute", "contribute", "", pagename == "contribute"),
+  ("Authors", "authors/index", "", pagename.startswith("authors/")),
+] -%}
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    {%- for title, page, anchor, current in links %}
+    {#- pathto() gives "#" for the current page; an anchor alone then suffices #}
+    {%- set url = pathto(page) %}
+    {%- set href = anchor if (url == "#" and anchor) else url ~ anchor %}
+    <li class="nav-item{% if current %} current active{% endif %}">
+      <a class="nav-link nav-internal" href="{{ href }}"{% if current %} aria-current="page"{% endif %}>
+        {{ title }}
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+</nav>

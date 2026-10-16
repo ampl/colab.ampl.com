@@ -3,6 +3,10 @@
 Yimin Wang (2 notebooks)
 ========================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 Employee Scheduling Optimization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Employee Scheduling Optimization <../notebooks/employee-scheduling-optimization.html>`_

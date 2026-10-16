@@ -3,6 +3,10 @@
 Marcos Dominguez Velad (35 notebooks)
 =====================================
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+
 Book Example: Economic equilibria
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Book Example: Economic equilibria <../notebooks/book-example-economic-equilibria.html>`_

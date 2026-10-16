@@ -1,4 +1,4 @@
-from utils import discover_notebooks, list_badges, rst_badges
+from utils import discover_notebooks, list_badges, print_rst
 from headers import update_notebook_headers
 import glob
 import os
@@ -133,17 +133,16 @@ that run on platforms such as **Google Colab**, **Deepnote**, **Kaggle**, **Grad
             :width: 100%
             :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/template/minimal.ipynb
 
-Contents
---------
-
 .. toctree::
     :maxdepth: 2
+    :hidden:
 
     getting-started
+    contribute
+    authors/index
     modules/index
     Highlights <tags/highlights>
     Lectures <tags/ampl-lecture>
-    authors/index
 
 .. toctree::
     :hidden:
@@ -153,6 +152,10 @@ Contents
 
 Notebooks
 ---------
+
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" data-index="_static/notebooks.json" hidden></div>
 
 """,
     file=index,
@@ -296,54 +299,6 @@ def print_markdown(info, fout):
     print(f"|{info['title']}|{'|'.join(badges)}|", file=fout)
 
 
-def print_rst(info, fout, notebooks_path=None, toc_tree=False):
-    fname, title, url_string = info["fname"], info["title"], info["url_string"]
-    colab_only = info["colab_only"]
-    print(title + "\n" + "^" * len(title), file=fout)
-    description = info.get("description", None)
-    if notebooks_path:
-        print(
-            f"| `Notebooks <{notebooks_path}index.html>`_ > `{title} <{notebooks_path}{url_string}.html>`_",
-            file=fout,
-        )
-    badges, images = rst_badges(fname, url_string, colab_only=colab_only)
-    print(f"| {badges}", file=fout)
-    if description:
-        print(f"| Description: {description}", file=fout)
-
-    tags = info.get("tags", None)
-    if tags:
-        tags = [f":ref:`tag-{tag}`" for tag in tags]
-        print(f'| Tags: {", ".join(tags)}', file=fout)
-    authors = info.get("notebook_author", None)
-    if authors:
-        authors = authors.replace("<<", "<").replace(">>", ">")
-        lst = []
-        for author in authors.split(","):
-            author = author.strip()
-            if "<" in author:
-                name = author[: author.find("<")]
-                email = author[author.find("<") + 1 : author.find(">")]
-                lst.append(f":ref:`email-{email.replace('@', '_at_')}` <{email}>")
-            else:
-                lst.append(author)
-        print(f"| Author: {', '.join(lst)}", file=fout)
-    if toc_tree:
-        print(
-            f"""
-        .. toctree::
-            :maxdepth: 2
-            :caption: {title}
-            :glob:
-
-            {notebooks_path}{url_string}.ipynb
-        """,
-            file=fout,
-        )
-    print(images, file=fout)
-    print(file=fout)
-
-
 nb_madeby = {}
 nb_tagged = {}
 nb_uses = {}
@@ -424,6 +379,10 @@ Authors
 
 The notebooks in this repository are contributed by the following authors:
 
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" data-mode="authors" hidden></div>
+
 .. toctree::
     :maxdepth: 1
 
@@ -435,8 +394,23 @@ for _, email in authors_sorted:
 authors_index += """
 
 .. note::
-    **Your name can be here too!** Just make a pull request to https://github.com/ampl/colab.ampl.com or
-    send a link to your notebook by email to devteam@ampl.com.
+    **Your name can be here too!** See how to :doc:`contribute a notebook </contribute>`.
+"""
+print(
+    authors_index,
+    file=open(f"docs/source/authors/index.rst", "w", newline="\n", encoding="utf-8"),
+)
+
+# Contribute
+
+contribute = """
+Contribute
+==========
+
+**Your name can be here too!** Share your AMPL models with the community:
+make a pull request to https://github.com/ampl/colab.ampl.com or
+send a link to your notebook by email to devteam@ampl.com.
+Your notebook will be listed with the other :doc:`authors </authors/index>`.
 
 Contribution Guide
 ------------------
@@ -492,9 +466,16 @@ notebook cells are modified to ensure that requirements are installed
 and that the ampl_notebook is instantiated.
 """
 print(
-    authors_index,
-    file=open(f"docs/source/authors/index.rst", "w", newline="\n", encoding="utf-8"),
+    contribute,
+    file=open(f"docs/source/contribute.rst", "w", newline="\n", encoding="utf-8"),
 )
+
+# Placeholder the notebook finder fills (see docs/source/_static/nb-finder.js)
+FINDER_MOUNT = """
+.. raw:: html
+
+    <div id="nb-finder" class="nb-finder" hidden></div>
+"""
 
 for name, email in authors_sorted:
     print(f">>{name} <{email}>")
@@ -506,7 +487,7 @@ for name, email in authors_sorted:
     title = f"{name} ({len(lst)} notebook{'s' if len(lst) > 1 else ''})"
     title += "\n" + "=" * len(title) + "\n"
     header = f".. _email-{email}:\n\n{title}"
-    print(header, file=email_rst)
+    print(header + FINDER_MOUNT, file=email_rst)
     for info in lst:
         print_rst(info, email_rst, notebooks_path="../notebooks/")
 
