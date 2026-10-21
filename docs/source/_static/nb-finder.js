@@ -5,8 +5,8 @@
  * scripts/index.py. The static list stays the source of the markup; this script
  * only hides, shows and reorders its entries using the metadata in
  * _static/notebooks.json (written by docs/source/conf.py from the notebook
- * headers). Without JavaScript, or if the index
- * fails to load, the full list is shown.
+ * headers), or from _static/notebooks.js when the page is opened from disk.
+ * Without JavaScript, or if the index fails to load, the full list is shown.
  */
 (function () {
   "use strict";
@@ -58,8 +58,22 @@
         if (!res.ok) throw new Error(res.status + " " + res.statusText);
         return res.json();
       })
+      .catch(() => loadScriptIndex(src))
       .then((notebooks) => setup(root, notebooks))
       .catch((err) => console.warn("nb-finder: search index unavailable", err));
+  }
+
+  // Pages opened from disk (file://) can't fetch() notebooks.json, but they can
+  // load the same index from notebooks.js (written next to it by conf.py)
+  function loadScriptIndex(jsonSrc) {
+    return new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = jsonSrc.replace(/\.json$/, ".js");
+      script.onload = () =>
+        window.nbFinderIndex ? resolve(window.nbFinderIndex) : reject(new Error("empty " + script.src));
+      script.onerror = () => reject(new Error("failed to load " + script.src));
+      document.head.appendChild(script);
+    });
   }
 
   function fold(text) {

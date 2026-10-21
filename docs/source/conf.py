@@ -116,14 +116,12 @@ html_context = {"default_mode": "light"}
 
 # Left sidebar: no "Search the docs" box. The pages with the notebook finder
 # get an empty slot that the finder fills with its filter menu (no section
-# navigation); top-level pages without subpages get no sidebar at all.
+# navigation).
 html_sidebars = {
     "**": ["sidebar-nav-bs"],
     "index": ["nb-finder-slot.html"],
     "notebooks/index": ["nb-finder-slot.html"],
     "authors/index": ["nb-finder-slot.html"],
-    "getting-started": [],
-    "contribute": [],
 }
 # Each author's page lists their notebooks and has the finder too (named one by
 # one: a second wildcard pattern next to "**" would be ambiguous for Sphinx)
@@ -366,10 +364,17 @@ def write_search_index(app, exception):
         return
     static_dir = os.path.join(app.outdir, "_static")
     os.makedirs(static_dir, exist_ok=True)
+    json_path = os.path.join(static_dir, "notebooks.json")
     colab_utils.write_search_index(
         getattr(app, "colab_notebooks", []),
-        os.path.join(static_dir, "notebooks.json"),
+        json_path,
     )
+    # Same index as a script, for pages opened from disk (file://), where
+    # browsers block fetch() of notebooks.json
+    with open(json_path, encoding="utf-8") as f:
+        index_json = f.read()
+    with open(os.path.join(static_dir, "notebooks.js"), "w", encoding="utf-8") as f:
+        f.write(f"window.nbFinderIndex = {index_json};\n")
 
 
 def setup(app):
