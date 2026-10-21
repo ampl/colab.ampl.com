@@ -364,16 +364,11 @@ def write_search_index(app, exception):
     # notebooks.json feeds the notebook finder on the home page
     if exception or app.builder.format != "html":
         return
-    repo_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-    catalog = colab_utils.load_model_catalog(
-        os.path.join(repo_dir, colab_utils.MODEL_CATALOG)
-    )
     static_dir = os.path.join(app.outdir, "_static")
     os.makedirs(static_dir, exist_ok=True)
     colab_utils.write_search_index(
         getattr(app, "colab_notebooks", []),
         os.path.join(static_dir, "notebooks.json"),
-        catalog,
     )
 
 

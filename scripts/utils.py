@@ -1,6 +1,5 @@
 import os
 import re
-import csv
 import json
 
 
@@ -50,6 +49,9 @@ def read_header(base_dir, fname):
         elif key == "tags":
             assert key not in info
             info[key] = [t.strip().lower().replace(" ", "-") for t in value.split(",")]
+        elif key in FINDER_FIELDS:
+            assert key not in info
+            info[key] = [v.strip() for v in value.split(",") if v.strip()]
     for i in range(1, len(cells)):
         source = cells[i]["source"]
         assert len(source) > 0
@@ -292,86 +294,21 @@ def parse_author_pages(notebook_author):
     ]
 
 
-MODEL_CATALOG = "docs/model-catalog.csv"
-
-# Catalog column -> (search index field, extra separators for multiple values)
-CATALOG_FIELDS = {
-    "domain": ("domains", ""),
-    "subdomain": ("subdomains", ""),
-    "model_type": ("model_types", "&"),
-    "adoption_level": ("levels", ""),
-    "advanced_algorithm": ("algorithms", ""),
-    "subject": ("subjects", ""),
+# Header field -> notebook finder field, e.g. "Model type: MILP, QP"
+FINDER_FIELDS = {
+    "domain": "domains",
+    "subdomain": "subdomains",
+    "model_type": "model_types",
+    "level": "levels",
+    "algorithm": "algorithms",
+    "subject": "subjects",
 }
-CATALOG_EMPTY = {"", "-", "n/a", "na", "none"}
 
 
-def catalog_column(name):
-    """'3. Model Type' -> 'model_type'"""
-    name = re.sub(r"^\s*\d+\.\s*", "", name).strip().lower()
-    return re.sub(r"[^a-z0-9]+", "_", name).strip("_")
-
-
-def split_catalog_values(value, separators=""):
-    values = []
-    for part in re.split(r"[,\n" + re.escape(separators) + "]", value or ""):
-        part = re.sub(r"\s+", " ", part).strip().rstrip(".")
-        if part.lower() not in CATALOG_EMPTY:
-            values.append(part)
-    return values
-
-
-def load_model_catalog(fname):
-    """Read the model catalog CSV into {notebook url_string: {field: [values]}}.
-
-    A row with a Model Link starts a model; the rows below it without a Domain
-    continue that model (e.g., additional subjects).
-    """
-    catalog = {}
-    if not os.path.exists(fname):
-        return catalog
-    with open(fname, encoding="utf-8", newline="") as f:
-        rows = list(csv.reader(f))
-    columns = [catalog_column(name) for name in rows[0]]
-    current = None
-    for row in rows[1:]:
-        record = dict(zip(columns, row))
-        match = re.search(r"notebooks/([^/#?]+)\.html", record.get("model_link", ""))
-        if match:
-            current = catalog.setdefault(match.group(1), {})
-        elif record.get("domain", "").strip():
-            current = None  # a model without a notebook page link
-        if current is None:
-            continue
-        for column, (field, separators) in CATALOG_FIELDS.items():
-            for value in split_catalog_values(record.get(column), separators):
-                if value not in current.setdefault(field, []):
-                    current[field].append(value)
-
-    # Spell each value the same way everywhere (e.g., "Benders decomposition"
-    # and "Benders Decomposition"), using its most common spelling
-    for field, _ in CATALOG_FIELDS.values():
-        spellings = {}
-        for entry in catalog.values():
-            for value in entry.get(field, []):
-                spellings.setdefault(value.casefold(), []).append(value)
-        canonical = {
-            key: max(sorted(set(lst)), key=lst.count) for key, lst in spellings.items()
-        }
-        for entry in catalog.values():
-            if field in entry:
-                entry[field] = list(
-                    dict.fromkeys(canonical[v.casefold()] for v in entry[field])
-                )
-    return catalog
-
-
-def search_index(notebooks, catalog=None):
+def search_index(notebooks):
     """Compact per-notebook metadata used by the notebook finder."""
-    catalog = catalog or {}
     index = []
     for info in notebooks:
-        entry = catalog.get(info["url_string"], {})
         index.append(
             {
                 "title": info["title"],
@@ -382,16 +319,16 @@ def search_index(notebooks, catalog=None):
                 "authors": parse_authors(info.get("notebook_author")),
                 "author_pages": parse_author_pages(info.get("notebook_author")),
                 "path": info["fname"],
-                **{field: entry.get(field, []) for field, _ in CATALOG_FIELDS.values()},
+                **{field: info.get(key, []) for key, field in FINDER_FIELDS.items()},
             }
         )
     return index
 
 
-def write_search_index(notebooks, fname, catalog=None):
+def write_search_index(notebooks, fname):
     with open(fname, "w", encoding="utf-8", newline="\n") as f:
         json.dump(
-            search_index(notebooks, catalog),
+            search_index(notebooks),
             f,
             ensure_ascii=False,
             separators=(",", ":"),

@@ -5,7 +5,7 @@
  * scripts/index.py. The static list stays the source of the markup; this script
  * only hides, shows and reorders its entries using the metadata in
  * _static/notebooks.json (written by docs/source/conf.py from the notebook
- * headers and docs/model-catalog.csv). Without JavaScript, or if the index
+ * headers). Without JavaScript, or if the index
  * fails to load, the full list is shown.
  */
 (function () {
