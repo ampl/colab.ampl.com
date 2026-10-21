@@ -22,6 +22,15 @@ Contribution Guide
 
    Tags: <required>, <>, <>
 
+   <!--
+   Domain: <required>, e.g. Energy, Supply Chain, Finance
+   Subdomain: <optional>
+   Model type: <required>, e.g. LP, MILP, NLP, MINLP, QP, Conic
+   Level: <required>, one of Quick Start, Lecture, Case Study, Industry Prototype
+   Algorithm: <optional>, e.g. Benders Decomposition
+   Subject: <optional>
+   -->
+
    Notebook author: <required>
 
    Model author: <optional>
@@ -29,6 +38,12 @@ Contribution Guide
    License: <optional>
 
    References: <optional>
+
+The fields between ``<!--`` and ``-->`` are not displayed in the
+notebook; they are used by the search and filters on the website. The
+allowed values for Domain, Model type and Level are in
+`docs/finder-values.json <https://github.com/ampl/colab.ampl.com/blob/master/docs/finder-values.json>`__;
+check your notebook with ``python scripts/check_headers.py``.
 
 3. Do not modify the initial two cells that take care of setup and
    jupyter notebook integration to do anything other than installing

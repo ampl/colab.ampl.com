@@ -5,14 +5,16 @@
  * scripts/index.py. The static list stays the source of the markup; this script
  * only hides, shows and reorders its entries using the metadata in
  * _static/notebooks.json (written by docs/source/conf.py from the notebook
- * headers and docs/model-catalog.csv), or from _static/notebooks.js when the
- * page is opened from disk. Without JavaScript, or if the index
- * fails to load, the full list is shown.
+ * headers), or from _static/notebooks.js when the page is opened from disk.
+ * Without JavaScript, or if the index fails to load, the full list is shown.
  */
 (function () {
   "use strict";
 
   const SCRIPT_URL = document.currentScript ? document.currentScript.src : document.baseURI;
+  // The notebook pages sit in notebooks/, next to _static/ (links in the sidebar
+  // list work from any page's folder)
+  const notebookUrl = (page) => new URL("../notebooks/" + page, SCRIPT_URL).href;
 
   // Filter dropdowns, in display order. With mode "any", picking several values
   // matches notebooks with any of them; with mode "all", notebooks need every
@@ -34,6 +36,20 @@
     { field: "authors", label: "Authors", param: "author", icon: "user", mode: "any" },
   ];
   const MENU_SEARCH_MIN = 8; // show a search box in menus with at least this many options
+  // A notebook's page starts with these filters set to the notebook's own values
+  const INHERITED_FACETS = ["domains", "model_types"];
+  const FINDER_PARAMS = ["q", ...FACETS.map((facet) => facet.param)];
+  // The last search and filters, as URL parameters, shared by all pages until
+  // the browser is closed (sessionStorage: each new visit starts with none)
+  const STORAGE_KEY = "nb-finder:filters";
+
+  function loadSaved() {
+    try {
+      return new URLSearchParams(sessionStorage.getItem(STORAGE_KEY) || "");
+    } catch (err) {
+      return new URLSearchParams();
+    }
+  }
 
   const ICONS = {
     globe: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
@@ -187,10 +203,15 @@
   function setup(root, notebooks) {
     // "authors": filter the list of authors on the Authors page (sidebar menu only)
     const authorsMode = root.dataset.mode === "authors";
-    const sectionFor = authorsMode ? () => null : findSections(root);
+    // "browse": on a notebook's page (and Getting Started, Contribute), filter a
+    // list of links to the notebooks that replaces the section navigation
+    // (sidebar menu only)
+    const browseMode = root.dataset.mode === "browse";
+    const sideOnly = authorsMode || browseMode;
+    const sectionFor = sideOnly ? () => null : findSections(root);
     const items = notebooks
       .map((nb, order) => {
-        const item = { order, section: sectionFor(nb) };
+        const item = { order, slug: nb.slug, title: nb.title, section: sectionFor(nb) };
         for (const field of [...FACETS.map((f) => f.field), "subdomains", "subjects", "author_pages"])
           item[field] = nb[field] || [];
         const catalog = [
@@ -211,13 +232,19 @@
         };
         return item;
       })
-      .filter((item) => authorsMode || item.section);
+      .filter((item) => sideOnly || item.section);
     if (!items.length) return;
+    // Notebook pages: the notebook shown on this page
+    const currentSlug = browseMode
+      ? decodeURIComponent(window.location.pathname.split("/").pop().replace(/\.html$/, ""))
+      : null;
+    const currentItem = items.find((item) => item.slug === currentSlug) || null;
+    const isOwn = (facet, value) => Boolean(currentItem) && currentItem[facet.field].includes(value);
 
     const authorPages = new Set(items.flatMap((item) => item.author_pages));
     const authorLinks = authorsMode ? findAuthorLinks(authorPages) : [];
     if (authorsMode && !authorLinks.length) return;
-    if (!authorsMode) {
+    if (!sideOnly) {
       items.forEach(addMeta);
       // Each notebook's entry in the theme's "On this page" navigation
       for (const item of items) {
@@ -236,6 +263,8 @@
         (a, b) => counts.get(b) - counts.get(a) || a.localeCompare(b)
       );
       if (facet.order) values.sort((a, b) => rank(facet.order, a) - rank(facet.order, b));
+      // The current notebook's own values first
+      values.sort((a, b) => isOwn(facet, b) - isOwn(facet, a));
       // Values from all notebooks, so filters carried over from another page are kept
       const everywhere = new Set(notebooks.flatMap((nb) => nb[facet.field] || []));
       return { ...facet, values, known: new Set(values), everywhere, selected: new Set() };
@@ -270,6 +299,20 @@
 
     for (const facet of facets) buildDropdown(facet);
 
+    // A notebook's page opened without a search or filters in its URL starts
+    // from the notebook's own values, so the list shows related notebooks (set
+    // after building the menus, so these sections start collapsed). Until they
+    // are changed, they stay out of the URL, the saved filters and the links to
+    // other notebooks, which then start from their own values.
+    let inherited = false;
+    if (currentItem && !state.q && !facets.some((facet) => facet.selected.size)) {
+      inherited = true;
+      for (const facet of facets) {
+        if (!INHERITED_FACETS.includes(facet.field)) continue;
+        for (const value of currentItem[facet.field]) facet.selected.add(value);
+      }
+    }
+
     // The search box and filters sit in the page's left sidebar on wide screens
     // (where it stays in view while scrolling) and in the panel above the list
     // otherwise; the result count and active filters always stay above the list.
@@ -286,11 +329,37 @@
     const sidebarSlot = document.querySelector(".bd-sidebar-primary .sidebar-primary-items__start");
     const wide = window.matchMedia("(min-width: 960px)");
     let inSidebar = false;
+    if (browseMode && !sidebarSlot) return;
 
-    if (authorsMode && sidebarSlot) {
+    // Notebook pages: links to the matching notebooks under the menu, with the
+    // current one highlighted; the links carry the filters to the next page
+    const resultList = el("ul", { class: "nb-finder-side__list" });
+    const listTitle = el("p", { class: "nb-finder-side__list-title" });
+    const listPage = el("a", { class: "nb-finder-side__more", text: "Show as list" });
+    const resultsBox = el("div", { class: "nb-finder-side__results" }, [
+      el("div", { class: "nb-finder-side__list-head" }, [listTitle, listPage]),
+      resultList,
+      empty,
+    ]);
+    if (browseMode) {
+      for (const item of items) {
+        const current = item.slug === currentSlug;
+        item.link = el("a", {
+          class: "reference internal",
+          href: notebookUrl(item.slug + ".html"),
+          "aria-current": current ? "page" : false,
+          text: item.title,
+        });
+        item.li = el("li", { class: current ? "is-current" : false }, [item.link]);
+      }
+    }
+
+    if (sideOnly && sidebarSlot) {
       // Only the sidebar menu here (on small screens it lives in the theme's drawer);
       // the result count and "Clear all" sit under its title
       sideBox.appendChild(el("div", { class: "nb-finder__summary nb-finder-side__summary" }, [status, clear]));
+      // Notebook pages: the chosen filters as chips (their sections may be collapsed)
+      if (browseMode) sideBox.appendChild(activeRow);
     } else {
       root.appendChild(panel);
       root.appendChild(empty);
@@ -301,11 +370,12 @@
 
     function applyLayout() {
       closeMenu();
-      inSidebar = Boolean(sidebarSlot) && (authorsMode || wide.matches);
+      inSidebar = Boolean(sidebarSlot) && (sideOnly || wide.matches);
       controls.classList.toggle("is-sidebar", inSidebar);
       root.classList.toggle("nb-finder--sidebar", inSidebar);
       if (inSidebar) {
         sideBox.appendChild(controls);
+        if (browseMode) sideBox.appendChild(resultsBox);
         // Right after "Search the docs" (and before the section navigation, if any)
         const searchItem = [...sidebarSlot.children].find((child) =>
           child.querySelector(".search-button-field, .bd-search, form")
@@ -326,7 +396,7 @@
 
     // In the sidebar, bring the (changed) results into view when they are off screen
     function revealResults() {
-      if (!inSidebar || authorsMode) return;
+      if (!inSidebar || sideOnly) return;
       const rect = root.getBoundingClientRect();
       if (rect.top > window.innerHeight - 160 || rect.bottom < 0) {
         const smooth = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -359,9 +429,13 @@
       for (const value of facet.values) {
         const box = el("input", { type: "checkbox", class: "nb-finder__check" });
         const count = el("span", { class: "nb-finder__count" });
+        const own = isOwn(facet, value)
+          ? [el("span", { class: "nb-finder__own", text: "this notebook" })]
+          : [];
         const option = el("label", { class: "nb-finder__option" }, [
           box,
           el("span", { class: "nb-finder__option-name", text: value }),
+          ...own,
           count,
         ]);
         box.addEventListener("change", () => {
@@ -405,7 +479,8 @@
         el("div", { class: "nb-finder__menu-footer" }, [reset, done]),
       ]);
       // Sidebar sections start collapsed, except those with filters already chosen
-      facet.expanded = facet.selected.size > 0;
+      // (on notebook pages they stay collapsed: the chips show the choices)
+      facet.expanded = facet.selected.size > 0 && !browseMode;
       facet.toggle.addEventListener("click", () => {
         if (inSidebar) {
           facet.expanded = !facet.expanded;
@@ -545,10 +620,15 @@
     }
 
     function update() {
+      if (ready) inherited = false; // the user changed the search or filters
       const tokens = queryTokens();
       const results = items.filter((item) => matches(item, tokens));
       const filtered = tokens.length || facets.some((facet) => facet.selected.size);
-      const shown = authorsMode ? updateAuthors(results, filtered) : updateNotebooks(results, tokens);
+      const shown = authorsMode
+        ? updateAuthors(results, filtered)
+        : browseMode
+          ? updateLinks(results, tokens)
+          : updateNotebooks(results, tokens);
 
       renderFacets(tokens, results);
       renderActive();
@@ -584,6 +664,21 @@
       return results.length;
     }
 
+    // Notebook pages: list the matching notebooks (by relevance while searching)
+    function updateLinks(results, tokens) {
+      const ordered = tokens.length
+        ? [...results].sort((a, b) => scoreText(b, tokens) - scoreText(a, tokens) || a.order - b.order)
+        : results;
+      const query = filterParams().toString();
+      const suffix = query ? "?" + query : "";
+      for (const item of ordered)
+        item.link.setAttribute("href", notebookUrl(item.slug + ".html") + (inherited ? "" : suffix));
+      listPage.setAttribute("href", notebookUrl("index.html") + suffix);
+      listTitle.textContent = query ? "Related notebooks" : "All notebooks";
+      resultList.replaceChildren(...ordered.map((item) => item.li));
+      return results.length;
+    }
+
     // Authors page: show the authors with matching notebooks, and how many match
     function updateAuthors(results, filtered) {
       const counts = countBy(results, (item) => item.author_pages);
@@ -601,8 +696,16 @@
     }
 
     // ---- URL state ------------------------------------------------------
+    // The search and filters come from the URL (e.g. a shared link), or else
+    // from the last ones chosen on any page during this visit
     function readUrl() {
       const params = new URLSearchParams(window.location.search);
+      const fromUrl = FINDER_PARAMS.some((key) => params.has(key));
+      const source = fromUrl ? params : loadSaved();
+      readParams(source);
+    }
+
+    function readParams(params) {
       state.q = params.get("q") || "";
       for (const facet of facets) {
         for (const value of params.getAll(facet.param).flatMap((v) => v.split(","))) {
@@ -616,20 +719,36 @@
       }
     }
 
-    // The current search and filters as URL parameters (other parameters kept)
-    function filterParams() {
-      const params = new URLSearchParams(window.location.search);
-      for (const key of ["q", ...FACETS.map((facet) => facet.param)]) params.delete(key);
+    // The current search and filters added to params (their old values removed)
+    function withFilters(params) {
+      for (const key of FINDER_PARAMS) params.delete(key);
       if (state.q.trim()) params.set("q", state.q.trim());
       for (const facet of facets)
         for (const value of facet.selected) params.append(facet.param, value);
       return params;
     }
 
+    // The current search and filters as URL parameters (other parameters kept)
+    function filterParams() {
+      return withFilters(new URLSearchParams(window.location.search));
+    }
+
     function writeUrl() {
+      if (inherited) return;
       const query = filterParams().toString();
       const url = window.location.pathname + (query ? "?" + query : "") + window.location.hash;
       window.history.replaceState(null, "", url);
+      // Filters this page doesn't offer (no notebook here has their values) are kept
+      const saved = loadSaved();
+      for (const facet of facets) saved.delete(facet.param);
+      const kept = [...saved].filter(([key]) => key !== "q");
+      const params = withFilters(new URLSearchParams());
+      for (const [key, value] of kept) params.append(key, value);
+      try {
+        sessionStorage.setItem(STORAGE_KEY, params.toString());
+      } catch (err) {
+        // storage unavailable (e.g. blocked cookies): filters then last for the page only
+      }
     }
 
     // ---- Events ---------------------------------------------------------
@@ -659,6 +778,16 @@
 
     update();
     ready = true;
+    if (browseMode) scrollToCurrent(resultList);
+  }
+
+  // Scroll the list of links (it scrolls on its own, below the menu, which
+  // stays in view) so the current notebook's link is visible
+  function scrollToCurrent(list) {
+    const current = list.querySelector(".is-current");
+    if (!current) return;
+    const top = current.getBoundingClientRect().top - list.getBoundingClientRect().top;
+    if (top > list.clientHeight - 40) list.scrollTop = top - list.clientHeight / 3;
   }
 
   // With 124 notebooks, "On this page" is long: stretch the right sidebar to the

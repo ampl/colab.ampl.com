@@ -1,0 +1,43 @@
+{
+  "_about": "Allowed values for the notebook header fields used by the notebook search and filters on colab.ampl.com. Checked by scripts/check_headers.py. Add a value here only when no existing one fits.",
+  "domain": [
+    "Aviation",
+    "Construction",
+    "Economics",
+    "Energy",
+    "Finance",
+    "Healthcare",
+    "Information Technology",
+    "Manufacturing",
+    "Marketing",
+    "Mining",
+    "Network",
+    "Operations Research",
+    "Project Management",
+    "Puzzles",
+    "Retail",
+    "Sales",
+    "Sports",
+    "Supply Chain",
+    "Utilities"
+  ],
+  "model_type": {
+    "LP": "Linear program: continuous variables, linear objective and constraints",
+    "MILP": "Mixed-integer linear program: linear, with binary or integer variables (including logical constraints reformulated by MP)",
+    "Stochastic MILP": "MILP with scenarios or uncertainty (two-stage, Benders, etc.)",
+    "QP": "Quadratic objective, continuous variables, linear constraints",
+    "MIQP": "QP with binary or integer variables",
+    "Conic": "Second-order, exponential or other cone constraints",
+    "NLP": "Nonlinear objective or constraints, continuous variables",
+    "MINLP": "Nonlinear, with binary or integer variables",
+    "CP": "Constraint programming: alldiff, counting and similar combinatorial constraints solved with a CP solver",
+    "Complementarity": "Complementarity conditions (complements), e.g. economic equilibrium solved with PATH",
+    "MPEC": "Mathematical program with equilibrium constraints, e.g. bilevel models reformulated with KKT conditions"
+  },
+  "level": {
+    "Quick Start": "Setup and first steps: installing amplpy, loading data",
+    "Lecture": "Teaching material, introductions and API or feature tutorials",
+    "Case Study": "A worked optimization problem from start to finish",
+    "Industry Prototype": "A realistic business model close to industrial use"
+  }
+}

@@ -116,12 +116,15 @@ html_context = {"default_mode": "light"}
 
 # Left sidebar: no "Search the docs" box. The pages with the notebook finder
 # get an empty slot that the finder fills with its filter menu (no section
-# navigation).
+# navigation). Getting Started and Contribute (like each notebook's page) get
+# the filter menu over links to the matching notebooks.
 html_sidebars = {
     "**": ["sidebar-nav-bs"],
     "index": ["nb-finder-slot.html"],
     "notebooks/index": ["nb-finder-slot.html"],
     "authors/index": ["nb-finder-slot.html"],
+    "getting-started": ["nb-finder-browse.html"],
+    "contribute": ["nb-finder-browse.html"],
 }
 # Each author's page lists their notebooks and has the finder too (named one by
 # one: a second wildcard pattern next to "**" would be ambiguous for Sphinx)
@@ -352,6 +355,11 @@ def generate_notebook_pages(app):
     index_page += entries.getvalue() + NOTEBOOKS_TOCTREE
     for fname in fnames:
         index_page += f"    {fname}\n"
+        # The notebook's page has the finder in its sidebar, over links to the
+        # notebooks (set here, as the pages are only generated at build time)
+        app.config.html_sidebars[f"notebooks/{fname[:-len('.ipynb')]}"] = [
+            "nb-finder-browse.html"
+        ]
     with open(os.path.join(dest_dir, "index.rst"), "w", encoding="utf-8") as f:
         f.write(index_page)
     open(os.path.join(dest_dir, ".gitignore"), "w").write("*\n!.gitignore\n")
@@ -362,17 +370,12 @@ def write_search_index(app, exception):
     # notebooks.json feeds the notebook finder on the home page
     if exception or app.builder.format != "html":
         return
-    repo_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-    catalog = colab_utils.load_model_catalog(
-        os.path.join(repo_dir, colab_utils.MODEL_CATALOG)
-    )
     static_dir = os.path.join(app.outdir, "_static")
     os.makedirs(static_dir, exist_ok=True)
     json_path = os.path.join(static_dir, "notebooks.json")
     colab_utils.write_search_index(
         getattr(app, "colab_notebooks", []),
         json_path,
-        catalog,
     )
     # Same index as a script, for pages opened from disk (file://), where
     # browsers block fetch() of notebooks.json
