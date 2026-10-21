@@ -35,6 +35,17 @@
   const MENU_SEARCH_MIN = 8; // show a search box in menus with at least this many options
   // A notebook's page starts with these filters set to the notebook's own values
   const INHERITED_FACETS = ["domains", "model_types"];
+  const FINDER_PARAMS = ["q", ...FACETS.map((facet) => facet.param)];
+  // The last search and filters, as URL parameters, shared by all pages and visits
+  const STORAGE_KEY = "nb-finder:filters";
+
+  function loadSaved() {
+    try {
+      return new URLSearchParams(localStorage.getItem(STORAGE_KEY) || "");
+    } catch (err) {
+      return new URLSearchParams();
+    }
+  }
 
   const ICONS = {
     globe: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
@@ -286,8 +297,8 @@
     // A notebook's page opened without a search or filters in its URL starts
     // from the notebook's own values, so the list shows related notebooks (set
     // after building the menus, so these sections start collapsed). Until they
-    // are changed, they stay out of the URL and the links to other notebooks,
-    // which then start from their own values.
+    // are changed, they stay out of the URL, the saved filters and the links to
+    // other notebooks, which then start from their own values.
     let inherited = false;
     if (currentItem && !state.q && !facets.some((facet) => facet.selected.size)) {
       inherited = true;
@@ -463,7 +474,8 @@
         el("div", { class: "nb-finder__menu-footer" }, [reset, done]),
       ]);
       // Sidebar sections start collapsed, except those with filters already chosen
-      facet.expanded = facet.selected.size > 0;
+      // (on notebook pages they stay collapsed: the chips show the choices)
+      facet.expanded = facet.selected.size > 0 && !browseMode;
       facet.toggle.addEventListener("click", () => {
         if (inSidebar) {
           facet.expanded = !facet.expanded;
@@ -679,8 +691,16 @@
     }
 
     // ---- URL state ------------------------------------------------------
+    // The search and filters come from the URL (e.g. a shared link), or else
+    // from the last ones chosen on any page, kept in the browser
     function readUrl() {
       const params = new URLSearchParams(window.location.search);
+      const fromUrl = FINDER_PARAMS.some((key) => params.has(key));
+      const source = fromUrl ? params : loadSaved();
+      readParams(source);
+    }
+
+    function readParams(params) {
       state.q = params.get("q") || "";
       for (const facet of facets) {
         for (const value of params.getAll(facet.param).flatMap((v) => v.split(","))) {
@@ -694,14 +714,18 @@
       }
     }
 
-    // The current search and filters as URL parameters (other parameters kept)
-    function filterParams() {
-      const params = new URLSearchParams(window.location.search);
-      for (const key of ["q", ...FACETS.map((facet) => facet.param)]) params.delete(key);
+    // The current search and filters added to params (their old values removed)
+    function withFilters(params) {
+      for (const key of FINDER_PARAMS) params.delete(key);
       if (state.q.trim()) params.set("q", state.q.trim());
       for (const facet of facets)
         for (const value of facet.selected) params.append(facet.param, value);
       return params;
+    }
+
+    // The current search and filters as URL parameters (other parameters kept)
+    function filterParams() {
+      return withFilters(new URLSearchParams(window.location.search));
     }
 
     function writeUrl() {
@@ -709,6 +733,17 @@
       const query = filterParams().toString();
       const url = window.location.pathname + (query ? "?" + query : "") + window.location.hash;
       window.history.replaceState(null, "", url);
+      // Filters this page doesn't offer (no notebook here has their values) are kept
+      const saved = loadSaved();
+      for (const facet of facets) saved.delete(facet.param);
+      const kept = [...saved].filter(([key]) => key !== "q");
+      const params = withFilters(new URLSearchParams());
+      for (const [key, value] of kept) params.append(key, value);
+      try {
+        localStorage.setItem(STORAGE_KEY, params.toString());
+      } catch (err) {
+        // storage unavailable (e.g. blocked cookies): filters then last for the page only
+      }
     }
 
     // ---- Events ---------------------------------------------------------
