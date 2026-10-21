@@ -36,12 +36,13 @@
   // A notebook's page starts with these filters set to the notebook's own values
   const INHERITED_FACETS = ["domains", "model_types"];
   const FINDER_PARAMS = ["q", ...FACETS.map((facet) => facet.param)];
-  // The last search and filters, as URL parameters, shared by all pages and visits
+  // The last search and filters, as URL parameters, shared by all pages until
+  // the browser is closed (sessionStorage: each new visit starts with none)
   const STORAGE_KEY = "nb-finder:filters";
 
   function loadSaved() {
     try {
-      return new URLSearchParams(localStorage.getItem(STORAGE_KEY) || "");
+      return new URLSearchParams(sessionStorage.getItem(STORAGE_KEY) || "");
     } catch (err) {
       return new URLSearchParams();
     }
@@ -692,7 +693,7 @@
 
     // ---- URL state ------------------------------------------------------
     // The search and filters come from the URL (e.g. a shared link), or else
-    // from the last ones chosen on any page, kept in the browser
+    // from the last ones chosen on any page during this visit
     function readUrl() {
       const params = new URLSearchParams(window.location.search);
       const fromUrl = FINDER_PARAMS.some((key) => params.has(key));
@@ -740,7 +741,7 @@
       const params = withFilters(new URLSearchParams());
       for (const [key, value] of kept) params.append(key, value);
       try {
-        localStorage.setItem(STORAGE_KEY, params.toString());
+        sessionStorage.setItem(STORAGE_KEY, params.toString());
       } catch (err) {
         // storage unavailable (e.g. blocked cookies): filters then last for the page only
       }
