@@ -12,6 +12,9 @@
   "use strict";
 
   const SCRIPT_URL = document.currentScript ? document.currentScript.src : document.baseURI;
+  // The notebook pages sit in notebooks/, next to _static/ (links in the sidebar
+  // list work from any page's folder)
+  const notebookUrl = (page) => new URL("../notebooks/" + page, SCRIPT_URL).href;
 
   // Filter dropdowns, in display order. With mode "any", picking several values
   // matches notebooks with any of them; with mode "all", notebooks need every
@@ -200,8 +203,9 @@
   function setup(root, notebooks) {
     // "authors": filter the list of authors on the Authors page (sidebar menu only)
     const authorsMode = root.dataset.mode === "authors";
-    // "browse": on a notebook's page, filter a list of links to the notebooks
-    // that replaces the section navigation (sidebar menu only)
+    // "browse": on a notebook's page (and Getting Started, Contribute), filter a
+    // list of links to the notebooks that replaces the section navigation
+    // (sidebar menu only)
     const browseMode = root.dataset.mode === "browse";
     const sideOnly = authorsMode || browseMode;
     const sectionFor = sideOnly ? () => null : findSections(root);
@@ -342,7 +346,7 @@
         const current = item.slug === currentSlug;
         item.link = el("a", {
           class: "reference internal",
-          href: item.slug + ".html",
+          href: notebookUrl(item.slug + ".html"),
           "aria-current": current ? "page" : false,
           text: item.title,
         });
@@ -668,8 +672,8 @@
       const query = filterParams().toString();
       const suffix = query ? "?" + query : "";
       for (const item of ordered)
-        item.link.setAttribute("href", item.slug + ".html" + (inherited ? "" : suffix));
-      listPage.setAttribute("href", "index.html" + suffix);
+        item.link.setAttribute("href", notebookUrl(item.slug + ".html") + (inherited ? "" : suffix));
+      listPage.setAttribute("href", notebookUrl("index.html") + suffix);
       listTitle.textContent = query ? "Related notebooks" : "All notebooks";
       resultList.replaceChildren(...ordered.map((item) => item.li));
       return results.length;

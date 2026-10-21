@@ -116,12 +116,15 @@ html_context = {"default_mode": "light"}
 
 # Left sidebar: no "Search the docs" box. The pages with the notebook finder
 # get an empty slot that the finder fills with its filter menu (no section
-# navigation).
+# navigation). Getting Started and Contribute (like each notebook's page) get
+# the filter menu over links to the matching notebooks.
 html_sidebars = {
     "**": ["sidebar-nav-bs"],
     "index": ["nb-finder-slot.html"],
     "notebooks/index": ["nb-finder-slot.html"],
     "authors/index": ["nb-finder-slot.html"],
+    "getting-started": ["nb-finder-browse.html"],
+    "contribute": ["nb-finder-browse.html"],
 }
 # Each author's page lists their notebooks and has the finder too (named one by
 # one: a second wildcard pattern next to "**" would be ambiguous for Sphinx)
