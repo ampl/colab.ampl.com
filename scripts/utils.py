@@ -65,7 +65,8 @@ def read_header(base_dir, fname):
     return info
 
 
-def discover_notebooks(base_dir="."):
+def notebook_files(base_dir="."):
+    """Paths of the notebooks listed on the website."""
     base_dir = os.path.abspath(base_dir)
     lst = [
         os.path.join(dirpath, fname).replace("\\", "/")[len(base_dir) + 1 :]
@@ -77,12 +78,20 @@ def discover_notebooks(base_dir="."):
     ]
     lst = [fname for fname in lst if "site-packages" not in fname]
 
-    notebooks = []
+    fnames = []
     for fname in sorted(lst):
         fname = os.path.join(base_dir, fname)
         if "/tmp/" in fname or fname.endswith("template/minimal.ipynb"):
             print(f"Skipping {fname}.")
             continue
+        fnames.append(fname)
+    return fnames
+
+
+def discover_notebooks(base_dir="."):
+    base_dir = os.path.abspath(base_dir)
+    notebooks = []
+    for fname in notebook_files(base_dir):
         print(f"Processing: {fname}")
         info = read_header(base_dir, fname)
         title = info["title"]

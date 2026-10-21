@@ -3,6 +3,15 @@ name: Discover and Test Notebooks
 on: [push]
 
 jobs:
+  check-headers:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Check notebook headers (search and filter fields)
+      run: python scripts/check_headers.py
+
   discover-notebooks:
     runs-on: ubuntu-latest
     outputs:

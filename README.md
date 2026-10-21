@@ -33,7 +33,9 @@ References: <optional>
 ```
 
 The fields between `<!--` and `-->` are not displayed in the notebook; they are used by the
-search and filters on https://colab.ampl.com.
+search and filters on https://colab.ampl.com. The allowed values for Domain, Model type and Level
+are in [docs/finder-values.json](https://github.com/ampl/colab.ampl.com/blob/master/docs/finder-values.json);
+check your notebook with `python scripts/check_headers.py`.
 
 3. Do not modify the initial two cells that take care of setup and jupyter notebook integration
 to do anything other than installing packages and instantiating the ampl_notebook. You can modify
