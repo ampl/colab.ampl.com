@@ -352,6 +352,11 @@ def generate_notebook_pages(app):
     index_page += entries.getvalue() + NOTEBOOKS_TOCTREE
     for fname in fnames:
         index_page += f"    {fname}\n"
+        # The notebook's page has the finder in its sidebar, over links to the
+        # notebooks (set here, as the pages are only generated at build time)
+        app.config.html_sidebars[f"notebooks/{fname[:-len('.ipynb')]}"] = [
+            "nb-finder-browse.html"
+        ]
     with open(os.path.join(dest_dir, "index.rst"), "w", encoding="utf-8") as f:
         f.write(index_page)
     open(os.path.join(dest_dir, ".gitignore"), "w").write("*\n!.gitignore\n")

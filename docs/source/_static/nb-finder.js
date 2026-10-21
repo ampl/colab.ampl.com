@@ -186,10 +186,14 @@
   function setup(root, notebooks) {
     // "authors": filter the list of authors on the Authors page (sidebar menu only)
     const authorsMode = root.dataset.mode === "authors";
-    const sectionFor = authorsMode ? () => null : findSections(root);
+    // "browse": on a notebook's page, filter a list of links to the notebooks
+    // that replaces the section navigation (sidebar menu only)
+    const browseMode = root.dataset.mode === "browse";
+    const sideOnly = authorsMode || browseMode;
+    const sectionFor = sideOnly ? () => null : findSections(root);
     const items = notebooks
       .map((nb, order) => {
-        const item = { order, section: sectionFor(nb) };
+        const item = { order, slug: nb.slug, title: nb.title, section: sectionFor(nb) };
         for (const field of [...FACETS.map((f) => f.field), "subdomains", "subjects", "author_pages"])
           item[field] = nb[field] || [];
         const catalog = [
@@ -210,13 +214,13 @@
         };
         return item;
       })
-      .filter((item) => authorsMode || item.section);
+      .filter((item) => sideOnly || item.section);
     if (!items.length) return;
 
     const authorPages = new Set(items.flatMap((item) => item.author_pages));
     const authorLinks = authorsMode ? findAuthorLinks(authorPages) : [];
     if (authorsMode && !authorLinks.length) return;
-    if (!authorsMode) {
+    if (!sideOnly) {
       items.forEach(addMeta);
       // Each notebook's entry in the theme's "On this page" navigation
       for (const item of items) {
@@ -285,8 +289,30 @@
     const sidebarSlot = document.querySelector(".bd-sidebar-primary .sidebar-primary-items__start");
     const wide = window.matchMedia("(min-width: 960px)");
     let inSidebar = false;
+    if (browseMode && !sidebarSlot) return;
 
-    if (authorsMode && sidebarSlot) {
+    // Notebook pages: links to the matching notebooks under the menu, with the
+    // current one highlighted; the links carry the filters to the next page
+    const currentSlug = decodeURIComponent(
+      window.location.pathname.split("/").pop().replace(/\.html$/, "")
+    );
+    const resultList = el("ul", { class: "nb-finder-side__list" });
+    const listPage = el("a", { class: "nb-finder-side__more", text: "Show on the Notebooks page" });
+    const resultsBox = el("div", { class: "nb-finder-side__results" }, [listPage, resultList, empty]);
+    if (browseMode) {
+      for (const item of items) {
+        const current = item.slug === currentSlug;
+        item.link = el("a", {
+          class: "reference internal",
+          href: item.slug + ".html",
+          "aria-current": current ? "page" : false,
+          text: item.title,
+        });
+        item.li = el("li", { class: current ? "is-current" : false }, [item.link]);
+      }
+    }
+
+    if (sideOnly && sidebarSlot) {
       // Only the sidebar menu here (on small screens it lives in the theme's drawer);
       // the result count and "Clear all" sit under its title
       sideBox.appendChild(el("div", { class: "nb-finder__summary nb-finder-side__summary" }, [status, clear]));
@@ -300,11 +326,12 @@
 
     function applyLayout() {
       closeMenu();
-      inSidebar = Boolean(sidebarSlot) && (authorsMode || wide.matches);
+      inSidebar = Boolean(sidebarSlot) && (sideOnly || wide.matches);
       controls.classList.toggle("is-sidebar", inSidebar);
       root.classList.toggle("nb-finder--sidebar", inSidebar);
       if (inSidebar) {
         sideBox.appendChild(controls);
+        if (browseMode) sideBox.appendChild(resultsBox);
         // Right after "Search the docs" (and before the section navigation, if any)
         const searchItem = [...sidebarSlot.children].find((child) =>
           child.querySelector(".search-button-field, .bd-search, form")
@@ -325,7 +352,7 @@
 
     // In the sidebar, bring the (changed) results into view when they are off screen
     function revealResults() {
-      if (!inSidebar || authorsMode) return;
+      if (!inSidebar || sideOnly) return;
       const rect = root.getBoundingClientRect();
       if (rect.top > window.innerHeight - 160 || rect.bottom < 0) {
         const smooth = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -547,7 +574,11 @@
       const tokens = queryTokens();
       const results = items.filter((item) => matches(item, tokens));
       const filtered = tokens.length || facets.some((facet) => facet.selected.size);
-      const shown = authorsMode ? updateAuthors(results, filtered) : updateNotebooks(results, tokens);
+      const shown = authorsMode
+        ? updateAuthors(results, filtered)
+        : browseMode
+          ? updateLinks(results, tokens)
+          : updateNotebooks(results, tokens);
 
       renderFacets(tokens, results);
       renderActive();
@@ -580,6 +611,19 @@
         // Keep "On this page" in the same order as the list
         item.tocEntry?.parentElement.appendChild(item.tocEntry);
       }
+      return results.length;
+    }
+
+    // Notebook pages: list the matching notebooks (by relevance while searching)
+    function updateLinks(results, tokens) {
+      const ordered = tokens.length
+        ? [...results].sort((a, b) => scoreText(b, tokens) - scoreText(a, tokens) || a.order - b.order)
+        : results;
+      const query = filterParams().toString();
+      const suffix = query ? "?" + query : "";
+      for (const item of ordered) item.link.setAttribute("href", item.slug + ".html" + suffix);
+      listPage.setAttribute("href", "index.html" + suffix);
+      resultList.replaceChildren(...ordered.map((item) => item.li));
       return results.length;
     }
 
@@ -658,6 +702,16 @@
 
     update();
     ready = true;
+    if (browseMode) scrollToCurrent(resultList);
+  }
+
+  // Scroll the list of links (it scrolls on its own, below the menu, which
+  // stays in view) so the current notebook's link is visible
+  function scrollToCurrent(list) {
+    const current = list.querySelector(".is-current");
+    if (!current) return;
+    const top = current.getBoundingClientRect().top - list.getBoundingClientRect().top;
+    if (top > list.clientHeight - 40) list.scrollTop = top - list.clientHeight / 3;
   }
 
   // With 124 notebooks, "On this page" is long: stretch the right sidebar to the
