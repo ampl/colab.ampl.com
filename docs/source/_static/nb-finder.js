@@ -33,6 +33,8 @@
     { field: "authors", label: "Authors", param: "author", icon: "user", mode: "any" },
   ];
   const MENU_SEARCH_MIN = 8; // show a search box in menus with at least this many options
+  // A notebook's page starts with these filters set to the notebook's own values
+  const INHERITED_FACETS = ["domains", "model_types"];
 
   const ICONS = {
     globe: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',
@@ -216,6 +218,12 @@
       })
       .filter((item) => sideOnly || item.section);
     if (!items.length) return;
+    // Notebook pages: the notebook shown on this page
+    const currentSlug = browseMode
+      ? decodeURIComponent(window.location.pathname.split("/").pop().replace(/\.html$/, ""))
+      : null;
+    const currentItem = items.find((item) => item.slug === currentSlug) || null;
+    const isOwn = (facet, value) => Boolean(currentItem) && currentItem[facet.field].includes(value);
 
     const authorPages = new Set(items.flatMap((item) => item.author_pages));
     const authorLinks = authorsMode ? findAuthorLinks(authorPages) : [];
@@ -239,6 +247,8 @@
         (a, b) => counts.get(b) - counts.get(a) || a.localeCompare(b)
       );
       if (facet.order) values.sort((a, b) => rank(facet.order, a) - rank(facet.order, b));
+      // The current notebook's own values first
+      values.sort((a, b) => isOwn(facet, b) - isOwn(facet, a));
       // Values from all notebooks, so filters carried over from another page are kept
       const everywhere = new Set(notebooks.flatMap((nb) => nb[facet.field] || []));
       return { ...facet, values, known: new Set(values), everywhere, selected: new Set() };
@@ -273,6 +283,20 @@
 
     for (const facet of facets) buildDropdown(facet);
 
+    // A notebook's page opened without a search or filters in its URL starts
+    // from the notebook's own values, so the list shows related notebooks (set
+    // after building the menus, so these sections start collapsed). Until they
+    // are changed, they stay out of the URL and the links to other notebooks,
+    // which then start from their own values.
+    let inherited = false;
+    if (currentItem && !state.q && !facets.some((facet) => facet.selected.size)) {
+      inherited = true;
+      for (const facet of facets) {
+        if (!INHERITED_FACETS.includes(facet.field)) continue;
+        for (const value of currentItem[facet.field]) facet.selected.add(value);
+      }
+    }
+
     // The search box and filters sit in the page's left sidebar on wide screens
     // (where it stays in view while scrolling) and in the panel above the list
     // otherwise; the result count and active filters always stay above the list.
@@ -293,12 +317,14 @@
 
     // Notebook pages: links to the matching notebooks under the menu, with the
     // current one highlighted; the links carry the filters to the next page
-    const currentSlug = decodeURIComponent(
-      window.location.pathname.split("/").pop().replace(/\.html$/, "")
-    );
     const resultList = el("ul", { class: "nb-finder-side__list" });
-    const listPage = el("a", { class: "nb-finder-side__more", text: "Show on the Notebooks page" });
-    const resultsBox = el("div", { class: "nb-finder-side__results" }, [listPage, resultList, empty]);
+    const listTitle = el("p", { class: "nb-finder-side__list-title" });
+    const listPage = el("a", { class: "nb-finder-side__more", text: "Show as list" });
+    const resultsBox = el("div", { class: "nb-finder-side__results" }, [
+      el("div", { class: "nb-finder-side__list-head" }, [listTitle, listPage]),
+      resultList,
+      empty,
+    ]);
     if (browseMode) {
       for (const item of items) {
         const current = item.slug === currentSlug;
@@ -316,6 +342,8 @@
       // Only the sidebar menu here (on small screens it lives in the theme's drawer);
       // the result count and "Clear all" sit under its title
       sideBox.appendChild(el("div", { class: "nb-finder__summary nb-finder-side__summary" }, [status, clear]));
+      // Notebook pages: the chosen filters as chips (their sections may be collapsed)
+      if (browseMode) sideBox.appendChild(activeRow);
     } else {
       root.appendChild(panel);
       root.appendChild(empty);
@@ -385,9 +413,13 @@
       for (const value of facet.values) {
         const box = el("input", { type: "checkbox", class: "nb-finder__check" });
         const count = el("span", { class: "nb-finder__count" });
+        const own = isOwn(facet, value)
+          ? [el("span", { class: "nb-finder__own", text: "this notebook" })]
+          : [];
         const option = el("label", { class: "nb-finder__option" }, [
           box,
           el("span", { class: "nb-finder__option-name", text: value }),
+          ...own,
           count,
         ]);
         box.addEventListener("change", () => {
@@ -571,6 +603,7 @@
     }
 
     function update() {
+      if (ready) inherited = false; // the user changed the search or filters
       const tokens = queryTokens();
       const results = items.filter((item) => matches(item, tokens));
       const filtered = tokens.length || facets.some((facet) => facet.selected.size);
@@ -621,8 +654,10 @@
         : results;
       const query = filterParams().toString();
       const suffix = query ? "?" + query : "";
-      for (const item of ordered) item.link.setAttribute("href", item.slug + ".html" + suffix);
+      for (const item of ordered)
+        item.link.setAttribute("href", item.slug + ".html" + (inherited ? "" : suffix));
       listPage.setAttribute("href", "index.html" + suffix);
+      listTitle.textContent = query ? "Related notebooks" : "All notebooks";
       resultList.replaceChildren(...ordered.map((item) => item.li));
       return results.length;
     }
@@ -670,6 +705,7 @@
     }
 
     function writeUrl() {
+      if (inherited) return;
       const query = filterParams().toString();
       const url = window.location.pathname + (query ? "?" + query : "") + window.location.hash;
       window.history.replaceState(null, "", url);

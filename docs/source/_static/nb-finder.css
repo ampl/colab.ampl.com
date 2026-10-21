@@ -598,10 +598,40 @@
   margin-top: 1rem;
 }
 
-.nb-finder-side__more {
-  display: inline-block;
+.nb-finder-side .nb-finder__active {
+  margin: 0 0 0.75rem;
+}
+
+.nb-finder-side__list-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
   margin: 0 0 0.5rem;
-  font-size: 0.85rem;
+}
+
+.nb-finder-side__list-title {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--nbf-muted);
+}
+
+.nb-finder-side__more {
+  font-size: 0.82rem;
+}
+
+/* Notebook pages: the options of the notebook shown on the page */
+.nb-finder__own {
+  flex: none;
+  padding: 0 0.4rem;
+  font-size: 0.68rem;
+  line-height: 1.3rem;
+  color: var(--nbf-primary);
+  border: 1px solid currentColor;
+  border-radius: 999px;
 }
 
 .nb-finder-side__list {
