@@ -58,6 +58,7 @@ Notebooks grouped by modules
     gokestrel
     gurobi
     highs
+    ipopt
     knitro
     mosek
     mp2nl
