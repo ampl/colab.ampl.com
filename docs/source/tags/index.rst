@@ -7,13 +7,14 @@ Tags
 
     advertisement (2 notebooks) <advertisement>
     aircrew-scheduling (1 notebook) <aircrew-scheduling>
+    alternative-solutions (1 notebook) <alternative-solutions>
     ampl (23 notebooks) <ampl>
     ampl-book (11 notebooks) <ampl-book>
     ampl-conditonal-instantiation (1 notebook) <ampl-conditonal-instantiation>
     ampl-lecture (7 notebooks) <ampl-lecture>
     ampl-only (16 notebooks) <ampl-only>
     amplpower (1 notebook) <amplpower>
-    amplpy (81 notebooks) <amplpy>
+    amplpy (82 notebooks) <amplpy>
     amplpyfinance (1 notebook) <amplpyfinance>
     ampls (1 notebook) <ampls>
     amplxl (1 notebook) <amplxl>
@@ -78,7 +79,7 @@ Tags
     electric-grid (1 notebook) <electric-grid>
     electric-power-industry (18 notebooks) <electric-power-industry>
     employee-scheduling (1 notebook) <employee-scheduling>
-    energy (10 notebooks) <energy>
+    energy (11 notebooks) <energy>
     engineering (2 notebooks) <engineering>
     error-handler (1 notebook) <error-handler>
     example (7 notebooks) <example>
@@ -104,10 +105,10 @@ Tags
     google-sheets (2 notebooks) <google-sheets>
     graphs (4 notebooks) <graphs>
     gui (2 notebooks) <gui>
-    gurobi (18 notebooks) <gurobi>
+    gurobi (19 notebooks) <gurobi>
     heuristics (3 notebooks) <heuristics>
     highlights (18 notebooks) <highlights>
-    highs (13 notebooks) <highs>
+    highs (14 notebooks) <highs>
     hydrogen (1 notebook) <hydrogen>
     hydropower (1 notebook) <hydropower>
     iis (1 notebook) <iis>
@@ -138,8 +139,9 @@ Tags
     max-flow (1 notebook) <max-flow>
     mean-variance (2 notebooks) <mean-variance>
     medicine (1 notebook) <medicine>
+    mga (1 notebook) <mga>
     military (1 notebook) <military>
-    milp (4 notebooks) <milp>
+    milp (5 notebooks) <milp>
     minelib (1 notebook) <minelib>
     minimum-cost-flow (1 notebook) <minimum-cost-flow>
     mining (1 notebook) <mining>
@@ -147,10 +149,10 @@ Tags
     mip (31 notebooks) <mip>
     mixed-integer-linear (5 notebooks) <mixed-integer-linear>
     modeling-tips (5 notebooks) <modeling-tips>
-    mp (22 notebooks) <mp>
+    mp (23 notebooks) <mp>
     mp2nl (5 notebooks) <mp2nl>
     mpec (1 notebook) <mpec>
-    multi-objective (6 notebooks) <multi-objective>
+    multi-objective (7 notebooks) <multi-objective>
     multi-objective-options (1 notebook) <multi-objective-options>
     multi-period-planning (1 notebook) <multi-period-planning>
     multiprocess (1 notebook) <multiprocess>
@@ -225,7 +227,7 @@ Tags
     snapshot (1 notebook) <snapshot>
     softplus (1 notebook) <softplus>
     solution-check (2 notebooks) <solution-check>
-    solution-pool (1 notebook) <solution-pool>
+    solution-pool (2 notebooks) <solution-pool>
     solver-options (1 notebook) <solver-options>
     sports (1 notebook) <sports>
     spreadsheet (2 notebooks) <spreadsheet>
@@ -236,7 +238,7 @@ Tags
     stochastic-optimization (1 notebook) <stochastic-optimization>
     stochastic-programming (1 notebook) <stochastic-programming>
     strict-comparison (1 notebook) <strict-comparison>
-    suffixes (1 notebook) <suffixes>
+    suffixes (2 notebooks) <suffixes>
     supply_chain (2 notebooks) <supply_chain>
     task-scheduling (1 notebook) <task-scheduling>
     telecom (1 notebook) <telecom>
@@ -249,7 +251,7 @@ Tags
     tuning (2 notebooks) <tuning>
     tutorials (3 notebooks) <tutorials>
     unconstrained (1 notebook) <unconstrained>
-    unit-commitment (6 notebooks) <unit-commitment>
+    unit-commitment (7 notebooks) <unit-commitment>
     unit-commitment-problem (1 notebook) <unit-commitment-problem>
     vector-packing (1 notebook) <vector-packing>
     vrp (1 notebook) <vrp>
