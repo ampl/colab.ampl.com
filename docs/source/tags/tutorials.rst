@@ -8,7 +8,7 @@ Diagnose infeasibility
 | `Notebooks <../notebooks/index.html>`_ > `Diagnose infeasibility <../notebooks/diagnose-infeasibility.html>`_
 | |github-diagnose-infeasibility| |colab-diagnose-infeasibility| |deepnote-diagnose-infeasibility| |kaggle-diagnose-infeasibility| |gradient-diagnose-infeasibility| |sagemaker-diagnose-infeasibility|
 | Description: This notebook demonstrates how to deal with infeasible models.
-| Tags: :ref:`tag-tutorials`, :ref:`tag-infeasibility`, :ref:`tag-mp`
+| Tags: :ref:`tag-tutorials`, :ref:`tag-infeasibility`, :ref:`tag-iis`, :ref:`tag-mp`
 | Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
 
 .. |github-diagnose-infeasibility|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

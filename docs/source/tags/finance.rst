@@ -76,7 +76,7 @@ Efficient Frontier with Google Sheets
 | `Notebooks <../notebooks/index.html>`_ > `Efficient Frontier with Google Sheets <../notebooks/efficient-frontier-with-google-sheets.html>`_
 | |github-efficient-frontier-with-google-sheets| |colab-efficient-frontier-with-google-sheets|
 | Description: Efficient Frontier example using Google Sheets
-| Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-finance`
+| Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-finance`, :ref:`tag-multi-objective`, :ref:`tag-pareto-front`
 | Author: :ref:`email-ccv_at_ampl.com` <ccv@ampl.com>
 
 .. |github-efficient-frontier-with-google-sheets|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github

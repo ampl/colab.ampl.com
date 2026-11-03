@@ -112,7 +112,7 @@ Tags
     highs (16 notebooks) <highs>
     hydrogen (1 notebook) <hydrogen>
     hydropower (1 notebook) <hydropower>
-    iis (1 notebook) <iis>
+    iis (2 notebooks) <iis>
     indexing (1 notebook) <indexing>
     industry (9 notebooks) <industry>
     infeasibility (4 notebooks) <infeasibility>
@@ -153,7 +153,7 @@ Tags
     mp (25 notebooks) <mp>
     mp2nl (5 notebooks) <mp2nl>
     mpec (1 notebook) <mpec>
-    multi-objective (8 notebooks) <multi-objective>
+    multi-objective (9 notebooks) <multi-objective>
     multi-objective-options (1 notebook) <multi-objective-options>
     multi-period-planning (1 notebook) <multi-period-planning>
     multiprocess (1 notebook) <multiprocess>
@@ -175,7 +175,7 @@ Tags
     pandas (1 notebook) <pandas>
     parallel-computing (1 notebook) <parallel-computing>
     parallel-solves (1 notebook) <parallel-solves>
-    pareto-front (1 notebook) <pareto-front>
+    pareto-front (2 notebooks) <pareto-front>
     path (1 notebook) <path>
     payment-schemes (1 notebook) <payment-schemes>
     perspective (1 notebook) <perspective>
