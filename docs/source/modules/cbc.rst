@@ -1,6 +1,6 @@
 .. _module-cbc:
 
-cbc (14 notebooks)
+cbc (30 notebooks)
 ==================
 
 AMPL Bin Packing Problem with GCG
@@ -104,6 +104,330 @@ Balanced Task Assignment with Inverse Cost Scaling
     
 
 
+Book Example: Economic equilibria
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Book Example: Economic equilibria <../notebooks/book-example-economic-equilibria.html>`_
+| |github-book-example-economic-equilibria| |colab-book-example-economic-equilibria| |deepnote-book-example-economic-equilibria| |kaggle-book-example-economic-equilibria| |gradient-book-example-economic-equilibria| |sagemaker-book-example-economic-equilibria|
+| Description: economic model using complementarity conditions from Chapter 19 AMPL book
+| Tags: :ref:`tag-ampl-book`, :ref:`tag-finance`, :ref:`tag-complementarity-problem`, :ref:`tag-cbc`, :ref:`tag-gurobi`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-book-example-economic-equilibria|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
+    :alt: economic_eq_lecture.ipynb
+    
+.. |colab-book-example-economic-equilibria| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-book-example-economic-equilibria| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-book-example-economic-equilibria| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-book-example-economic-equilibria| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-book-example-economic-equilibria| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-lecture/economic_eq_lecture.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Book Example: Transshipment problem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Book Example: Transshipment problem <../notebooks/book-example-transshipment-problem.html>`_
+| |github-book-example-transshipment-problem| |colab-book-example-transshipment-problem| |deepnote-book-example-transshipment-problem| |kaggle-book-example-transshipment-problem| |gradient-book-example-transshipment-problem| |sagemaker-book-example-transshipment-problem|
+| Description: Basic book example with general transshipment model (net1.mod)
+| Tags: :ref:`tag-ampl-book`, :ref:`tag-cbc`, :ref:`tag-transportation`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-book-example-transshipment-problem|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: net1.ipynb
+    
+.. |colab-book-example-transshipment-problem| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-book-example-transshipment-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-book-example-transshipment-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-book-example-transshipment-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-book-example-transshipment-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/net1.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Book Example: diet
+^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Book Example: diet <../notebooks/book-example-diet.html>`_
+| |github-book-example-diet| |colab-book-example-diet| |deepnote-book-example-diet| |kaggle-book-example-diet| |gradient-book-example-diet| |sagemaker-book-example-diet|
+| Description: book example autogenerated using diet.mod, diet.dat, and diet.run
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-book-example-diet|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
+    :alt: diet.ipynb
+    
+.. |colab-book-example-diet| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-book-example-diet| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-book-example-diet| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-book-example-diet| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-book-example-diet| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/diet.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Book Example: prod
+^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Book Example: prod <../notebooks/book-example-prod.html>`_
+| |github-book-example-prod| |colab-book-example-prod| |deepnote-book-example-prod| |kaggle-book-example-prod| |gradient-book-example-prod| |sagemaker-book-example-prod|
+| Description: book example autogenerated using prod.mod, prod.dat, and prod.run
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
+| Author: N/A
+
+.. |github-book-example-prod|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
+    :alt: prod.ipynb
+    
+.. |colab-book-example-prod| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-book-example-prod| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-book-example-prod| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-book-example-prod| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-book-example-prod| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/prod.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Book Example: steel
+^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Book Example: steel <../notebooks/book-example-steel.html>`_
+| |github-book-example-steel| |colab-book-example-steel| |deepnote-book-example-steel| |kaggle-book-example-steel| |gradient-book-example-steel| |sagemaker-book-example-steel|
+| Description: book example autogenerated using steel.mod, steel.dat, and steel.run
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
+| Author: N/A
+
+.. |github-book-example-steel|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
+    :alt: steel.ipynb
+    
+.. |colab-book-example-steel| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-book-example-steel| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-book-example-steel| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-book-example-steel| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-book-example-steel| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/steel.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Book Example: transp
+^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Book Example: transp <../notebooks/book-example-transp.html>`_
+| |github-book-example-transp| |colab-book-example-transp| |deepnote-book-example-transp| |kaggle-book-example-transp| |gradient-book-example-transp| |sagemaker-book-example-transp|
+| Description: book example autogenerated using transp.mod, transp.dat, and transp.run
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`
+| Author: N/A
+
+.. |github-book-example-transp|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
+    :alt: transp.ipynb
+    
+.. |colab-book-example-transp| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-book-example-transp| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-book-example-transp| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-book-example-transp| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-book-example-transp| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/transp.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Capacity expansion of power generation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Capacity expansion of power generation <../notebooks/capacity-expansion-of-power-generation.html>`_
+| |github-capacity-expansion-of-power-generation| |colab-capacity-expansion-of-power-generation| |deepnote-capacity-expansion-of-power-generation| |kaggle-capacity-expansion-of-power-generation| |gradient-capacity-expansion-of-power-generation| |sagemaker-capacity-expansion-of-power-generation|
+| Description: Models the extensive form of a deterministic multi-stage capacity expansion problem. In this model we can have multiple resources of the same type which have identical properties. The model can be further developed into a stochastic one.
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-energy`, :ref:`tag-planning`, :ref:`tag-mip`, :ref:`tag-power-generation`, :ref:`tag-electric-power-industry`
+| Author: :ref:`email-gyorgy_at_ampl.com` <gyorgy@ampl.com>
+
+.. |github-capacity-expansion-of-power-generation|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/energy/capacity_expansion.ipynb
+    :alt: capacity_expansion.ipynb
+    
+.. |colab-capacity-expansion-of-power-generation| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/energy/capacity_expansion.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-capacity-expansion-of-power-generation| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/energy/capacity_expansion.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-capacity-expansion-of-power-generation| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/gomfy/energy/capacity_expansion.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-capacity-expansion-of-power-generation| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/gomfy/energy/capacity_expansion.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-capacity-expansion-of-power-generation| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/gomfy/energy/capacity_expansion.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Diet model with Google Sheets
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Diet model with Google Sheets <../notebooks/diet-model-with-google-sheets.html>`_
+| |github-diet-model-with-google-sheets| |colab-diet-model-with-google-sheets|
+| Description: Diet model using Google Sheets
+| Tags: :ref:`tag-amplpy`, :ref:`tag-google-sheets`, :ref:`tag-example`
+| Author: :ref:`email-fdabrandao_at_gmail.com` <fdabrandao@gmail.com>
+
+.. |github-diet-model-with-google-sheets|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/fdabrandao/gspread/gspread.ipynb
+    :alt: gspread.ipynb
+    
+.. |colab-diet-model-with-google-sheets| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/fdabrandao/gspread/gspread.ipynb
+    :alt: Open In Colab
+    
+
+
+Google Hashcode 2022
+^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Google Hashcode 2022 <../notebooks/google-hashcode-2022.html>`_
+| |github-google-hashcode-2022| |colab-google-hashcode-2022| |deepnote-google-hashcode-2022| |kaggle-google-hashcode-2022| |gradient-google-hashcode-2022| |sagemaker-google-hashcode-2022|
+| Description: Google Hashcode 2022 Practice Problem
+| Tags: :ref:`tag-amplpy`, :ref:`tag-heuristics`, :ref:`tag-engineering`, :ref:`tag-scheduling`, :ref:`tag-complexity`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-google-hashcode-2022|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
+    :alt: practice_problem.ipynb
+    
+.. |colab-google-hashcode-2022| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-google-hashcode-2022| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-google-hashcode-2022| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-google-hashcode-2022| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-google-hashcode-2022| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/hashcode/practice_problem.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Magic sequences
+^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Magic sequences <../notebooks/magic-sequences.html>`_
+| |github-magic-sequences| |colab-magic-sequences| |deepnote-magic-sequences| |kaggle-magic-sequences| |gradient-magic-sequences| |sagemaker-magic-sequences|
+| Description: Solving magic sequences through reinforced formulations and constrained programming. Some comparison between models and solvers is done, and we look into the "Another solution" problem for these sequences.
+| Tags: :ref:`tag-constraint-programming`, :ref:`tag-educational`, :ref:`tag-mp`, :ref:`tag-sequences`, :ref:`tag-arithmetic`, :ref:`tag-reinforced-formulations`, :ref:`tag-highs`, :ref:`tag-gecode`, :ref:`tag-cbc`, :ref:`tag-mip`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-magic-sequences|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/magic_sequences.ipynb
+    :alt: magic_sequences.ipynb
+    
+.. |colab-magic-sequences| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/magic_sequences.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-magic-sequences| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/magic_sequences.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-magic-sequences| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/magic_sequences.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-magic-sequences| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/magic_sequences.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-magic-sequences| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/puzzles/magic_sequences.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Multi-Objective Knapsack Problem with AMPLPY
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Multi-Objective Knapsack Problem with AMPLPY <../notebooks/multi-objective-knapsack-problem-with-amplpy.html>`_
@@ -134,6 +458,74 @@ Multi-Objective Knapsack Problem with AMPLPY
     
 .. |sagemaker-multi-objective-knapsack-problem-with-amplpy| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/lentz/multiobj/knapsack.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Multicommodity transportation problem
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Multicommodity transportation problem <../notebooks/multicommodity-transportation-problem.html>`_
+| |github-multicommodity-transportation-problem| |colab-multicommodity-transportation-problem| |deepnote-multicommodity-transportation-problem| |kaggle-multicommodity-transportation-problem| |gradient-multicommodity-transportation-problem| |sagemaker-multicommodity-transportation-problem|
+| Description: Multicommodity transportation model with binary variables
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-mixed-integer-linear`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-multicommodity-transportation-problem|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
+    :alt: multmip1.ipynb
+    
+.. |colab-multicommodity-transportation-problem| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-multicommodity-transportation-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-multicommodity-transportation-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-multicommodity-transportation-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-multicommodity-transportation-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/multmip1.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Optimization Methods in Finance: Chapter 3
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Optimization Methods in Finance: Chapter 3 <../notebooks/optimization-methods-in-finance-chapter-3.html>`_
+| |github-optimization-methods-in-finance-chapter-3| |colab-optimization-methods-in-finance-chapter-3| |deepnote-optimization-methods-in-finance-chapter-3| |kaggle-optimization-methods-in-finance-chapter-3| |gradient-optimization-methods-in-finance-chapter-3| |sagemaker-optimization-methods-in-finance-chapter-3|
+| Description: Optimization Methods in Finance: Bond Dedication Problem.
+| Tags: :ref:`tag-amplpy`, :ref:`tag-example`, :ref:`tag-finance`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-optimization-methods-in-finance-chapter-3|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/finance/finance_opt_example_3_1.ipynb
+    :alt: finance_opt_example_3_1.ipynb
+    
+.. |colab-optimization-methods-in-finance-chapter-3| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/finance/finance_opt_example_3_1.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-optimization-methods-in-finance-chapter-3| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/finance/finance_opt_example_3_1.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-optimization-methods-in-finance-chapter-3| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/finance/finance_opt_example_3_1.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-optimization-methods-in-finance-chapter-3| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/finance/finance_opt_example_3_1.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-optimization-methods-in-finance-chapter-3| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/finance/finance_opt_example_3_1.ipynb
     :alt: Open In SageMaker Studio Lab
     
 
@@ -338,6 +730,40 @@ Pricing Optimization (Price Elasticity of Demand)
     
 
 
+Production model
+^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Production model <../notebooks/production-model.html>`_
+| |github-production-model| |colab-production-model| |deepnote-production-model| |kaggle-production-model| |gradient-production-model| |sagemaker-production-model|
+| Description: generic model for production problem
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-book`, :ref:`tag-industry`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-production-model|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
+    :alt: production_model.ipynb
+    
+.. |colab-production-model| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-production-model| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-production-model| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-production-model| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-production-model| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-book/production_model.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Profit Maximization for Developers: Optimizing Pricing, Marketing, and Investment Strategies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Profit Maximization for Developers: Optimizing Pricing, Marketing, and Investment Strategies <../notebooks/profit-maximization-for-developers-optimizing-pricing-marketing-and-investment-strategies.html>`_
@@ -404,6 +830,40 @@ Project management: Minimize project costs by balancing task costs, risks, and l
     
 
 
+Refinery production and shadow pricing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Refinery production and shadow pricing <../notebooks/refinery-production-and-shadow-pricing.html>`_
+| |github-refinery-production-and-shadow-pricing| |colab-refinery-production-and-shadow-pricing| |deepnote-refinery-production-and-shadow-pricing| |kaggle-refinery-production-and-shadow-pricing| |gradient-refinery-production-and-shadow-pricing| |sagemaker-refinery-production-and-shadow-pricing|
+| Description: This is a simple linear optimization problem in six variables, but with four equality constraints it allows for a graphical explanation of some unusually large shadow prices for manufacturing capacity. See other examples at [MO-BOOK: Hands-On Mathematical Optimization with AMPL in Python](https://ampl.com/mo-book/).
+| Tags: :ref:`tag-amplpy`, :ref:`tag-cbc`, :ref:`tag-finance`, :ref:`tag-refinery`, :ref:`tag-dual-values`, :ref:`tag-shadow-prices`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-refinery-production-and-shadow-pricing|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/educational/refinery-production.ipynb
+    :alt: refinery-production.ipynb
+    
+.. |colab-refinery-production-and-shadow-pricing| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/educational/refinery-production.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-refinery-production-and-shadow-pricing| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/educational/refinery-production.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-refinery-production-and-shadow-pricing| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/authors/marcos-dv/educational/refinery-production.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-refinery-production-and-shadow-pricing| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/educational/refinery-production.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-refinery-production-and-shadow-pricing| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/marcos-dv/educational/refinery-production.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
 Smart Pipeline Diagnostics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 | `Notebooks <../notebooks/index.html>`_ > `Smart Pipeline Diagnostics <../notebooks/smart-pipeline-diagnostics.html>`_
@@ -433,6 +893,74 @@ Smart Pipeline Diagnostics
     
 .. |sagemaker-smart-pipeline-diagnostics| image:: https://studiolab.sagemaker.aws/studiolab.svg
     :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/authors/mikhail/Utilities_networks/Smart_pipeline_diagnostics.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Steel industry problem
+^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Steel industry problem <../notebooks/steel-industry-problem.html>`_
+| |github-steel-industry-problem| |colab-steel-industry-problem| |deepnote-steel-industry-problem| |kaggle-steel-industry-problem| |gradient-steel-industry-problem| |sagemaker-steel-industry-problem|
+| Description: model for steel production problem
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`, :ref:`tag-industry`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-steel-industry-problem|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/steel_lecture.ipynb
+    :alt: steel_lecture.ipynb
+    
+.. |colab-steel-industry-problem| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/steel_lecture.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-steel-industry-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/steel_lecture.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-steel-industry-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/steel_lecture.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-steel-industry-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/steel_lecture.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-steel-industry-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-lecture/steel_lecture.ipynb
+    :alt: Open In SageMaker Studio Lab
+    
+
+
+Transportation problem
+^^^^^^^^^^^^^^^^^^^^^^
+| `Notebooks <../notebooks/index.html>`_ > `Transportation problem <../notebooks/transportation-problem.html>`_
+| |github-transportation-problem| |colab-transportation-problem| |deepnote-transportation-problem| |kaggle-transportation-problem| |gradient-transportation-problem| |sagemaker-transportation-problem|
+| Description: an AMPL model for the transportation problem
+| Tags: :ref:`tag-ampl-only`, :ref:`tag-ampl-lecture`
+| Author: :ref:`email-marcos_at_ampl.com` <marcos@ampl.com>
+
+.. |github-transportation-problem|  image:: https://img.shields.io/badge/github-%23121011.svg?logo=github
+    :target: https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/transp_lecture.ipynb
+    :alt: transp_lecture.ipynb
+    
+.. |colab-transportation-problem| image:: https://colab.research.google.com/assets/colab-badge.svg
+    :target: https://colab.research.google.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/transp_lecture.ipynb
+    :alt: Open In Colab
+    
+.. |deepnote-transportation-problem| image:: https://deepnote.com/buttons/launch-in-deepnote-small.svg
+    :target: https://deepnote.com/launch?url=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/transp_lecture.ipynb
+    :alt: Open In Deepnote
+    
+.. |kaggle-transportation-problem| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ampl/colab.ampl.com/blob/master/ampl-lecture/transp_lecture.ipynb
+    :alt: Open In Kaggle
+    
+.. |gradient-transportation-problem| image:: https://assets.paperspace.io/img/gradient-badge.svg
+    :target: https://console.paperspace.com/github/ampl/colab.ampl.com/blob/master/ampl-lecture/transp_lecture.ipynb
+    :alt: Open In Gradient
+    
+.. |sagemaker-transportation-problem| image:: https://studiolab.sagemaker.aws/studiolab.svg
+    :target: https://studiolab.sagemaker.aws/import/github/ampl/colab.ampl.com/blob/master/ampl-lecture/transp_lecture.ipynb
     :alt: Open In SageMaker Studio Lab
     
 

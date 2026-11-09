@@ -50,11 +50,12 @@ Notebooks grouped by modules
 
     baron
     cbc
-    coin
     copt
+    couenne
     cplex
     cuopt
     gcg
+    gecode
     gokestrel
     gurobi
     highs
@@ -62,7 +63,6 @@ Notebooks grouped by modules
     knitro
     mosek
     mp2nl
-    open
     plugins
     scip
     xpress

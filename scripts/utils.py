@@ -7,6 +7,7 @@ def parse_modules(cell):
     return [
         mod.strip(",'\" ")
         for mod in cell[cell.find("[") + 1 : cell.find("]")].split(",")
+        if mod.strip(",'\" ")
     ]
 
 
@@ -57,7 +58,6 @@ def read_header(base_dir, fname):
         assert len(source) > 0
         if source[0].startswith("# Google Colab & Kaggle integration"):
             modules = parse_modules("".join(source))
-            assert modules != []
             info["modules"] = modules
             break
     else:

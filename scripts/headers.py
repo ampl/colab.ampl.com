@@ -99,7 +99,6 @@ def update_notebook_headers():
                 modules_str = "[" + ", ".join([f'"{mod}"' for mod in modules]) + "]"
                 if "ampl" in modules:
                     modules.remove("ampl")
-                assert len(modules) >= 1
                 cells[i]["source"] = [
                     "# Google Colab & Kaggle integration\n",
                     "from amplpy import AMPL, ampl_notebook\n",
