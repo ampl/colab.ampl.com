@@ -108,8 +108,8 @@ Format and lint with ruff (`ruff.toml`, ruff version pinned in
 [requirements.txt](requirements.txt)); CI runs the check-only commands:
 
 ```
-ruff check --fix . && ruff format .          # fix
-ruff format --check --diff . && ruff check .  # check only
+python scripts/format_code.py    # fix
+python scripts/check_format.py   # check only, as in CI
 ```
 
 `python scripts/index.py` runs the fix commands on every notebook before

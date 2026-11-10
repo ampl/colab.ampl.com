@@ -26,11 +26,8 @@ jobs:
     - name: Install ruff
       run: pip install ruff==0.17.4
 
-    - name: Check formatting
-      run: ruff format --check --diff .
-
-    - name: Lint
-      run: ruff check .
+    - name: Check formatting and lint
+      run: python scripts/check_format.py
 
   discover-notebooks:
     runs-on: ubuntu-latest

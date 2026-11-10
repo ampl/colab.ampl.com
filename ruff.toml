@@ -2,8 +2,8 @@
 # Same base as the kern repo: ruff's default lint rule set plus
 # `ruff format`, with notebooks included.
 #
-# Format + fix: ruff check --fix . && ruff format .
-# Check-only:   ruff format --check --diff . && ruff check .   (used in CI)
+# Format + fix: python scripts/format_code.py
+# Check-only:   python scripts/check_format.py   (used in CI)
 
 extend-include = ["*.ipynb"]
 extend-exclude = ["venv"]
