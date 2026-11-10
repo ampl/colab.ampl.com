@@ -65,6 +65,9 @@ docs/_build/
 # PyBuilder
 target/
 
+# Ruff
+.ruff_cache/
+
 # IPython Notebook
 .ipynb_checkpoints
 

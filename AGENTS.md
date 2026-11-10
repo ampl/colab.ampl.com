@@ -104,6 +104,19 @@ It reports missing required fields, values not in
 [docs/finder-values.json](docs/finder-values.json), empty fields, repeated
 fields and fields outside the `<!-- -->` block.
 
+Format and lint with ruff (`ruff.toml`, ruff version pinned in
+[requirements.txt](requirements.txt)); CI runs the check-only commands:
+
+```
+ruff check --fix . && ruff format .          # fix
+ruff format --check --diff . && ruff check .  # check only
+```
+
+`python scripts/index.py` runs the fix commands on every notebook before
+indexing, so it needs ruff installed. Notebooks are saved in the JSON layout
+ruff writes (1-space indentation, sorted keys), by ruff and by the index
+script alike.
+
 ## Other rules
 
 - Do not change the first two code cells ("Install dependencies" and "Google

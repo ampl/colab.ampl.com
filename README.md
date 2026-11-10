@@ -43,7 +43,7 @@ the list of modules and add more dependencies, but if you do anything else the c
 
 4. Place your notebook inside `colab.ampl.com/authors/<github_username>/`.
 
-5. Format the notebook with black, `nbqa black colab.ipynb`.
+5. Format and lint the notebook with ruff (configured in `ruff.toml`), `ruff check --fix colab.ipynb` and `ruff format colab.ipynb`.
 
 6. Update the badges and the index as shown below before committing.
 

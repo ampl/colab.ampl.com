@@ -1,12 +1,28 @@
-from utils import discover_notebooks, list_badges, print_rst
-from headers import update_notebook_headers
 import glob
+import importlib.util
 import os
+import subprocess
+import sys
 
-update_notebook_headers()
+from headers import update_notebook_headers
+from utils import discover_notebooks, list_badges, notebook_files, print_rst
 
 os.chdir(os.path.dirname(__file__) or os.curdir)
 os.chdir("..")
+
+# Lint-fix and format every notebook with ruff (configured in ruff.toml)
+# before indexing. update_notebook_headers() saves the notebooks in the same
+# JSON layout as ruff (1-space indentation, sorted keys).
+if importlib.util.find_spec("ruff") is None:
+    sys.exit("ruff is not installed, run: pip install -r requirements.txt")
+for ruff_args in (["check", "--fix"], ["format"]):
+    result = subprocess.run(
+        [sys.executable, "-m", "ruff", *ruff_args, *notebook_files()], check=False
+    )
+    if result.returncode:
+        print(f"Warning: ruff {' '.join(ruff_args)} reported problems")
+
+update_notebook_headers()
 
 NOTEBOOKS = discover_notebooks()
 
@@ -63,7 +79,7 @@ the list of modules and add more dependencies, but if you do anything else the c
 
 4. Place your notebook inside `colab.ampl.com/authors/<github_username>/`.
 
-5. Format the notebook with black, `nbqa black colab.ipynb`.
+5. Format and lint the notebook with ruff (configured in `ruff.toml`), `ruff check --fix colab.ipynb` and `ruff format colab.ipynb`.
 
 6. Update the badges and the index as shown below before committing.
 
@@ -371,7 +387,7 @@ for tag, lst in sorted(nb_tagged.items()):
     tags_index += f"    {label}\n"
 print(
     tags_index,
-    file=open(f"docs/source/tags/index.rst", "w", newline="\n", encoding="utf-8"),
+    file=open("docs/source/tags/index.rst", "w", newline="\n", encoding="utf-8"),
 )
 
 for tag, lst in nb_tagged.items():
@@ -412,7 +428,7 @@ authors_index += """
 """
 print(
     authors_index,
-    file=open(f"docs/source/authors/index.rst", "w", newline="\n", encoding="utf-8"),
+    file=open("docs/source/authors/index.rst", "w", newline="\n", encoding="utf-8"),
 )
 
 # Contribute
@@ -472,7 +488,10 @@ check your notebook with ``python scripts/check_headers.py``.
 
 4. Place your notebook inside ``colab.ampl.com/authors/<github_username>/``.
 
-5. Update the badges and the index as shown below before committing.
+5. Format and lint the notebook with ruff (configured in ``ruff.toml``),
+   ``ruff check --fix colab.ipynb`` and ``ruff format colab.ipynb``.
+
+6. Update the badges and the index as shown below before committing.
 
 Note: The default license for every notebook is
 `MIT <https://github.com/ampl/colab.ampl.com/blob/master/LICENSE>`__ unless
@@ -496,7 +515,7 @@ and that the ampl_notebook is instantiated.
 """
 print(
     contribute,
-    file=open(f"docs/source/contribute.rst", "w", newline="\n", encoding="utf-8"),
+    file=open("docs/source/contribute.rst", "w", newline="\n", encoding="utf-8"),
 )
 
 # Placeholder the notebook finder fills (see docs/source/_static/nb-finder.js)
@@ -579,7 +598,7 @@ for mod in sorted(nb_uses):
     modules_index += f"    {mod}\n"
 print(
     modules_index,
-    file=open(f"docs/source/modules/index.rst", "w", newline="\n", encoding="utf-8"),
+    file=open("docs/source/modules/index.rst", "w", newline="\n", encoding="utf-8"),
 )
 
 for mod, lst in nb_uses.items():

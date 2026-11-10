@@ -53,8 +53,12 @@ def header_lines(fname):
 
 
 def check_notebook(fname, base_dir, allowed):
-    labels = [label for row, _ in header_lines(fname) for label in LABELS.values()
-              if row.startswith(label + ":")]
+    labels = [
+        label
+        for row, _ in header_lines(fname)
+        for label in LABELS.values()
+        if row.startswith(label + ":")
+    ]
     repeated = sorted({label for label in labels if labels.count(label) > 1})
     if repeated:
         return [f'"{label}:" appears more than once' for label in repeated]
@@ -74,12 +78,14 @@ def check_notebook(fname, base_dir, allowed):
             if value not in values:
                 problems.append(
                     f'{LABELS[key]} "{value}" is not allowed; use one of: '
-                    f'{", ".join(values)} (or add it to {VALUES_FILE})'
+                    f"{', '.join(values)} (or add it to {VALUES_FILE})"
                 )
     keys = tuple(label + ":" for label in LABELS.values())
     for row, inside in header_lines(fname):
         if row.startswith(keys) and not inside:
-            problems.append(f'"{row}" is outside the <!-- --> block, so it is displayed')
+            problems.append(
+                f'"{row}" is outside the <!-- --> block, so it is displayed'
+            )
     return problems
 
 

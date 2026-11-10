@@ -12,6 +12,26 @@ jobs:
     - name: Check notebook headers (search and filter fields)
       run: python scripts/check_headers.py
 
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.11
+
+    - name: Install ruff
+      run: pip install ruff==0.17.4
+
+    - name: Check formatting
+      run: ruff format --check --diff .
+
+    - name: Lint
+      run: ruff check .
+
   discover-notebooks:
     runs-on: ubuntu-latest
     outputs:
@@ -52,15 +72,10 @@ jobs:
         AMPLKEY_UUID: ${{ secrets.AMPLKEY_UUID }}
       run: |
         python -m pip install --upgrade pip
-        pip install nbval==0.11.0 pytest nbqa==1.9.1 black==25.1.0
+        pip install nbval==0.11.0 pytest
         pip install amplpy
         python -m amplpy.modules install base
         python -m amplpy.modules activate $AMPLKEY_UUID
-
-    - name: Test notebook formatting ${{ matrix.notebook }}
-      run: |
-        echo "Testing notebook formatting: ${{ matrix.notebook }}"
-        nbqa black ${{ matrix.notebook }} --check
 
     - name: Test notebook ${{ matrix.notebook }}
       run: |

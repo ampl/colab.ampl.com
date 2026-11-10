@@ -71,7 +71,10 @@ Here is some documentation and examples of the API: [Documentation](https://ampl
 ```python
 # Google Colab & Kaggle integration
 from amplpy import AMPL, ampl_notebook
-ampl = ampl_notebook(modules=['ampl', 'gurobi', 'highs']) # instantiate AMPL object and register magics
+
+ampl = ampl_notebook(
+    modules=["ampl", "gurobi", "highs"]
+)  # instantiate AMPL object and register magics
 ```
 
 ## Solving problem with AMPL
@@ -124,43 +127,50 @@ import sys
 
 # dict to map chars to hashcode original filenames
 filename = {
-    'a':'input_data/a_an_example.in.txt',
-    'b':'input_data/b_basic.in.txt',
-    'c':'input_data/c_coarse.in.txt',
-    'd':'input_data/d_difficult.in.txt',
-    'e':'input_data/e_elaborate.in.txt'
+    "a": "input_data/a_an_example.in.txt",
+    "b": "input_data/b_basic.in.txt",
+    "c": "input_data/c_coarse.in.txt",
+    "d": "input_data/d_difficult.in.txt",
+    "e": "input_data/e_elaborate.in.txt",
 }
+
 
 def read(testcase):
     original_stdout = sys.stdout
-    with open(filename[testcase]) as input_file, open('ampl_input/pizza_'+testcase+'.dat', 'w+') as output_data_file:
-        sys.stdout = output_data_file # Change the standard output to the file we created.
+    with (
+        open(filename[testcase]) as input_file,
+        open("ampl_input/pizza_" + testcase + ".dat", "w+") as output_data_file,
+    ):
+        sys.stdout = (
+            output_data_file  # Change the standard output to the file we created.
+        )
         # total_customers
         total_customers = int(input_file.readline())
-        print('param total_customers :=',total_customers,';')
-                
+        print("param total_customers :=", total_customers, ";")
+
         # loop over customers
-        ingr=set()
-        for c in range(1, total_customers+1):
+        ingr = set()
+        for c in range(1, total_customers + 1):
             likes = input_file.readline().split()
             likes.pop(0)
-            print('set Likes['+str(c)+'] := ',end='')
-            print(*likes, end = ' ')
-            print(';')
+            print("set Likes[" + str(c) + "] := ", end="")
+            print(*likes, end=" ")
+            print(";")
             dislikes = input_file.readline().split()
             dislikes.pop(0)
-            print('set Dislikes['+str(c)+'] := ',end='')
-            print(*dislikes, end = ' ')
-            print(';')
+            print("set Dislikes[" + str(c) + "] := ", end="")
+            print(*dislikes, end=" ")
+            print(";")
             ingr = ingr.union(set(likes))
             ingr = ingr.union(set(dislikes))
-        print('set INGR :=')
-        print(*sorted(ingr), end = '\n')
-        print(';')
+        print("set INGR :=")
+        print(*sorted(ingr), end="\n")
+        print(";")
     sys.stdout = original_stdout
 
+
 # Let's try with problem 'c' from hashcode
-read('c')
+read("c")
 ```
 
 The file written can be displayed with ampl:

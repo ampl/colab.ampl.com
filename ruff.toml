@@ -1,0 +1,28 @@
+# Ruff configuration for formatting and linting the notebooks and scripts.
+# Same base as the kern repo: ruff's default lint rule set plus
+# `ruff format`, with notebooks included.
+#
+# Format + fix: ruff check --fix . && ruff format .
+# Check-only:   ruff format --check --diff . && ruff check .   (used in CI)
+
+extend-include = ["*.ipynb"]
+extend-exclude = ["venv"]
+# Defined by amplpy's notebook magics.
+builtins = ["_ampl_cells"]
+
+[lint]
+# Rules that existing notebooks and scripts still break and that ruff can't
+# fix safely. Remove entries as the code is fixed.
+ignore = [
+    "B006", "B008", "B023", "BLE001", "C401", "C402", "C403", "C408",
+    "C414", "C417", "E722", "F841", "FLY002", "FURB132", "LOG015",
+    "PERF102", "PLC0206", "PLW0602", "RUF007", "RUF013", "RUF015",
+    "RUF046", "RUF059", "S110", "SIM102", "SIM115", "SIM118", "TRY002",
+    "UP030", "UP031", "UP035", "UP036",
+]
+
+[lint.per-file-ignores]
+# The generated "Google Colab & Kaggle integration" cell imports AMPL even
+# when the notebook doesn't use it, and cells re-import modules so that
+# each one can run on its own.
+"*.ipynb" = ["F401", "F811"]

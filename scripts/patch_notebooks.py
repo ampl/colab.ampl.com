@@ -1,6 +1,7 @@
-from list_notebooks import list_notebooks
-import os
 import json
+import os
+
+from list_notebooks import list_notebooks
 
 
 def patch_notebook(notebook_path):

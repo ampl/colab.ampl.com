@@ -1,11 +1,11 @@
 import json
-from utils import discover_notebooks, list_badges, parse_modules
 import os
-import sys
+
+from utils import discover_notebooks, list_badges
 
 
 def run_command(cmd, show_output=None, return_output=False, verbose=False):
-    from subprocess import check_output, STDOUT, CalledProcessError
+    from subprocess import STDOUT, CalledProcessError, check_output
 
     if isinstance(cmd, str):
         shell = True
@@ -78,8 +78,11 @@ def update_notebook_headers():
                 for line in range(len(source)):
                     source[line] = source[line].replace("!pip ", "%pip ")
                 for line, content in enumerate(source):
-                    if content.replace(" -q", "").startswith("%pip install amplpy") \
-                    or content.replace(" -q", "").startswith("%pip install amplpower"):
+                    if content.replace(" -q", "").startswith(
+                        "%pip install amplpy"
+                    ) or content.replace(" -q", "").startswith(
+                        "%pip install amplpower"
+                    ):
                         break
                 else:
                     raise Exception(f"amplpy is not being installed in {fname}")
@@ -120,9 +123,10 @@ def update_notebook_headers():
                 cells[i]["execution_count"] = count
                 count += 1
 
+        # Same JSON layout as ruff writes, so ruff and this script don't
+        # reformat each other's output.
         open(fname, "w", newline="\n", encoding="utf-8").write(
-            json.dumps(data, separators=(",", ": "), indent="  ", ensure_ascii=False)
-            + "\n"
+            json.dumps(data, indent=1, ensure_ascii=False, sort_keys=True) + "\n"
         )
 
     os.chdir(initial_dir)

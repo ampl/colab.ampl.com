@@ -1,6 +1,6 @@
+import json
 import os
 import re
-import json
 
 
 def parse_modules(cell):
@@ -232,8 +232,8 @@ def rst_badges(fname, url_string, colab_only=False):
             ("sagemaker", sagemaker),
         ]
 
-    badges = " ".join((f"|{badge[0]}-{url_string}|" for badge in lst))
-    images = "\n" + "\n".join((badge[1] for badge in lst)) + "\n"
+    badges = " ".join(f"|{badge[0]}-{url_string}|" for badge in lst)
+    images = "\n" + "\n".join(badge[1] for badge in lst) + "\n"
     return badges, images
 
 
@@ -255,7 +255,7 @@ def print_rst(info, fout, notebooks_path=None, toc_tree=False):
     tags = info.get("tags", None)
     if tags:
         tags = [f":ref:`tag-{tag}`" for tag in tags]
-        print(f'| Tags: {", ".join(tags)}', file=fout)
+        print(f"| Tags: {', '.join(tags)}", file=fout)
     authors = info.get("notebook_author", None)
     if authors:
         authors = authors.replace("<<", "<").replace(">>", ">")

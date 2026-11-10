@@ -1,8 +1,8 @@
-from utils import list_badges
 import json
-import re
 import os
+import re
 
+from utils import list_badges
 
 AMPL_BOOK_SRC_DIR = "ampl-book-src"
 AMPL_BOOK_DST_DIR = "../ampl-book"

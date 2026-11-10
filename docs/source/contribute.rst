@@ -53,7 +53,10 @@ check your notebook with ``python scripts/check_headers.py``.
 
 4. Place your notebook inside ``colab.ampl.com/authors/<github_username>/``.
 
-5. Update the badges and the index as shown below before committing.
+5. Format and lint the notebook with ruff (configured in ``ruff.toml``),
+   ``ruff check --fix colab.ipynb`` and ``ruff format colab.ipynb``.
+
+6. Update the badges and the index as shown below before committing.
 
 Note: The default license for every notebook is
 `MIT <https://github.com/ampl/colab.ampl.com/blob/master/LICENSE>`__ unless
