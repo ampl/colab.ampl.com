@@ -6,7 +6,7 @@
 # Check-only:   python scripts/check_format.py   (used in CI)
 
 extend-include = ["*.ipynb"]
-extend-exclude = ["venv"]
+extend-exclude = ["venv", "notebook-runs"]  # notebook-runs: scripts/run_notebooks.py
 # Defined by amplpy's notebook magics.
 builtins = ["_ampl_cells"]
 
