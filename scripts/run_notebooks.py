@@ -50,13 +50,14 @@ import json
 import os
 import re
 import shutil
+import signal
 import subprocess
 import sys
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
 
-ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
 PRELUDE = """# Added by scripts/run_notebooks.py: not part of the notebook.
 import os as _os
@@ -160,16 +161,24 @@ def execute(src, dst, cell_timeout, prefix, licfile, plain, skip_pip):
 
 
 def outputs_text(cell):
-    parts = []
+    """The text of a cell's outputs: streams are joined as written (a line
+    may be split over several stream outputs), other outputs are put on
+    lines of their own."""
+    result = ""
     for out in cell.get("outputs", []):
-        text = out.get("text")
-        if text is None:
-            text = out.get("data", {}).get("text/plain", "")
-        parts.append("".join(text) if isinstance(text, list) else str(text))
+        if out.get("output_type") == "stream":
+            text = out.get("text", "")
+            result += "".join(text) if isinstance(text, list) else str(text)
+            continue
         if out.get("output_type") == "error":
-            parts.append(f"{out.get('ename')}: {out.get('evalue')}")
-    # streams are joined as written; other outputs start on a new line
-    return "".join(p if p.endswith("\n") else p + "\n" for p in parts)
+            text = f"{out.get('ename')}: {out.get('evalue')}"
+        else:
+            text = out.get("data", {}).get("text/plain", "")
+            text = "".join(text) if isinstance(text, list) else str(text)
+        if result and not result.endswith("\n"):
+            result += "\n"
+        result += text + "\n"
+    return result
 
 
 def solver_messages(nb, offset=0):
@@ -395,9 +404,13 @@ def run_one(name, args):
                 stdout=log,
                 stderr=subprocess.STDOUT,
                 env=worker_env(args),
-                start_new_session=True,  # Ctrl+C goes to the runner only
+                start_new_session=True,  # signals go to the runner only
             )
             stopped, peak = watch(popen, name, args, nb_timeout)
+        with STATE["lock"]:
+            STATE["active"].pop(name, None)
+        if stopped != "interrupted":
+            record(name, args, stopped, peak, round(time.time() - t0, 1), dst)
     except Exception as e:  # one notebook must not stop the run
         with STATE["lock"]:
             STATE["active"].pop(name, None)
@@ -412,11 +425,6 @@ def run_one(name, args):
             },
             args,
         )
-        return
-    with STATE["lock"]:
-        STATE["active"].pop(name, None)
-    if stopped != "interrupted":
-        record(name, args, stopped, peak, round(time.time() - t0, 1), dst)
 
 
 def record(name, args, stopped, peak, seconds, dst):
@@ -448,16 +456,15 @@ def write_record(rec, args):
 
 def describe(rec):
     err = rec.get("error") or {}
-    text = "; ".join(rec.get("diffs", [])[:3])
-    if err and (rec["status"] != "ok" or not text):
-        text = f"{err.get('ename')}: {err.get('evalue')}" + (
-            "; " + text if text else ""
-        )
-    if rec.get("new_warnings"):
-        text += f"; new warnings: {'; '.join(rec['new_warnings'][:2])}"
+    parts = []
     if rec.get("random_data"):
-        text = "(random data without seed) " + text
-    return text.strip("; ").replace("|", "/").replace("\n", " ")[:300]
+        parts.append("(random data without seed)")
+    if err and (rec["status"] != "ok" or not rec.get("diffs")):
+        parts.append(f"{err.get('ename')}: {err.get('evalue')}")
+    parts += rec.get("diffs", [])[:3]
+    if rec.get("new_warnings"):
+        parts.append("new warnings: " + "; ".join(rec["new_warnings"][:2]))
+    return "; ".join(parts).replace("|", "/").replace("\n", " ")[:300]
 
 
 def read_results(out):
@@ -468,9 +475,11 @@ def read_results(out):
         return [json.loads(x) for x in f]
 
 
-def summary(out):
+def summary(out, not_found=()):
     recs = read_results(out)
     lines = ["# Notebook run", "", f"{len(recs)} notebooks", ""]
+    if not_found:
+        lines += ["Not notebooks of the repository: " + ", ".join(not_found), ""]
     for status in sorted({r["status"] for r in recs}):
         count = sum(r["status"] == status for r in recs)
         lines.append(f"- {status}: {count}")
@@ -511,8 +520,13 @@ def repo_path(path):
     """The notebook path relative to the repository root (paths are taken
     relative to the current folder), or None if it is not a notebook of the
     repository."""
-    rel = os.path.relpath(os.path.abspath(path), ROOT_DIR)
-    if rel.startswith("..") or not rel.endswith(".ipynb"):
+    try:
+        rel = os.path.relpath(os.path.realpath(path), ROOT_DIR)
+    except ValueError:  # another drive on Windows
+        return None
+    if rel == os.pardir or rel.startswith(os.pardir + os.sep):
+        return None
+    if not rel.endswith(".ipynb"):
         return None
     if not os.path.isfile(os.path.join(ROOT_DIR, rel)):
         return None
@@ -584,6 +598,18 @@ def absolute_args(args):
         args.python = shutil.which(args.python) or args.python
 
 
+def stop_on_signals():
+    """SIGTERM and SIGHUP (a closed terminal) stop the run like Ctrl+C: the
+    workers run in sessions of their own and would not get them."""
+
+    def handler(signum, frame):
+        raise KeyboardInterrupt
+
+    for name in ("SIGTERM", "SIGHUP"):
+        if hasattr(signal, name):
+            signal.signal(getattr(signal, name), handler)
+
+
 def run_all(names, args):
     """Run the notebooks; on Ctrl+C, stop the running ones without recording
     them, so that a rerun with the same --out runs them again."""
@@ -595,6 +621,7 @@ def run_all(names, args):
     except KeyboardInterrupt:
         STATE["stop"] = True
         print("interrupted: stopping the running notebooks", flush=True)
+        signal.signal(signal.SIGINT, signal.SIG_IGN)  # let the cleanup finish
     finally:
         ex.shutdown(wait=True, cancel_futures=True)
 
@@ -623,23 +650,14 @@ def main():
         elif name not in done and name not in todo:
             todo.append(name)
     for given in bad:
-        error = {"ename": "not found", "evalue": "not a notebook of the repository"}
-        write_record(
-            {
-                "notebook": given,
-                "status": "not_found",
-                "seconds": 0,
-                "peak_rss_gb": 0,
-                "error": error,
-            },
-            args,
-        )
+        print(f"not_found     {given}: not a notebook of the repository")
     print(f"{len(todo)} notebooks to run ({len(done)} done), jobs={args.jobs}")
+    stop_on_signals()
     run_all(todo, args)
-    recs = summary(args.out)
+    recs = summary(args.out, bad)
     if STATE["stop"]:
         sys.exit(130)
-    ok = all(r["status"] == "ok" for r in recs)
+    ok = not bad and all(r["status"] == "ok" for r in recs)
     if args.fail_on_diff:
         ok = ok and not any(r.get("diffs") for r in recs)
     sys.exit(0 if ok else 1)

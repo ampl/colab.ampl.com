@@ -98,15 +98,19 @@ venv-run/bin/python scripts/run_notebooks.py --out notebook-runs/build --recompa
 ```
 
 Notebook paths, given as arguments or in a list file, are absolute or relative to the
-current folder, and must be inside the repository; other paths get the status
-`not_found`. A list file has one path per line; lines that start with `#` are comments.
+current folder (a path through a symbolic link works too), and must be inside the
+repository. Other paths are reported as `not_found` when the run starts and in
+`summary.md`, and make the exit code 1; they are not written to `results.jsonl`. A list
+file has one path per line; lines that start with `#` are comments.
 
 A second run with the same `--out` skips the notebooks already in `results.jsonl`. To rerun
 a notebook, delete its line from that file: its earlier results are removed when it runs
-again. Ctrl+C stops the running notebooks without recording them, so that the next run
-with the same `--out` runs them again.
+again. Ctrl+C, SIGTERM and SIGHUP (a closed terminal) stop the running notebooks without
+recording them, so that the next run with the same `--out` runs them again. The notebooks
+run in sessions of their own, so these signals reach them only through the script.
 
-The exit code is 0 when every notebook has status `ok`, 1 otherwise, and 130 after Ctrl+C.
+The exit code is 0 when every notebook has status `ok`, 1 otherwise, and 130 after Ctrl+C,
+SIGTERM or SIGHUP.
 With `--fail-on-diff`, differences from the stored outputs also give 1.
 
 Options (`--help` lists them all):
@@ -149,8 +153,8 @@ Options (`--help` lists them all):
   - `memory_limit`, `memory_guard`;
   - `no_output` (the worker wrote no notebook: see the `.log` file next to the executed
     notebook);
-  - `runner_error` (the script failed for this notebook, with the exception);
-  - `not_found` (the path is not a notebook of the repository).
+  - `runner_error` (the script failed for this notebook, for example on a truncated
+    executed notebook; the exception is shown).
 
 ### Reading the comparison
 
