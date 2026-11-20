@@ -75,7 +75,9 @@ venv-run/bin/pip install amplpy nbclient nbformat ipykernel psutil certifi \
 venv-run/bin/python -m amplpy.modules install highs gurobi coin plugins   # as needed
 ```
 
-`psutil` is needed for the memory limits. Without it, only the time limits apply.
+`psutil` is needed for the memory limits and for killing the processes that a notebook
+leaves running. Without it, only the time limits apply, and the script says so when it
+starts.
 
 ### Examples
 
@@ -95,10 +97,17 @@ venv-run/bin/python scripts/run_notebooks.py authors/lentz/gcg/bpp.ipynb --out n
 venv-run/bin/python scripts/run_notebooks.py --out notebook-runs/build --recompare
 ```
 
-A list file has one notebook path per line; lines that start with `#` are comments. A
-second run with the same `--out` skips the notebooks already in `results.jsonl`. To rerun
-a notebook, delete its line from that file. The exit code is 0 when every notebook has
-status `ok`.
+Notebook paths, given as arguments or in a list file, are absolute or relative to the
+current folder, and must be inside the repository; other paths get the status
+`not_found`. A list file has one path per line; lines that start with `#` are comments.
+
+A second run with the same `--out` skips the notebooks already in `results.jsonl`. To rerun
+a notebook, delete its line from that file: its earlier results are removed when it runs
+again. Ctrl+C stops the running notebooks without recording them, so that the next run
+with the same `--out` runs them again.
+
+The exit code is 0 when every notebook has status `ok`, 1 otherwise, and 130 after Ctrl+C.
+With `--fail-on-diff`, differences from the stored outputs also give 1.
 
 Options (`--help` lists them all):
 
@@ -107,6 +116,7 @@ Options (`--help` lists them all):
   set the watchdog limits.
 - `--python` sets the interpreter for the kernels; the default is the one that runs the
   script.
+- `--out` is the results folder; the default is `notebook-runs/latest` in the repository.
 
 ### What it does
 
@@ -119,8 +129,10 @@ Options (`--help` lists them all):
   Whatever the notebook asks for in `modules=[...]` then comes from the given directories,
   or from the installed modules when a solver is not there.
 - **Timeouts.**
-  - A notebook stops at its first error, as in CI.
-  - A notebook's own solver time limit (`lim:time=`, `timelimit=`, `time_limit =`) raises
+  - A notebook stops at its first error. CI (nbval) runs the remaining cells too and
+    reports each cell that fails.
+  - A notebook's own solver time limit (`lim:time=`, `timelim=`, `timelimit=`,
+    `time_limit =`, `maxtime=`, in its code cells) raises
     the cell timeout to that limit × 1.3 + 60 s, and the notebook timeout to twice the
     cell timeout.
 - **Watchdog.** It stops a notebook when either limit is exceeded:
@@ -128,28 +140,33 @@ Options (`--help` lists them all):
   - `--mem-gb`, for the resident memory of the notebook's processes.
 
   When free memory falls below `--reserve-gb`, it stops the largest running notebook.
-  Afterwards it kills the processes that the notebook left running: a stopped kernel leaves
-  its AMPL and solver processes behind.
+  Afterwards it kills the processes that the notebook left running (with `psutil`): a
+  stopped kernel leaves its AMPL and solver processes behind.
 - **Statuses.** Each notebook gets one of these statuses:
   - `ok`;
   - `error` (an exception, shown with the cell number);
   - `cell_timeout`, `nb_timeout`;
   - `memory_limit`, `memory_guard`;
-  - `no_output` (the runner failed: see the `.log` file next to the executed notebook).
+  - `no_output` (the worker wrote no notebook: see the `.log` file next to the executed
+    notebook);
+  - `runner_error` (the script failed for this notebook, with the exception);
+  - `not_found` (the path is not a notebook of the repository).
 
 ### Reading the comparison
 
 The comparison takes the solver headlines, such as `HiGHS 1.15.1: optimal solution;
 objective 85`. It matches them cell by cell with the outputs stored in the notebook and
 reports changed statuses, objective values differing by more than 1e-6 relative, and
-changed numbers of solves. Treat a difference as a lead, not a verdict:
+changed numbers of solves. `summary.md` also lists warnings that are new compared with the
+stored outputs. Treat a difference as a lead, not a verdict:
 
 - Stored outputs are often from older AMPL and solver versions. A time-limited run, or a
   newer solver, finds other incumbents or proves optimality.
-- Notebooks with random data and no seed are marked `(random data without seed)`.
+- Notebooks with random data and no seed are marked `(random data without seed)` in
+  `summary.md` (a guess from the code: `random`, `randint`, `np.random`, ... and no `seed`).
   Notebooks that download data may compare against different data.
-- Only cells that have stored outputs are compared. Cells whose outputs show no solver
-  headline count as zero solves.
+- Only cells that have stored outputs are compared, and after an error only the cells up to
+  the failed one. Cells whose outputs show no solver headline count as zero solves.
 - To tell a solver version from an AMPL or driver change, run the notebook twice: once with
   the released modules and once with `--bin-dir`. Then compare the two `summary.md` files.
 
@@ -165,6 +182,7 @@ changed numbers of solves. Treat a difference as a lead, not a verdict:
 - **Results.** The results folder `notebook-runs/` is ignored by git, ruff,
   `check_headers.py` and `list_notebooks.py`.
 - **Saving outputs.** The script never changes the notebooks. To save new outputs in a
-  notebook, run it with the released modules and copy the outputs over. Then check them for
-  local paths, license lines (the integration cell prints the license) and messages of
-  development builds before committing.
+  notebook, run it with the released modules and copy the outputs over, keeping the outputs
+  of the first two cells as they are (the integration cell prints the license in use). Then
+  check them for local paths, local license lines and messages of development builds before
+  committing.
