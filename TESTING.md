@@ -61,6 +61,7 @@ Use this script when you need more than CI provides:
 | AMPL and solvers | released amplpy modules | the modules, or executables given by `--bin-dir` |
 | License | `amplpy.modules activate` with a secret | AMPL license file (`--licfile`) |
 | Packages | `%pip install` cells of each notebook | the same, or preinstalled with `--skip-pip` |
+| Downloaded data | downloaded; synthetic if the download fails | the same, or always synthetic with `--synthetic-data` |
 | Pass criterion | no exception | no exception; solver results compared with the stored outputs |
 | Limits | job timeout | per cell, per notebook, memory per notebook, free-memory reserve |
 | Isolation | one job per notebook | one process tree and one copy of the notebook's folder per notebook |
@@ -117,7 +118,8 @@ run in sessions of their own, so these signals reach them only through the scrip
 
 The exit code is 0 when every notebook has status `ok`, 1 otherwise, and 130 after Ctrl+C,
 SIGTERM or SIGHUP.
-With `--fail-on-diff`, differences from the stored outputs also give 1.
+With `--fail-on-diff`, differences from the stored outputs also give 1, except in notebooks
+that used synthetic data.
 
 Options (`--help` lists them all):
 
@@ -127,6 +129,9 @@ Options (`--help` lists them all):
 - `--python` sets the interpreter for the kernels; the default is the one that runs the
   script.
 - `--out` is the results folder; the default is `notebook-runs/latest` in the repository.
+- `--synthetic-data` sets `COLAB_SYNTHETIC_DATA=1`: the notebooks that download data
+  generate it instead (see "Downloaded data" below), so the run needs no network access to
+  the data sources and gives the same data every time.
 
 ### What it does
 
@@ -182,24 +187,45 @@ compared with the stored outputs. Treat a difference as a lead, not a verdict:
   newer solver, finds other incumbents or proves optimality.
 - Notebooks with random data and no seed are marked `(random data without seed)` in
   `summary.md` (a guess from the code: `random`, `randint`, `np.random`, ... and no `seed`).
-  Notebooks that download data may compare against different data.
+  Notebooks that download data may compare against different data. Those that used
+  synthetic data are marked `(synthetic data)`: their objective values differ from the
+  stored ones.
 - Only cells that have stored outputs are compared, and after an error or a timeout only
   the cells up to the failed one. Cells whose outputs show no solver headline count as zero
   solves.
 - To tell a solver version from an AMPL or driver change, run the notebook twice: once with
   the released modules and once with `--bin-dir`. Then compare the two `summary.md` files.
 
+### Downloaded data
+
+Notebooks that download stock prices from Yahoo Finance (`yfinance`) have a Data section
+with `download_close()`. It uses synthetic prices, correlated random walks with a fixed
+seed, when `USE_SYNTHETIC_DATA = True` is set in the notebook or the environment variable
+`COLAB_SYNTHETIC_DATA` is `1` (or `true`, `yes`), and also when the download fails or misses
+a ticker. The notebook then prints `Using synthetic data: ...`, which the script detects.
+Downloads from CI runners fail now and then, and Yahoo's data is for personal use, so it is
+not kept in the repository.
+
+CI does not report this fallback: a notebook passes with synthetic data too, so a lasting
+download problem shows only in the job log or in a run of this script.
+
+The five copies of the Data section are the same apart from their imports;
+`authors/mukeshwaran/Notebook_4_Porfolio_Optimization_Risk_Strategies.ipynb` is the one to
+copy. Give a new notebook that downloads data the same fallback, and check that its models
+stay feasible with synthetic data (`--synthetic-data`). A change to the section goes into
+all copies.
+
 ### Tests of the script
 
 `scripts/tests/test_run_notebooks.py` runs the script on small notebooks that the tests
 write into a temporary copy of the repository: timeouts, statuses and error cells, the
 `--bin-dir` replacement of `ampl_notebook()` and the order of `PATH`, folder copies, list
-files, `--out`, `--recompare` and interruption; other tests call the comparison and the
-timeout functions directly. The notebooks print solver headlines instead of solving, and
-the `--bin-dir` tests use a stub amplpy package, so no AMPL, solver, license or amplpy is
-needed. They need pytest, nbclient, nbformat and ipykernel, and psutil for the
-interruption test (skipped on Windows); they take about 20 seconds. CI runs them on every
-push:
+files, `--out`, `--recompare`, interruption and `--synthetic-data`; other tests call the
+comparison and the timeout functions directly. The notebooks print solver headlines
+instead of solving, and the `--bin-dir` tests use a stub amplpy package, so no AMPL,
+solver, license or amplpy is needed. They need pytest, nbclient, nbformat and ipykernel,
+and psutil for the interruption test (skipped on Windows); they take about 20 seconds. CI
+runs them on every push:
 
 ```bash
 python -m pytest scripts/tests

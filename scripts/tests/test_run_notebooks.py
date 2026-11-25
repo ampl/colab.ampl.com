@@ -273,6 +273,30 @@ def test_out_in_a_notebook_folder_is_refused(repo, inside):
     assert results(out) == {}
 
 
+def test_synthetic_data(repo):
+    """--synthetic-data sets COLAB_SYNTHETIC_DATA; a notebook that then prints
+    the marker is marked in the summary, and its differences from the stored
+    outputs do not fail --fail-on-diff."""
+    other = SOLVED.replace("objective 1", "objective 2")
+    source = (
+        "import os\n"
+        "if os.environ.get('COLAB_SYNTHETIC_DATA') == '1':\n"
+        f"    print('Using synthetic data: ...'); print({other!r})\n"
+        "else:\n"
+        f"    print({SOLVED!r})\n"
+    )
+    nb = write_notebook(repo, "prices.ipynb", [(source, SOLVED)])
+    proc, out = run(repo, nb, "--fail-on-diff", "--synthetic-data")
+    rec = results(out)[nb]
+    assert rec["synthetic_data"] and rec["diffs"], rec
+    assert "(synthetic data)" in summary(out)
+    assert proc.returncode == 0, proc.stdout + proc.stderr
+    proc, out = run(repo, nb, "--fail-on-diff", out=repo.parent / "real")
+    rec = results(out)[nb]
+    assert not rec["synthetic_data"] and not rec["diffs"], rec
+    assert proc.returncode == 0, proc.stdout + proc.stderr
+
+
 def test_list_file_and_recompare(repo, tmp_path):
     nb = write_notebook(repo, "raises.ipynb", [("raise ValueError('boom')", None)])
     listing = tmp_path / "list.txt"

@@ -19,7 +19,9 @@ check new builds of AMPL or of the solvers before a release:
   kernel) are killed;
 - the solver messages (status and objective value) are compared cell by
   cell with the stored outputs; notebooks with random data and no seed are
-  marked, as their objective values change from run to run;
+  marked, as their objective values change from run to run, and so are
+  notebooks that print "Using synthetic data" (generated instead of
+  downloaded data, see --synthetic-data);
 - results go to OUT/results.jsonl (one line per notebook, written as each
   finishes; a rerun skips the notebooks already there) and OUT/summary.md.
 
@@ -30,7 +32,9 @@ an AMPL license file). It is replaced when amplpy is imported, also when the
 notebook's own `%pip` installs amplpy, and the directories are put first on
 PATH again then, as importing amplpy puts the module directories first.
 With --skip-pip, `%pip install` lines are commented out: the packages must
-already be installed.
+already be installed. With --synthetic-data, COLAB_SYNTHETIC_DATA=1 is set:
+notebooks that download data (stock prices from Yahoo Finance) generate it
+instead.
 
 Requires nbclient, nbformat and ipykernel, and psutil for the memory limits
 and the cleanup of left-over processes. TESTING.md describes the setup, how
@@ -148,6 +152,8 @@ OWN_LIMIT = re.compile(
     r"(?:lim:time|timelimit|timelim|time_limit|maxtime|TimeLimit)\s*=\s*"
     rf"({NUMBER})"
 )
+# printed by notebooks that use generated data instead of downloaded data
+SYNTHETIC = "Using synthetic data"
 RANDOM = re.compile(r"\brandom\b|\brandint\b|np\.random|Uniform|Normal\(")
 STATE = {"active": {}, "lock": threading.Lock(), "stop": False}
 
@@ -285,6 +291,9 @@ def compare(orig, new):
         "diffs": diffs,
         "new_warnings": sorted(new_warn - old_warn)[:10],
         "random_data": bool(RANDOM.search(code)) and "seed" not in code,
+        "synthetic_data": any(
+            SYNTHETIC in outputs_text(c) for c in new.get("cells", [])
+        ),
     }
 
 
@@ -421,6 +430,8 @@ def worker_env(args):
     env = dict(os.environ)
     if args.licfile:
         env["AMPL_LICFILE"] = args.licfile
+    if args.synthetic_data:
+        env["COLAB_SYNTHETIC_DATA"] = "1"
     try:
         import certifi
 
@@ -555,6 +566,8 @@ def describe(rec):
     parts = []
     if rec.get("random_data"):
         parts.append("(random data without seed)")
+    if rec.get("synthetic_data"):
+        parts.append("(synthetic data)")
     if err and (rec["status"] != "ok" or not rec.get("diffs")):
         parts.append(error_text(err))
     parts += rec.get("diffs", [])[:3]
@@ -678,12 +691,18 @@ def parse_args():
     )
     ap.add_argument("--licfile", help="AMPL license file (AMPL_LICFILE)")
     ap.add_argument("--skip-pip", action="store_true", help="comment out %%pip lines")
+    ap.add_argument(
+        "--synthetic-data",
+        action="store_true",
+        help="set COLAB_SYNTHETIC_DATA=1: generated data instead of downloads",
+    )
     ap.add_argument("--python", default=sys.executable, help="Python for the kernels")
     ap.add_argument("--recompare", action="store_true", help="only redo the summary")
     ap.add_argument(
         "--fail-on-diff",
         action="store_true",
-        help="exit code 1 also when solver results differ from the stored outputs",
+        help="exit code 1 also when solver results differ from the stored "
+        "outputs (except with synthetic data)",
     )
     return ap.parse_args()
 
@@ -774,7 +793,9 @@ def main():
         sys.exit(130)
     ok = not bad and all(r["status"] == "ok" for r in recs)
     if args.fail_on_diff:
-        ok = ok and not any(r.get("diffs") for r in recs)
+        ok = ok and not any(
+            r.get("diffs") and not r.get("synthetic_data") for r in recs
+        )
     sys.exit(0 if ok else 1)
 
 
