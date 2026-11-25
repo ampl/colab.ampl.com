@@ -1,10 +1,11 @@
-"""Tests of scripts/run_notebooks.py with small notebooks written by the tests.
+"""Tests of scripts/run_notebooks.py.
 
-Each test copies the script into a temporary repository and runs it there, so
-the real repository is not changed. The notebooks print solver headlines
-instead of solving: no AMPL or solver is needed. Requires pytest, nbclient,
-nbformat, ipykernel and psutil; the --bin-dir test also needs amplpy (no
-modules, no license).
+Most tests copy the script into a temporary repository, write small notebooks
+there and run the script on them, so the real repository is not changed. The
+notebooks print solver headlines instead of solving, and the --bin-dir tests
+use a stub amplpy package: no AMPL, solver, license or amplpy is needed. The
+last tests call functions of the script directly. Requires pytest, nbclient,
+nbformat and ipykernel, and psutil for the interruption test.
 
 From the repository root:
 
@@ -27,7 +28,6 @@ import pytest
 nbformat = pytest.importorskip("nbformat")
 pytest.importorskip("nbclient")
 pytest.importorskip("ipykernel")
-psutil = pytest.importorskip("psutil")
 
 SCRIPT = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "run_notebooks.py"
@@ -37,6 +37,27 @@ SOLVED = "HiGHS 1.15.1: optimal solution; objective 1\n"
 SLEEP_IGNORING_SIGINT = (
     "import signal, time\nsignal.signal(signal.SIGINT, signal.SIG_IGN)\ntime.sleep(60)"
 )
+# A stub of amplpy: importing it puts a module folder first on PATH, as the
+# real amplpy does with the installed modules; its ampl_notebook() must not be
+# called with --bin-dir.
+STUB_AMPLPY = """
+import os
+
+os.environ["PATH"] = "/stub/ampl_module_base/bin" + os.pathsep + os.environ["PATH"]
+
+
+class AMPL:
+    def __init__(self):
+        self.option = {"ampl_libpath": "", "version": "AMPL stub\\nLicensed"}
+
+
+def register_magics(**kwargs):
+    pass
+
+
+def ampl_notebook(**kwargs):
+    raise RuntimeError("the real ampl_notebook() was called")
+"""
 
 
 def load_runner():
@@ -71,11 +92,16 @@ def write_notebook(repo, name, cells):
     return f"authors/t/{name}"
 
 
+def command(repo, out, args):
+    # no free-memory reserve: the result must not depend on the machine's load
+    script = os.path.join(repo, "scripts", "run_notebooks.py")
+    return [sys.executable, script, "--out", str(out), "--reserve-gb", "0", *args]
+
+
 def run(repo, *args, out=None, env=None, timeout=120):
     out = out or repo.parent / "out"
-    cmd = [sys.executable, "scripts/run_notebooks.py", "--out", str(out), *args]
     proc = subprocess.run(
-        cmd,
+        command(repo, out, args),
         check=False,
         cwd=repo,
         capture_output=True,
@@ -119,26 +145,59 @@ def test_cell_timeout_stops_the_comparison(repo):
     assert "cell 0: cell_timeout" in summary(out)
 
 
-def test_bin_dir_patches_ampl_notebook_installed_later(repo, tmp_path):
-    """With --bin-dir, ampl_notebook() is replaced also when amplpy becomes
-    importable only after the prelude, as after a notebook's %pip cell."""
-    pytest.importorskip("amplpy")
-    blocker = tmp_path / "blocker"
-    (blocker / "amplpy").mkdir(parents=True)
-    (blocker / "amplpy" / "__init__.py").write_text("raise ImportError('blocked')\n")
-    nb = write_notebook(
-        repo,
-        "latepip.ipynb",
-        [
-            # "installs" amplpy: removes the blocker from the path
-            (f"import sys\nsys.path.remove({str(blocker)!r})", None),
-            ("from amplpy import ampl_notebook\nprint(ampl_notebook.__name__)", None),
-        ],
+@pytest.mark.parametrize("same_cell", [False, True], ids=["pip_cell", "same_cell"])
+def test_bin_dir_replaces_ampl_notebook(repo, tmp_path, same_cell):
+    """With --bin-dir, ampl_notebook() is replaced also when amplpy is
+    installed only by the notebook (in an earlier cell, or in the same cell as
+    in template/minimal.ipynb), and the --bin-dir folders stay first on PATH."""
+    blocker = tmp_path / "blocker" / "amplpy"  # amplpy not installed yet
+    blocker.mkdir(parents=True)
+    (blocker / "__init__.py").write_text("raise ImportError('not installed')\n")
+    stub = tmp_path / "stub"
+    (stub / "amplpy").mkdir(parents=True)
+    (stub / "amplpy" / "__init__.py").write_text(STUB_AMPLPY)
+    (stub / "ampl_module_plugins").mkdir()  # table handlers of the modules
+    (stub / "ampl_module_plugins" / "__init__.py").write_text("")
+    bin_dir = tmp_path / "bin"
+    bin_dir.mkdir()
+    install = (
+        f"import sys\nsys.path.remove({str(blocker.parent)!r})\n"
+        f"sys.path.insert(0, {str(stub)!r})  # as a %pip install"
     )
-    _, out = run(repo, nb, "--bin-dir", str(tmp_path), env={"PYTHONPATH": str(blocker)})
-    assert results(out)[nb]["status"] == "ok"
+    use = (
+        "import os\nfrom amplpy import ampl_notebook\n"
+        "ampl = ampl_notebook(modules=['highs'], license_uuid='x')\n"
+        "print('PATH0', os.environ['PATH'].split(os.pathsep)[0])\n"
+        "print('LIBPATH', ampl.option['ampl_libpath'])"
+    )
+    cells = (
+        [(install + "\n" + use, None)] if same_cell else [(install, None), (use, None)]
+    )
+    nb = write_notebook(repo, "bindir.ipynb", cells)
+    env = {"PYTHONPATH": str(blocker.parent)}
+    _, out = run(repo, nb, "--bin-dir", str(bin_dir), env=env)
+    rec = results(out)[nb]
+    assert rec["status"] == "ok", rec.get("error")
     executed = nbformat.read(os.path.join(out, "executed", nb), as_version=4)
-    assert executed.cells[-1].outputs[0]["text"].strip() == "_runner_ampl_notebook"
+    text = "".join(o.get("text", "") for o in executed.cells[-1].outputs)
+    lines = dict(x.split(" ", 1) for x in text.splitlines() if " " in x)
+    assert lines["PATH0"] == str(bin_dir)
+    assert lines["LIBPATH"] == os.path.join(str(stub), "ampl_module_plugins", "bin")
+
+
+def test_bin_dir_first_on_path_with_amplpy_installed(repo, tmp_path):
+    """With amplpy installed beforehand (as with --skip-pip), the --bin-dir
+    folders come first on PATH also in the cells before ampl_notebook()."""
+    stub = tmp_path / "stub"
+    (stub / "amplpy").mkdir(parents=True)
+    (stub / "amplpy" / "__init__.py").write_text(STUB_AMPLPY)
+    bin_dir = tmp_path / "bin"
+    bin_dir.mkdir()
+    show = "import os\nprint(os.environ['PATH'].split(os.pathsep)[0])"
+    nb = write_notebook(repo, "path.ipynb", [(show, None)])
+    _, out = run(repo, nb, "--bin-dir", str(bin_dir), env={"PYTHONPATH": str(stub)})
+    executed = nbformat.read(os.path.join(out, "executed", nb), as_version=4)
+    assert executed.cells[-1].outputs[0]["text"].strip() == str(bin_dir)
 
 
 def test_statuses_and_error_cells(repo):
@@ -152,10 +211,11 @@ def test_statuses_and_error_cells(repo):
     assert recs[died]["error"]["ename"] == "DeadKernelError"
     assert recs[raised]["status"] == "error"
     assert "- runner_error: 1" in summary(out)
+    assert "cell 0: DeadKernelError" in summary(out)
     assert "cell 1: ValueError: boom" in summary(out)
 
 
-def test_folder_copy_keeps_zip_files_and_skips_the_results(repo):
+def test_folder_copy_keeps_zip_files(repo):
     with zipfile.ZipFile(repo / "authors" / "t" / "data.zip", "w") as z:
         z.writestr("a.txt", "1")
     nb = write_notebook(
@@ -163,10 +223,18 @@ def test_folder_copy_keeps_zip_files_and_skips_the_results(repo):
         "zip.ipynb",
         [("import zipfile\nprint(zipfile.ZipFile('data.zip').read('a.txt'))", None)],
     )
-    out = repo / "authors" / "t" / "runs"  # inside the notebook's folder
-    run(repo, nb, out=out)
+    _, out = run(repo, nb)
     assert results(out)[nb]["status"] == "ok"
-    assert not (out / "work" / "authors" / "t" / "zip" / "runs").exists()
+
+
+@pytest.mark.parametrize("inside", ["", "runs"])
+def test_out_in_a_notebook_folder_is_refused(repo, inside):
+    """The folder would be copied into itself for each notebook."""
+    nb = write_notebook(repo, "raises.ipynb", [("raise ValueError('boom')", None)])
+    proc, out = run(repo, nb, out=repo / "authors" / "t" / inside)
+    assert proc.returncode == 2
+    assert "inside the folder of" in proc.stderr
+    assert results(out) == {}
 
 
 def test_list_file_and_recompare(repo, tmp_path):
@@ -174,7 +242,8 @@ def test_list_file_and_recompare(repo, tmp_path):
     listing = tmp_path / "list.txt"
     listing.write_text(f"  # an indented comment\n{nb}\nmissing.ipynb\n")
     proc, out = run(repo, "--list", str(listing))
-    assert "comment" not in proc.stdout
+    assert "not_found     missing.ipynb" in proc.stdout
+    assert "not_found     #" not in proc.stdout  # the comment is no path
     assert list(results(out)) == [nb]
     assert "Not notebooks of the repository: missing.ipynb" in summary(out)
     os.remove(repo / nb)  # the notebook is gone before the recompare
@@ -184,13 +253,16 @@ def test_list_file_and_recompare(repo, tmp_path):
     assert list(results(out)) == [nb]
 
 
+@pytest.mark.skipif(sys.platform == "win32", reason="SIGTERM is a hard kill there")
 def test_interruption_records_nothing(repo):
     """Killing the runner's whole process tree, kernels included, must not
     record the running notebook: a rerun with the same --out runs it again."""
+    psutil = pytest.importorskip("psutil")
     nb = write_notebook(repo, "slow.ipynb", [("import time\ntime.sleep(60)", None)])
     out = repo.parent / "out"
-    cmd = [sys.executable, "scripts/run_notebooks.py", "--out", str(out), nb]
-    proc = subprocess.Popen(cmd, cwd=repo, stdout=subprocess.PIPE, text=True)
+    proc = subprocess.Popen(
+        command(repo, out, [nb]), cwd=repo, stdout=subprocess.PIPE, text=True
+    )
     runner = psutil.Process(proc.pid)
     deadline = time.time() + 60
     while len(runner.children(recursive=True)) < 2 and time.time() < deadline:
@@ -244,3 +316,18 @@ def test_objective_tolerance():
         runner.compare_cell(0, [("optimal", 1e-8, "")], [("optimal", 5e-8, "")]) == []
     )
     assert runner.compare_cell(0, [("optimal", 1e3, "")], [("optimal", 1.01e3, "")])
+
+
+def test_error_descriptions():
+    runner = load_runner()
+
+    def text(error):
+        return runner.describe({"status": "error", "error": error})
+
+    assert text({"cell": 2, "ename": "E", "evalue": "bad value:"}) == (
+        "cell 2: E: bad value:"
+    )
+    assert text({"cell": 0, "ename": "cell_timeout", "evalue": ""}) == (
+        "cell 0: cell_timeout"
+    )
+    assert text({"cell": -1, "ename": "E", "evalue": "x"}) == "prelude: E: x"

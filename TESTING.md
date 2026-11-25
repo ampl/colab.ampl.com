@@ -39,6 +39,7 @@ From the repository root:
 ```bash
 python scripts/check_headers.py   # header fields, as in CI
 python scripts/check_format.py    # ruff check only, as in CI
+python -m pytest scripts/tests    # tests of scripts/run_notebooks.py, as in CI
 python scripts/index.py           # ruff fixes, headers and badges, README, docs index
 git add docs/source/
 ```
@@ -102,8 +103,10 @@ Notebook paths, given as arguments or in a list file, are absolute or relative t
 current folder (a path through a symbolic link works too), and must be inside the
 repository. Other paths are reported as `not_found` when the run starts and in
 `summary.md`, and make the exit code 1; they are not written to `results.jsonl` (but to
-`not_found.json`, which `--recompare` reads). A list file has one path per line; lines
-that start with `#`, after leading spaces, are comments. `--recompare` keeps the results of
+`not_found.json`, the paths of the last run, which `--recompare` reads). A list file has
+one path per line; lines that start with `#`, after leading spaces, are comments.
+`--out` must not lie in the folder of a notebook to run (the folder is copied into it);
+the script refuses it with exit code 2. `--recompare` keeps the results of
 notebooks that are no longer in the repository as they were.
 
 A second run with the same `--out` skips the notebooks already in `results.jsonl`. To rerun
@@ -134,16 +137,17 @@ Options (`--help` lists them all):
   and sets `AMPL_LICFILE`. With `--bin-dir`, it also makes `ampl_notebook()` only create
   `AMPL()` and register the magics: it installs no modules and activates no license.
   Whatever the notebook asks for in `modules=[...]` then comes from the given directories,
-  or from the installed modules when a solver is not there. When amplpy is installed only by
-  the notebook's own `%pip` cell (no `--skip-pip`), `ampl_notebook()` is replaced before the
-  next cell runs; this needs `%pip install` and `ampl_notebook()` in different cells, as in
-  the notebook template.
+  or from the installed modules when a solver is not there. `ampl_notebook()` is replaced
+  when amplpy is imported, so also when the notebook's own `%pip` installs amplpy (no
+  `--skip-pip`), in the same cell or an earlier one. Importing amplpy puts the module
+  directories first on `PATH`; the `--bin-dir` directories are put first again then.
 - **Timeouts.**
   - A notebook stops at its first error. CI (nbval) runs the remaining cells too and
     reports each cell that fails.
   - A notebook's own solver time limits (`lim:time=`, `timelim=`, `timelimit=`,
-    `time_limit =`, `maxtime=`, in its code cells, outside comment lines) raise the
-    timeouts. For each cell that sets one, the largest limit × 1.3 + 60 s is computed. The
+    `TimeLimit=`, `time_limit =`, `maxtime=`, in its code cells, outside lines that are
+    comments) raise the timeouts. For each cell that sets one, the largest limit × 1.3 +
+    60 s is computed (a cell is taken to run one solve). The
     cell timeout becomes the largest of these values, and the notebook timeout their sum,
     at least twice the cell timeout. A cell that solves several times in a loop can still
     need a larger `--cell-timeout` or `--nb-timeout`.
@@ -156,13 +160,14 @@ Options (`--help` lists them all):
   stopped kernel leaves its AMPL and solver processes behind.
 - **Statuses.** Each notebook gets one of these statuses:
   - `ok`;
-  - `error` (an exception, shown with the cell number, as are the cells of timeouts);
-  - `cell_timeout`, `nb_timeout`;
+  - `error` (an exception, shown with the cell number; `prelude` for the cell that the
+    script adds);
+  - `cell_timeout` (shown with the cell number), `nb_timeout`;
   - `memory_limit`, `memory_guard`;
   - `no_output` (the worker wrote no notebook: see the `.log` file next to the executed
     notebook);
   - `runner_error` (the script or the kernel failed for this notebook, for example a
-    kernel that died; the exception is shown).
+    kernel that died; the exception and the cell are shown).
 
 ### Reading the comparison
 
@@ -170,8 +175,8 @@ The comparison takes the solver headlines, such as `HiGHS 1.15.1: optimal soluti
 objective 85`. It matches them cell by cell with the outputs stored in the notebook and
 reports changed statuses, objective values differing by more than 1e-6 relative (by more
 than 1e-6 absolute for values below 1 in magnitude, so that solver round-off near zero is
-not reported), and changed numbers of solves. `summary.md` also lists warnings that are new compared with the
-stored outputs. Treat a difference as a lead, not a verdict:
+not reported), and changed numbers of solves. `summary.md` also lists warnings that are new
+compared with the stored outputs. Treat a difference as a lead, not a verdict:
 
 - Stored outputs are often from older AMPL and solver versions. A time-limited run, or a
   newer solver, finds other incumbents or proves optimality.
@@ -179,19 +184,22 @@ stored outputs. Treat a difference as a lead, not a verdict:
   `summary.md` (a guess from the code: `random`, `randint`, `np.random`, ... and no `seed`).
   Notebooks that download data may compare against different data.
 - Only cells that have stored outputs are compared, and after an error or a timeout only
-  the cells up to the failed one. Cells whose outputs show no solver headline count as zero solves.
+  the cells up to the failed one. Cells whose outputs show no solver headline count as zero
+  solves.
 - To tell a solver version from an AMPL or driver change, run the notebook twice: once with
   the released modules and once with `--bin-dir`. Then compare the two `summary.md` files.
 
 ### Tests of the script
 
 `scripts/tests/test_run_notebooks.py` runs the script on small notebooks that the tests
-write into a temporary copy of the repository: timeouts, statuses, the `--bin-dir`
-replacement of `ampl_notebook()`, folder copies, list files, `--recompare`,
-interruption, and the comparison of solver headlines. The notebooks print solver
-headlines instead of solving, so no AMPL, solver or license is needed. They need pytest,
-nbclient, nbformat, ipykernel and psutil, and amplpy for the `--bin-dir` test; they take
-about 20 seconds. CI runs them on every push:
+write into a temporary copy of the repository: timeouts, statuses and error cells, the
+`--bin-dir` replacement of `ampl_notebook()` and the order of `PATH`, folder copies, list
+files, `--out`, `--recompare` and interruption; other tests call the comparison and the
+timeout functions directly. The notebooks print solver headlines instead of solving, and
+the `--bin-dir` tests use a stub amplpy package, so no AMPL, solver, license or amplpy is
+needed. They need pytest, nbclient, nbformat and ipykernel, and psutil for the
+interruption test (skipped on Windows); they take about 20 seconds. CI runs them on every
+push:
 
 ```bash
 python -m pytest scripts/tests

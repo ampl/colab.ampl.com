@@ -114,7 +114,8 @@ python scripts/check_format.py   # check only, as in CI
 
 To run notebooks with other AMPL or solver builds and compare their results
 with the stored outputs, use `scripts/run_notebooks.py`; see
-[TESTING.md](TESTING.md), which also explains how it differs from CI.
+[TESTING.md](TESTING.md), which also explains how it differs from CI. After changing
+that script, run its tests: `python -m pytest scripts/tests` (also run in CI).
 
 `python scripts/index.py` runs the fix commands on every notebook before
 indexing, so it needs ruff installed. Notebooks are saved in the JSON layout
