@@ -14,6 +14,7 @@ On every push, CI runs these jobs:
 
 - `scripts/check_headers.py` checks the header fields used by the website.
 - `scripts/check_format.py` runs ruff in check mode.
+- `python -m pytest scripts/tests` tests `scripts/run_notebooks.py` (see below).
 - Every notebook listed by `scripts/list_notebooks.py` runs in its own job with
   `pytest --nbval-lax`, using the released AMPL and solvers from the amplpy modules.
 
@@ -181,6 +182,20 @@ stored outputs. Treat a difference as a lead, not a verdict:
   the cells up to the failed one. Cells whose outputs show no solver headline count as zero solves.
 - To tell a solver version from an AMPL or driver change, run the notebook twice: once with
   the released modules and once with `--bin-dir`. Then compare the two `summary.md` files.
+
+### Tests of the script
+
+`scripts/tests/test_run_notebooks.py` runs the script on small notebooks that the tests
+write into a temporary copy of the repository: timeouts, statuses, the `--bin-dir`
+replacement of `ampl_notebook()`, folder copies, list files, `--recompare`,
+interruption, and the comparison of solver headlines. The notebooks print solver
+headlines instead of solving, so no AMPL, solver or license is needed. They need pytest,
+nbclient, nbformat, ipykernel and psutil, and amplpy for the `--bin-dir` test; they take
+about 20 seconds. CI runs them on every push:
+
+```bash
+python -m pytest scripts/tests
+```
 
 ### Notes
 
