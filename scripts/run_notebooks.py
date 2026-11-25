@@ -479,7 +479,9 @@ def run_one(name, args):
             stopped, peak = watch(popen, name, args, nb_timeout)
         with STATE["lock"]:
             STATE["active"].pop(name, None)
-        if stopped != "interrupted":
+        # after Ctrl+C or SIGTERM, a notebook that ended meanwhile (its kernel
+        # may have been killed with the runner's process tree) is not recorded
+        if stopped != "interrupted" and not STATE["stop"]:
             record(name, args, stopped, peak, round(time.time() - t0, 1), dst)
     except Exception as e:  # one notebook must not stop the run
         with STATE["lock"]:
