@@ -100,8 +100,10 @@ venv-run/bin/python scripts/run_notebooks.py --out notebook-runs/build --recompa
 Notebook paths, given as arguments or in a list file, are absolute or relative to the
 current folder (a path through a symbolic link works too), and must be inside the
 repository. Other paths are reported as `not_found` when the run starts and in
-`summary.md`, and make the exit code 1; they are not written to `results.jsonl`. A list
-file has one path per line; lines that start with `#` are comments.
+`summary.md`, and make the exit code 1; they are not written to `results.jsonl` (but to
+`not_found.json`, which `--recompare` reads). A list file has one path per line; lines
+that start with `#`, after leading spaces, are comments. `--recompare` keeps the results of
+notebooks that are no longer in the repository as they were.
 
 A second run with the same `--out` skips the notebooks already in `results.jsonl`. To rerun
 a notebook, delete its line from that file: its earlier results are removed when it runs
@@ -131,14 +133,19 @@ Options (`--help` lists them all):
   and sets `AMPL_LICFILE`. With `--bin-dir`, it also makes `ampl_notebook()` only create
   `AMPL()` and register the magics: it installs no modules and activates no license.
   Whatever the notebook asks for in `modules=[...]` then comes from the given directories,
-  or from the installed modules when a solver is not there.
+  or from the installed modules when a solver is not there. When amplpy is installed only by
+  the notebook's own `%pip` cell (no `--skip-pip`), `ampl_notebook()` is replaced before the
+  next cell runs; this needs `%pip install` and `ampl_notebook()` in different cells, as in
+  the notebook template.
 - **Timeouts.**
   - A notebook stops at its first error. CI (nbval) runs the remaining cells too and
     reports each cell that fails.
-  - A notebook's own solver time limit (`lim:time=`, `timelim=`, `timelimit=`,
-    `time_limit =`, `maxtime=`, in its code cells) raises
-    the cell timeout to that limit × 1.3 + 60 s, and the notebook timeout to twice the
-    cell timeout.
+  - A notebook's own solver time limits (`lim:time=`, `timelim=`, `timelimit=`,
+    `time_limit =`, `maxtime=`, in its code cells, outside comment lines) raise the
+    timeouts. For each cell that sets one, the largest limit × 1.3 + 60 s is computed. The
+    cell timeout becomes the largest of these values, and the notebook timeout their sum,
+    at least twice the cell timeout. A cell that solves several times in a loop can still
+    need a larger `--cell-timeout` or `--nb-timeout`.
 - **Watchdog.** It stops a notebook when either limit is exceeded:
   - the notebook timeout;
   - `--mem-gb`, for the resident memory of the notebook's processes.
@@ -148,20 +155,21 @@ Options (`--help` lists them all):
   stopped kernel leaves its AMPL and solver processes behind.
 - **Statuses.** Each notebook gets one of these statuses:
   - `ok`;
-  - `error` (an exception, shown with the cell number);
+  - `error` (an exception, shown with the cell number, as are the cells of timeouts);
   - `cell_timeout`, `nb_timeout`;
   - `memory_limit`, `memory_guard`;
   - `no_output` (the worker wrote no notebook: see the `.log` file next to the executed
     notebook);
-  - `runner_error` (the script failed for this notebook, for example on a truncated
-    executed notebook; the exception is shown).
+  - `runner_error` (the script or the kernel failed for this notebook, for example a
+    kernel that died; the exception is shown).
 
 ### Reading the comparison
 
 The comparison takes the solver headlines, such as `HiGHS 1.15.1: optimal solution;
 objective 85`. It matches them cell by cell with the outputs stored in the notebook and
-reports changed statuses, objective values differing by more than 1e-6 relative, and
-changed numbers of solves. `summary.md` also lists warnings that are new compared with the
+reports changed statuses, objective values differing by more than 1e-6 relative (by more
+than 1e-6 absolute for values below 1 in magnitude, so that solver round-off near zero is
+not reported), and changed numbers of solves. `summary.md` also lists warnings that are new compared with the
 stored outputs. Treat a difference as a lead, not a verdict:
 
 - Stored outputs are often from older AMPL and solver versions. A time-limited run, or a
@@ -169,8 +177,8 @@ stored outputs. Treat a difference as a lead, not a verdict:
 - Notebooks with random data and no seed are marked `(random data without seed)` in
   `summary.md` (a guess from the code: `random`, `randint`, `np.random`, ... and no `seed`).
   Notebooks that download data may compare against different data.
-- Only cells that have stored outputs are compared, and after an error only the cells up to
-  the failed one. Cells whose outputs show no solver headline count as zero solves.
+- Only cells that have stored outputs are compared, and after an error or a timeout only
+  the cells up to the failed one. Cells whose outputs show no solver headline count as zero solves.
 - To tell a solver version from an AMPL or driver change, run the notebook twice: once with
   the released modules and once with `--bin-dir`. Then compare the two `summary.md` files.
 

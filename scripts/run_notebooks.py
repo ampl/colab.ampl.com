@@ -9,10 +9,11 @@ check new builds of AMPL or of the solvers before a release:
   repository is not modified), with a timeout per cell, a timeout per
   notebook and a memory limit; when free memory falls below a reserve, the
   largest running notebook is stopped;
-- a notebook's own solver time limit (`lim:time=`, `timelim=`,
-  `timelimit=`, `time_limit =`, `maxtime=`) raises the cell timeout to that
-  limit times 1.3 plus 60 seconds and the notebook timeout to twice the
-  cell timeout;
+- a notebook's own solver time limits (`lim:time=`, `timelim=`,
+  `timelimit=`, `time_limit =`, `maxtime=`, outside comment lines) raise
+  the cell timeout to the largest limit of a cell times 1.3 plus 60 seconds,
+  and the notebook timeout to the sum of these over the cells (at least
+  twice the cell timeout);
 - processes that a notebook leaves running (AMPL and solvers of a stopped
   kernel) are killed;
 - the solver messages (status and objective value) are compared cell by
@@ -62,6 +63,8 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 PRELUDE = """# Added by scripts/run_notebooks.py: not part of the notebook.
 import os as _os
 
+from IPython import get_ipython
+
 
 def _runner_env():
     if {prefix!r}:
@@ -81,7 +84,8 @@ def _runner_ampl_notebook(modules=None, license_uuid=None, **kwargs):
         import ampl_module_plugins as _pl
 
         _dir = _os.path.join(_os.path.dirname(_pl.__file__), "bin")
-        g["ampl"].option["ampl_libpath"] += "\\n" + _dir
+        _cur = g["ampl"].option["ampl_libpath"] or ""
+        g["ampl"].option["ampl_libpath"] = _cur + "\\n" + _dir if _cur else _dir
     except ImportError:
         pass
     print(" / ".join(g["ampl"].option["version"].split("\\n")[:2]))
@@ -89,19 +93,32 @@ def _runner_ampl_notebook(modules=None, license_uuid=None, **kwargs):
     return g["ampl"]
 
 
-try:
-    import amplpy as _amplpy  # importing it puts the module directories first
-except ImportError:  # installed later by the notebook's own %pip cell
-    _amplpy = None
-_runner_env()
-if {plain!r} and _amplpy is not None:
-    _amplpy.ampl_notebook = _runner_ampl_notebook
+def _runner_patch():  # replace ampl_notebook(); False without amplpy
+    import importlib
+
+    importlib.invalidate_caches()  # amplpy may just have been installed
+    try:
+        import amplpy  # importing it puts the module directories first
+    except ImportError:
+        return False
+    amplpy.ampl_notebook = _runner_ampl_notebook
     try:
         import amplpy.vendor.ampltools as _vt
 
         _vt.ampl_notebook = _runner_ampl_notebook
     except ImportError:
         pass
+    return True
+
+
+def _runner_retry(*_):  # before each cell, until a %pip cell installs amplpy
+    if _runner_patch():
+        get_ipython().events.unregister("pre_run_cell", _runner_retry)
+
+
+_runner_env()
+if {plain!r} and not _runner_patch():
+    get_ipython().events.register("pre_run_cell", _runner_retry)
 """
 
 PIP = re.compile(r"^(\s*)([%!]\s*pip\s+install\b.*)$", re.MULTILINE)
@@ -143,18 +160,26 @@ def execute(src, dst, cell_timeout, prefix, licfile, plain, skip_pip):
         kernel_name="python3",
         resources={"metadata": {"path": path}},
     )
-    t0, status = time.time(), "ok"
+    started = {}  # index of the last cell started, with the prelude in front
+    client.on_cell_start = lambda cell, cell_index: started.update(i=cell_index)
+    t0, info = time.time(), {"status": "ok"}
     try:
         client.execute()
     except CellTimeoutError:
-        status = "cell_timeout"
+        info["status"] = "cell_timeout"
     except CellExecutionError:
-        status = "error"
+        info["status"] = "error"
     except Exception as e:
-        status = f"runner_error: {type(e).__name__}: {e}"[:300]
-    seconds = round(time.time() - t0, 1)
-    nb.metadata["notebook_runner"] = {"status": status, "seconds": seconds}
-    nbformat.write(nb, dst)
+        info["status"] = "runner_error"
+        info["error"] = {"ename": type(e).__name__, "evalue": str(e)[:400]}
+    if info["status"] != "ok" and "i" in started:
+        info["cell"] = started["i"] - 1  # cell number of the original notebook
+    info["seconds"] = round(time.time() - t0, 1)
+    nb.metadata["notebook_runner"] = info
+    # write and rename: a notebook stopped by the watchdog while writing
+    # leaves no truncated file
+    nbformat.write(nb, dst + ".part")
+    os.replace(dst + ".part", dst)
 
 
 # ---- comparison with the stored outputs ----
@@ -230,8 +255,9 @@ def compare(orig, new):
     outputs and, after an error, up to the failed cell only."""
     old_msgs, old_warn = solver_messages(orig)
     new_msgs, new_warn = solver_messages(new, offset=1)
-    error = first_error(new)
-    last = error["cell"] if error else len(orig.get("cells", []))
+    last = failed_cell(new)
+    if last is None:
+        last = len(orig.get("cells", []))
     stored = {
         i
         for i, c in enumerate(orig.get("cells", []))
@@ -248,6 +274,16 @@ def compare(orig, new):
         "new_warnings": sorted(new_warn - old_warn)[:10],
         "random_data": bool(RANDOM.search(code)) and "seed" not in code,
     }
+
+
+def failed_cell(nb):
+    """Cell number (of the original notebook) where the run stopped, from the
+    first error output or, for a timeout, which adds none, from the runner's
+    metadata; None if the notebook ran to the end."""
+    error = first_error(nb)
+    if error:
+        return error["cell"]
+    return nb.get("metadata", {}).get("notebook_runner", {}).get("cell")
 
 
 def first_error(nb):
@@ -340,17 +376,33 @@ def watch(popen, name, args, nb_timeout):
 # ---- driver ----
 
 
+def cell_limits(nb):
+    """The largest solver time limit of each code cell that sets one, outside
+    comment lines (one cell usually runs one solve; a solver and its MP2NL
+    wrapper often repeat the same limit)."""
+    limits = []
+    for c in nb.get("cells", []):
+        if c.get("cell_type") != "code":
+            continue
+        lines = "".join(c.get("source", [])).splitlines()
+        code = "\n".join(x for x in lines if not x.lstrip().startswith("#"))
+        own = [float(x.rstrip(".")) for x in OWN_LIMIT.findall(code)]
+        if own:
+            limits.append(max(own))
+    return limits
+
+
 def timeouts(path, args):
-    """Cell and notebook timeouts; a notebook's own solver time limit raises
-    them (the cell to the limit times 1.3 plus 60 s, the notebook to twice
-    that), the options are kept otherwise."""
+    """Cell and notebook timeouts. A notebook's own solver time limits raise
+    them: the cell timeout to the largest limit times 1.3 plus 60 s, the
+    notebook timeout to the sum of that over the cells, and to at least twice
+    the cell timeout. The options are kept otherwise."""
     with open(path, encoding="utf-8") as f:
-        code = code_text(json.load(f))
-    own = [float(x.rstrip(".")) for x in OWN_LIMIT.findall(code)]
-    if not own:
+        limits = [int(1.3 * x + 60) for x in cell_limits(json.load(f))]
+    if not limits:
         return args.cell_timeout, args.nb_timeout
-    cell = max(args.cell_timeout, int(1.3 * max(own) + 60))
-    return cell, max(args.nb_timeout, 2 * cell)
+    cell = max(args.cell_timeout, max(limits))
+    return cell, max(args.nb_timeout, 2 * cell, sum(limits))
 
 
 def worker_env(args):
@@ -366,6 +418,21 @@ def worker_env(args):
     return env
 
 
+def copy_ignore(out):
+    """Files not copied with a notebook's folder: other notebooks, editor
+    copies, and the results folder when it lies inside the folder."""
+    patterns = shutil.ignore_patterns(
+        ".virtual_documents", ".ipynb_checkpoints", "*.ipynb"
+    )
+    out = os.path.realpath(out)
+
+    def ignore(folder, names):
+        inside = {n for n in names if os.path.realpath(os.path.join(folder, n)) == out}
+        return patterns(folder, names) | inside
+
+    return ignore
+
+
 def prepare(name, args):
     """Fresh copy of the notebook's folder; returns (src, dst). Results of an
     earlier run of the notebook are removed first."""
@@ -378,7 +445,7 @@ def prepare(name, args):
     shutil.copytree(
         os.path.dirname(os.path.join(ROOT_DIR, name)),
         work,
-        ignore=shutil.ignore_patterns(".virtual_documents", "*.zip", "*.ipynb"),
+        ignore=copy_ignore(args.out),
     )
     src = os.path.join(work, os.path.basename(name))
     shutil.copy(os.path.join(ROOT_DIR, name), src)
@@ -429,19 +496,30 @@ def run_one(name, args):
 
 def record(name, args, stopped, peak, seconds, dst):
     rec = {"notebook": name, "seconds": seconds, "peak_rss_gb": round(peak / 2**30, 2)}
-    if os.path.exists(dst):
-        with open(dst, encoding="utf-8") as f:
-            new = json.load(f)
+    new = read_notebook(dst)
+    if new is not None:
         with open(os.path.join(ROOT_DIR, name), encoding="utf-8") as f:
             orig = json.load(f)
-        rec["status"] = new.get("metadata", {}).get("notebook_runner", {}).get("status")
-        rec["error"] = first_error(new)
+        info = new.get("metadata", {}).get("notebook_runner", {})
+        rec["status"] = info.get("status")
+        rec["error"] = first_error(new) or info.get("error")
+        if rec["error"] is None and "cell" in info:
+            rec["error"] = {"cell": info["cell"], "ename": info["status"], "evalue": ""}
         rec.update(compare(orig, new))
     else:
         with open(dst + ".log") as f:
             rec["error"] = {"ename": "log", "evalue": f.read()[-400:]}
     rec["status"] = stopped or rec.get("status") or "no_output"
     write_record(rec, args)
+
+
+def read_notebook(path):
+    """The executed notebook, or None if it is missing or unreadable."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return None
 
 
 def write_record(rec, args):
@@ -460,7 +538,8 @@ def describe(rec):
     if rec.get("random_data"):
         parts.append("(random data without seed)")
     if err and (rec["status"] != "ok" or not rec.get("diffs")):
-        parts.append(f"{err.get('ename')}: {err.get('evalue')}")
+        where = f"cell {err['cell']}: " if err.get("cell") is not None else ""
+        parts.append(f"{where}{err.get('ename')}: {err.get('evalue')}".rstrip(": "))
     parts += rec.get("diffs", [])[:3]
     if rec.get("new_warnings"):
         parts.append("new warnings: " + "; ".join(rec["new_warnings"][:2]))
@@ -475,8 +554,13 @@ def read_results(out):
         return [json.loads(x) for x in f]
 
 
-def summary(out, not_found=()):
+def summary(out):
     recs = read_results(out)
+    try:
+        with open(os.path.join(out, "not_found.json")) as f:
+            not_found = json.load(f)
+    except (OSError, ValueError):
+        not_found = []
     lines = ["# Notebook run", "", f"{len(recs)} notebooks", ""]
     if not_found:
         lines += ["Not notebooks of the repository: " + ", ".join(not_found), ""]
@@ -505,12 +589,12 @@ def recompare(out):
         sys.exit(f"no results folder {out}")
     recs = read_results(out)
     for rec in recs:
-        dst = os.path.join(out, "executed", rec["notebook"])
-        if os.path.exists(dst):
-            with open(dst, encoding="utf-8") as f:
-                new = json.load(f)
-            with open(os.path.join(ROOT_DIR, rec["notebook"]), encoding="utf-8") as f:
-                rec.update(compare(json.load(f), new))
+        new = read_notebook(os.path.join(out, "executed", rec["notebook"]))
+        orig = read_notebook(os.path.join(ROOT_DIR, rec["notebook"]))
+        if orig is None:
+            print(f"kept as it was: {rec['notebook']} is no longer in the repository")
+        elif new is not None:
+            rec.update(compare(orig, new))
     with open(os.path.join(out, "results.jsonl"), "w") as f:
         f.writelines(json.dumps(r) + "\n" for r in recs)
     summary(out)
@@ -538,7 +622,8 @@ def notebooks(args):
         return args.notebooks
     if args.list:
         with open(args.list) as f:
-            return [x.strip() for x in f if x.strip() and not x.startswith("#")]
+            lines = (x.strip() for x in f)
+            return [x for x in lines if x and not x.startswith("#")]
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from list_notebooks import list_notebooks
 
@@ -651,10 +736,12 @@ def main():
             todo.append(name)
     for given in bad:
         print(f"not_found     {given}: not a notebook of the repository")
+    with open(os.path.join(args.out, "not_found.json"), "w") as f:
+        json.dump(bad, f)
     print(f"{len(todo)} notebooks to run ({len(done)} done), jobs={args.jobs}")
     stop_on_signals()
     run_all(todo, args)
-    recs = summary(args.out, bad)
+    recs = summary(args.out)
     if STATE["stop"]:
         sys.exit(130)
     ok = not bad and all(r["status"] == "ok" for r in recs)
