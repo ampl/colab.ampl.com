@@ -48,7 +48,8 @@ os.environ["PATH"] = "/stub/ampl_module_base/bin" + os.pathsep + os.environ["PAT
 
 class AMPL:
     def __init__(self):
-        self.option = {"ampl_libpath": "", "version": "AMPL stub\\nLicensed"}
+        # ampl_libpath unset: the replacement must not add to None
+        self.option = {"ampl_libpath": None, "version": "AMPL stub\\nLicensed"}
 
 
 def register_magics(**kwargs):
@@ -145,11 +146,12 @@ def test_cell_timeout_stops_the_comparison(repo):
     assert "cell 0: cell_timeout" in summary(out)
 
 
-@pytest.mark.parametrize("same_cell", [False, True], ids=["pip_cell", "same_cell"])
-def test_bin_dir_replaces_ampl_notebook(repo, tmp_path, same_cell):
+@pytest.mark.parametrize("case", ["pip_cell", "same_cell", "failed_import_first"])
+def test_bin_dir_replaces_ampl_notebook(repo, tmp_path, case):
     """With --bin-dir, ampl_notebook() is replaced also when amplpy is
     installed only by the notebook (in an earlier cell, or in the same cell as
-    in template/minimal.ipynb), and the --bin-dir folders stay first on PATH."""
+    in template/minimal.ipynb, or after an import that failed), and the
+    --bin-dir folders stay first on PATH."""
     blocker = tmp_path / "blocker" / "amplpy"  # amplpy not installed yet
     blocker.mkdir(parents=True)
     (blocker / "__init__.py").write_text("raise ImportError('not installed')\n")
@@ -170,9 +172,15 @@ def test_bin_dir_replaces_ampl_notebook(repo, tmp_path, same_cell):
         "print('PATH0', os.environ['PATH'].split(os.pathsep)[0])\n"
         "print('LIBPATH', ampl.option['ampl_libpath'])"
     )
-    cells = (
-        [(install + "\n" + use, None)] if same_cell else [(install, None), (use, None)]
-    )
+    cells = {
+        "pip_cell": [(install, None), (use, None)],
+        "same_cell": [(install + "\n" + use, None)],
+        "failed_import_first": [
+            ("try:\n    import amplpy\nexcept ImportError:\n    pass", None),
+            (install, None),
+            (use, None),
+        ],
+    }[case]
     nb = write_notebook(repo, "bindir.ipynb", cells)
     env = {"PYTHONPATH": str(blocker.parent)}
     _, out = run(repo, nb, "--bin-dir", str(bin_dir), env=env)
@@ -193,11 +201,39 @@ def test_bin_dir_first_on_path_with_amplpy_installed(repo, tmp_path):
     (stub / "amplpy" / "__init__.py").write_text(STUB_AMPLPY)
     bin_dir = tmp_path / "bin"
     bin_dir.mkdir()
-    show = "import os\nprint(os.environ['PATH'].split(os.pathsep)[0])"
+    show = "import os\nimport amplpy\nprint(os.environ['PATH'].split(os.pathsep)[0])"
     nb = write_notebook(repo, "path.ipynb", [(show, None)])
     _, out = run(repo, nb, "--bin-dir", str(bin_dir), env={"PYTHONPATH": str(stub)})
     executed = nbformat.read(os.path.join(out, "executed", nb), as_version=4)
     assert executed.cells[-1].outputs[0]["text"].strip() == str(bin_dir)
+
+
+def test_prelude_in_a_fresh_interpreter(tmp_path):
+    """The import hook in a plain interpreter: no recursion in later imports
+    (importlib.machinery not loaded yet), and a reload of amplpy keeps the
+    replacement and the --bin-dir folder first on PATH."""
+    stub = tmp_path / "stub"
+    (stub / "amplpy").mkdir(parents=True)
+    (stub / "amplpy" / "__init__.py").write_text(STUB_AMPLPY)
+    code = f"""
+import importlib, importlib.util, os, sys
+spec = importlib.util.spec_from_file_location("rn", {SCRIPT!r})
+rn = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(rn)
+prelude = rn.PRELUDE.format(prefix="/bin_dir", licfile="", plain="1")
+sys.modules.pop("importlib.machinery", None)
+exec(prelude, {{}})
+import colorsys  # recursed when find_spec imported importlib.machinery
+sys.path.insert(0, {str(stub)!r})
+import amplpy
+importlib.reload(amplpy)
+print(amplpy.ampl_notebook.__name__, os.environ["PATH"].split(os.pathsep)[0])
+"""
+    proc = subprocess.run(
+        [sys.executable, "-I", "-c", code], check=False, capture_output=True, text=True
+    )
+    assert proc.returncode == 0, proc.stderr[-2000:]
+    assert proc.stdout.split() == ["_runner_ampl_notebook", "/bin_dir"]
 
 
 def test_statuses_and_error_cells(repo):

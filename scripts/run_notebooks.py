@@ -28,8 +28,9 @@ first on PATH, and `ampl_notebook()` only creates `AMPL()` and registers the
 magics: it installs no modules and activates no license (use --licfile for
 an AMPL license file). It is replaced when amplpy is imported, also when the
 notebook's own `%pip` installs amplpy, and the directories are put first on
-PATH again then, as importing amplpy puts the module directories first. With --skip-pip, `%pip install` lines are commented
-out: the packages must already be installed.
+PATH again then, as importing amplpy puts the module directories first.
+With --skip-pip, `%pip install` lines are commented out: the packages must
+already be installed.
 
 Requires nbclient, nbformat and ipykernel, and psutil for the memory limits
 and the cleanup of left-over processes. TESTING.md describes the setup, how
@@ -66,6 +67,7 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 PRELUDE = """# Added by scripts/run_notebooks.py: not part of the notebook.
 import os as _os
 import sys as _sys
+from importlib.machinery import PathFinder as _PathFinder  # not in find_spec
 
 
 def _runner_env():
@@ -86,7 +88,7 @@ def _runner_ampl_notebook(modules=None, license_uuid=None, **kwargs):
         import ampl_module_plugins as _pl
 
         _dir = _os.path.join(_os.path.dirname(_pl.__file__), "bin")
-        _cur = g["ampl"].option["ampl_libpath"] or ""
+        _cur = g["ampl"].option["ampl_libpath"]  # may be empty or None
         g["ampl"].option["ampl_libpath"] = _cur + "\\n" + _dir if _cur else _dir
     except ImportError:
         pass
@@ -107,21 +109,19 @@ def _runner_patch(amplpy):
 
 
 class _RunnerFinder:
-    # Replaces ampl_notebook() as soon as amplpy is imported, wherever that
-    # happens: also after a %pip install of amplpy in the same cell.
+    # Replaces ampl_notebook() whenever amplpy is imported, wherever that
+    # happens: also after a %pip install of amplpy in the same cell, and on a
+    # reload. It stays in sys.meta_path and only answers for "amplpy".
     def find_spec(self, name, path=None, target=None):
-        from importlib.machinery import PathFinder
-
         if name != "amplpy":
             return None
-        spec = PathFinder.find_spec(name, path)
+        spec = _PathFinder.find_spec(name, path)
         if spec is None:  # not installed yet
             return None
-        _sys.meta_path.remove(self)
         exec_module = spec.loader.exec_module
 
         def _exec(module):
-            exec_module(module)
+            exec_module(module)  # if this fails, the next import is patched
             _runner_patch(module)
 
         spec.loader.exec_module = _exec
