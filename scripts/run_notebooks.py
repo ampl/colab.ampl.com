@@ -122,7 +122,10 @@ if {plain!r} and not _runner_patch():
 """
 
 PIP = re.compile(r"^(\s*)([%!]\s*pip\s+install\b.*)$", re.MULTILINE)
-SOLVER_LINE = re.compile(r"^([A-Za-z][\w .\-]*?\s+v?\d[\w.\-]*)\s*:\s*(.+)$")
+# "HiGHS 1.15.1: ...", also with a build in parentheses: "XPRESS 10.0.0 (48.01.01): ..."
+SOLVER_LINE = re.compile(
+    r"^([A-Za-z][\w .\-]*?\s+v?\d[\w.\-]*(?:\s*\([\w.\-]*\))?)\s*:\s*(.+)$"
+)
 NUMBER = r"-?\d+(?:\.\d*)?(?:[eE][-+]?\d+)?"
 OBJECTIVE = re.compile(rf"objective\s+({NUMBER})")
 STATUS = re.compile(
