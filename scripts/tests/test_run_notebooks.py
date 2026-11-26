@@ -370,12 +370,61 @@ def test_solver_headlines_with_a_build_number():
 
 
 def test_objective_tolerance():
-    """Relative 1e-6, absolute 1e-6 below 1 in magnitude (as in TESTING.md)."""
+    """Relative 1e-5, absolute 1e-5 below 1 in magnitude (as in TESTING.md);
+    --rel-tol changes it."""
     runner = load_runner()
-    assert (
-        runner.compare_cell(0, [("optimal", 1e-8, "")], [("optimal", 5e-8, "")]) == []
+
+    def diffs(a, b, *tol):
+        return runner.compare_cell(0, [("optimal", a, "")], [("optimal", b, "")], *tol)
+
+    assert diffs(1e-8, 5e-8) == []
+    assert diffs(1e3, 1.01e3)
+    # MOSEK 11.0.29 -> 11.2.0 in portfolio_factor_model.ipynb: round-off
+    assert diffs(3.38248968, 3.382495447) == []
+    assert diffs(3.38248968, 3.382495447, 1e-6)
+
+
+def test_python_kernelspec_in_jupyter_folders_is_not_used(repo, tmp_path):
+    """--python decides the kernel's interpreter, also when a "python3"
+    kernelspec of another Python is installed in the Jupyter folders."""
+    spec = tmp_path / "jupyter" / "kernels" / "python3"
+    spec.mkdir(parents=True)
+    argv = [
+        "/nonexistent/python",
+        "-m",
+        "ipykernel_launcher",
+        "-f",
+        "{connection_file}",
+    ]
+    (spec / "kernel.json").write_text(
+        json.dumps({"argv": argv, "display_name": "Other", "language": "python"})
     )
-    assert runner.compare_cell(0, [("optimal", 1e3, "")], [("optimal", 1.01e3, "")])
+    nb = write_notebook(
+        repo, "exe.ipynb", [("import sys\nprint(sys.executable)", None)]
+    )
+    proc, out = run(repo, nb, env={"JUPYTER_PATH": str(tmp_path / "jupyter")})
+    assert results(out)[nb]["status"] == "ok", proc.stdout + proc.stderr
+    executed = nbformat.read(out / "executed" / nb, as_version=4)
+    assert executed.cells[1].outputs[0].text.strip() == sys.executable
+
+
+def test_watch_kills_the_worker_when_it_raises(monkeypatch):
+    """An error in the watch loop must not leave the notebook running."""
+    psutil = pytest.importorskip("psutil")
+    runner = load_runner()
+
+    def fail(*args):
+        raise psutil.AccessDenied()
+
+    monkeypatch.setattr(runner, "stop_reason", fail)
+    popen = subprocess.Popen([sys.executable, "-c", "import time; time.sleep(60)"])
+    try:
+        with pytest.raises(psutil.AccessDenied):
+            runner.watch(popen, "nb", None, 600)
+        assert popen.poll() is not None
+    finally:
+        if popen.poll() is None:
+            popen.kill()
 
 
 def test_error_descriptions():

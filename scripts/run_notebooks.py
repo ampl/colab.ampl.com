@@ -17,8 +17,8 @@ check new builds of AMPL or of the solvers before a release:
   twice the cell timeout);
 - processes that a notebook leaves running (AMPL and solvers of a stopped
   kernel) are killed;
-- the solver messages (status and objective value) are compared cell by
-  cell with the stored outputs; notebooks with random data and no seed are
+- the solver messages (status and objective value, within --rel-tol) are
+  compared cell by cell with the stored outputs; notebooks with random data and no seed are
   marked, as their objective values change from run to run, and so are
   notebooks that print "Using synthetic data" (generated instead of
   downloaded data, see --synthetic-data);
@@ -154,11 +154,36 @@ OWN_LIMIT = re.compile(
 )
 # printed by notebooks that use generated data instead of downloaded data
 SYNTHETIC = "Using synthetic data"
+# objective values differing by less are not reported (--rel-tol): interior
+# point and conic solvers move them by about 1e-6 between versions
+REL_TOL = 1e-5
 RANDOM = re.compile(r"\brandom\b|\brandint\b|np\.random|Uniform|Normal\(")
 STATE = {"active": {}, "lock": threading.Lock(), "stop": False}
 
 
 # ---- worker: executes one notebook (python run_notebooks.py --worker ...) ----
+
+
+def kernel_manager_class():
+    """A kernel manager that starts the kernel with this worker's interpreter
+    (--python). Asked for "python3", Jupyter would prefer a kernelspec of that
+    name installed in the user or system folders, which may run another
+    Python, over ipykernel's own one."""
+    from jupyter_client.kernelspec import KernelSpec
+    from jupyter_client.manager import AsyncKernelManager
+
+    spec = KernelSpec(
+        argv=[sys.executable, "-m", "ipykernel_launcher", "-f", "{connection_file}"],
+        display_name="Python 3 (run_notebooks.py)",
+        language="python",
+    )
+
+    class Manager(AsyncKernelManager):
+        @property
+        def kernel_spec(self):
+            return spec
+
+    return Manager
 
 
 def execute(src, dst, cell_timeout, prefix, licfile, plain, skip_pip):
@@ -179,6 +204,7 @@ def execute(src, dst, cell_timeout, prefix, licfile, plain, skip_pip):
         nb,
         timeout=cell_timeout,
         kernel_name="python3",
+        kernel_manager_class=kernel_manager_class(),
         resources={"metadata": {"path": path}},
     )
     started = {}  # index of the last cell started, with the prelude in front
@@ -244,7 +270,7 @@ def solver_messages(nb, offset=0):
     return messages, warnings
 
 
-def compare_cell(cell, old, new):
+def compare_cell(cell, old, new, rel_tol=REL_TOL):
     if len(old) != len(new):
         line = (new or old)[0][2]
         return [f"cell {cell}: {len(old)} -> {len(new)} solves ({line})"]
@@ -253,7 +279,7 @@ def compare_cell(cell, old, new):
         if a[0] != b[0]:
             diffs.append(f"cell {cell}: '{a[2]}' -> '{b[2]}'")
         elif a[1] is not None and b[1] is not None:
-            if abs(a[1] - b[1]) > 1e-6 * max(1.0, abs(a[1])):
+            if abs(a[1] - b[1]) > rel_tol * max(1.0, abs(a[1])):
                 diffs.append(
                     f"cell {cell}: objective {a[1]:.10g} -> {b[1]:.10g} ('{b[2]}')"
                 )
@@ -268,9 +294,11 @@ def code_text(nb):
     )
 
 
-def compare(orig, new):
+def compare(orig, new, rel_tol=REL_TOL):
     """Solver headlines compared cell by cell, in the cells that have stored
-    outputs and, after an error, up to the failed cell only."""
+    outputs and, after an error, up to the failed cell only. Objective values
+    differ when they differ by more than rel_tol relative (absolute for values
+    below 1 in magnitude)."""
     old_msgs, old_warn = solver_messages(orig)
     new_msgs, new_warn = solver_messages(new, offset=1)
     last = failed_cell(new)
@@ -283,7 +311,8 @@ def compare(orig, new):
     }
     diffs = []
     for cell in sorted((set(old_msgs) | set(new_msgs)) & stored):
-        diffs += compare_cell(cell, old_msgs.get(cell, []), new_msgs.get(cell, []))
+        old, new_ = old_msgs.get(cell, []), new_msgs.get(cell, [])
+        diffs += compare_cell(cell, old, new_, rel_tol)
     code = code_text(orig)
     return {
         "solves_old": sum(map(len, old_msgs.values())),
@@ -329,6 +358,8 @@ def tree_rss(proc, seen):
         procs = [proc, *proc.children(recursive=True)]
     except psutil.NoSuchProcess:
         return 0
+    except psutil.Error:  # AccessDenied on a child: measure the worker alone
+        procs = [proc]
     seen.update(procs)
     total = 0
     for p in procs:
@@ -379,18 +410,20 @@ def watch(popen, name, args, nb_timeout):
     proc = psutil.Process(popen.pid) if psutil else None
     seen = set()
     t0, peak, reason = time.time(), 0, None
-    while popen.poll() is None:
-        rss = tree_rss(proc, seen) if proc else 0
-        peak = max(peak, rss)
-        reason = stop_reason(name, args, rss, time.time() - t0, nb_timeout, psutil)
-        if reason:
-            break
-        time.sleep(1.0)
-    if proc:
-        kill_all([proc, *seen])
-    elif reason:
-        popen.kill()
-    popen.wait()
+    try:
+        while popen.poll() is None:
+            rss = tree_rss(proc, seen) if proc else 0
+            peak = max(peak, rss)
+            reason = stop_reason(name, args, rss, time.time() - t0, nb_timeout, psutil)
+            if reason:
+                break
+            time.sleep(1.0)
+    finally:  # also when the loop raised: leave nothing running unwatched
+        if popen.poll() is None:
+            popen.kill()
+        if proc:
+            kill_all([proc, *seen])
+        popen.wait()
     return reason, peak
 
 
@@ -516,7 +549,7 @@ def record(name, args, stopped, peak, seconds, dst):
         info = new.get("metadata", {}).get("notebook_runner", {})
         rec["status"] = info.get("status")
         rec["error"] = run_error(new, info)
-        rec.update(compare(orig, new))
+        rec.update(compare(orig, new, args.rel_tol))
     else:
         with open(dst + ".log") as f:
             rec["error"] = {"ename": "log", "evalue": f.read()[-400:]}
@@ -614,7 +647,7 @@ def summary(out):
     return recs
 
 
-def recompare(out):
+def recompare(out, rel_tol=REL_TOL):
     if not os.path.isdir(out):
         sys.exit(f"no results folder {out}")
     recs = read_results(out)
@@ -624,7 +657,7 @@ def recompare(out):
         if orig is None:
             print(f"kept as it was: {rec['notebook']} is no longer in the repository")
         elif new is not None:
-            rec.update(compare(orig, new))
+            rec.update(compare(orig, new, rel_tol))
     with open(os.path.join(out, "results.jsonl"), "w") as f:
         f.writelines(json.dumps(r) + "\n" for r in recs)
     summary(out)
@@ -699,6 +732,13 @@ def parse_args():
     ap.add_argument("--python", default=sys.executable, help="Python for the kernels")
     ap.add_argument("--recompare", action="store_true", help="only redo the summary")
     ap.add_argument(
+        "--rel-tol",
+        type=float,
+        default=REL_TOL,
+        help="objective values differing by less are the same: relative, "
+        f"absolute below 1 in magnitude (default {REL_TOL:g})",
+    )
+    ap.add_argument(
         "--fail-on-diff",
         action="store_true",
         help="exit code 1 also when solver results differ from the stored "
@@ -765,7 +805,7 @@ def main():
     args = parse_args()
     absolute_args(args)
     if args.recompare:
-        recompare(args.out)
+        recompare(args.out, args.rel_tol)
         return
     try:
         import psutil  # noqa: F401

@@ -127,7 +127,11 @@ Options (`--help` lists them all):
 - `--cell-timeout` (180 s), `--nb-timeout` (600 s), `--mem-gb` (5) and `--reserve-gb` (2.5)
   set the watchdog limits.
 - `--python` sets the interpreter for the kernels; the default is the one that runs the
-  script.
+  script. The kernels are started with it directly: a `python3` kernelspec installed in the
+  Jupyter folders (`jupyter kernelspec list`) is not used.
+- `--rel-tol` (1e-5) is the tolerance for objective values in the comparison (see "Reading
+  the comparison"). Interior point and conic solvers move objective values by about 1e-6
+  between versions.
 - `--out` is the results folder; the default is `notebook-runs/latest` in the repository.
 - `--synthetic-data` sets `COLAB_SYNTHETIC_DATA=1`: the notebooks that download data
   generate it instead (see "Downloaded data" below), so the run needs no network access to
@@ -178,10 +182,10 @@ Options (`--help` lists them all):
 
 The comparison takes the solver headlines, such as `HiGHS 1.15.1: optimal solution;
 objective 85`. It matches them cell by cell with the outputs stored in the notebook and
-reports changed statuses, objective values differing by more than 1e-6 relative (by more
-than 1e-6 absolute for values below 1 in magnitude, so that solver round-off near zero is
-not reported), and changed numbers of solves. `summary.md` also lists warnings that are new
-compared with the stored outputs. Treat a difference as a lead, not a verdict:
+reports changed statuses, objective values differing by more than 1e-5 relative (by more
+than 1e-5 absolute for values below 1 in magnitude, so that solver round-off near zero is
+not reported; `--rel-tol` changes this), and changed numbers of solves. `summary.md` also
+lists warnings that are new compared with the stored outputs. Treat a difference as a lead, not a verdict:
 
 - Stored outputs are often from older AMPL and solver versions. A time-limited run, or a
   newer solver, finds other incumbents or proves optimality.
