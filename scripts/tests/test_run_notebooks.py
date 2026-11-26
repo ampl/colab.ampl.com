@@ -5,7 +5,7 @@ there and run the script on them, so the real repository is not changed. The
 notebooks print solver headlines instead of solving, and the --bin-dir tests
 use a stub amplpy package: no AMPL, solver, license or amplpy is needed. The
 last tests call functions of the script directly. Requires pytest, nbclient,
-nbformat and ipykernel, and psutil for the interruption test.
+nbformat, ipykernel and psutil.
 
 From the repository root:
 
@@ -273,6 +273,31 @@ def test_out_in_a_notebook_folder_is_refused(repo, inside):
     assert results(out) == {}
 
 
+def test_out_in_the_repository_only_in_notebook_runs(repo):
+    """Executed copies elsewhere in the repository would be taken for
+    notebooks by list_notebooks.py, check_headers.py and index.py."""
+    nb = write_notebook(repo, "ok.ipynb", [("x = 1", None)])
+    proc, out = run(repo, nb, out=repo / "runs" / "today")
+    assert proc.returncode == 2
+    assert "is in the repository" in proc.stderr
+    assert not out.exists()
+    proc, out = run(repo, nb, out=repo / "notebook-runs" / "today")
+    assert proc.returncode == 0, proc.stdout + proc.stderr
+    assert list(results(out)) == [nb]
+
+
+def test_unreadable_results_line_is_skipped(tmp_path, capsys):
+    """A line cut short by a kill is skipped, and the next record is not
+    appended to it."""
+    runner = load_runner()
+    (tmp_path / "results.jsonl").write_text('{"notebook": "a"}\n{"notebook": "b", "st')
+    args = types.SimpleNamespace(out=str(tmp_path))
+    rec = {"notebook": "c", "status": "ok", "seconds": 1.0, "peak_rss_gb": 0.0}
+    runner.write_record(rec, args)
+    assert [r["notebook"] for r in runner.read_results(str(tmp_path))] == ["a", "c"]
+    assert "results.jsonl:2: unreadable line skipped" in capsys.readouterr().err
+
+
 def test_synthetic_data(repo):
     """--synthetic-data sets COLAB_SYNTHETIC_DATA; a notebook that then prints
     the marker is marked in the summary, and its differences from the stored
@@ -413,6 +438,25 @@ def test_notebook_timeout_sums_the_cell_limits(tmp_path):
     args = types.SimpleNamespace(cell_timeout=180, nb_timeout=600)
     # cells: 1.3 * 30 + 60 = 99, 1.3 * 300 + 60 = 450 twice
     assert runner.timeouts(path, args) == (450, 999)
+
+
+def test_limit_set_once_counts_for_the_later_solves(tmp_path):
+    """An option set once applies to every later solve."""
+    runner = load_runner()
+    nb = nbformat.v4.new_notebook()
+    sources = [
+        "ampl.solve()  # before any limit: not counted",
+        "ampl.option['gurobi_options'] = 'timelimit=300'",
+        *["ampl.solve()"] * 3,
+        "%%ampl_eval\nsolve;",
+        "print('no solve here')",
+    ]
+    nb.cells = [nbformat.v4.new_code_cell(s) for s in sources]
+    path = tmp_path / "limits.ipynb"
+    nbformat.write(nb, path)
+    args = types.SimpleNamespace(cell_timeout=180, nb_timeout=600)
+    # the cell that sets the limit and 4 solves: 5 * (1.3 * 300 + 60) = 2250
+    assert runner.timeouts(path, args) == (450, 2250)
 
 
 def test_skip_pip_keeps_valid_python():

@@ -11,18 +11,20 @@ check new builds of AMPL or of the solvers before a release:
   largest running notebook is stopped;
 - a notebook's own solver time limits (`lim:time=`, `timelim=`,
   `timelimit=`, `TimeLimit=`, `time_limit =`, `maxtime=`, with a literal
-  value, outside comments) raise the cell timeout to the largest limit of a cell times 1.3 plus 60 seconds,
-  and the notebook timeout to the sum of these over the cells (at least
+  value, outside comments) raise the cell timeout to the largest limit
+  times 1.3 plus 60 seconds, and the notebook timeout to the sum of these
+  over the cells that set a limit or, after one is set, solve (at least
   twice the cell timeout);
 - processes that a notebook leaves running (AMPL and solvers of a stopped
   kernel) are killed;
 - the solver messages (status and objective value, within --rel-tol) are
-  compared cell by cell with the stored outputs; notebooks with random data and no seed are
-  marked, as their objective values change from run to run, and so are
+  compared cell by cell with the stored outputs; notebooks with random
+  data and no seed are marked, as their objective values change from run to run, and so are
   notebooks that print "Using synthetic data" (generated instead of
   downloaded data, see --synthetic-data);
 - results go to OUT/results.jsonl (one line per notebook, written as each
-  finishes; a rerun skips the notebooks already there) and OUT/summary.md.
+  finishes; a rerun skips the notebooks already there) and OUT/summary.md;
+  OUT must be in notebook-runs/ or outside the repository.
 
 With --bin-dir, the given directories (AMPL and solver executables) are put
 first on PATH, and `ampl_notebook()` only creates `AMPL()` and registers the
@@ -35,8 +37,8 @@ already be installed. With --synthetic-data, COLAB_SYNTHETIC_DATA=1 is set:
 notebooks that download data (stock prices from Yahoo Finance) generate it
 instead.
 
-Requires nbclient, nbformat and ipykernel, and psutil for the memory limits
-and the cleanup of left-over processes. TESTING.md describes the setup, how
+Requires nbclient, nbformat, ipykernel and psutil (memory limits, cleanup of
+left-over processes). TESTING.md describes the setup, how
 this differs from CI, and how to read the comparison.
 
 Examples, from the repository root:
@@ -151,6 +153,8 @@ OWN_LIMIT = re.compile(
     r"(?:lim:time|timelimit|timelim|time_limit|maxtime|TimeLimit)\s*=\s*"
     rf"({NUMBER})"
 )
+# a solve in a cell: `solve;` in AMPL, ampl.solve(...) in Python
+SOLVE = re.compile(r"\bsolve\s*[(;]")
 # printed by notebooks that use generated data instead of downloaded data
 SYNTHETIC = "Using synthetic data"
 # objective values differing by less are not reported (--rel-tol): interior
@@ -409,7 +413,9 @@ def kill_all(procs):
             pass
 
 
-def stop_reason(name, args, rss, elapsed, nb_timeout, psutil):
+def stop_reason(name, args, rss, elapsed, nb_timeout):
+    import psutil
+
     with STATE["lock"]:
         STATE["active"][name] = rss
         largest = max(STATE["active"], key=STATE["active"].get)
@@ -417,29 +423,30 @@ def stop_reason(name, args, rss, elapsed, nb_timeout, psutil):
         return "interrupted"
     if elapsed > nb_timeout:
         return "nb_timeout"
-    if psutil and rss > args.mem_gb * 2**30:
+    if rss > args.mem_gb * 2**30:
         return "memory_limit"
     reserve = args.reserve_gb * 2**30
-    if psutil and psutil.virtual_memory().available < reserve and largest == name:
+    if psutil.virtual_memory().available < reserve and largest == name:
         return "memory_guard"
     return None
 
 
 def watch(popen, name, args, nb_timeout):
     """Wait for the notebook process; return (reason it was stopped, peak RSS).
-    Afterwards, kill whatever the notebook left running (needs psutil)."""
+    Afterwards, kill whatever the notebook left running."""
+    import psutil
+
     try:
-        import psutil
-    except ImportError:
-        psutil = None
-    proc = psutil.Process(popen.pid) if psutil else None
+        proc = psutil.Process(popen.pid)
+    except psutil.NoSuchProcess:  # the worker has already ended
+        proc = None
     seen = set()
     t0, peak, reason = time.time(), 0, None
     try:
         while popen.poll() is None:
             rss = tree_rss(proc, seen) if proc else 0
             peak = max(peak, rss)
-            reason = stop_reason(name, args, rss, time.time() - t0, nb_timeout, psutil)
+            reason = stop_reason(name, args, rss, time.time() - t0, nb_timeout)
             if reason:
                 break
             time.sleep(1.0)
@@ -473,10 +480,14 @@ def strip_comment(line):
 
 
 def cell_limits(nb):
-    """The largest solver time limit of each code cell that sets one, outside
-    comments; only literal values are seen (one cell usually runs one solve;
-    a solver and its MP2NL wrapper often repeat the same limit)."""
-    limits = []
+    """The solver time limit of each code cell that may run a time-limited
+    solve: in a cell that sets limits, the largest of them (one cell usually
+    runs one solve; a solver and its MP2NL wrapper often repeat the same
+    limit); in a later cell that solves (`solve;` or `solve(` in its code),
+    the largest limit set so far, as an option set once applies to the later
+    solves.
+    Outside comments; only literal values are seen."""
+    limits, so_far = [], None
     for c in nb.get("cells", []):
         if c.get("cell_type") != "code":
             continue
@@ -485,6 +496,9 @@ def cell_limits(nb):
         own = [float(x.rstrip(".")) for x in OWN_LIMIT.findall(code)]
         if own:
             limits.append(max(own))
+            so_far = max(own) if so_far is None else max(so_far, max(own))
+        elif so_far is not None and SOLVE.search(code):
+            limits.append(so_far)
     return limits
 
 
@@ -624,8 +638,13 @@ def read_notebook(path):
 
 
 def write_record(rec, args):
-    with STATE["lock"], open(os.path.join(args.out, "results.jsonl"), "a") as f:
-        f.write(json.dumps(rec) + "\n")
+    path = os.path.join(args.out, "results.jsonl")
+    with STATE["lock"], open(path, "a+b") as f:
+        if f.seek(0, os.SEEK_END):  # end a line cut short: keep this one apart
+            f.seek(-1, os.SEEK_END)
+            if f.read(1) != b"\n":
+                f.write(b"\n")
+        f.write((json.dumps(rec) + "\n").encode())
     print(
         f"{rec['status']:13s} {rec['seconds']:7.1f}s {rec['peak_rss_gb']:5.2f}GB "
         f"diffs={len(rec.get('diffs', []))} {rec['notebook']}",
@@ -656,11 +675,22 @@ def describe(rec):
 
 
 def read_results(out):
+    """The records of results.jsonl. A line that cannot be read (cut short
+    when the runner was killed while writing it) is skipped with a warning:
+    its notebook runs again."""
     path = os.path.join(out, "results.jsonl")
     if not os.path.exists(path):
         return []
+    recs = []
     with open(path) as f:
-        return [json.loads(x) for x in f]
+        for number, line in enumerate(f, 1):
+            if not line.strip():
+                continue
+            try:
+                recs.append(json.loads(line))
+            except ValueError:
+                print(f"{path}:{number}: unreadable line skipped", file=sys.stderr)
+    return recs
 
 
 def summary(out):
@@ -836,22 +866,45 @@ def refuse_out_in_folders(out, names):
             sys.exit(2)
 
 
+def refuse_out_in_repository(out):
+    """OUT/executed holds copies of the notebooks: inside the repository, only
+    notebook-runs/ is skipped by list_notebooks.py, check_headers.py and
+    index.py, and ignored by git."""
+    out = os.path.realpath(out)
+    root = os.path.realpath(ROOT_DIR)
+    runs = os.path.join(root, "notebook-runs")
+    inside = out == root or out.startswith(root + os.sep)
+    if inside and not (out == runs or out.startswith(runs + os.sep)):
+        print(
+            f"--out {out} is in the repository: use a folder in notebook-runs/ "
+            "or outside the repository",
+            file=sys.stderr,
+        )
+        sys.exit(2)
+
+
 def run_all(names, args):
     """Run the notebooks; on Ctrl+C, stop the running ones without recording
-    them, so that a rerun with the same --out runs them again."""
+    them, so that a rerun with the same --out runs them again. Signals are
+    ignored afterwards: the cleanup and the summary must finish."""
     ex = ThreadPoolExecutor(args.jobs)
-    futures = [ex.submit(run_one, n, args) for n in names]
     try:
+        futures = [ex.submit(run_one, n, args) for n in names]
         for f in futures:
             f.result()
     except KeyboardInterrupt:
         STATE["stop"] = True
+        ignore_signals()
         print("interrupted: stopping the running notebooks", flush=True)
-        for name in ("SIGINT", "SIGTERM", "SIGHUP"):  # let the cleanup finish
-            if hasattr(signal, name):
-                signal.signal(getattr(signal, name), signal.SIG_IGN)
     finally:
+        ignore_signals()
         ex.shutdown(wait=True, cancel_futures=True)
+
+
+def ignore_signals():
+    for name in ("SIGINT", "SIGTERM", "SIGHUP"):
+        if hasattr(signal, name):
+            signal.signal(getattr(signal, name), signal.SIG_IGN)
 
 
 def main():
@@ -867,7 +920,9 @@ def main():
     try:
         import psutil  # noqa: F401
     except ImportError:
-        print("psutil is not installed: no memory limits, no cleanup of processes")
+        # without it, a stopped kernel would leave AMPL and solvers running
+        print("psutil is required: pip install psutil", file=sys.stderr)
+        sys.exit(2)
     done = {r["notebook"] for r in read_results(args.out)}
     todo, bad = [], []
     for given in notebooks(args):
@@ -877,6 +932,7 @@ def main():
         elif name not in done and name not in todo:
             todo.append(name)
     refuse_out_in_folders(args.out, todo)
+    refuse_out_in_repository(args.out)
     os.makedirs(args.out, exist_ok=True)
     for given in bad:
         print(f"not_found     {given}: not a notebook of the repository")

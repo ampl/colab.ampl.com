@@ -79,8 +79,7 @@ venv-run/bin/python -m amplpy.modules install highs gurobi coin plugins   # as n
 ```
 
 `psutil` is needed for the memory limits and for killing the processes that a notebook
-leaves running. Without it, only the time limits apply, and the script says so when it
-starts.
+leaves running; the script refuses to run without it (exit code 2).
 
 ### Examples
 
@@ -107,8 +106,11 @@ repository. Other paths are reported as `not_found` when the run starts and in
 `not_found.json`, the paths of the last run, which `--recompare` reads). A list file has
 one path per line; lines that start with `#`, after leading spaces, are comments. Paths
 given as arguments and in a list file are all run.
-`--out` must not lie in the folder of a notebook to run (the folder is copied into it);
-the script refuses it with exit code 2. `--recompare` keeps the results of
+`--out` must be in `notebook-runs/` (ignored by git and skipped by the scripts that list
+notebooks) or outside the repository, as it holds copies of the notebooks, and must not
+lie in the folder of a notebook to run (the folder is copied into it); the script refuses
+other folders with exit code 2. A line of `results.jsonl` that cannot be read (cut short
+when the script was killed) is skipped with a warning, and its notebook runs again. `--recompare` keeps the results of
 notebooks that are no longer in the repository as they were.
 
 A second run with the same `--out` skips the notebooks already in `results.jsonl`. To rerun
@@ -157,11 +159,14 @@ Options (`--help` lists them all):
   - A notebook's own solver time limits (`lim:time=`, `timelim=`, `timelimit=`,
     `TimeLimit=`, `time_limit =`, `maxtime=`, in its code cells, outside `#` comments)
     raise the timeouts. Only literal values are seen: a limit set from a variable
-    (`f"timelimit={tl}"`) leaves the timeouts as they are. For each cell that sets one, the largest limit × 1.3 +
-    60 s is computed (a cell is taken to run one solve). The
-    cell timeout becomes the largest of these values, and the notebook timeout their sum,
-    at least twice the cell timeout. A cell that solves several times in a loop can still
-    need a larger `--cell-timeout` or `--nb-timeout`.
+    (`f"timelimit={tl}"`) leaves the timeouts as they are. For each cell that sets one,
+    the largest limit × 1.3 + 60 s is computed (a cell is taken to run one solve); and,
+    as an option set once applies to the later solves, for each later cell with `solve;`
+    (AMPL) or `solve(` (amplpy) in its code, the largest limit set so far × 1.3 + 60 s.
+    The cell timeout becomes the largest of these values, and the notebook timeout their
+    sum, at least twice the cell timeout. A cell that solves several times in a loop, or calls a function defined in
+    another cell that solves, can still need a larger `--cell-timeout` or
+    `--nb-timeout`.
 - **Watchdog.** It stops a notebook when either limit is exceeded:
   - the notebook timeout;
   - `--mem-gb`, for the resident memory of the notebook's processes.
@@ -229,9 +234,10 @@ write into a temporary copy of the repository: timeouts, statuses and error cell
 files, `--out`, `--recompare`, interruption and `--synthetic-data`; other tests call the
 comparison and the timeout functions directly. The notebooks print solver headlines
 instead of solving, and the `--bin-dir` tests use a stub amplpy package, so no AMPL,
-solver, license or amplpy is needed. They need pytest, nbclient, nbformat and ipykernel,
-and psutil for the interruption test (skipped on Windows); they take about 20 seconds. CI
-runs them on every push:
+solver, license or amplpy is needed. They need pytest, nbclient, nbformat, ipykernel and
+psutil (the interruption tests are skipped on Windows); they take about 40 seconds. CI
+runs them on every push, and fails if any of these packages cannot be imported (the
+tests would be skipped otherwise):
 
 ```bash
 python -m pytest scripts/tests
