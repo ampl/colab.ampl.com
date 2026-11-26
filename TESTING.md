@@ -105,7 +105,8 @@ current folder (a path through a symbolic link works too), and must be inside th
 repository. Other paths are reported as `not_found` when the run starts and in
 `summary.md`, and make the exit code 1; they are not written to `results.jsonl` (but to
 `not_found.json`, the paths of the last run, which `--recompare` reads). A list file has
-one path per line; lines that start with `#`, after leading spaces, are comments.
+one path per line; lines that start with `#`, after leading spaces, are comments. Paths
+given as arguments and in a list file are all run.
 `--out` must not lie in the folder of a notebook to run (the folder is copied into it);
 the script refuses it with exit code 2. `--recompare` keeps the results of
 notebooks that are no longer in the repository as they were.
@@ -151,11 +152,12 @@ Options (`--help` lists them all):
   `--skip-pip`), in the same cell or an earlier one. Importing amplpy puts the module
   directories first on `PATH`; the `--bin-dir` directories are put first again then.
 - **Timeouts.**
-  - A notebook stops at its first error. CI (nbval) runs the remaining cells too and
-    reports each cell that fails.
+  - A notebook stops at its first error, except in cells tagged `raises-exception`. CI
+    (nbval) runs the remaining cells too and reports each cell that fails.
   - A notebook's own solver time limits (`lim:time=`, `timelim=`, `timelimit=`,
-    `TimeLimit=`, `time_limit =`, `maxtime=`, in its code cells, outside lines that are
-    comments) raise the timeouts. For each cell that sets one, the largest limit × 1.3 +
+    `TimeLimit=`, `time_limit =`, `maxtime=`, in its code cells, outside `#` comments)
+    raise the timeouts. Only literal values are seen: a limit set from a variable
+    (`f"timelimit={tl}"`) leaves the timeouts as they are. For each cell that sets one, the largest limit × 1.3 +
     60 s is computed (a cell is taken to run one solve). The
     cell timeout becomes the largest of these values, and the notebook timeout their sum,
     at least twice the cell timeout. A cell that solves several times in a loop can still

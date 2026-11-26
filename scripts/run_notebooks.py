@@ -10,9 +10,8 @@ check new builds of AMPL or of the solvers before a release:
   notebook and a memory limit; when free memory falls below a reserve, the
   largest running notebook is stopped;
 - a notebook's own solver time limits (`lim:time=`, `timelim=`,
-  `timelimit=`, `TimeLimit=`, `time_limit =`, `maxtime=`, outside lines that
-  are comments) raise
-  the cell timeout to the largest limit of a cell times 1.3 plus 60 seconds,
+  `timelimit=`, `TimeLimit=`, `time_limit =`, `maxtime=`, with a literal
+  value, outside comments) raise the cell timeout to the largest limit of a cell times 1.3 plus 60 seconds,
   and the notebook timeout to the sum of these over the cells (at least
   twice the cell timeout);
 - processes that a notebook leaves running (AMPL and solvers of a stopped
@@ -137,7 +136,7 @@ if {plain!r}:
     _sys.meta_path.insert(0, _RunnerFinder())
 """
 
-PIP = re.compile(r"^(\s*)([%!]\s*pip\s+install\b.*)$", re.MULTILINE)
+PIP = re.compile(r"^([ \t]*)([%!]\s*pip\s+install\b.*)$")
 # "HiGHS 1.15.1: ...", also with a build in parentheses: "XPRESS 10.0.0 (48.01.01): ..."
 SOLVER_LINE = re.compile(
     r"^([A-Za-z][\w .\-]*?\s+v?\d[\w.\-]*(?:\s*\([\w.\-]*\))?)\s*:\s*(.+)$"
@@ -162,6 +161,25 @@ STATE = {"active": {}, "lock": threading.Lock(), "stop": False}
 
 
 # ---- worker: executes one notebook (python run_notebooks.py --worker ...) ----
+
+
+def comment_out_pip(source):
+    """Comment out the `%pip install` and `!pip install` lines, with their
+    continuation lines (ending in a backslash). An indented one becomes a
+    `pass` statement: it may be the only statement of a block."""
+    lines, continued = [], False
+    for line in source.split("\n"):
+        m = None if continued else PIP.match(line)
+        if m:
+            indent = m.group(1)
+            stmt = "pass  " if indent else ""
+            lines.append(f"{indent}{stmt}# (runner) {m.group(2)}")
+        elif continued:
+            lines.append(f"# (runner) {line}")
+        else:
+            lines.append(line)
+        continued = (bool(m) or continued) and line.rstrip().endswith("\\")
+    return "\n".join(lines)
 
 
 def kernel_manager_class():
@@ -195,7 +213,7 @@ def execute(src, dst, cell_timeout, prefix, licfile, plain, skip_pip):
     for cell in nb.cells:
         if cell.cell_type == "code":
             if skip_pip:
-                cell.source = PIP.sub(r"\1# (runner) \2", cell.source)
+                cell.source = comment_out_pip(cell.source)
             cell.outputs = []
     code = PRELUDE.format(prefix=prefix, licfile=licfile, plain=plain)
     nb.cells.insert(0, nbformat.v4.new_code_cell(code))
@@ -328,19 +346,26 @@ def compare(orig, new, rel_tol=REL_TOL):
 
 def failed_cell(nb):
     """Cell number (of the original notebook) where the run stopped, from the
-    first error output or, for a timeout, which adds none, from the runner's
-    metadata; None if the notebook ran to the end."""
-    error = first_error(nb)
-    if error:
-        return error["cell"]
-    return nb.get("metadata", {}).get("notebook_runner", {}).get("cell")
+    runner's metadata (also for a timeout, which adds no error output); None
+    if the notebook ran to the end. Errors of cells tagged raises-exception
+    do not stop the run."""
+    info = nb.get("metadata", {}).get("notebook_runner", {})
+    if info.get("status") == "ok":
+        return None
+    if "cell" in info:
+        return info["cell"]
+    error = first_error(nb)  # no metadata: the worker did not finish
+    return error["cell"] if error else None
 
 
-def first_error(nb):
-    """The first error output, with the cell number of the original notebook
-    (the executed notebook has the prelude cell in front)."""
-    for i, cell in enumerate(nb.get("cells", [])):
-        for out in cell.get("outputs", []):
+def first_error(nb, cell=None):
+    """The first error output, of the given cell if one is given, with the
+    cell number of the original notebook (the executed notebook has the
+    prelude cell in front)."""
+    for i, c in enumerate(nb.get("cells", [])):
+        if cell is not None and i - 1 != cell:
+            continue
+        for out in c.get("outputs", []):
             if out.get("output_type") == "error":
                 evalue = str(out.get("evalue"))[:400]
                 return {"cell": i - 1, "ename": out.get("ename"), "evalue": evalue}
@@ -430,16 +455,33 @@ def watch(popen, name, args, nb_timeout):
 # ---- driver ----
 
 
+def strip_comment(line):
+    """The line without a `#` comment (Python and AMPL), outside quotes."""
+    quote, escaped = None, False
+    for i, ch in enumerate(line):
+        if escaped:
+            escaped = False
+        elif ch == "\\":
+            escaped = True
+        elif quote:
+            quote = None if ch == quote else quote
+        elif ch in "'\"":
+            quote = ch
+        elif ch == "#":
+            return line[:i]
+    return line
+
+
 def cell_limits(nb):
     """The largest solver time limit of each code cell that sets one, outside
-    comment lines (one cell usually runs one solve; a solver and its MP2NL
-    wrapper often repeat the same limit)."""
+    comments; only literal values are seen (one cell usually runs one solve;
+    a solver and its MP2NL wrapper often repeat the same limit)."""
     limits = []
     for c in nb.get("cells", []):
         if c.get("cell_type") != "code":
             continue
         lines = "".join(c.get("source", [])).splitlines()
-        code = "\n".join(x for x in lines if not x.lstrip().startswith("#"))
+        code = "\n".join(strip_comment(x) for x in lines)
         own = [float(x.rstrip(".")) for x in OWN_LIMIT.findall(code)]
         if own:
             limits.append(max(own))
@@ -558,9 +600,13 @@ def record(name, args, stopped, peak, seconds, dst):
 
 
 def run_error(nb, info):
-    """The first error output; otherwise the runner's error (a dead kernel)
-    or the stopped cell (a timeout), with the cell number."""
-    error = first_error(nb) or info.get("error")
+    """The error output of the cell where the run stopped; otherwise the
+    runner's error (a dead kernel) or the stopped cell (a timeout), with the
+    cell number. None after a run to the end: errors of cells tagged
+    raises-exception are part of the notebook."""
+    if info.get("status") == "ok":
+        return None
+    error = first_error(nb, info.get("cell")) or info.get("error")
     if error is None and "cell" in info:
         error = {"ename": info["status"], "evalue": ""}
     if error is not None and "cell" in info:
@@ -681,12 +727,15 @@ def repo_path(path):
 
 
 def notebooks(args):
-    if args.notebooks:
-        return args.notebooks
+    """The notebooks given as arguments and in the --list file; without
+    either, the notebooks that CI runs."""
+    names = list(args.notebooks)
     if args.list:
         with open(args.list) as f:
             lines = (x.strip() for x in f)
-            return [x for x in lines if x and not x.startswith("#")]
+            names += [x for x in lines if x and not x.startswith("#")]
+    if args.notebooks or args.list:
+        return names
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from list_notebooks import list_notebooks
 
@@ -703,8 +752,14 @@ def parse_args():
         description=__doc__.split("\n\n")[0],
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    ap.add_argument("notebooks", nargs="*", help="notebook paths (default: --list)")
-    ap.add_argument("--list", help="file with notebook paths, one per line")
+    ap.add_argument(
+        "notebooks",
+        nargs="*",
+        help="notebook paths (default: the notebooks that CI runs)",
+    )
+    ap.add_argument(
+        "--list", help="file with notebook paths, one per line (added to the paths)"
+    )
     ap.add_argument(
         "--out",
         default=os.path.join(ROOT_DIR, "notebook-runs", "latest"),
@@ -792,7 +847,9 @@ def run_all(names, args):
     except KeyboardInterrupt:
         STATE["stop"] = True
         print("interrupted: stopping the running notebooks", flush=True)
-        signal.signal(signal.SIGINT, signal.SIG_IGN)  # let the cleanup finish
+        for name in ("SIGINT", "SIGTERM", "SIGHUP"):  # let the cleanup finish
+            if hasattr(signal, name):
+                signal.signal(getattr(signal, name), signal.SIG_IGN)
     finally:
         ex.shutdown(wait=True, cancel_futures=True)
 

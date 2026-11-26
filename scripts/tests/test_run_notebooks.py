@@ -313,6 +313,63 @@ def test_list_file_and_recompare(repo, tmp_path):
     assert list(results(out)) == [nb]
 
 
+def test_list_file_and_arguments_are_combined(repo, tmp_path):
+    given = write_notebook(repo, "given.ipynb", [("x = 1", None)])
+    listed = write_notebook(repo, "listed.ipynb", [("x = 2", None)])
+    listing = tmp_path / "list.txt"
+    listing.write_text(f"{listed}\n")
+    proc, out = run(repo, given, "--list", str(listing))
+    assert sorted(results(out)) == sorted([given, listed]), proc.stdout
+    assert proc.returncode == 0, proc.stdout + proc.stderr
+
+
+def test_raises_exception_cell_does_not_stop_the_comparison(repo):
+    """nbclient runs on after a cell tagged raises-exception: the cells after
+    it are compared, and its error is not reported as the run's error."""
+    nb = nbformat.v4.new_notebook()
+    nb.metadata["kernelspec"] = {"name": "python3", "display_name": "Python 3"}
+    shown = nbformat.v4.new_code_cell("raise ValueError('shown')")
+    shown.metadata["tags"] = ["raises-exception"]
+    changed = SOLVED.replace("objective 1", "objective 2")
+    later = nbformat.v4.new_code_cell(f"print({changed!r})")
+    later.outputs = [nbformat.v4.new_output("stream", name="stdout", text=SOLVED)]
+    nb.cells = [shown, later]
+    nbformat.write(nb, repo / "authors" / "t" / "shown.ipynb")
+    name = "authors/t/shown.ipynb"
+    _, out = run(repo, name)
+    rec = results(out)[name]
+    assert rec["status"] == "ok", rec
+    assert rec["error"] is None
+    assert any("cell 1: objective 1 -> 2" in d for d in rec["diffs"]), rec
+
+
+@pytest.mark.skipif(sys.platform == "win32", reason="SIGTERM is a hard kill there")
+def test_second_sigterm_during_cleanup(repo):
+    """A second SIGTERM while the running notebooks are stopped must not
+    abort the cleanup: exit code 130 and a summary."""
+    psutil = pytest.importorskip("psutil")
+    nb = write_notebook(repo, "slow.ipynb", [("import time\ntime.sleep(60)", None)])
+    out = repo.parent / "out"
+    proc = subprocess.Popen(
+        command(repo, out, [nb]),
+        cwd=repo,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    runner = psutil.Process(proc.pid)
+    deadline = time.time() + 60
+    while len(runner.children(recursive=True)) < 2 and time.time() < deadline:
+        time.sleep(0.2)  # wait for the worker and its kernel
+    proc.send_signal(signal.SIGTERM)
+    time.sleep(0.3)  # the watchdog checks once a second: still cleaning up
+    proc.send_signal(signal.SIGTERM)
+    stdout, stderr = proc.communicate(timeout=60)
+    assert proc.returncode == 130, stdout + stderr
+    assert "Traceback" not in stderr
+    assert os.path.exists(out / "summary.md")
+
+
 @pytest.mark.skipif(sys.platform == "win32", reason="SIGTERM is a hard kill there")
 def test_interruption_records_nothing(repo):
     """Killing the runner's whole process tree, kernels included, must not
@@ -342,7 +399,11 @@ def test_notebook_timeout_sums_the_cell_limits(tmp_path):
     runner = load_runner()
     nb = nbformat.v4.new_notebook()
     sources = [
-        "# opt = 'lim:time=1000'  (a comment: ignored)\nopt = 'lim:time=30'",
+        (
+            "# opt = 'lim:time=1000'  (a comment: ignored)\nopt = 'lim:time=30'"
+            "  # was lim:time=36000 (a trailing comment: ignored)"
+        ),
+        "opt = 'gap=1e-4 # not a comment'  # lim:time=9999",
         "opt = 'lim:time=300 maxtime=300'",  # one solve: counted once
         "opt = 'lim:time=300'",
     ]
@@ -352,6 +413,28 @@ def test_notebook_timeout_sums_the_cell_limits(tmp_path):
     args = types.SimpleNamespace(cell_timeout=180, nb_timeout=600)
     # cells: 1.3 * 30 + 60 = 99, 1.3 * 300 + 60 = 450 twice
     assert runner.timeouts(path, args) == (450, 999)
+
+
+def test_skip_pip_keeps_valid_python():
+    """Continuation lines are commented out too, and an indented %pip that is
+    the only statement of a block becomes `pass`."""
+    runner = load_runner()
+    source = (
+        "%pip install -q amplpy \\\n"
+        "    pandas\n"
+        "try:\n"
+        "    !pip install numpy\n"
+        "except Exception:\n"
+        "    pass\n"
+        "x = 1  # %pip install is not at the start: kept"
+    )
+    result = runner.comment_out_pip(source)
+    compile(result, "cell", "exec")
+    lines = result.split("\n")
+    assert lines[0] == "# (runner) %pip install -q amplpy \\"
+    assert lines[1] == "# (runner)     pandas"
+    assert lines[3] == "    pass  # (runner) !pip install numpy"
+    assert lines[6] == "x = 1  # %pip install is not at the start: kept"
 
 
 def test_solver_headlines_with_a_build_number():
