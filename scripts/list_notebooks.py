@@ -43,7 +43,9 @@ def list_notebooks(mode="default"):
 def should_skip(notebook_path):
     if os.path.basename(notebook_path) in SKIP_NB_LIST:
         return True
-    if notebook_path.startswith(("venv", "_build", "build")):
+    if notebook_path.startswith(("venv", "_build", "build", "notebook-runs")):
+        return True
+    if ".virtual_documents" in notebook_path or ".ipynb_checkpoints" in notebook_path:
         return True
     with open(notebook_path, "r", encoding="utf-8") as f:
         content = f.read()

@@ -74,7 +74,9 @@ def notebook_files(base_dir="."):
         for fname in files
         if fname.endswith(".ipynb") and ".ipynb_checkpoints" not in dirpath
         if ".virtual_documents" not in dirpath
-        if not dirpath[len(base_dir) + 1 :].startswith(("docs", "venv"))
+        if not dirpath[len(base_dir) + 1 :].startswith(
+            ("docs", "venv", "notebook-runs")
+        )
     ]
     lst = [fname for fname in lst if "site-packages" not in fname]
 

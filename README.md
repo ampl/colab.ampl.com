@@ -60,6 +60,12 @@ $ git add docs/source/
 Note that the notebook headers are patched with new badges using links to the correct locations after the notebook is published.
 The first two notebook cells are modified to ensure that requirements are installed and that the ampl_notebook is instantiated.
 
+### Testing the notebooks
+
+See [TESTING.md](https://github.com/ampl/colab.ampl.com/blob/master/TESTING.md): what CI checks,
+the checks to run before committing, and verification runs with `scripts/run_notebooks.py`
+(other AMPL or solver builds, comparison with the stored outputs, time and memory limits).
+
 ## Notebooks
 
 | Title  | GitHub |  Colab | Deepnote | Kaggle | Gradient | SageMaker|

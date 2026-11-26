@@ -29,6 +29,27 @@ jobs:
     - name: Check formatting and lint
       run: python scripts/check_format.py
 
+  test-scripts:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.11
+
+    - name: Install dependencies
+      run: pip install pytest nbclient nbformat ipykernel psutil
+
+    # the tests are skipped, not failed, when one of these cannot be imported
+    - name: Check the test dependencies
+      run: python -c "import nbclient, nbformat, ipykernel, psutil"
+
+    - name: Test scripts/run_notebooks.py
+      run: python -m pytest scripts/tests
+
   discover-notebooks:
     runs-on: ubuntu-latest
     outputs:
