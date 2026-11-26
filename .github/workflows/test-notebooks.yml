@@ -43,6 +43,10 @@ jobs:
     - name: Install dependencies
       run: pip install pytest nbclient nbformat ipykernel psutil
 
+    # the tests are skipped, not failed, when one of these cannot be imported
+    - name: Check the test dependencies
+      run: python -c "import nbclient, nbformat, ipykernel, psutil"
+
     - name: Test scripts/run_notebooks.py
       run: python -m pytest scripts/tests
 
